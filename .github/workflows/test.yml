@@ -1,0 +1,34 @@
+name: test
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: mlugg/setup-zig@v2
+        with:
+          version: 0.17.0
+
+      - name: Check the formatting
+        run: zig fmt --check src build.zig
+
+      # The tests also check every data file of both platforms.
+      - name: Run the tests
+        run: zig build test --summary all
+
+      - name: Build
+        run: zig build
+
+      # Stdout is not a terminal here, so the pager does not start.
+      - name: Run the binary
+        run: |
+          ./zig-out/bin/seks --version
+          ./zig-out/bin/seks --list
+          ./zig-out/bin/seks tmux > /dev/null
