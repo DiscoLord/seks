@@ -2,6 +2,7 @@ const std = @import("std");
 const Io = std.Io;
 
 const data = @import("data.zig");
+const render = @import("render.zig");
 const search = @import("search.zig");
 
 // The build passes `.version` from build.zig.zon.
@@ -54,37 +55,30 @@ pub fn main(init: std.process.Init) !void {
         std.process.exit(exit_failure);
     };
 
-    printApp(io, app);
+    printApp(io, app, stdoutStyle(init));
 }
 
-/// Prints `app` to stdout in a plain form: the name, then each group with
-/// one line per binding.
+/// Returns `.ansi` when stdout is a terminal that takes escape codes and the
+/// `NO_COLOR` variable is not set. Returns `.plain` for a pipe or a file.
+fn stdoutStyle(init: std.process.Init) render.Style {
+    const no_color = if (init.environ_map.get("NO_COLOR")) |value| value.len > 0 else false;
+    const mode = Io.Terminal.Mode.detect(init.io, .stdout(), no_color, false) catch return .plain;
+    return switch (mode) {
+        .escape_codes => .ansi,
+        else => .plain,
+    };
+}
+
+/// Renders `app` to stdout. Exits with `exit_failure` when the write fails.
 ///
-/// TODO: replace with the renderer and the pager.
-fn printApp(io: Io, app: data.App) void {
+/// TODO: send the text to a pager when stdout is a terminal.
+fn printApp(io: Io, app: data.App, style: render.Style) void {
     var buffer: [4096]u8 = undefined;
     var file_writer = Io.File.stdout().writer(io, &buffer);
     const writer = &file_writer.interface;
 
-    writeApp(writer, app) catch std.process.exit(exit_failure);
+    render.render(writer, app, style) catch std.process.exit(exit_failure);
     writer.flush() catch std.process.exit(exit_failure);
-}
-
-fn writeApp(writer: *Io.Writer, app: data.App) Io.Writer.Error!void {
-    try writer.print("{s}\n", .{app.full_name});
-    if (app.note) |note| try writer.print("{s}\n", .{note});
-
-    for (app.binding_groups) |group| {
-        try writer.print("\n{s}\n", .{group.title});
-        for (group.bindings) |binding| {
-            try writer.writeAll("  ");
-            for (binding.keys, 0..) |alternative, index| {
-                if (index > 0) try writer.writeAll(" OR ");
-                try writer.writeAll(alternative);
-            }
-            try writer.print("  {s}\n", .{binding.effect});
-        }
-    }
 }
 
 /// Prints a formatted message to `file`. Exits with `exit_failure` when the
@@ -108,5 +102,6 @@ fn failUsage(io: Io, comptime fmt: []const u8, args: anytype) noreturn {
 // Zig runs the tests of a file only when something references the file.
 test {
     _ = data;
+    _ = render;
     _ = search;
 }
