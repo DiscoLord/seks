@@ -1,6 +1,9 @@
 const std = @import("std");
 const zon = @import("build.zig.zon");
 
+const check = @import("src/check.zig");
+const data = @import("src/data.zig");
+
 pub fn build(b: *std.Build) void {
     const target = b.standardTargetOptions(.{});
     const optimize = b.standardOptimizeOption(.{});
@@ -22,10 +25,10 @@ pub fn build(b: *std.Build) void {
     // references: the executable takes the file of its target, the tests take
     // both.
     exe.root_module.addAnonymousImport("macos.json", .{
-        .root_source_file = mergeApps(b, "macos"),
+        .root_source_file = mergeApps(b, .macos),
     });
     exe.root_module.addAnonymousImport("linux.json", .{
-        .root_source_file = mergeApps(b, "linux"),
+        .root_source_file = mergeApps(b, .linux),
     });
     b.installArtifact(exe);
 
@@ -46,11 +49,13 @@ pub fn build(b: *std.Build) void {
 /// Merges every `<app>.json` in `data/<platform>` into one JSON array of
 /// apps. The file name without `.json` becomes the `name` of the app.
 ///
-/// Returns the merged file. Stops the build when a file is not valid.
-fn mergeApps(b: *std.Build, platform: []const u8) std.Build.LazyPath {
+/// Returns the merged file. Stops the build with the path of the file when
+/// a file is not valid JSON, has the wrong shape, or breaks a rule of
+/// `check.zig`. So no build can ship data that was not checked.
+fn mergeApps(b: *std.Build, platform: data.Platform) std.Build.LazyPath {
     const io = b.graph.io;
     const arena = b.allocator;
-    const dir_path = b.pathJoin(&.{ "data", platform });
+    const dir_path = b.pathJoin(&.{ "data", @tagName(platform) });
 
     // Zig caches the result of this function. Declare the directory and each
     // file as an input, so an added, removed or changed file runs it again.
@@ -75,6 +80,7 @@ fn mergeApps(b: *std.Build, platform: []const u8) std.Build.LazyPath {
     std.mem.sort([]const u8, file_names.items, {}, lessThan);
 
     var apps: std.json.Array = .init(arena);
+    var parsed_apps: std.ArrayList(data.App) = .empty;
     for (file_names.items) |file_name| {
         const file_path = b.pathJoin(&.{ dir_path, file_name });
         b.dependOnFileContents(b.path(file_path));
@@ -101,10 +107,24 @@ fn mergeApps(b: *std.Build, platform: []const u8) std.Build.LazyPath {
         const name = file_name[0 .. file_name.len - ".json".len];
         app.object.put(arena, "name", .{ .string = name }) catch @panic("OOM");
         apps.append(app) catch @panic("OOM");
+
+        // Parse into the same structs that the program uses. A wrong type,
+        // a missing field or an unknown field stops the build here, not at
+        // the first run of the program.
+        const parsed = std.json.parseFromValueLeaky(data.App, arena, app, .{}) catch |err| {
+            std.process.fatal("{s}: wrong shape: {t}. Compare the file with data/template.json", .{ file_path, err });
+        };
+        parsed_apps.append(arena, parsed) catch @panic("OOM");
     }
 
+    var problem: check.Problem = .{};
+    check.validate(arena, parsed_apps.items, platform, &problem) catch |err| switch (err) {
+        error.OutOfMemory => @panic("OOM"),
+        else => std.process.fatal("{s}/{s}.json: {t}{f}", .{ dir_path, problem.app, err, problem }),
+    };
+
     const merged = std.json.Stringify.valueAlloc(arena, std.json.Value{ .array = apps }, .{}) catch @panic("OOM");
-    return b.addWriteFiles().add(b.fmt("{s}.json", .{platform}), merged);
+    return b.addWriteFiles().add(b.fmt("{t}.json", .{platform}), merged);
 }
 
 fn lessThan(_: void, a: []const u8, b: []const u8) bool {

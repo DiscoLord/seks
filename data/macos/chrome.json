@@ -278,7 +278,7 @@
         {
           "id": 35,
           "keys": [
-            "Cmd+Shift+Cmd"
+            "Cmd+Shift+M"
           ],
           "effect": "Toggle device emulation"
         },
@@ -548,7 +548,7 @@
           "keys": [
             "Cmd+Opt+N"
           ],
-          "effect": "Open split view in the active tab"
+          "effect": "Open split view in the active tab"
         }
       ],
       "note": "Chrome default shortcuts; some system keys depend on the desktop environment."

@@ -278,7 +278,7 @@
         {
           "id": 35,
           "keys": [
-            "Ctrl+Shift+Ctrl"
+            "Ctrl+Shift+M"
           ],
           "effect": "Toggle device emulation"
         },

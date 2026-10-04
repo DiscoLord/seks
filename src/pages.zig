@@ -110,6 +110,12 @@ pub fn layout(
 
             // The group is taller than a column. Place what fits, at least
             // one binding, and continue in the next column.
+            //
+            // The head must leave a row for that binding. A head as tall as
+            // the column would push the binding below the last row, and the
+            // pager never draws a row there. Keep the title only, or no
+            // head at all on a screen of one row.
+            if (head.len >= height) head = if (height >= 2) head[0..1] else &.{};
             const count = @min(rest.len, @max(1, height -| head.len));
             try lines.appendSlice(arena, head);
             try lines.appendSlice(arena, rest[0..count]);
@@ -356,18 +362,34 @@ test "layout places every binding once, on a screen of any size" {
     }
 }
 
-test "layout keeps a column inside the height, except on a screen too small for a title and a binding" {
+test "layout keeps every column inside the height, so the pager draws every binding" {
     var arena_state: std.heap.ArenaAllocator = .init(testing.allocator);
     defer arena_state.deinit();
+    const arena = arena_state.allocator();
 
+    // The note wraps to two lines, so the head of this group is three lines.
+    var with_note = testGroup(1, "One", 7);
+    with_note.note = "Press the prefix key, release it, then press the next key of the binding.";
     const app: data.App = .{
         .name = "app",
         .full_name = "App",
-        .binding_groups = &.{ testGroup(1, "One", 7), testGroup(2, "Two", 1), testGroup(3, "Three", 12) },
+        .binding_groups = &.{ with_note, testGroup(2, "Two", 1), testGroup(3, "Three", 12) },
     };
-    const result = try layout(arena_state.allocator(), app, .plain, 80, 6);
-    for (result) |page| {
-        for (page.columns) |column| try testing.expect(column.lines.len <= 6);
+
+    // A height of 3 or less leaves no room for a binding under the full
+    // head. The head must then shrink, not push the binding out of sight.
+    for (1..9) |height| {
+        const result = try layout(arena, app, .plain, 80, height);
+        var bindings: usize = 0;
+        for (result) |page| {
+            for (page.columns) |column| {
+                try testing.expect(column.lines.len <= height);
+                for (column.lines) |line| {
+                    if (std.mem.startsWith(u8, line.text, "  k")) bindings += 1;
+                }
+            }
+        }
+        try testing.expectEqual(20, bindings);
     }
 }
 

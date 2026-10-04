@@ -220,19 +220,49 @@ fn moveTo(writer: *Io.Writer, row: usize) Io.Writer.Error!void {
 fn readKeys(stdin: posix.fd_t, buffer: []u8) !?[]const u8 {
     var fds = [_]posix.pollfd{.{ .fd = stdin, .events = posix.POLL.IN, .revents = 0 }};
     if (try posix.poll(&fds, resize_poll_ms) == 0) return null;
-    return buffer[0..try posix.read(stdin, buffer)];
+    var len = try posix.read(stdin, buffer);
+
+    // A key that starts with ESC can arrive in parts, for example over a
+    // slow connection. Wait a short time for the rest. Without the wait,
+    // the first part reads as the Esc key and quits the pager.
+    while (len > 0 and len < buffer.len and endsInsideEscape(buffer[0..len])) {
+        if (try posix.poll(&fds, escape_wait_ms) == 0) break;
+        const more = try posix.read(stdin, buffer[len..]);
+        if (more == 0) break;
+        len += more;
+    }
+    return buffer[0..len];
 }
 
 const escape = '\x1b';
 
+// How long to wait for the rest of a key that starts with ESC. The Esc key
+// itself quits after this wait.
+const escape_wait_ms = 50;
+
+/// Returns true when `bytes` end in the first part of a key: ESC alone, or
+/// ESC and `[` or `O` with no final byte yet.
+fn endsInsideEscape(bytes: []const u8) bool {
+    const start = std.mem.lastIndexOfScalar(u8, bytes, escape) orelse return false;
+    const tail = bytes[start..];
+    if (tail.len == 1) return true;
+    if (tail[1] != '[' and tail[1] != 'O') return false;
+    for (tail[2..]) |byte| {
+        if (byte >= '@' and byte <= '~') return false;
+    }
+    return true;
+}
+
 /// Returns the length of the first key press in `bytes`. `bytes` must not
 /// be empty.
 ///
-/// An arrow or a navigation key is ESC, then `[` or `O`, then bytes up to
-/// the first one from `@` to `~`. Every other key is one byte.
+/// - An arrow or a navigation key is ESC, then `[` or `O`, then bytes up to
+///   the first one from `@` to `~`.
+/// - ESC and one other byte is a key pressed with Alt or Option.
+/// - Every other key is one byte.
 fn keyLength(bytes: []const u8) usize {
-    const is_sequence = bytes.len >= 3 and bytes[0] == escape and (bytes[1] == '[' or bytes[1] == 'O');
-    if (!is_sequence) return 1;
+    if (bytes[0] != escape or bytes.len == 1) return 1;
+    if (bytes[1] != '[' and bytes[1] != 'O') return 2;
     for (bytes[2..], 2..) |byte, index| {
         if (byte >= '@' and byte <= '~') return index + 1;
     }
@@ -307,7 +337,28 @@ test "keyLength splits a read that holds several keys" {
     try testing.expectEqual(3, keyLength("\x1b[C\x1b[C"));
     try testing.expectEqual(4, keyLength("\x1b[6~q"));
     try testing.expectEqual(1, keyLength("\x1b"));
-    try testing.expectEqual(1, keyLength("\x1bq"));
+}
+
+test "a key pressed with Alt is one key with no command" {
+    // Option+Left in Terminal.app sends ESC and `b`. It must not quit, and
+    // the `b` must not turn the page.
+    try testing.expectEqual(2, keyLength("\x1bb"));
+    try testing.expectEqual(null, parseKey("\x1bb"));
+    try testing.expectEqual(2, keyLength("\x1bb "));
+}
+
+test "endsInsideEscape finds a key that is not complete" {
+    try testing.expect(endsInsideEscape("\x1b"));
+    try testing.expect(endsInsideEscape("\x1b["));
+    try testing.expect(endsInsideEscape("\x1b[6"));
+    try testing.expect(endsInsideEscape("\x1bO"));
+    try testing.expect(endsInsideEscape("j\x1b"));
+
+    try testing.expect(!endsInsideEscape("j"));
+    try testing.expect(!endsInsideEscape("\x1b[C"));
+    try testing.expect(!endsInsideEscape("\x1b[6~"));
+    try testing.expect(!endsInsideEscape("\x1bb"));
+    try testing.expect(!endsInsideEscape("\x1b[Cq"));
 }
 
 test "bodyHeight leaves room for the header and the help row" {

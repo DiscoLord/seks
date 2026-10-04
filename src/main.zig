@@ -131,6 +131,7 @@ fn failUsage(io: Io, comptime fmt: []const u8, args: anytype) noreturn {
 
 // Zig runs the tests of a file only when something references the file.
 test {
+    _ = @import("check.zig");
     _ = data;
     _ = pager;
     _ = @import("pages.zig");
