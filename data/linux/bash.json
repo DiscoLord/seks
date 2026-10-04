@@ -3,7 +3,7 @@
     "readline"
   ],
   "full_name": "Bash / Readline",
-  "note": "Bash prompt with standard Readline bindings; Emacs and vi modes are separate.",
+  "note": "Bash 5.2.21 / Readline defaults; Emacs, vi command and vi insert maps. macOS requires this Bash version, not the older system Bash.",
   "source": "https://tiswww.case.edu/php/chet/readline/rluserman.html",
   "binding_groups": [
     {
@@ -678,6 +678,1098 @@
           "effect": "Restore whole line"
         }
       ]
+    },
+    {
+      "id": 9,
+      "title": "Emacs: additional default bindings",
+      "bindings": [
+        {
+          "id": 89,
+          "keys": [
+            "Ctrl+X Ctrl+G"
+          ],
+          "effect": "Abort"
+        },
+        {
+          "id": 90,
+          "keys": [
+            "Alt+Ctrl+G"
+          ],
+          "effect": "Abort"
+        },
+        {
+          "id": 91,
+          "keys": [
+            "Ctrl+J"
+          ],
+          "effect": "Accept line"
+        },
+        {
+          "id": 92,
+          "keys": [
+            "Ctrl+M"
+          ],
+          "effect": "Accept line"
+        },
+        {
+          "id": 93,
+          "keys": [
+            "Left"
+          ],
+          "effect": "Backward char"
+        },
+        {
+          "id": 94,
+          "keys": [
+            "Ctrl+H"
+          ],
+          "effect": "Backward delete char"
+        },
+        {
+          "id": 95,
+          "keys": [
+            "Ctrl+?"
+          ],
+          "effect": "Backward delete char"
+        },
+        {
+          "id": 96,
+          "keys": [
+            "Ctrl+X Ctrl+?"
+          ],
+          "effect": "Backward kill line"
+        },
+        {
+          "id": 97,
+          "keys": [
+            "Alt+Ctrl+H"
+          ],
+          "effect": "Backward kill word"
+        },
+        {
+          "id": 98,
+          "keys": [
+            "Alt+Ctrl+?"
+          ],
+          "effect": "Backward kill word"
+        },
+        {
+          "id": 99,
+          "keys": [
+            "Alt+Left"
+          ],
+          "effect": "Backward word"
+        },
+        {
+          "id": 100,
+          "keys": [
+            "Ctrl+Left"
+          ],
+          "effect": "Backward word"
+        },
+        {
+          "id": 101,
+          "keys": [
+            "Home"
+          ],
+          "effect": "Beginning of line"
+        },
+        {
+          "id": 102,
+          "keys": [
+            "Ctrl+]"
+          ],
+          "effect": "Character search"
+        },
+        {
+          "id": 103,
+          "keys": [
+            "Alt+Ctrl+]"
+          ],
+          "effect": "Character search backward"
+        },
+        {
+          "id": 104,
+          "keys": [
+            "Alt+Ctrl+L"
+          ],
+          "effect": "Clear display"
+        },
+        {
+          "id": 105,
+          "keys": [
+            "Ctrl+I"
+          ],
+          "effect": "Complete"
+        },
+        {
+          "id": 106,
+          "keys": [
+            "Alt+\\ 0 0 0"
+          ],
+          "effect": "Complete"
+        },
+        {
+          "id": 107,
+          "keys": [
+            "Alt+!"
+          ],
+          "effect": "Complete command"
+        },
+        {
+          "id": 108,
+          "keys": [
+            "Alt+/"
+          ],
+          "effect": "Complete filename"
+        },
+        {
+          "id": 109,
+          "keys": [
+            "Alt+@"
+          ],
+          "effect": "Complete hostname"
+        },
+        {
+          "id": 110,
+          "keys": [
+            "Alt+{"
+          ],
+          "effect": "Complete into braces"
+        },
+        {
+          "id": 111,
+          "keys": [
+            "Alt+~"
+          ],
+          "effect": "Complete username"
+        },
+        {
+          "id": 112,
+          "keys": [
+            "Alt+$"
+          ],
+          "effect": "Complete variable"
+        },
+        {
+          "id": 113,
+          "keys": [
+            "Delete"
+          ],
+          "effect": "Delete char"
+        },
+        {
+          "id": 114,
+          "keys": [
+            "Alt+\\"
+          ],
+          "effect": "Delete horizontal space"
+        },
+        {
+          "id": 115,
+          "keys": [
+            "Alt+-"
+          ],
+          "effect": "Digit argument"
+        },
+        {
+          "id": 116,
+          "keys": [
+            "Alt+0"
+          ],
+          "effect": "Digit argument"
+        },
+        {
+          "id": 117,
+          "keys": [
+            "Alt+1"
+          ],
+          "effect": "Digit argument"
+        },
+        {
+          "id": 118,
+          "keys": [
+            "Alt+2"
+          ],
+          "effect": "Digit argument"
+        },
+        {
+          "id": 119,
+          "keys": [
+            "Alt+3"
+          ],
+          "effect": "Digit argument"
+        },
+        {
+          "id": 120,
+          "keys": [
+            "Alt+4"
+          ],
+          "effect": "Digit argument"
+        },
+        {
+          "id": 121,
+          "keys": [
+            "Alt+5"
+          ],
+          "effect": "Digit argument"
+        },
+        {
+          "id": 122,
+          "keys": [
+            "Alt+6"
+          ],
+          "effect": "Digit argument"
+        },
+        {
+          "id": 123,
+          "keys": [
+            "Alt+7"
+          ],
+          "effect": "Digit argument"
+        },
+        {
+          "id": 124,
+          "keys": [
+            "Alt+8"
+          ],
+          "effect": "Digit argument"
+        },
+        {
+          "id": 125,
+          "keys": [
+            "Alt+9"
+          ],
+          "effect": "Digit argument"
+        },
+        {
+          "id": 126,
+          "keys": [
+            "Ctrl+X Ctrl+V"
+          ],
+          "effect": "Display shell version"
+        },
+        {
+          "id": 127,
+          "keys": [
+            "Alt+Ctrl+I"
+          ],
+          "effect": "Dynamic complete history"
+        },
+        {
+          "id": 128,
+          "keys": [
+            "Ctrl+X Ctrl+E"
+          ],
+          "effect": "Edit and execute command"
+        },
+        {
+          "id": 129,
+          "keys": [
+            "End"
+          ],
+          "effect": "End of line"
+        },
+        {
+          "id": 130,
+          "keys": [
+            "Right"
+          ],
+          "effect": "Forward char"
+        },
+        {
+          "id": 131,
+          "keys": [
+            "Alt+Right"
+          ],
+          "effect": "Forward word"
+        },
+        {
+          "id": 132,
+          "keys": [
+            "Ctrl+Right"
+          ],
+          "effect": "Forward word"
+        },
+        {
+          "id": 133,
+          "keys": [
+            "Alt+G"
+          ],
+          "effect": "Glob complete word"
+        },
+        {
+          "id": 134,
+          "keys": [
+            "Ctrl+X *"
+          ],
+          "effect": "Glob expand word"
+        },
+        {
+          "id": 135,
+          "keys": [
+            "Ctrl+X g"
+          ],
+          "effect": "Glob list expansions"
+        },
+        {
+          "id": 136,
+          "keys": [
+            "Alt+^"
+          ],
+          "effect": "History expand line"
+        },
+        {
+          "id": 137,
+          "keys": [
+            "Alt+#"
+          ],
+          "effect": "Insert comment"
+        },
+        {
+          "id": 138,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Next history"
+        },
+        {
+          "id": 139,
+          "keys": [
+            "Ctrl+X !"
+          ],
+          "effect": "Possible command completions"
+        },
+        {
+          "id": 140,
+          "keys": [
+            "Alt+="
+          ],
+          "effect": "Possible completions"
+        },
+        {
+          "id": 141,
+          "keys": [
+            "Ctrl+X /"
+          ],
+          "effect": "Possible filename completions"
+        },
+        {
+          "id": 142,
+          "keys": [
+            "Ctrl+X @"
+          ],
+          "effect": "Possible hostname completions"
+        },
+        {
+          "id": 143,
+          "keys": [
+            "Ctrl+X ~"
+          ],
+          "effect": "Possible username completions"
+        },
+        {
+          "id": 144,
+          "keys": [
+            "Ctrl+X $"
+          ],
+          "effect": "Possible variable completions"
+        },
+        {
+          "id": 145,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Previous history"
+        },
+        {
+          "id": 146,
+          "keys": [
+            "Ctrl+Q"
+          ],
+          "effect": "Quoted insert"
+        },
+        {
+          "id": 147,
+          "keys": [
+            "Ctrl+X Ctrl+R"
+          ],
+          "effect": "Re read init file"
+        },
+        {
+          "id": 148,
+          "keys": [
+            "Alt+Ctrl+R"
+          ],
+          "effect": "Revert line"
+        },
+        {
+          "id": 149,
+          "keys": [
+            "Ctrl+@"
+          ],
+          "effect": "Set mark"
+        },
+        {
+          "id": 150,
+          "keys": [
+            "Alt+Space"
+          ],
+          "effect": "Set mark"
+        },
+        {
+          "id": 151,
+          "keys": [
+            "Alt+Ctrl+B"
+          ],
+          "effect": "Shell backward word"
+        },
+        {
+          "id": 152,
+          "keys": [
+            "Alt+Ctrl+E"
+          ],
+          "effect": "Shell expand line"
+        },
+        {
+          "id": 153,
+          "keys": [
+            "Alt+Ctrl+F"
+          ],
+          "effect": "Shell forward word"
+        },
+        {
+          "id": 154,
+          "keys": [
+            "Alt+Ctrl+D"
+          ],
+          "effect": "Shell kill word"
+        },
+        {
+          "id": 155,
+          "keys": [
+            "Alt+Ctrl+T"
+          ],
+          "effect": "Shell transpose words"
+        },
+        {
+          "id": 156,
+          "keys": [
+            "Ctrl+X s"
+          ],
+          "effect": "Spell correct word"
+        },
+        {
+          "id": 157,
+          "keys": [
+            "Alt+&"
+          ],
+          "effect": "Tilde expand"
+        },
+        {
+          "id": 158,
+          "keys": [
+            "Alt+Ctrl+Y"
+          ],
+          "effect": "Yank nth arg"
+        }
+      ],
+      "note": "Meta requires the terminal to send Esc-prefixed keys. Bash 5.2.21 / Readline default map."
+    },
+    {
+      "id": 10,
+      "title": "Vi command: additional default bindings",
+      "bindings": [
+        {
+          "id": 159,
+          "keys": [
+            "Ctrl+G"
+          ],
+          "effect": "Abort"
+        },
+        {
+          "id": 160,
+          "keys": [
+            "Ctrl+J"
+          ],
+          "effect": "Accept line"
+        },
+        {
+          "id": 161,
+          "keys": [
+            "Ctrl+M"
+          ],
+          "effect": "Accept line"
+        },
+        {
+          "id": 162,
+          "keys": [
+            "Ctrl+H"
+          ],
+          "effect": "Backward char"
+        },
+        {
+          "id": 163,
+          "keys": [
+            "Left"
+          ],
+          "effect": "Backward char"
+        },
+        {
+          "id": 164,
+          "keys": [
+            "Alt+Left"
+          ],
+          "effect": "Backward word"
+        },
+        {
+          "id": 165,
+          "keys": [
+            "Ctrl+Left"
+          ],
+          "effect": "Backward word"
+        },
+        {
+          "id": 166,
+          "keys": [
+            "Home"
+          ],
+          "effect": "Beginning of line"
+        },
+        {
+          "id": 167,
+          "keys": [
+            "Ctrl+L"
+          ],
+          "effect": "Clear screen"
+        },
+        {
+          "id": 168,
+          "keys": [
+            "End"
+          ],
+          "effect": "End of line"
+        },
+        {
+          "id": 169,
+          "keys": [
+            "Right"
+          ],
+          "effect": "Forward char"
+        },
+        {
+          "id": 170,
+          "keys": [
+            "Space"
+          ],
+          "effect": "Forward char"
+        },
+        {
+          "id": 171,
+          "keys": [
+            "Ctrl+S"
+          ],
+          "effect": "Forward search history"
+        },
+        {
+          "id": 172,
+          "keys": [
+            "Alt+Right"
+          ],
+          "effect": "Forward word"
+        },
+        {
+          "id": 173,
+          "keys": [
+            "Ctrl+Right"
+          ],
+          "effect": "Forward word"
+        },
+        {
+          "id": 174,
+          "keys": [
+            "#"
+          ],
+          "effect": "Insert comment"
+        },
+        {
+          "id": 175,
+          "keys": [
+            "Ctrl+K"
+          ],
+          "effect": "Kill line"
+        },
+        {
+          "id": 176,
+          "keys": [
+            "Ctrl+N"
+          ],
+          "effect": "Next history"
+        },
+        {
+          "id": 177,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Next history"
+        },
+        {
+          "id": 178,
+          "keys": [
+            "Plus"
+          ],
+          "effect": "Next history"
+        },
+        {
+          "id": 179,
+          "keys": [
+            "Ctrl+P"
+          ],
+          "effect": "Previous history"
+        },
+        {
+          "id": 180,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Previous history"
+        },
+        {
+          "id": 181,
+          "keys": [
+            "-"
+          ],
+          "effect": "Previous history"
+        },
+        {
+          "id": 182,
+          "keys": [
+            "Ctrl+Q"
+          ],
+          "effect": "Quoted insert"
+        },
+        {
+          "id": 183,
+          "keys": [
+            "Ctrl+V"
+          ],
+          "effect": "Quoted insert"
+        },
+        {
+          "id": 184,
+          "keys": [
+            "Ctrl+R"
+          ],
+          "effect": "Reverse search history"
+        },
+        {
+          "id": 185,
+          "keys": [
+            "Ctrl+T"
+          ],
+          "effect": "Transpose chars"
+        },
+        {
+          "id": 186,
+          "keys": [
+            "Ctrl+U"
+          ],
+          "effect": "Unix line discard"
+        },
+        {
+          "id": 187,
+          "keys": [
+            "1"
+          ],
+          "effect": "Arg digit"
+        },
+        {
+          "id": 188,
+          "keys": [
+            "2"
+          ],
+          "effect": "Arg digit"
+        },
+        {
+          "id": 189,
+          "keys": [
+            "3"
+          ],
+          "effect": "Arg digit"
+        },
+        {
+          "id": 190,
+          "keys": [
+            "4"
+          ],
+          "effect": "Arg digit"
+        },
+        {
+          "id": 191,
+          "keys": [
+            "5"
+          ],
+          "effect": "Arg digit"
+        },
+        {
+          "id": 192,
+          "keys": [
+            "6"
+          ],
+          "effect": "Arg digit"
+        },
+        {
+          "id": 193,
+          "keys": [
+            "7"
+          ],
+          "effect": "Arg digit"
+        },
+        {
+          "id": 194,
+          "keys": [
+            "8"
+          ],
+          "effect": "Arg digit"
+        },
+        {
+          "id": 195,
+          "keys": [
+            "9"
+          ],
+          "effect": "Arg digit"
+        },
+        {
+          "id": 196,
+          "keys": [
+            "c"
+          ],
+          "effect": "Change to"
+        },
+        {
+          "id": 197,
+          "keys": [
+            "|"
+          ],
+          "effect": "Column"
+        },
+        {
+          "id": 198,
+          "keys": [
+            "d"
+          ],
+          "effect": "Delete to"
+        },
+        {
+          "id": 199,
+          "keys": [
+            "v"
+          ],
+          "effect": "Edit and execute command"
+        },
+        {
+          "id": 200,
+          "keys": [
+            "E"
+          ],
+          "effect": "End word"
+        },
+        {
+          "id": 201,
+          "keys": [
+            "Ctrl+D"
+          ],
+          "effect": "Eof maybe"
+        },
+        {
+          "id": 202,
+          "keys": [
+            "G"
+          ],
+          "effect": "Fetch history"
+        },
+        {
+          "id": 203,
+          "keys": [
+            "`"
+          ],
+          "effect": "Goto mark"
+        },
+        {
+          "id": 204,
+          "keys": [
+            "%"
+          ],
+          "effect": "Match"
+        },
+        {
+          "id": 205,
+          "keys": [
+            "W"
+          ],
+          "effect": "Next word"
+        },
+        {
+          "id": 206,
+          "keys": [
+            "B"
+          ],
+          "effect": "Prev word"
+        },
+        {
+          "id": 207,
+          "keys": [
+            "m"
+          ],
+          "effect": "Set mark"
+        },
+        {
+          "id": 208,
+          "keys": [
+            "S"
+          ],
+          "effect": "Subst"
+        },
+        {
+          "id": 209,
+          "keys": [
+            "s"
+          ],
+          "effect": "Subst"
+        },
+        {
+          "id": 210,
+          "keys": [
+            "&"
+          ],
+          "effect": "Tilde expand"
+        },
+        {
+          "id": 211,
+          "keys": [
+            "Ctrl+_"
+          ],
+          "effect": "Undo"
+        },
+        {
+          "id": 212,
+          "keys": [
+            "Ctrl+W"
+          ],
+          "effect": "Unix word rubout"
+        },
+        {
+          "id": 213,
+          "keys": [
+            "_"
+          ],
+          "effect": "Yank arg"
+        },
+        {
+          "id": 214,
+          "keys": [
+            "Y"
+          ],
+          "effect": "Yank to"
+        },
+        {
+          "id": 215,
+          "keys": [
+            "y"
+          ],
+          "effect": "Yank to"
+        },
+        {
+          "id": 216,
+          "keys": [
+            "Ctrl+Y"
+          ],
+          "effect": "Yank"
+        }
+      ],
+      "note": "Meta requires the terminal to send Esc-prefixed keys. Bash 5.2.21 / Readline default map."
+    },
+    {
+      "id": 11,
+      "title": "Vi insert: additional default bindings",
+      "bindings": [
+        {
+          "id": 217,
+          "keys": [
+            "Ctrl+J"
+          ],
+          "effect": "Accept line"
+        },
+        {
+          "id": 218,
+          "keys": [
+            "Ctrl+M"
+          ],
+          "effect": "Accept line"
+        },
+        {
+          "id": 219,
+          "keys": [
+            "Left"
+          ],
+          "effect": "Backward char"
+        },
+        {
+          "id": 220,
+          "keys": [
+            "Ctrl+H"
+          ],
+          "effect": "Backward delete char"
+        },
+        {
+          "id": 221,
+          "keys": [
+            "Ctrl+?"
+          ],
+          "effect": "Backward delete char"
+        },
+        {
+          "id": 222,
+          "keys": [
+            "Alt+Left"
+          ],
+          "effect": "Backward word"
+        },
+        {
+          "id": 223,
+          "keys": [
+            "Ctrl+Left"
+          ],
+          "effect": "Backward word"
+        },
+        {
+          "id": 224,
+          "keys": [
+            "Home"
+          ],
+          "effect": "Beginning of line"
+        },
+        {
+          "id": 225,
+          "keys": [
+            "Ctrl+I"
+          ],
+          "effect": "Complete"
+        },
+        {
+          "id": 226,
+          "keys": [
+            "End"
+          ],
+          "effect": "End of line"
+        },
+        {
+          "id": 227,
+          "keys": [
+            "Right"
+          ],
+          "effect": "Forward char"
+        },
+        {
+          "id": 228,
+          "keys": [
+            "Ctrl+S"
+          ],
+          "effect": "Forward search history"
+        },
+        {
+          "id": 229,
+          "keys": [
+            "Alt+Right"
+          ],
+          "effect": "Forward word"
+        },
+        {
+          "id": 230,
+          "keys": [
+            "Ctrl+Right"
+          ],
+          "effect": "Forward word"
+        },
+        {
+          "id": 231,
+          "keys": [
+            "Ctrl+N"
+          ],
+          "effect": "Menu complete"
+        },
+        {
+          "id": 232,
+          "keys": [
+            "Ctrl+P"
+          ],
+          "effect": "Menu complete backward"
+        },
+        {
+          "id": 233,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Next history"
+        },
+        {
+          "id": 234,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Previous history"
+        },
+        {
+          "id": 235,
+          "keys": [
+            "Ctrl+V"
+          ],
+          "effect": "Quoted insert"
+        },
+        {
+          "id": 236,
+          "keys": [
+            "Ctrl+R"
+          ],
+          "effect": "Reverse search history"
+        },
+        {
+          "id": 237,
+          "keys": [
+            "Ctrl+T"
+          ],
+          "effect": "Transpose chars"
+        },
+        {
+          "id": 238,
+          "keys": [
+            "Ctrl+D"
+          ],
+          "effect": "Eof maybe"
+        },
+        {
+          "id": 239,
+          "keys": [
+            "Alt+\\ 0 0 0"
+          ],
+          "effect": "Movement mode"
+        },
+        {
+          "id": 240,
+          "keys": [
+            "Ctrl+_"
+          ],
+          "effect": "Undo"
+        },
+        {
+          "id": 241,
+          "keys": [
+            "Ctrl+Y"
+          ],
+          "effect": "Yank"
+        }
+      ],
+      "note": "Meta requires the terminal to send Esc-prefixed keys. Bash 5.2.21 / Readline default map."
     }
   ]
 }

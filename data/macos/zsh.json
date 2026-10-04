@@ -3,7 +3,7 @@
     "zle"
   ],
   "full_name": "Zsh",
-  "note": "Zsh 5.9 ZLE bindings; Emacs and vi modes are separate.",
+  "note": "Zsh 5.9 default ZLE maps: Emacs, vi insert, vi command, operator-pending and visual modes.",
   "source": "https://zsh.sourceforge.io/Doc/Release/Zsh-Line-Editor.html",
   "binding_groups": [
     {
@@ -685,6 +685,804 @@
           "effect": "Enter line selection"
         }
       ]
+    },
+    {
+      "id": 9,
+      "title": "Emacs: additional default bindings",
+      "bindings": [
+        {
+          "id": 90,
+          "keys": [
+            "Ctrl+@"
+          ],
+          "effect": "Set mark command"
+        },
+        {
+          "id": 91,
+          "keys": [
+            "Ctrl+H"
+          ],
+          "effect": "Backward delete char"
+        },
+        {
+          "id": 92,
+          "keys": [
+            "Ctrl+I"
+          ],
+          "effect": "Expand or complete"
+        },
+        {
+          "id": 93,
+          "keys": [
+            "Ctrl+J"
+          ],
+          "effect": "Accept line"
+        },
+        {
+          "id": 94,
+          "keys": [
+            "Ctrl+M"
+          ],
+          "effect": "Accept line"
+        },
+        {
+          "id": 95,
+          "keys": [
+            "Ctrl+Q"
+          ],
+          "effect": "Push line"
+        },
+        {
+          "id": 96,
+          "keys": [
+            "Ctrl+X Ctrl+B"
+          ],
+          "effect": "Match bracket"
+        },
+        {
+          "id": 97,
+          "keys": [
+            "Ctrl+X Ctrl+F"
+          ],
+          "effect": "Find next char"
+        },
+        {
+          "id": 98,
+          "keys": [
+            "Ctrl+X Ctrl+J"
+          ],
+          "effect": "Join"
+        },
+        {
+          "id": 99,
+          "keys": [
+            "Ctrl+X Ctrl+N"
+          ],
+          "effect": "Infer next history"
+        },
+        {
+          "id": 100,
+          "keys": [
+            "Ctrl+X Ctrl+O"
+          ],
+          "effect": "Overwrite mode"
+        },
+        {
+          "id": 101,
+          "keys": [
+            "Ctrl+X Ctrl+V"
+          ],
+          "effect": "Cmd mode"
+        },
+        {
+          "id": 102,
+          "keys": [
+            "Ctrl+X ="
+          ],
+          "effect": "What cursor position"
+        },
+        {
+          "id": 103,
+          "keys": [
+            "Ctrl+X G"
+          ],
+          "effect": "List expand"
+        },
+        {
+          "id": 104,
+          "keys": [
+            "Ctrl+X g"
+          ],
+          "effect": "List expand"
+        },
+        {
+          "id": 105,
+          "keys": [
+            "Ctrl+X r"
+          ],
+          "effect": "History incremental search backward"
+        },
+        {
+          "id": 106,
+          "keys": [
+            "Ctrl+X s"
+          ],
+          "effect": "History incremental search forward"
+        },
+        {
+          "id": 107,
+          "keys": [
+            "Ctrl+X u"
+          ],
+          "effect": "Undo"
+        },
+        {
+          "id": 108,
+          "keys": [
+            "Opt+Ctrl+G"
+          ],
+          "effect": "Send break"
+        },
+        {
+          "id": 109,
+          "keys": [
+            "Opt+Ctrl+H"
+          ],
+          "effect": "Backward kill word"
+        },
+        {
+          "id": 110,
+          "keys": [
+            "Opt+Ctrl+I"
+          ],
+          "effect": "Self insert unmeta"
+        },
+        {
+          "id": 111,
+          "keys": [
+            "Opt+Ctrl+J"
+          ],
+          "effect": "Self insert unmeta"
+        },
+        {
+          "id": 112,
+          "keys": [
+            "Opt+Ctrl+L"
+          ],
+          "effect": "Clear screen"
+        },
+        {
+          "id": 113,
+          "keys": [
+            "Opt+Ctrl+M"
+          ],
+          "effect": "Self insert unmeta"
+        },
+        {
+          "id": 114,
+          "keys": [
+            "Opt+Ctrl+_"
+          ],
+          "effect": "Copy prev word"
+        },
+        {
+          "id": 115,
+          "keys": [
+            "Opt+Space"
+          ],
+          "effect": "Expand history"
+        },
+        {
+          "id": 116,
+          "keys": [
+            "Opt+!"
+          ],
+          "effect": "Expand history"
+        },
+        {
+          "id": 117,
+          "keys": [
+            "Opt+\""
+          ],
+          "effect": "Quote region"
+        },
+        {
+          "id": 118,
+          "keys": [
+            "Opt+\\ $"
+          ],
+          "effect": "Spell word"
+        },
+        {
+          "id": 119,
+          "keys": [
+            "Opt+'"
+          ],
+          "effect": "Quote line"
+        },
+        {
+          "id": 120,
+          "keys": [
+            "Opt+-"
+          ],
+          "effect": "Neg argument"
+        },
+        {
+          "id": 121,
+          "keys": [
+            "Opt+0"
+          ],
+          "effect": "Digit argument"
+        },
+        {
+          "id": 122,
+          "keys": [
+            "Opt+1"
+          ],
+          "effect": "Digit argument"
+        },
+        {
+          "id": 123,
+          "keys": [
+            "Opt+2"
+          ],
+          "effect": "Digit argument"
+        },
+        {
+          "id": 124,
+          "keys": [
+            "Opt+3"
+          ],
+          "effect": "Digit argument"
+        },
+        {
+          "id": 125,
+          "keys": [
+            "Opt+4"
+          ],
+          "effect": "Digit argument"
+        },
+        {
+          "id": 126,
+          "keys": [
+            "Opt+5"
+          ],
+          "effect": "Digit argument"
+        },
+        {
+          "id": 127,
+          "keys": [
+            "Opt+6"
+          ],
+          "effect": "Digit argument"
+        },
+        {
+          "id": 128,
+          "keys": [
+            "Opt+7"
+          ],
+          "effect": "Digit argument"
+        },
+        {
+          "id": 129,
+          "keys": [
+            "Opt+8"
+          ],
+          "effect": "Digit argument"
+        },
+        {
+          "id": 130,
+          "keys": [
+            "Opt+9"
+          ],
+          "effect": "Digit argument"
+        },
+        {
+          "id": 131,
+          "keys": [
+            "Opt+?"
+          ],
+          "effect": "Which command"
+        },
+        {
+          "id": 132,
+          "keys": [
+            "Opt+Shift+A"
+          ],
+          "effect": "Accept and hold"
+        },
+        {
+          "id": 133,
+          "keys": [
+            "Opt+Shift+B"
+          ],
+          "effect": "Backward word"
+        },
+        {
+          "id": 134,
+          "keys": [
+            "Opt+Shift+C"
+          ],
+          "effect": "Capitalize word"
+        },
+        {
+          "id": 135,
+          "keys": [
+            "Opt+Shift+D"
+          ],
+          "effect": "Kill word"
+        },
+        {
+          "id": 136,
+          "keys": [
+            "Opt+Shift+F"
+          ],
+          "effect": "Forward word"
+        },
+        {
+          "id": 137,
+          "keys": [
+            "Opt+Shift+G"
+          ],
+          "effect": "Get line"
+        },
+        {
+          "id": 138,
+          "keys": [
+            "Opt+Shift+H"
+          ],
+          "effect": "Run help"
+        },
+        {
+          "id": 139,
+          "keys": [
+            "Opt+Shift+L"
+          ],
+          "effect": "Down case word"
+        },
+        {
+          "id": 140,
+          "keys": [
+            "Opt+Shift+N"
+          ],
+          "effect": "History search forward"
+        },
+        {
+          "id": 141,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Up line or history"
+        },
+        {
+          "id": 142,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Down line or history"
+        },
+        {
+          "id": 143,
+          "keys": [
+            "Right"
+          ],
+          "effect": "Forward char"
+        },
+        {
+          "id": 144,
+          "keys": [
+            "Left"
+          ],
+          "effect": "Backward char"
+        },
+        {
+          "id": 145,
+          "keys": [
+            "Opt+Shift+P"
+          ],
+          "effect": "History search backward"
+        },
+        {
+          "id": 146,
+          "keys": [
+            "Opt+Shift+Q"
+          ],
+          "effect": "Push line"
+        },
+        {
+          "id": 147,
+          "keys": [
+            "Opt+Shift+S"
+          ],
+          "effect": "Spell word"
+        },
+        {
+          "id": 148,
+          "keys": [
+            "Opt+Shift+T"
+          ],
+          "effect": "Transpose words"
+        },
+        {
+          "id": 149,
+          "keys": [
+            "Opt+Shift+U"
+          ],
+          "effect": "Up case word"
+        },
+        {
+          "id": 150,
+          "keys": [
+            "Opt+Shift+W"
+          ],
+          "effect": "Copy region as kill"
+        },
+        {
+          "id": 151,
+          "keys": [
+            "Opt+A"
+          ],
+          "effect": "Accept and hold"
+        },
+        {
+          "id": 152,
+          "keys": [
+            "Opt+G"
+          ],
+          "effect": "Get line"
+        },
+        {
+          "id": 153,
+          "keys": [
+            "Opt+H"
+          ],
+          "effect": "Run help"
+        },
+        {
+          "id": 154,
+          "keys": [
+            "Opt+S"
+          ],
+          "effect": "Spell word"
+        },
+        {
+          "id": 155,
+          "keys": [
+            "Opt+W"
+          ],
+          "effect": "Copy region as kill"
+        },
+        {
+          "id": 156,
+          "keys": [
+            "Opt+Z"
+          ],
+          "effect": "Execute last named cmd"
+        },
+        {
+          "id": 157,
+          "keys": [
+            "Opt+|"
+          ],
+          "effect": "Goto column"
+        }
+      ],
+      "note": "Meta requires the terminal to send Esc-prefixed keys. Zsh 5.9 default ZLE map."
+    },
+    {
+      "id": 10,
+      "title": "Vi insert: additional default bindings",
+      "bindings": [
+        {
+          "id": 158,
+          "keys": [
+            "Ctrl+D"
+          ],
+          "effect": "List choices"
+        },
+        {
+          "id": 159,
+          "keys": [
+            "Ctrl+G"
+          ],
+          "effect": "List expand"
+        },
+        {
+          "id": 160,
+          "keys": [
+            "Ctrl+H"
+          ],
+          "effect": "Backward delete char"
+        },
+        {
+          "id": 161,
+          "keys": [
+            "Ctrl+I"
+          ],
+          "effect": "Expand or complete"
+        },
+        {
+          "id": 162,
+          "keys": [
+            "Ctrl+J"
+          ],
+          "effect": "Accept line"
+        },
+        {
+          "id": 163,
+          "keys": [
+            "Ctrl+L"
+          ],
+          "effect": "Clear screen"
+        },
+        {
+          "id": 164,
+          "keys": [
+            "Ctrl+M"
+          ],
+          "effect": "Accept line"
+        },
+        {
+          "id": 165,
+          "keys": [
+            "Ctrl+Q"
+          ],
+          "effect": "Quoted insert"
+        },
+        {
+          "id": 166,
+          "keys": [
+            "Ctrl+R"
+          ],
+          "effect": "Redisplay"
+        },
+        {
+          "id": 167,
+          "keys": [
+            "Ctrl+V"
+          ],
+          "effect": "Quoted insert"
+        },
+        {
+          "id": 168,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Up line or history"
+        },
+        {
+          "id": 169,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Down line or history"
+        },
+        {
+          "id": 170,
+          "keys": [
+            "Right"
+          ],
+          "effect": "Forward char"
+        },
+        {
+          "id": 171,
+          "keys": [
+            "Left"
+          ],
+          "effect": "Backward char"
+        }
+      ],
+      "note": "Meta requires the terminal to send Esc-prefixed keys. Zsh 5.9 default ZLE map."
+    },
+    {
+      "id": 11,
+      "title": "Vi operator: additional default bindings",
+      "bindings": [
+        {
+          "id": 172,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Cmd mode"
+        },
+        {
+          "id": 173,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Up line"
+        },
+        {
+          "id": 174,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Down line"
+        },
+        {
+          "id": 175,
+          "keys": [
+            "a W"
+          ],
+          "effect": "Select a blank word"
+        },
+        {
+          "id": 176,
+          "keys": [
+            "a a"
+          ],
+          "effect": "Select a shell word"
+        },
+        {
+          "id": 177,
+          "keys": [
+            "a w"
+          ],
+          "effect": "Select a word"
+        },
+        {
+          "id": 178,
+          "keys": [
+            "i W"
+          ],
+          "effect": "Select in blank word"
+        },
+        {
+          "id": 179,
+          "keys": [
+            "i a"
+          ],
+          "effect": "Select in shell word"
+        },
+        {
+          "id": 180,
+          "keys": [
+            "i w"
+          ],
+          "effect": "Select in word"
+        },
+        {
+          "id": 181,
+          "keys": [
+            "j"
+          ],
+          "effect": "Down line"
+        },
+        {
+          "id": 182,
+          "keys": [
+            "k"
+          ],
+          "effect": "Up line"
+        }
+      ],
+      "note": "Meta requires the terminal to send Esc-prefixed keys. Zsh 5.9 default ZLE map."
+    },
+    {
+      "id": 12,
+      "title": "Vi visual: additional default bindings",
+      "bindings": [
+        {
+          "id": 183,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Deactivate region"
+        },
+        {
+          "id": 184,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Up line"
+        },
+        {
+          "id": 185,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Down line"
+        },
+        {
+          "id": 186,
+          "keys": [
+            "U"
+          ],
+          "effect": "Up case"
+        },
+        {
+          "id": 187,
+          "keys": [
+            "a W"
+          ],
+          "effect": "Select a blank word"
+        },
+        {
+          "id": 188,
+          "keys": [
+            "a a"
+          ],
+          "effect": "Select a shell word"
+        },
+        {
+          "id": 189,
+          "keys": [
+            "a w"
+          ],
+          "effect": "Select a word"
+        },
+        {
+          "id": 190,
+          "keys": [
+            "i W"
+          ],
+          "effect": "Select in blank word"
+        },
+        {
+          "id": 191,
+          "keys": [
+            "i a"
+          ],
+          "effect": "Select in shell word"
+        },
+        {
+          "id": 192,
+          "keys": [
+            "i w"
+          ],
+          "effect": "Select in word"
+        },
+        {
+          "id": 193,
+          "keys": [
+            "j"
+          ],
+          "effect": "Down line"
+        },
+        {
+          "id": 194,
+          "keys": [
+            "k"
+          ],
+          "effect": "Up line"
+        },
+        {
+          "id": 195,
+          "keys": [
+            "o"
+          ],
+          "effect": "Exchange point and mark"
+        },
+        {
+          "id": 196,
+          "keys": [
+            "p"
+          ],
+          "effect": "Put replace selection"
+        },
+        {
+          "id": 197,
+          "keys": [
+            "u"
+          ],
+          "effect": "Down case"
+        },
+        {
+          "id": 198,
+          "keys": [
+            "x"
+          ],
+          "effect": "Delete"
+        },
+        {
+          "id": 199,
+          "keys": [
+            "~"
+          ],
+          "effect": "Oper swap case"
+        }
+      ],
+      "note": "Meta requires the terminal to send Esc-prefixed keys. Zsh 5.9 default ZLE map."
     }
   ]
 }

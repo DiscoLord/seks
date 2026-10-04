@@ -4,8 +4,8 @@
     "visual studio code"
   ],
   "full_name": "Visual Studio Code",
-  "note": "Default macOS keymap; extensions and custom bindings may override shortcuts.",
-  "source": "https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf",
+  "note": "Official default shortcut reference plus reference-card bindings; US layout. Context-dependent actions are grouped. Not a complete runtime keybindings.json export.",
+  "source": "https://code.visualstudio.com/docs/reference/default-keybindings",
   "binding_groups": [
     {
       "id": 1,
@@ -74,6 +74,27 @@
             "Shift+F8"
           ],
           "effect": "Go to the previous error or warning"
+        },
+        {
+          "id": 111,
+          "keys": [
+            "Shift+Cmd+M"
+          ],
+          "effect": "Show Problems"
+        },
+        {
+          "id": 112,
+          "keys": [
+            "Ctrl+Tab"
+          ],
+          "effect": "Navigate Editor Group History"
+        },
+        {
+          "id": 113,
+          "keys": [
+            "Shift+Cmd+;"
+          ],
+          "effect": "Focus Breadcrumbs"
         }
       ]
     },
@@ -122,8 +143,65 @@
             "Cmd+Shift+G"
           ],
           "effect": "Find the previous match"
+        },
+        {
+          "id": 149,
+          "keys": [
+            "Opt+Cmd+C"
+          ],
+          "effect": "Toggle Match Case"
+        },
+        {
+          "id": 150,
+          "keys": [
+            "Opt+Cmd+W"
+          ],
+          "effect": "Toggle Match Whole Word"
+        },
+        {
+          "id": 151,
+          "keys": [
+            "Opt+Cmd+R"
+          ],
+          "effect": "Toggle Use Regular Expression"
+        },
+        {
+          "id": 152,
+          "keys": [
+            "Shift+Cmd+J"
+          ],
+          "effect": "Toggle Search Details"
+        },
+        {
+          "id": 153,
+          "keys": [
+            "F4"
+          ],
+          "effect": "Focus Next Search Result"
+        },
+        {
+          "id": 154,
+          "keys": [
+            "Shift+F4"
+          ],
+          "effect": "Focus Previous Search Result"
+        },
+        {
+          "id": 155,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Show Next Search Term"
+        },
+        {
+          "id": 156,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Show Previous Search Term"
         }
-      ]
+      ],
+      "note": "Focus the search context. Some chat actions require the corresponding built-in feature."
     },
     {
       "id": 3,
@@ -506,6 +584,824 @@
           "effect": "Stop debugging"
         }
       ]
+    },
+    {
+      "id": 9,
+      "title": "Basic Editing",
+      "bindings": [
+        {
+          "id": 65,
+          "keys": [
+            "Cmd+X"
+          ],
+          "effect": "Cut line (empty selection)"
+        },
+        {
+          "id": 66,
+          "keys": [
+            "Cmd+C"
+          ],
+          "effect": "Copy line (empty selection)"
+        },
+        {
+          "id": 67,
+          "keys": [
+            "Cmd+V"
+          ],
+          "effect": "Paste"
+        },
+        {
+          "id": 68,
+          "keys": [
+            "Shift+Opt+Down"
+          ],
+          "effect": "Copy Line Down"
+        },
+        {
+          "id": 69,
+          "keys": [
+            "Shift+Opt+Up"
+          ],
+          "effect": "Copy Line Up"
+        },
+        {
+          "id": 70,
+          "keys": [
+            "Cmd+Z"
+          ],
+          "effect": "Undo"
+        },
+        {
+          "id": 71,
+          "keys": [
+            "Shift+Cmd+Z"
+          ],
+          "effect": "Redo"
+        },
+        {
+          "id": 72,
+          "keys": [
+            "Cmd+K Cmd+D"
+          ],
+          "effect": "Move Last Selection To Next Find Match"
+        },
+        {
+          "id": 73,
+          "keys": [
+            "Shift+Opt+I"
+          ],
+          "effect": "Insert cursor at end of each line selected"
+        },
+        {
+          "id": 74,
+          "keys": [
+            "Cmd+F2"
+          ],
+          "effect": "Select all occurrences of current word"
+        },
+        {
+          "id": 75,
+          "keys": [
+            "Cmd+L"
+          ],
+          "effect": "Select current line"
+        },
+        {
+          "id": 76,
+          "keys": [
+            "Shift+Cmd+\\"
+          ],
+          "effect": "Jump to matching bracket"
+        },
+        {
+          "id": 77,
+          "keys": [
+            "Cmd+]"
+          ],
+          "effect": "Indent Line"
+        },
+        {
+          "id": 78,
+          "keys": [
+            "Cmd+["
+          ],
+          "effect": "Outdent Line"
+        },
+        {
+          "id": 79,
+          "keys": [
+            "Home"
+          ],
+          "effect": "Go to Beginning of Line"
+        },
+        {
+          "id": 80,
+          "keys": [
+            "End"
+          ],
+          "effect": "Go to End of Line"
+        },
+        {
+          "id": 81,
+          "keys": [
+            "Cmd+Down"
+          ],
+          "effect": "Go to End of File"
+        },
+        {
+          "id": 82,
+          "keys": [
+            "Cmd+Up"
+          ],
+          "effect": "Go to Beginning of File"
+        },
+        {
+          "id": 83,
+          "keys": [
+            "Ctrl+PageDown"
+          ],
+          "effect": "Scroll Line Down"
+        },
+        {
+          "id": 84,
+          "keys": [
+            "Ctrl+PageUp"
+          ],
+          "effect": "Scroll Line Up"
+        },
+        {
+          "id": 85,
+          "keys": [
+            "Cmd+PageDown"
+          ],
+          "effect": "Scroll Page Down"
+        },
+        {
+          "id": 86,
+          "keys": [
+            "Cmd+PageUp"
+          ],
+          "effect": "Scroll Page Up"
+        },
+        {
+          "id": 87,
+          "keys": [
+            "Opt+Cmd+["
+          ],
+          "effect": "Fold (collapse) region"
+        },
+        {
+          "id": 88,
+          "keys": [
+            "Opt+Cmd+]"
+          ],
+          "effect": "Unfold (uncollapse) region"
+        },
+        {
+          "id": 89,
+          "keys": [
+            "Cmd+K Cmd+L"
+          ],
+          "effect": "Toggle Fold region"
+        },
+        {
+          "id": 90,
+          "keys": [
+            "Cmd+K Cmd+["
+          ],
+          "effect": "Fold (collapse) all subregions"
+        },
+        {
+          "id": 91,
+          "keys": [
+            "Cmd+K Cmd+]"
+          ],
+          "effect": "Unfold (uncollapse) all subregions"
+        },
+        {
+          "id": 92,
+          "keys": [
+            "Cmd+K Cmd+0"
+          ],
+          "effect": "Fold (collapse) all regions"
+        },
+        {
+          "id": 93,
+          "keys": [
+            "Cmd+K Cmd+J"
+          ],
+          "effect": "Unfold (uncollapse) all regions"
+        },
+        {
+          "id": 94,
+          "keys": [
+            "Cmd+K Cmd+C"
+          ],
+          "effect": "Add Line Comment"
+        },
+        {
+          "id": 95,
+          "keys": [
+            "Cmd+K Cmd+U"
+          ],
+          "effect": "Remove Line Comment"
+        },
+        {
+          "id": 96,
+          "keys": [
+            "Cmd+F"
+          ],
+          "effect": "Find"
+        },
+        {
+          "id": 97,
+          "keys": [
+            "Opt+Cmd+F"
+          ],
+          "effect": "Replace"
+        },
+        {
+          "id": 98,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Find Next"
+        },
+        {
+          "id": 99,
+          "keys": [
+            "Shift+Enter"
+          ],
+          "effect": "Find Previous"
+        },
+        {
+          "id": 100,
+          "keys": [
+            "Opt+Enter"
+          ],
+          "effect": "Select All Occurrences of Find Match"
+        },
+        {
+          "id": 101,
+          "keys": [
+            "Opt+Cmd+C"
+          ],
+          "effect": "Toggle Find Case Sensitive"
+        },
+        {
+          "id": 102,
+          "keys": [
+            "Opt+Cmd+R"
+          ],
+          "effect": "Toggle Find Regex"
+        },
+        {
+          "id": 103,
+          "keys": [
+            "Opt+Cmd+W"
+          ],
+          "effect": "Toggle Find Whole Word"
+        },
+        {
+          "id": 104,
+          "keys": [
+            "Ctrl+Shift+M"
+          ],
+          "effect": "Toggle Use of Tab Key for Setting Focus"
+        },
+        {
+          "id": 105,
+          "keys": [
+            "Opt+Z"
+          ],
+          "effect": "Toggle Word Wrap"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Rich Languages Editing",
+      "bindings": [
+        {
+          "id": 106,
+          "keys": [
+            "Cmd+K F12"
+          ],
+          "effect": "Open Definition to the Side"
+        },
+        {
+          "id": 107,
+          "keys": [
+            "Shift+Cmd+."
+          ],
+          "effect": "Replace with Next Value"
+        },
+        {
+          "id": 108,
+          "keys": [
+            "Shift+Cmd+,"
+          ],
+          "effect": "Replace with Previous Value"
+        },
+        {
+          "id": 109,
+          "keys": [
+            "Cmd+K Cmd+X"
+          ],
+          "effect": "Trim Trailing Whitespace"
+        },
+        {
+          "id": 110,
+          "keys": [
+            "Cmd+K M"
+          ],
+          "effect": "Change Language Mode"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Editor/Window Management",
+      "bindings": [
+        {
+          "id": 114,
+          "keys": [
+            "Shift+Cmd+N"
+          ],
+          "effect": "New Window"
+        },
+        {
+          "id": 115,
+          "keys": [
+            "Shift+Cmd+W"
+          ],
+          "effect": "Close Window"
+        },
+        {
+          "id": 116,
+          "keys": [
+            "Cmd+K F"
+          ],
+          "effect": "Close Folder"
+        },
+        {
+          "id": 117,
+          "keys": [
+            "Cmd+K Cmd+Left"
+          ],
+          "effect": "Focus into Editor Group on the Left"
+        },
+        {
+          "id": 118,
+          "keys": [
+            "Cmd+K Cmd+Right"
+          ],
+          "effect": "Focus into Editor Group on the Right"
+        },
+        {
+          "id": 119,
+          "keys": [
+            "Cmd+K Shift+Cmd+Left"
+          ],
+          "effect": "Move Editor Left"
+        },
+        {
+          "id": 120,
+          "keys": [
+            "Cmd+K Shift+Cmd+Right"
+          ],
+          "effect": "Move Editor Right"
+        },
+        {
+          "id": 121,
+          "keys": [
+            "Cmd+K Left"
+          ],
+          "effect": "Move Active Editor Group Left"
+        },
+        {
+          "id": 122,
+          "keys": [
+            "Cmd+K Right"
+          ],
+          "effect": "Move Active Editor Group Right"
+        },
+        {
+          "id": 123,
+          "keys": [
+            "Ctrl+Cmd+Right"
+          ],
+          "effect": "Move Editor into Next Group"
+        },
+        {
+          "id": 124,
+          "keys": [
+            "Ctrl+Cmd+Left"
+          ],
+          "effect": "Move Editor into Previous Group"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "File Management",
+      "bindings": [
+        {
+          "id": 125,
+          "keys": [
+            "Opt+Cmd+S"
+          ],
+          "effect": "Save All"
+        },
+        {
+          "id": 126,
+          "keys": [
+            "Cmd+K W"
+          ],
+          "effect": "Close Group"
+        },
+        {
+          "id": 127,
+          "keys": [
+            "Cmd+K Cmd+W"
+          ],
+          "effect": "Close All"
+        },
+        {
+          "id": 128,
+          "keys": [
+            "Cmd+K Enter"
+          ],
+          "effect": "Keep Open"
+        },
+        {
+          "id": 129,
+          "keys": [
+            "Cmd+K P"
+          ],
+          "effect": "Copy Path of Active File"
+        },
+        {
+          "id": 130,
+          "keys": [
+            "Cmd+K R"
+          ],
+          "effect": "Reveal Active File in Windows"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Display",
+      "bindings": [
+        {
+          "id": 131,
+          "keys": [
+            "Ctrl+Cmd+F"
+          ],
+          "effect": "Toggle Full Screen"
+        },
+        {
+          "id": 132,
+          "keys": [
+            "Cmd+K Z"
+          ],
+          "effect": "Toggle Zen Mode"
+        },
+        {
+          "id": 133,
+          "keys": [
+            "Esc Esc"
+          ],
+          "effect": "Leave Zen Mode"
+        },
+        {
+          "id": 134,
+          "keys": [
+            "Cmd+="
+          ],
+          "effect": "Zoom in"
+        },
+        {
+          "id": 135,
+          "keys": [
+            "Cmd+-"
+          ],
+          "effect": "Zoom out"
+        },
+        {
+          "id": 136,
+          "keys": [
+            "Cmd+Numpad0"
+          ],
+          "effect": "Reset Zoom"
+        },
+        {
+          "id": 137,
+          "keys": [
+            "Cmd+B"
+          ],
+          "effect": "Toggle Sidebar Visibility"
+        },
+        {
+          "id": 138,
+          "keys": [
+            "Shift+Cmd+E"
+          ],
+          "effect": "Show Explorer / Toggle Focus"
+        },
+        {
+          "id": 139,
+          "keys": [
+            "Shift+Cmd+F"
+          ],
+          "effect": "Show Search"
+        },
+        {
+          "id": 140,
+          "keys": [
+            "Ctrl+Shift+G"
+          ],
+          "effect": "Show Source Control"
+        },
+        {
+          "id": 141,
+          "keys": [
+            "Shift+Cmd+D"
+          ],
+          "effect": "Show Run"
+        },
+        {
+          "id": 142,
+          "keys": [
+            "Shift+Cmd+X"
+          ],
+          "effect": "Show Extensions"
+        },
+        {
+          "id": 143,
+          "keys": [
+            "Shift+Cmd+U"
+          ],
+          "effect": "Show Output"
+        },
+        {
+          "id": 144,
+          "keys": [
+            "Ctrl+Q"
+          ],
+          "effect": "Quick Open View"
+        },
+        {
+          "id": 145,
+          "keys": [
+            "Shift+Cmd+C"
+          ],
+          "effect": "Open New Command Prompt"
+        },
+        {
+          "id": 146,
+          "keys": [
+            "Shift+Cmd+V"
+          ],
+          "effect": "Toggle Markdown Preview"
+        },
+        {
+          "id": 147,
+          "keys": [
+            "Cmd+K V"
+          ],
+          "effect": "Open Preview to the Side"
+        },
+        {
+          "id": 148,
+          "keys": [
+            "Ctrl+`"
+          ],
+          "effect": "Toggle Integrated Terminal"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Search Editor",
+      "bindings": [
+        {
+          "id": 157,
+          "keys": [
+            "Cmd+Enter"
+          ],
+          "effect": "Open Results In Editor"
+        },
+        {
+          "id": 158,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Focus Search Editor Input"
+        },
+        {
+          "id": 159,
+          "keys": [
+            "Shift+Cmd+R"
+          ],
+          "effect": "Search Again"
+        },
+        {
+          "id": 160,
+          "keys": [
+            "Shift+Cmd+Backspace"
+          ],
+          "effect": "Delete File Results"
+        }
+      ],
+      "note": "Focus the search editor context. Some chat actions require the corresponding built-in feature."
+    },
+    {
+      "id": 15,
+      "title": "Preferences",
+      "bindings": [
+        {
+          "id": 161,
+          "keys": [
+            "Cmd+,"
+          ],
+          "effect": "Open Settings"
+        },
+        {
+          "id": 162,
+          "keys": [
+            "Cmd+K Cmd+S"
+          ],
+          "effect": "Open Keyboard Shortcuts"
+        },
+        {
+          "id": 163,
+          "keys": [
+            "Cmd+K Cmd+T"
+          ],
+          "effect": "Select Color Theme"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Chat",
+      "bindings": [
+        {
+          "id": 164,
+          "keys": [
+            "Ctrl+Cmd+I"
+          ],
+          "effect": "Open Chat view"
+        },
+        {
+          "id": 165,
+          "keys": [
+            "Shift+Cmd+I"
+          ],
+          "effect": "Open chat in agent mode"
+        },
+        {
+          "id": 166,
+          "keys": [
+            "Cmd+I"
+          ],
+          "effect": "Open editor inline chat"
+        },
+        {
+          "id": 167,
+          "keys": [
+            "Shift+Opt+Cmd+L"
+          ],
+          "effect": "Open quick chat"
+        },
+        {
+          "id": 168,
+          "keys": [
+            "Cmd+."
+          ],
+          "effect": "Open agent picker"
+        },
+        {
+          "id": 169,
+          "keys": [
+            "Opt+Cmd+."
+          ],
+          "effect": "Open language model picker"
+        },
+        {
+          "id": 170,
+          "keys": [
+            "Cmd+N"
+          ],
+          "effect": "New chat session"
+        },
+        {
+          "id": 171,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Accept inline suggestion"
+        }
+      ],
+      "note": "Focus the chat context. Some chat actions require the corresponding built-in feature."
+    },
+    {
+      "id": 17,
+      "title": "Debug",
+      "bindings": [
+        {
+          "id": 172,
+          "keys": [
+            "Ctrl+F5"
+          ],
+          "effect": "Start (without debugging)"
+        },
+        {
+          "id": 173,
+          "keys": [
+            "F6"
+          ],
+          "effect": "Pause"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Tasks",
+      "bindings": [
+        {
+          "id": 174,
+          "keys": [
+            "Shift+Cmd+B"
+          ],
+          "effect": "Run Build Task"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Integrated terminal",
+      "bindings": [
+        {
+          "id": 175,
+          "keys": [
+            "Cmd+C"
+          ],
+          "effect": "Copy terminal selection"
+        },
+        {
+          "id": 176,
+          "keys": [
+            "Cmd+V"
+          ],
+          "effect": "Paste in terminal"
+        },
+        {
+          "id": 177,
+          "keys": [
+            "Cmd+Up"
+          ],
+          "effect": "Scroll terminal up"
+        },
+        {
+          "id": 178,
+          "keys": [
+            "Cmd+Down"
+          ],
+          "effect": "Scroll terminal down"
+        },
+        {
+          "id": 179,
+          "keys": [
+            "PageUp"
+          ],
+          "effect": "Scroll terminal up one page"
+        },
+        {
+          "id": 180,
+          "keys": [
+            "PageDown"
+          ],
+          "effect": "Scroll terminal down one page"
+        },
+        {
+          "id": 181,
+          "keys": [
+            "Cmd+Home"
+          ],
+          "effect": "Scroll terminal to top"
+        },
+        {
+          "id": 182,
+          "keys": [
+            "Cmd+End"
+          ],
+          "effect": "Scroll terminal to bottom"
+        }
+      ],
+      "note": "Focus the integrated terminal. Shell bindings may also apply."
     }
   ]
 }

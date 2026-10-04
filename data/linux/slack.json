@@ -1,7 +1,7 @@
 {
   "full_name": "Slack",
   "source": "https://slack.com/help/articles/201374536-Slack-keyboard-shortcuts",
-  "note": "Default English keyboard shortcuts. Desktop-only actions are grouped separately.",
+  "note": "English-layout default shortcuts, including canvases and contextual navigation; desktop-only actions are marked.",
   "binding_groups": [
     {
       "id": 1,
@@ -379,6 +379,545 @@
         }
       ],
       "note": "Slack desktop app only."
+    },
+    {
+      "id": 7,
+      "title": "Additional navigation and desktop actions",
+      "bindings": [
+        {
+          "id": 49,
+          "keys": [
+            "Ctrl+Shift+K"
+          ],
+          "effect": "Compose a message"
+        },
+        {
+          "id": 50,
+          "keys": [
+            "Ctrl+Z"
+          ],
+          "effect": "Unsend the last message"
+        },
+        {
+          "id": 51,
+          "keys": [
+            "Ctrl+Shift+N"
+          ],
+          "effect": "Create a canvas"
+        },
+        {
+          "id": 52,
+          "keys": [
+            "Ctrl+Shift+J"
+          ],
+          "effect": "View downloaded files"
+        },
+        {
+          "id": 53,
+          "keys": [
+            "Ctrl+Shift+`"
+          ],
+          "effect": "Add an emoji reaction (US keyboard)"
+        },
+        {
+          "id": 54,
+          "keys": [
+            "Ctrl+Shift+E"
+          ],
+          "effect": "Open People"
+        },
+        {
+          "id": 55,
+          "keys": [
+            "Ctrl+W"
+          ],
+          "effect": "Close window"
+        },
+        {
+          "id": 56,
+          "keys": [
+            "Ctrl+Shift+W"
+          ],
+          "effect": "Reopen closed window"
+        },
+        {
+          "id": 57,
+          "keys": [
+            "Ctrl+Q"
+          ],
+          "effect": "Quit Slack desktop"
+        },
+        {
+          "id": 58,
+          "keys": [
+            "Ctrl+PageUp"
+          ],
+          "effect": "Previous navigation tab"
+        },
+        {
+          "id": 59,
+          "keys": [
+            "Ctrl+PageDown"
+          ],
+          "effect": "Next navigation tab"
+        },
+        {
+          "id": 90,
+          "keys": [
+            "F11"
+          ],
+          "effect": "Toggle full screen"
+        }
+      ],
+      "note": "English keyboard layout; desktop-only actions are identified in their effects."
+    },
+    {
+      "id": 8,
+      "title": "Sidebar resizing",
+      "bindings": [
+        {
+          "id": 60,
+          "keys": [
+            "Left"
+          ],
+          "effect": "Make the left sidebar narrower"
+        },
+        {
+          "id": 61,
+          "keys": [
+            "Right"
+          ],
+          "effect": "Make the left sidebar wider"
+        }
+      ],
+      "note": "Use F6 to focus the sidebar resize control first."
+    },
+    {
+      "id": 9,
+      "title": "All unreads",
+      "bindings": [
+        {
+          "id": 62,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Previous unread message"
+        },
+        {
+          "id": 63,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Next unread message"
+        },
+        {
+          "id": 64,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Mark this message group read"
+        },
+        {
+          "id": 65,
+          "keys": [
+            "Left"
+          ],
+          "effect": "Collapse message group"
+        },
+        {
+          "id": 66,
+          "keys": [
+            "Right"
+          ],
+          "effect": "Expand message group"
+        }
+      ],
+      "note": "Open All unreads with Ctrl+Shift+A."
+    },
+    {
+      "id": 10,
+      "title": "Workspace and tab numbers",
+      "bindings": [
+        {
+          "id": 67,
+          "keys": [
+            "Ctrl+1"
+          ],
+          "effect": "Switch to workspace 1"
+        },
+        {
+          "id": 68,
+          "keys": [
+            "Ctrl+2"
+          ],
+          "effect": "Switch to workspace 2"
+        },
+        {
+          "id": 69,
+          "keys": [
+            "Ctrl+3"
+          ],
+          "effect": "Switch to workspace 3"
+        },
+        {
+          "id": 70,
+          "keys": [
+            "Ctrl+4"
+          ],
+          "effect": "Switch to workspace 4"
+        },
+        {
+          "id": 71,
+          "keys": [
+            "Ctrl+5"
+          ],
+          "effect": "Switch to workspace 5"
+        },
+        {
+          "id": 72,
+          "keys": [
+            "Ctrl+6"
+          ],
+          "effect": "Switch to workspace 6"
+        },
+        {
+          "id": 73,
+          "keys": [
+            "Ctrl+7"
+          ],
+          "effect": "Switch to workspace 7"
+        },
+        {
+          "id": 74,
+          "keys": [
+            "Ctrl+8"
+          ],
+          "effect": "Switch to workspace 8"
+        },
+        {
+          "id": 75,
+          "keys": [
+            "Ctrl+9"
+          ],
+          "effect": "Switch to workspace 9"
+        }
+      ],
+      "note": "Desktop: workspace numbers appear in the workspace switcher."
+    },
+    {
+      "id": 11,
+      "title": "Navigation tab numbers",
+      "bindings": [
+        {
+          "id": 76,
+          "keys": [
+            "Ctrl+Shift+1"
+          ],
+          "effect": "Switch to navigation tab 1"
+        },
+        {
+          "id": 77,
+          "keys": [
+            "Ctrl+Shift+2"
+          ],
+          "effect": "Switch to navigation tab 2"
+        },
+        {
+          "id": 78,
+          "keys": [
+            "Ctrl+Shift+3"
+          ],
+          "effect": "Switch to navigation tab 3"
+        },
+        {
+          "id": 79,
+          "keys": [
+            "Ctrl+Shift+4"
+          ],
+          "effect": "Switch to navigation tab 4"
+        },
+        {
+          "id": 80,
+          "keys": [
+            "Ctrl+Shift+5"
+          ],
+          "effect": "Switch to navigation tab 5"
+        },
+        {
+          "id": 81,
+          "keys": [
+            "Ctrl+Shift+6"
+          ],
+          "effect": "Switch to navigation tab 6"
+        },
+        {
+          "id": 82,
+          "keys": [
+            "Ctrl+Shift+7"
+          ],
+          "effect": "Switch to navigation tab 7"
+        },
+        {
+          "id": 83,
+          "keys": [
+            "Ctrl+Shift+8"
+          ],
+          "effect": "Switch to navigation tab 8"
+        },
+        {
+          "id": 84,
+          "keys": [
+            "Ctrl+Shift+9"
+          ],
+          "effect": "Switch to navigation tab 9"
+        },
+        {
+          "id": 85,
+          "keys": [
+            "Ctrl+Shift+0"
+          ],
+          "effect": "Open More"
+        }
+      ],
+      "note": "Hold Ctrl to show assigned tab numbers. The Home view is tab 1."
+    },
+    {
+      "id": 12,
+      "title": "Message formatting: additional actions",
+      "bindings": [
+        {
+          "id": 86,
+          "keys": [
+            "Shift+Up"
+          ],
+          "effect": "Select to beginning of current line"
+        },
+        {
+          "id": 87,
+          "keys": [
+            "Shift+Down"
+          ],
+          "effect": "Select to end of current line"
+        },
+        {
+          "id": 88,
+          "keys": [
+            "Ctrl+Shift+F"
+          ],
+          "effect": "Apply Markdown formatting"
+        },
+        {
+          "id": 89,
+          "keys": [
+            "Ctrl+V"
+          ],
+          "effect": "Paste; with text selected and a URL copied, link the selection"
+        }
+      ],
+      "note": "Focus the message composer."
+    },
+    {
+      "id": 13,
+      "title": "Canvas: formatting",
+      "bindings": [
+        {
+          "id": 91,
+          "keys": [
+            "Ctrl+Alt+0"
+          ],
+          "effect": "Paragraph"
+        },
+        {
+          "id": 92,
+          "keys": [
+            "Ctrl+Alt+1"
+          ],
+          "effect": "Large heading"
+        },
+        {
+          "id": 93,
+          "keys": [
+            "Ctrl+Alt+2"
+          ],
+          "effect": "Medium heading"
+        },
+        {
+          "id": 94,
+          "keys": [
+            "Ctrl+Alt+3"
+          ],
+          "effect": "Small heading"
+        },
+        {
+          "id": 95,
+          "keys": [
+            "Ctrl+Shift+0"
+          ],
+          "effect": "Checklist"
+        },
+        {
+          "id": 96,
+          "keys": [
+            "Ctrl+Shift+8"
+          ],
+          "effect": "Bulleted list"
+        },
+        {
+          "id": 97,
+          "keys": [
+            "Ctrl+Shift+7"
+          ],
+          "effect": "Numbered list"
+        },
+        {
+          "id": 98,
+          "keys": [
+            "Ctrl+`"
+          ],
+          "effect": "Cycle heading and list styles"
+        },
+        {
+          "id": 99,
+          "keys": [
+            "Ctrl+B"
+          ],
+          "effect": "Bold"
+        },
+        {
+          "id": 100,
+          "keys": [
+            "Ctrl+I"
+          ],
+          "effect": "Italic"
+        },
+        {
+          "id": 101,
+          "keys": [
+            "Ctrl+Shift+X"
+          ],
+          "effect": "Strikethrough"
+        },
+        {
+          "id": 102,
+          "keys": [
+            "Ctrl+Shift+U"
+          ],
+          "effect": "Link"
+        },
+        {
+          "id": 103,
+          "keys": [
+            "Ctrl+Shift+9"
+          ],
+          "effect": "Quote"
+        },
+        {
+          "id": 104,
+          "keys": [
+            "Ctrl+Shift+C"
+          ],
+          "effect": "Inline code"
+        },
+        {
+          "id": 105,
+          "keys": [
+            "Ctrl+Alt+Shift+C"
+          ],
+          "effect": "Code block"
+        }
+      ],
+      "note": "Focus text in a canvas; message formatting shortcuts also apply."
+    },
+    {
+      "id": 14,
+      "title": "Canvas: navigation and editing",
+      "bindings": [
+        {
+          "id": 106,
+          "keys": [
+            "Ctrl+Alt+T"
+          ],
+          "effect": "View comment thread"
+        },
+        {
+          "id": 107,
+          "keys": [
+            "Ctrl+Alt+R"
+          ],
+          "effect": "Switch between reader and edit view"
+        },
+        {
+          "id": 108,
+          "keys": [
+            "Ctrl+F"
+          ],
+          "effect": "Find text"
+        },
+        {
+          "id": 109,
+          "keys": [
+            "Ctrl+G"
+          ],
+          "effect": "Next match"
+        },
+        {
+          "id": 110,
+          "keys": [
+            "Ctrl+Shift+G"
+          ],
+          "effect": "Previous match"
+        },
+        {
+          "id": 111,
+          "keys": [
+            "Ctrl+Shift+H"
+          ],
+          "effect": "Find and replace"
+        },
+        {
+          "id": 112,
+          "keys": [
+            "Ctrl+Alt+Q"
+          ],
+          "effect": "Copy section anchor link"
+        },
+        {
+          "id": 113,
+          "keys": [
+            "Ctrl+Z"
+          ],
+          "effect": "Undo"
+        },
+        {
+          "id": 114,
+          "keys": [
+            "Ctrl+Shift+Z"
+          ],
+          "effect": "Redo"
+        },
+        {
+          "id": 115,
+          "keys": [
+            "Ctrl+Alt+Up"
+          ],
+          "effect": "Move list item up"
+        },
+        {
+          "id": 116,
+          "keys": [
+            "Ctrl+Alt+Down"
+          ],
+          "effect": "Move list item down"
+        },
+        {
+          "id": 117,
+          "keys": [
+            "Shift+F10"
+          ],
+          "effect": "Open context menu"
+        }
+      ],
+      "note": "Focus a canvas. These keys may have different effects in conversations."
     }
   ]
 }

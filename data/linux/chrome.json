@@ -362,6 +362,1214 @@
         }
       ],
       "note": "Sources panel focused. Stepping requires paused execution; toggle breakpoint uses the current editor line."
+    },
+    {
+      "id": 8,
+      "title": "Tab & window shortcuts",
+      "bindings": [
+        {
+          "id": 46,
+          "keys": [
+            "Ctrl+PageDown"
+          ],
+          "effect": "Jump to the next open tab"
+        },
+        {
+          "id": 47,
+          "keys": [
+            "Ctrl+PageUp"
+          ],
+          "effect": "Jump to the previous open tab"
+        },
+        {
+          "id": 48,
+          "keys": [
+            "Ctrl+2"
+          ],
+          "effect": "Switch to tab 2"
+        },
+        {
+          "id": 49,
+          "keys": [
+            "Ctrl+3"
+          ],
+          "effect": "Switch to tab 3"
+        },
+        {
+          "id": 50,
+          "keys": [
+            "Ctrl+4"
+          ],
+          "effect": "Switch to tab 4"
+        },
+        {
+          "id": 51,
+          "keys": [
+            "Ctrl+5"
+          ],
+          "effect": "Switch to tab 5"
+        },
+        {
+          "id": 52,
+          "keys": [
+            "Ctrl+6"
+          ],
+          "effect": "Switch to tab 6"
+        },
+        {
+          "id": 53,
+          "keys": [
+            "Ctrl+7"
+          ],
+          "effect": "Switch to tab 7"
+        },
+        {
+          "id": 54,
+          "keys": [
+            "Ctrl+8"
+          ],
+          "effect": "Switch to tab 8"
+        },
+        {
+          "id": 55,
+          "keys": [
+            "Alt+Home"
+          ],
+          "effect": "Open your home page in the current tab"
+        },
+        {
+          "id": 56,
+          "keys": [
+            "Ctrl+F4"
+          ],
+          "effect": "Close the current tab"
+        },
+        {
+          "id": 57,
+          "keys": [
+            "Alt+F4"
+          ],
+          "effect": "Close the current window"
+        },
+        {
+          "id": 58,
+          "keys": [
+            "Alt+F x"
+          ],
+          "effect": "Quit Google Chrome"
+        },
+        {
+          "id": 59,
+          "keys": [
+            "Ctrl+Shift+PageUp"
+          ],
+          "effect": "Move current tab left"
+        },
+        {
+          "id": 60,
+          "keys": [
+            "Ctrl+Shift+PageDown"
+          ],
+          "effect": "Move current tab right"
+        },
+        {
+          "id": 61,
+          "keys": [
+            "F11"
+          ],
+          "effect": "Turn on full-screen mode"
+        },
+        {
+          "id": 62,
+          "keys": [
+            "F6 F6 Shift+Ctrl+H"
+          ],
+          "effect": "Select multiple tabs"
+        }
+      ],
+      "note": "Chrome default shortcuts; some system keys depend on the desktop environment."
+    },
+    {
+      "id": 9,
+      "title": "Google Chrome feature shortcuts",
+      "bindings": [
+        {
+          "id": 63,
+          "keys": [
+            "Alt+F",
+            "Alt+E"
+          ],
+          "effect": "Open the Chrome menu"
+        },
+        {
+          "id": 64,
+          "keys": [
+            "Shift+Esc"
+          ],
+          "effect": "Open the Chrome Task Manager"
+        },
+        {
+          "id": 65,
+          "keys": [
+            "Shift+Alt+T"
+          ],
+          "effect": "Set focus on the first item in the Chrome toolbar"
+        },
+        {
+          "id": 66,
+          "keys": [
+            "F10"
+          ],
+          "effect": "Set focus on the rightmost item in the Chrome toolbar"
+        },
+        {
+          "id": 67,
+          "keys": [
+            "F6"
+          ],
+          "effect": "Switch focus to unfocused dialog (if showing) and all toolbars"
+        },
+        {
+          "id": 68,
+          "keys": [
+            "F3"
+          ],
+          "effect": "Open the Find Bar to search the current page"
+        },
+        {
+          "id": 69,
+          "keys": [
+            "F12"
+          ],
+          "effect": "Open Developer Tools"
+        },
+        {
+          "id": 70,
+          "keys": [
+            "Ctrl+Shift+Delete"
+          ],
+          "effect": "Open the Delete Browsing Data options"
+        },
+        {
+          "id": 71,
+          "keys": [
+            "F1"
+          ],
+          "effect": "Open the Chrome Help Center in a new tab"
+        },
+        {
+          "id": 72,
+          "keys": [
+            "Ctrl+Shift+M"
+          ],
+          "effect": "Log in a different user or browse as a Guest"
+        },
+        {
+          "id": 73,
+          "keys": [
+            "Alt+Shift+I"
+          ],
+          "effect": "Open a feedback form"
+        },
+        {
+          "id": 74,
+          "keys": [
+            "F7"
+          ],
+          "effect": "Turn on caret browsing"
+        },
+        {
+          "id": 75,
+          "keys": [
+            "Ctrl+F6"
+          ],
+          "effect": "Skip to web contents"
+        },
+        {
+          "id": 76,
+          "keys": [
+            "Alt+Shift+A"
+          ],
+          "effect": "Focus on inactive dialogs"
+        },
+        {
+          "id": 77,
+          "keys": [
+            "Shift+Alt+N"
+          ],
+          "effect": "Open split view in the active tab"
+        }
+      ],
+      "note": "Chrome default shortcuts; some system keys depend on the desktop environment."
+    },
+    {
+      "id": 10,
+      "title": "Address bar shortcuts",
+      "bindings": [
+        {
+          "id": 78,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Search with your default search engine"
+        },
+        {
+          "id": 79,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Choose named search engine after typing its keyword"
+        },
+        {
+          "id": 80,
+          "keys": [
+            "Ctrl+Enter"
+          ],
+          "effect": "Add `www.` and `.com` to a site name, and open it in the current tab"
+        },
+        {
+          "id": 81,
+          "keys": [
+            "Ctrl+Shift+Enter"
+          ],
+          "effect": "Add `www.` and `.com` to a site name, and open it in a new window"
+        },
+        {
+          "id": 82,
+          "keys": [
+            "Alt+Enter"
+          ],
+          "effect": "Open a new tab and perform a Google search"
+        },
+        {
+          "id": 83,
+          "keys": [
+            "Ctrl+L",
+            "Alt+D",
+            "F6"
+          ],
+          "effect": "Jump to the address bar"
+        },
+        {
+          "id": 84,
+          "keys": [
+            "Ctrl+K",
+            "Ctrl+E"
+          ],
+          "effect": "Search from anywhere on the page"
+        },
+        {
+          "id": 85,
+          "keys": [
+            "Shift+Delete"
+          ],
+          "effect": "Remove highlighted address prediction"
+        },
+        {
+          "id": 86,
+          "keys": [
+            "Ctrl+F5"
+          ],
+          "effect": "Move cursor to the address bar"
+        }
+      ],
+      "note": "Focus the address bar."
+    },
+    {
+      "id": 11,
+      "title": "Webpage shortcuts",
+      "bindings": [
+        {
+          "id": 87,
+          "keys": [
+            "F5"
+          ],
+          "effect": "Reload the current page"
+        },
+        {
+          "id": 88,
+          "keys": [
+            "Shift+F5"
+          ],
+          "effect": "Reload the current page, ignoring cached content"
+        },
+        {
+          "id": 89,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Browse clickable items moving forward"
+        },
+        {
+          "id": 90,
+          "keys": [
+            "Shift+Tab"
+          ],
+          "effect": "Browse clickable items moving backward"
+        },
+        {
+          "id": 91,
+          "keys": [
+            "Ctrl+O"
+          ],
+          "effect": "Open a file from your computer in Chrome"
+        },
+        {
+          "id": 92,
+          "keys": [
+            "Ctrl+U"
+          ],
+          "effect": "Display non-editable HTML source code for the current page"
+        },
+        {
+          "id": 93,
+          "keys": [
+            "Space",
+            "PageDown"
+          ],
+          "effect": "Scroll down a webpage, a screen at a time"
+        },
+        {
+          "id": 94,
+          "keys": [
+            "Shift+Space",
+            "PageUp"
+          ],
+          "effect": "Scroll up a webpage, a screen at a time"
+        },
+        {
+          "id": 95,
+          "keys": [
+            "Home"
+          ],
+          "effect": "Go to the top of the page"
+        },
+        {
+          "id": 96,
+          "keys": [
+            "End"
+          ],
+          "effect": "Go to the bottom of the page"
+        },
+        {
+          "id": 97,
+          "keys": [
+            "Shift+Scroll your mousewheel"
+          ],
+          "effect": "Scroll horizontally on the page"
+        },
+        {
+          "id": 98,
+          "keys": [
+            "Ctrl+Left"
+          ],
+          "effect": "Move your cursor to the beginning of the previous word in a text field"
+        },
+        {
+          "id": 99,
+          "keys": [
+            "Ctrl+Right"
+          ],
+          "effect": "Move your cursor to the next word"
+        },
+        {
+          "id": 100,
+          "keys": [
+            "Ctrl+Backspace"
+          ],
+          "effect": "Delete the previous word in a text field"
+        }
+      ],
+      "note": "Chrome default shortcuts; some system keys depend on the desktop environment."
+    },
+    {
+      "id": 12,
+      "title": "Tab strip and groups",
+      "bindings": [
+        {
+          "id": 101,
+          "keys": [
+            "Space"
+          ],
+          "effect": "Toggle focused tab group"
+        },
+        {
+          "id": 102,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Toggle focused tab group"
+        },
+        {
+          "id": 103,
+          "keys": [
+            "Ctrl+Left"
+          ],
+          "effect": "Move focused tab or group left"
+        },
+        {
+          "id": 104,
+          "keys": [
+            "Ctrl+Right"
+          ],
+          "effect": "Move focused tab or group right"
+        }
+      ],
+      "note": "Focus a tab or tab-group header first."
+    },
+    {
+      "id": 13,
+      "title": "DevTools: Keyboard shortcuts for opening DevTools",
+      "bindings": [
+        {
+          "id": 105,
+          "keys": [
+            "F12",
+            "Ctrl+Shift+I"
+          ],
+          "effect": "Open whatever panel you used last"
+        },
+        {
+          "id": 106,
+          "keys": [
+            "Ctrl+Shift+J"
+          ],
+          "effect": "Open the Console panel"
+        },
+        {
+          "id": 107,
+          "keys": [
+            "Ctrl+Shift+C"
+          ],
+          "effect": "Open the Elements panel"
+        }
+      ],
+      "note": "Focus this DevTools panel or editor; these bindings are independent of browser-page shortcuts."
+    },
+    {
+      "id": 14,
+      "title": "DevTools: Global",
+      "bindings": [
+        {
+          "id": 108,
+          "keys": [
+            "?",
+            "F1"
+          ],
+          "effect": "Show Settings"
+        },
+        {
+          "id": 109,
+          "keys": [
+            "Ctrl+]"
+          ],
+          "effect": "Focus the next panel"
+        },
+        {
+          "id": 110,
+          "keys": [
+            "Ctrl+["
+          ],
+          "effect": "Focus the previous panel"
+        },
+        {
+          "id": 111,
+          "keys": [
+            "Ctrl+Shift+D"
+          ],
+          "effect": "Switch back to whatever docking position you last used"
+        },
+        {
+          "id": 112,
+          "keys": [
+            "Ctrl+Shift+M"
+          ],
+          "effect": "Toggle Device Mode"
+        },
+        {
+          "id": 113,
+          "keys": [
+            "Ctrl+Shift+C"
+          ],
+          "effect": "Toggle Inspect Element Mode"
+        },
+        {
+          "id": 114,
+          "keys": [
+            "Ctrl+Shift+P"
+          ],
+          "effect": "Open the Command Menu"
+        },
+        {
+          "id": 115,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Toggle the Drawer"
+        },
+        {
+          "id": 116,
+          "keys": [
+            "F5",
+            "Ctrl+R"
+          ],
+          "effect": "Normal reload"
+        },
+        {
+          "id": 117,
+          "keys": [
+            "Ctrl+F5",
+            "Ctrl+Shift+R"
+          ],
+          "effect": "Hard reload"
+        },
+        {
+          "id": 118,
+          "keys": [
+            "Ctrl+F"
+          ],
+          "effect": "Search for text within the current panel"
+        },
+        {
+          "id": 119,
+          "keys": [
+            "Ctrl+Shift+F"
+          ],
+          "effect": "Opens the Search tab in the Drawer, which lets you search for text across all loaded resources"
+        },
+        {
+          "id": 120,
+          "keys": [
+            "Ctrl+O",
+            "Ctrl+P"
+          ],
+          "effect": "Open a file in the Sources panel"
+        },
+        {
+          "id": 121,
+          "keys": [
+            "Ctrl+Shift+Plus"
+          ],
+          "effect": "Zoom in"
+        },
+        {
+          "id": 122,
+          "keys": [
+            "Ctrl+-"
+          ],
+          "effect": "Zoom out"
+        },
+        {
+          "id": 123,
+          "keys": [
+            "Ctrl+0"
+          ],
+          "effect": "Restore default zoom level"
+        }
+      ],
+      "note": "Focus this DevTools panel or editor; these bindings are independent of browser-page shortcuts."
+    },
+    {
+      "id": 15,
+      "title": "DevTools: Elements panel",
+      "bindings": [
+        {
+          "id": 124,
+          "keys": [
+            "Ctrl+Z"
+          ],
+          "effect": "Undo change"
+        },
+        {
+          "id": 125,
+          "keys": [
+            "Ctrl+Y"
+          ],
+          "effect": "Redo change"
+        },
+        {
+          "id": 126,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Select previous DOM node"
+        },
+        {
+          "id": 127,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Select next DOM node"
+        },
+        {
+          "id": 128,
+          "keys": [
+            "Right"
+          ],
+          "effect": "Expand the currently-selected node"
+        },
+        {
+          "id": 129,
+          "keys": [
+            "Left"
+          ],
+          "effect": "Collapse the currently-selected node"
+        },
+        {
+          "id": 130,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Toggle Edit Attributes mode on the currently-selected element"
+        },
+        {
+          "id": 131,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Next HTML attribute"
+        },
+        {
+          "id": 132,
+          "keys": [
+            "Shift+Tab"
+          ],
+          "effect": "Previous HTML attribute"
+        },
+        {
+          "id": 133,
+          "keys": [
+            "h"
+          ],
+          "effect": "Hide the currently-selected element"
+        },
+        {
+          "id": 134,
+          "keys": [
+            "F2"
+          ],
+          "effect": "Toggle Edit as HTML mode on the currently-selected element"
+        }
+      ],
+      "note": "Focus this DevTools panel or editor; these bindings are independent of browser-page shortcuts."
+    },
+    {
+      "id": 16,
+      "title": "DevTools: Styles pane",
+      "bindings": [
+        {
+          "id": 135,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Previous CSS rule"
+        },
+        {
+          "id": 136,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Next CSS rule"
+        },
+        {
+          "id": 137,
+          "keys": [
+            "Left"
+          ],
+          "effect": "Previous property or control"
+        },
+        {
+          "id": 138,
+          "keys": [
+            "Right"
+          ],
+          "effect": "Next property or control"
+        },
+        {
+          "id": 139,
+          "keys": [
+            "Alt+Down"
+          ],
+          "effect": "Open the CSS value tooltip when focusing a function in a property value (e.g., var, calc, clamp, etc., identified by a dotted underline)"
+        },
+        {
+          "id": 140,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Edit next property or value"
+        },
+        {
+          "id": 141,
+          "keys": [
+            "Shift+Tab"
+          ],
+          "effect": "Edit previous property or value"
+        },
+        {
+          "id": 142,
+          "keys": [
+            "Alt+Up"
+          ],
+          "effect": "Increase a property value by 0.1"
+        },
+        {
+          "id": 143,
+          "keys": [
+            "Shift+Up"
+          ],
+          "effect": "Increase a property value by 10"
+        },
+        {
+          "id": 144,
+          "keys": [
+            "Shift+Down"
+          ],
+          "effect": "Decrease a property value by 10"
+        },
+        {
+          "id": 145,
+          "keys": [
+            "Ctrl+Up"
+          ],
+          "effect": "Increase a property value by 100"
+        },
+        {
+          "id": 146,
+          "keys": [
+            "Ctrl+Down"
+          ],
+          "effect": "Decrease a property value by 100"
+        }
+      ],
+      "note": "Focus this DevTools panel or editor; these bindings are independent of browser-page shortcuts."
+    },
+    {
+      "id": 17,
+      "title": "DevTools: Sources panel",
+      "bindings": [
+        {
+          "id": 147,
+          "keys": [
+            "F8",
+            "Ctrl+\\"
+          ],
+          "effect": "Pause script execution (if currently running) or resume (if currently paused)"
+        },
+        {
+          "id": 148,
+          "keys": [
+            "F10",
+            "Ctrl+'"
+          ],
+          "effect": "Step over next function call"
+        },
+        {
+          "id": 149,
+          "keys": [
+            "F11",
+            "Ctrl+;"
+          ],
+          "effect": "Step into next function call"
+        },
+        {
+          "id": 150,
+          "keys": [
+            "Shift+F11",
+            "Ctrl+Shift+;"
+          ],
+          "effect": "Step out of current function"
+        },
+        {
+          "id": 151,
+          "keys": [
+            "Ctrl+."
+          ],
+          "effect": "Select next call frame"
+        },
+        {
+          "id": 152,
+          "keys": [
+            "Ctrl+,"
+          ],
+          "effect": "Select previous call frame"
+        },
+        {
+          "id": 153,
+          "keys": [
+            "Ctrl+S"
+          ],
+          "effect": "Save changes to local modifications"
+        },
+        {
+          "id": 154,
+          "keys": [
+            "Ctrl+Alt+S"
+          ],
+          "effect": "Save all changes"
+        },
+        {
+          "id": 155,
+          "keys": [
+            "Ctrl+G"
+          ],
+          "effect": "Go to line"
+        },
+        {
+          "id": 156,
+          "keys": [
+            "Alt+W"
+          ],
+          "effect": "Close the active tab"
+        },
+        {
+          "id": 157,
+          "keys": [
+            "Ctrl+PageUp"
+          ],
+          "effect": "Previous Sources tab"
+        },
+        {
+          "id": 158,
+          "keys": [
+            "Ctrl+PageDown"
+          ],
+          "effect": "Next Sources tab"
+        },
+        {
+          "id": 159,
+          "keys": [
+            "Ctrl+Shift+Y"
+          ],
+          "effect": "Toggle the Navigation sidebar on the left"
+        },
+        {
+          "id": 160,
+          "keys": [
+            "Ctrl+Shift+H"
+          ],
+          "effect": "Toggle the Debugger sidebar on the right"
+        }
+      ],
+      "note": "Focus this DevTools panel or editor; these bindings are independent of browser-page shortcuts."
+    },
+    {
+      "id": 18,
+      "title": "DevTools: Code Editor",
+      "bindings": [
+        {
+          "id": 161,
+          "keys": [
+            "Ctrl+Delete"
+          ],
+          "effect": "Delete all characters in the last word, up to the cursor"
+        },
+        {
+          "id": 162,
+          "keys": [
+            "Ctrl+B"
+          ],
+          "effect": "Add or remove a line-of-code breakpoint"
+        },
+        {
+          "id": 163,
+          "keys": [
+            "Ctrl+Alt+B"
+          ],
+          "effect": "Open the breakpoint edit dialog to edit conditional breakpoints or logpoints"
+        },
+        {
+          "id": 164,
+          "keys": [
+            "Ctrl+M"
+          ],
+          "effect": "Go to matching bracket"
+        },
+        {
+          "id": 165,
+          "keys": [
+            "Ctrl+/"
+          ],
+          "effect": "Toggle single-line comment"
+        },
+        {
+          "id": 166,
+          "keys": [
+            "Ctrl+D"
+          ],
+          "effect": "Select next matching occurrence"
+        },
+        {
+          "id": 167,
+          "keys": [
+            "Ctrl+U"
+          ],
+          "effect": "Undo last occurrence selection"
+        }
+      ],
+      "note": "Focus this DevTools panel or editor; these bindings are independent of browser-page shortcuts."
+    },
+    {
+      "id": 19,
+      "title": "DevTools: Network panel",
+      "bindings": [
+        {
+          "id": 168,
+          "keys": [
+            "Ctrl+F"
+          ],
+          "effect": "Search headers, payloads, and responses"
+        },
+        {
+          "id": 169,
+          "keys": [
+            "Ctrl+E"
+          ],
+          "effect": "Start / stop recording"
+        },
+        {
+          "id": 170,
+          "keys": [
+            "Ctrl+R"
+          ],
+          "effect": "Record a reload"
+        },
+        {
+          "id": 171,
+          "keys": [
+            "r"
+          ],
+          "effect": "Replay a selected XHR request"
+        },
+        {
+          "id": 172,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Hide the details of a selected request"
+        }
+      ],
+      "note": "Focus this DevTools panel or editor; these bindings are independent of browser-page shortcuts."
+    },
+    {
+      "id": 20,
+      "title": "DevTools: Performance panel",
+      "bindings": [
+        {
+          "id": 173,
+          "keys": [
+            "Ctrl+E"
+          ],
+          "effect": "Start / stop recording"
+        },
+        {
+          "id": 174,
+          "keys": [
+            "Ctrl+S"
+          ],
+          "effect": "Save recording"
+        },
+        {
+          "id": 175,
+          "keys": [
+            "Ctrl+O"
+          ],
+          "effect": "Load recording"
+        }
+      ],
+      "note": "Focus this DevTools panel or editor; these bindings are independent of browser-page shortcuts."
+    },
+    {
+      "id": 21,
+      "title": "DevTools: Memory panel",
+      "bindings": [
+        {
+          "id": 176,
+          "keys": [
+            "Ctrl+E"
+          ],
+          "effect": "Start / stop recording"
+        }
+      ],
+      "note": "Focus this DevTools panel or editor; these bindings are independent of browser-page shortcuts."
+    },
+    {
+      "id": 22,
+      "title": "DevTools: Console panel",
+      "bindings": [
+        {
+          "id": 177,
+          "keys": [
+            "Right",
+            "Tab"
+          ],
+          "effect": "Accept autocomplete suggestion"
+        },
+        {
+          "id": 178,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Reject autocomplete suggestion"
+        },
+        {
+          "id": 179,
+          "keys": [
+            "Up",
+            "Ctrl+P"
+          ],
+          "effect": "Previous completion"
+        },
+        {
+          "id": 180,
+          "keys": [
+            "Down",
+            "Ctrl+N"
+          ],
+          "effect": "Next completion"
+        },
+        {
+          "id": 181,
+          "keys": [
+            "Ctrl+`"
+          ],
+          "effect": "Focus the Console"
+        },
+        {
+          "id": 182,
+          "keys": [
+            "Ctrl+L"
+          ],
+          "effect": "Clear the Console"
+        },
+        {
+          "id": 183,
+          "keys": [
+            "Shift+Enter"
+          ],
+          "effect": "Force a multi-line entry"
+        },
+        {
+          "id": 184,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Execute"
+        }
+      ],
+      "note": "Focus this DevTools panel or editor; these bindings are independent of browser-page shortcuts."
+    },
+    {
+      "id": 23,
+      "title": "DevTools: Search tab",
+      "bindings": [
+        {
+          "id": 185,
+          "keys": [
+            "Ctrl+Shift+{"
+          ],
+          "effect": "Collapse all search results"
+        },
+        {
+          "id": 186,
+          "keys": [
+            "Ctrl+Shift+}"
+          ],
+          "effect": "Expand all search results"
+        }
+      ],
+      "note": "Focus this DevTools panel or editor; these bindings are independent of browser-page shortcuts."
+    },
+    {
+      "id": 24,
+      "title": "DevTools: Recorder panel",
+      "bindings": [
+        {
+          "id": 187,
+          "keys": [
+            "Ctrl+E"
+          ],
+          "effect": "Start or stop recording"
+        },
+        {
+          "id": 188,
+          "keys": [
+            "Ctrl+Enter"
+          ],
+          "effect": "Replay recording"
+        },
+        {
+          "id": 189,
+          "keys": [
+            "Ctrl+C"
+          ],
+          "effect": "Copy recording or selected step"
+        },
+        {
+          "id": 190,
+          "keys": [
+            "Ctrl+B"
+          ],
+          "effect": "Toggle code view"
+        }
+      ],
+      "note": "Focus this DevTools panel or editor; these bindings are independent of browser-page shortcuts."
+    },
+    {
+      "id": 25,
+      "title": "DevTools: Layers panel",
+      "bindings": [
+        {
+          "id": 191,
+          "keys": [
+            "w"
+          ],
+          "effect": "Move layer diagram up"
+        },
+        {
+          "id": 192,
+          "keys": [
+            "a"
+          ],
+          "effect": "Move layer diagram left"
+        },
+        {
+          "id": 193,
+          "keys": [
+            "s"
+          ],
+          "effect": "Move layer diagram down"
+        },
+        {
+          "id": 194,
+          "keys": [
+            "d"
+          ],
+          "effect": "Move layer diagram right"
+        },
+        {
+          "id": 195,
+          "keys": [
+            "x"
+          ],
+          "effect": "Toggle pan mode"
+        },
+        {
+          "id": 196,
+          "keys": [
+            "v"
+          ],
+          "effect": "Toggle rotate mode"
+        },
+        {
+          "id": 197,
+          "keys": [
+            "0"
+          ],
+          "effect": "Reset the diagram's position and rotation"
+        }
+      ],
+      "note": "Focus this DevTools panel or editor; these bindings are independent of browser-page shortcuts."
     }
   ],
   "aliases": [

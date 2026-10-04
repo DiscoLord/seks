@@ -499,6 +499,358 @@
           "effect": "Submit input"
         }
       ]
+    },
+    {
+      "id": 7,
+      "title": "Additional pager keys",
+      "bindings": [
+        {
+          "id": 62,
+          "keys": [
+            "Esc j"
+          ],
+          "effect": "Forward one file line"
+        },
+        {
+          "id": 63,
+          "keys": [
+            "Esc k"
+          ],
+          "effect": "Backward one file line"
+        },
+        {
+          "id": 64,
+          "keys": [
+            "Esc Space"
+          ],
+          "effect": "Forward a window, allowing movement past end of file"
+        },
+        {
+          "id": 65,
+          "keys": [
+            "Esc b"
+          ],
+          "effect": "Backward a window, allowing movement before file start"
+        },
+        {
+          "id": 66,
+          "keys": [
+            "Esc ]",
+            "Esc Right"
+          ],
+          "effect": "Scroll right, stopping at the longest line"
+        },
+        {
+          "id": 67,
+          "keys": [
+            "Esc }"
+          ],
+          "effect": "Scroll to the last displayed column"
+        },
+        {
+          "id": 68,
+          "keys": [
+            "Esc {"
+          ],
+          "effect": "Scroll to the first column"
+        },
+        {
+          "id": 69,
+          "keys": [
+            "Esc f"
+          ],
+          "effect": "Follow new input and ring bell when a search matches"
+        },
+        {
+          "id": 70,
+          "keys": [
+            "Ctrl+O Ctrl+N",
+            "Ctrl+O n"
+          ],
+          "effect": "Find next OSC8 hyperlink"
+        },
+        {
+          "id": 71,
+          "keys": [
+            "Ctrl+O Ctrl+P",
+            "Ctrl+O p"
+          ],
+          "effect": "Find previous OSC8 hyperlink"
+        },
+        {
+          "id": 72,
+          "keys": [
+            "Ctrl+O Ctrl+L",
+            "Ctrl+O l"
+          ],
+          "effect": "Jump to selected OSC8 hyperlink"
+        },
+        {
+          "id": 73,
+          "keys": [
+            "Ctrl+O Ctrl+O"
+          ],
+          "effect": "Open selected OSC8 hyperlink"
+        },
+        {
+          "id": 74,
+          "keys": [
+            "Esc Ctrl+F"
+          ],
+          "effect": "Find matching closing bracket; then enter opening and closing characters"
+        },
+        {
+          "id": 75,
+          "keys": [
+            "Esc Ctrl+B"
+          ],
+          "effect": "Find matching opening bracket; then enter opening and closing characters"
+        },
+        {
+          "id": 76,
+          "keys": [
+            "Esc m"
+          ],
+          "effect": "Clear mark; then enter a letter"
+        },
+        {
+          "id": 77,
+          "keys": [
+            "Ctrl+X Ctrl+X"
+          ],
+          "effect": "Return to previous position"
+        },
+        {
+          "id": 78,
+          "keys": [
+            "_ _"
+          ],
+          "effect": "Display option value by name; then enter name"
+        },
+        {
+          "id": 79,
+          "keys": [
+            "Plus"
+          ],
+          "effect": "Set a command to run when opening each file; then enter a less command"
+        },
+        {
+          "id": 80,
+          "keys": [
+            "#"
+          ],
+          "effect": "Run a shell command with prompt-style expansion"
+        }
+      ],
+      "note": "Pager context. Esc-prefixed alternatives are consecutive keys; counts may precede supported actions."
+    },
+    {
+      "id": 8,
+      "title": "Line editing",
+      "bindings": [
+        {
+          "id": 81,
+          "keys": [
+            "Right",
+            "Esc l"
+          ],
+          "effect": "Next character"
+        },
+        {
+          "id": 82,
+          "keys": [
+            "Left",
+            "Esc h"
+          ],
+          "effect": "Previous character"
+        },
+        {
+          "id": 83,
+          "keys": [
+            "Ctrl+Right",
+            "Esc Right",
+            "Esc w"
+          ],
+          "effect": "Next word"
+        },
+        {
+          "id": 84,
+          "keys": [
+            "Ctrl+Left",
+            "Esc Left",
+            "Esc b"
+          ],
+          "effect": "Previous word"
+        },
+        {
+          "id": 85,
+          "keys": [
+            "Home",
+            "Esc 0"
+          ],
+          "effect": "Input start"
+        },
+        {
+          "id": 86,
+          "keys": [
+            "End",
+            "Esc $"
+          ],
+          "effect": "Input end"
+        },
+        {
+          "id": 87,
+          "keys": [
+            "Backspace"
+          ],
+          "effect": "Delete previous character"
+        },
+        {
+          "id": 88,
+          "keys": [
+            "Delete",
+            "Esc x"
+          ],
+          "effect": "Delete current character"
+        },
+        {
+          "id": 89,
+          "keys": [
+            "Ctrl+Backspace",
+            "Esc Backspace"
+          ],
+          "effect": "Delete previous word"
+        },
+        {
+          "id": 90,
+          "keys": [
+            "Ctrl+Delete",
+            "Esc Delete",
+            "Esc X"
+          ],
+          "effect": "Delete next word"
+        },
+        {
+          "id": 91,
+          "keys": [
+            "Ctrl+U"
+          ],
+          "effect": "Delete entire input line"
+        },
+        {
+          "id": 92,
+          "keys": [
+            "Insert",
+            "Esc i"
+          ],
+          "effect": "Toggle insert and overwrite"
+        },
+        {
+          "id": 93,
+          "keys": [
+            "Up",
+            "Esc k"
+          ],
+          "effect": "Previous command line"
+        },
+        {
+          "id": 94,
+          "keys": [
+            "Down",
+            "Esc j"
+          ],
+          "effect": "Next command line"
+        },
+        {
+          "id": 95,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Complete filename; next completion"
+        },
+        {
+          "id": 96,
+          "keys": [
+            "Shift+Tab",
+            "Esc Tab"
+          ],
+          "effect": "Previous filename completion"
+        },
+        {
+          "id": 97,
+          "keys": [
+            "Ctrl+L"
+          ],
+          "effect": "List filename completions"
+        }
+      ],
+      "note": "While typing a search, filename, or other input at the bottom of the pager."
+    },
+    {
+      "id": 9,
+      "title": "Search pattern prefixes",
+      "bindings": [
+        {
+          "id": 98,
+          "keys": [
+            "Ctrl+N",
+            "!"
+          ],
+          "effect": "Find nonmatching lines"
+        },
+        {
+          "id": 99,
+          "keys": [
+            "Ctrl+E",
+            "*"
+          ],
+          "effect": "Search across files"
+        },
+        {
+          "id": 100,
+          "keys": [
+            "Ctrl+F",
+            "@"
+          ],
+          "effect": "Start at first file for forward search or last file for backward search"
+        },
+        {
+          "id": 101,
+          "keys": [
+            "Ctrl+K"
+          ],
+          "effect": "Highlight matches without moving"
+        },
+        {
+          "id": 102,
+          "keys": [
+            "Ctrl+R"
+          ],
+          "effect": "Use a literal pattern"
+        },
+        {
+          "id": 103,
+          "keys": [
+            "Ctrl+S"
+          ],
+          "effect": "Match a chosen parenthesized subpattern; then enter its number"
+        },
+        {
+          "id": 104,
+          "keys": [
+            "Ctrl+W"
+          ],
+          "effect": "Wrap the search"
+        },
+        {
+          "id": 105,
+          "keys": [
+            "Ctrl+L"
+          ],
+          "effect": "Insert next character literally"
+        }
+      ],
+      "note": "Immediately after starting a search and before entering its pattern."
     }
   ]
 }

@@ -393,7 +393,7 @@
     {
       "id": 4,
       "title": "Files panel",
-      "note": "Focus Files with 2. Staging, committing and discarding affect the repository.",
+      "note": "Default config keybindings. Panel-specific actions take precedence; use ? in that panel.",
       "bindings": [
         {
           "id": 51,
@@ -555,6 +555,13 @@
             "M"
           ],
           "effect": "Open merge options"
+        },
+        {
+          "id": 141,
+          "keys": [
+            "x"
+          ],
+          "effect": "Confirm discard"
         }
       ]
     },
@@ -673,7 +680,7 @@
     {
       "id": 6,
       "title": "Commits panel",
-      "note": "Focus Commits with 4. Reordering, squashing, fixups and amending rewrite history.",
+      "note": "Default config keybindings. Panel-specific actions take precedence; use ? in that panel.",
       "bindings": [
         {
           "id": 89,
@@ -821,6 +828,69 @@
             "Ctrl+L"
           ],
           "effect": "Open log options"
+        },
+        {
+          "id": 159,
+          "keys": [
+            "c"
+          ],
+          "effect": "Set fixup message"
+        },
+        {
+          "id": 160,
+          "keys": [
+            "Alt+Down"
+          ],
+          "effect": "Move down commit"
+        },
+        {
+          "id": 161,
+          "keys": [
+            "Alt+Up"
+          ],
+          "effect": "Move up commit"
+        },
+        {
+          "id": 162,
+          "keys": [
+            "a"
+          ],
+          "effect": "Reset commit author"
+        },
+        {
+          "id": 163,
+          "keys": [
+            "p"
+          ],
+          "effect": "Pick commit"
+        },
+        {
+          "id": 164,
+          "keys": [
+            "B"
+          ],
+          "effect": "Mark commit as base for rebase"
+        },
+        {
+          "id": 165,
+          "keys": [
+            "o"
+          ],
+          "effect": "Open in browser"
+        },
+        {
+          "id": 166,
+          "keys": [
+            "G"
+          ],
+          "effect": "Open pull request in browser"
+        },
+        {
+          "id": 167,
+          "keys": [
+            "*"
+          ],
+          "effect": "Select commits of current branch"
         }
       ]
     },
@@ -916,6 +986,405 @@
           "effect": "Edit selected hunk"
         }
       ]
+    },
+    {
+      "id": 9,
+      "title": "Shared default actions",
+      "bindings": [
+        {
+          "id": 121,
+          "keys": [
+            "Ctrl+Z"
+          ],
+          "effect": "Suspend app"
+        },
+        {
+          "id": 122,
+          "keys": [
+            "Ctrl+Left"
+          ],
+          "effect": "Move word left"
+        },
+        {
+          "id": 123,
+          "keys": [
+            "Ctrl+Right"
+          ],
+          "effect": "Move word right"
+        },
+        {
+          "id": 124,
+          "keys": [
+            "Ctrl+Backspace"
+          ],
+          "effect": "Backspace word"
+        },
+        {
+          "id": 125,
+          "keys": [
+            "Ctrl+Delete"
+          ],
+          "effect": "Forward delete word"
+        },
+        {
+          "id": 126,
+          "keys": [
+            "Space"
+          ],
+          "effect": "Select"
+        },
+        {
+          "id": 127,
+          "keys": [
+            "Ctrl+Enter"
+          ],
+          "effect": "Confirm in editor"
+        },
+        {
+          "id": 128,
+          "keys": [
+            "d"
+          ],
+          "effect": "Remove"
+        },
+        {
+          "id": 129,
+          "keys": [
+            "w"
+          ],
+          "effect": "New worktree"
+        },
+        {
+          "id": 130,
+          "keys": [
+            "e"
+          ],
+          "effect": "Edit"
+        },
+        {
+          "id": 131,
+          "keys": [
+            "o"
+          ],
+          "effect": "Open file"
+        },
+        {
+          "id": 132,
+          "keys": [
+            "m"
+          ],
+          "effect": "Create rebase options menu"
+        },
+        {
+          "id": 133,
+          "keys": [
+            "@"
+          ],
+          "effect": "Extras menu"
+        },
+        {
+          "id": 134,
+          "keys": [
+            ")"
+          ],
+          "effect": "Increase rename similarity threshold"
+        },
+        {
+          "id": 135,
+          "keys": [
+            "("
+          ],
+          "effect": "Decrease rename similarity threshold"
+        },
+        {
+          "id": 136,
+          "keys": [
+            "Alt+Shift+C"
+          ],
+          "effect": "Edit config"
+        }
+      ],
+      "note": "Default config keybindings. Panel-specific actions take precedence; use ? in that panel."
+    },
+    {
+      "id": 10,
+      "title": "Status panel",
+      "bindings": [
+        {
+          "id": 137,
+          "keys": [
+            "u"
+          ],
+          "effect": "Check for update"
+        },
+        {
+          "id": 138,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Recent repos"
+        },
+        {
+          "id": 139,
+          "keys": [
+            "a"
+          ],
+          "effect": "All branches log graph"
+        },
+        {
+          "id": 140,
+          "keys": [
+            "A"
+          ],
+          "effect": "All branches log graph reverse"
+        }
+      ],
+      "note": "Default config keybindings. Panel-specific actions take precedence; use ? in that panel."
+    },
+    {
+      "id": 11,
+      "title": "Branches and remotes: additional actions",
+      "bindings": [
+        {
+          "id": 142,
+          "keys": [
+            "o"
+          ],
+          "effect": "Create pull request"
+        },
+        {
+          "id": 143,
+          "keys": [
+            "O"
+          ],
+          "effect": "View pull request options"
+        },
+        {
+          "id": 144,
+          "keys": [
+            "G"
+          ],
+          "effect": "Open pull request in browser"
+        },
+        {
+          "id": 145,
+          "keys": [
+            "Ctrl+Y"
+          ],
+          "effect": "Copy pull request u r l"
+        },
+        {
+          "id": 146,
+          "keys": [
+            "c"
+          ],
+          "effect": "Checkout branch by name"
+        },
+        {
+          "id": 147,
+          "keys": [
+            "F"
+          ],
+          "effect": "Force checkout branch"
+        },
+        {
+          "id": 148,
+          "keys": [
+            "-"
+          ],
+          "effect": "Checkout previous branch"
+        },
+        {
+          "id": 149,
+          "keys": [
+            "r"
+          ],
+          "effect": "Rebase branch"
+        },
+        {
+          "id": 150,
+          "keys": [
+            "R"
+          ],
+          "effect": "Rename branch"
+        },
+        {
+          "id": 151,
+          "keys": [
+            "M"
+          ],
+          "effect": "Merge into current branch"
+        },
+        {
+          "id": 152,
+          "keys": [
+            "N"
+          ],
+          "effect": "Move commits to new branch"
+        },
+        {
+          "id": 153,
+          "keys": [
+            "i"
+          ],
+          "effect": "View git flow options"
+        },
+        {
+          "id": 154,
+          "keys": [
+            "f"
+          ],
+          "effect": "Fast forward"
+        },
+        {
+          "id": 155,
+          "keys": [
+            "T"
+          ],
+          "effect": "Create tag"
+        },
+        {
+          "id": 156,
+          "keys": [
+            "P"
+          ],
+          "effect": "Push tag (Tags tab)"
+        },
+        {
+          "id": 157,
+          "keys": [
+            "u"
+          ],
+          "effect": "Set upstream"
+        },
+        {
+          "id": 158,
+          "keys": [
+            "s"
+          ],
+          "effect": "Sort order"
+        }
+      ],
+      "note": "Default config keybindings. Panel-specific actions take precedence; use ? in that panel."
+    },
+    {
+      "id": 12,
+      "title": "Amend author menu",
+      "bindings": [
+        {
+          "id": 168,
+          "keys": [
+            "a"
+          ],
+          "effect": "Reset author"
+        },
+        {
+          "id": 169,
+          "keys": [
+            "A"
+          ],
+          "effect": "Set author"
+        },
+        {
+          "id": 170,
+          "keys": [
+            "c"
+          ],
+          "effect": "Add co author"
+        }
+      ],
+      "note": "Default config keybindings. Panel-specific actions take precedence; use ? in that panel."
+    },
+    {
+      "id": 13,
+      "title": "Commit files panel",
+      "bindings": [
+        {
+          "id": 171,
+          "keys": [
+            "c"
+          ],
+          "effect": "Checkout commit file"
+        }
+      ],
+      "note": "Default config keybindings. Panel-specific actions take precedence; use ? in that panel."
+    },
+    {
+      "id": 14,
+      "title": "Submodules panel",
+      "bindings": [
+        {
+          "id": 172,
+          "keys": [
+            "i"
+          ],
+          "effect": "Init"
+        },
+        {
+          "id": 173,
+          "keys": [
+            "u"
+          ],
+          "effect": "Update"
+        },
+        {
+          "id": 174,
+          "keys": [
+            "b"
+          ],
+          "effect": "Bulk menu"
+        }
+      ],
+      "note": "Default config keybindings. Panel-specific actions take precedence; use ? in that panel."
+    },
+    {
+      "id": 15,
+      "title": "Commit message editor",
+      "bindings": [
+        {
+          "id": 175,
+          "keys": [
+            "Ctrl+O"
+          ],
+          "effect": "Commit menu"
+        }
+      ],
+      "note": "Default config keybindings. Panel-specific actions take precedence; use ? in that panel."
+    },
+    {
+      "id": 16,
+      "title": "Remotes and tags",
+      "bindings": [
+        {
+          "id": 176,
+          "keys": [
+            "f"
+          ],
+          "effect": "Fetch selected remote"
+        },
+        {
+          "id": 177,
+          "keys": [
+            "F"
+          ],
+          "effect": "Add a fork remote"
+        },
+        {
+          "id": 178,
+          "keys": [
+            "P"
+          ],
+          "effect": "Push selected tag"
+        },
+        {
+          "id": 179,
+          "keys": [
+            "T"
+          ],
+          "effect": "Create tag"
+        }
+      ],
+      "note": "Focus the corresponding Remotes or Tags tab in the Branches panel."
     }
   ]
 }

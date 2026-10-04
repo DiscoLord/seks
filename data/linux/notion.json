@@ -1,7 +1,7 @@
 {
   "full_name": "Notion",
   "source": "https://www.notion.com/help/keyboard-shortcuts",
-  "note": "English/QWERTY shortcuts. Linux uses the web app; focus the page editor to avoid browser shortcut conflicts.",
+  "note": "English/QWERTY shortcuts. Linux uses the web app; focus the page editor to avoid browser shortcut conflicts. Includes contextual table, block and inline-menu shortcuts; slash-command names are not enumerated.",
   "binding_groups": [
     {
       "id": 1,
@@ -269,6 +269,255 @@
         }
       ],
       "note": "Select blocks first. Activate opens pages, toggles checkboxes or lists, or expands images and embeds."
+    },
+    {
+      "id": 5,
+      "title": "Additional page and text shortcuts",
+      "bindings": [
+        {
+          "id": 35,
+          "keys": [
+            "Ctrl+Plus"
+          ],
+          "effect": "Zoom in"
+        },
+        {
+          "id": 36,
+          "keys": [
+            "Ctrl+-"
+          ],
+          "effect": "Zoom out"
+        },
+        {
+          "id": 37,
+          "keys": [
+            "Ctrl+V"
+          ],
+          "effect": "Paste; paste a copied URL over selected text to create a link"
+        },
+        {
+          "id": 38,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Create a new block"
+        }
+      ],
+      "note": "On a page; browser or system shortcuts can take precedence."
+    },
+    {
+      "id": 6,
+      "title": "Table cells",
+      "bindings": [
+        {
+          "id": 39,
+          "keys": [
+            "Ctrl+R"
+          ],
+          "effect": "Fill selected cells right"
+        },
+        {
+          "id": 40,
+          "keys": [
+            "Ctrl+D"
+          ],
+          "effect": "Fill selected cells down"
+        }
+      ],
+      "note": "Select multiple cells in a table."
+    },
+    {
+      "id": 7,
+      "title": "Selected blocks",
+      "bindings": [
+        {
+          "id": 41,
+          "keys": [
+            "Space"
+          ],
+          "effect": "Open selected image full-screen or leave full-screen"
+        },
+        {
+          "id": 42,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Select block above"
+        },
+        {
+          "id": 43,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Select block below"
+        },
+        {
+          "id": 44,
+          "keys": [
+            "Left"
+          ],
+          "effect": "Move block selection left"
+        },
+        {
+          "id": 45,
+          "keys": [
+            "Right"
+          ],
+          "effect": "Move block selection right"
+        },
+        {
+          "id": 46,
+          "keys": [
+            "Shift+Up"
+          ],
+          "effect": "Extend block selection upward"
+        },
+        {
+          "id": 47,
+          "keys": [
+            "Shift+Down"
+          ],
+          "effect": "Extend block selection downward"
+        },
+        {
+          "id": 48,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Edit text inside selected block"
+        },
+        {
+          "id": 63,
+          "keys": [
+            "Ctrl+Shift+Left"
+          ],
+          "effect": "Move selected block left"
+        },
+        {
+          "id": 64,
+          "keys": [
+            "Ctrl+Shift+Right"
+          ],
+          "effect": "Move selected block right"
+        }
+      ],
+      "note": "Press Esc to select the current block."
+    },
+    {
+      "id": 8,
+      "title": "Inline menus",
+      "bindings": [
+        {
+          "id": 49,
+          "keys": [
+            "@"
+          ],
+          "effect": "Mention a person, page, date, or reminder"
+        },
+        {
+          "id": 50,
+          "keys": [
+            "[ ["
+          ],
+          "effect": "Open page linking and creation menu"
+        },
+        {
+          "id": 51,
+          "keys": [
+            "Plus"
+          ],
+          "effect": "Open page creation and linking menu"
+        },
+        {
+          "id": 52,
+          "keys": [
+            "/"
+          ],
+          "effect": "Open block command menu"
+        },
+        {
+          "id": 53,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Dismiss the inline menu"
+        }
+      ],
+      "note": "Type in an editable block. Continue by entering a name or choosing a menu item."
+    },
+    {
+      "id": 9,
+      "title": "Markdown block shortcuts",
+      "bindings": [
+        {
+          "id": 54,
+          "keys": [
+            "* Space",
+            "- Space",
+            "Plus Space"
+          ],
+          "effect": "Create a bulleted list"
+        },
+        {
+          "id": 55,
+          "keys": [
+            "[ ] Space"
+          ],
+          "effect": "Create a checkbox"
+        },
+        {
+          "id": 56,
+          "keys": [
+            "1 . Space",
+            "a . Space",
+            "i . Space"
+          ],
+          "effect": "Create a numbered list"
+        },
+        {
+          "id": 57,
+          "keys": [
+            "# Space"
+          ],
+          "effect": "Heading 1"
+        },
+        {
+          "id": 58,
+          "keys": [
+            "# # Space"
+          ],
+          "effect": "Heading 2"
+        },
+        {
+          "id": 59,
+          "keys": [
+            "# # # Space"
+          ],
+          "effect": "Heading 3"
+        },
+        {
+          "id": 60,
+          "keys": [
+            "> Space"
+          ],
+          "effect": "Toggle list"
+        },
+        {
+          "id": 61,
+          "keys": [
+            "\" Space"
+          ],
+          "effect": "Quote block"
+        },
+        {
+          "id": 62,
+          "keys": [
+            "- - -"
+          ],
+          "effect": "Divider"
+        }
+      ],
+      "note": "Type at the beginning of a block; spaces in the key notation mean consecutive keystrokes."
     }
   ]
 }

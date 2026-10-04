@@ -3,7 +3,7 @@
     "android studio"
   ],
   "full_name": "Android Studio",
-  "note": "Default Linux keymap; alternate JetBrains keymaps may differ.",
+  "note": "Default Linux keymap; Android Studio official shortcut tables. Editor-specific shortcuts are separate.",
   "source": "https://developer.android.com/studio/intro/keyboard-shortcuts",
   "binding_groups": [
     {
@@ -485,6 +485,560 @@
           "effect": "Evaluate an expression"
         }
       ]
+    },
+    {
+      "id": 8,
+      "title": "Tool windows",
+      "bindings": [
+        {
+          "id": 63,
+          "keys": [
+            "Ctrl+Shift+F12"
+          ],
+          "effect": "Hide All Tool Windows"
+        }
+      ],
+      "note": "Android Studio default keymap from its own documentation."
+    },
+    {
+      "id": 9,
+      "title": "General actions",
+      "bindings": [
+        {
+          "id": 64,
+          "keys": [
+            "Ctrl+Alt+Y"
+          ],
+          "effect": "Synchronize"
+        },
+        {
+          "id": 65,
+          "keys": [
+            "Alt+Shift+F"
+          ],
+          "effect": "Add to favorites"
+        },
+        {
+          "id": 66,
+          "keys": [
+            "Alt+Shift+I"
+          ],
+          "effect": "Inspect current file with current profile"
+        },
+        {
+          "id": 67,
+          "keys": [
+            "Ctrl+`"
+          ],
+          "effect": "Quick switch scheme"
+        },
+        {
+          "id": 68,
+          "keys": [
+            "Ctrl+Tab"
+          ],
+          "effect": "Switch between tabs and tool window"
+        }
+      ],
+      "note": "Android Studio default keymap from its own documentation."
+    },
+    {
+      "id": 10,
+      "title": "Navigate and search within Android Studio",
+      "bindings": [
+        {
+          "id": 69,
+          "keys": [
+            "Alt+Right"
+          ],
+          "effect": "Next editor tab"
+        },
+        {
+          "id": 70,
+          "keys": [
+            "Alt+Left"
+          ],
+          "effect": "Previous editor tab"
+        },
+        {
+          "id": 71,
+          "keys": [
+            "F4",
+            "Ctrl+Enter"
+          ],
+          "effect": "Jump to source"
+        },
+        {
+          "id": 72,
+          "keys": [
+            "Shift+F4"
+          ],
+          "effect": "Open current editor tab in new window"
+        },
+        {
+          "id": 73,
+          "keys": [
+            "Ctrl+Shift+E"
+          ],
+          "effect": "Recently edited files dialog"
+        },
+        {
+          "id": 74,
+          "keys": [
+            "Ctrl+Shift+Backspace"
+          ],
+          "effect": "Go to last edit location"
+        },
+        {
+          "id": 75,
+          "keys": [
+            "Ctrl+F4"
+          ],
+          "effect": "Close active editor tab"
+        },
+        {
+          "id": 76,
+          "keys": [
+            "Ctrl+H"
+          ],
+          "effect": "Open type hierarchy"
+        },
+        {
+          "id": 77,
+          "keys": [
+            "Ctrl+Shift+H"
+          ],
+          "effect": "Open method hierarchy"
+        },
+        {
+          "id": 78,
+          "keys": [
+            "Ctrl+Alt+H"
+          ],
+          "effect": "Open call hierarchy"
+        }
+      ],
+      "note": "Android Studio default keymap from its own documentation."
+    },
+    {
+      "id": 11,
+      "title": "View layouts",
+      "bindings": [
+        {
+          "id": 79,
+          "keys": [
+            "Ctrl+Plus"
+          ],
+          "effect": "Zoom in"
+        },
+        {
+          "id": 80,
+          "keys": [
+            "Ctrl+-"
+          ],
+          "effect": "Zoom out"
+        },
+        {
+          "id": 81,
+          "keys": [
+            "Ctrl+0"
+          ],
+          "effect": "Fit to screen"
+        },
+        {
+          "id": 82,
+          "keys": [
+            "Ctrl+Shift+1"
+          ],
+          "effect": "Actual size"
+        }
+      ],
+      "note": "Focus this editor; shortcuts depend on editor context."
+    },
+    {
+      "id": 12,
+      "title": "Design tools: Layout Editor",
+      "bindings": [
+        {
+          "id": 83,
+          "keys": [
+            "B"
+          ],
+          "effect": "Toggle between Design and Blueprint modes"
+        },
+        {
+          "id": 84,
+          "keys": [
+            "O"
+          ],
+          "effect": "Toggle between Portrait and Landscape modes"
+        },
+        {
+          "id": 85,
+          "keys": [
+            "D"
+          ],
+          "effect": "Toggle devices"
+        },
+        {
+          "id": 86,
+          "keys": [
+            "R"
+          ],
+          "effect": "Force refresh"
+        },
+        {
+          "id": 87,
+          "keys": [
+            "E"
+          ],
+          "effect": "Toggle render errors panel"
+        },
+        {
+          "id": 88,
+          "keys": [
+            "Delete"
+          ],
+          "effect": "Delete constraints"
+        },
+        {
+          "id": 89,
+          "keys": [
+            "Ctrl+Plus"
+          ],
+          "effect": "Zoom in"
+        },
+        {
+          "id": 90,
+          "keys": [
+            "Ctrl+-"
+          ],
+          "effect": "Zoom out"
+        },
+        {
+          "id": 91,
+          "keys": [
+            "Ctrl+0"
+          ],
+          "effect": "Zoom to fit"
+        },
+        {
+          "id": 92,
+          "keys": [
+            "Ctrl+B"
+          ],
+          "effect": "Go to XML"
+        },
+        {
+          "id": 93,
+          "keys": [
+            "Ctrl+A"
+          ],
+          "effect": "Select all components"
+        }
+      ],
+      "note": "Focus this editor; shortcuts depend on editor context."
+    },
+    {
+      "id": 13,
+      "title": "Design tools: Navigation Editor",
+      "bindings": [
+        {
+          "id": 94,
+          "keys": [
+            "Ctrl+Plus"
+          ],
+          "effect": "Zoom in"
+        },
+        {
+          "id": 95,
+          "keys": [
+            "Ctrl+-"
+          ],
+          "effect": "Zoom out"
+        },
+        {
+          "id": 96,
+          "keys": [
+            "Ctrl+0"
+          ],
+          "effect": "Zoom to fit"
+        },
+        {
+          "id": 97,
+          "keys": [
+            "Ctrl+B"
+          ],
+          "effect": "Go to XML"
+        },
+        {
+          "id": 98,
+          "keys": [
+            "E"
+          ],
+          "effect": "Toggle render errors panel"
+        },
+        {
+          "id": 99,
+          "keys": [
+            "Ctrl+G"
+          ],
+          "effect": "Group into nested graph"
+        },
+        {
+          "id": 100,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Next destination"
+        },
+        {
+          "id": 101,
+          "keys": [
+            "Shift+Tab"
+          ],
+          "effect": "Previous destination"
+        },
+        {
+          "id": 102,
+          "keys": [
+            "Ctrl+A"
+          ],
+          "effect": "Select all destinations"
+        }
+      ],
+      "note": "Focus this editor; shortcuts depend on editor context."
+    },
+    {
+      "id": 14,
+      "title": "Write code",
+      "bindings": [
+        {
+          "id": 103,
+          "keys": [
+            "Alt+Insert"
+          ],
+          "effect": "Generate code (getters, setters, constructors, hashCode/equals, toString, new file, new class)"
+        },
+        {
+          "id": 104,
+          "keys": [
+            "Ctrl+O"
+          ],
+          "effect": "Override methods"
+        },
+        {
+          "id": 105,
+          "keys": [
+            "Ctrl+I"
+          ],
+          "effect": "Implement methods"
+        },
+        {
+          "id": 106,
+          "keys": [
+            "Ctrl+Y"
+          ],
+          "effect": "Delete line at caret"
+        },
+        {
+          "id": 107,
+          "keys": [
+            "Ctrl+-"
+          ],
+          "effect": "Collapse current code block"
+        },
+        {
+          "id": 108,
+          "keys": [
+            "Ctrl+Plus"
+          ],
+          "effect": "Expand current code block"
+        },
+        {
+          "id": 109,
+          "keys": [
+            "Ctrl+Shift+-"
+          ],
+          "effect": "Collapse all code blocks"
+        },
+        {
+          "id": 110,
+          "keys": [
+            "Ctrl+Shift+Plus"
+          ],
+          "effect": "Expand all code blocks"
+        },
+        {
+          "id": 111,
+          "keys": [
+            "Ctrl+Shift+I"
+          ],
+          "effect": "Open quick definition lookup"
+        },
+        {
+          "id": 112,
+          "keys": [
+            "F11"
+          ],
+          "effect": "Toggle bookmark"
+        },
+        {
+          "id": 113,
+          "keys": [
+            "Ctrl+F11"
+          ],
+          "effect": "Toggle bookmark with mnemonic"
+        },
+        {
+          "id": 114,
+          "keys": [
+            "Ctrl+["
+          ],
+          "effect": "Move to code block start"
+        },
+        {
+          "id": 115,
+          "keys": [
+            "Ctrl+]"
+          ],
+          "effect": "Move to code block end"
+        },
+        {
+          "id": 116,
+          "keys": [
+            "Ctrl+Shift+["
+          ],
+          "effect": "Select to the code block start"
+        },
+        {
+          "id": 117,
+          "keys": [
+            "Ctrl+Shift+]"
+          ],
+          "effect": "Select to the code block end"
+        },
+        {
+          "id": 118,
+          "keys": [
+            "Ctrl+Delete"
+          ],
+          "effect": "Delete to end of word"
+        },
+        {
+          "id": 119,
+          "keys": [
+            "Ctrl+Backspace"
+          ],
+          "effect": "Delete to start of word"
+        },
+        {
+          "id": 120,
+          "keys": [
+            "Ctrl+Alt+I"
+          ],
+          "effect": "Auto-indent lines"
+        },
+        {
+          "id": 121,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Indent lines"
+        },
+        {
+          "id": 122,
+          "keys": [
+            "Shift+Tab"
+          ],
+          "effect": "Unindent lines"
+        },
+        {
+          "id": 123,
+          "keys": [
+            "Ctrl+Shift+J"
+          ],
+          "effect": "Smart line join"
+        },
+        {
+          "id": 124,
+          "keys": [
+            "F2"
+          ],
+          "effect": "Next highlighted error"
+        },
+        {
+          "id": 125,
+          "keys": [
+            "Shift+F2"
+          ],
+          "effect": "Previous highlighted error"
+        }
+      ],
+      "note": "Android Studio default keymap from its own documentation."
+    },
+    {
+      "id": 15,
+      "title": "Refactor",
+      "bindings": [
+        {
+          "id": 126,
+          "keys": [
+            "F5"
+          ],
+          "effect": "Copy"
+        },
+        {
+          "id": 127,
+          "keys": [
+            "F6"
+          ],
+          "effect": "Move"
+        },
+        {
+          "id": 128,
+          "keys": [
+            "Alt+Delete"
+          ],
+          "effect": "Safe delete"
+        }
+      ],
+      "note": "Android Studio default keymap from its own documentation."
+    },
+    {
+      "id": 16,
+      "title": "Version control/local history",
+      "bindings": [
+        {
+          "id": 129,
+          "keys": [
+            "Ctrl+K"
+          ],
+          "effect": "Commit project to VCS"
+        },
+        {
+          "id": 130,
+          "keys": [
+            "Ctrl+T"
+          ],
+          "effect": "Update project from VCS"
+        },
+        {
+          "id": 131,
+          "keys": [
+            "Alt+Shift+C"
+          ],
+          "effect": "View recent changes"
+        },
+        {
+          "id": 132,
+          "keys": [
+            "Alt+`"
+          ],
+          "effect": "Open VCS dialog"
+        }
+      ],
+      "note": "Android Studio default keymap from its own documentation."
     }
   ]
 }

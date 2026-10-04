@@ -3,8 +3,8 @@
     "neovim"
   ],
   "full_name": "Neovim",
-  "note": "Default terminal bindings (Linux); Neovim 0.11+; modes in group titles.",
-  "source": "https://neovim.io/doc/user/quickref/",
+  "note": "Terminal key bindings; Neovim 0.11.4 command index plus default mappings. Modes are separate; Ex command names and mouse gestures are outside this keyboard reference.",
+  "source": "https://github.com/neovim/neovim/blob/v0.11.4/runtime/doc/index.txt",
   "binding_groups": [
     {
       "id": 1,
@@ -1631,6 +1631,3709 @@
           "effect": "Leave terminal input for Normal mode"
         }
       ]
+    },
+    {
+      "id": 17,
+      "title": "Insert mode: indexed bindings",
+      "bindings": [
+        {
+          "id": 217,
+          "keys": [
+            "Ctrl+@"
+          ],
+          "effect": "Insert previously inserted text and stop insert"
+        },
+        {
+          "id": 218,
+          "keys": [
+            "Ctrl+A"
+          ],
+          "effect": "Insert previously inserted text"
+        },
+        {
+          "id": 219,
+          "keys": [
+            "Ctrl+C"
+          ],
+          "effect": "Quit insert mode, without checking for abbreviation"
+        },
+        {
+          "id": 220,
+          "keys": [
+            "Ctrl+G Ctrl+J"
+          ],
+          "effect": "Line down, to column where inserting started"
+        },
+        {
+          "id": 221,
+          "keys": [
+            "Ctrl+G j"
+          ],
+          "effect": "Line down, to column where inserting started"
+        },
+        {
+          "id": 222,
+          "keys": [
+            "Ctrl+G Down"
+          ],
+          "effect": "Line down, to column where inserting started"
+        },
+        {
+          "id": 223,
+          "keys": [
+            "Ctrl+G Ctrl+K"
+          ],
+          "effect": "Line up, to column where inserting started"
+        },
+        {
+          "id": 224,
+          "keys": [
+            "Ctrl+G k"
+          ],
+          "effect": "Line up, to column where inserting started"
+        },
+        {
+          "id": 225,
+          "keys": [
+            "Ctrl+G Up"
+          ],
+          "effect": "Line up, to column where inserting started"
+        },
+        {
+          "id": 226,
+          "keys": [
+            "Ctrl+G u"
+          ],
+          "effect": "Start new undoable edit"
+        },
+        {
+          "id": 227,
+          "keys": [
+            "Ctrl+G U"
+          ],
+          "effect": "Don't break undo with next cursor movement"
+        },
+        {
+          "id": 228,
+          "keys": [
+            "Backspace"
+          ],
+          "effect": "Delete character before the cursor"
+        },
+        {
+          "id": 229,
+          "keys": [
+            "Ctrl+H"
+          ],
+          "effect": "Same as <BS>"
+        },
+        {
+          "id": 230,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Insert a <Tab> character"
+        },
+        {
+          "id": 231,
+          "keys": [
+            "Ctrl+I"
+          ],
+          "effect": "Same as <Tab>"
+        },
+        {
+          "id": 232,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Same as <CR>"
+        },
+        {
+          "id": 233,
+          "keys": [
+            "Ctrl+J"
+          ],
+          "effect": "Same as <CR>"
+        },
+        {
+          "id": 234,
+          "keys": [
+            "Ctrl+M"
+          ],
+          "effect": "Same as <CR>"
+        },
+        {
+          "id": 235,
+          "keys": [
+            "Ctrl+Q"
+          ],
+          "effect": "Same as CTRL-V, unless used for terminal control flow"
+        },
+        {
+          "id": 236,
+          "keys": [
+            "Ctrl+Shift+Q"
+          ],
+          "effect": "Like CTRL-Q unless tui-modifyOtherKeys is active; then char"
+        },
+        {
+          "id": 237,
+          "keys": [
+            "Ctrl+R Ctrl+R"
+          ],
+          "effect": "Insert the contents of a register literally; then register"
+        },
+        {
+          "id": 238,
+          "keys": [
+            "Ctrl+R Ctrl+O"
+          ],
+          "effect": "Insert the contents of a register literally and don't auto-indent; then register"
+        },
+        {
+          "id": 239,
+          "keys": [
+            "Ctrl+R Ctrl+P"
+          ],
+          "effect": "Insert the contents of a register literally and fix indent; then register"
+        },
+        {
+          "id": 240,
+          "keys": [
+            "Ctrl+V"
+          ],
+          "effect": "Insert next non-digit literally; then char"
+        },
+        {
+          "id": 241,
+          "keys": [
+            "Ctrl+Shift+V"
+          ],
+          "effect": "Like CTRL-V unless tui-modifyOtherKeys is active; then char"
+        },
+        {
+          "id": 242,
+          "keys": [
+            "Ctrl+X"
+          ],
+          "effect": "Enter CTRL-X sub mode, see i_CTRL-X_index; then mode"
+        },
+        {
+          "id": 243,
+          "keys": [
+            "Ctrl+\\ Ctrl+N"
+          ],
+          "effect": "Go to Normal mode"
+        },
+        {
+          "id": 244,
+          "keys": [
+            "Ctrl+\\ Ctrl+G"
+          ],
+          "effect": "Go to Normal mode"
+        },
+        {
+          "id": 245,
+          "keys": [
+            "Ctrl+]"
+          ],
+          "effect": "Trigger abbreviation"
+        },
+        {
+          "id": 246,
+          "keys": [
+            "Ctrl+^"
+          ],
+          "effect": "Toggle use of :lmap mappings"
+        },
+        {
+          "id": 247,
+          "keys": [
+            "Ctrl+_"
+          ],
+          "effect": "When 'allowrevins' set: toggle 'revins'"
+        },
+        {
+          "id": 248,
+          "keys": [
+            "0 Ctrl+D"
+          ],
+          "effect": "Delete all indent in the current line"
+        },
+        {
+          "id": 249,
+          "keys": [
+            "^ Ctrl+D"
+          ],
+          "effect": "Delete all indent in the current line, restore it in the next line"
+        },
+        {
+          "id": 250,
+          "keys": [
+            "Delete"
+          ],
+          "effect": "Delete character under the cursor"
+        },
+        {
+          "id": 251,
+          "keys": [
+            "Left"
+          ],
+          "effect": "Cursor one character left"
+        },
+        {
+          "id": 252,
+          "keys": [
+            "Shift+Left"
+          ],
+          "effect": "Cursor one word left"
+        },
+        {
+          "id": 253,
+          "keys": [
+            "Ctrl+Left"
+          ],
+          "effect": "Cursor one word left"
+        },
+        {
+          "id": 254,
+          "keys": [
+            "Right"
+          ],
+          "effect": "Cursor one character right"
+        },
+        {
+          "id": 255,
+          "keys": [
+            "Shift+Right"
+          ],
+          "effect": "Cursor one word right"
+        },
+        {
+          "id": 256,
+          "keys": [
+            "Ctrl+Right"
+          ],
+          "effect": "Cursor one word right"
+        },
+        {
+          "id": 257,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Cursor one line up"
+        },
+        {
+          "id": 258,
+          "keys": [
+            "Shift+Up"
+          ],
+          "effect": "Same as <PageUp>"
+        },
+        {
+          "id": 259,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Cursor one line down"
+        },
+        {
+          "id": 260,
+          "keys": [
+            "Shift+Down"
+          ],
+          "effect": "Same as <PageDown>"
+        },
+        {
+          "id": 261,
+          "keys": [
+            "Home"
+          ],
+          "effect": "Cursor to start of line"
+        },
+        {
+          "id": 262,
+          "keys": [
+            "Ctrl+Home"
+          ],
+          "effect": "Cursor to start of file"
+        },
+        {
+          "id": 263,
+          "keys": [
+            "End"
+          ],
+          "effect": "Cursor past end of line"
+        },
+        {
+          "id": 264,
+          "keys": [
+            "Ctrl+End"
+          ],
+          "effect": "Cursor past end of file"
+        },
+        {
+          "id": 265,
+          "keys": [
+            "PageUp"
+          ],
+          "effect": "One screenful backward"
+        },
+        {
+          "id": 266,
+          "keys": [
+            "PageDown"
+          ],
+          "effect": "One screenful forward"
+        },
+        {
+          "id": 267,
+          "keys": [
+            "F1"
+          ],
+          "effect": "Same as <Help>"
+        },
+        {
+          "id": 268,
+          "keys": [
+            "Help"
+          ],
+          "effect": "Stop insert mode and display help window"
+        },
+        {
+          "id": 269,
+          "keys": [
+            "Insert"
+          ],
+          "effect": "Toggle Insert/Replace mode"
+        }
+      ],
+      "note": "Use in the mode named above. Parameter names in effects describe input required after the keys. Neovim 0.11.4 command index."
+    },
+    {
+      "id": 18,
+      "title": "Insert mode: Ctrl+X completion",
+      "bindings": [
+        {
+          "id": 270,
+          "keys": [
+            "Ctrl+X Ctrl+D"
+          ],
+          "effect": "Complete defined identifiers"
+        },
+        {
+          "id": 271,
+          "keys": [
+            "Ctrl+X Ctrl+E"
+          ],
+          "effect": "Scroll up"
+        },
+        {
+          "id": 272,
+          "keys": [
+            "Ctrl+X Ctrl+F"
+          ],
+          "effect": "Complete file names"
+        },
+        {
+          "id": 273,
+          "keys": [
+            "Ctrl+X Ctrl+I"
+          ],
+          "effect": "Complete identifiers"
+        },
+        {
+          "id": 274,
+          "keys": [
+            "Ctrl+X Ctrl+K"
+          ],
+          "effect": "Complete identifiers from dictionary"
+        },
+        {
+          "id": 275,
+          "keys": [
+            "Ctrl+X Ctrl+L"
+          ],
+          "effect": "Complete whole lines"
+        },
+        {
+          "id": 276,
+          "keys": [
+            "Ctrl+X Ctrl+N"
+          ],
+          "effect": "Next completion"
+        },
+        {
+          "id": 277,
+          "keys": [
+            "Ctrl+X Ctrl+O"
+          ],
+          "effect": "Omni completion"
+        },
+        {
+          "id": 278,
+          "keys": [
+            "Ctrl+X Ctrl+P"
+          ],
+          "effect": "Previous completion"
+        },
+        {
+          "id": 279,
+          "keys": [
+            "Ctrl+X Ctrl+S"
+          ],
+          "effect": "Spelling suggestions"
+        },
+        {
+          "id": 280,
+          "keys": [
+            "Ctrl+X Ctrl+T"
+          ],
+          "effect": "Complete identifiers from thesaurus"
+        },
+        {
+          "id": 281,
+          "keys": [
+            "Ctrl+X Ctrl+Y"
+          ],
+          "effect": "Scroll down"
+        },
+        {
+          "id": 282,
+          "keys": [
+            "Ctrl+X Ctrl+U"
+          ],
+          "effect": "Complete with 'completefunc'"
+        },
+        {
+          "id": 283,
+          "keys": [
+            "Ctrl+X Ctrl+V"
+          ],
+          "effect": "Complete like in : command line"
+        },
+        {
+          "id": 284,
+          "keys": [
+            "Ctrl+X Ctrl+Z"
+          ],
+          "effect": "Stop completion, keeping the text as-is"
+        },
+        {
+          "id": 285,
+          "keys": [
+            "Ctrl+X Ctrl+]"
+          ],
+          "effect": "Complete tags"
+        },
+        {
+          "id": 286,
+          "keys": [
+            "Ctrl+X s"
+          ],
+          "effect": "Spelling suggestions"
+        }
+      ],
+      "note": "Use in the mode named above. Parameter names in effects describe input required after the keys. Neovim 0.11.4 command index."
+    },
+    {
+      "id": 19,
+      "title": "Insert mode: completion menu",
+      "bindings": [
+        {
+          "id": 287,
+          "keys": [
+            "Ctrl+E"
+          ],
+          "effect": "Stop completion and go back to original text"
+        },
+        {
+          "id": 288,
+          "keys": [
+            "Ctrl+Y"
+          ],
+          "effect": "Accept selected match and stop completion"
+        },
+        {
+          "id": 713,
+          "keys": [
+            "Ctrl+L"
+          ],
+          "effect": "Insert one more character from current match"
+        },
+        {
+          "id": 714,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Insert selected match"
+        },
+        {
+          "id": 715,
+          "keys": [
+            "Backspace"
+          ],
+          "effect": "Delete character and update matches"
+        },
+        {
+          "id": 716,
+          "keys": [
+            "Ctrl+H"
+          ],
+          "effect": "Delete character and update matches"
+        },
+        {
+          "id": 717,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Previous completion"
+        },
+        {
+          "id": 718,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Next completion"
+        },
+        {
+          "id": 719,
+          "keys": [
+            "PageUp"
+          ],
+          "effect": "Previous page of completions"
+        },
+        {
+          "id": 720,
+          "keys": [
+            "PageDown"
+          ],
+          "effect": "Next page of completions"
+        }
+      ],
+      "note": "While insert-mode completion is active."
+    },
+    {
+      "id": 20,
+      "title": "Normal mode: indexed bindings",
+      "bindings": [
+        {
+          "id": 289,
+          "keys": [
+            "Ctrl+C"
+          ],
+          "effect": "Interrupt current (search) command"
+        },
+        {
+          "id": 290,
+          "keys": [
+            "Ctrl+G"
+          ],
+          "effect": "Display current file name and position"
+        },
+        {
+          "id": 291,
+          "keys": [
+            "Backspace"
+          ],
+          "effect": "Same as \"h\""
+        },
+        {
+          "id": 292,
+          "keys": [
+            "Ctrl+H"
+          ],
+          "effect": "Same as \"h\""
+        },
+        {
+          "id": 293,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Go to the count newer entry in jump list"
+        },
+        {
+          "id": 294,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Same as \"j\""
+        },
+        {
+          "id": 295,
+          "keys": [
+            "Shift+Enter"
+          ],
+          "effect": "Same as CTRL-F"
+        },
+        {
+          "id": 296,
+          "keys": [
+            "Ctrl+J"
+          ],
+          "effect": "Same as \"j\""
+        },
+        {
+          "id": 297,
+          "keys": [
+            "Ctrl+M"
+          ],
+          "effect": "Same as <CR>"
+        },
+        {
+          "id": 298,
+          "keys": [
+            "Ctrl+N"
+          ],
+          "effect": "Same as \"j\""
+        },
+        {
+          "id": 299,
+          "keys": [
+            "Ctrl+P"
+          ],
+          "effect": "Same as \"k\""
+        },
+        {
+          "id": 300,
+          "keys": [
+            "Ctrl+W"
+          ],
+          "effect": "Window commands, see CTRL-W; then char"
+        },
+        {
+          "id": 301,
+          "keys": [
+            "Ctrl+Z"
+          ],
+          "effect": "Suspend program (or start new shell)"
+        },
+        {
+          "id": 302,
+          "keys": [
+            "Ctrl+\\ Ctrl+N"
+          ],
+          "effect": "Go to Normal mode (no-op)"
+        },
+        {
+          "id": 303,
+          "keys": [
+            "Ctrl+\\ Ctrl+G"
+          ],
+          "effect": "Go to Normal mode (no-op)"
+        },
+        {
+          "id": 304,
+          "keys": [
+            "Ctrl+^"
+          ],
+          "effect": "Edit Nth alternate file (equivalent to \":e #the count\")"
+        },
+        {
+          "id": 305,
+          "keys": [
+            "Ctrl+Tab"
+          ],
+          "effect": "Same as `g<Tab>` : go to last accessed tab page"
+        },
+        {
+          "id": 306,
+          "keys": [
+            "Space"
+          ],
+          "effect": "Same as \"l\""
+        },
+        {
+          "id": 307,
+          "keys": [
+            "!"
+          ],
+          "effect": "Filter the motion range text through the {filter} command; then motion, filter"
+        },
+        {
+          "id": 308,
+          "keys": [
+            "! !"
+          ],
+          "effect": "Filter the count lines through the {filter} command; then filter"
+        },
+        {
+          "id": 309,
+          "keys": [
+            "\""
+          ],
+          "effect": "Use {register} for next delete, yank or put ({.%#:} only work with put); then register"
+        },
+        {
+          "id": 310,
+          "keys": [
+            "&"
+          ],
+          "effect": "Repeat last :s"
+        },
+        {
+          "id": 311,
+          "keys": [
+            "'"
+          ],
+          "effect": "Cursor to the first nonblank character on the line with mark {a-zA-Z0-9}; then a-zA-Z0-9"
+        },
+        {
+          "id": 312,
+          "keys": [
+            "' '"
+          ],
+          "effect": "Cursor to the first nonblank character of the line where the cursor was before the latest jump"
+        },
+        {
+          "id": 313,
+          "keys": [
+            "' ("
+          ],
+          "effect": "Cursor to the first nonblank character on the line of the start of the current sentence"
+        },
+        {
+          "id": 314,
+          "keys": [
+            "' )"
+          ],
+          "effect": "Cursor to the first nonblank character on the line of the end of the current sentence"
+        },
+        {
+          "id": 315,
+          "keys": [
+            "' <"
+          ],
+          "effect": "Cursor to the first nonblank character of the line where highlighted area starts/started in the current buffer"
+        },
+        {
+          "id": 316,
+          "keys": [
+            "' >"
+          ],
+          "effect": "Cursor to the first nonblank character of the line where highlighted area ends/ended in the current buffer"
+        },
+        {
+          "id": 317,
+          "keys": [
+            "' ["
+          ],
+          "effect": "Cursor to the first nonblank character on the line of the start of last operated text or start of put text"
+        },
+        {
+          "id": 318,
+          "keys": [
+            "' ]"
+          ],
+          "effect": "Cursor to the first nonblank character on the line of the end of last operated text or end of put text"
+        },
+        {
+          "id": 319,
+          "keys": [
+            "' {"
+          ],
+          "effect": "Cursor to the first nonblank character on the line of the start of the current paragraph"
+        },
+        {
+          "id": 320,
+          "keys": [
+            "' }"
+          ],
+          "effect": "Cursor to the first nonblank character on the line of the end of the current paragraph"
+        },
+        {
+          "id": 321,
+          "keys": [
+            "("
+          ],
+          "effect": "Cursor the count sentences backward"
+        },
+        {
+          "id": 322,
+          "keys": [
+            ")"
+          ],
+          "effect": "Cursor the count sentences forward"
+        },
+        {
+          "id": 323,
+          "keys": [
+            "Plus"
+          ],
+          "effect": "Same as <CR>"
+        },
+        {
+          "id": 324,
+          "keys": [
+            "Shift+Plus"
+          ],
+          "effect": "Same as CTRL-F"
+        },
+        {
+          "id": 325,
+          "keys": [
+            "-"
+          ],
+          "effect": "Cursor to the first nonblank character the count lines higher"
+        },
+        {
+          "id": 326,
+          "keys": [
+            "Shift+-"
+          ],
+          "effect": "Same as CTRL-B"
+        },
+        {
+          "id": 327,
+          "keys": [
+            "/ Enter"
+          ],
+          "effect": "Search forward for {pattern} of last search"
+        },
+        {
+          "id": 328,
+          "keys": [
+            "1"
+          ],
+          "effect": "Prepend to command to give a count"
+        },
+        {
+          "id": 329,
+          "keys": [
+            "2"
+          ],
+          "effect": "\""
+        },
+        {
+          "id": 330,
+          "keys": [
+            "3"
+          ],
+          "effect": "\""
+        },
+        {
+          "id": 331,
+          "keys": [
+            "4"
+          ],
+          "effect": "\""
+        },
+        {
+          "id": 332,
+          "keys": [
+            "5"
+          ],
+          "effect": "\""
+        },
+        {
+          "id": 333,
+          "keys": [
+            "6"
+          ],
+          "effect": "\""
+        },
+        {
+          "id": 334,
+          "keys": [
+            "7"
+          ],
+          "effect": "\""
+        },
+        {
+          "id": 335,
+          "keys": [
+            "8"
+          ],
+          "effect": "\""
+        },
+        {
+          "id": 336,
+          "keys": [
+            "9"
+          ],
+          "effect": "\""
+        },
+        {
+          "id": 337,
+          "keys": [
+            "<"
+          ],
+          "effect": "Shift the motion range lines one 'shiftwidth' leftwards; then motion"
+        },
+        {
+          "id": 338,
+          "keys": [
+            "="
+          ],
+          "effect": "Filter the motion range lines through \"indent\"; then motion"
+        },
+        {
+          "id": 339,
+          "keys": [
+            ">"
+          ],
+          "effect": "Shift the motion range lines one 'shiftwidth' rightwards; then motion"
+        },
+        {
+          "id": 340,
+          "keys": [
+            "? Enter"
+          ],
+          "effect": "Search backward for {pattern} of last search"
+        },
+        {
+          "id": 341,
+          "keys": [
+            "@"
+          ],
+          "effect": "Execute the contents of register {a-z} the count times; then a-z"
+        },
+        {
+          "id": 342,
+          "keys": [
+            "@ :"
+          ],
+          "effect": "Repeat the previous \":\" command the count times"
+        },
+        {
+          "id": 343,
+          "keys": [
+            "S"
+          ],
+          "effect": "Delete the count lines [into register x] and start insert; synonym for \"cc\""
+        },
+        {
+          "id": 344,
+          "keys": [
+            "U"
+          ],
+          "effect": "Undo all latest changes on one line"
+        },
+        {
+          "id": 345,
+          "keys": [
+            "["
+          ],
+          "effect": "Square bracket command (see [ below); then char"
+        },
+        {
+          "id": 346,
+          "keys": [
+            "]"
+          ],
+          "effect": "Square bracket command (see ] below); then char"
+        },
+        {
+          "id": 347,
+          "keys": [
+            "_"
+          ],
+          "effect": "Cursor to the first nonblank character the count - 1 lines lower"
+        },
+        {
+          "id": 348,
+          "keys": [
+            "`"
+          ],
+          "effect": "Cursor to the mark {a-zA-Z0-9}; then a-zA-Z0-9"
+        },
+        {
+          "id": 349,
+          "keys": [
+            "` ("
+          ],
+          "effect": "Cursor to the start of the current sentence"
+        },
+        {
+          "id": 350,
+          "keys": [
+            "` )"
+          ],
+          "effect": "Cursor to the end of the current sentence"
+        },
+        {
+          "id": 351,
+          "keys": [
+            "` <"
+          ],
+          "effect": "Cursor to the start of the highlighted area"
+        },
+        {
+          "id": 352,
+          "keys": [
+            "` >"
+          ],
+          "effect": "Cursor to the end of the highlighted area"
+        },
+        {
+          "id": 353,
+          "keys": [
+            "` ["
+          ],
+          "effect": "Cursor to the start of last operated text or start of putted text"
+        },
+        {
+          "id": 354,
+          "keys": [
+            "` ]"
+          ],
+          "effect": "Cursor to the end of last operated text or end of putted text"
+        },
+        {
+          "id": 355,
+          "keys": [
+            "\" ` ` \""
+          ],
+          "effect": "Cursor to the position before latest jump"
+        },
+        {
+          "id": 356,
+          "keys": [
+            "` {"
+          ],
+          "effect": "Cursor to the start of the current paragraph"
+        },
+        {
+          "id": 357,
+          "keys": [
+            "` }"
+          ],
+          "effect": "Cursor to the end of the current paragraph"
+        },
+        {
+          "id": 358,
+          "keys": [
+            "d o"
+          ],
+          "effect": "Same as \":diffget\""
+        },
+        {
+          "id": 359,
+          "keys": [
+            "d p"
+          ],
+          "effect": "Same as \":diffput\""
+        },
+        {
+          "id": 360,
+          "keys": [
+            "g"
+          ],
+          "effect": "Extended commands, see g below; then char"
+        },
+        {
+          "id": 361,
+          "keys": [
+            "m"
+          ],
+          "effect": "Set mark {A-Za-z} at cursor position; then A-Za-z"
+        },
+        {
+          "id": 362,
+          "keys": [
+            "Q"
+          ],
+          "effect": "Replay last recorded register"
+        },
+        {
+          "id": 363,
+          "keys": [
+            "q :"
+          ],
+          "effect": "Edit : command-line in command-line window"
+        },
+        {
+          "id": 364,
+          "keys": [
+            "q /"
+          ],
+          "effect": "Edit / command-line in command-line window"
+        },
+        {
+          "id": 365,
+          "keys": [
+            "q ?"
+          ],
+          "effect": "Edit ? command-line in command-line window"
+        },
+        {
+          "id": 366,
+          "keys": [
+            "z"
+          ],
+          "effect": "Commands starting with 'z', see z below; then char"
+        },
+        {
+          "id": 367,
+          "keys": [
+            "|"
+          ],
+          "effect": "Cursor to column the count"
+        },
+        {
+          "id": 368,
+          "keys": [
+            "Ctrl+End"
+          ],
+          "effect": "Same as \"G\""
+        },
+        {
+          "id": 369,
+          "keys": [
+            "Ctrl+Home"
+          ],
+          "effect": "Same as \"gg\""
+        },
+        {
+          "id": 370,
+          "keys": [
+            "Ctrl+Left"
+          ],
+          "effect": "Same as \"b\""
+        },
+        {
+          "id": 371,
+          "keys": [
+            "Ctrl+Right"
+          ],
+          "effect": "Same as \"w\""
+        },
+        {
+          "id": 372,
+          "keys": [
+            "Delete"
+          ],
+          "effect": "Same as \"x\""
+        },
+        {
+          "id": 373,
+          "keys": [
+            "End"
+          ],
+          "effect": "Same as \"$\""
+        },
+        {
+          "id": 374,
+          "keys": [
+            "F1"
+          ],
+          "effect": "Same as <Help>"
+        },
+        {
+          "id": 375,
+          "keys": [
+            "Help"
+          ],
+          "effect": "Open a help window"
+        },
+        {
+          "id": 376,
+          "keys": [
+            "Home"
+          ],
+          "effect": "Same as \"0\""
+        },
+        {
+          "id": 377,
+          "keys": [
+            "Insert"
+          ],
+          "effect": "Same as \"i\""
+        },
+        {
+          "id": 378,
+          "keys": [
+            "PageDown"
+          ],
+          "effect": "Same as CTRL-F"
+        },
+        {
+          "id": 379,
+          "keys": [
+            "PageUp"
+          ],
+          "effect": "Same as CTRL-B"
+        },
+        {
+          "id": 380,
+          "keys": [
+            "Shift+Down"
+          ],
+          "effect": "Same as CTRL-F"
+        },
+        {
+          "id": 381,
+          "keys": [
+            "Shift+Left"
+          ],
+          "effect": "Same as \"b\""
+        },
+        {
+          "id": 382,
+          "keys": [
+            "Shift+Right"
+          ],
+          "effect": "Same as \"w\""
+        },
+        {
+          "id": 383,
+          "keys": [
+            "Shift+Up"
+          ],
+          "effect": "Same as CTRL-B"
+        },
+        {
+          "id": 384,
+          "keys": [
+            "Undo"
+          ],
+          "effect": "Same as \"u\""
+        }
+      ],
+      "note": "Counts may precede commands. Parameter names in effects describe the input required after the keys. Neovim 0.11.4 command index."
+    },
+    {
+      "id": 21,
+      "title": "Text objects",
+      "bindings": [
+        {
+          "id": 385,
+          "keys": [
+            "a \""
+          ],
+          "effect": "Double quoted string"
+        },
+        {
+          "id": 386,
+          "keys": [
+            "a '"
+          ],
+          "effect": "Single quoted string"
+        },
+        {
+          "id": 387,
+          "keys": [
+            "a ("
+          ],
+          "effect": "Same as ab"
+        },
+        {
+          "id": 388,
+          "keys": [
+            "a )"
+          ],
+          "effect": "Same as ab"
+        },
+        {
+          "id": 389,
+          "keys": [
+            "a <"
+          ],
+          "effect": "\"a <>\" from '<' to the matching '>'"
+        },
+        {
+          "id": 390,
+          "keys": [
+            "a >"
+          ],
+          "effect": "Same as a<"
+        },
+        {
+          "id": 391,
+          "keys": [
+            "a B"
+          ],
+          "effect": "\"a Block\" from `[{` to `]}` (with brackets)"
+        },
+        {
+          "id": 392,
+          "keys": [
+            "a W"
+          ],
+          "effect": "\"a WORD\" (with white space)"
+        },
+        {
+          "id": 393,
+          "keys": [
+            "a ["
+          ],
+          "effect": "\"a []\" from '[' to the matching ']'"
+        },
+        {
+          "id": 394,
+          "keys": [
+            "a ]"
+          ],
+          "effect": "Same as a["
+        },
+        {
+          "id": 395,
+          "keys": [
+            "a `"
+          ],
+          "effect": "String in backticks"
+        },
+        {
+          "id": 396,
+          "keys": [
+            "a b"
+          ],
+          "effect": "\"a block\" from \"[(\" to \"])\" (with braces)"
+        },
+        {
+          "id": 397,
+          "keys": [
+            "a p"
+          ],
+          "effect": "\"a paragraph\" (with white space)"
+        },
+        {
+          "id": 398,
+          "keys": [
+            "a s"
+          ],
+          "effect": "\"a sentence\" (with white space)"
+        },
+        {
+          "id": 399,
+          "keys": [
+            "a t"
+          ],
+          "effect": "\"a tag block\" (with white space)"
+        },
+        {
+          "id": 400,
+          "keys": [
+            "a w"
+          ],
+          "effect": "\"a word\" (with white space)"
+        },
+        {
+          "id": 401,
+          "keys": [
+            "a {"
+          ],
+          "effect": "Same as aB"
+        },
+        {
+          "id": 402,
+          "keys": [
+            "a }"
+          ],
+          "effect": "Same as aB"
+        },
+        {
+          "id": 403,
+          "keys": [
+            "i \""
+          ],
+          "effect": "Double quoted string without the quotes"
+        },
+        {
+          "id": 404,
+          "keys": [
+            "i '"
+          ],
+          "effect": "Single quoted string without the quotes"
+        },
+        {
+          "id": 405,
+          "keys": [
+            "i ("
+          ],
+          "effect": "Same as ib"
+        },
+        {
+          "id": 406,
+          "keys": [
+            "i )"
+          ],
+          "effect": "Same as ib"
+        },
+        {
+          "id": 407,
+          "keys": [
+            "i <"
+          ],
+          "effect": "\"inner <>\" from '<' to the matching '>'"
+        },
+        {
+          "id": 408,
+          "keys": [
+            "i >"
+          ],
+          "effect": "Same as i<"
+        },
+        {
+          "id": 409,
+          "keys": [
+            "i B"
+          ],
+          "effect": "\"inner Block\" from `[{` and `]}`"
+        },
+        {
+          "id": 410,
+          "keys": [
+            "i W"
+          ],
+          "effect": "\"inner WORD\""
+        },
+        {
+          "id": 411,
+          "keys": [
+            "i ["
+          ],
+          "effect": "\"inner []\" from '[' to the matching ']'"
+        },
+        {
+          "id": 412,
+          "keys": [
+            "i ]"
+          ],
+          "effect": "Same as i["
+        },
+        {
+          "id": 413,
+          "keys": [
+            "i `"
+          ],
+          "effect": "String in backticks without the backticks"
+        },
+        {
+          "id": 414,
+          "keys": [
+            "i b"
+          ],
+          "effect": "\"inner block\" from \"[(\" to \"])\""
+        },
+        {
+          "id": 415,
+          "keys": [
+            "i p"
+          ],
+          "effect": "\"inner paragraph\""
+        },
+        {
+          "id": 416,
+          "keys": [
+            "i s"
+          ],
+          "effect": "\"inner sentence\""
+        },
+        {
+          "id": 417,
+          "keys": [
+            "i t"
+          ],
+          "effect": "\"inner tag block\""
+        },
+        {
+          "id": 418,
+          "keys": [
+            "i w"
+          ],
+          "effect": "\"inner word\""
+        },
+        {
+          "id": 419,
+          "keys": [
+            "i {"
+          ],
+          "effect": "Same as iB"
+        },
+        {
+          "id": 420,
+          "keys": [
+            "i }"
+          ],
+          "effect": "Same as iB"
+        }
+      ],
+      "note": "Use in the mode named above. Parameter names in effects describe input required after the keys. Neovim 0.11.4 command index."
+    },
+    {
+      "id": 22,
+      "title": "Normal mode: window commands",
+      "bindings": [
+        {
+          "id": 421,
+          "keys": [
+            "Ctrl+W Ctrl+B"
+          ],
+          "effect": "Same as \"CTRL-W b\""
+        },
+        {
+          "id": 422,
+          "keys": [
+            "Ctrl+W Ctrl+C"
+          ],
+          "effect": "Same as \"CTRL-W c\""
+        },
+        {
+          "id": 423,
+          "keys": [
+            "Ctrl+W Ctrl+D"
+          ],
+          "effect": "Same as \"CTRL-W d\""
+        },
+        {
+          "id": 424,
+          "keys": [
+            "Ctrl+W Ctrl+F"
+          ],
+          "effect": "Same as \"CTRL-W f\""
+        },
+        {
+          "id": 425,
+          "keys": [
+            "Ctrl+W Ctrl+H"
+          ],
+          "effect": "Same as \"CTRL-W h\""
+        },
+        {
+          "id": 426,
+          "keys": [
+            "Ctrl+W Ctrl+I"
+          ],
+          "effect": "Same as \"CTRL-W i\""
+        },
+        {
+          "id": 427,
+          "keys": [
+            "Ctrl+W Ctrl+J"
+          ],
+          "effect": "Same as \"CTRL-W j\""
+        },
+        {
+          "id": 428,
+          "keys": [
+            "Ctrl+W Ctrl+K"
+          ],
+          "effect": "Same as \"CTRL-W k\""
+        },
+        {
+          "id": 429,
+          "keys": [
+            "Ctrl+W Ctrl+L"
+          ],
+          "effect": "Same as \"CTRL-W l\""
+        },
+        {
+          "id": 430,
+          "keys": [
+            "Ctrl+W Ctrl+N"
+          ],
+          "effect": "Same as \"CTRL-W n\""
+        },
+        {
+          "id": 431,
+          "keys": [
+            "Ctrl+W Ctrl+O"
+          ],
+          "effect": "Same as \"CTRL-W o\""
+        },
+        {
+          "id": 432,
+          "keys": [
+            "Ctrl+W Ctrl+P"
+          ],
+          "effect": "Same as \"CTRL-W p\""
+        },
+        {
+          "id": 433,
+          "keys": [
+            "Ctrl+W Ctrl+Q"
+          ],
+          "effect": "Same as \"CTRL-W q\""
+        },
+        {
+          "id": 434,
+          "keys": [
+            "Ctrl+W Ctrl+R"
+          ],
+          "effect": "Same as \"CTRL-W r\""
+        },
+        {
+          "id": 435,
+          "keys": [
+            "Ctrl+W Ctrl+S"
+          ],
+          "effect": "Same as \"CTRL-W s\""
+        },
+        {
+          "id": 436,
+          "keys": [
+            "Ctrl+W Ctrl+T"
+          ],
+          "effect": "Same as \"CTRL-W t\""
+        },
+        {
+          "id": 437,
+          "keys": [
+            "Ctrl+W Ctrl+V"
+          ],
+          "effect": "Same as \"CTRL-W v\""
+        },
+        {
+          "id": 438,
+          "keys": [
+            "Ctrl+W Ctrl+W"
+          ],
+          "effect": "Same as \"CTRL-W w\""
+        },
+        {
+          "id": 439,
+          "keys": [
+            "Ctrl+W Ctrl+X"
+          ],
+          "effect": "Same as \"CTRL-W x\""
+        },
+        {
+          "id": 440,
+          "keys": [
+            "Ctrl+W Ctrl+Z"
+          ],
+          "effect": "Same as \"CTRL-W z\""
+        },
+        {
+          "id": 441,
+          "keys": [
+            "Ctrl+W Ctrl+]"
+          ],
+          "effect": "Same as \"CTRL-W ]\""
+        },
+        {
+          "id": 442,
+          "keys": [
+            "Ctrl+W Ctrl+^"
+          ],
+          "effect": "Same as \"CTRL-W ^\""
+        },
+        {
+          "id": 443,
+          "keys": [
+            "Ctrl+W Ctrl+_"
+          ],
+          "effect": "Same as \"CTRL-W _\""
+        },
+        {
+          "id": 444,
+          "keys": [
+            "Ctrl+W P"
+          ],
+          "effect": "Go to preview window"
+        },
+        {
+          "id": 445,
+          "keys": [
+            "Ctrl+W R"
+          ],
+          "effect": "Rotate windows upwards the count times"
+        },
+        {
+          "id": 446,
+          "keys": [
+            "Ctrl+W S"
+          ],
+          "effect": "Same as \"CTRL-W s\""
+        },
+        {
+          "id": 447,
+          "keys": [
+            "Ctrl+W W"
+          ],
+          "effect": "Go to the count previous window (wrap around)"
+        },
+        {
+          "id": 448,
+          "keys": [
+            "Ctrl+W ]"
+          ],
+          "effect": "Split window and jump to tag under cursor"
+        },
+        {
+          "id": 449,
+          "keys": [
+            "Ctrl+W ^"
+          ],
+          "effect": "Split current window and edit alternate file the count"
+        },
+        {
+          "id": 450,
+          "keys": [
+            "Ctrl+W _"
+          ],
+          "effect": "Set current window height to the count (default: very high)"
+        },
+        {
+          "id": 451,
+          "keys": [
+            "Ctrl+W b"
+          ],
+          "effect": "Go to bottom window"
+        },
+        {
+          "id": 452,
+          "keys": [
+            "Ctrl+W f"
+          ],
+          "effect": "Split window and edit file name under the cursor"
+        },
+        {
+          "id": 453,
+          "keys": [
+            "Ctrl+W F"
+          ],
+          "effect": "Split window and edit file name under the cursor and jump to the line number following the file name"
+        },
+        {
+          "id": 454,
+          "keys": [
+            "Ctrl+W g Ctrl+]"
+          ],
+          "effect": "Split window and do :tjump to tag under cursor"
+        },
+        {
+          "id": 455,
+          "keys": [
+            "Ctrl+W g ]"
+          ],
+          "effect": "Split window and do :tselect for tag under cursor"
+        },
+        {
+          "id": 456,
+          "keys": [
+            "Ctrl+W g }"
+          ],
+          "effect": "Do a :ptjump to the tag under the cursor"
+        },
+        {
+          "id": 457,
+          "keys": [
+            "Ctrl+W g f"
+          ],
+          "effect": "Edit file name under the cursor in a new tab page"
+        },
+        {
+          "id": 458,
+          "keys": [
+            "Ctrl+W g F"
+          ],
+          "effect": "Edit file name under the cursor in a new tab page and jump to the line number following the file name"
+        },
+        {
+          "id": 459,
+          "keys": [
+            "Ctrl+W g t"
+          ],
+          "effect": "Same as `gt`: go to next tab page"
+        },
+        {
+          "id": 460,
+          "keys": [
+            "Ctrl+W g T"
+          ],
+          "effect": "Same as `gT`: go to previous tab page"
+        },
+        {
+          "id": 461,
+          "keys": [
+            "Ctrl+W g Tab"
+          ],
+          "effect": "Same as g<Tab>: go to last accessed tab page"
+        },
+        {
+          "id": 462,
+          "keys": [
+            "Ctrl+W i"
+          ],
+          "effect": "Split window and jump to declaration of identifier under the cursor"
+        },
+        {
+          "id": 463,
+          "keys": [
+            "Ctrl+W n"
+          ],
+          "effect": "Open new window, the count lines high"
+        },
+        {
+          "id": 464,
+          "keys": [
+            "Ctrl+W q"
+          ],
+          "effect": "Quit current window (like :quit)"
+        },
+        {
+          "id": 465,
+          "keys": [
+            "Ctrl+W r"
+          ],
+          "effect": "Rotate windows downwards the count times"
+        },
+        {
+          "id": 466,
+          "keys": [
+            "Ctrl+W t"
+          ],
+          "effect": "Go to top window"
+        },
+        {
+          "id": 467,
+          "keys": [
+            "Ctrl+W x"
+          ],
+          "effect": "Exchange current window with window the count (default: next window)"
+        },
+        {
+          "id": 468,
+          "keys": [
+            "Ctrl+W z"
+          ],
+          "effect": "Close preview window"
+        },
+        {
+          "id": 469,
+          "keys": [
+            "Ctrl+W |"
+          ],
+          "effect": "Set window width to the count columns"
+        },
+        {
+          "id": 470,
+          "keys": [
+            "Ctrl+W }"
+          ],
+          "effect": "Show tag under cursor in preview window"
+        },
+        {
+          "id": 471,
+          "keys": [
+            "Ctrl+W Down"
+          ],
+          "effect": "Same as \"CTRL-W j\""
+        },
+        {
+          "id": 472,
+          "keys": [
+            "Ctrl+W Up"
+          ],
+          "effect": "Same as \"CTRL-W k\""
+        },
+        {
+          "id": 473,
+          "keys": [
+            "Ctrl+W Left"
+          ],
+          "effect": "Same as \"CTRL-W h\""
+        },
+        {
+          "id": 474,
+          "keys": [
+            "Ctrl+W Right"
+          ],
+          "effect": "Same as \"CTRL-W l\""
+        }
+      ],
+      "note": "Counts may precede commands. Parameter names in effects describe the input required after the keys. Neovim 0.11.4 command index."
+    },
+    {
+      "id": 23,
+      "title": "Normal mode: bracket commands",
+      "bindings": [
+        {
+          "id": 475,
+          "keys": [
+            "[ Ctrl+D"
+          ],
+          "effect": "Jump to first #define found in current and included files matching the word under the cursor, start searching at beginning of current file"
+        },
+        {
+          "id": 476,
+          "keys": [
+            "[ Ctrl+I"
+          ],
+          "effect": "Jump to first line in current and included files that contains the word under the cursor, start searching at beginning of current file"
+        },
+        {
+          "id": 477,
+          "keys": [
+            "[ #"
+          ],
+          "effect": "Cursor to the count previous unmatched #if, #else or #ifdef"
+        },
+        {
+          "id": 478,
+          "keys": [
+            "[ '"
+          ],
+          "effect": "Cursor to previous lowercase mark, on first non-blank"
+        },
+        {
+          "id": 479,
+          "keys": [
+            "[ ("
+          ],
+          "effect": "Cursor the count times back to unmatched '('"
+        },
+        {
+          "id": 480,
+          "keys": [
+            "[ *"
+          ],
+          "effect": "Same as \"[/\""
+        },
+        {
+          "id": 481,
+          "keys": [
+            "[ `"
+          ],
+          "effect": "Cursor to previous lowercase mark"
+        },
+        {
+          "id": 482,
+          "keys": [
+            "[ /"
+          ],
+          "effect": "Cursor to the count previous start of a C comment"
+        },
+        {
+          "id": 483,
+          "keys": [
+            "[ D"
+          ],
+          "effect": "List all defines found in current and included files matching the word under the cursor, start searching at beginning of current file"
+        },
+        {
+          "id": 484,
+          "keys": [
+            "[ I"
+          ],
+          "effect": "List all lines found in current and included files that contain the word under the cursor, start searching at beginning of current file"
+        },
+        {
+          "id": 485,
+          "keys": [
+            "[ P"
+          ],
+          "effect": "Same as \"[p\""
+        },
+        {
+          "id": 486,
+          "keys": [
+            "[ ["
+          ],
+          "effect": "Cursor the count sections backward"
+        },
+        {
+          "id": 487,
+          "keys": [
+            "[ ]"
+          ],
+          "effect": "Cursor the count SECTIONS backward"
+        },
+        {
+          "id": 488,
+          "keys": [
+            "[ c"
+          ],
+          "effect": "Cursor the count times backwards to start of change"
+        },
+        {
+          "id": 489,
+          "keys": [
+            "[ f"
+          ],
+          "effect": "Same as \"gf\""
+        },
+        {
+          "id": 490,
+          "keys": [
+            "[ i"
+          ],
+          "effect": "Show first line found in current and included files that contains the word under the cursor, start searching at beginning of current file"
+        },
+        {
+          "id": 491,
+          "keys": [
+            "[ m"
+          ],
+          "effect": "Cursor the count times back to start of member function"
+        },
+        {
+          "id": 492,
+          "keys": [
+            "[ p"
+          ],
+          "effect": "Like \"P\", but adjust indent to current line"
+        },
+        {
+          "id": 493,
+          "keys": [
+            "[ s"
+          ],
+          "effect": "Move to the previous misspelled word"
+        },
+        {
+          "id": 494,
+          "keys": [
+            "[ z"
+          ],
+          "effect": "Move to start of open fold"
+        },
+        {
+          "id": 495,
+          "keys": [
+            "[ {"
+          ],
+          "effect": "Cursor the count times back to unmatched '{'"
+        },
+        {
+          "id": 496,
+          "keys": [
+            "] Ctrl+D"
+          ],
+          "effect": "Jump to first #define found in current and included files matching the word under the cursor, start searching at cursor position"
+        },
+        {
+          "id": 497,
+          "keys": [
+            "] Ctrl+I"
+          ],
+          "effect": "Jump to first line in current and included files that contains the word under the cursor, start searching at cursor position"
+        },
+        {
+          "id": 498,
+          "keys": [
+            "] #"
+          ],
+          "effect": "Cursor to the count next unmatched #endif or #else"
+        },
+        {
+          "id": 499,
+          "keys": [
+            "] '"
+          ],
+          "effect": "Cursor to next lowercase mark, on first non-blank"
+        },
+        {
+          "id": 500,
+          "keys": [
+            "] )"
+          ],
+          "effect": "Cursor the count times forward to unmatched ')'"
+        },
+        {
+          "id": 501,
+          "keys": [
+            "] *"
+          ],
+          "effect": "Same as \"]/\""
+        },
+        {
+          "id": 502,
+          "keys": [
+            "] `"
+          ],
+          "effect": "Cursor to next lowercase mark"
+        },
+        {
+          "id": 503,
+          "keys": [
+            "] /"
+          ],
+          "effect": "Cursor to the count next end of a C comment"
+        },
+        {
+          "id": 504,
+          "keys": [
+            "] D"
+          ],
+          "effect": "List all #defines found in current and included files matching the word under the cursor, start searching at cursor position"
+        },
+        {
+          "id": 505,
+          "keys": [
+            "] I"
+          ],
+          "effect": "List all lines found in current and included files that contain the word under the cursor, start searching at cursor position"
+        },
+        {
+          "id": 506,
+          "keys": [
+            "] P"
+          ],
+          "effect": "Same as \"[p\""
+        },
+        {
+          "id": 507,
+          "keys": [
+            "] ["
+          ],
+          "effect": "Cursor the count SECTIONS forward"
+        },
+        {
+          "id": 508,
+          "keys": [
+            "] ]"
+          ],
+          "effect": "Cursor the count sections forward"
+        },
+        {
+          "id": 509,
+          "keys": [
+            "] c"
+          ],
+          "effect": "Cursor the count times forward to start of change"
+        },
+        {
+          "id": 510,
+          "keys": [
+            "] f"
+          ],
+          "effect": "Same as \"gf\""
+        },
+        {
+          "id": 511,
+          "keys": [
+            "] i"
+          ],
+          "effect": "Show first line found in current and included files that contains the word under the cursor, start searching at cursor position"
+        },
+        {
+          "id": 512,
+          "keys": [
+            "] m"
+          ],
+          "effect": "Cursor the count times forward to end of member function"
+        },
+        {
+          "id": 513,
+          "keys": [
+            "] p"
+          ],
+          "effect": "Like \"p\", but adjust indent to current line"
+        },
+        {
+          "id": 514,
+          "keys": [
+            "] s"
+          ],
+          "effect": "Move to next misspelled word"
+        },
+        {
+          "id": 515,
+          "keys": [
+            "] z"
+          ],
+          "effect": "Move to end of open fold"
+        },
+        {
+          "id": 516,
+          "keys": [
+            "] }"
+          ],
+          "effect": "Cursor the count times forward to unmatched '}'"
+        }
+      ],
+      "note": "Counts may precede commands. Parameter names in effects describe the input required after the keys. Neovim 0.11.4 command index."
+    },
+    {
+      "id": 24,
+      "title": "Normal mode: g commands",
+      "bindings": [
+        {
+          "id": 517,
+          "keys": [
+            "g Ctrl+G"
+          ],
+          "effect": "Show information about current cursor position"
+        },
+        {
+          "id": 518,
+          "keys": [
+            "g Ctrl+H"
+          ],
+          "effect": "Start Select block mode"
+        },
+        {
+          "id": 519,
+          "keys": [
+            "g Ctrl+]"
+          ],
+          "effect": ":tjump to the tag under the cursor"
+        },
+        {
+          "id": 520,
+          "keys": [
+            "g #"
+          ],
+          "effect": "Like \"#\", but without using \"\\<\" and \"\\>\""
+        },
+        {
+          "id": 521,
+          "keys": [
+            "g $"
+          ],
+          "effect": "When 'wrap' off go to rightmost character of the current line that is on the screen; when 'wrap' on go to the rightmost character of the current screen line"
+        },
+        {
+          "id": 522,
+          "keys": [
+            "g &"
+          ],
+          "effect": "Repeat last \":s\" on all lines"
+        },
+        {
+          "id": 523,
+          "keys": [
+            "g '"
+          ],
+          "effect": "Like ' but without changing the jumplist; then mark"
+        },
+        {
+          "id": 524,
+          "keys": [
+            "g `"
+          ],
+          "effect": "Like ` but without changing the jumplist; then mark"
+        },
+        {
+          "id": 525,
+          "keys": [
+            "g *"
+          ],
+          "effect": "Like \"*\", but without using \"\\<\" and \"\\>\""
+        },
+        {
+          "id": 526,
+          "keys": [
+            "g Plus"
+          ],
+          "effect": "Go to newer text state the count times"
+        },
+        {
+          "id": 527,
+          "keys": [
+            "g -"
+          ],
+          "effect": "Go to older text state the count times"
+        },
+        {
+          "id": 528,
+          "keys": [
+            "g 0"
+          ],
+          "effect": "When 'wrap' off go to leftmost character of the current line that is on the screen; when 'wrap' on go to the leftmost character of the current screen line"
+        },
+        {
+          "id": 529,
+          "keys": [
+            "g 8"
+          ],
+          "effect": "Print hex value of bytes used in UTF-8 character under the cursor"
+        },
+        {
+          "id": 530,
+          "keys": [
+            "g <"
+          ],
+          "effect": "Display previous command output"
+        },
+        {
+          "id": 531,
+          "keys": [
+            "g ?"
+          ],
+          "effect": "Rot13 encoding operator"
+        },
+        {
+          "id": 532,
+          "keys": [
+            "g ? ?"
+          ],
+          "effect": "Rot13 encode current line"
+        },
+        {
+          "id": 533,
+          "keys": [
+            "g ? g ?"
+          ],
+          "effect": "Rot13 encode current line"
+        },
+        {
+          "id": 534,
+          "keys": [
+            "g D"
+          ],
+          "effect": "Go to definition of word under the cursor in current file"
+        },
+        {
+          "id": 535,
+          "keys": [
+            "g E"
+          ],
+          "effect": "Go backwards to the end of the previous WORD"
+        },
+        {
+          "id": 536,
+          "keys": [
+            "g H"
+          ],
+          "effect": "Start Select line mode"
+        },
+        {
+          "id": 537,
+          "keys": [
+            "g I"
+          ],
+          "effect": "Like \"I\", but always start in column 1"
+        },
+        {
+          "id": 538,
+          "keys": [
+            "g N"
+          ],
+          "effect": "1,2  find the previous match with the last used search pattern and Visually select it"
+        },
+        {
+          "id": 539,
+          "keys": [
+            "g P"
+          ],
+          "effect": "Put the text [from register x] before the cursor the count times, leave the cursor after it"
+        },
+        {
+          "id": 540,
+          "keys": [
+            "g Q"
+          ],
+          "effect": "Switch to \"Ex\" mode with Vim editing"
+        },
+        {
+          "id": 541,
+          "keys": [
+            "g R"
+          ],
+          "effect": "Enter Virtual Replace mode"
+        },
+        {
+          "id": 542,
+          "keys": [
+            "g U"
+          ],
+          "effect": "Make the motion range text uppercase; then motion"
+        },
+        {
+          "id": 543,
+          "keys": [
+            "g V"
+          ],
+          "effect": "Don't reselect the previous Visual area when executing a mapping or menu in Select mode"
+        },
+        {
+          "id": 544,
+          "keys": [
+            "g ]"
+          ],
+          "effect": ":tselect on the tag under the cursor"
+        },
+        {
+          "id": 545,
+          "keys": [
+            "g ^"
+          ],
+          "effect": "When 'wrap' off go to leftmost non-white character of the current line that is on the screen; when 'wrap' on go to the leftmost non-white character of the current screen line"
+        },
+        {
+          "id": 546,
+          "keys": [
+            "g a"
+          ],
+          "effect": "Print ascii value of character under the cursor"
+        },
+        {
+          "id": 547,
+          "keys": [
+            "g d"
+          ],
+          "effect": "Go to definition of word under the cursor in current function"
+        },
+        {
+          "id": 548,
+          "keys": [
+            "g F"
+          ],
+          "effect": "Start editing the file whose name is under the cursor and jump to the line number following the filename"
+        },
+        {
+          "id": 549,
+          "keys": [
+            "g h"
+          ],
+          "effect": "Start Select mode"
+        },
+        {
+          "id": 550,
+          "keys": [
+            "g i"
+          ],
+          "effect": "Like \"i\", but first move to the '^ mark"
+        },
+        {
+          "id": 551,
+          "keys": [
+            "g m"
+          ],
+          "effect": "Go to character at middle of the screenline"
+        },
+        {
+          "id": 552,
+          "keys": [
+            "g M"
+          ],
+          "effect": "Go to character at middle of the text line"
+        },
+        {
+          "id": 553,
+          "keys": [
+            "g n"
+          ],
+          "effect": "1,2  find the next match with the last used search pattern and Visually select it"
+        },
+        {
+          "id": 554,
+          "keys": [
+            "g o"
+          ],
+          "effect": "Cursor to byte the count in the buffer"
+        },
+        {
+          "id": 555,
+          "keys": [
+            "g p"
+          ],
+          "effect": "Put the text [from register x] after the cursor the count times, leave the cursor after it"
+        },
+        {
+          "id": 556,
+          "keys": [
+            "g r"
+          ],
+          "effect": "Virtual replace the count chars with {char}; then char"
+        },
+        {
+          "id": 557,
+          "keys": [
+            "g s"
+          ],
+          "effect": "Go to sleep for the count seconds (default 1)"
+        },
+        {
+          "id": 558,
+          "keys": [
+            "g u"
+          ],
+          "effect": "Make the motion range text lowercase; then motion"
+        },
+        {
+          "id": 559,
+          "keys": [
+            "g w"
+          ],
+          "effect": "Format the motion range text and keep cursor; then motion"
+        },
+        {
+          "id": 560,
+          "keys": [
+            "g x"
+          ],
+          "effect": "Execute application for filepath at cursor"
+        },
+        {
+          "id": 561,
+          "keys": [
+            "g @"
+          ],
+          "effect": "Call 'operatorfunc'; then motion"
+        },
+        {
+          "id": 562,
+          "keys": [
+            "g ~"
+          ],
+          "effect": "Swap case for the motion range text; then motion"
+        },
+        {
+          "id": 563,
+          "keys": [
+            "g Down"
+          ],
+          "effect": "Same as \"gj\""
+        },
+        {
+          "id": 564,
+          "keys": [
+            "g End"
+          ],
+          "effect": "Same as \"g$\""
+        },
+        {
+          "id": 565,
+          "keys": [
+            "g Home"
+          ],
+          "effect": "Same as \"g0\""
+        },
+        {
+          "id": 566,
+          "keys": [
+            "g Tab"
+          ],
+          "effect": "Go to last accessed tab page"
+        },
+        {
+          "id": 567,
+          "keys": [
+            "g Up"
+          ],
+          "effect": "Same as \"gk\""
+        }
+      ],
+      "note": "Counts may precede commands. Parameter names in effects describe the input required after the keys. Neovim 0.11.4 command index."
+    },
+    {
+      "id": 25,
+      "title": "Normal mode: z commands",
+      "bindings": [
+        {
+          "id": 568,
+          "keys": [
+            "z Enter"
+          ],
+          "effect": "Redraw, cursor line to top of window, cursor on first non-blank"
+        },
+        {
+          "id": 569,
+          "keys": [
+            "z Plus"
+          ],
+          "effect": "Cursor on line the count (default line below window), otherwise like \"z<CR>\""
+        },
+        {
+          "id": 570,
+          "keys": [
+            "z -"
+          ],
+          "effect": "Redraw, cursor line at bottom of window, cursor on first non-blank"
+        },
+        {
+          "id": 571,
+          "keys": [
+            "z ."
+          ],
+          "effect": "Redraw, cursor line to center of window, cursor on first non-blank"
+        },
+        {
+          "id": 572,
+          "keys": [
+            "z ="
+          ],
+          "effect": "Give spelling suggestions"
+        },
+        {
+          "id": 573,
+          "keys": [
+            "z A"
+          ],
+          "effect": "Open a closed fold or close an open fold recursively"
+        },
+        {
+          "id": 574,
+          "keys": [
+            "z C"
+          ],
+          "effect": "Close folds recursively"
+        },
+        {
+          "id": 575,
+          "keys": [
+            "z D"
+          ],
+          "effect": "Delete folds recursively"
+        },
+        {
+          "id": 576,
+          "keys": [
+            "z E"
+          ],
+          "effect": "Eliminate all folds"
+        },
+        {
+          "id": 577,
+          "keys": [
+            "z F"
+          ],
+          "effect": "Create a fold for the count lines"
+        },
+        {
+          "id": 578,
+          "keys": [
+            "z G"
+          ],
+          "effect": "Temporarily mark word as correctly spelled"
+        },
+        {
+          "id": 579,
+          "keys": [
+            "z H"
+          ],
+          "effect": "When 'wrap' off scroll half a screenwidth to the right"
+        },
+        {
+          "id": 580,
+          "keys": [
+            "z L"
+          ],
+          "effect": "When 'wrap' off scroll half a screenwidth to the left"
+        },
+        {
+          "id": 581,
+          "keys": [
+            "z N"
+          ],
+          "effect": "Set 'foldenable'"
+        },
+        {
+          "id": 582,
+          "keys": [
+            "z O"
+          ],
+          "effect": "Open folds recursively"
+        },
+        {
+          "id": 583,
+          "keys": [
+            "z W"
+          ],
+          "effect": "Temporarily mark word as incorrectly spelled"
+        },
+        {
+          "id": 584,
+          "keys": [
+            "z X"
+          ],
+          "effect": "Re-apply 'foldlevel'"
+        },
+        {
+          "id": 585,
+          "keys": [
+            "z ^"
+          ],
+          "effect": "Cursor on line the count (default line above window), otherwise like \"z-\""
+        },
+        {
+          "id": 586,
+          "keys": [
+            "z e"
+          ],
+          "effect": "When 'wrap' off scroll horizontally to position the cursor at the end (right side) of the screen"
+        },
+        {
+          "id": 587,
+          "keys": [
+            "z g"
+          ],
+          "effect": "Permanently mark word as correctly spelled"
+        },
+        {
+          "id": 588,
+          "keys": [
+            "z h"
+          ],
+          "effect": "When 'wrap' off scroll screen the count characters to the right"
+        },
+        {
+          "id": 589,
+          "keys": [
+            "z i"
+          ],
+          "effect": "Toggle 'foldenable'"
+        },
+        {
+          "id": 590,
+          "keys": [
+            "z j"
+          ],
+          "effect": "Move to the start of the next fold"
+        },
+        {
+          "id": 591,
+          "keys": [
+            "z k"
+          ],
+          "effect": "Move to the end of the previous fold"
+        },
+        {
+          "id": 592,
+          "keys": [
+            "z l"
+          ],
+          "effect": "When 'wrap' off scroll screen the count characters to the left"
+        },
+        {
+          "id": 593,
+          "keys": [
+            "z n"
+          ],
+          "effect": "Reset 'foldenable'"
+        },
+        {
+          "id": 594,
+          "keys": [
+            "z p"
+          ],
+          "effect": "Paste in block-mode without trailing spaces"
+        },
+        {
+          "id": 595,
+          "keys": [
+            "z P"
+          ],
+          "effect": "Paste in block-mode without trailing spaces"
+        },
+        {
+          "id": 596,
+          "keys": [
+            "z s"
+          ],
+          "effect": "When 'wrap' off scroll horizontally to position the cursor at the start (left side) of the screen"
+        },
+        {
+          "id": 597,
+          "keys": [
+            "z u w"
+          ],
+          "effect": "Undo zw"
+        },
+        {
+          "id": 598,
+          "keys": [
+            "z u g"
+          ],
+          "effect": "Undo zg"
+        },
+        {
+          "id": 599,
+          "keys": [
+            "z u W"
+          ],
+          "effect": "Undo zW"
+        },
+        {
+          "id": 600,
+          "keys": [
+            "z u G"
+          ],
+          "effect": "Undo zG"
+        },
+        {
+          "id": 601,
+          "keys": [
+            "z w"
+          ],
+          "effect": "Permanently mark word as incorrectly spelled"
+        },
+        {
+          "id": 602,
+          "keys": [
+            "z x"
+          ],
+          "effect": "Re-apply 'foldlevel' and do \"zv\""
+        },
+        {
+          "id": 603,
+          "keys": [
+            "z y"
+          ],
+          "effect": "Yank without trailing spaces"
+        },
+        {
+          "id": 604,
+          "keys": [
+            "z Left"
+          ],
+          "effect": "Same as \"zh\""
+        },
+        {
+          "id": 605,
+          "keys": [
+            "z Right"
+          ],
+          "effect": "Same as \"zl\""
+        }
+      ],
+      "note": "Counts may precede commands. Parameter names in effects describe the input required after the keys. Neovim 0.11.4 command index."
+    },
+    {
+      "id": 26,
+      "title": "Operator-pending mode",
+      "bindings": [
+        {
+          "id": 606,
+          "keys": [
+            "v"
+          ],
+          "effect": "Force operator to work charwise"
+        },
+        {
+          "id": 607,
+          "keys": [
+            "V"
+          ],
+          "effect": "Force operator to work linewise"
+        },
+        {
+          "id": 608,
+          "keys": [
+            "Ctrl+V"
+          ],
+          "effect": "Force operator to work blockwise"
+        }
+      ],
+      "note": "Use in the mode named above. Parameter names in effects describe input required after the keys. Neovim 0.11.4 command index."
+    },
+    {
+      "id": 27,
+      "title": "Visual mode: indexed bindings",
+      "bindings": [
+        {
+          "id": 609,
+          "keys": [
+            "Ctrl+\\ Ctrl+N"
+          ],
+          "effect": "Stop Visual mode"
+        },
+        {
+          "id": 610,
+          "keys": [
+            "Ctrl+\\ Ctrl+G"
+          ],
+          "effect": "Go to Normal mode"
+        },
+        {
+          "id": 611,
+          "keys": [
+            "Ctrl+A"
+          ],
+          "effect": "Add the count to number in highlighted text"
+        },
+        {
+          "id": 612,
+          "keys": [
+            "Ctrl+C"
+          ],
+          "effect": "Stop Visual mode"
+        },
+        {
+          "id": 613,
+          "keys": [
+            "Ctrl+G"
+          ],
+          "effect": "Toggle between Visual mode and Select mode"
+        },
+        {
+          "id": 614,
+          "keys": [
+            "Backspace"
+          ],
+          "effect": "Select mode: delete highlighted area"
+        },
+        {
+          "id": 615,
+          "keys": [
+            "Ctrl+H"
+          ],
+          "effect": "Same as <BS>"
+        },
+        {
+          "id": 616,
+          "keys": [
+            "Ctrl+O"
+          ],
+          "effect": "Switch from Select to Visual mode for one command"
+        },
+        {
+          "id": 617,
+          "keys": [
+            "Ctrl+X"
+          ],
+          "effect": "Subtract the count from number in highlighted text"
+        },
+        {
+          "id": 618,
+          "keys": [
+            "Ctrl+]"
+          ],
+          "effect": "Jump to highlighted tag"
+        },
+        {
+          "id": 619,
+          "keys": [
+            "!"
+          ],
+          "effect": "Filter the highlighted lines through the external command {filter}; then filter"
+        },
+        {
+          "id": 620,
+          "keys": [
+            ":"
+          ],
+          "effect": "Start a command-line with the highlighted lines as a range"
+        },
+        {
+          "id": 621,
+          "keys": [
+            "C"
+          ],
+          "effect": "Delete the highlighted lines and start insert"
+        },
+        {
+          "id": 622,
+          "keys": [
+            "D"
+          ],
+          "effect": "Delete the highlighted lines"
+        },
+        {
+          "id": 623,
+          "keys": [
+            "J"
+          ],
+          "effect": "Join the highlighted lines"
+        },
+        {
+          "id": 624,
+          "keys": [
+            "K"
+          ],
+          "effect": "Run 'keywordprg' on the highlighted area"
+        },
+        {
+          "id": 625,
+          "keys": [
+            "O"
+          ],
+          "effect": "Move horizontally to other corner of area"
+        },
+        {
+          "id": 626,
+          "keys": [
+            "P"
+          ],
+          "effect": "Replace highlighted area with register contents; registers are unchanged"
+        },
+        {
+          "id": 627,
+          "keys": [
+            "R"
+          ],
+          "effect": "Delete the highlighted lines and start insert"
+        },
+        {
+          "id": 628,
+          "keys": [
+            "S"
+          ],
+          "effect": "Delete the highlighted lines and start insert"
+        },
+        {
+          "id": 629,
+          "keys": [
+            "X"
+          ],
+          "effect": "Delete the highlighted lines"
+        },
+        {
+          "id": 630,
+          "keys": [
+            "Y"
+          ],
+          "effect": "Yank the highlighted lines"
+        },
+        {
+          "id": 631,
+          "keys": [
+            "a \""
+          ],
+          "effect": "Extend highlighted area with a double quoted string"
+        },
+        {
+          "id": 632,
+          "keys": [
+            "a '"
+          ],
+          "effect": "Extend highlighted area with a single quoted string"
+        },
+        {
+          "id": 633,
+          "keys": [
+            "a ("
+          ],
+          "effect": "Same as ab"
+        },
+        {
+          "id": 634,
+          "keys": [
+            "a )"
+          ],
+          "effect": "Same as ab"
+        },
+        {
+          "id": 635,
+          "keys": [
+            "a <"
+          ],
+          "effect": "Extend highlighted area with a <> block"
+        },
+        {
+          "id": 636,
+          "keys": [
+            "a >"
+          ],
+          "effect": "Same as a<"
+        },
+        {
+          "id": 637,
+          "keys": [
+            "a B"
+          ],
+          "effect": "Extend highlighted area with a {} block"
+        },
+        {
+          "id": 638,
+          "keys": [
+            "a W"
+          ],
+          "effect": "Extend highlighted area with \"a WORD\""
+        },
+        {
+          "id": 639,
+          "keys": [
+            "a ["
+          ],
+          "effect": "Extend highlighted area with a [] block"
+        },
+        {
+          "id": 640,
+          "keys": [
+            "a ]"
+          ],
+          "effect": "Same as a["
+        },
+        {
+          "id": 641,
+          "keys": [
+            "a `"
+          ],
+          "effect": "Extend highlighted area with a backtick quoted string"
+        },
+        {
+          "id": 642,
+          "keys": [
+            "a b"
+          ],
+          "effect": "Extend highlighted area with a () block"
+        },
+        {
+          "id": 643,
+          "keys": [
+            "a p"
+          ],
+          "effect": "Extend highlighted area with a paragraph"
+        },
+        {
+          "id": 644,
+          "keys": [
+            "a s"
+          ],
+          "effect": "Extend highlighted area with a sentence"
+        },
+        {
+          "id": 645,
+          "keys": [
+            "a t"
+          ],
+          "effect": "Extend highlighted area with a tag block"
+        },
+        {
+          "id": 646,
+          "keys": [
+            "a w"
+          ],
+          "effect": "Extend highlighted area with \"a word\""
+        },
+        {
+          "id": 647,
+          "keys": [
+            "a {"
+          ],
+          "effect": "Same as aB"
+        },
+        {
+          "id": 648,
+          "keys": [
+            "a }"
+          ],
+          "effect": "Same as aB"
+        },
+        {
+          "id": 649,
+          "keys": [
+            "g Ctrl+A"
+          ],
+          "effect": "Add the count to number in highlighted text"
+        },
+        {
+          "id": 650,
+          "keys": [
+            "g Ctrl+X"
+          ],
+          "effect": "Subtract the count from number in highlighted text"
+        },
+        {
+          "id": 651,
+          "keys": [
+            "g J"
+          ],
+          "effect": "Join the highlighted lines without inserting spaces"
+        },
+        {
+          "id": 652,
+          "keys": [
+            "g v"
+          ],
+          "effect": "Exchange current and previous highlighted area"
+        },
+        {
+          "id": 653,
+          "keys": [
+            "i \""
+          ],
+          "effect": "Extend highlighted area with a double quoted string (without quotes)"
+        },
+        {
+          "id": 654,
+          "keys": [
+            "i '"
+          ],
+          "effect": "Extend highlighted area with a single quoted string (without quotes)"
+        },
+        {
+          "id": 655,
+          "keys": [
+            "i ("
+          ],
+          "effect": "Same as ib"
+        },
+        {
+          "id": 656,
+          "keys": [
+            "i )"
+          ],
+          "effect": "Same as ib"
+        },
+        {
+          "id": 657,
+          "keys": [
+            "i <"
+          ],
+          "effect": "Extend highlighted area with inner <> block"
+        },
+        {
+          "id": 658,
+          "keys": [
+            "i >"
+          ],
+          "effect": "Same as i<"
+        },
+        {
+          "id": 659,
+          "keys": [
+            "i B"
+          ],
+          "effect": "Extend highlighted area with inner {} block"
+        },
+        {
+          "id": 660,
+          "keys": [
+            "i W"
+          ],
+          "effect": "Extend highlighted area with \"inner WORD\""
+        },
+        {
+          "id": 661,
+          "keys": [
+            "i ["
+          ],
+          "effect": "Extend highlighted area with inner [] block"
+        },
+        {
+          "id": 662,
+          "keys": [
+            "i ]"
+          ],
+          "effect": "Same as i["
+        },
+        {
+          "id": 663,
+          "keys": [
+            "i `"
+          ],
+          "effect": "Extend highlighted area with a backtick quoted string (without the backticks)"
+        },
+        {
+          "id": 664,
+          "keys": [
+            "i b"
+          ],
+          "effect": "Extend highlighted area with inner () block"
+        },
+        {
+          "id": 665,
+          "keys": [
+            "i p"
+          ],
+          "effect": "Extend highlighted area with inner paragraph"
+        },
+        {
+          "id": 666,
+          "keys": [
+            "i s"
+          ],
+          "effect": "Extend highlighted area with inner sentence"
+        },
+        {
+          "id": 667,
+          "keys": [
+            "i t"
+          ],
+          "effect": "Extend highlighted area with inner tag block"
+        },
+        {
+          "id": 668,
+          "keys": [
+            "i w"
+          ],
+          "effect": "Extend highlighted area with \"inner word\""
+        },
+        {
+          "id": 669,
+          "keys": [
+            "i {"
+          ],
+          "effect": "Same as iB"
+        },
+        {
+          "id": 670,
+          "keys": [
+            "i }"
+          ],
+          "effect": "Same as iB"
+        },
+        {
+          "id": 671,
+          "keys": [
+            "p"
+          ],
+          "effect": "Replace highlighted area with register contents; deleted text in unnamed register"
+        },
+        {
+          "id": 672,
+          "keys": [
+            "r"
+          ],
+          "effect": "Replace highlighted area with a character"
+        },
+        {
+          "id": 673,
+          "keys": [
+            "s"
+          ],
+          "effect": "Delete highlighted area and start insert"
+        },
+        {
+          "id": 674,
+          "keys": [
+            "x"
+          ],
+          "effect": "Delete the highlighted area"
+        }
+      ],
+      "note": "Use in the mode named above. Parameter names in effects describe input required after the keys. Neovim 0.11.4 command index."
+    },
+    {
+      "id": 28,
+      "title": "Command-line: indexed bindings",
+      "bindings": [
+        {
+          "id": 675,
+          "keys": [
+            "Ctrl+A"
+          ],
+          "effect": "Do completion on the pattern in front of the cursor and insert all matches"
+        },
+        {
+          "id": 676,
+          "keys": [
+            "Ctrl+B"
+          ],
+          "effect": "Cursor to begin of command-line"
+        },
+        {
+          "id": 677,
+          "keys": [
+            "Ctrl+C"
+          ],
+          "effect": "Same as <Esc>"
+        },
+        {
+          "id": 678,
+          "keys": [
+            "Ctrl+D"
+          ],
+          "effect": "List completions that match the pattern in front of the cursor"
+        },
+        {
+          "id": 679,
+          "keys": [
+            "Ctrl+E"
+          ],
+          "effect": "Cursor to end of command-line"
+        },
+        {
+          "id": 680,
+          "keys": [
+            "Ctrl+G"
+          ],
+          "effect": "Next match when 'incsearch' is active"
+        },
+        {
+          "id": 681,
+          "keys": [
+            "Backspace"
+          ],
+          "effect": "Delete the character in front of the cursor"
+        },
+        {
+          "id": 682,
+          "keys": [
+            "Ctrl+H"
+          ],
+          "effect": "Same as <BS>"
+        },
+        {
+          "id": 683,
+          "keys": [
+            "Ctrl+I"
+          ],
+          "effect": "Same as <Tab>"
+        },
+        {
+          "id": 684,
+          "keys": [
+            "Ctrl+J"
+          ],
+          "effect": "Same as <CR>"
+        },
+        {
+          "id": 685,
+          "keys": [
+            "Ctrl+L"
+          ],
+          "effect": "Do completion on the pattern in front of the cursor and insert the longest common part"
+        },
+        {
+          "id": 686,
+          "keys": [
+            "Ctrl+M"
+          ],
+          "effect": "Same as <CR>"
+        },
+        {
+          "id": 687,
+          "keys": [
+            "Ctrl+N"
+          ],
+          "effect": "After using 'wildchar' with multiple matches: go to next match, otherwise: recall older command-line from history"
+        },
+        {
+          "id": 688,
+          "keys": [
+            "Ctrl+P"
+          ],
+          "effect": "After using 'wildchar' with multiple matches: go to previous match, otherwise: recall older command-line from history"
+        },
+        {
+          "id": 689,
+          "keys": [
+            "Ctrl+Q"
+          ],
+          "effect": "Same as CTRL-V, unless it's used for terminal control flow"
+        },
+        {
+          "id": 690,
+          "keys": [
+            "Ctrl+R Ctrl+O"
+          ],
+          "effect": "Insert the contents of a register or object under the cursor literally; then regname"
+        },
+        {
+          "id": 691,
+          "keys": [
+            "Ctrl+T"
+          ],
+          "effect": "Previous match when 'incsearch' is active"
+        },
+        {
+          "id": 692,
+          "keys": [
+            "Ctrl+V"
+          ],
+          "effect": "Insert next non-digit literally, insert three digit decimal number as a single byte"
+        },
+        {
+          "id": 693,
+          "keys": [
+            "Ctrl+["
+          ],
+          "effect": "Same as <Esc>"
+        },
+        {
+          "id": 694,
+          "keys": [
+            "Ctrl+\\ Ctrl+N"
+          ],
+          "effect": "Go to Normal mode, abandon command-line"
+        },
+        {
+          "id": 695,
+          "keys": [
+            "Ctrl+\\ Ctrl+G"
+          ],
+          "effect": "Go to Normal mode, abandon command-line"
+        },
+        {
+          "id": 696,
+          "keys": [
+            "Ctrl+\\ e"
+          ],
+          "effect": "{expr}; then expr"
+        },
+        {
+          "id": 697,
+          "keys": [
+            "Ctrl+]"
+          ],
+          "effect": "Trigger abbreviation"
+        },
+        {
+          "id": 698,
+          "keys": [
+            "Ctrl+^"
+          ],
+          "effect": "Toggle use of :lmap mappings"
+        },
+        {
+          "id": 699,
+          "keys": [
+            "Delete"
+          ],
+          "effect": "Delete the character under the cursor"
+        },
+        {
+          "id": 700,
+          "keys": [
+            "Left"
+          ],
+          "effect": "Cursor left"
+        },
+        {
+          "id": 701,
+          "keys": [
+            "Shift+Left"
+          ],
+          "effect": "Cursor one word left"
+        },
+        {
+          "id": 702,
+          "keys": [
+            "Ctrl+Left"
+          ],
+          "effect": "Cursor one word left"
+        },
+        {
+          "id": 703,
+          "keys": [
+            "Right"
+          ],
+          "effect": "Cursor right"
+        },
+        {
+          "id": 704,
+          "keys": [
+            "Shift+Right"
+          ],
+          "effect": "Cursor one word right"
+        },
+        {
+          "id": 705,
+          "keys": [
+            "Ctrl+Right"
+          ],
+          "effect": "Cursor one word right"
+        },
+        {
+          "id": 706,
+          "keys": [
+            "Shift+Up"
+          ],
+          "effect": "Recall previous command-line from history"
+        },
+        {
+          "id": 707,
+          "keys": [
+            "Shift+Down"
+          ],
+          "effect": "Recall next command-line from history"
+        },
+        {
+          "id": 708,
+          "keys": [
+            "Home"
+          ],
+          "effect": "Cursor to start of command-line"
+        },
+        {
+          "id": 709,
+          "keys": [
+            "End"
+          ],
+          "effect": "Cursor to end of command-line"
+        },
+        {
+          "id": 710,
+          "keys": [
+            "PageDown"
+          ],
+          "effect": "Same as <S-Down>"
+        },
+        {
+          "id": 711,
+          "keys": [
+            "PageUp"
+          ],
+          "effect": "Same as <S-Up>"
+        },
+        {
+          "id": 712,
+          "keys": [
+            "Insert"
+          ],
+          "effect": "Toggle insert/overstrike mode"
+        }
+      ],
+      "note": "Use in the mode named above. Parameter names in effects describe input required after the keys. Neovim 0.11.4 command index."
+    },
+    {
+      "id": 29,
+      "title": "Command-line: wildmenu",
+      "bindings": [
+        {
+          "id": 721,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Move to parent"
+        },
+        {
+          "id": 722,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Open submenu"
+        },
+        {
+          "id": 723,
+          "keys": [
+            "Left"
+          ],
+          "effect": "Previous match"
+        },
+        {
+          "id": 724,
+          "keys": [
+            "Right"
+          ],
+          "effect": "Next match"
+        },
+        {
+          "id": 725,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Open submenu during menu completion"
+        },
+        {
+          "id": 726,
+          "keys": [
+            "Ctrl+E"
+          ],
+          "effect": "Cancel completion and restore original input"
+        },
+        {
+          "id": 727,
+          "keys": [
+            "Ctrl+Y"
+          ],
+          "effect": "Accept completion"
+        }
+      ],
+      "note": "While command-line wildmenu completion is active."
+    },
+    {
+      "id": 30,
+      "title": "Command-line: popup completion",
+      "bindings": [
+        {
+          "id": 728,
+          "keys": [
+            "PageUp"
+          ],
+          "effect": "Previous page of matches"
+        },
+        {
+          "id": 729,
+          "keys": [
+            "PageDown"
+          ],
+          "effect": "Next page of matches"
+        }
+      ],
+      "note": "Command-line completion with wildoptions=pum."
+    },
+    {
+      "id": 31,
+      "title": "Terminal mode: indexed bindings",
+      "bindings": [
+        {
+          "id": 730,
+          "keys": [
+            "Ctrl+\\ Ctrl+O"
+          ],
+          "effect": "Execute one Normal-mode command, then return to Terminal mode"
+        }
+      ],
+      "note": "Inside an embedded terminal; other keys go to the running job."
     }
   ]
 }
