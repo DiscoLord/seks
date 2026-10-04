@@ -1,0 +1,690 @@
+{
+  "aliases": [
+    "zle"
+  ],
+  "full_name": "Zsh",
+  "note": "Zsh 5.9 ZLE bindings; Emacs and vi modes are separate.",
+  "source": "https://zsh.sourceforge.io/Doc/Release/Zsh-Line-Editor.html",
+  "binding_groups": [
+    {
+      "id": 1,
+      "title": "Emacs mode: movement",
+      "note": "Applies to the Emacs keymap. Alt must reach the application as Meta/Esc.",
+      "bindings": [
+        {
+          "id": 1,
+          "keys": [
+            "Ctrl+A"
+          ],
+          "effect": "Line start"
+        },
+        {
+          "id": 2,
+          "keys": [
+            "Ctrl+E"
+          ],
+          "effect": "Line end"
+        },
+        {
+          "id": 3,
+          "keys": [
+            "Ctrl+B"
+          ],
+          "effect": "Previous character"
+        },
+        {
+          "id": 4,
+          "keys": [
+            "Ctrl+F"
+          ],
+          "effect": "Next character"
+        },
+        {
+          "id": 5,
+          "keys": [
+            "Alt+B"
+          ],
+          "effect": "Previous word"
+        },
+        {
+          "id": 6,
+          "keys": [
+            "Alt+F"
+          ],
+          "effect": "Next word end"
+        },
+        {
+          "id": 7,
+          "keys": [
+            "Ctrl+X Ctrl+X"
+          ],
+          "effect": "Swap cursor and mark"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Emacs mode: editing",
+      "note": "Cut text is saved in the shell’s kill ring, not the system clipboard.",
+      "bindings": [
+        {
+          "id": 8,
+          "keys": [
+            "Backspace"
+          ],
+          "effect": "Delete previous character"
+        },
+        {
+          "id": 9,
+          "keys": [
+            "Ctrl+D"
+          ],
+          "effect": "Delete character or list completions; empty prompt may exit"
+        },
+        {
+          "id": 10,
+          "keys": [
+            "Ctrl+K"
+          ],
+          "effect": "Cut from cursor to line end"
+        },
+        {
+          "id": 11,
+          "keys": [
+            "Ctrl+U"
+          ],
+          "effect": "Cut the whole current line"
+        },
+        {
+          "id": 12,
+          "keys": [
+            "Ctrl+W"
+          ],
+          "effect": "Cut preceding word"
+        },
+        {
+          "id": 13,
+          "keys": [
+            "Alt+Backspace"
+          ],
+          "effect": "Cut preceding word"
+        },
+        {
+          "id": 14,
+          "keys": [
+            "Alt+D"
+          ],
+          "effect": "Cut next word"
+        },
+        {
+          "id": 15,
+          "keys": [
+            "Ctrl+Y"
+          ],
+          "effect": "Paste latest kill-ring entry"
+        },
+        {
+          "id": 16,
+          "keys": [
+            "Alt+Y"
+          ],
+          "effect": "Cycle earlier kill-ring entries after pasting"
+        },
+        {
+          "id": 17,
+          "keys": [
+            "Ctrl+T"
+          ],
+          "effect": "Transpose characters"
+        },
+        {
+          "id": 18,
+          "keys": [
+            "Alt+T"
+          ],
+          "effect": "Transpose words"
+        },
+        {
+          "id": 19,
+          "keys": [
+            "Alt+U"
+          ],
+          "effect": "Uppercase word"
+        },
+        {
+          "id": 20,
+          "keys": [
+            "Alt+L"
+          ],
+          "effect": "Lowercase word"
+        },
+        {
+          "id": 21,
+          "keys": [
+            "Alt+C"
+          ],
+          "effect": "Capitalize word"
+        },
+        {
+          "id": 22,
+          "keys": [
+            "Ctrl+_",
+            "Ctrl+X Ctrl+U"
+          ],
+          "effect": "Undo edit"
+        },
+        {
+          "id": 23,
+          "keys": [
+            "Ctrl+X Ctrl+K"
+          ],
+          "effect": "Cut entire input buffer"
+        },
+        {
+          "id": 24,
+          "keys": [
+            "Ctrl+V"
+          ],
+          "effect": "Insert next character literally"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Emacs mode: history",
+      "note": "Ctrl+S may be intercepted by terminal flow control.",
+      "bindings": [
+        {
+          "id": 25,
+          "keys": [
+            "Ctrl+P"
+          ],
+          "effect": "Previous input line or history entry"
+        },
+        {
+          "id": 26,
+          "keys": [
+            "Ctrl+N"
+          ],
+          "effect": "Next input line or history entry"
+        },
+        {
+          "id": 27,
+          "keys": [
+            "Ctrl+R"
+          ],
+          "effect": "Search history backward incrementally"
+        },
+        {
+          "id": 28,
+          "keys": [
+            "Ctrl+S"
+          ],
+          "effect": "Search history forward incrementally"
+        },
+        {
+          "id": 29,
+          "keys": [
+            "Alt+P"
+          ],
+          "effect": "Search backward by first word"
+        },
+        {
+          "id": 30,
+          "keys": [
+            "Alt+N"
+          ],
+          "effect": "Search forward by first word"
+        },
+        {
+          "id": 31,
+          "keys": [
+            "Alt+<"
+          ],
+          "effect": "Input start, then oldest history entry"
+        },
+        {
+          "id": 32,
+          "keys": [
+            "Alt+>"
+          ],
+          "effect": "Input end, then newest history entry"
+        },
+        {
+          "id": 33,
+          "keys": [
+            "Alt+.",
+            "Alt+_"
+          ],
+          "effect": "Insert last argument from previous command"
+        },
+        {
+          "id": 34,
+          "keys": [
+            "Ctrl+O"
+          ],
+          "effect": "Accept line and recall next history entry"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Emacs mode: completion",
+      "note": "Completion candidates depend on the shell’s configured completion system.",
+      "bindings": [
+        {
+          "id": 35,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Expand or complete current word"
+        },
+        {
+          "id": 36,
+          "keys": [
+            "Alt+Ctrl+D"
+          ],
+          "effect": "List possible completions"
+        },
+        {
+          "id": 37,
+          "keys": [
+            "Ctrl+X *"
+          ],
+          "effect": "Expand current word without completing"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Emacs mode: prompt controls",
+      "bindings": [
+        {
+          "id": 38,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Accept current input"
+        },
+        {
+          "id": 39,
+          "keys": [
+            "Ctrl+G"
+          ],
+          "effect": "Abort current editing operation"
+        },
+        {
+          "id": 40,
+          "keys": [
+            "Ctrl+L"
+          ],
+          "effect": "Clear display and redraw input"
+        },
+        {
+          "id": 41,
+          "keys": [
+            "Alt+X"
+          ],
+          "effect": "Run a named ZLE editing action"
+        },
+        {
+          "id": 42,
+          "keys": [
+            "Alt+Q"
+          ],
+          "effect": "Save input and start a fresh prompt"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Vi mode: insert",
+      "note": "Only when vi editing is enabled; each new prompt starts in insert mode.",
+      "bindings": [
+        {
+          "id": 43,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Enter vi command mode"
+        },
+        {
+          "id": 44,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Accept current input"
+        },
+        {
+          "id": 45,
+          "keys": [
+            "Backspace"
+          ],
+          "effect": "Delete previous character"
+        },
+        {
+          "id": 46,
+          "keys": [
+            "Ctrl+W"
+          ],
+          "effect": "Cut preceding word back to insertion start"
+        },
+        {
+          "id": 47,
+          "keys": [
+            "Ctrl+U"
+          ],
+          "effect": "Cut back to insertion start"
+        },
+        {
+          "id": 48,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Expand or complete word"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Vi mode: movement and history",
+      "note": "Press Esc from vi insert mode. Search direction follows shell history, not file navigation.",
+      "bindings": [
+        {
+          "id": 49,
+          "keys": [
+            "h"
+          ],
+          "effect": "Previous character"
+        },
+        {
+          "id": 50,
+          "keys": [
+            "l"
+          ],
+          "effect": "Next character"
+        },
+        {
+          "id": 51,
+          "keys": [
+            "w"
+          ],
+          "effect": "Next word start"
+        },
+        {
+          "id": 52,
+          "keys": [
+            "b"
+          ],
+          "effect": "Previous word start"
+        },
+        {
+          "id": 53,
+          "keys": [
+            "e"
+          ],
+          "effect": "Word end"
+        },
+        {
+          "id": 54,
+          "keys": [
+            "0"
+          ],
+          "effect": "Line start"
+        },
+        {
+          "id": 55,
+          "keys": [
+            "^"
+          ],
+          "effect": "First nonblank"
+        },
+        {
+          "id": 56,
+          "keys": [
+            "$"
+          ],
+          "effect": "Line end"
+        },
+        {
+          "id": 57,
+          "keys": [
+            "f"
+          ],
+          "effect": "Then character: find forward"
+        },
+        {
+          "id": 58,
+          "keys": [
+            "F"
+          ],
+          "effect": "Then character: find backward"
+        },
+        {
+          "id": 59,
+          "keys": [
+            "t"
+          ],
+          "effect": "Then character: stop before it forward"
+        },
+        {
+          "id": 60,
+          "keys": [
+            "T"
+          ],
+          "effect": "Then character: stop after it backward"
+        },
+        {
+          "id": 61,
+          "keys": [
+            ";"
+          ],
+          "effect": "Repeat character find"
+        },
+        {
+          "id": 62,
+          "keys": [
+            ","
+          ],
+          "effect": "Reverse character find"
+        },
+        {
+          "id": 63,
+          "keys": [
+            "k"
+          ],
+          "effect": "Previous line or older history entry"
+        },
+        {
+          "id": 64,
+          "keys": [
+            "j"
+          ],
+          "effect": "Next line or newer history entry"
+        },
+        {
+          "id": 65,
+          "keys": [
+            "/"
+          ],
+          "effect": "Enter backward history search"
+        },
+        {
+          "id": 66,
+          "keys": [
+            "?"
+          ],
+          "effect": "Enter forward history search"
+        },
+        {
+          "id": 67,
+          "keys": [
+            "n"
+          ],
+          "effect": "Repeat history search"
+        },
+        {
+          "id": 68,
+          "keys": [
+            "N"
+          ],
+          "effect": "Reverse history search"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Vi mode: editing",
+      "note": "Command mode after Esc; operators d, c and y can also be followed by a motion.",
+      "bindings": [
+        {
+          "id": 69,
+          "keys": [
+            "i"
+          ],
+          "effect": "Insert before cursor"
+        },
+        {
+          "id": 70,
+          "keys": [
+            "a"
+          ],
+          "effect": "Insert after cursor"
+        },
+        {
+          "id": 71,
+          "keys": [
+            "I"
+          ],
+          "effect": "Insert at first nonblank"
+        },
+        {
+          "id": 72,
+          "keys": [
+            "A"
+          ],
+          "effect": "Insert at line end"
+        },
+        {
+          "id": 73,
+          "keys": [
+            "x"
+          ],
+          "effect": "Delete character"
+        },
+        {
+          "id": 74,
+          "keys": [
+            "X"
+          ],
+          "effect": "Delete previous character"
+        },
+        {
+          "id": 75,
+          "keys": [
+            "d d"
+          ],
+          "effect": "Cut line"
+        },
+        {
+          "id": 76,
+          "keys": [
+            "D"
+          ],
+          "effect": "Cut to line end"
+        },
+        {
+          "id": 77,
+          "keys": [
+            "c c"
+          ],
+          "effect": "Change line"
+        },
+        {
+          "id": 78,
+          "keys": [
+            "C"
+          ],
+          "effect": "Change to line end"
+        },
+        {
+          "id": 79,
+          "keys": [
+            "r"
+          ],
+          "effect": "Then character: replace one character"
+        },
+        {
+          "id": 80,
+          "keys": [
+            "R"
+          ],
+          "effect": "Enter replace mode"
+        },
+        {
+          "id": 81,
+          "keys": [
+            "y y"
+          ],
+          "effect": "Copy line"
+        },
+        {
+          "id": 82,
+          "keys": [
+            "p"
+          ],
+          "effect": "Paste after cursor"
+        },
+        {
+          "id": 83,
+          "keys": [
+            "P"
+          ],
+          "effect": "Paste before cursor"
+        },
+        {
+          "id": 84,
+          "keys": [
+            "u"
+          ],
+          "effect": "Undo"
+        },
+        {
+          "id": 85,
+          "keys": [
+            "."
+          ],
+          "effect": "Repeat last change"
+        },
+        {
+          "id": 86,
+          "keys": [
+            "~"
+          ],
+          "effect": "Toggle character case"
+        },
+        {
+          "id": 87,
+          "keys": [
+            "Ctrl+R"
+          ],
+          "effect": "Redo"
+        },
+        {
+          "id": 88,
+          "keys": [
+            "v"
+          ],
+          "effect": "Enter character selection"
+        },
+        {
+          "id": 89,
+          "keys": [
+            "V"
+          ],
+          "effect": "Enter line selection"
+        }
+      ]
+    }
+  ]
+}

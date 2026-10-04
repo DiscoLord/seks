@@ -1,0 +1,973 @@
+{
+  "full_name": "tmux",
+  "note": "tmux 3.7c defaults; prefix = Ctrl+B; copy-mode keys depend on mode-keys.",
+  "source": "https://github.com/tmux/tmux/blob/3.7c/key-bindings.c",
+  "binding_groups": [
+    {
+      "id": 1,
+      "title": "Sessions",
+      "note": "Press Ctrl+B, release it, then press the remaining key.",
+      "bindings": [
+        {
+          "id": 1,
+          "keys": [
+            "Ctrl+B d"
+          ],
+          "effect": "Detach client"
+        },
+        {
+          "id": 2,
+          "keys": [
+            "Ctrl+B s"
+          ],
+          "effect": "Choose session"
+        },
+        {
+          "id": 3,
+          "keys": [
+            "Ctrl+B $"
+          ],
+          "effect": "Rename session"
+        },
+        {
+          "id": 4,
+          "keys": [
+            "Ctrl+B ("
+          ],
+          "effect": "Previous session"
+        },
+        {
+          "id": 5,
+          "keys": [
+            "Ctrl+B )"
+          ],
+          "effect": "Next session"
+        },
+        {
+          "id": 6,
+          "keys": [
+            "Ctrl+B L"
+          ],
+          "effect": "Last session"
+        },
+        {
+          "id": 7,
+          "keys": [
+            "Ctrl+B D"
+          ],
+          "effect": "Choose client to detach"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Windows",
+      "note": "Press Ctrl+B, release it, then press the remaining key.",
+      "bindings": [
+        {
+          "id": 8,
+          "keys": [
+            "Ctrl+B c"
+          ],
+          "effect": "New window"
+        },
+        {
+          "id": 9,
+          "keys": [
+            "Ctrl+B n"
+          ],
+          "effect": "Next window"
+        },
+        {
+          "id": 10,
+          "keys": [
+            "Ctrl+B p"
+          ],
+          "effect": "Previous window"
+        },
+        {
+          "id": 11,
+          "keys": [
+            "Ctrl+B l"
+          ],
+          "effect": "Last window"
+        },
+        {
+          "id": 12,
+          "keys": [
+            "Ctrl+B w"
+          ],
+          "effect": "Choose window"
+        },
+        {
+          "id": 13,
+          "keys": [
+            "Ctrl+B ,"
+          ],
+          "effect": "Rename window"
+        },
+        {
+          "id": 14,
+          "keys": [
+            "Ctrl+B &"
+          ],
+          "effect": "Kill window (confirmation)"
+        },
+        {
+          "id": 15,
+          "keys": [
+            "Ctrl+B ."
+          ],
+          "effect": "Move window to index"
+        },
+        {
+          "id": 16,
+          "keys": [
+            "Ctrl+B '"
+          ],
+          "effect": "Select window by index"
+        },
+        {
+          "id": 17,
+          "keys": [
+            "Ctrl+B 0"
+          ],
+          "effect": "Select window 0"
+        },
+        {
+          "id": 18,
+          "keys": [
+            "Ctrl+B 1"
+          ],
+          "effect": "Select window 1"
+        },
+        {
+          "id": 19,
+          "keys": [
+            "Ctrl+B 2"
+          ],
+          "effect": "Select window 2"
+        },
+        {
+          "id": 20,
+          "keys": [
+            "Ctrl+B 3"
+          ],
+          "effect": "Select window 3"
+        },
+        {
+          "id": 21,
+          "keys": [
+            "Ctrl+B 4"
+          ],
+          "effect": "Select window 4"
+        },
+        {
+          "id": 22,
+          "keys": [
+            "Ctrl+B 5"
+          ],
+          "effect": "Select window 5"
+        },
+        {
+          "id": 23,
+          "keys": [
+            "Ctrl+B 6"
+          ],
+          "effect": "Select window 6"
+        },
+        {
+          "id": 24,
+          "keys": [
+            "Ctrl+B 7"
+          ],
+          "effect": "Select window 7"
+        },
+        {
+          "id": 25,
+          "keys": [
+            "Ctrl+B 8"
+          ],
+          "effect": "Select window 8"
+        },
+        {
+          "id": 26,
+          "keys": [
+            "Ctrl+B 9"
+          ],
+          "effect": "Select window 9"
+        },
+        {
+          "id": 27,
+          "keys": [
+            "Ctrl+B f"
+          ],
+          "effect": "Find pane by text"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Panes",
+      "note": "Press Ctrl+B, release it, then press the remaining key.",
+      "bindings": [
+        {
+          "id": 28,
+          "keys": [
+            "Ctrl+B %"
+          ],
+          "effect": "Split into left and right panes"
+        },
+        {
+          "id": 29,
+          "keys": [
+            "Ctrl+B \""
+          ],
+          "effect": "Split into top and bottom panes"
+        },
+        {
+          "id": 30,
+          "keys": [
+            "Ctrl+B o"
+          ],
+          "effect": "Next pane"
+        },
+        {
+          "id": 31,
+          "keys": [
+            "Ctrl+B ;"
+          ],
+          "effect": "Previously active pane"
+        },
+        {
+          "id": 32,
+          "keys": [
+            "Ctrl+B Left"
+          ],
+          "effect": "Focus pane left"
+        },
+        {
+          "id": 33,
+          "keys": [
+            "Ctrl+B Down"
+          ],
+          "effect": "Focus pane down"
+        },
+        {
+          "id": 34,
+          "keys": [
+            "Ctrl+B Up"
+          ],
+          "effect": "Focus pane up"
+        },
+        {
+          "id": 35,
+          "keys": [
+            "Ctrl+B Right"
+          ],
+          "effect": "Focus pane right"
+        },
+        {
+          "id": 36,
+          "keys": [
+            "Ctrl+B q"
+          ],
+          "effect": "Show pane numbers; type one to focus"
+        },
+        {
+          "id": 37,
+          "keys": [
+            "Ctrl+B z"
+          ],
+          "effect": "Toggle pane zoom"
+        },
+        {
+          "id": 38,
+          "keys": [
+            "Ctrl+B x"
+          ],
+          "effect": "Kill pane (confirmation)"
+        },
+        {
+          "id": 39,
+          "keys": [
+            "Ctrl+B !"
+          ],
+          "effect": "Move pane to a new window"
+        },
+        {
+          "id": 40,
+          "keys": [
+            "Ctrl+B {"
+          ],
+          "effect": "Swap with previous pane"
+        },
+        {
+          "id": 41,
+          "keys": [
+            "Ctrl+B }"
+          ],
+          "effect": "Swap with next pane"
+        },
+        {
+          "id": 42,
+          "keys": [
+            "Ctrl+B Ctrl+O"
+          ],
+          "effect": "Rotate panes"
+        },
+        {
+          "id": 43,
+          "keys": [
+            "Ctrl+B Alt+O"
+          ],
+          "effect": "Rotate panes in reverse"
+        },
+        {
+          "id": 44,
+          "keys": [
+            "Ctrl+B m"
+          ],
+          "effect": "Toggle marked pane"
+        },
+        {
+          "id": 45,
+          "keys": [
+            "Ctrl+B M"
+          ],
+          "effect": "Clear marked pane"
+        },
+        {
+          "id": 46,
+          "keys": [
+            "Ctrl+B T"
+          ],
+          "effect": "Rename pane title"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Pane sizes and layouts",
+      "note": "Press Ctrl+B, release it, then press the remaining key.",
+      "bindings": [
+        {
+          "id": 47,
+          "keys": [
+            "Ctrl+B Ctrl+Left"
+          ],
+          "effect": "Resize left by one cell"
+        },
+        {
+          "id": 48,
+          "keys": [
+            "Ctrl+B Ctrl+Down"
+          ],
+          "effect": "Resize down by one cell"
+        },
+        {
+          "id": 49,
+          "keys": [
+            "Ctrl+B Ctrl+Up"
+          ],
+          "effect": "Resize up by one cell"
+        },
+        {
+          "id": 50,
+          "keys": [
+            "Ctrl+B Ctrl+Right"
+          ],
+          "effect": "Resize right by one cell"
+        },
+        {
+          "id": 51,
+          "keys": [
+            "Ctrl+B Alt+Left"
+          ],
+          "effect": "Resize left by five cells"
+        },
+        {
+          "id": 52,
+          "keys": [
+            "Ctrl+B Alt+Down"
+          ],
+          "effect": "Resize down by five cells"
+        },
+        {
+          "id": 53,
+          "keys": [
+            "Ctrl+B Alt+Up"
+          ],
+          "effect": "Resize up by five cells"
+        },
+        {
+          "id": 54,
+          "keys": [
+            "Ctrl+B Alt+Right"
+          ],
+          "effect": "Resize right by five cells"
+        },
+        {
+          "id": 55,
+          "keys": [
+            "Ctrl+B Space"
+          ],
+          "effect": "Cycle layout"
+        },
+        {
+          "id": 56,
+          "keys": [
+            "Ctrl+B E"
+          ],
+          "effect": "Equalize adjacent panes"
+        },
+        {
+          "id": 57,
+          "keys": [
+            "Ctrl+B Alt+1"
+          ],
+          "effect": "Even columns"
+        },
+        {
+          "id": 58,
+          "keys": [
+            "Ctrl+B Alt+2"
+          ],
+          "effect": "Even rows"
+        },
+        {
+          "id": 59,
+          "keys": [
+            "Ctrl+B Alt+3"
+          ],
+          "effect": "Main pane above"
+        },
+        {
+          "id": 60,
+          "keys": [
+            "Ctrl+B Alt+4"
+          ],
+          "effect": "Main pane left"
+        },
+        {
+          "id": 61,
+          "keys": [
+            "Ctrl+B Alt+5"
+          ],
+          "effect": "Tiled layout"
+        },
+        {
+          "id": 62,
+          "keys": [
+            "Ctrl+B Alt+6"
+          ],
+          "effect": "Main pane below"
+        },
+        {
+          "id": 63,
+          "keys": [
+            "Ctrl+B Alt+7"
+          ],
+          "effect": "Main pane right"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Copying and paste buffers",
+      "note": "Copy-mode selections go to tmux buffers; system clipboard integration depends on configuration.",
+      "bindings": [
+        {
+          "id": 64,
+          "keys": [
+            "Ctrl+B ["
+          ],
+          "effect": "Enter copy mode"
+        },
+        {
+          "id": 65,
+          "keys": [
+            "Ctrl+B PageUp"
+          ],
+          "effect": "Enter copy mode one page up"
+        },
+        {
+          "id": 66,
+          "keys": [
+            "Ctrl+B ]"
+          ],
+          "effect": "Paste latest buffer"
+        },
+        {
+          "id": 67,
+          "keys": [
+            "Ctrl+B ="
+          ],
+          "effect": "Choose paste buffer"
+        },
+        {
+          "id": 68,
+          "keys": [
+            "Ctrl+B #"
+          ],
+          "effect": "List paste buffers"
+        },
+        {
+          "id": 69,
+          "keys": [
+            "Ctrl+B -"
+          ],
+          "effect": "Delete latest buffer"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Copy mode: Emacs",
+      "note": "Enter with Ctrl+B [. Applies when mode-keys is emacs; do not use the prefix inside this mode.",
+      "bindings": [
+        {
+          "id": 70,
+          "keys": [
+            "Up",
+            "Ctrl+P"
+          ],
+          "effect": "Move up"
+        },
+        {
+          "id": 71,
+          "keys": [
+            "Down",
+            "Ctrl+N"
+          ],
+          "effect": "Move down"
+        },
+        {
+          "id": 72,
+          "keys": [
+            "Left",
+            "Ctrl+B"
+          ],
+          "effect": "Move left"
+        },
+        {
+          "id": 73,
+          "keys": [
+            "Right",
+            "Ctrl+F"
+          ],
+          "effect": "Move right"
+        },
+        {
+          "id": 74,
+          "keys": [
+            "Home",
+            "Ctrl+A"
+          ],
+          "effect": "Line start"
+        },
+        {
+          "id": 75,
+          "keys": [
+            "End",
+            "Ctrl+E"
+          ],
+          "effect": "Line end"
+        },
+        {
+          "id": 76,
+          "keys": [
+            "PageUp"
+          ],
+          "effect": "Page up"
+        },
+        {
+          "id": 77,
+          "keys": [
+            "PageDown",
+            "Ctrl+V",
+            "Space"
+          ],
+          "effect": "Page down"
+        },
+        {
+          "id": 78,
+          "keys": [
+            "Alt+<"
+          ],
+          "effect": "History start"
+        },
+        {
+          "id": 79,
+          "keys": [
+            "Alt+>"
+          ],
+          "effect": "History end"
+        },
+        {
+          "id": 80,
+          "keys": [
+            "Alt+B"
+          ],
+          "effect": "Previous word"
+        },
+        {
+          "id": 81,
+          "keys": [
+            "Alt+F"
+          ],
+          "effect": "Next word end"
+        },
+        {
+          "id": 82,
+          "keys": [
+            "Ctrl+Space"
+          ],
+          "effect": "Start selection"
+        },
+        {
+          "id": 83,
+          "keys": [
+            "Ctrl+G"
+          ],
+          "effect": "Clear selection"
+        },
+        {
+          "id": 84,
+          "keys": [
+            "R"
+          ],
+          "effect": "Toggle rectangle selection"
+        },
+        {
+          "id": 85,
+          "keys": [
+            "Ctrl+W",
+            "Alt+W"
+          ],
+          "effect": "Copy selection and exit"
+        },
+        {
+          "id": 86,
+          "keys": [
+            "Ctrl+R"
+          ],
+          "effect": "Search backward"
+        },
+        {
+          "id": 87,
+          "keys": [
+            "Ctrl+S"
+          ],
+          "effect": "Search forward"
+        },
+        {
+          "id": 88,
+          "keys": [
+            "n"
+          ],
+          "effect": "Repeat search"
+        },
+        {
+          "id": 89,
+          "keys": [
+            "N"
+          ],
+          "effect": "Reverse search"
+        },
+        {
+          "id": 90,
+          "keys": [
+            "q",
+            "Esc",
+            "Ctrl+C"
+          ],
+          "effect": "Exit copy mode"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Copy mode: vi",
+      "note": "Enter with Ctrl+B [. Applies when mode-keys is vi; no prefix inside this mode. Set with: set-window-option -g mode-keys vi.",
+      "bindings": [
+        {
+          "id": 91,
+          "keys": [
+            "h",
+            "Left"
+          ],
+          "effect": "Move left"
+        },
+        {
+          "id": 92,
+          "keys": [
+            "j",
+            "Down"
+          ],
+          "effect": "Move down"
+        },
+        {
+          "id": 93,
+          "keys": [
+            "k",
+            "Up"
+          ],
+          "effect": "Move up"
+        },
+        {
+          "id": 94,
+          "keys": [
+            "l",
+            "Right"
+          ],
+          "effect": "Move right"
+        },
+        {
+          "id": 95,
+          "keys": [
+            "w"
+          ],
+          "effect": "Next word"
+        },
+        {
+          "id": 96,
+          "keys": [
+            "b"
+          ],
+          "effect": "Previous word"
+        },
+        {
+          "id": 97,
+          "keys": [
+            "e"
+          ],
+          "effect": "Word end"
+        },
+        {
+          "id": 98,
+          "keys": [
+            "0",
+            "Home"
+          ],
+          "effect": "Line start"
+        },
+        {
+          "id": 99,
+          "keys": [
+            "$",
+            "End"
+          ],
+          "effect": "Line end"
+        },
+        {
+          "id": 100,
+          "keys": [
+            "^"
+          ],
+          "effect": "First nonblank"
+        },
+        {
+          "id": 101,
+          "keys": [
+            "g"
+          ],
+          "effect": "History start"
+        },
+        {
+          "id": 102,
+          "keys": [
+            "G"
+          ],
+          "effect": "History end"
+        },
+        {
+          "id": 103,
+          "keys": [
+            "Ctrl+B",
+            "PageUp"
+          ],
+          "effect": "Page up"
+        },
+        {
+          "id": 104,
+          "keys": [
+            "Ctrl+F",
+            "PageDown"
+          ],
+          "effect": "Page down"
+        },
+        {
+          "id": 105,
+          "keys": [
+            "Ctrl+U"
+          ],
+          "effect": "Half-page up"
+        },
+        {
+          "id": 106,
+          "keys": [
+            "Ctrl+D"
+          ],
+          "effect": "Half-page down"
+        },
+        {
+          "id": 107,
+          "keys": [
+            "Space"
+          ],
+          "effect": "Start selection"
+        },
+        {
+          "id": 108,
+          "keys": [
+            "V"
+          ],
+          "effect": "Select line"
+        },
+        {
+          "id": 109,
+          "keys": [
+            "v",
+            "Ctrl+V"
+          ],
+          "effect": "Toggle rectangle selection"
+        },
+        {
+          "id": 110,
+          "keys": [
+            "o"
+          ],
+          "effect": "Switch selection end"
+        },
+        {
+          "id": 111,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Clear selection"
+        },
+        {
+          "id": 112,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Copy selection and exit"
+        },
+        {
+          "id": 113,
+          "keys": [
+            "A"
+          ],
+          "effect": "Append selection and exit"
+        },
+        {
+          "id": 114,
+          "keys": [
+            "/"
+          ],
+          "effect": "Search forward"
+        },
+        {
+          "id": 115,
+          "keys": [
+            "?"
+          ],
+          "effect": "Search backward"
+        },
+        {
+          "id": 116,
+          "keys": [
+            "n"
+          ],
+          "effect": "Repeat search"
+        },
+        {
+          "id": 117,
+          "keys": [
+            "N"
+          ],
+          "effect": "Reverse search"
+        },
+        {
+          "id": 118,
+          "keys": [
+            "q",
+            "Ctrl+C"
+          ],
+          "effect": "Exit copy mode"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Help and commands",
+      "note": "Press Ctrl+B, release it, then press the remaining key.",
+      "bindings": [
+        {
+          "id": 119,
+          "keys": [
+            "Ctrl+B ?"
+          ],
+          "effect": "List bindings"
+        },
+        {
+          "id": 120,
+          "keys": [
+            "Ctrl+B /"
+          ],
+          "effect": "Describe a key binding"
+        },
+        {
+          "id": 121,
+          "keys": [
+            "Ctrl+B :"
+          ],
+          "effect": "Open command prompt"
+        },
+        {
+          "id": 122,
+          "keys": [
+            "Ctrl+B C"
+          ],
+          "effect": "Customize options"
+        },
+        {
+          "id": 123,
+          "keys": [
+            "Ctrl+B r"
+          ],
+          "effect": "Redraw client"
+        },
+        {
+          "id": 124,
+          "keys": [
+            "Ctrl+B ~"
+          ],
+          "effect": "Show messages"
+        },
+        {
+          "id": 125,
+          "keys": [
+            "Ctrl+B t"
+          ],
+          "effect": "Show clock"
+        },
+        {
+          "id": 126,
+          "keys": [
+            "Ctrl+B Ctrl+B"
+          ],
+          "effect": "Send Ctrl+B to application"
+        },
+        {
+          "id": 127,
+          "keys": [
+            "Ctrl+B Ctrl+Z"
+          ],
+          "effect": "Suspend client"
+        }
+      ]
+    }
+  ]
+}

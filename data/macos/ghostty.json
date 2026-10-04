@@ -1,0 +1,614 @@
+{
+  "full_name": "Ghostty",
+  "note": "Ghostty 1.3.1 defaults; custom bindings may override these.",
+  "source": "https://github.com/ghostty-org/ghostty/blob/v1.3.1/src/config/Config.zig",
+  "binding_groups": [
+    {
+      "id": 1,
+      "title": "Clipboard",
+      "note": "Copy needs selected text; primary selection is separate from the clipboard.",
+      "bindings": [
+        {
+          "id": 1,
+          "keys": [
+            "Cmd+C"
+          ],
+          "effect": "Copy selection"
+        },
+        {
+          "id": 2,
+          "keys": [
+            "Cmd+V"
+          ],
+          "effect": "Paste clipboard"
+        },
+        {
+          "id": 3,
+          "keys": [
+            "Cmd+Shift+V"
+          ],
+          "effect": "Paste primary selection"
+        },
+        {
+          "id": 4,
+          "keys": [
+            "Cmd+A"
+          ],
+          "effect": "Select all terminal text"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Windows and tabs",
+      "note": "On macOS, undo can restore recently closed terminals within the undo timeout.",
+      "bindings": [
+        {
+          "id": 5,
+          "keys": [
+            "Cmd+N"
+          ],
+          "effect": "New window"
+        },
+        {
+          "id": 6,
+          "keys": [
+            "Cmd+T"
+          ],
+          "effect": "New tab"
+        },
+        {
+          "id": 7,
+          "keys": [
+            "Cmd+W"
+          ],
+          "effect": "Close active split or terminal"
+        },
+        {
+          "id": 8,
+          "keys": [
+            "Cmd+Opt+W"
+          ],
+          "effect": "Close current tab"
+        },
+        {
+          "id": 9,
+          "keys": [
+            "Cmd+Shift+W"
+          ],
+          "effect": "Close window"
+        },
+        {
+          "id": 10,
+          "keys": [
+            "Cmd+Shift+Opt+W"
+          ],
+          "effect": "Close all windows"
+        },
+        {
+          "id": 11,
+          "keys": [
+            "Cmd+Q"
+          ],
+          "effect": "Quit Ghostty"
+        },
+        {
+          "id": 12,
+          "keys": [
+            "Ctrl+Tab",
+            "Cmd+Shift+]"
+          ],
+          "effect": "Next tab"
+        },
+        {
+          "id": 13,
+          "keys": [
+            "Ctrl+Shift+Tab",
+            "Cmd+Shift+["
+          ],
+          "effect": "Previous tab"
+        },
+        {
+          "id": 14,
+          "keys": [
+            "Cmd+1"
+          ],
+          "effect": "Select tab 1"
+        },
+        {
+          "id": 15,
+          "keys": [
+            "Cmd+2"
+          ],
+          "effect": "Select tab 2"
+        },
+        {
+          "id": 16,
+          "keys": [
+            "Cmd+3"
+          ],
+          "effect": "Select tab 3"
+        },
+        {
+          "id": 17,
+          "keys": [
+            "Cmd+4"
+          ],
+          "effect": "Select tab 4"
+        },
+        {
+          "id": 18,
+          "keys": [
+            "Cmd+5"
+          ],
+          "effect": "Select tab 5"
+        },
+        {
+          "id": 19,
+          "keys": [
+            "Cmd+6"
+          ],
+          "effect": "Select tab 6"
+        },
+        {
+          "id": 20,
+          "keys": [
+            "Cmd+7"
+          ],
+          "effect": "Select tab 7"
+        },
+        {
+          "id": 21,
+          "keys": [
+            "Cmd+8"
+          ],
+          "effect": "Select tab 8"
+        },
+        {
+          "id": 22,
+          "keys": [
+            "Cmd+9"
+          ],
+          "effect": "Select last tab"
+        },
+        {
+          "id": 23,
+          "keys": [
+            "Cmd+Z",
+            "Cmd+Shift+T"
+          ],
+          "effect": "Undo window or split operation"
+        },
+        {
+          "id": 24,
+          "keys": [
+            "Cmd+Shift+Z"
+          ],
+          "effect": "Redo window or split operation"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Splits",
+      "bindings": [
+        {
+          "id": 25,
+          "keys": [
+            "Cmd+D"
+          ],
+          "effect": "New split to the right"
+        },
+        {
+          "id": 26,
+          "keys": [
+            "Cmd+Shift+D"
+          ],
+          "effect": "New split below"
+        },
+        {
+          "id": 27,
+          "keys": [
+            "Cmd+["
+          ],
+          "effect": "Previous split"
+        },
+        {
+          "id": 28,
+          "keys": [
+            "Cmd+]"
+          ],
+          "effect": "Next split"
+        },
+        {
+          "id": 29,
+          "keys": [
+            "Cmd+Opt+Left"
+          ],
+          "effect": "Focus split left"
+        },
+        {
+          "id": 30,
+          "keys": [
+            "Cmd+Opt+Down"
+          ],
+          "effect": "Focus split down"
+        },
+        {
+          "id": 31,
+          "keys": [
+            "Cmd+Opt+Up"
+          ],
+          "effect": "Focus split up"
+        },
+        {
+          "id": 32,
+          "keys": [
+            "Cmd+Opt+Right"
+          ],
+          "effect": "Focus split right"
+        },
+        {
+          "id": 33,
+          "keys": [
+            "Cmd+Ctrl+Left"
+          ],
+          "effect": "Resize split left"
+        },
+        {
+          "id": 34,
+          "keys": [
+            "Cmd+Ctrl+Down"
+          ],
+          "effect": "Resize split down"
+        },
+        {
+          "id": 35,
+          "keys": [
+            "Cmd+Ctrl+Up"
+          ],
+          "effect": "Resize split up"
+        },
+        {
+          "id": 36,
+          "keys": [
+            "Cmd+Ctrl+Right"
+          ],
+          "effect": "Resize split right"
+        },
+        {
+          "id": 37,
+          "keys": [
+            "Cmd+Shift+Enter"
+          ],
+          "effect": "Toggle split zoom"
+        },
+        {
+          "id": 38,
+          "keys": [
+            "Cmd+Ctrl+="
+          ],
+          "effect": "Equalize split sizes"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Scrollback",
+      "note": "These operate on terminal scrollback, not an application’s own scrolling.",
+      "bindings": [
+        {
+          "id": 39,
+          "keys": [
+            "Cmd+PageUp"
+          ],
+          "effect": "Page up"
+        },
+        {
+          "id": 40,
+          "keys": [
+            "Cmd+PageDown"
+          ],
+          "effect": "Page down"
+        },
+        {
+          "id": 41,
+          "keys": [
+            "Cmd+Home"
+          ],
+          "effect": "Scroll to top"
+        },
+        {
+          "id": 42,
+          "keys": [
+            "Cmd+End"
+          ],
+          "effect": "Scroll to bottom"
+        },
+        {
+          "id": 43,
+          "keys": [
+            "Cmd+J"
+          ],
+          "effect": "Reveal selection"
+        },
+        {
+          "id": 44,
+          "keys": [
+            "Cmd+K"
+          ],
+          "effect": "Clear screen and scrollback"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Shell prompt navigation",
+      "note": "Requires shell integration or prompt markers from the running shell.",
+      "bindings": [
+        {
+          "id": 45,
+          "keys": [
+            "Cmd+Up",
+            "Cmd+Shift+Up"
+          ],
+          "effect": "Previous prompt"
+        },
+        {
+          "id": 46,
+          "keys": [
+            "Cmd+Down",
+            "Cmd+Shift+Down"
+          ],
+          "effect": "Next prompt"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Search",
+      "note": "Closing search and navigating matches require an active search.",
+      "bindings": [
+        {
+          "id": 47,
+          "keys": [
+            "Cmd+F"
+          ],
+          "effect": "Search terminal text"
+        },
+        {
+          "id": 48,
+          "keys": [
+            "Cmd+E"
+          ],
+          "effect": "Search selected text"
+        },
+        {
+          "id": 49,
+          "keys": [
+            "Cmd+G"
+          ],
+          "effect": "Next match"
+        },
+        {
+          "id": 50,
+          "keys": [
+            "Cmd+Shift+G"
+          ],
+          "effect": "Previous match"
+        },
+        {
+          "id": 51,
+          "keys": [
+            "Esc",
+            "Cmd+Shift+F"
+          ],
+          "effect": "Close search"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Adjust selection",
+      "note": "First select text with the mouse; these keys adjust an existing selection.",
+      "bindings": [
+        {
+          "id": 52,
+          "keys": [
+            "Shift+Left"
+          ],
+          "effect": "Adjust selection left"
+        },
+        {
+          "id": 53,
+          "keys": [
+            "Shift+Right"
+          ],
+          "effect": "Adjust selection right"
+        },
+        {
+          "id": 54,
+          "keys": [
+            "Shift+Up"
+          ],
+          "effect": "Adjust selection up"
+        },
+        {
+          "id": 55,
+          "keys": [
+            "Shift+Down"
+          ],
+          "effect": "Adjust selection down"
+        },
+        {
+          "id": 56,
+          "keys": [
+            "Shift+PageUp"
+          ],
+          "effect": "Adjust selection one page up"
+        },
+        {
+          "id": 57,
+          "keys": [
+            "Shift+PageDown"
+          ],
+          "effect": "Adjust selection one page down"
+        },
+        {
+          "id": 58,
+          "keys": [
+            "Shift+Home"
+          ],
+          "effect": "Adjust selection to start"
+        },
+        {
+          "id": 59,
+          "keys": [
+            "Shift+End"
+          ],
+          "effect": "Adjust selection to end"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Font and display",
+      "bindings": [
+        {
+          "id": 60,
+          "keys": [
+            "Cmd+Plus",
+            "Cmd+="
+          ],
+          "effect": "Larger font"
+        },
+        {
+          "id": 61,
+          "keys": [
+            "Cmd+-"
+          ],
+          "effect": "Smaller font"
+        },
+        {
+          "id": 62,
+          "keys": [
+            "Cmd+0"
+          ],
+          "effect": "Reset font size"
+        },
+        {
+          "id": 63,
+          "keys": [
+            "Cmd+Enter",
+            "Cmd+Ctrl+F"
+          ],
+          "effect": "Toggle fullscreen"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Configuration and tools",
+      "bindings": [
+        {
+          "id": 64,
+          "keys": [
+            "Cmd+,"
+          ],
+          "effect": "Edit configuration"
+        },
+        {
+          "id": 65,
+          "keys": [
+            "Cmd+Shift+,"
+          ],
+          "effect": "Reload configuration"
+        },
+        {
+          "id": 66,
+          "keys": [
+            "Cmd+Shift+P"
+          ],
+          "effect": "Command palette"
+        },
+        {
+          "id": 67,
+          "keys": [
+            "Cmd+Opt+I"
+          ],
+          "effect": "Toggle inspector"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Export scrollback",
+      "note": "Exports text to a temporary file; paste/copy actions use the file path.",
+      "bindings": [
+        {
+          "id": 68,
+          "keys": [
+            "Cmd+Shift+J"
+          ],
+          "effect": "Write scrollback file and paste its path"
+        },
+        {
+          "id": 69,
+          "keys": [
+            "Cmd+Ctrl+Shift+J"
+          ],
+          "effect": "Write scrollback file and copy its path"
+        },
+        {
+          "id": 70,
+          "keys": [
+            "Cmd+Shift+Opt+J"
+          ],
+          "effect": "Write scrollback file and open it"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Shell editing compatibility",
+      "note": "The shell or foreground application determines what these input sequences do.",
+      "bindings": [
+        {
+          "id": 71,
+          "keys": [
+            "Cmd+Left"
+          ],
+          "effect": "Send Ctrl+A (usually line start)"
+        },
+        {
+          "id": 72,
+          "keys": [
+            "Cmd+Right"
+          ],
+          "effect": "Send Ctrl+E (usually line end)"
+        },
+        {
+          "id": 73,
+          "keys": [
+            "Cmd+Backspace"
+          ],
+          "effect": "Send Ctrl+U (usually delete back to start)"
+        },
+        {
+          "id": 74,
+          "keys": [
+            "Opt+Left"
+          ],
+          "effect": "Send Esc b (usually previous word)"
+        },
+        {
+          "id": 75,
+          "keys": [
+            "Opt+Right"
+          ],
+          "effect": "Send Esc f (usually next word)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,486 @@
+{
+  "full_name": "Fish",
+  "note": "Fish 4.9.3 default Emacs-style keybindings; excludes optional vi keymaps.",
+  "source": "https://fishshell.com/docs/current/interactive.html",
+  "binding_groups": [
+    {
+      "id": 1,
+      "title": "Movement and autosuggestions",
+      "note": "Opt requires the terminal to send Meta/Esc.",
+      "bindings": [
+        {
+          "id": 1,
+          "keys": [
+            "Left",
+            "Ctrl+B"
+          ],
+          "effect": "Previous character"
+        },
+        {
+          "id": 2,
+          "keys": [
+            "Right",
+            "Ctrl+F"
+          ],
+          "effect": "Next character; accept suggestion at line end"
+        },
+        {
+          "id": 3,
+          "keys": [
+            "Home",
+            "Ctrl+A"
+          ],
+          "effect": "Line start"
+        },
+        {
+          "id": 4,
+          "keys": [
+            "End",
+            "Ctrl+E"
+          ],
+          "effect": "Line end; accept suggestion when already there"
+        },
+        {
+          "id": 5,
+          "keys": [
+            "Opt+B",
+            "Opt+Left"
+          ],
+          "effect": "Previous word; previous directory when input is empty"
+        },
+        {
+          "id": 6,
+          "keys": [
+            "Opt+F",
+            "Opt+Right"
+          ],
+          "effect": "Next word; accept suggestion word or visit next directory"
+        },
+        {
+          "id": 7,
+          "keys": [
+            "Ctrl+Left"
+          ],
+          "effect": "Previous shell token"
+        },
+        {
+          "id": 8,
+          "keys": [
+            "Ctrl+Right"
+          ],
+          "effect": "Next shell token or suggestion token"
+        },
+        {
+          "id": 9,
+          "keys": [
+            "Opt+<"
+          ],
+          "effect": "Start of multiline input"
+        },
+        {
+          "id": 10,
+          "keys": [
+            "Opt+>"
+          ],
+          "effect": "End of multiline input"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Editing",
+      "note": "Ctrl+Z undoes prompt edits; it is not a suspend binding inside the Fish line editor.",
+      "bindings": [
+        {
+          "id": 11,
+          "keys": [
+            "Backspace",
+            "Ctrl+H"
+          ],
+          "effect": "Delete previous character"
+        },
+        {
+          "id": 12,
+          "keys": [
+            "Delete"
+          ],
+          "effect": "Delete next character"
+        },
+        {
+          "id": 13,
+          "keys": [
+            "Ctrl+D"
+          ],
+          "effect": "Delete character; exit when input is empty"
+        },
+        {
+          "id": 14,
+          "keys": [
+            "Ctrl+U"
+          ],
+          "effect": "Cut back to line start"
+        },
+        {
+          "id": 15,
+          "keys": [
+            "Ctrl+K"
+          ],
+          "effect": "Cut to line end"
+        },
+        {
+          "id": 16,
+          "keys": [
+            "Ctrl+W"
+          ],
+          "effect": "Cut preceding path component"
+        },
+        {
+          "id": 17,
+          "keys": [
+            "Opt+Backspace"
+          ],
+          "effect": "Cut preceding word"
+        },
+        {
+          "id": 18,
+          "keys": [
+            "Ctrl+Backspace"
+          ],
+          "effect": "Cut preceding shell token"
+        },
+        {
+          "id": 19,
+          "keys": [
+            "Opt+Delete"
+          ],
+          "effect": "Cut next word"
+        },
+        {
+          "id": 20,
+          "keys": [
+            "Ctrl+Delete"
+          ],
+          "effect": "Cut next shell token"
+        },
+        {
+          "id": 21,
+          "keys": [
+            "Ctrl+Y"
+          ],
+          "effect": "Paste latest kill-ring entry"
+        },
+        {
+          "id": 22,
+          "keys": [
+            "Opt+Y"
+          ],
+          "effect": "Cycle kill-ring entries after paste"
+        },
+        {
+          "id": 23,
+          "keys": [
+            "Ctrl+T"
+          ],
+          "effect": "Transpose characters"
+        },
+        {
+          "id": 24,
+          "keys": [
+            "Opt+T"
+          ],
+          "effect": "Transpose words"
+        },
+        {
+          "id": 25,
+          "keys": [
+            "Opt+U"
+          ],
+          "effect": "Uppercase word"
+        },
+        {
+          "id": 26,
+          "keys": [
+            "Opt+C"
+          ],
+          "effect": "Capitalize word"
+        },
+        {
+          "id": 27,
+          "keys": [
+            "Ctrl+Z",
+            "Ctrl+_",
+            "Ctrl+/"
+          ],
+          "effect": "Undo edit"
+        },
+        {
+          "id": 28,
+          "keys": [
+            "Ctrl+Shift+Z",
+            "Opt+/"
+          ],
+          "effect": "Redo edit"
+        },
+        {
+          "id": 29,
+          "keys": [
+            "Opt+Enter",
+            "Shift+Enter"
+          ],
+          "effect": "Insert newline"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "History",
+      "bindings": [
+        {
+          "id": 30,
+          "keys": [
+            "Up",
+            "Ctrl+P"
+          ],
+          "effect": "Previous input line or matching history entry"
+        },
+        {
+          "id": 31,
+          "keys": [
+            "Down",
+            "Ctrl+N"
+          ],
+          "effect": "Next input line or matching history entry"
+        },
+        {
+          "id": 32,
+          "keys": [
+            "PageUp"
+          ],
+          "effect": "Oldest matching history entry"
+        },
+        {
+          "id": 33,
+          "keys": [
+            "PageDown"
+          ],
+          "effect": "Newest matching history entry"
+        },
+        {
+          "id": 34,
+          "keys": [
+            "Ctrl+R"
+          ],
+          "effect": "Open searchable history pager"
+        },
+        {
+          "id": 35,
+          "keys": [
+            "Opt+Up",
+            "Opt+."
+          ],
+          "effect": "Search older history tokens"
+        },
+        {
+          "id": 36,
+          "keys": [
+            "Opt+Down"
+          ],
+          "effect": "Search newer history tokens"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "History pager",
+      "note": "Open with Ctrl+R; typing edits the history search.",
+      "bindings": [
+        {
+          "id": 37,
+          "keys": [
+            "Ctrl+R"
+          ],
+          "effect": "Search older history results"
+        },
+        {
+          "id": 38,
+          "keys": [
+            "Ctrl+S"
+          ],
+          "effect": "Search newer history results"
+        },
+        {
+          "id": 39,
+          "keys": [
+            "Shift+Delete"
+          ],
+          "effect": "Delete highlighted history entry"
+        },
+        {
+          "id": 40,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Accept selected history input"
+        },
+        {
+          "id": 41,
+          "keys": [
+            "Esc",
+            "Ctrl+G"
+          ],
+          "effect": "Cancel selection"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Completion pager",
+      "note": "Appears during completion when multiple candidates are available.",
+      "bindings": [
+        {
+          "id": 42,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Complete or advance through candidates"
+        },
+        {
+          "id": 43,
+          "keys": [
+            "Shift+Tab"
+          ],
+          "effect": "Complete and search candidates"
+        },
+        {
+          "id": 44,
+          "keys": [
+            "Ctrl+S"
+          ],
+          "effect": "Toggle candidate search"
+        },
+        {
+          "id": 45,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Move up in candidates"
+        },
+        {
+          "id": 46,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Move down in candidates"
+        },
+        {
+          "id": 47,
+          "keys": [
+            "Left"
+          ],
+          "effect": "Move left in candidates"
+        },
+        {
+          "id": 48,
+          "keys": [
+            "Right"
+          ],
+          "effect": "Move right in candidates"
+        },
+        {
+          "id": 49,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Accept selected completion"
+        },
+        {
+          "id": 50,
+          "keys": [
+            "Esc",
+            "Ctrl+G"
+          ],
+          "effect": "Cancel or undo completion"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Clipboard and prompt tools",
+      "note": "Clipboard actions require an available clipboard backend; external tools must be installed.",
+      "bindings": [
+        {
+          "id": 51,
+          "keys": [
+            "Ctrl+X"
+          ],
+          "effect": "Copy selected text or whole input to system clipboard"
+        },
+        {
+          "id": 52,
+          "keys": [
+            "Ctrl+V"
+          ],
+          "effect": "Paste system clipboard"
+        },
+        {
+          "id": 53,
+          "keys": [
+            "Opt+E",
+            "Opt+V"
+          ],
+          "effect": "Edit current input in external editor"
+        },
+        {
+          "id": 54,
+          "keys": [
+            "Opt+H",
+            "F1"
+          ],
+          "effect": "Open help for current command"
+        },
+        {
+          "id": 55,
+          "keys": [
+            "Opt+L"
+          ],
+          "effect": "List directory associated with current token"
+        },
+        {
+          "id": 56,
+          "keys": [
+            "Opt+O"
+          ],
+          "effect": "Preview current file token"
+        },
+        {
+          "id": 57,
+          "keys": [
+            "Opt+W"
+          ],
+          "effect": "Describe current command token"
+        },
+        {
+          "id": 58,
+          "keys": [
+            "Ctrl+C"
+          ],
+          "effect": "Clear current input"
+        },
+        {
+          "id": 59,
+          "keys": [
+            "Ctrl+L"
+          ],
+          "effect": "Clear display and redraw input"
+        },
+        {
+          "id": 60,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Execute input or continue incomplete input"
+        }
+      ]
+    }
+  ]
+}

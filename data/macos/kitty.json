@@ -1,0 +1,698 @@
+{
+  "full_name": "kitty",
+  "note": "kitty 0.49.2 defaults; kitty_mod = Ctrl+Shift.",
+  "source": "https://github.com/kovidgoyal/kitty/blob/v0.49.2/kitty/options/definition.py",
+  "binding_groups": [
+    {
+      "id": 1,
+      "title": "Clipboard",
+      "note": "Selection shortcuts need selected text; on macOS Cmd+C passes through when nothing is selected.",
+      "bindings": [
+        {
+          "id": 1,
+          "keys": [
+            "Ctrl+Shift+C"
+          ],
+          "effect": "Copy to clipboard"
+        },
+        {
+          "id": 2,
+          "keys": [
+            "Cmd+C"
+          ],
+          "effect": "Copy selection; otherwise pass key through"
+        },
+        {
+          "id": 3,
+          "keys": [
+            "Ctrl+Shift+V",
+            "Cmd+V"
+          ],
+          "effect": "Paste from clipboard"
+        },
+        {
+          "id": 4,
+          "keys": [
+            "Ctrl+Shift+S",
+            "Shift+Insert"
+          ],
+          "effect": "Paste from selection"
+        },
+        {
+          "id": 5,
+          "keys": [
+            "Ctrl+Shift+O"
+          ],
+          "effect": "Open selection with system handler"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Scrolling",
+      "note": "Prompt jumps and last-command output require shell integration.",
+      "bindings": [
+        {
+          "id": 6,
+          "keys": [
+            "Ctrl+Shift+Up",
+            "Ctrl+Shift+K",
+            "Cmd+Opt+PageUp",
+            "Cmd+Up"
+          ],
+          "effect": "Scroll line up"
+        },
+        {
+          "id": 7,
+          "keys": [
+            "Ctrl+Shift+Down",
+            "Ctrl+Shift+J",
+            "Cmd+Opt+PageDown",
+            "Cmd+Down"
+          ],
+          "effect": "Scroll line down"
+        },
+        {
+          "id": 8,
+          "keys": [
+            "Ctrl+Shift+PageUp",
+            "Cmd+PageUp"
+          ],
+          "effect": "Scroll page up"
+        },
+        {
+          "id": 9,
+          "keys": [
+            "Ctrl+Shift+PageDown",
+            "Cmd+PageDown"
+          ],
+          "effect": "Scroll page down"
+        },
+        {
+          "id": 10,
+          "keys": [
+            "Ctrl+Shift+Home",
+            "Cmd+Home"
+          ],
+          "effect": "Scroll to top"
+        },
+        {
+          "id": 11,
+          "keys": [
+            "Ctrl+Shift+End",
+            "Cmd+End"
+          ],
+          "effect": "Scroll to bottom"
+        },
+        {
+          "id": 12,
+          "keys": [
+            "Ctrl+Shift+Z"
+          ],
+          "effect": "Scroll to previous shell prompt"
+        },
+        {
+          "id": 13,
+          "keys": [
+            "Ctrl+Shift+X"
+          ],
+          "effect": "Scroll to next shell prompt"
+        },
+        {
+          "id": 14,
+          "keys": [
+            "Ctrl+Shift+H"
+          ],
+          "effect": "Browse scrollback buffer in pager"
+        },
+        {
+          "id": 15,
+          "keys": [
+            "Ctrl+Shift+G"
+          ],
+          "effect": "Browse output of the last shell command in pager"
+        },
+        {
+          "id": 16,
+          "keys": [
+            "Ctrl+Shift+/",
+            "Cmd+F"
+          ],
+          "effect": "Search the scrollback within a pager"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Window management",
+      "note": "A kitty window is a terminal pane inside an OS window; resizing opens an interactive tool.",
+      "bindings": [
+        {
+          "id": 17,
+          "keys": [
+            "Ctrl+Shift+Enter",
+            "Cmd+Enter"
+          ],
+          "effect": "New terminal pane"
+        },
+        {
+          "id": 18,
+          "keys": [
+            "Ctrl+Shift+N",
+            "Cmd+N"
+          ],
+          "effect": "New desktop window"
+        },
+        {
+          "id": 19,
+          "keys": [
+            "Ctrl+Shift+W",
+            "Cmd+Shift+D"
+          ],
+          "effect": "Close terminal pane"
+        },
+        {
+          "id": 20,
+          "keys": [
+            "Ctrl+Shift+]"
+          ],
+          "effect": "Next window"
+        },
+        {
+          "id": 21,
+          "keys": [
+            "Ctrl+Shift+["
+          ],
+          "effect": "Previous window"
+        },
+        {
+          "id": 22,
+          "keys": [
+            "Ctrl+Shift+F"
+          ],
+          "effect": "Move window forward"
+        },
+        {
+          "id": 23,
+          "keys": [
+            "Ctrl+Shift+B"
+          ],
+          "effect": "Move window backward"
+        },
+        {
+          "id": 24,
+          "keys": [
+            "Ctrl+Shift+`"
+          ],
+          "effect": "Move window to top"
+        },
+        {
+          "id": 25,
+          "keys": [
+            "Ctrl+Shift+R",
+            "Cmd+R"
+          ],
+          "effect": "Start resizing window"
+        },
+        {
+          "id": 26,
+          "keys": [
+            "Ctrl+Shift+1",
+            "Cmd+1"
+          ],
+          "effect": "First window"
+        },
+        {
+          "id": 27,
+          "keys": [
+            "Ctrl+Shift+2",
+            "Cmd+2"
+          ],
+          "effect": "Second window"
+        },
+        {
+          "id": 28,
+          "keys": [
+            "Ctrl+Shift+3",
+            "Cmd+3"
+          ],
+          "effect": "Third window"
+        },
+        {
+          "id": 29,
+          "keys": [
+            "Ctrl+Shift+4",
+            "Cmd+4"
+          ],
+          "effect": "Fourth window"
+        },
+        {
+          "id": 30,
+          "keys": [
+            "Ctrl+Shift+5",
+            "Cmd+5"
+          ],
+          "effect": "Fifth window"
+        },
+        {
+          "id": 31,
+          "keys": [
+            "Ctrl+Shift+6",
+            "Cmd+6"
+          ],
+          "effect": "Sixth window"
+        },
+        {
+          "id": 32,
+          "keys": [
+            "Ctrl+Shift+7",
+            "Cmd+7"
+          ],
+          "effect": "Seventh window"
+        },
+        {
+          "id": 33,
+          "keys": [
+            "Ctrl+Shift+8",
+            "Cmd+8"
+          ],
+          "effect": "Eighth window"
+        },
+        {
+          "id": 34,
+          "keys": [
+            "Ctrl+Shift+9",
+            "Cmd+9"
+          ],
+          "effect": "Ninth window"
+        },
+        {
+          "id": 35,
+          "keys": [
+            "Ctrl+Shift+0"
+          ],
+          "effect": "Tenth window"
+        },
+        {
+          "id": 36,
+          "keys": [
+            "Ctrl+Shift+F7"
+          ],
+          "effect": "Visually select and focus window"
+        },
+        {
+          "id": 37,
+          "keys": [
+            "Ctrl+Shift+F8"
+          ],
+          "effect": "Visually swap window with another"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Tab management",
+      "bindings": [
+        {
+          "id": 38,
+          "keys": [
+            "Ctrl+Shift+Right",
+            "Cmd+Shift+]",
+            "Ctrl+Tab"
+          ],
+          "effect": "Next tab"
+        },
+        {
+          "id": 39,
+          "keys": [
+            "Ctrl+Shift+Left",
+            "Cmd+Shift+[",
+            "Ctrl+Shift+Tab"
+          ],
+          "effect": "Previous tab"
+        },
+        {
+          "id": 40,
+          "keys": [
+            "Ctrl+Shift+T",
+            "Cmd+T"
+          ],
+          "effect": "New tab"
+        },
+        {
+          "id": 41,
+          "keys": [
+            "Ctrl+Shift+Q",
+            "Cmd+W"
+          ],
+          "effect": "Close tab"
+        },
+        {
+          "id": 42,
+          "keys": [
+            "Cmd+Shift+W"
+          ],
+          "effect": "Close OS window"
+        },
+        {
+          "id": 43,
+          "keys": [
+            "Ctrl+Shift+."
+          ],
+          "effect": "Move tab forward"
+        },
+        {
+          "id": 44,
+          "keys": [
+            "Ctrl+Shift+,"
+          ],
+          "effect": "Move tab backward"
+        },
+        {
+          "id": 45,
+          "keys": [
+            "Ctrl+Shift+Opt+T",
+            "Cmd+Shift+I"
+          ],
+          "effect": "Set tab title"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Layout management",
+      "note": "Cycles through enabled_layouts; the default layout is tall.",
+      "bindings": [
+        {
+          "id": 46,
+          "keys": [
+            "Ctrl+Shift+L"
+          ],
+          "effect": "Next layout"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Font sizes",
+      "note": "Changes font size across all OS windows.",
+      "bindings": [
+        {
+          "id": 47,
+          "keys": [
+            "Ctrl+Shift+=",
+            "Ctrl+Shift+Plus",
+            "Ctrl+Shift+NumpadPlus",
+            "Cmd+Plus",
+            "Cmd+=",
+            "Cmd+Shift+="
+          ],
+          "effect": "Increase font size"
+        },
+        {
+          "id": 48,
+          "keys": [
+            "Ctrl+Shift+-",
+            "Ctrl+Shift+NumpadMinus",
+            "Cmd+-",
+            "Cmd+Shift+-"
+          ],
+          "effect": "Decrease font size"
+        },
+        {
+          "id": 49,
+          "keys": [
+            "Ctrl+Shift+Backspace",
+            "Cmd+0"
+          ],
+          "effect": "Reset font size"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Select and act on visible text",
+      "note": "For hints, type a displayed label; multi-key shortcuts release modifiers before the next step.",
+      "bindings": [
+        {
+          "id": 50,
+          "keys": [
+            "Ctrl+Shift+E"
+          ],
+          "effect": "Open URL"
+        },
+        {
+          "id": 51,
+          "keys": [
+            "Ctrl+Shift+P f"
+          ],
+          "effect": "Choose visible path and insert it"
+        },
+        {
+          "id": 52,
+          "keys": [
+            "Ctrl+Shift+P Shift+F"
+          ],
+          "effect": "Choose visible path and open it"
+        },
+        {
+          "id": 53,
+          "keys": [
+            "Ctrl+Shift+P c"
+          ],
+          "effect": "Insert chosen file"
+        },
+        {
+          "id": 54,
+          "keys": [
+            "Ctrl+Shift+P d"
+          ],
+          "effect": "Insert chosen directory"
+        },
+        {
+          "id": 55,
+          "keys": [
+            "Ctrl+Shift+P l"
+          ],
+          "effect": "Choose visible line and insert it"
+        },
+        {
+          "id": 56,
+          "keys": [
+            "Ctrl+Shift+P w"
+          ],
+          "effect": "Choose visible word and insert it"
+        },
+        {
+          "id": 57,
+          "keys": [
+            "Ctrl+Shift+P h"
+          ],
+          "effect": "Choose visible hash and insert it"
+        },
+        {
+          "id": 58,
+          "keys": [
+            "Ctrl+Shift+P n"
+          ],
+          "effect": "Choose file:line reference and open editor"
+        },
+        {
+          "id": 59,
+          "keys": [
+            "Ctrl+Shift+P y"
+          ],
+          "effect": "Choose terminal hyperlink and open it"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Miscellaneous",
+      "note": "Opacity shortcuts require dynamic_background_opacity yes; clear-last-command needs shell integration.",
+      "bindings": [
+        {
+          "id": 60,
+          "keys": [
+            "Ctrl+Shift+F1"
+          ],
+          "effect": "Show documentation"
+        },
+        {
+          "id": 61,
+          "keys": [
+            "Ctrl+Shift+F3"
+          ],
+          "effect": "Command palette"
+        },
+        {
+          "id": 62,
+          "keys": [
+            "Ctrl+Shift+F11",
+            "Cmd+Ctrl+F"
+          ],
+          "effect": "Toggle fullscreen"
+        },
+        {
+          "id": 63,
+          "keys": [
+            "Ctrl+Shift+F10"
+          ],
+          "effect": "Toggle maximized"
+        },
+        {
+          "id": 64,
+          "keys": [
+            "Cmd+Opt+S"
+          ],
+          "effect": "Toggle macOS secure keyboard entry"
+        },
+        {
+          "id": 65,
+          "keys": [
+            "Cmd+`"
+          ],
+          "effect": "macOS Cycle through OS Windows"
+        },
+        {
+          "id": 66,
+          "keys": [
+            "Cmd+Shift+`"
+          ],
+          "effect": "macOS Cycle through OS Windows backwards"
+        },
+        {
+          "id": 67,
+          "keys": [
+            "Ctrl+Shift+U",
+            "Cmd+Ctrl+Space"
+          ],
+          "effect": "Unicode input"
+        },
+        {
+          "id": 68,
+          "keys": [
+            "Ctrl+Shift+F2",
+            "Cmd+,"
+          ],
+          "effect": "Edit config file"
+        },
+        {
+          "id": 69,
+          "keys": [
+            "Ctrl+Shift+Esc"
+          ],
+          "effect": "Open the kitty command shell"
+        },
+        {
+          "id": 70,
+          "keys": [
+            "Ctrl+Shift+A m"
+          ],
+          "effect": "Increase background opacity"
+        },
+        {
+          "id": 71,
+          "keys": [
+            "Ctrl+Shift+A l"
+          ],
+          "effect": "Decrease background opacity"
+        },
+        {
+          "id": 72,
+          "keys": [
+            "Ctrl+Shift+A 1"
+          ],
+          "effect": "Make background fully opaque"
+        },
+        {
+          "id": 73,
+          "keys": [
+            "Ctrl+Shift+A d"
+          ],
+          "effect": "Reset background opacity"
+        },
+        {
+          "id": 74,
+          "keys": [
+            "Ctrl+Shift+Delete",
+            "Cmd+Opt+R"
+          ],
+          "effect": "Reset terminal state and erase contents"
+        },
+        {
+          "id": 75,
+          "keys": [
+            "Cmd+K"
+          ],
+          "effect": "Erase terminal text up to cursor"
+        },
+        {
+          "id": 76,
+          "keys": [
+            "Cmd+Opt+K"
+          ],
+          "effect": "Clear scrollback"
+        },
+        {
+          "id": 77,
+          "keys": [
+            "Cmd+L"
+          ],
+          "effect": "Clear the last command"
+        },
+        {
+          "id": 78,
+          "keys": [
+            "Cmd+Ctrl+L"
+          ],
+          "effect": "Move screen contents into scrollback"
+        },
+        {
+          "id": 79,
+          "keys": [
+            "Ctrl+Shift+F5",
+            "Cmd+Ctrl+,"
+          ],
+          "effect": "Reload kitty.conf"
+        },
+        {
+          "id": 80,
+          "keys": [
+            "Ctrl+Shift+F6",
+            "Cmd+Opt+,"
+          ],
+          "effect": "Debug kitty configuration"
+        },
+        {
+          "id": 81,
+          "keys": [
+            "Cmd+H"
+          ],
+          "effect": "Hide macOS kitty application"
+        },
+        {
+          "id": 82,
+          "keys": [
+            "Cmd+Opt+H"
+          ],
+          "effect": "Hide macOS other applications"
+        },
+        {
+          "id": 83,
+          "keys": [
+            "Cmd+M"
+          ],
+          "effect": "Minimize macOS window"
+        },
+        {
+          "id": 84,
+          "keys": [
+            "Cmd+Q"
+          ],
+          "effect": "Quit kitty"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1116 @@
+{
+  "full_name": "Zellij",
+  "note": "Zellij 0.45.1 default preset; not the optional unlock-first preset.",
+  "source": "https://github.com/zellij-org/zellij/blob/v0.45.1/zellij-utils/assets/config/default.kdl",
+  "binding_groups": [
+    {
+      "id": 1,
+      "title": "Normal mode: enter a mode",
+      "note": "These keys switch mode; release them before using the mode’s unmodified keys.",
+      "bindings": [
+        {
+          "id": 1,
+          "keys": [
+            "Ctrl+P"
+          ],
+          "effect": "Pane mode"
+        },
+        {
+          "id": 2,
+          "keys": [
+            "Ctrl+T"
+          ],
+          "effect": "Tab mode"
+        },
+        {
+          "id": 3,
+          "keys": [
+            "Ctrl+N"
+          ],
+          "effect": "Resize mode"
+        },
+        {
+          "id": 4,
+          "keys": [
+            "Ctrl+H"
+          ],
+          "effect": "Move mode"
+        },
+        {
+          "id": 5,
+          "keys": [
+            "Ctrl+S"
+          ],
+          "effect": "Scroll mode"
+        },
+        {
+          "id": 6,
+          "keys": [
+            "Ctrl+O"
+          ],
+          "effect": "Session mode"
+        },
+        {
+          "id": 7,
+          "keys": [
+            "Ctrl+B"
+          ],
+          "effect": "Tmux-compatible mode"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Shared controls: unlocked modes",
+      "note": "Alt must reach the application as Meta/Esc. Locked mode passes these keys to the terminal application instead.",
+      "bindings": [
+        {
+          "id": 8,
+          "keys": [
+            "Ctrl+G"
+          ],
+          "effect": "Lock Zellij keybindings"
+        },
+        {
+          "id": 9,
+          "keys": [
+            "Ctrl+Q"
+          ],
+          "effect": "Quit Zellij session"
+        },
+        {
+          "id": 10,
+          "keys": [
+            "Alt+N"
+          ],
+          "effect": "New pane"
+        },
+        {
+          "id": 11,
+          "keys": [
+            "Alt+F"
+          ],
+          "effect": "Toggle floating panes"
+        },
+        {
+          "id": 12,
+          "keys": [
+            "Alt+H",
+            "Alt+Left"
+          ],
+          "effect": "Focus left pane or previous tab"
+        },
+        {
+          "id": 13,
+          "keys": [
+            "Alt+L",
+            "Alt+Right"
+          ],
+          "effect": "Focus right pane or next tab"
+        },
+        {
+          "id": 14,
+          "keys": [
+            "Alt+J",
+            "Alt+Down"
+          ],
+          "effect": "Focus pane below"
+        },
+        {
+          "id": 15,
+          "keys": [
+            "Alt+K",
+            "Alt+Up"
+          ],
+          "effect": "Focus pane above"
+        },
+        {
+          "id": 16,
+          "keys": [
+            "Alt+I"
+          ],
+          "effect": "Move tab left"
+        },
+        {
+          "id": 17,
+          "keys": [
+            "Alt+O"
+          ],
+          "effect": "Move tab right"
+        },
+        {
+          "id": 18,
+          "keys": [
+            "Alt+=",
+            "Alt+Plus"
+          ],
+          "effect": "Increase pane size"
+        },
+        {
+          "id": 19,
+          "keys": [
+            "Alt+-"
+          ],
+          "effect": "Decrease pane size"
+        },
+        {
+          "id": 20,
+          "keys": [
+            "Alt+["
+          ],
+          "effect": "Previous layout"
+        },
+        {
+          "id": 21,
+          "keys": [
+            "Alt+]"
+          ],
+          "effect": "Next layout"
+        },
+        {
+          "id": 22,
+          "keys": [
+            "Alt+P"
+          ],
+          "effect": "Toggle focused pane in group"
+        },
+        {
+          "id": 23,
+          "keys": [
+            "Alt+Shift+P"
+          ],
+          "effect": "Toggle group marking"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Locked mode",
+      "note": "Enter with Ctrl+G. Other Zellij shortcuts pass through to the focused application.",
+      "bindings": [
+        {
+          "id": 24,
+          "keys": [
+            "Ctrl+G"
+          ],
+          "effect": "Unlock and return to Normal mode"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Pane mode",
+      "note": "Enter with Ctrl+P. Most creation, toggle and close actions return to Normal mode.",
+      "bindings": [
+        {
+          "id": 25,
+          "keys": [
+            "h",
+            "Left"
+          ],
+          "effect": "Focus left"
+        },
+        {
+          "id": 26,
+          "keys": [
+            "l",
+            "Right"
+          ],
+          "effect": "Focus right"
+        },
+        {
+          "id": 27,
+          "keys": [
+            "j",
+            "Down"
+          ],
+          "effect": "Focus below"
+        },
+        {
+          "id": 28,
+          "keys": [
+            "k",
+            "Up"
+          ],
+          "effect": "Focus above"
+        },
+        {
+          "id": 29,
+          "keys": [
+            "p"
+          ],
+          "effect": "Switch focus"
+        },
+        {
+          "id": 30,
+          "keys": [
+            ";"
+          ],
+          "effect": "Focus last pane"
+        },
+        {
+          "id": 31,
+          "keys": [
+            "n"
+          ],
+          "effect": "New pane and return to Normal"
+        },
+        {
+          "id": 32,
+          "keys": [
+            "d"
+          ],
+          "effect": "New pane below and return to Normal"
+        },
+        {
+          "id": 33,
+          "keys": [
+            "r"
+          ],
+          "effect": "New pane right and return to Normal"
+        },
+        {
+          "id": 34,
+          "keys": [
+            "s"
+          ],
+          "effect": "New stacked pane and return to Normal"
+        },
+        {
+          "id": 35,
+          "keys": [
+            "x"
+          ],
+          "effect": "Close pane and return to Normal"
+        },
+        {
+          "id": 36,
+          "keys": [
+            "f"
+          ],
+          "effect": "Toggle fullscreen pane"
+        },
+        {
+          "id": 37,
+          "keys": [
+            "Shift+F"
+          ],
+          "effect": "Toggle fullscreen without UI"
+        },
+        {
+          "id": 38,
+          "keys": [
+            "z"
+          ],
+          "effect": "Toggle pane frames"
+        },
+        {
+          "id": 39,
+          "keys": [
+            "w"
+          ],
+          "effect": "Toggle floating panes"
+        },
+        {
+          "id": 40,
+          "keys": [
+            "e"
+          ],
+          "effect": "Toggle focused pane between floating and embedded"
+        },
+        {
+          "id": 41,
+          "keys": [
+            "c"
+          ],
+          "effect": "Rename pane"
+        },
+        {
+          "id": 42,
+          "keys": [
+            "i"
+          ],
+          "effect": "Toggle pinned pane"
+        },
+        {
+          "id": 43,
+          "keys": [
+            "Enter",
+            "Esc",
+            "Ctrl+P"
+          ],
+          "effect": "Return to Normal mode"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Tab mode",
+      "note": "Enter with Ctrl+T. Creating, closing, selecting by number and moving panes return to Normal mode.",
+      "bindings": [
+        {
+          "id": 44,
+          "keys": [
+            "h",
+            "Left",
+            "k",
+            "Up"
+          ],
+          "effect": "Previous tab"
+        },
+        {
+          "id": 45,
+          "keys": [
+            "l",
+            "Right",
+            "j",
+            "Down"
+          ],
+          "effect": "Next tab"
+        },
+        {
+          "id": 46,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Previously active tab"
+        },
+        {
+          "id": 47,
+          "keys": [
+            "n"
+          ],
+          "effect": "New tab"
+        },
+        {
+          "id": 48,
+          "keys": [
+            "x"
+          ],
+          "effect": "Close tab"
+        },
+        {
+          "id": 49,
+          "keys": [
+            "r"
+          ],
+          "effect": "Rename tab"
+        },
+        {
+          "id": 50,
+          "keys": [
+            "s"
+          ],
+          "effect": "Toggle synchronized input in this tab"
+        },
+        {
+          "id": 51,
+          "keys": [
+            "b"
+          ],
+          "effect": "Move pane to a new tab"
+        },
+        {
+          "id": 52,
+          "keys": [
+            "["
+          ],
+          "effect": "Move pane to previous tab"
+        },
+        {
+          "id": 53,
+          "keys": [
+            "]"
+          ],
+          "effect": "Move pane to next tab"
+        },
+        {
+          "id": 54,
+          "keys": [
+            "1"
+          ],
+          "effect": "Select tab 1"
+        },
+        {
+          "id": 55,
+          "keys": [
+            "2"
+          ],
+          "effect": "Select tab 2"
+        },
+        {
+          "id": 56,
+          "keys": [
+            "3"
+          ],
+          "effect": "Select tab 3"
+        },
+        {
+          "id": 57,
+          "keys": [
+            "4"
+          ],
+          "effect": "Select tab 4"
+        },
+        {
+          "id": 58,
+          "keys": [
+            "5"
+          ],
+          "effect": "Select tab 5"
+        },
+        {
+          "id": 59,
+          "keys": [
+            "6"
+          ],
+          "effect": "Select tab 6"
+        },
+        {
+          "id": 60,
+          "keys": [
+            "7"
+          ],
+          "effect": "Select tab 7"
+        },
+        {
+          "id": 61,
+          "keys": [
+            "8"
+          ],
+          "effect": "Select tab 8"
+        },
+        {
+          "id": 62,
+          "keys": [
+            "9"
+          ],
+          "effect": "Select tab 9"
+        },
+        {
+          "id": 63,
+          "keys": [
+            "Enter",
+            "Esc",
+            "Ctrl+T"
+          ],
+          "effect": "Return to Normal mode"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Resize mode",
+      "note": "Enter with Ctrl+N; uppercase direction keys shrink instead of growing.",
+      "bindings": [
+        {
+          "id": 64,
+          "keys": [
+            "h",
+            "Left"
+          ],
+          "effect": "Grow toward left"
+        },
+        {
+          "id": 65,
+          "keys": [
+            "j",
+            "Down"
+          ],
+          "effect": "Grow downward"
+        },
+        {
+          "id": 66,
+          "keys": [
+            "k",
+            "Up"
+          ],
+          "effect": "Grow upward"
+        },
+        {
+          "id": 67,
+          "keys": [
+            "l",
+            "Right"
+          ],
+          "effect": "Grow toward right"
+        },
+        {
+          "id": 68,
+          "keys": [
+            "H"
+          ],
+          "effect": "Shrink from left"
+        },
+        {
+          "id": 69,
+          "keys": [
+            "J"
+          ],
+          "effect": "Shrink from bottom"
+        },
+        {
+          "id": 70,
+          "keys": [
+            "K"
+          ],
+          "effect": "Shrink from top"
+        },
+        {
+          "id": 71,
+          "keys": [
+            "L"
+          ],
+          "effect": "Shrink from right"
+        },
+        {
+          "id": 72,
+          "keys": [
+            "=",
+            "Plus"
+          ],
+          "effect": "Increase size"
+        },
+        {
+          "id": 73,
+          "keys": [
+            "-"
+          ],
+          "effect": "Decrease size"
+        },
+        {
+          "id": 74,
+          "keys": [
+            "Enter",
+            "Esc",
+            "Ctrl+N"
+          ],
+          "effect": "Return to Normal mode"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Move mode",
+      "note": "Enter with Ctrl+H.",
+      "bindings": [
+        {
+          "id": 75,
+          "keys": [
+            "n",
+            "Tab"
+          ],
+          "effect": "Move pane forward"
+        },
+        {
+          "id": 76,
+          "keys": [
+            "p"
+          ],
+          "effect": "Move pane backward"
+        },
+        {
+          "id": 77,
+          "keys": [
+            "h",
+            "Left"
+          ],
+          "effect": "Move pane left"
+        },
+        {
+          "id": 78,
+          "keys": [
+            "j",
+            "Down"
+          ],
+          "effect": "Move pane down"
+        },
+        {
+          "id": 79,
+          "keys": [
+            "k",
+            "Up"
+          ],
+          "effect": "Move pane up"
+        },
+        {
+          "id": 80,
+          "keys": [
+            "l",
+            "Right"
+          ],
+          "effect": "Move pane right"
+        },
+        {
+          "id": 81,
+          "keys": [
+            "Enter",
+            "Esc",
+            "Ctrl+H"
+          ],
+          "effect": "Return to Normal mode"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Scroll mode",
+      "note": "Enter with Ctrl+S; prompt and command-output actions require shell prompt markers.",
+      "bindings": [
+        {
+          "id": 82,
+          "keys": [
+            "j",
+            "Down"
+          ],
+          "effect": "Scroll down"
+        },
+        {
+          "id": 83,
+          "keys": [
+            "k",
+            "Up"
+          ],
+          "effect": "Scroll up"
+        },
+        {
+          "id": 84,
+          "keys": [
+            "Ctrl+F",
+            "PageDown",
+            "Right",
+            "l"
+          ],
+          "effect": "Page down"
+        },
+        {
+          "id": 85,
+          "keys": [
+            "Ctrl+B",
+            "PageUp",
+            "Left",
+            "h"
+          ],
+          "effect": "Page up"
+        },
+        {
+          "id": 86,
+          "keys": [
+            "d"
+          ],
+          "effect": "Half-page down"
+        },
+        {
+          "id": 87,
+          "keys": [
+            "u"
+          ],
+          "effect": "Half-page up"
+        },
+        {
+          "id": 88,
+          "keys": [
+            "s"
+          ],
+          "effect": "Enter search query"
+        },
+        {
+          "id": 89,
+          "keys": [
+            "e"
+          ],
+          "effect": "Edit scrollback in editor"
+        },
+        {
+          "id": 90,
+          "keys": [
+            "["
+          ],
+          "effect": "Previous shell prompt"
+        },
+        {
+          "id": 91,
+          "keys": [
+            "]"
+          ],
+          "effect": "Next shell prompt"
+        },
+        {
+          "id": 92,
+          "keys": [
+            "m"
+          ],
+          "effect": "Select command at scroll position"
+        },
+        {
+          "id": 93,
+          "keys": [
+            "c"
+          ],
+          "effect": "Copy last command output"
+        },
+        {
+          "id": 94,
+          "keys": [
+            "Ctrl+C"
+          ],
+          "effect": "Scroll to bottom and return to Normal"
+        },
+        {
+          "id": 95,
+          "keys": [
+            "Enter",
+            "Esc",
+            "Ctrl+S"
+          ],
+          "effect": "Return to Normal mode"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Search query input",
+      "note": "Enter with Ctrl+S, then s; type the search query.",
+      "bindings": [
+        {
+          "id": 96,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Confirm query and enter Search mode"
+        },
+        {
+          "id": 97,
+          "keys": [
+            "Esc",
+            "Ctrl+C"
+          ],
+          "effect": "Cancel query and return to Scroll mode"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Search mode",
+      "note": "Enter by submitting a query from Scroll mode.",
+      "bindings": [
+        {
+          "id": 98,
+          "keys": [
+            "n"
+          ],
+          "effect": "Next match downward"
+        },
+        {
+          "id": 99,
+          "keys": [
+            "p"
+          ],
+          "effect": "Previous match upward"
+        },
+        {
+          "id": 100,
+          "keys": [
+            "c"
+          ],
+          "effect": "Toggle case sensitivity"
+        },
+        {
+          "id": 101,
+          "keys": [
+            "w"
+          ],
+          "effect": "Toggle wrapping"
+        },
+        {
+          "id": 102,
+          "keys": [
+            "o"
+          ],
+          "effect": "Toggle whole-word matching"
+        },
+        {
+          "id": 103,
+          "keys": [
+            "j",
+            "Down"
+          ],
+          "effect": "Scroll down"
+        },
+        {
+          "id": 104,
+          "keys": [
+            "k",
+            "Up"
+          ],
+          "effect": "Scroll up"
+        },
+        {
+          "id": 105,
+          "keys": [
+            "Ctrl+F",
+            "PageDown",
+            "Right",
+            "l"
+          ],
+          "effect": "Page down"
+        },
+        {
+          "id": 106,
+          "keys": [
+            "Ctrl+B",
+            "PageUp",
+            "Left",
+            "h"
+          ],
+          "effect": "Page up"
+        },
+        {
+          "id": 107,
+          "keys": [
+            "Enter",
+            "Esc",
+            "Ctrl+S"
+          ],
+          "effect": "Return to Normal mode"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Session mode",
+      "note": "Enter with Ctrl+O. Host/guest actions apply to nested Zellij sessions.",
+      "bindings": [
+        {
+          "id": 108,
+          "keys": [
+            "d"
+          ],
+          "effect": "Detach session"
+        },
+        {
+          "id": 109,
+          "keys": [
+            "w"
+          ],
+          "effect": "Open session manager"
+        },
+        {
+          "id": 110,
+          "keys": [
+            "c"
+          ],
+          "effect": "Open configuration UI"
+        },
+        {
+          "id": 111,
+          "keys": [
+            "p"
+          ],
+          "effect": "Open plugin manager"
+        },
+        {
+          "id": 112,
+          "keys": [
+            "a"
+          ],
+          "effect": "Open About"
+        },
+        {
+          "id": 113,
+          "keys": [
+            "s"
+          ],
+          "effect": "Open session sharing UI"
+        },
+        {
+          "id": 114,
+          "keys": [
+            "l"
+          ],
+          "effect": "Open layout manager"
+        },
+        {
+          "id": 115,
+          "keys": [
+            "]"
+          ],
+          "effect": "Focus host session"
+        },
+        {
+          "id": 116,
+          "keys": [
+            "["
+          ],
+          "effect": "Focus nested guest session"
+        },
+        {
+          "id": 117,
+          "keys": [
+            "f"
+          ],
+          "effect": "Toggle host fullscreen"
+        },
+        {
+          "id": 118,
+          "keys": [
+            "Enter",
+            "Esc",
+            "Ctrl+O"
+          ],
+          "effect": "Return to Normal mode"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Rename pane",
+      "note": "Enter with Ctrl+P, then c; type the pane name.",
+      "bindings": [
+        {
+          "id": 119,
+          "keys": [
+            "Enter",
+            "Ctrl+C"
+          ],
+          "effect": "Finish rename and return to Normal"
+        },
+        {
+          "id": 120,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Undo rename and return to Pane mode"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Rename tab",
+      "note": "Enter with Ctrl+T, then r; type the tab name.",
+      "bindings": [
+        {
+          "id": 121,
+          "keys": [
+            "Enter",
+            "Ctrl+C"
+          ],
+          "effect": "Finish rename and return to Normal"
+        },
+        {
+          "id": 122,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Undo rename and return to Tab mode"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Tmux-compatible mode",
+      "note": "Enter with Ctrl+B. This is Zellij’s compatibility mode, not a separate tmux session.",
+      "bindings": [
+        {
+          "id": 123,
+          "keys": [
+            "%"
+          ],
+          "effect": "New pane right"
+        },
+        {
+          "id": 124,
+          "keys": [
+            "\""
+          ],
+          "effect": "New pane below"
+        },
+        {
+          "id": 125,
+          "keys": [
+            "c"
+          ],
+          "effect": "New tab"
+        },
+        {
+          "id": 126,
+          "keys": [
+            "p"
+          ],
+          "effect": "Previous tab"
+        },
+        {
+          "id": 127,
+          "keys": [
+            "n"
+          ],
+          "effect": "Next tab"
+        },
+        {
+          "id": 128,
+          "keys": [
+            ","
+          ],
+          "effect": "Rename tab"
+        },
+        {
+          "id": 129,
+          "keys": [
+            "z"
+          ],
+          "effect": "Toggle fullscreen pane"
+        },
+        {
+          "id": 130,
+          "keys": [
+            "x"
+          ],
+          "effect": "Close pane"
+        },
+        {
+          "id": 131,
+          "keys": [
+            "["
+          ],
+          "effect": "Enter Scroll mode"
+        },
+        {
+          "id": 132,
+          "keys": [
+            "o"
+          ],
+          "effect": "Focus next pane"
+        },
+        {
+          "id": 133,
+          "keys": [
+            "Space"
+          ],
+          "effect": "Next layout"
+        },
+        {
+          "id": 134,
+          "keys": [
+            "d"
+          ],
+          "effect": "Detach"
+        },
+        {
+          "id": 135,
+          "keys": [
+            "Ctrl+B"
+          ],
+          "effect": "Send Ctrl+B to application"
+        },
+        {
+          "id": 136,
+          "keys": [
+            "Enter",
+            "Esc"
+          ],
+          "effect": "Return to Normal mode"
+        }
+      ]
+    }
+  ]
+}

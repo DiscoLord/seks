@@ -1,0 +1,921 @@
+{
+  "aliases": [
+    "lazy git"
+  ],
+  "full_name": "Lazygit",
+  "note": "Lazygit 0.65.1 defaults; keys act on the focused panel.",
+  "source": "https://github.com/jesseduffield/lazygit/blob/v0.65.1/docs/Config.md",
+  "binding_groups": [
+    {
+      "id": 1,
+      "title": "Navigation and help",
+      "note": "Panel-specific actions override shared keys; help shows the actions available in the current context.",
+      "bindings": [
+        {
+          "id": 1,
+          "keys": [
+            "j",
+            "Down"
+          ],
+          "effect": "Next item"
+        },
+        {
+          "id": 2,
+          "keys": [
+            "k",
+            "Up"
+          ],
+          "effect": "Previous item"
+        },
+        {
+          "id": 3,
+          "keys": [
+            "h",
+            "Left",
+            "Shift+Tab"
+          ],
+          "effect": "Previous panel"
+        },
+        {
+          "id": 4,
+          "keys": [
+            "l",
+            "Right",
+            "Tab"
+          ],
+          "effect": "Next panel"
+        },
+        {
+          "id": 5,
+          "keys": [
+            "1"
+          ],
+          "effect": "Focus panel 1"
+        },
+        {
+          "id": 6,
+          "keys": [
+            "2"
+          ],
+          "effect": "Focus panel 2"
+        },
+        {
+          "id": 7,
+          "keys": [
+            "3"
+          ],
+          "effect": "Focus panel 3"
+        },
+        {
+          "id": 8,
+          "keys": [
+            "4"
+          ],
+          "effect": "Focus panel 4"
+        },
+        {
+          "id": 9,
+          "keys": [
+            "5"
+          ],
+          "effect": "Focus panel 5"
+        },
+        {
+          "id": 10,
+          "keys": [
+            "0"
+          ],
+          "effect": "Focus main view"
+        },
+        {
+          "id": 11,
+          "keys": [
+            "["
+          ],
+          "effect": "Previous panel tab"
+        },
+        {
+          "id": 12,
+          "keys": [
+            "]"
+          ],
+          "effect": "Next panel tab"
+        },
+        {
+          "id": 13,
+          "keys": [
+            ","
+          ],
+          "effect": "Previous page"
+        },
+        {
+          "id": 14,
+          "keys": [
+            "."
+          ],
+          "effect": "Next page"
+        },
+        {
+          "id": 15,
+          "keys": [
+            "<",
+            "Home"
+          ],
+          "effect": "First item"
+        },
+        {
+          "id": 16,
+          "keys": [
+            ">",
+            "End"
+          ],
+          "effect": "Last item"
+        },
+        {
+          "id": 17,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Open selected item or confirm"
+        },
+        {
+          "id": 18,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Back or close popup"
+        },
+        {
+          "id": 19,
+          "keys": [
+            "?"
+          ],
+          "effect": "Show context actions"
+        },
+        {
+          "id": 20,
+          "keys": [
+            "q",
+            "Ctrl+C"
+          ],
+          "effect": "Quit"
+        },
+        {
+          "id": 21,
+          "keys": [
+            "Q"
+          ],
+          "effect": "Quit without changing shell directory"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Search, selection and diff display",
+      "bindings": [
+        {
+          "id": 22,
+          "keys": [
+            "/"
+          ],
+          "effect": "Search current view"
+        },
+        {
+          "id": 23,
+          "keys": [
+            "n"
+          ],
+          "effect": "Next match"
+        },
+        {
+          "id": 24,
+          "keys": [
+            "N"
+          ],
+          "effect": "Previous match"
+        },
+        {
+          "id": 25,
+          "keys": [
+            "v"
+          ],
+          "effect": "Toggle range selection"
+        },
+        {
+          "id": 26,
+          "keys": [
+            "Shift+Down"
+          ],
+          "effect": "Extend selection down"
+        },
+        {
+          "id": 27,
+          "keys": [
+            "Shift+Up"
+          ],
+          "effect": "Extend selection up"
+        },
+        {
+          "id": 28,
+          "keys": [
+            "PageUp",
+            "K",
+            "Ctrl+U"
+          ],
+          "effect": "Scroll main view up"
+        },
+        {
+          "id": 29,
+          "keys": [
+            "PageDown",
+            "J",
+            "Ctrl+D"
+          ],
+          "effect": "Scroll main view down"
+        },
+        {
+          "id": 30,
+          "keys": [
+            "H"
+          ],
+          "effect": "Scroll left"
+        },
+        {
+          "id": 31,
+          "keys": [
+            "L"
+          ],
+          "effect": "Scroll right"
+        },
+        {
+          "id": 32,
+          "keys": [
+            "Plus"
+          ],
+          "effect": "Next screen layout"
+        },
+        {
+          "id": 33,
+          "keys": [
+            "_"
+          ],
+          "effect": "Previous screen layout"
+        },
+        {
+          "id": 34,
+          "keys": [
+            "Ctrl+W"
+          ],
+          "effect": "Toggle whitespace display in diff"
+        },
+        {
+          "id": 35,
+          "keys": [
+            "}"
+          ],
+          "effect": "More diff context"
+        },
+        {
+          "id": 36,
+          "keys": [
+            "{"
+          ],
+          "effect": "Less diff context"
+        },
+        {
+          "id": 37,
+          "keys": [
+            "|"
+          ],
+          "effect": "Next diff renderer"
+        },
+        {
+          "id": 38,
+          "keys": [
+            "\\"
+          ],
+          "effect": "Previous diff renderer"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Repository actions",
+      "note": "Some panels override these keys. Undo/redo operate on supported Git actions, not arbitrary file edits.",
+      "bindings": [
+        {
+          "id": 39,
+          "keys": [
+            "p"
+          ],
+          "effect": "Pull"
+        },
+        {
+          "id": 40,
+          "keys": [
+            "P"
+          ],
+          "effect": "Push"
+        },
+        {
+          "id": 41,
+          "keys": [
+            "R"
+          ],
+          "effect": "Refresh repository"
+        },
+        {
+          "id": 42,
+          "keys": [
+            "Ctrl+R"
+          ],
+          "effect": "Choose recent repository"
+        },
+        {
+          "id": 43,
+          "keys": [
+            "Ctrl+S"
+          ],
+          "effect": "Open filtering menu"
+        },
+        {
+          "id": 44,
+          "keys": [
+            "W",
+            "Ctrl+E"
+          ],
+          "effect": "Open diff comparison menu"
+        },
+        {
+          "id": 45,
+          "keys": [
+            "Ctrl+P"
+          ],
+          "effect": "Open patch options"
+        },
+        {
+          "id": 46,
+          "keys": [
+            "Ctrl+T"
+          ],
+          "effect": "Open external diff tool"
+        },
+        {
+          "id": 47,
+          "keys": [
+            "Ctrl+O"
+          ],
+          "effect": "Copy context item to clipboard"
+        },
+        {
+          "id": 48,
+          "keys": [
+            "z"
+          ],
+          "effect": "Undo Git operation"
+        },
+        {
+          "id": 49,
+          "keys": [
+            "Z"
+          ],
+          "effect": "Redo Git operation"
+        },
+        {
+          "id": 50,
+          "keys": [
+            ":"
+          ],
+          "effect": "Open shell-command prompt"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Files panel",
+      "note": "Focus Files with 2. Staging, committing and discarding affect the repository.",
+      "bindings": [
+        {
+          "id": 51,
+          "keys": [
+            "Space"
+          ],
+          "effect": "Stage or unstage selected file"
+        },
+        {
+          "id": 52,
+          "keys": [
+            "a"
+          ],
+          "effect": "Stage or unstage all files"
+        },
+        {
+          "id": 53,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Enter line-by-line staging"
+        },
+        {
+          "id": 54,
+          "keys": [
+            "c"
+          ],
+          "effect": "Commit staged changes"
+        },
+        {
+          "id": 55,
+          "keys": [
+            "C"
+          ],
+          "effect": "Commit using configured editor"
+        },
+        {
+          "id": 56,
+          "keys": [
+            "A"
+          ],
+          "effect": "Amend last commit"
+        },
+        {
+          "id": 57,
+          "keys": [
+            "w"
+          ],
+          "effect": "Commit without hooks"
+        },
+        {
+          "id": 58,
+          "keys": [
+            "Ctrl+F"
+          ],
+          "effect": "Find base commit for fixup"
+        },
+        {
+          "id": 59,
+          "keys": [
+            "d"
+          ],
+          "effect": "Open discard options for selected file"
+        },
+        {
+          "id": 60,
+          "keys": [
+            "D"
+          ],
+          "effect": "Open working-tree reset options"
+        },
+        {
+          "id": 61,
+          "keys": [
+            "i"
+          ],
+          "effect": "Ignore selected file"
+        },
+        {
+          "id": 62,
+          "keys": [
+            "e"
+          ],
+          "effect": "Edit selected file"
+        },
+        {
+          "id": 63,
+          "keys": [
+            "o"
+          ],
+          "effect": "Open selected file"
+        },
+        {
+          "id": 64,
+          "keys": [
+            "s"
+          ],
+          "effect": "Stash all changes"
+        },
+        {
+          "id": 65,
+          "keys": [
+            "S"
+          ],
+          "effect": "Open stash options"
+        },
+        {
+          "id": 66,
+          "keys": [
+            "f"
+          ],
+          "effect": "Fetch"
+        },
+        {
+          "id": 67,
+          "keys": [
+            "r"
+          ],
+          "effect": "Refresh file list"
+        },
+        {
+          "id": 68,
+          "keys": [
+            "`"
+          ],
+          "effect": "Toggle file tree"
+        },
+        {
+          "id": 69,
+          "keys": [
+            "-"
+          ],
+          "effect": "Collapse file tree"
+        },
+        {
+          "id": 70,
+          "keys": [
+            "="
+          ],
+          "effect": "Expand file tree"
+        },
+        {
+          "id": 71,
+          "keys": [
+            "Ctrl+B"
+          ],
+          "effect": "Filter files by status"
+        },
+        {
+          "id": 72,
+          "keys": [
+            "y"
+          ],
+          "effect": "Copy file information"
+        },
+        {
+          "id": 73,
+          "keys": [
+            "M"
+          ],
+          "effect": "Open merge options"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Local branches panel",
+      "note": "Focus Branches with 3 and select its local-branches tab; other tabs have different actions.",
+      "bindings": [
+        {
+          "id": 74,
+          "keys": [
+            "Space"
+          ],
+          "effect": "Check out selected branch"
+        },
+        {
+          "id": 75,
+          "keys": [
+            "n"
+          ],
+          "effect": "Create branch"
+        },
+        {
+          "id": 76,
+          "keys": [
+            "c"
+          ],
+          "effect": "Check out branch by name"
+        },
+        {
+          "id": 77,
+          "keys": [
+            "-"
+          ],
+          "effect": "Check out previous branch"
+        },
+        {
+          "id": 78,
+          "keys": [
+            "R"
+          ],
+          "effect": "Rename branch"
+        },
+        {
+          "id": 79,
+          "keys": [
+            "d"
+          ],
+          "effect": "Delete selected branch"
+        },
+        {
+          "id": 80,
+          "keys": [
+            "r"
+          ],
+          "effect": "Rebase current branch onto selected branch"
+        },
+        {
+          "id": 81,
+          "keys": [
+            "M"
+          ],
+          "effect": "Merge selected branch into current branch"
+        },
+        {
+          "id": 82,
+          "keys": [
+            "N"
+          ],
+          "effect": "Move commits to a new branch"
+        },
+        {
+          "id": 83,
+          "keys": [
+            "f"
+          ],
+          "effect": "Fast-forward selected branch"
+        },
+        {
+          "id": 84,
+          "keys": [
+            "u"
+          ],
+          "effect": "Set upstream"
+        },
+        {
+          "id": 85,
+          "keys": [
+            "s"
+          ],
+          "effect": "Change branch sort order"
+        },
+        {
+          "id": 86,
+          "keys": [
+            "o"
+          ],
+          "effect": "Create pull request"
+        },
+        {
+          "id": 87,
+          "keys": [
+            "O"
+          ],
+          "effect": "Open pull-request options"
+        },
+        {
+          "id": 88,
+          "keys": [
+            "G"
+          ],
+          "effect": "Open pull request in browser"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Commits panel",
+      "note": "Focus Commits with 4. Reordering, squashing, fixups and amending rewrite history.",
+      "bindings": [
+        {
+          "id": 89,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Show commit files"
+        },
+        {
+          "id": 90,
+          "keys": [
+            "Space"
+          ],
+          "effect": "Check out commit"
+        },
+        {
+          "id": 91,
+          "keys": [
+            "r"
+          ],
+          "effect": "Edit commit message"
+        },
+        {
+          "id": 92,
+          "keys": [
+            "R"
+          ],
+          "effect": "Edit message in external editor"
+        },
+        {
+          "id": 93,
+          "keys": [
+            "s"
+          ],
+          "effect": "Squash into previous commit"
+        },
+        {
+          "id": 94,
+          "keys": [
+            "f"
+          ],
+          "effect": "Mark as fixup"
+        },
+        {
+          "id": 95,
+          "keys": [
+            "F"
+          ],
+          "effect": "Create fixup commit"
+        },
+        {
+          "id": 96,
+          "keys": [
+            "S"
+          ],
+          "effect": "Squash all commits above into this commit"
+        },
+        {
+          "id": 97,
+          "keys": [
+            "g"
+          ],
+          "effect": "Open reset options"
+        },
+        {
+          "id": 98,
+          "keys": [
+            "t"
+          ],
+          "effect": "Revert commit"
+        },
+        {
+          "id": 99,
+          "keys": [
+            "C"
+          ],
+          "effect": "Copy commit for cherry-picking"
+        },
+        {
+          "id": 100,
+          "keys": [
+            "V"
+          ],
+          "effect": "Cherry-pick copied commits"
+        },
+        {
+          "id": 101,
+          "keys": [
+            "Ctrl+R"
+          ],
+          "effect": "Clear cherry-pick selection"
+        },
+        {
+          "id": 102,
+          "keys": [
+            "T"
+          ],
+          "effect": "Tag commit"
+        },
+        {
+          "id": 103,
+          "keys": [
+            "A"
+          ],
+          "effect": "Amend staged changes into commit"
+        },
+        {
+          "id": 104,
+          "keys": [
+            "Ctrl+J"
+          ],
+          "effect": "Move commit down"
+        },
+        {
+          "id": 105,
+          "keys": [
+            "Ctrl+K"
+          ],
+          "effect": "Move commit up"
+        },
+        {
+          "id": 106,
+          "keys": [
+            "i"
+          ],
+          "effect": "Start interactive rebase"
+        },
+        {
+          "id": 107,
+          "keys": [
+            "b"
+          ],
+          "effect": "Open bisect options"
+        },
+        {
+          "id": 108,
+          "keys": [
+            "y"
+          ],
+          "effect": "Copy commit information"
+        },
+        {
+          "id": 109,
+          "keys": [
+            "Ctrl+L"
+          ],
+          "effect": "Open log options"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Stash panel",
+      "note": "Focus Stash with 5. Pop applies and removes the stash; drop removes it.",
+      "bindings": [
+        {
+          "id": 110,
+          "keys": [
+            "Space"
+          ],
+          "effect": "Apply selected stash"
+        },
+        {
+          "id": 111,
+          "keys": [
+            "g"
+          ],
+          "effect": "Pop selected stash"
+        },
+        {
+          "id": 112,
+          "keys": [
+            "d"
+          ],
+          "effect": "Drop selected stash"
+        },
+        {
+          "id": 113,
+          "keys": [
+            "r"
+          ],
+          "effect": "Rename selected stash"
+        },
+        {
+          "id": 114,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Inspect selected stash"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Main diff and merge view",
+      "note": "Open the main view with Enter from a file; merge choices apply only while resolving conflicts.",
+      "bindings": [
+        {
+          "id": 115,
+          "keys": [
+            "h",
+            "Left"
+          ],
+          "effect": "Previous hunk"
+        },
+        {
+          "id": 116,
+          "keys": [
+            "l",
+            "Right"
+          ],
+          "effect": "Next hunk"
+        },
+        {
+          "id": 117,
+          "keys": [
+            "a"
+          ],
+          "effect": "Toggle whole-hunk selection"
+        },
+        {
+          "id": 118,
+          "keys": [
+            "Space"
+          ],
+          "effect": "Stage or unstage selection"
+        },
+        {
+          "id": 119,
+          "keys": [
+            "b"
+          ],
+          "effect": "Choose both sides of a merge conflict"
+        },
+        {
+          "id": 120,
+          "keys": [
+            "E"
+          ],
+          "effect": "Edit selected hunk"
+        }
+      ]
+    }
+  ]
+}

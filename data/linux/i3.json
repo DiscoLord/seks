@@ -1,0 +1,466 @@
+{
+  "aliases": [
+    "i3wm"
+  ],
+  "full_name": "i3",
+  "note": "i3 4.24 stock QWERTY config; Alt is Mod1. If you chose Mod4, use Super instead.",
+  "source": "https://github.com/i3/i3/blob/4.24/etc/config",
+  "binding_groups": [
+    {
+      "id": 1,
+      "title": "Applications and focus",
+      "note": "Uses the upstream j/k/l/; direction keys, not Vim’s h/j/k/l; launchers must be installed.",
+      "bindings": [
+        {
+          "id": 1,
+          "keys": [
+            "Alt+Enter"
+          ],
+          "effect": "Launch terminal"
+        },
+        {
+          "id": 2,
+          "keys": [
+            "Alt+D"
+          ],
+          "effect": "Launch dmenu"
+        },
+        {
+          "id": 3,
+          "keys": [
+            "Alt+Shift+Q"
+          ],
+          "effect": "Close focused window"
+        },
+        {
+          "id": 4,
+          "keys": [
+            "Alt+J",
+            "Alt+Left"
+          ],
+          "effect": "Focus left"
+        },
+        {
+          "id": 5,
+          "keys": [
+            "Alt+K",
+            "Alt+Down"
+          ],
+          "effect": "Focus down"
+        },
+        {
+          "id": 6,
+          "keys": [
+            "Alt+L",
+            "Alt+Up"
+          ],
+          "effect": "Focus up"
+        },
+        {
+          "id": 7,
+          "keys": [
+            "Alt+;",
+            "Alt+Right"
+          ],
+          "effect": "Focus right"
+        },
+        {
+          "id": 8,
+          "keys": [
+            "Alt+A"
+          ],
+          "effect": "Focus parent container"
+        },
+        {
+          "id": 9,
+          "keys": [
+            "Alt+Space"
+          ],
+          "effect": "Switch focus between tiled and floating"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Move windows",
+      "bindings": [
+        {
+          "id": 10,
+          "keys": [
+            "Alt+Shift+J",
+            "Alt+Shift+Left"
+          ],
+          "effect": "Move left"
+        },
+        {
+          "id": 11,
+          "keys": [
+            "Alt+Shift+K",
+            "Alt+Shift+Down"
+          ],
+          "effect": "Move down"
+        },
+        {
+          "id": 12,
+          "keys": [
+            "Alt+Shift+L",
+            "Alt+Shift+Up"
+          ],
+          "effect": "Move up"
+        },
+        {
+          "id": 13,
+          "keys": [
+            "Alt+Shift+;",
+            "Alt+Shift+Right"
+          ],
+          "effect": "Move right"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Layout",
+      "bindings": [
+        {
+          "id": 14,
+          "keys": [
+            "Alt+H"
+          ],
+          "effect": "Split horizontally for next window"
+        },
+        {
+          "id": 15,
+          "keys": [
+            "Alt+V"
+          ],
+          "effect": "Split vertically for next window"
+        },
+        {
+          "id": 16,
+          "keys": [
+            "Alt+S"
+          ],
+          "effect": "Stacking layout"
+        },
+        {
+          "id": 17,
+          "keys": [
+            "Alt+W"
+          ],
+          "effect": "Tabbed layout"
+        },
+        {
+          "id": 18,
+          "keys": [
+            "Alt+E"
+          ],
+          "effect": "Toggle horizontal/vertical split"
+        },
+        {
+          "id": 19,
+          "keys": [
+            "Alt+F"
+          ],
+          "effect": "Toggle fullscreen"
+        },
+        {
+          "id": 20,
+          "keys": [
+            "Alt+Shift+Space"
+          ],
+          "effect": "Toggle floating"
+        },
+        {
+          "id": 21,
+          "keys": [
+            "Alt+R"
+          ],
+          "effect": "Enter resize mode"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Workspaces",
+      "bindings": [
+        {
+          "id": 22,
+          "keys": [
+            "Alt+1"
+          ],
+          "effect": "Switch to workspace 1"
+        },
+        {
+          "id": 23,
+          "keys": [
+            "Alt+2"
+          ],
+          "effect": "Switch to workspace 2"
+        },
+        {
+          "id": 24,
+          "keys": [
+            "Alt+3"
+          ],
+          "effect": "Switch to workspace 3"
+        },
+        {
+          "id": 25,
+          "keys": [
+            "Alt+4"
+          ],
+          "effect": "Switch to workspace 4"
+        },
+        {
+          "id": 26,
+          "keys": [
+            "Alt+5"
+          ],
+          "effect": "Switch to workspace 5"
+        },
+        {
+          "id": 27,
+          "keys": [
+            "Alt+6"
+          ],
+          "effect": "Switch to workspace 6"
+        },
+        {
+          "id": 28,
+          "keys": [
+            "Alt+7"
+          ],
+          "effect": "Switch to workspace 7"
+        },
+        {
+          "id": 29,
+          "keys": [
+            "Alt+8"
+          ],
+          "effect": "Switch to workspace 8"
+        },
+        {
+          "id": 30,
+          "keys": [
+            "Alt+9"
+          ],
+          "effect": "Switch to workspace 9"
+        },
+        {
+          "id": 31,
+          "keys": [
+            "Alt+0"
+          ],
+          "effect": "Switch to workspace 10"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Move to workspace",
+      "bindings": [
+        {
+          "id": 32,
+          "keys": [
+            "Alt+Shift+1"
+          ],
+          "effect": "Move container to workspace 1"
+        },
+        {
+          "id": 33,
+          "keys": [
+            "Alt+Shift+2"
+          ],
+          "effect": "Move container to workspace 2"
+        },
+        {
+          "id": 34,
+          "keys": [
+            "Alt+Shift+3"
+          ],
+          "effect": "Move container to workspace 3"
+        },
+        {
+          "id": 35,
+          "keys": [
+            "Alt+Shift+4"
+          ],
+          "effect": "Move container to workspace 4"
+        },
+        {
+          "id": 36,
+          "keys": [
+            "Alt+Shift+5"
+          ],
+          "effect": "Move container to workspace 5"
+        },
+        {
+          "id": 37,
+          "keys": [
+            "Alt+Shift+6"
+          ],
+          "effect": "Move container to workspace 6"
+        },
+        {
+          "id": 38,
+          "keys": [
+            "Alt+Shift+7"
+          ],
+          "effect": "Move container to workspace 7"
+        },
+        {
+          "id": 39,
+          "keys": [
+            "Alt+Shift+8"
+          ],
+          "effect": "Move container to workspace 8"
+        },
+        {
+          "id": 40,
+          "keys": [
+            "Alt+Shift+9"
+          ],
+          "effect": "Move container to workspace 9"
+        },
+        {
+          "id": 41,
+          "keys": [
+            "Alt+Shift+0"
+          ],
+          "effect": "Move container to workspace 10"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Scratchpad",
+      "bindings": [
+        {
+          "id": 42,
+          "keys": [
+            "Alt+Shift+-"
+          ],
+          "effect": "Move window to scratchpad"
+        },
+        {
+          "id": 43,
+          "keys": [
+            "Alt+-"
+          ],
+          "effect": "Show next scratchpad window or hide current"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Resize mode",
+      "note": "Enter with Alt+R. Direction keys resize by 10 px or 10 percentage points; no modifier needed.",
+      "bindings": [
+        {
+          "id": 44,
+          "keys": [
+            "j",
+            "Left"
+          ],
+          "effect": "Shrink width"
+        },
+        {
+          "id": 45,
+          "keys": [
+            "k",
+            "Down"
+          ],
+          "effect": "Grow height"
+        },
+        {
+          "id": 46,
+          "keys": [
+            "l",
+            "Up"
+          ],
+          "effect": "Shrink height"
+        },
+        {
+          "id": 47,
+          "keys": [
+            ";",
+            "Right"
+          ],
+          "effect": "Grow width"
+        },
+        {
+          "id": 48,
+          "keys": [
+            "Enter",
+            "Esc",
+            "Alt+R"
+          ],
+          "effect": "Leave resize mode"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Configuration and session",
+      "bindings": [
+        {
+          "id": 49,
+          "keys": [
+            "Alt+Shift+C"
+          ],
+          "effect": "Reload configuration"
+        },
+        {
+          "id": 50,
+          "keys": [
+            "Alt+Shift+R"
+          ],
+          "effect": "Restart i3, preserving session"
+        },
+        {
+          "id": 51,
+          "keys": [
+            "Alt+Shift+E"
+          ],
+          "effect": "Show logout confirmation"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Audio keys",
+      "note": "The stock config uses pactl; requires PulseAudio or a compatible PipeWire service.",
+      "bindings": [
+        {
+          "id": 52,
+          "keys": [
+            "VolumeUp"
+          ],
+          "effect": "Raise volume by 10%"
+        },
+        {
+          "id": 53,
+          "keys": [
+            "VolumeDown"
+          ],
+          "effect": "Lower volume by 10%"
+        },
+        {
+          "id": 54,
+          "keys": [
+            "VolumeMute"
+          ],
+          "effect": "Toggle speaker mute"
+        },
+        {
+          "id": 55,
+          "keys": [
+            "MicMute"
+          ],
+          "effect": "Toggle microphone mute"
+        }
+      ]
+    }
+  ]
+}

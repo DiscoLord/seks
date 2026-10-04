@@ -1,0 +1,1413 @@
+{
+  "full_name": "Yazi",
+  "note": "Yazi 26.9.1 default keymap; context and input modes are separate.",
+  "source": "https://github.com/sxyazi/yazi/blob/v26.9.1/yazi-config/preset/keymap-default.toml",
+  "binding_groups": [
+    {
+      "id": 1,
+      "title": "Manager: navigation",
+      "bindings": [
+        {
+          "id": 1,
+          "keys": [
+            "k",
+            "Up"
+          ],
+          "effect": "Previous file"
+        },
+        {
+          "id": 2,
+          "keys": [
+            "j",
+            "Down"
+          ],
+          "effect": "Next file"
+        },
+        {
+          "id": 3,
+          "keys": [
+            "g g",
+            "Home"
+          ],
+          "effect": "Go to top"
+        },
+        {
+          "id": 4,
+          "keys": [
+            "G",
+            "End"
+          ],
+          "effect": "Go to bottom"
+        },
+        {
+          "id": 5,
+          "keys": [
+            "Ctrl+U",
+            "Shift+PageUp"
+          ],
+          "effect": "Move cursor up half page"
+        },
+        {
+          "id": 6,
+          "keys": [
+            "Ctrl+D",
+            "Shift+PageDown"
+          ],
+          "effect": "Move cursor down half page"
+        },
+        {
+          "id": 7,
+          "keys": [
+            "Ctrl+B",
+            "PageUp"
+          ],
+          "effect": "Move cursor up one page"
+        },
+        {
+          "id": 8,
+          "keys": [
+            "Ctrl+F",
+            "PageDown"
+          ],
+          "effect": "Move cursor down one page"
+        },
+        {
+          "id": 9,
+          "keys": [
+            "h",
+            "Left"
+          ],
+          "effect": "Back to the parent directory"
+        },
+        {
+          "id": 10,
+          "keys": [
+            "l",
+            "Right"
+          ],
+          "effect": "Enter the child directory"
+        },
+        {
+          "id": 11,
+          "keys": [
+            "H"
+          ],
+          "effect": "Back to previous directory"
+        },
+        {
+          "id": 12,
+          "keys": [
+            "L"
+          ],
+          "effect": "Forward to next directory"
+        },
+        {
+          "id": 13,
+          "keys": [
+            "g h"
+          ],
+          "effect": "Home directory"
+        },
+        {
+          "id": 14,
+          "keys": [
+            "g c"
+          ],
+          "effect": "Config directory"
+        },
+        {
+          "id": 15,
+          "keys": [
+            "g d"
+          ],
+          "effect": "Downloads directory"
+        },
+        {
+          "id": 16,
+          "keys": [
+            "g t"
+          ],
+          "effect": "Go to trash bin"
+        },
+        {
+          "id": 17,
+          "keys": [
+            "g Space"
+          ],
+          "effect": "Jump interactively"
+        },
+        {
+          "id": 18,
+          "keys": [
+            "g f"
+          ],
+          "effect": "Follow hovered symlink"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Manager: selection and preview",
+      "note": "v selects while moving; V unselects while moving. Esc leaves visual mode or clears selection.",
+      "bindings": [
+        {
+          "id": 19,
+          "keys": [
+            "Esc",
+            "Ctrl+["
+          ],
+          "effect": "Exit visual mode, clear selection, or cancel search"
+        },
+        {
+          "id": 20,
+          "keys": [
+            "Space"
+          ],
+          "effect": "Toggle the current selection state"
+        },
+        {
+          "id": 21,
+          "keys": [
+            "Ctrl+A"
+          ],
+          "effect": "Select all files"
+        },
+        {
+          "id": 22,
+          "keys": [
+            "Ctrl+R"
+          ],
+          "effect": "Invert selection of all files"
+        },
+        {
+          "id": 23,
+          "keys": [
+            "v"
+          ],
+          "effect": "Enter visual mode (selection mode)"
+        },
+        {
+          "id": 24,
+          "keys": [
+            "V"
+          ],
+          "effect": "Enter visual mode (unset mode)"
+        },
+        {
+          "id": 25,
+          "keys": [
+            "K"
+          ],
+          "effect": "Seek up 5 units in the preview"
+        },
+        {
+          "id": 26,
+          "keys": [
+            "J"
+          ],
+          "effect": "Seek down 5 units in the preview"
+        },
+        {
+          "id": 27,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Inspect hovered file metadata"
+        },
+        {
+          "id": 28,
+          "keys": [
+            "Ctrl+S"
+          ],
+          "effect": "Cancel the ongoing search"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Manager: file operations",
+      "note": "Operations target selected files, or the hovered file when none are selected. Uppercase D permanently deletes.",
+      "bindings": [
+        {
+          "id": 29,
+          "keys": [
+            "o",
+            "Enter"
+          ],
+          "effect": "Open selected files"
+        },
+        {
+          "id": 30,
+          "keys": [
+            "O",
+            "Shift+Enter"
+          ],
+          "effect": "Open selected files interactively"
+        },
+        {
+          "id": 31,
+          "keys": [
+            "y"
+          ],
+          "effect": "Yank selected files (copy)"
+        },
+        {
+          "id": 32,
+          "keys": [
+            "x"
+          ],
+          "effect": "Yank selected files (cut)"
+        },
+        {
+          "id": 33,
+          "keys": [
+            "p"
+          ],
+          "effect": "Paste yanked files"
+        },
+        {
+          "id": 34,
+          "keys": [
+            "P"
+          ],
+          "effect": "Paste yanked files (overwrite if the destination exists)"
+        },
+        {
+          "id": 35,
+          "keys": [
+            "-"
+          ],
+          "effect": "Symlink the absolute path of yanked files"
+        },
+        {
+          "id": 36,
+          "keys": [
+            "_"
+          ],
+          "effect": "Symlink the relative path of yanked files"
+        },
+        {
+          "id": 37,
+          "keys": [
+            "Ctrl+-"
+          ],
+          "effect": "Hardlink yanked files"
+        },
+        {
+          "id": 38,
+          "keys": [
+            "Y",
+            "X"
+          ],
+          "effect": "Cancel the yank status"
+        },
+        {
+          "id": 39,
+          "keys": [
+            "d"
+          ],
+          "effect": "Trash selected files"
+        },
+        {
+          "id": 40,
+          "keys": [
+            "D"
+          ],
+          "effect": "Permanently delete selected files"
+        },
+        {
+          "id": 41,
+          "keys": [
+            "a"
+          ],
+          "effect": "Create a file (ends with / for directories)"
+        },
+        {
+          "id": 42,
+          "keys": [
+            "A"
+          ],
+          "effect": "Create multiple files"
+        },
+        {
+          "id": 43,
+          "keys": [
+            "r"
+          ],
+          "effect": "Rename selected file(s)"
+        },
+        {
+          "id": 44,
+          "keys": [
+            ";"
+          ],
+          "effect": "Open shell-command prompt"
+        },
+        {
+          "id": 45,
+          "keys": [
+            ":"
+          ],
+          "effect": "Open shell-command prompt and wait for completion"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Manager: search",
+      "note": "Name/content search requires fd/ripgrep; z and Z require fzf/zoxide respectively.",
+      "bindings": [
+        {
+          "id": 46,
+          "keys": [
+            "s"
+          ],
+          "effect": "Search files by name via fd"
+        },
+        {
+          "id": 47,
+          "keys": [
+            "S"
+          ],
+          "effect": "Search files by content via ripgrep"
+        },
+        {
+          "id": 48,
+          "keys": [
+            "z"
+          ],
+          "effect": "Jump to a file/directory via fzf"
+        },
+        {
+          "id": 49,
+          "keys": [
+            "Z"
+          ],
+          "effect": "Jump to a directory via zoxide"
+        },
+        {
+          "id": 50,
+          "keys": [
+            "f"
+          ],
+          "effect": "Filter files"
+        },
+        {
+          "id": 51,
+          "keys": [
+            "/"
+          ],
+          "effect": "Find next file"
+        },
+        {
+          "id": 52,
+          "keys": [
+            "?"
+          ],
+          "effect": "Find previous file"
+        },
+        {
+          "id": 53,
+          "keys": [
+            "n"
+          ],
+          "effect": "Next found"
+        },
+        {
+          "id": 54,
+          "keys": [
+            "N"
+          ],
+          "effect": "Previous found"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Manager: display and sorting",
+      "bindings": [
+        {
+          "id": 55,
+          "keys": [
+            "."
+          ],
+          "effect": "Toggle the visibility of hidden files"
+        },
+        {
+          "id": 56,
+          "keys": [
+            "m s"
+          ],
+          "effect": "Linemode: size"
+        },
+        {
+          "id": 57,
+          "keys": [
+            "m p"
+          ],
+          "effect": "Linemode: permissions"
+        },
+        {
+          "id": 58,
+          "keys": [
+            "m b"
+          ],
+          "effect": "Linemode: btime"
+        },
+        {
+          "id": 59,
+          "keys": [
+            "m m"
+          ],
+          "effect": "Linemode: mtime"
+        },
+        {
+          "id": 60,
+          "keys": [
+            "m o"
+          ],
+          "effect": "Linemode: owner"
+        },
+        {
+          "id": 61,
+          "keys": [
+            "m n"
+          ],
+          "effect": "Linemode: none"
+        },
+        {
+          "id": 62,
+          "keys": [
+            ", m"
+          ],
+          "effect": "Sort by modified time"
+        },
+        {
+          "id": 63,
+          "keys": [
+            ", M"
+          ],
+          "effect": "Sort by modified time (reverse)"
+        },
+        {
+          "id": 64,
+          "keys": [
+            ", b"
+          ],
+          "effect": "Sort by birth time"
+        },
+        {
+          "id": 65,
+          "keys": [
+            ", B"
+          ],
+          "effect": "Sort by birth time (reverse)"
+        },
+        {
+          "id": 66,
+          "keys": [
+            ", e"
+          ],
+          "effect": "Sort by extension"
+        },
+        {
+          "id": 67,
+          "keys": [
+            ", E"
+          ],
+          "effect": "Sort by extension (reverse)"
+        },
+        {
+          "id": 68,
+          "keys": [
+            ", a"
+          ],
+          "effect": "Sort alphabetically"
+        },
+        {
+          "id": 69,
+          "keys": [
+            ", A"
+          ],
+          "effect": "Sort alphabetically (reverse)"
+        },
+        {
+          "id": 70,
+          "keys": [
+            ", n"
+          ],
+          "effect": "Sort naturally"
+        },
+        {
+          "id": 71,
+          "keys": [
+            ", N"
+          ],
+          "effect": "Sort naturally (reverse)"
+        },
+        {
+          "id": 72,
+          "keys": [
+            ", s"
+          ],
+          "effect": "Sort by size"
+        },
+        {
+          "id": 73,
+          "keys": [
+            ", S"
+          ],
+          "effect": "Sort by size (reverse)"
+        },
+        {
+          "id": 74,
+          "keys": [
+            ", r"
+          ],
+          "effect": "Sort randomly"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Manager: copying paths",
+      "note": "Copies text to the system clipboard; different from y/x for copying or moving files.",
+      "bindings": [
+        {
+          "id": 75,
+          "keys": [
+            "c c"
+          ],
+          "effect": "Copy absolute file path"
+        },
+        {
+          "id": 76,
+          "keys": [
+            "c C"
+          ],
+          "effect": "Copy file URL"
+        },
+        {
+          "id": 77,
+          "keys": [
+            "c d"
+          ],
+          "effect": "Copy parent directory path"
+        },
+        {
+          "id": 78,
+          "keys": [
+            "c D"
+          ],
+          "effect": "Copy directory URL"
+        },
+        {
+          "id": 79,
+          "keys": [
+            "c f"
+          ],
+          "effect": "Copy filename"
+        },
+        {
+          "id": 80,
+          "keys": [
+            "c n"
+          ],
+          "effect": "Copy filename without extension"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Manager: tabs",
+      "note": "tt opens a tab; numbered keys select existing tabs.",
+      "bindings": [
+        {
+          "id": 81,
+          "keys": [
+            "t t"
+          ],
+          "effect": "Create a new tab in current directory"
+        },
+        {
+          "id": 82,
+          "keys": [
+            "t r"
+          ],
+          "effect": "Rename current tab"
+        },
+        {
+          "id": 83,
+          "keys": [
+            "1"
+          ],
+          "effect": "Switch to first tab"
+        },
+        {
+          "id": 84,
+          "keys": [
+            "2"
+          ],
+          "effect": "Switch to second tab"
+        },
+        {
+          "id": 85,
+          "keys": [
+            "3"
+          ],
+          "effect": "Switch to third tab"
+        },
+        {
+          "id": 86,
+          "keys": [
+            "4"
+          ],
+          "effect": "Switch to fourth tab"
+        },
+        {
+          "id": 87,
+          "keys": [
+            "5"
+          ],
+          "effect": "Switch to fifth tab"
+        },
+        {
+          "id": 88,
+          "keys": [
+            "6"
+          ],
+          "effect": "Switch to sixth tab"
+        },
+        {
+          "id": 89,
+          "keys": [
+            "7"
+          ],
+          "effect": "Switch to seventh tab"
+        },
+        {
+          "id": 90,
+          "keys": [
+            "8"
+          ],
+          "effect": "Switch to eighth tab"
+        },
+        {
+          "id": 91,
+          "keys": [
+            "9"
+          ],
+          "effect": "Switch to ninth tab"
+        },
+        {
+          "id": 92,
+          "keys": [
+            "["
+          ],
+          "effect": "Switch to previous tab"
+        },
+        {
+          "id": 93,
+          "keys": [
+            "]"
+          ],
+          "effect": "Switch to next tab"
+        },
+        {
+          "id": 94,
+          "keys": [
+            "{"
+          ],
+          "effect": "Swap current tab with previous tab"
+        },
+        {
+          "id": 95,
+          "keys": [
+            "}"
+          ],
+          "effect": "Swap current tab with next tab"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Manager: help and exit",
+      "bindings": [
+        {
+          "id": 96,
+          "keys": [
+            "q"
+          ],
+          "effect": "Quit (shell integration may change directory)"
+        },
+        {
+          "id": 97,
+          "keys": [
+            "Q"
+          ],
+          "effect": "Quit without updating shell working directory"
+        },
+        {
+          "id": 98,
+          "keys": [
+            "Ctrl+C"
+          ],
+          "effect": "Close the current tab, or quit if it's last"
+        },
+        {
+          "id": 99,
+          "keys": [
+            "Ctrl+Z"
+          ],
+          "effect": "Suspend the process"
+        },
+        {
+          "id": 100,
+          "keys": [
+            "w"
+          ],
+          "effect": "Show task manager"
+        },
+        {
+          "id": 101,
+          "keys": [
+            "~",
+            "F1"
+          ],
+          "effect": "Open help"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Task manager",
+      "note": "Open with w from the manager.",
+      "bindings": [
+        {
+          "id": 102,
+          "keys": [
+            "Esc",
+            "Ctrl+[",
+            "Ctrl+C",
+            "w"
+          ],
+          "effect": "Close task manager"
+        },
+        {
+          "id": 103,
+          "keys": [
+            "k",
+            "Up"
+          ],
+          "effect": "Previous task"
+        },
+        {
+          "id": 104,
+          "keys": [
+            "j",
+            "Down"
+          ],
+          "effect": "Next task"
+        },
+        {
+          "id": 105,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Inspect the task"
+        },
+        {
+          "id": 106,
+          "keys": [
+            "x"
+          ],
+          "effect": "Cancel the task"
+        },
+        {
+          "id": 107,
+          "keys": [
+            "~",
+            "F1"
+          ],
+          "effect": "Open help"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "File inspection",
+      "note": "Open with Tab on a file.",
+      "bindings": [
+        {
+          "id": 108,
+          "keys": [
+            "Esc",
+            "Ctrl+[",
+            "Ctrl+C",
+            "Tab"
+          ],
+          "effect": "Close the spot"
+        },
+        {
+          "id": 109,
+          "keys": [
+            "k",
+            "Up"
+          ],
+          "effect": "Previous line"
+        },
+        {
+          "id": 110,
+          "keys": [
+            "j",
+            "Down"
+          ],
+          "effect": "Next line"
+        },
+        {
+          "id": 111,
+          "keys": [
+            "h",
+            "Left"
+          ],
+          "effect": "Swipe to previous file"
+        },
+        {
+          "id": 112,
+          "keys": [
+            "l",
+            "Right"
+          ],
+          "effect": "Swipe to next file"
+        },
+        {
+          "id": 113,
+          "keys": [
+            "c c"
+          ],
+          "effect": "Copy selected cell"
+        },
+        {
+          "id": 114,
+          "keys": [
+            "~",
+            "F1"
+          ],
+          "effect": "Open help"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Open-with picker",
+      "note": "Open with O or Shift+Enter on a file.",
+      "bindings": [
+        {
+          "id": 115,
+          "keys": [
+            "Esc",
+            "Ctrl+[",
+            "Ctrl+C"
+          ],
+          "effect": "Cancel pick"
+        },
+        {
+          "id": 116,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Submit the pick"
+        },
+        {
+          "id": 117,
+          "keys": [
+            "k",
+            "Up"
+          ],
+          "effect": "Previous option"
+        },
+        {
+          "id": 118,
+          "keys": [
+            "j",
+            "Down"
+          ],
+          "effect": "Next option"
+        },
+        {
+          "id": 119,
+          "keys": [
+            "~",
+            "F1"
+          ],
+          "effect": "Open help"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Confirmation dialog",
+      "note": "Appears when an operation needs confirmation.",
+      "bindings": [
+        {
+          "id": 120,
+          "keys": [
+            "Esc",
+            "Ctrl+[",
+            "Ctrl+C",
+            "n"
+          ],
+          "effect": "Cancel the confirm"
+        },
+        {
+          "id": 121,
+          "keys": [
+            "Enter",
+            "y"
+          ],
+          "effect": "Submit the confirm"
+        },
+        {
+          "id": 122,
+          "keys": [
+            "k",
+            "Up"
+          ],
+          "effect": "Previous line"
+        },
+        {
+          "id": 123,
+          "keys": [
+            "j",
+            "Down"
+          ],
+          "effect": "Next line"
+        },
+        {
+          "id": 124,
+          "keys": [
+            "~",
+            "F1"
+          ],
+          "effect": "Open help"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Input completion",
+      "note": "Applies while the input completion menu is visible. Alt must reach the application as Meta/Esc.",
+      "bindings": [
+        {
+          "id": 125,
+          "keys": [
+            "Ctrl+C"
+          ],
+          "effect": "Cancel completion"
+        },
+        {
+          "id": 126,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Submit the completion"
+        },
+        {
+          "id": 127,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Complete and submit the input"
+        },
+        {
+          "id": 128,
+          "keys": [
+            "Alt+K",
+            "Up",
+            "Ctrl+P"
+          ],
+          "effect": "Previous item"
+        },
+        {
+          "id": 129,
+          "keys": [
+            "Alt+J",
+            "Down",
+            "Ctrl+N"
+          ],
+          "effect": "Next item"
+        },
+        {
+          "id": 130,
+          "keys": [
+            "~",
+            "F1"
+          ],
+          "effect": "Open help"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Help menu",
+      "note": "Open with ~ or F1 from the current context.",
+      "bindings": [
+        {
+          "id": 131,
+          "keys": [
+            "Esc",
+            "Ctrl+["
+          ],
+          "effect": "Enter normal mode, or hide help menu"
+        },
+        {
+          "id": 132,
+          "keys": [
+            "Ctrl+C"
+          ],
+          "effect": "Close help menu"
+        },
+        {
+          "id": 133,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Close help menu and run selected action(s)"
+        },
+        {
+          "id": 134,
+          "keys": [
+            "k",
+            "Up",
+            "Ctrl+P"
+          ],
+          "effect": "Previous line"
+        },
+        {
+          "id": 135,
+          "keys": [
+            "j",
+            "Down",
+            "Ctrl+N"
+          ],
+          "effect": "Next line"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Input: insertion and shared controls",
+      "note": "Used in rename, create, filter and other text prompts.",
+      "bindings": [
+        {
+          "id": 136,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Submit input"
+        },
+        {
+          "id": 137,
+          "keys": [
+            "Ctrl+C"
+          ],
+          "effect": "Cancel input"
+        },
+        {
+          "id": 138,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Enter Normal mode; in Normal mode, cancel input"
+        },
+        {
+          "id": 139,
+          "keys": [
+            "Left"
+          ],
+          "effect": "Previous character"
+        },
+        {
+          "id": 140,
+          "keys": [
+            "Right"
+          ],
+          "effect": "Next character"
+        },
+        {
+          "id": 141,
+          "keys": [
+            "Home"
+          ],
+          "effect": "Line start"
+        },
+        {
+          "id": 142,
+          "keys": [
+            "End"
+          ],
+          "effect": "Line end"
+        },
+        {
+          "id": 143,
+          "keys": [
+            "Backspace"
+          ],
+          "effect": "Delete previous character"
+        },
+        {
+          "id": 144,
+          "keys": [
+            "Delete"
+          ],
+          "effect": "Delete next character"
+        },
+        {
+          "id": 145,
+          "keys": [
+            "Ctrl+U"
+          ],
+          "effect": "Cut back to line start"
+        },
+        {
+          "id": 146,
+          "keys": [
+            "Ctrl+K"
+          ],
+          "effect": "Cut to line end"
+        },
+        {
+          "id": 147,
+          "keys": [
+            "Ctrl+W"
+          ],
+          "effect": "Cut preceding word"
+        },
+        {
+          "id": 148,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Previous input history entry"
+        },
+        {
+          "id": 149,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Next input history entry"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Input: Normal mode",
+      "note": "Press Esc inside an input prompt first; unmodified letters otherwise insert text.",
+      "bindings": [
+        {
+          "id": 150,
+          "keys": [
+            "i"
+          ],
+          "effect": "Insert before cursor"
+        },
+        {
+          "id": 151,
+          "keys": [
+            "a"
+          ],
+          "effect": "Insert after cursor"
+        },
+        {
+          "id": 152,
+          "keys": [
+            "I"
+          ],
+          "effect": "Insert at first nonblank"
+        },
+        {
+          "id": 153,
+          "keys": [
+            "A"
+          ],
+          "effect": "Append at line end"
+        },
+        {
+          "id": 154,
+          "keys": [
+            "h"
+          ],
+          "effect": "Previous character"
+        },
+        {
+          "id": 155,
+          "keys": [
+            "l"
+          ],
+          "effect": "Next character"
+        },
+        {
+          "id": 156,
+          "keys": [
+            "w"
+          ],
+          "effect": "Next word start"
+        },
+        {
+          "id": 157,
+          "keys": [
+            "b"
+          ],
+          "effect": "Previous word start"
+        },
+        {
+          "id": 158,
+          "keys": [
+            "e"
+          ],
+          "effect": "Word end"
+        },
+        {
+          "id": 159,
+          "keys": [
+            "0"
+          ],
+          "effect": "Line start"
+        },
+        {
+          "id": 160,
+          "keys": [
+            "$"
+          ],
+          "effect": "Line end"
+        },
+        {
+          "id": 161,
+          "keys": [
+            "^"
+          ],
+          "effect": "First nonblank"
+        },
+        {
+          "id": 162,
+          "keys": [
+            "v"
+          ],
+          "effect": "Enter Visual selection"
+        },
+        {
+          "id": 163,
+          "keys": [
+            "V"
+          ],
+          "effect": "Select line"
+        },
+        {
+          "id": 164,
+          "keys": [
+            "r"
+          ],
+          "effect": "Replace one character"
+        },
+        {
+          "id": 165,
+          "keys": [
+            "x"
+          ],
+          "effect": "Cut character"
+        },
+        {
+          "id": 166,
+          "keys": [
+            "D"
+          ],
+          "effect": "Cut to line end"
+        },
+        {
+          "id": 167,
+          "keys": [
+            "C"
+          ],
+          "effect": "Change to line end"
+        },
+        {
+          "id": 168,
+          "keys": [
+            "p"
+          ],
+          "effect": "Paste after cursor"
+        },
+        {
+          "id": 169,
+          "keys": [
+            "P"
+          ],
+          "effect": "Paste before cursor"
+        },
+        {
+          "id": 170,
+          "keys": [
+            "u"
+          ],
+          "effect": "Undo"
+        },
+        {
+          "id": 171,
+          "keys": [
+            "Ctrl+R"
+          ],
+          "effect": "Redo"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Input: Visual mode",
+      "note": "Press v or V in the input prompt’s Normal mode; motions extend the selection.",
+      "bindings": [
+        {
+          "id": 172,
+          "keys": [
+            "d"
+          ],
+          "effect": "Cut selection"
+        },
+        {
+          "id": 173,
+          "keys": [
+            "c"
+          ],
+          "effect": "Cut selection and enter Insert mode"
+        },
+        {
+          "id": 174,
+          "keys": [
+            "y"
+          ],
+          "effect": "Copy selection"
+        },
+        {
+          "id": 175,
+          "keys": [
+            "u"
+          ],
+          "effect": "Lowercase selection"
+        },
+        {
+          "id": 176,
+          "keys": [
+            "U"
+          ],
+          "effect": "Uppercase selection"
+        },
+        {
+          "id": 177,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Return to Normal mode"
+        }
+      ]
+    }
+  ]
+}

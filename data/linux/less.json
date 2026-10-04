@@ -1,0 +1,504 @@
+{
+  "full_name": "less",
+  "note": "Core default keys inside the less pager; custom lesskey files may override them.",
+  "source": "https://github.com/gwsw/less/blob/master/less.hlp",
+  "binding_groups": [
+    {
+      "id": 1,
+      "title": "Scrolling",
+      "note": "Prefix movement keys with a number to change their distance.",
+      "bindings": [
+        {
+          "id": 1,
+          "keys": [
+            "j",
+            "e",
+            "Enter",
+            "Ctrl+E",
+            "Ctrl+N"
+          ],
+          "effect": "One line down"
+        },
+        {
+          "id": 2,
+          "keys": [
+            "k",
+            "y",
+            "Ctrl+Y",
+            "Ctrl+K",
+            "Ctrl+P"
+          ],
+          "effect": "One line up"
+        },
+        {
+          "id": 3,
+          "keys": [
+            "Space",
+            "f",
+            "Ctrl+F",
+            "Ctrl+V"
+          ],
+          "effect": "One screen down"
+        },
+        {
+          "id": 4,
+          "keys": [
+            "b",
+            "Ctrl+B",
+            "Esc v"
+          ],
+          "effect": "One screen up"
+        },
+        {
+          "id": 5,
+          "keys": [
+            "d",
+            "Ctrl+D"
+          ],
+          "effect": "Half-screen down"
+        },
+        {
+          "id": 6,
+          "keys": [
+            "u",
+            "Ctrl+U"
+          ],
+          "effect": "Half-screen up"
+        },
+        {
+          "id": 7,
+          "keys": [
+            "Right",
+            "Esc )"
+          ],
+          "effect": "Scroll right"
+        },
+        {
+          "id": 8,
+          "keys": [
+            "Left",
+            "Esc ("
+          ],
+          "effect": "Scroll left"
+        },
+        {
+          "id": 9,
+          "keys": [
+            "Ctrl+Right"
+          ],
+          "effect": "Rightmost displayed column"
+        },
+        {
+          "id": 10,
+          "keys": [
+            "Ctrl+Left"
+          ],
+          "effect": "First column"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Jumping and marks",
+      "note": "Forward bracket matching starts on the top displayed line; backward matching on the bottom line.",
+      "bindings": [
+        {
+          "id": 11,
+          "keys": [
+            "g",
+            "Home"
+          ],
+          "effect": "File start; a preceding number selects a line"
+        },
+        {
+          "id": 12,
+          "keys": [
+            "G",
+            "End"
+          ],
+          "effect": "File end; a preceding number selects a line"
+        },
+        {
+          "id": 13,
+          "keys": [
+            "p",
+            "%"
+          ],
+          "effect": "Jump to percentage given before the key"
+        },
+        {
+          "id": 14,
+          "keys": [
+            "m"
+          ],
+          "effect": "Then letter: mark top visible line"
+        },
+        {
+          "id": 15,
+          "keys": [
+            "M"
+          ],
+          "effect": "Then letter: mark bottom visible line"
+        },
+        {
+          "id": 16,
+          "keys": [
+            "'"
+          ],
+          "effect": "Then letter: jump to mark"
+        },
+        {
+          "id": 17,
+          "keys": [
+            "' '"
+          ],
+          "effect": "Return to previous position"
+        },
+        {
+          "id": 18,
+          "keys": [
+            "("
+          ],
+          "effect": "Matching closing parenthesis"
+        },
+        {
+          "id": 19,
+          "keys": [
+            "{"
+          ],
+          "effect": "Matching closing brace"
+        },
+        {
+          "id": 20,
+          "keys": [
+            "["
+          ],
+          "effect": "Matching closing bracket"
+        },
+        {
+          "id": 21,
+          "keys": [
+            ")"
+          ],
+          "effect": "Matching opening parenthesis"
+        },
+        {
+          "id": 22,
+          "keys": [
+            "}"
+          ],
+          "effect": "Matching opening brace"
+        },
+        {
+          "id": 23,
+          "keys": [
+            "]"
+          ],
+          "effect": "Matching opening bracket"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Search and filter",
+      "note": "Type a pattern after /, ? or &, then press Enter.",
+      "bindings": [
+        {
+          "id": 24,
+          "keys": [
+            "/"
+          ],
+          "effect": "Enter forward search"
+        },
+        {
+          "id": 25,
+          "keys": [
+            "?"
+          ],
+          "effect": "Enter backward search"
+        },
+        {
+          "id": 26,
+          "keys": [
+            "n"
+          ],
+          "effect": "Next search match"
+        },
+        {
+          "id": 27,
+          "keys": [
+            "N"
+          ],
+          "effect": "Previous search match"
+        },
+        {
+          "id": 28,
+          "keys": [
+            "Esc n"
+          ],
+          "effect": "Repeat search across files"
+        },
+        {
+          "id": 29,
+          "keys": [
+            "Esc N"
+          ],
+          "effect": "Reverse search across files"
+        },
+        {
+          "id": 30,
+          "keys": [
+            "Esc u"
+          ],
+          "effect": "Toggle search highlighting"
+        },
+        {
+          "id": 31,
+          "keys": [
+            "Esc U"
+          ],
+          "effect": "Clear search highlighting"
+        },
+        {
+          "id": 32,
+          "keys": [
+            "&"
+          ],
+          "effect": "Enter filter for matching lines"
+        },
+        {
+          "id": 33,
+          "keys": [
+            "& Enter"
+          ],
+          "effect": "Clear line filter"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Following and refreshing",
+      "note": "Follow mode is entered with F; Ctrl+C returns to ordinary navigation.",
+      "bindings": [
+        {
+          "id": 34,
+          "keys": [
+            "F"
+          ],
+          "effect": "Wait for and display appended text"
+        },
+        {
+          "id": 35,
+          "keys": [
+            "Esc F"
+          ],
+          "effect": "Follow until a search match is found"
+        },
+        {
+          "id": 36,
+          "keys": [
+            "Ctrl+C"
+          ],
+          "effect": "Stop following or interrupt a long operation"
+        },
+        {
+          "id": 37,
+          "keys": [
+            "r",
+            "Ctrl+R",
+            "Ctrl+L"
+          ],
+          "effect": "Redraw screen"
+        },
+        {
+          "id": 38,
+          "keys": [
+            "R"
+          ],
+          "effect": "Redraw and discard buffered input"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Files and help",
+      "note": "File switching applies when the session contains multiple files; :d does not delete a file from disk.",
+      "bindings": [
+        {
+          "id": 39,
+          "keys": [
+            ": n"
+          ],
+          "effect": "Next file"
+        },
+        {
+          "id": 40,
+          "keys": [
+            ": p"
+          ],
+          "effect": "Previous file"
+        },
+        {
+          "id": 41,
+          "keys": [
+            ": x"
+          ],
+          "effect": "First file"
+        },
+        {
+          "id": 42,
+          "keys": [
+            ": e",
+            "Ctrl+X Ctrl+V"
+          ],
+          "effect": "Prompt to open another file"
+        },
+        {
+          "id": 43,
+          "keys": [
+            ": d"
+          ],
+          "effect": "Remove file from this session’s file list"
+        },
+        {
+          "id": 44,
+          "keys": [
+            "=",
+            "Ctrl+G",
+            ": f"
+          ],
+          "effect": "Show file and position information"
+        },
+        {
+          "id": 45,
+          "keys": [
+            "v"
+          ],
+          "effect": "Open current file in configured editor"
+        },
+        {
+          "id": 46,
+          "keys": [
+            "h",
+            "H"
+          ],
+          "effect": "Open help"
+        },
+        {
+          "id": 47,
+          "keys": [
+            "q",
+            "Q",
+            "Z Z"
+          ],
+          "effect": "Quit pager"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Search and filename input",
+      "note": "Applies while editing a search, filter, or filename prompt; filename completion requires filename input.",
+      "bindings": [
+        {
+          "id": 48,
+          "keys": [
+            "Left"
+          ],
+          "effect": "Previous character"
+        },
+        {
+          "id": 49,
+          "keys": [
+            "Right"
+          ],
+          "effect": "Next character"
+        },
+        {
+          "id": 50,
+          "keys": [
+            "Ctrl+Left"
+          ],
+          "effect": "Previous word"
+        },
+        {
+          "id": 51,
+          "keys": [
+            "Ctrl+Right"
+          ],
+          "effect": "Next word"
+        },
+        {
+          "id": 52,
+          "keys": [
+            "Home"
+          ],
+          "effect": "Input start"
+        },
+        {
+          "id": 53,
+          "keys": [
+            "End"
+          ],
+          "effect": "Input end"
+        },
+        {
+          "id": 54,
+          "keys": [
+            "Backspace"
+          ],
+          "effect": "Delete previous character"
+        },
+        {
+          "id": 55,
+          "keys": [
+            "Delete"
+          ],
+          "effect": "Delete next character"
+        },
+        {
+          "id": 56,
+          "keys": [
+            "Ctrl+U"
+          ],
+          "effect": "Clear input line"
+        },
+        {
+          "id": 57,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Previous input history entry"
+        },
+        {
+          "id": 58,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Next input history entry"
+        },
+        {
+          "id": 59,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Complete filename; cycle forward"
+        },
+        {
+          "id": 60,
+          "keys": [
+            "Shift+Tab"
+          ],
+          "effect": "Cycle filename completions backward"
+        },
+        {
+          "id": 61,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Submit input"
+        }
+      ]
+    }
+  ]
+}

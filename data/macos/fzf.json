@@ -1,0 +1,255 @@
+{
+  "full_name": "fzf",
+  "note": "fzf 0.74.4 default picker bindings; integrations can override them.",
+  "source": "https://github.com/junegunn/fzf/blob/v0.74.4/man/man1/fzf.1",
+  "binding_groups": [
+    {
+      "id": 1,
+      "title": "Results",
+      "note": "Ctrl+P/N browse query history instead when query-history support is enabled. Opt requires the terminal to send Meta/Esc.",
+      "bindings": [
+        {
+          "id": 1,
+          "keys": [
+            "Up",
+            "Ctrl+K"
+          ],
+          "effect": "Move up"
+        },
+        {
+          "id": 2,
+          "keys": [
+            "Down",
+            "Ctrl+J"
+          ],
+          "effect": "Move down"
+        },
+        {
+          "id": 3,
+          "keys": [
+            "Ctrl+P",
+            "Opt+Up"
+          ],
+          "effect": "Previous matching item"
+        },
+        {
+          "id": 4,
+          "keys": [
+            "Ctrl+N",
+            "Opt+Down"
+          ],
+          "effect": "Next matching item"
+        },
+        {
+          "id": 5,
+          "keys": [
+            "PageUp"
+          ],
+          "effect": "Page up"
+        },
+        {
+          "id": 6,
+          "keys": [
+            "PageDown"
+          ],
+          "effect": "Page down"
+        },
+        {
+          "id": 7,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Accept current item or selected items"
+        },
+        {
+          "id": 8,
+          "keys": [
+            "Esc",
+            "Ctrl+C",
+            "Ctrl+G",
+            "Ctrl+Q"
+          ],
+          "effect": "Cancel picker"
+        },
+        {
+          "id": 9,
+          "keys": [
+            "Ctrl+L"
+          ],
+          "effect": "Redraw screen"
+        },
+        {
+          "id": 10,
+          "keys": [
+            "Ctrl+/",
+            "Opt+/"
+          ],
+          "effect": "Toggle word wrapping"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Multiple selection",
+      "note": "Applies only when the caller enabled multi-selection.",
+      "bindings": [
+        {
+          "id": 11,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Toggle item selection and move down"
+        },
+        {
+          "id": 12,
+          "keys": [
+            "Shift+Tab"
+          ],
+          "effect": "Toggle item selection and move up"
+        },
+        {
+          "id": 13,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Accept selected items"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Query editing",
+      "bindings": [
+        {
+          "id": 14,
+          "keys": [
+            "Left",
+            "Ctrl+B"
+          ],
+          "effect": "Previous character"
+        },
+        {
+          "id": 15,
+          "keys": [
+            "Right",
+            "Ctrl+F"
+          ],
+          "effect": "Next character"
+        },
+        {
+          "id": 16,
+          "keys": [
+            "Home",
+            "Ctrl+A"
+          ],
+          "effect": "Query start"
+        },
+        {
+          "id": 17,
+          "keys": [
+            "End",
+            "Ctrl+E"
+          ],
+          "effect": "Query end"
+        },
+        {
+          "id": 18,
+          "keys": [
+            "Opt+B",
+            "Opt+Left",
+            "Shift+Left"
+          ],
+          "effect": "Previous word"
+        },
+        {
+          "id": 19,
+          "keys": [
+            "Opt+F",
+            "Opt+Right",
+            "Shift+Right"
+          ],
+          "effect": "Next word end"
+        },
+        {
+          "id": 20,
+          "keys": [
+            "Backspace",
+            "Ctrl+H",
+            "Ctrl+Backspace"
+          ],
+          "effect": "Delete previous character"
+        },
+        {
+          "id": 21,
+          "keys": [
+            "Delete"
+          ],
+          "effect": "Delete next character"
+        },
+        {
+          "id": 22,
+          "keys": [
+            "Ctrl+D"
+          ],
+          "effect": "Delete next character; cancel if query is empty"
+        },
+        {
+          "id": 23,
+          "keys": [
+            "Ctrl+U"
+          ],
+          "effect": "Cut back to query start"
+        },
+        {
+          "id": 24,
+          "keys": [
+            "Ctrl+W"
+          ],
+          "effect": "Cut preceding whitespace-delimited word"
+        },
+        {
+          "id": 25,
+          "keys": [
+            "Opt+Backspace"
+          ],
+          "effect": "Cut preceding word"
+        },
+        {
+          "id": 26,
+          "keys": [
+            "Opt+D"
+          ],
+          "effect": "Cut next word"
+        },
+        {
+          "id": 27,
+          "keys": [
+            "Ctrl+Y"
+          ],
+          "effect": "Paste killed query text"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Preview",
+      "note": "Applies only when the caller has configured a preview pane.",
+      "bindings": [
+        {
+          "id": 28,
+          "keys": [
+            "Shift+Up"
+          ],
+          "effect": "Scroll preview up"
+        },
+        {
+          "id": 29,
+          "keys": [
+            "Shift+Down"
+          ],
+          "effect": "Scroll preview down"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,567 @@
+{
+  "full_name": "kitty",
+  "note": "kitty 0.49.2 defaults; kitty_mod = Ctrl+Shift.",
+  "source": "https://github.com/kovidgoyal/kitty/blob/v0.49.2/kitty/options/definition.py",
+  "binding_groups": [
+    {
+      "id": 1,
+      "title": "Clipboard",
+      "note": "Selection shortcuts need selected text; on macOS Cmd+C passes through when nothing is selected.",
+      "bindings": [
+        {
+          "id": 1,
+          "keys": [
+            "Ctrl+Shift+C"
+          ],
+          "effect": "Copy to clipboard"
+        },
+        {
+          "id": 2,
+          "keys": [
+            "Ctrl+Shift+V"
+          ],
+          "effect": "Paste from clipboard"
+        },
+        {
+          "id": 3,
+          "keys": [
+            "Ctrl+Shift+S",
+            "Shift+Insert"
+          ],
+          "effect": "Paste from selection"
+        },
+        {
+          "id": 4,
+          "keys": [
+            "Ctrl+Shift+O"
+          ],
+          "effect": "Open selection with system handler"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Scrolling",
+      "note": "Prompt jumps and last-command output require shell integration.",
+      "bindings": [
+        {
+          "id": 5,
+          "keys": [
+            "Ctrl+Shift+Up",
+            "Ctrl+Shift+K"
+          ],
+          "effect": "Scroll line up"
+        },
+        {
+          "id": 6,
+          "keys": [
+            "Ctrl+Shift+Down",
+            "Ctrl+Shift+J"
+          ],
+          "effect": "Scroll line down"
+        },
+        {
+          "id": 7,
+          "keys": [
+            "Ctrl+Shift+PageUp"
+          ],
+          "effect": "Scroll page up"
+        },
+        {
+          "id": 8,
+          "keys": [
+            "Ctrl+Shift+PageDown"
+          ],
+          "effect": "Scroll page down"
+        },
+        {
+          "id": 9,
+          "keys": [
+            "Ctrl+Shift+Home"
+          ],
+          "effect": "Scroll to top"
+        },
+        {
+          "id": 10,
+          "keys": [
+            "Ctrl+Shift+End"
+          ],
+          "effect": "Scroll to bottom"
+        },
+        {
+          "id": 11,
+          "keys": [
+            "Ctrl+Shift+Z"
+          ],
+          "effect": "Scroll to previous shell prompt"
+        },
+        {
+          "id": 12,
+          "keys": [
+            "Ctrl+Shift+X"
+          ],
+          "effect": "Scroll to next shell prompt"
+        },
+        {
+          "id": 13,
+          "keys": [
+            "Ctrl+Shift+H"
+          ],
+          "effect": "Browse scrollback buffer in pager"
+        },
+        {
+          "id": 14,
+          "keys": [
+            "Ctrl+Shift+G"
+          ],
+          "effect": "Browse output of the last shell command in pager"
+        },
+        {
+          "id": 15,
+          "keys": [
+            "Ctrl+Shift+/"
+          ],
+          "effect": "Search the scrollback within a pager"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Window management",
+      "note": "A kitty window is a terminal pane inside an OS window; resizing opens an interactive tool.",
+      "bindings": [
+        {
+          "id": 16,
+          "keys": [
+            "Ctrl+Shift+Enter"
+          ],
+          "effect": "New terminal pane"
+        },
+        {
+          "id": 17,
+          "keys": [
+            "Ctrl+Shift+N"
+          ],
+          "effect": "New desktop window"
+        },
+        {
+          "id": 18,
+          "keys": [
+            "Ctrl+Shift+W"
+          ],
+          "effect": "Close terminal pane"
+        },
+        {
+          "id": 19,
+          "keys": [
+            "Ctrl+Shift+]"
+          ],
+          "effect": "Next window"
+        },
+        {
+          "id": 20,
+          "keys": [
+            "Ctrl+Shift+["
+          ],
+          "effect": "Previous window"
+        },
+        {
+          "id": 21,
+          "keys": [
+            "Ctrl+Shift+F"
+          ],
+          "effect": "Move window forward"
+        },
+        {
+          "id": 22,
+          "keys": [
+            "Ctrl+Shift+B"
+          ],
+          "effect": "Move window backward"
+        },
+        {
+          "id": 23,
+          "keys": [
+            "Ctrl+Shift+`"
+          ],
+          "effect": "Move window to top"
+        },
+        {
+          "id": 24,
+          "keys": [
+            "Ctrl+Shift+R"
+          ],
+          "effect": "Start resizing window"
+        },
+        {
+          "id": 25,
+          "keys": [
+            "Ctrl+Shift+1"
+          ],
+          "effect": "First window"
+        },
+        {
+          "id": 26,
+          "keys": [
+            "Ctrl+Shift+2"
+          ],
+          "effect": "Second window"
+        },
+        {
+          "id": 27,
+          "keys": [
+            "Ctrl+Shift+3"
+          ],
+          "effect": "Third window"
+        },
+        {
+          "id": 28,
+          "keys": [
+            "Ctrl+Shift+4"
+          ],
+          "effect": "Fourth window"
+        },
+        {
+          "id": 29,
+          "keys": [
+            "Ctrl+Shift+5"
+          ],
+          "effect": "Fifth window"
+        },
+        {
+          "id": 30,
+          "keys": [
+            "Ctrl+Shift+6"
+          ],
+          "effect": "Sixth window"
+        },
+        {
+          "id": 31,
+          "keys": [
+            "Ctrl+Shift+7"
+          ],
+          "effect": "Seventh window"
+        },
+        {
+          "id": 32,
+          "keys": [
+            "Ctrl+Shift+8"
+          ],
+          "effect": "Eighth window"
+        },
+        {
+          "id": 33,
+          "keys": [
+            "Ctrl+Shift+9"
+          ],
+          "effect": "Ninth window"
+        },
+        {
+          "id": 34,
+          "keys": [
+            "Ctrl+Shift+0"
+          ],
+          "effect": "Tenth window"
+        },
+        {
+          "id": 35,
+          "keys": [
+            "Ctrl+Shift+F7"
+          ],
+          "effect": "Visually select and focus window"
+        },
+        {
+          "id": 36,
+          "keys": [
+            "Ctrl+Shift+F8"
+          ],
+          "effect": "Visually swap window with another"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Tab management",
+      "bindings": [
+        {
+          "id": 37,
+          "keys": [
+            "Ctrl+Shift+Right",
+            "Ctrl+Tab"
+          ],
+          "effect": "Next tab"
+        },
+        {
+          "id": 38,
+          "keys": [
+            "Ctrl+Shift+Left",
+            "Ctrl+Shift+Tab"
+          ],
+          "effect": "Previous tab"
+        },
+        {
+          "id": 39,
+          "keys": [
+            "Ctrl+Shift+T"
+          ],
+          "effect": "New tab"
+        },
+        {
+          "id": 40,
+          "keys": [
+            "Ctrl+Shift+Q"
+          ],
+          "effect": "Close tab"
+        },
+        {
+          "id": 41,
+          "keys": [
+            "Ctrl+Shift+."
+          ],
+          "effect": "Move tab forward"
+        },
+        {
+          "id": 42,
+          "keys": [
+            "Ctrl+Shift+,"
+          ],
+          "effect": "Move tab backward"
+        },
+        {
+          "id": 43,
+          "keys": [
+            "Ctrl+Shift+Alt+T"
+          ],
+          "effect": "Set tab title"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Layout management",
+      "note": "Cycles through enabled_layouts; the default layout is tall.",
+      "bindings": [
+        {
+          "id": 44,
+          "keys": [
+            "Ctrl+Shift+L"
+          ],
+          "effect": "Next layout"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Font sizes",
+      "note": "Changes font size across all OS windows.",
+      "bindings": [
+        {
+          "id": 45,
+          "keys": [
+            "Ctrl+Shift+=",
+            "Ctrl+Shift+Plus",
+            "Ctrl+Shift+NumpadPlus"
+          ],
+          "effect": "Increase font size"
+        },
+        {
+          "id": 46,
+          "keys": [
+            "Ctrl+Shift+-",
+            "Ctrl+Shift+NumpadMinus"
+          ],
+          "effect": "Decrease font size"
+        },
+        {
+          "id": 47,
+          "keys": [
+            "Ctrl+Shift+Backspace"
+          ],
+          "effect": "Reset font size"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Select and act on visible text",
+      "note": "For hints, type a displayed label; multi-key shortcuts release modifiers before the next step.",
+      "bindings": [
+        {
+          "id": 48,
+          "keys": [
+            "Ctrl+Shift+E"
+          ],
+          "effect": "Open URL"
+        },
+        {
+          "id": 49,
+          "keys": [
+            "Ctrl+Shift+P f"
+          ],
+          "effect": "Choose visible path and insert it"
+        },
+        {
+          "id": 50,
+          "keys": [
+            "Ctrl+Shift+P Shift+F"
+          ],
+          "effect": "Choose visible path and open it"
+        },
+        {
+          "id": 51,
+          "keys": [
+            "Ctrl+Shift+P c"
+          ],
+          "effect": "Insert chosen file"
+        },
+        {
+          "id": 52,
+          "keys": [
+            "Ctrl+Shift+P d"
+          ],
+          "effect": "Insert chosen directory"
+        },
+        {
+          "id": 53,
+          "keys": [
+            "Ctrl+Shift+P l"
+          ],
+          "effect": "Choose visible line and insert it"
+        },
+        {
+          "id": 54,
+          "keys": [
+            "Ctrl+Shift+P w"
+          ],
+          "effect": "Choose visible word and insert it"
+        },
+        {
+          "id": 55,
+          "keys": [
+            "Ctrl+Shift+P h"
+          ],
+          "effect": "Choose visible hash and insert it"
+        },
+        {
+          "id": 56,
+          "keys": [
+            "Ctrl+Shift+P n"
+          ],
+          "effect": "Choose file:line reference and open editor"
+        },
+        {
+          "id": 57,
+          "keys": [
+            "Ctrl+Shift+P y"
+          ],
+          "effect": "Choose terminal hyperlink and open it"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Miscellaneous",
+      "note": "Opacity shortcuts require dynamic_background_opacity yes; clear-last-command needs shell integration.",
+      "bindings": [
+        {
+          "id": 58,
+          "keys": [
+            "Ctrl+Shift+F1"
+          ],
+          "effect": "Show documentation"
+        },
+        {
+          "id": 59,
+          "keys": [
+            "Ctrl+Shift+F3"
+          ],
+          "effect": "Command palette"
+        },
+        {
+          "id": 60,
+          "keys": [
+            "Ctrl+Shift+F11"
+          ],
+          "effect": "Toggle fullscreen"
+        },
+        {
+          "id": 61,
+          "keys": [
+            "Ctrl+Shift+F10"
+          ],
+          "effect": "Toggle maximized"
+        },
+        {
+          "id": 62,
+          "keys": [
+            "Ctrl+Shift+U"
+          ],
+          "effect": "Unicode input"
+        },
+        {
+          "id": 63,
+          "keys": [
+            "Ctrl+Shift+F2"
+          ],
+          "effect": "Edit config file"
+        },
+        {
+          "id": 64,
+          "keys": [
+            "Ctrl+Shift+Esc"
+          ],
+          "effect": "Open the kitty command shell"
+        },
+        {
+          "id": 65,
+          "keys": [
+            "Ctrl+Shift+A m"
+          ],
+          "effect": "Increase background opacity"
+        },
+        {
+          "id": 66,
+          "keys": [
+            "Ctrl+Shift+A l"
+          ],
+          "effect": "Decrease background opacity"
+        },
+        {
+          "id": 67,
+          "keys": [
+            "Ctrl+Shift+A 1"
+          ],
+          "effect": "Make background fully opaque"
+        },
+        {
+          "id": 68,
+          "keys": [
+            "Ctrl+Shift+A d"
+          ],
+          "effect": "Reset background opacity"
+        },
+        {
+          "id": 69,
+          "keys": [
+            "Ctrl+Shift+Delete"
+          ],
+          "effect": "Reset terminal state and erase contents"
+        },
+        {
+          "id": 70,
+          "keys": [
+            "Ctrl+Shift+F5"
+          ],
+          "effect": "Reload kitty.conf"
+        },
+        {
+          "id": 71,
+          "keys": [
+            "Ctrl+Shift+F6"
+          ],
+          "effect": "Debug kitty configuration"
+        }
+      ]
+    }
+  ]
+}

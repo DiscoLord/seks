@@ -1,0 +1,471 @@
+{
+  "full_name": "Ghostty",
+  "note": "Ghostty 1.3.1 defaults; custom bindings may override these.",
+  "source": "https://github.com/ghostty-org/ghostty/blob/v1.3.1/src/config/Config.zig",
+  "binding_groups": [
+    {
+      "id": 1,
+      "title": "Clipboard",
+      "note": "Copy needs selected text; primary selection is separate from the clipboard.",
+      "bindings": [
+        {
+          "id": 1,
+          "keys": [
+            "Ctrl+Shift+C",
+            "Ctrl+Insert"
+          ],
+          "effect": "Copy selection"
+        },
+        {
+          "id": 2,
+          "keys": [
+            "Ctrl+Shift+V"
+          ],
+          "effect": "Paste clipboard"
+        },
+        {
+          "id": 3,
+          "keys": [
+            "Shift+Insert"
+          ],
+          "effect": "Paste primary selection"
+        },
+        {
+          "id": 4,
+          "keys": [
+            "Ctrl+Shift+A"
+          ],
+          "effect": "Select all terminal text"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Windows and tabs",
+      "bindings": [
+        {
+          "id": 5,
+          "keys": [
+            "Ctrl+Shift+N"
+          ],
+          "effect": "New window"
+        },
+        {
+          "id": 6,
+          "keys": [
+            "Ctrl+Shift+T"
+          ],
+          "effect": "New tab"
+        },
+        {
+          "id": 7,
+          "keys": [
+            "Ctrl+Shift+W"
+          ],
+          "effect": "Close current tab"
+        },
+        {
+          "id": 8,
+          "keys": [
+            "Alt+F4"
+          ],
+          "effect": "Close window"
+        },
+        {
+          "id": 9,
+          "keys": [
+            "Ctrl+Shift+Q"
+          ],
+          "effect": "Quit Ghostty"
+        },
+        {
+          "id": 10,
+          "keys": [
+            "Ctrl+Tab",
+            "Ctrl+Shift+Right",
+            "Ctrl+PageDown"
+          ],
+          "effect": "Next tab"
+        },
+        {
+          "id": 11,
+          "keys": [
+            "Ctrl+Shift+Tab",
+            "Ctrl+Shift+Left",
+            "Ctrl+PageUp"
+          ],
+          "effect": "Previous tab"
+        },
+        {
+          "id": 12,
+          "keys": [
+            "Alt+1"
+          ],
+          "effect": "Select tab 1"
+        },
+        {
+          "id": 13,
+          "keys": [
+            "Alt+2"
+          ],
+          "effect": "Select tab 2"
+        },
+        {
+          "id": 14,
+          "keys": [
+            "Alt+3"
+          ],
+          "effect": "Select tab 3"
+        },
+        {
+          "id": 15,
+          "keys": [
+            "Alt+4"
+          ],
+          "effect": "Select tab 4"
+        },
+        {
+          "id": 16,
+          "keys": [
+            "Alt+5"
+          ],
+          "effect": "Select tab 5"
+        },
+        {
+          "id": 17,
+          "keys": [
+            "Alt+6"
+          ],
+          "effect": "Select tab 6"
+        },
+        {
+          "id": 18,
+          "keys": [
+            "Alt+7"
+          ],
+          "effect": "Select tab 7"
+        },
+        {
+          "id": 19,
+          "keys": [
+            "Alt+8"
+          ],
+          "effect": "Select tab 8"
+        },
+        {
+          "id": 20,
+          "keys": [
+            "Alt+9"
+          ],
+          "effect": "Select last tab"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Splits",
+      "bindings": [
+        {
+          "id": 21,
+          "keys": [
+            "Ctrl+Shift+O"
+          ],
+          "effect": "New split to the right"
+        },
+        {
+          "id": 22,
+          "keys": [
+            "Ctrl+Shift+E"
+          ],
+          "effect": "New split below"
+        },
+        {
+          "id": 23,
+          "keys": [
+            "Ctrl+Super+["
+          ],
+          "effect": "Previous split"
+        },
+        {
+          "id": 24,
+          "keys": [
+            "Ctrl+Super+]"
+          ],
+          "effect": "Next split"
+        },
+        {
+          "id": 25,
+          "keys": [
+            "Ctrl+Alt+Left"
+          ],
+          "effect": "Focus split left"
+        },
+        {
+          "id": 26,
+          "keys": [
+            "Ctrl+Alt+Down"
+          ],
+          "effect": "Focus split down"
+        },
+        {
+          "id": 27,
+          "keys": [
+            "Ctrl+Alt+Up"
+          ],
+          "effect": "Focus split up"
+        },
+        {
+          "id": 28,
+          "keys": [
+            "Ctrl+Alt+Right"
+          ],
+          "effect": "Focus split right"
+        },
+        {
+          "id": 29,
+          "keys": [
+            "Ctrl+Shift+Super+Left"
+          ],
+          "effect": "Resize split left"
+        },
+        {
+          "id": 30,
+          "keys": [
+            "Ctrl+Shift+Super+Down"
+          ],
+          "effect": "Resize split down"
+        },
+        {
+          "id": 31,
+          "keys": [
+            "Ctrl+Shift+Super+Up"
+          ],
+          "effect": "Resize split up"
+        },
+        {
+          "id": 32,
+          "keys": [
+            "Ctrl+Shift+Super+Right"
+          ],
+          "effect": "Resize split right"
+        },
+        {
+          "id": 33,
+          "keys": [
+            "Ctrl+Shift+Enter"
+          ],
+          "effect": "Toggle split zoom"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Scrollback",
+      "note": "These operate on terminal scrollback, not an application’s own scrolling.",
+      "bindings": [
+        {
+          "id": 34,
+          "keys": [
+            "Shift+PageUp"
+          ],
+          "effect": "Page up"
+        },
+        {
+          "id": 35,
+          "keys": [
+            "Shift+PageDown"
+          ],
+          "effect": "Page down"
+        },
+        {
+          "id": 36,
+          "keys": [
+            "Shift+Home"
+          ],
+          "effect": "Scroll to top"
+        },
+        {
+          "id": 37,
+          "keys": [
+            "Shift+End"
+          ],
+          "effect": "Scroll to bottom"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Shell prompt navigation",
+      "note": "Requires shell integration or prompt markers from the running shell.",
+      "bindings": [
+        {
+          "id": 38,
+          "keys": [
+            "Ctrl+Shift+PageUp"
+          ],
+          "effect": "Previous prompt"
+        },
+        {
+          "id": 39,
+          "keys": [
+            "Ctrl+Shift+PageDown"
+          ],
+          "effect": "Next prompt"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Search",
+      "note": "Closing search and navigating matches require an active search.",
+      "bindings": [
+        {
+          "id": 40,
+          "keys": [
+            "Ctrl+Shift+F"
+          ],
+          "effect": "Search terminal text"
+        },
+        {
+          "id": 41,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Close search"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Adjust selection",
+      "note": "First select text with the mouse; these keys adjust an existing selection.",
+      "bindings": [
+        {
+          "id": 42,
+          "keys": [
+            "Shift+Left"
+          ],
+          "effect": "Adjust selection left"
+        },
+        {
+          "id": 43,
+          "keys": [
+            "Shift+Right"
+          ],
+          "effect": "Adjust selection right"
+        },
+        {
+          "id": 44,
+          "keys": [
+            "Shift+Up"
+          ],
+          "effect": "Adjust selection up"
+        },
+        {
+          "id": 45,
+          "keys": [
+            "Shift+Down"
+          ],
+          "effect": "Adjust selection down"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Font and display",
+      "bindings": [
+        {
+          "id": 46,
+          "keys": [
+            "Ctrl+Plus",
+            "Ctrl+="
+          ],
+          "effect": "Larger font"
+        },
+        {
+          "id": 47,
+          "keys": [
+            "Ctrl+-"
+          ],
+          "effect": "Smaller font"
+        },
+        {
+          "id": 48,
+          "keys": [
+            "Ctrl+0"
+          ],
+          "effect": "Reset font size"
+        },
+        {
+          "id": 49,
+          "keys": [
+            "Ctrl+Enter"
+          ],
+          "effect": "Toggle fullscreen"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Configuration and tools",
+      "bindings": [
+        {
+          "id": 50,
+          "keys": [
+            "Ctrl+,"
+          ],
+          "effect": "Edit configuration"
+        },
+        {
+          "id": 51,
+          "keys": [
+            "Ctrl+Shift+,"
+          ],
+          "effect": "Reload configuration"
+        },
+        {
+          "id": 52,
+          "keys": [
+            "Ctrl+Shift+P"
+          ],
+          "effect": "Command palette"
+        },
+        {
+          "id": 53,
+          "keys": [
+            "Ctrl+Shift+I"
+          ],
+          "effect": "Toggle inspector"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Export scrollback",
+      "note": "Exports text to a temporary file; paste/copy actions use the file path.",
+      "bindings": [
+        {
+          "id": 54,
+          "keys": [
+            "Ctrl+Shift+J"
+          ],
+          "effect": "Write scrollback file and paste its path"
+        },
+        {
+          "id": 55,
+          "keys": [
+            "Ctrl+Shift+Super+J"
+          ],
+          "effect": "Write scrollback file and copy its path"
+        },
+        {
+          "id": 56,
+          "keys": [
+            "Ctrl+Shift+Alt+J"
+          ],
+          "effect": "Write scrollback file and open it"
+        }
+      ]
+    }
+  ]
+}
