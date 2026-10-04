@@ -21,8 +21,8 @@ const max_keys_width = 32;
 const bold_on = "\x1b[1m";
 const bold_off = "\x1b[0m";
 
-/// Writes `app` to `writer`: the name, the note, then each group as a title
-/// with one line per binding. The effects of all bindings start in the same
+/// Writes `app` to `writer`: the name, the note, then each group as a title,
+/// its note and one line per binding. The effects of all bindings start in the same
 /// column.
 ///
 /// Does no terminal work, so the same text goes to a pager, a pipe or a
@@ -37,6 +37,7 @@ pub fn render(writer: *Io.Writer, app: data.App, style: Style) Io.Writer.Error!v
         try writer.writeByte('\n');
         try writeBold(writer, group.title, style);
         try writer.writeByte('\n');
+        if (group.note) |note| try writer.print("{s}\n", .{note});
 
         for (group.bindings) |binding| {
             try writer.writeAll(indent);
@@ -269,6 +270,34 @@ test "render draws the Plus key as + and aligns by the drawn width" {
         \\  + OR Ctrl+w +  Grow
         \\  :Plus          Not the key name
         \\  "+p            A literal plus
+        \\
+    ;
+    try testing.expectEqualStrings(expected, try renderToBuffer(&buffer, app, .plain));
+}
+
+test "render writes the note of a group under its title" {
+    var buffer: [1024]u8 = undefined;
+    const app: data.App = .{
+        .name = "tmux",
+        .full_name = "tmux",
+        .binding_groups = &.{
+            .{ .id = 1, .title = "Copy mode", .note = "Enter with Prefix [", .bindings = &.{
+                .{ .id = 1, .keys = &.{"Space"}, .effect = "Start the selection" },
+            } },
+            .{ .id = 2, .title = "Windows", .bindings = &.{
+                .{ .id = 2, .keys = &.{"Prefix c"}, .effect = "Create a window" },
+            } },
+        },
+    };
+    const expected =
+        \\tmux
+        \\
+        \\Copy mode
+        \\Enter with Prefix [
+        \\  Space     Start the selection
+        \\
+        \\Windows
+        \\  Prefix c  Create a window
         \\
     ;
     try testing.expectEqualStrings(expected, try renderToBuffer(&buffer, app, .plain));

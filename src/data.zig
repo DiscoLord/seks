@@ -58,6 +58,9 @@ pub const BindingGroup = struct {
     /// Unique among the groups of one app. Never changed, never reused.
     id: u32,
     title: []const u8,
+    /// One short line to show under the title, such as how to enter the mode
+    /// that the bindings work in.
+    note: ?[]const u8 = null,
     /// A tombstone. It keeps the `id` taken after the group is removed.
     dead: bool = false,
     bindings: []const Binding,
@@ -171,6 +174,7 @@ fn validate(
             if ((try names.getOrPut(alias)).found_existing) return error.DuplicateName;
         }
         if (app.full_name.len == 0) return error.EmptyField;
+        if (app.note) |note| if (note.len == 0) return error.EmptyField;
 
         var group_ids: std.AutoHashMap(u32, void) = .init(arena);
         var binding_ids: std.AutoHashMap(u32, void) = .init(arena);
@@ -178,6 +182,7 @@ fn validate(
             problem.id = group.id;
             if ((try group_ids.getOrPut(group.id)).found_existing) return error.DuplicateGroupId;
             if (group.title.len == 0) return error.EmptyField;
+            if (group.note) |note| if (note.len == 0) return error.EmptyField;
 
             for (group.bindings) |binding| {
                 problem.id = binding.id;
@@ -397,6 +402,11 @@ test "validate rejects a broken name, a reused group id and an empty field" {
         \\[ { "name": "app", "full_name": "App", "binding_groups": [
         \\  { "id": 1, "title": "One", "bindings": [
         \\    { "id": 1, "keys": [], "effect": "No keys" } ] }
+        \\] } ]
+        },
+        .{ .expected = error.EmptyField, .json =
+        \\[ { "name": "app", "full_name": "App", "binding_groups": [
+        \\  { "id": 1, "title": "One", "note": "", "bindings": [] }
         \\] } ]
         },
         .{ .expected = error.InvalidKeys, .json =

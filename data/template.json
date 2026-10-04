@@ -15,6 +15,7 @@
     {
       "id": 2,
       "title": "Second group",
+      "note": "One short line, shown under the title",
       "bindings": [
         { "id": 3, "keys": ["Ctrl+K Ctrl+S"], "effect": "Two combinations pressed in order" },
         { "id": 4, "keys": ["g g"], "effect": "Two keys pressed in order" }

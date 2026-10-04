@@ -1,0 +1,1636 @@
+{
+  "aliases": [
+    "neovim"
+  ],
+  "full_name": "Neovim",
+  "note": "Default terminal bindings (Linux); Neovim 0.11+; modes in group titles.",
+  "source": "https://neovim.io/doc/user/quickref/",
+  "binding_groups": [
+    {
+      "id": 1,
+      "title": "Normal mode: entering other modes",
+      "note": "Start in Normal mode; press Esc to leave Insert or Visual mode.",
+      "bindings": [
+        {
+          "id": 1,
+          "keys": [
+            "i"
+          ],
+          "effect": "Insert before cursor"
+        },
+        {
+          "id": 2,
+          "keys": [
+            "a"
+          ],
+          "effect": "Insert after cursor"
+        },
+        {
+          "id": 3,
+          "keys": [
+            "I"
+          ],
+          "effect": "Insert before first nonblank"
+        },
+        {
+          "id": 4,
+          "keys": [
+            "A"
+          ],
+          "effect": "Insert at line end"
+        },
+        {
+          "id": 5,
+          "keys": [
+            "o"
+          ],
+          "effect": "Insert new line below"
+        },
+        {
+          "id": 6,
+          "keys": [
+            "O"
+          ],
+          "effect": "Insert new line above"
+        },
+        {
+          "id": 7,
+          "keys": [
+            "R"
+          ],
+          "effect": "Enter Replace mode"
+        },
+        {
+          "id": 8,
+          "keys": [
+            "v"
+          ],
+          "effect": "Select characters"
+        },
+        {
+          "id": 9,
+          "keys": [
+            "V"
+          ],
+          "effect": "Select lines"
+        },
+        {
+          "id": 10,
+          "keys": [
+            "Ctrl+V"
+          ],
+          "effect": "Select a rectangular block"
+        },
+        {
+          "id": 11,
+          "keys": [
+            ":"
+          ],
+          "effect": "Enter command-line mode"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Normal mode: movement",
+      "note": "Prefix most motions with a count, e.g. 5 j moves down five lines.",
+      "bindings": [
+        {
+          "id": 12,
+          "keys": [
+            "h",
+            "Left"
+          ],
+          "effect": "Move left"
+        },
+        {
+          "id": 13,
+          "keys": [
+            "j",
+            "Down"
+          ],
+          "effect": "Move down"
+        },
+        {
+          "id": 14,
+          "keys": [
+            "k",
+            "Up"
+          ],
+          "effect": "Move up"
+        },
+        {
+          "id": 15,
+          "keys": [
+            "l",
+            "Right"
+          ],
+          "effect": "Move right"
+        },
+        {
+          "id": 16,
+          "keys": [
+            "w"
+          ],
+          "effect": "Next word start"
+        },
+        {
+          "id": 17,
+          "keys": [
+            "b"
+          ],
+          "effect": "Previous word start"
+        },
+        {
+          "id": 18,
+          "keys": [
+            "e"
+          ],
+          "effect": "Word end"
+        },
+        {
+          "id": 19,
+          "keys": [
+            "W"
+          ],
+          "effect": "Next whitespace-delimited word"
+        },
+        {
+          "id": 20,
+          "keys": [
+            "B"
+          ],
+          "effect": "Previous whitespace-delimited word"
+        },
+        {
+          "id": 21,
+          "keys": [
+            "E"
+          ],
+          "effect": "Whitespace-delimited word end"
+        },
+        {
+          "id": 22,
+          "keys": [
+            "g e"
+          ],
+          "effect": "Previous word end"
+        },
+        {
+          "id": 23,
+          "keys": [
+            "0"
+          ],
+          "effect": "Line start"
+        },
+        {
+          "id": 24,
+          "keys": [
+            "^"
+          ],
+          "effect": "First nonblank"
+        },
+        {
+          "id": 25,
+          "keys": [
+            "$"
+          ],
+          "effect": "Line end"
+        },
+        {
+          "id": 26,
+          "keys": [
+            "g _"
+          ],
+          "effect": "Last nonblank"
+        },
+        {
+          "id": 27,
+          "keys": [
+            "g g"
+          ],
+          "effect": "First line; count selects line"
+        },
+        {
+          "id": 28,
+          "keys": [
+            "G"
+          ],
+          "effect": "Last line; count selects line"
+        },
+        {
+          "id": 29,
+          "keys": [
+            "g j"
+          ],
+          "effect": "Next display line"
+        },
+        {
+          "id": 30,
+          "keys": [
+            "g k"
+          ],
+          "effect": "Previous display line"
+        },
+        {
+          "id": 31,
+          "keys": [
+            "%"
+          ],
+          "effect": "Matching bracket"
+        },
+        {
+          "id": 32,
+          "keys": [
+            "{"
+          ],
+          "effect": "Previous paragraph"
+        },
+        {
+          "id": 33,
+          "keys": [
+            "}"
+          ],
+          "effect": "Next paragraph"
+        },
+        {
+          "id": 34,
+          "keys": [
+            "H"
+          ],
+          "effect": "Top visible line"
+        },
+        {
+          "id": 35,
+          "keys": [
+            "M"
+          ],
+          "effect": "Middle visible line"
+        },
+        {
+          "id": 36,
+          "keys": [
+            "L"
+          ],
+          "effect": "Bottom visible line"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Normal mode: finding and searching",
+      "note": "f, F, t and T await one character; / and ? await a pattern and Enter.",
+      "bindings": [
+        {
+          "id": 37,
+          "keys": [
+            "f"
+          ],
+          "effect": "Then type character: find forward on line"
+        },
+        {
+          "id": 38,
+          "keys": [
+            "F"
+          ],
+          "effect": "Then type character: find backward on line"
+        },
+        {
+          "id": 39,
+          "keys": [
+            "t"
+          ],
+          "effect": "Then type character: stop before it forward"
+        },
+        {
+          "id": 40,
+          "keys": [
+            "T"
+          ],
+          "effect": "Then type character: stop after it backward"
+        },
+        {
+          "id": 41,
+          "keys": [
+            ";"
+          ],
+          "effect": "Repeat character find"
+        },
+        {
+          "id": 42,
+          "keys": [
+            ","
+          ],
+          "effect": "Reverse character find"
+        },
+        {
+          "id": 43,
+          "keys": [
+            "/"
+          ],
+          "effect": "Type forward search, then Enter"
+        },
+        {
+          "id": 44,
+          "keys": [
+            "?"
+          ],
+          "effect": "Type backward search, then Enter"
+        },
+        {
+          "id": 45,
+          "keys": [
+            "n"
+          ],
+          "effect": "Next search match"
+        },
+        {
+          "id": 46,
+          "keys": [
+            "N"
+          ],
+          "effect": "Previous search match"
+        },
+        {
+          "id": 47,
+          "keys": [
+            "*"
+          ],
+          "effect": "Search word under cursor forward"
+        },
+        {
+          "id": 48,
+          "keys": [
+            "#"
+          ],
+          "effect": "Search word under cursor backward"
+        },
+        {
+          "id": 49,
+          "keys": [
+            "Ctrl+L"
+          ],
+          "effect": "Clear search highlight and redraw"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Normal mode: scrolling",
+      "bindings": [
+        {
+          "id": 50,
+          "keys": [
+            "Ctrl+D"
+          ],
+          "effect": "Half-page down"
+        },
+        {
+          "id": 51,
+          "keys": [
+            "Ctrl+U"
+          ],
+          "effect": "Half-page up"
+        },
+        {
+          "id": 52,
+          "keys": [
+            "Ctrl+F"
+          ],
+          "effect": "Page down"
+        },
+        {
+          "id": 53,
+          "keys": [
+            "Ctrl+B"
+          ],
+          "effect": "Page up"
+        },
+        {
+          "id": 54,
+          "keys": [
+            "Ctrl+E"
+          ],
+          "effect": "Scroll one line down"
+        },
+        {
+          "id": 55,
+          "keys": [
+            "Ctrl+Y"
+          ],
+          "effect": "Scroll one line up"
+        },
+        {
+          "id": 56,
+          "keys": [
+            "z z"
+          ],
+          "effect": "Center cursor line"
+        },
+        {
+          "id": 57,
+          "keys": [
+            "z t"
+          ],
+          "effect": "Cursor line at top"
+        },
+        {
+          "id": 58,
+          "keys": [
+            "z b"
+          ],
+          "effect": "Cursor line at bottom"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Normal mode: editing",
+      "note": "Deleted and yanked text goes into registers; p and P put it back.",
+      "bindings": [
+        {
+          "id": 59,
+          "keys": [
+            "x"
+          ],
+          "effect": "Delete character"
+        },
+        {
+          "id": 60,
+          "keys": [
+            "X"
+          ],
+          "effect": "Delete previous character"
+        },
+        {
+          "id": 61,
+          "keys": [
+            "d d"
+          ],
+          "effect": "Delete line"
+        },
+        {
+          "id": 62,
+          "keys": [
+            "D"
+          ],
+          "effect": "Delete to line end"
+        },
+        {
+          "id": 63,
+          "keys": [
+            "c c"
+          ],
+          "effect": "Replace line contents"
+        },
+        {
+          "id": 64,
+          "keys": [
+            "C"
+          ],
+          "effect": "Change to line end"
+        },
+        {
+          "id": 65,
+          "keys": [
+            "s"
+          ],
+          "effect": "Replace character and keep inserting"
+        },
+        {
+          "id": 66,
+          "keys": [
+            "r"
+          ],
+          "effect": "Then type replacement character"
+        },
+        {
+          "id": 67,
+          "keys": [
+            "y y"
+          ],
+          "effect": "Yank line"
+        },
+        {
+          "id": 68,
+          "keys": [
+            "Y"
+          ],
+          "effect": "Yank to line end"
+        },
+        {
+          "id": 69,
+          "keys": [
+            "p"
+          ],
+          "effect": "Put after cursor or below line"
+        },
+        {
+          "id": 70,
+          "keys": [
+            "P"
+          ],
+          "effect": "Put before cursor or above line"
+        },
+        {
+          "id": 71,
+          "keys": [
+            "u"
+          ],
+          "effect": "Undo"
+        },
+        {
+          "id": 72,
+          "keys": [
+            "Ctrl+R"
+          ],
+          "effect": "Redo"
+        },
+        {
+          "id": 73,
+          "keys": [
+            "."
+          ],
+          "effect": "Repeat change"
+        },
+        {
+          "id": 74,
+          "keys": [
+            "J"
+          ],
+          "effect": "Join next line with spacing"
+        },
+        {
+          "id": 75,
+          "keys": [
+            "g J"
+          ],
+          "effect": "Join next line without spacing"
+        },
+        {
+          "id": 76,
+          "keys": [
+            "> >"
+          ],
+          "effect": "Indent line"
+        },
+        {
+          "id": 77,
+          "keys": [
+            "< <"
+          ],
+          "effect": "Unindent line"
+        },
+        {
+          "id": 78,
+          "keys": [
+            "= ="
+          ],
+          "effect": "Reindent line"
+        },
+        {
+          "id": 79,
+          "keys": [
+            "~"
+          ],
+          "effect": "Toggle character case"
+        },
+        {
+          "id": 80,
+          "keys": [
+            "g u u"
+          ],
+          "effect": "Lowercase line"
+        },
+        {
+          "id": 81,
+          "keys": [
+            "g U U"
+          ],
+          "effect": "Uppercase line"
+        },
+        {
+          "id": 82,
+          "keys": [
+            "Ctrl+A"
+          ],
+          "effect": "Increment number"
+        },
+        {
+          "id": 83,
+          "keys": [
+            "Ctrl+X"
+          ],
+          "effect": "Decrement number"
+        },
+        {
+          "id": 84,
+          "keys": [
+            "g c c"
+          ],
+          "effect": "Toggle line comment (commentstring required)"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Normal mode: operators and text-object examples",
+      "note": "Operators await a motion or text object; e.g. d i w deletes inside a word.",
+      "bindings": [
+        {
+          "id": 85,
+          "keys": [
+            "d"
+          ],
+          "effect": "Then motion or text object: delete"
+        },
+        {
+          "id": 86,
+          "keys": [
+            "c"
+          ],
+          "effect": "Then motion or text object: change"
+        },
+        {
+          "id": 87,
+          "keys": [
+            "y"
+          ],
+          "effect": "Then motion or text object: yank"
+        },
+        {
+          "id": 88,
+          "keys": [
+            "g q"
+          ],
+          "effect": "Then motion: format text"
+        },
+        {
+          "id": 89,
+          "keys": [
+            "g c"
+          ],
+          "effect": "Then motion: toggle comments"
+        },
+        {
+          "id": 90,
+          "keys": [
+            "c i w"
+          ],
+          "effect": "Change inner word"
+        },
+        {
+          "id": 91,
+          "keys": [
+            "d a w"
+          ],
+          "effect": "Delete word with surrounding whitespace"
+        },
+        {
+          "id": 92,
+          "keys": [
+            "y i p"
+          ],
+          "effect": "Yank paragraph contents"
+        },
+        {
+          "id": 93,
+          "keys": [
+            "c i \""
+          ],
+          "effect": "Change inside double quotes"
+        },
+        {
+          "id": 94,
+          "keys": [
+            "c i '"
+          ],
+          "effect": "Change inside single quotes"
+        },
+        {
+          "id": 95,
+          "keys": [
+            "d i ("
+          ],
+          "effect": "Delete inside parentheses"
+        },
+        {
+          "id": 96,
+          "keys": [
+            "d a ("
+          ],
+          "effect": "Delete parentheses and contents"
+        },
+        {
+          "id": 97,
+          "keys": [
+            "c i {"
+          ],
+          "effect": "Change inside braces"
+        },
+        {
+          "id": 98,
+          "keys": [
+            "c i t"
+          ],
+          "effect": "Change inside matching tags"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Visual mode: selection and editing",
+      "note": "Enter with v, V or Ctrl+V; move to extend the selection. Esc exits.",
+      "bindings": [
+        {
+          "id": 99,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Return to Normal mode"
+        },
+        {
+          "id": 100,
+          "keys": [
+            "o"
+          ],
+          "effect": "Move to other selection end"
+        },
+        {
+          "id": 101,
+          "keys": [
+            "v"
+          ],
+          "effect": "Switch to character selection; exit if already characterwise"
+        },
+        {
+          "id": 102,
+          "keys": [
+            "V"
+          ],
+          "effect": "Switch to line selection; exit if already linewise"
+        },
+        {
+          "id": 103,
+          "keys": [
+            "Ctrl+V"
+          ],
+          "effect": "Switch to block selection; exit if already blockwise"
+        },
+        {
+          "id": 104,
+          "keys": [
+            "d"
+          ],
+          "effect": "Delete selection"
+        },
+        {
+          "id": 105,
+          "keys": [
+            "c"
+          ],
+          "effect": "Change selection"
+        },
+        {
+          "id": 106,
+          "keys": [
+            "y"
+          ],
+          "effect": "Yank selection"
+        },
+        {
+          "id": 107,
+          "keys": [
+            ">"
+          ],
+          "effect": "Indent selection"
+        },
+        {
+          "id": 108,
+          "keys": [
+            "<"
+          ],
+          "effect": "Unindent selection"
+        },
+        {
+          "id": 109,
+          "keys": [
+            "="
+          ],
+          "effect": "Reindent selection"
+        },
+        {
+          "id": 110,
+          "keys": [
+            "u"
+          ],
+          "effect": "Lowercase selection"
+        },
+        {
+          "id": 111,
+          "keys": [
+            "U"
+          ],
+          "effect": "Uppercase selection"
+        },
+        {
+          "id": 112,
+          "keys": [
+            "~"
+          ],
+          "effect": "Toggle selection case"
+        },
+        {
+          "id": 113,
+          "keys": [
+            "g c"
+          ],
+          "effect": "Toggle selected comments"
+        },
+        {
+          "id": 114,
+          "keys": [
+            "g q"
+          ],
+          "effect": "Format selected text"
+        },
+        {
+          "id": 115,
+          "keys": [
+            "I"
+          ],
+          "effect": "Block selection: insert before each line"
+        },
+        {
+          "id": 116,
+          "keys": [
+            "A"
+          ],
+          "effect": "Block selection: append after each line"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Normal mode: marks, jumps and macros",
+      "note": "a is an example mark and q an example macro register; choose another letter as needed.",
+      "bindings": [
+        {
+          "id": 117,
+          "keys": [
+            "m a"
+          ],
+          "effect": "Set local mark a"
+        },
+        {
+          "id": 118,
+          "keys": [
+            "` a"
+          ],
+          "effect": "Jump to exact mark a position"
+        },
+        {
+          "id": 119,
+          "keys": [
+            "' a"
+          ],
+          "effect": "Jump to first nonblank on mark a line"
+        },
+        {
+          "id": 120,
+          "keys": [
+            "Ctrl+O"
+          ],
+          "effect": "Older jump"
+        },
+        {
+          "id": 121,
+          "keys": [
+            "Ctrl+I"
+          ],
+          "effect": "Newer jump"
+        },
+        {
+          "id": 122,
+          "keys": [
+            "g ;"
+          ],
+          "effect": "Previous change location"
+        },
+        {
+          "id": 123,
+          "keys": [
+            "g ,"
+          ],
+          "effect": "Next change location"
+        },
+        {
+          "id": 124,
+          "keys": [
+            "g v"
+          ],
+          "effect": "Reselect last Visual selection"
+        },
+        {
+          "id": 125,
+          "keys": [
+            "q q"
+          ],
+          "effect": "Record macro into register q"
+        },
+        {
+          "id": 126,
+          "keys": [
+            "q"
+          ],
+          "effect": "Stop recording an active macro"
+        },
+        {
+          "id": 127,
+          "keys": [
+            "@ q"
+          ],
+          "effect": "Play macro in register q"
+        },
+        {
+          "id": 128,
+          "keys": [
+            "@ @"
+          ],
+          "effect": "Replay last executed macro"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Normal mode: windows",
+      "bindings": [
+        {
+          "id": 129,
+          "keys": [
+            "Ctrl+W s"
+          ],
+          "effect": "Split horizontally"
+        },
+        {
+          "id": 130,
+          "keys": [
+            "Ctrl+W v"
+          ],
+          "effect": "Split vertically"
+        },
+        {
+          "id": 131,
+          "keys": [
+            "Ctrl+W h"
+          ],
+          "effect": "Focus left window"
+        },
+        {
+          "id": 132,
+          "keys": [
+            "Ctrl+W j"
+          ],
+          "effect": "Focus lower window"
+        },
+        {
+          "id": 133,
+          "keys": [
+            "Ctrl+W k"
+          ],
+          "effect": "Focus upper window"
+        },
+        {
+          "id": 134,
+          "keys": [
+            "Ctrl+W l"
+          ],
+          "effect": "Focus right window"
+        },
+        {
+          "id": 135,
+          "keys": [
+            "Ctrl+W w"
+          ],
+          "effect": "Focus next window"
+        },
+        {
+          "id": 136,
+          "keys": [
+            "Ctrl+W p"
+          ],
+          "effect": "Focus previous window"
+        },
+        {
+          "id": 137,
+          "keys": [
+            "Ctrl+W c"
+          ],
+          "effect": "Close window"
+        },
+        {
+          "id": 138,
+          "keys": [
+            "Ctrl+W o"
+          ],
+          "effect": "Keep only current window"
+        },
+        {
+          "id": 139,
+          "keys": [
+            "Ctrl+W ="
+          ],
+          "effect": "Equalize window sizes"
+        },
+        {
+          "id": 140,
+          "keys": [
+            "Ctrl+W Plus"
+          ],
+          "effect": "Increase height"
+        },
+        {
+          "id": 141,
+          "keys": [
+            "Ctrl+W -"
+          ],
+          "effect": "Decrease height"
+        },
+        {
+          "id": 142,
+          "keys": [
+            "Ctrl+W >"
+          ],
+          "effect": "Increase width"
+        },
+        {
+          "id": 143,
+          "keys": [
+            "Ctrl+W <"
+          ],
+          "effect": "Decrease width"
+        },
+        {
+          "id": 144,
+          "keys": [
+            "Ctrl+W H"
+          ],
+          "effect": "Move window to far left"
+        },
+        {
+          "id": 145,
+          "keys": [
+            "Ctrl+W J"
+          ],
+          "effect": "Move window to bottom"
+        },
+        {
+          "id": 146,
+          "keys": [
+            "Ctrl+W K"
+          ],
+          "effect": "Move window to top"
+        },
+        {
+          "id": 147,
+          "keys": [
+            "Ctrl+W L"
+          ],
+          "effect": "Move window to far right"
+        },
+        {
+          "id": 148,
+          "keys": [
+            "Ctrl+W T"
+          ],
+          "effect": "Move window into new tab"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Normal mode: buffers, tabs and files",
+      "bindings": [
+        {
+          "id": 149,
+          "keys": [
+            "] b"
+          ],
+          "effect": "Next buffer"
+        },
+        {
+          "id": 150,
+          "keys": [
+            "[ b"
+          ],
+          "effect": "Previous buffer"
+        },
+        {
+          "id": 151,
+          "keys": [
+            "g t"
+          ],
+          "effect": "Next tab; count selects tab"
+        },
+        {
+          "id": 152,
+          "keys": [
+            "g T"
+          ],
+          "effect": "Previous tab"
+        },
+        {
+          "id": 153,
+          "keys": [
+            "g f"
+          ],
+          "effect": "Open filename under cursor"
+        },
+        {
+          "id": 154,
+          "keys": [
+            "Z Z"
+          ],
+          "effect": "Write if changed and close window"
+        },
+        {
+          "id": 155,
+          "keys": [
+            "Z Q"
+          ],
+          "effect": "Close window without saving"
+        },
+        {
+          "id": 156,
+          "keys": [
+            ": w Enter"
+          ],
+          "effect": "Write current file"
+        },
+        {
+          "id": 157,
+          "keys": [
+            ": w a Enter"
+          ],
+          "effect": "Write all changed buffers"
+        },
+        {
+          "id": 158,
+          "keys": [
+            ": q Enter"
+          ],
+          "effect": "Quit current window"
+        },
+        {
+          "id": 159,
+          "keys": [
+            ": q ! Enter"
+          ],
+          "effect": "Quit window without saving"
+        },
+        {
+          "id": 160,
+          "keys": [
+            ": l s Enter"
+          ],
+          "effect": "List buffers"
+        },
+        {
+          "id": 161,
+          "keys": [
+            ": b d Enter"
+          ],
+          "effect": "Delete current buffer; refuses unsaved changes"
+        },
+        {
+          "id": 162,
+          "keys": [
+            ": t a b n e w Enter"
+          ],
+          "effect": "Open empty tab"
+        },
+        {
+          "id": 163,
+          "keys": [
+            ": h e l p Enter"
+          ],
+          "effect": "Open help"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Normal mode: folds",
+      "note": "Folds must exist to open or close them; their creation depends on foldmethod.",
+      "bindings": [
+        {
+          "id": 164,
+          "keys": [
+            "z a"
+          ],
+          "effect": "Toggle fold"
+        },
+        {
+          "id": 165,
+          "keys": [
+            "z o"
+          ],
+          "effect": "Open fold"
+        },
+        {
+          "id": 166,
+          "keys": [
+            "z c"
+          ],
+          "effect": "Close fold"
+        },
+        {
+          "id": 167,
+          "keys": [
+            "z R"
+          ],
+          "effect": "Open all folds"
+        },
+        {
+          "id": 168,
+          "keys": [
+            "z M"
+          ],
+          "effect": "Close all folds"
+        },
+        {
+          "id": 169,
+          "keys": [
+            "z r"
+          ],
+          "effect": "Reduce folding one level"
+        },
+        {
+          "id": 170,
+          "keys": [
+            "z m"
+          ],
+          "effect": "Increase folding one level"
+        },
+        {
+          "id": 171,
+          "keys": [
+            "z v"
+          ],
+          "effect": "Reveal cursor line"
+        },
+        {
+          "id": 172,
+          "keys": [
+            "z f"
+          ],
+          "effect": "Then motion: create manual fold"
+        },
+        {
+          "id": 173,
+          "keys": [
+            "z d"
+          ],
+          "effect": "Delete fold (manual or marker method)"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Insert mode: editing and completion",
+      "note": "Enter with i, a, I, A, o or O. Completion accept/cancel keys require active completion.",
+      "bindings": [
+        {
+          "id": 174,
+          "keys": [
+            "Esc",
+            "Ctrl+["
+          ],
+          "effect": "Return to Normal mode"
+        },
+        {
+          "id": 175,
+          "keys": [
+            "Ctrl+O"
+          ],
+          "effect": "Run one Normal-mode command"
+        },
+        {
+          "id": 176,
+          "keys": [
+            "Ctrl+W"
+          ],
+          "effect": "Delete preceding word"
+        },
+        {
+          "id": 177,
+          "keys": [
+            "Ctrl+U"
+          ],
+          "effect": "Delete back to line start"
+        },
+        {
+          "id": 178,
+          "keys": [
+            "Ctrl+T"
+          ],
+          "effect": "Increase indent"
+        },
+        {
+          "id": 179,
+          "keys": [
+            "Ctrl+D"
+          ],
+          "effect": "Decrease indent"
+        },
+        {
+          "id": 180,
+          "keys": [
+            "Ctrl+R"
+          ],
+          "effect": "Then register name: insert its contents"
+        },
+        {
+          "id": 181,
+          "keys": [
+            "Ctrl+N"
+          ],
+          "effect": "Next keyword completion"
+        },
+        {
+          "id": 182,
+          "keys": [
+            "Ctrl+P"
+          ],
+          "effect": "Previous keyword completion"
+        },
+        {
+          "id": 183,
+          "keys": [
+            "Ctrl+X Ctrl+F"
+          ],
+          "effect": "Complete filename"
+        },
+        {
+          "id": 184,
+          "keys": [
+            "Ctrl+X Ctrl+L"
+          ],
+          "effect": "Complete whole line"
+        },
+        {
+          "id": 185,
+          "keys": [
+            "Ctrl+X Ctrl+O"
+          ],
+          "effect": "Omni completion (provider required)"
+        },
+        {
+          "id": 186,
+          "keys": [
+            "Ctrl+Y"
+          ],
+          "effect": "Accept active completion"
+        },
+        {
+          "id": 187,
+          "keys": [
+            "Ctrl+E"
+          ],
+          "effect": "Cancel active completion"
+        },
+        {
+          "id": 188,
+          "keys": [
+            "Ctrl+S"
+          ],
+          "effect": "LSP signature help (server required)"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Normal mode: LSP and diagnostics (server required for LSP)",
+      "note": "LSP actions need an attached server supporting the action; diagnostics need a producer.",
+      "bindings": [
+        {
+          "id": 189,
+          "keys": [
+            "K"
+          ],
+          "effect": "LSP hover when available; otherwise keywordprg"
+        },
+        {
+          "id": 190,
+          "keys": [
+            "Ctrl+]"
+          ],
+          "effect": "Jump to definition via LSP tagfunc or tags"
+        },
+        {
+          "id": 191,
+          "keys": [
+            "Ctrl+T"
+          ],
+          "effect": "Return through tag stack"
+        },
+        {
+          "id": 192,
+          "keys": [
+            "g r n"
+          ],
+          "effect": "Rename symbol"
+        },
+        {
+          "id": 193,
+          "keys": [
+            "g r a"
+          ],
+          "effect": "Show code actions"
+        },
+        {
+          "id": 194,
+          "keys": [
+            "g r r"
+          ],
+          "effect": "List references"
+        },
+        {
+          "id": 195,
+          "keys": [
+            "g r i"
+          ],
+          "effect": "List implementations"
+        },
+        {
+          "id": 196,
+          "keys": [
+            "g r t"
+          ],
+          "effect": "Go to type definition"
+        },
+        {
+          "id": 197,
+          "keys": [
+            "g O"
+          ],
+          "effect": "List document symbols"
+        },
+        {
+          "id": 198,
+          "keys": [
+            "] d"
+          ],
+          "effect": "Next diagnostic"
+        },
+        {
+          "id": 199,
+          "keys": [
+            "[ d"
+          ],
+          "effect": "Previous diagnostic"
+        },
+        {
+          "id": 200,
+          "keys": [
+            "Ctrl+W d"
+          ],
+          "effect": "Show diagnostic under cursor"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Normal mode: quickfix and location lists",
+      "note": "Populate the list first; location lists belong to individual windows.",
+      "bindings": [
+        {
+          "id": 201,
+          "keys": [
+            "] q"
+          ],
+          "effect": "Next quickfix item"
+        },
+        {
+          "id": 202,
+          "keys": [
+            "[ q"
+          ],
+          "effect": "Previous quickfix item"
+        },
+        {
+          "id": 203,
+          "keys": [
+            "] l"
+          ],
+          "effect": "Next location-list item"
+        },
+        {
+          "id": 204,
+          "keys": [
+            "[ l"
+          ],
+          "effect": "Previous location-list item"
+        },
+        {
+          "id": 205,
+          "keys": [
+            ": c o p e n Enter"
+          ],
+          "effect": "Open quickfix window"
+        },
+        {
+          "id": 206,
+          "keys": [
+            ": l o p e n Enter"
+          ],
+          "effect": "Open location-list window"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Command-line mode",
+      "note": "Enter with : for commands, / or ? for search. Enter submits; Esc cancels.",
+      "bindings": [
+        {
+          "id": 207,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Execute command"
+        },
+        {
+          "id": 208,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Cancel command"
+        },
+        {
+          "id": 209,
+          "keys": [
+            "Ctrl+W"
+          ],
+          "effect": "Delete preceding word"
+        },
+        {
+          "id": 210,
+          "keys": [
+            "Ctrl+U"
+          ],
+          "effect": "Delete back to command start"
+        },
+        {
+          "id": 211,
+          "keys": [
+            "Ctrl+R"
+          ],
+          "effect": "Then register name: insert contents"
+        },
+        {
+          "id": 212,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Previous matching history entry"
+        },
+        {
+          "id": 213,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Next matching history entry"
+        },
+        {
+          "id": 214,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Next command completion"
+        },
+        {
+          "id": 215,
+          "keys": [
+            "Shift+Tab"
+          ],
+          "effect": "Previous command completion"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Terminal mode",
+      "note": "Open with :terminal; press i in a terminal buffer to resume terminal input.",
+      "bindings": [
+        {
+          "id": 216,
+          "keys": [
+            "Ctrl+\\ Ctrl+N"
+          ],
+          "effect": "Leave terminal input for Normal mode"
+        }
+      ]
+    }
+  ]
+}
