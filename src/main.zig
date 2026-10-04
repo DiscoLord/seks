@@ -55,7 +55,7 @@ pub fn main(init: std.process.Init) !void {
 
     const apps = try data.loadBundled(arena);
     const app = search.findApp(apps, app_name) orelse {
-        print(io, .stderr(), "seks: unknown app: {s}\n", .{app_name});
+        print(io, .stderr(), "seks: unknown app: {s}\nRun `seks --list` to see the apps.\n", .{app_name});
         std.process.exit(exit_failure);
     };
 

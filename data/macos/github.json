@@ -1,0 +1,1121 @@
+{
+  "full_name": "GitHub",
+  "note": "GitHub website. Character shortcuts must be enabled in accessibility settings and used outside text fields unless noted.",
+  "source": "https://docs.github.com/en/get-started/accessibility/keyboard-shortcuts",
+  "binding_groups": [
+    {
+      "id": 1,
+      "title": "Site navigation",
+      "bindings": [
+        {
+          "id": 1,
+          "keys": [
+            "?"
+          ],
+          "effect": "Shortcut help for this page"
+        },
+        {
+          "id": 2,
+          "keys": [
+            "s",
+            "/"
+          ],
+          "effect": "Focus site search"
+        },
+        {
+          "id": 3,
+          "keys": [
+            "g n"
+          ],
+          "effect": "Notifications"
+        },
+        {
+          "id": 4,
+          "keys": [
+            "Opt+Up"
+          ],
+          "effect": "Focus hovercard"
+        },
+        {
+          "id": 5,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Dismiss hovercard"
+        }
+      ],
+      "note": "Hovercard shortcuts require focus on an element with a hovercard."
+    },
+    {
+      "id": 2,
+      "title": "Repository navigation",
+      "bindings": [
+        {
+          "id": 6,
+          "keys": [
+            "g c"
+          ],
+          "effect": "Code tab"
+        },
+        {
+          "id": 7,
+          "keys": [
+            "g i"
+          ],
+          "effect": "Issues tab"
+        },
+        {
+          "id": 8,
+          "keys": [
+            "g p"
+          ],
+          "effect": "Pull requests tab"
+        },
+        {
+          "id": 9,
+          "keys": [
+            "g a"
+          ],
+          "effect": "Actions tab"
+        },
+        {
+          "id": 10,
+          "keys": [
+            "g w"
+          ],
+          "effect": "Wiki tab"
+        },
+        {
+          "id": 11,
+          "keys": [
+            "g g"
+          ],
+          "effect": "Discussions tab"
+        },
+        {
+          "id": 12,
+          "keys": [
+            "g s"
+          ],
+          "effect": "Security and quality tab"
+        },
+        {
+          "id": 13,
+          "keys": [
+            "."
+          ],
+          "effect": "Open github.dev here"
+        },
+        {
+          "id": 14,
+          "keys": [
+            ">"
+          ],
+          "effect": "Open github.dev in new tab"
+        }
+      ],
+      "note": "Inside a repository. github.dev requires sign-in."
+    },
+    {
+      "id": 3,
+      "title": "Source editor",
+      "bindings": [
+        {
+          "id": 15,
+          "keys": [
+            "Cmd+B"
+          ],
+          "effect": "Bold Markdown"
+        },
+        {
+          "id": 16,
+          "keys": [
+            "Cmd+E"
+          ],
+          "effect": "Inline code in Markdown"
+        },
+        {
+          "id": 17,
+          "keys": [
+            "Cmd+I"
+          ],
+          "effect": "Italic Markdown"
+        },
+        {
+          "id": 18,
+          "keys": [
+            "Cmd+K"
+          ],
+          "effect": "Markdown link"
+        },
+        {
+          "id": 19,
+          "keys": [
+            "Cmd+Shift+7"
+          ],
+          "effect": "Numbered list"
+        },
+        {
+          "id": 20,
+          "keys": [
+            "Cmd+Shift+8"
+          ],
+          "effect": "Bulleted list"
+        },
+        {
+          "id": 21,
+          "keys": [
+            "Cmd+Shift+."
+          ],
+          "effect": "Block quote"
+        },
+        {
+          "id": 22,
+          "keys": [
+            "e"
+          ],
+          "effect": "Edit current source file"
+        },
+        {
+          "id": 23,
+          "keys": [
+            "Cmd+F"
+          ],
+          "effect": "Find in editor"
+        },
+        {
+          "id": 24,
+          "keys": [
+            "Cmd+G"
+          ],
+          "effect": "Next match"
+        },
+        {
+          "id": 25,
+          "keys": [
+            "Cmd+Shift+G"
+          ],
+          "effect": "Previous match"
+        },
+        {
+          "id": 26,
+          "keys": [
+            "Cmd+Opt+F"
+          ],
+          "effect": "Replace"
+        },
+        {
+          "id": 27,
+          "keys": [
+            "Cmd+Shift+Opt+F"
+          ],
+          "effect": "Replace all"
+        },
+        {
+          "id": 28,
+          "keys": [
+            "Opt+G"
+          ],
+          "effect": "Go to line"
+        },
+        {
+          "id": 29,
+          "keys": [
+            "Cmd+Z"
+          ],
+          "effect": "Undo"
+        },
+        {
+          "id": 30,
+          "keys": [
+            "Cmd+Y"
+          ],
+          "effect": "Redo"
+        },
+        {
+          "id": 31,
+          "keys": [
+            "Cmd+Shift+P"
+          ],
+          "effect": "Toggle edit and preview"
+        },
+        {
+          "id": 32,
+          "keys": [
+            "Cmd+S"
+          ],
+          "effect": "Open commit-message form"
+        }
+      ],
+      "note": "GitHub file editor, not github.dev. Formatting shortcuts apply to Markdown files."
+    },
+    {
+      "id": 4,
+      "title": "Browse source",
+      "bindings": [
+        {
+          "id": 33,
+          "keys": [
+            "t"
+          ],
+          "effect": "Find file"
+        },
+        {
+          "id": 34,
+          "keys": [
+            "l"
+          ],
+          "effect": "Go to line"
+        },
+        {
+          "id": 35,
+          "keys": [
+            "w"
+          ],
+          "effect": "Choose branch or tag"
+        },
+        {
+          "id": 36,
+          "keys": [
+            "y"
+          ],
+          "effect": "Use permanent file URL"
+        },
+        {
+          "id": 37,
+          "keys": [
+            "i"
+          ],
+          "effect": "Toggle diff comments"
+        },
+        {
+          "id": 38,
+          "keys": [
+            "a"
+          ],
+          "effect": "Toggle diff annotations"
+        },
+        {
+          "id": 39,
+          "keys": [
+            "b"
+          ],
+          "effect": "Blame view"
+        }
+      ],
+      "note": "Repository source or diff view, as appropriate."
+    },
+    {
+      "id": 5,
+      "title": "Code cursor",
+      "bindings": [
+        {
+          "id": 40,
+          "keys": [
+            "Shift+J"
+          ],
+          "effect": "Highlight cursor line"
+        },
+        {
+          "id": 41,
+          "keys": [
+            "Shift+Opt+C"
+          ],
+          "effect": "Line menu"
+        },
+        {
+          "id": 42,
+          "keys": [
+            "Cmd+Enter"
+          ],
+          "effect": "Show symbol references"
+        }
+      ],
+      "note": "Click a line in the Code view first; line-menu action requires a selected line."
+    },
+    {
+      "id": 6,
+      "title": "Write comments",
+      "bindings": [
+        {
+          "id": 43,
+          "keys": [
+            "Cmd+B"
+          ],
+          "effect": "Bold"
+        },
+        {
+          "id": 44,
+          "keys": [
+            "Cmd+I"
+          ],
+          "effect": "Italic"
+        },
+        {
+          "id": 45,
+          "keys": [
+            "Cmd+E"
+          ],
+          "effect": "Inline code"
+        },
+        {
+          "id": 46,
+          "keys": [
+            "Cmd+K"
+          ],
+          "effect": "Insert link"
+        },
+        {
+          "id": 47,
+          "keys": [
+            "Cmd+V"
+          ],
+          "effect": "Link selected text to pasted URL"
+        },
+        {
+          "id": 48,
+          "keys": [
+            "Cmd+Shift+P"
+          ],
+          "effect": "Toggle write and preview"
+        },
+        {
+          "id": 49,
+          "keys": [
+            "Cmd+Shift+V",
+            "Cmd+Shift+Opt+V"
+          ],
+          "effect": "Paste link as plain text"
+        },
+        {
+          "id": 50,
+          "keys": [
+            "Cmd+Shift+7"
+          ],
+          "effect": "Numbered list"
+        },
+        {
+          "id": 51,
+          "keys": [
+            "Cmd+Shift+8"
+          ],
+          "effect": "Bulleted list"
+        },
+        {
+          "id": 52,
+          "keys": [
+            "Cmd+Enter"
+          ],
+          "effect": "Submit comment"
+        },
+        {
+          "id": 53,
+          "keys": [
+            "Ctrl+."
+          ],
+          "effect": "Saved replies menu"
+        },
+        {
+          "id": 54,
+          "keys": [
+            "Cmd+Shift+."
+          ],
+          "effect": "Block quote"
+        },
+        {
+          "id": 55,
+          "keys": [
+            "Cmd+G"
+          ],
+          "effect": "Insert review suggestion"
+        },
+        {
+          "id": 56,
+          "keys": [
+            "r"
+          ],
+          "effect": "Quote selected text"
+        }
+      ],
+      "note": "Comment field focused, except r which quotes selected discussion text. After Ctrl+., press Ctrl plus the displayed reply number. Suggestions apply to code-review comments."
+    },
+    {
+      "id": 7,
+      "title": "Issue and pull request lists",
+      "bindings": [
+        {
+          "id": 57,
+          "keys": [
+            "c"
+          ],
+          "effect": "Create issue"
+        },
+        {
+          "id": 58,
+          "keys": [
+            "Cmd+/"
+          ],
+          "effect": "Focus list filter"
+        },
+        {
+          "id": 59,
+          "keys": [
+            "u"
+          ],
+          "effect": "Filter author"
+        },
+        {
+          "id": 60,
+          "keys": [
+            "l"
+          ],
+          "effect": "Filter labels"
+        },
+        {
+          "id": 61,
+          "keys": [
+            "m"
+          ],
+          "effect": "Filter milestones"
+        },
+        {
+          "id": 62,
+          "keys": [
+            "a"
+          ],
+          "effect": "Filter assignees"
+        },
+        {
+          "id": 63,
+          "keys": [
+            "o",
+            "Enter"
+          ],
+          "effect": "Open focused issue"
+        },
+        {
+          "id": 64,
+          "keys": [
+            "Opt+Click"
+          ],
+          "effect": "Exclude clicked label"
+        }
+      ],
+      "note": "Issue or pull-request list focused. The last shortcut requires clicking a label filter."
+    },
+    {
+      "id": 8,
+      "title": "Issue and pull request details",
+      "bindings": [
+        {
+          "id": 65,
+          "keys": [
+            "q"
+          ],
+          "effect": "Request reviewer"
+        },
+        {
+          "id": 66,
+          "keys": [
+            "m"
+          ],
+          "effect": "Set milestone"
+        },
+        {
+          "id": 67,
+          "keys": [
+            "l"
+          ],
+          "effect": "Set labels"
+        },
+        {
+          "id": 68,
+          "keys": [
+            "a"
+          ],
+          "effect": "Set assignees"
+        },
+        {
+          "id": 69,
+          "keys": [
+            "x"
+          ],
+          "effect": "Link related issue or pull request"
+        },
+        {
+          "id": 70,
+          "keys": [
+            "Cmd+Shift+P"
+          ],
+          "effect": "Toggle editor preview"
+        },
+        {
+          "id": 71,
+          "keys": [
+            "Opt+Shift+C"
+          ],
+          "effect": "Create sub-issue"
+        },
+        {
+          "id": 72,
+          "keys": [
+            "Opt+Shift+A"
+          ],
+          "effect": "Add existing sub-issue"
+        },
+        {
+          "id": 73,
+          "keys": [
+            "Opt+Shift+P"
+          ],
+          "effect": "Change parent issue"
+        }
+      ],
+      "note": "On an issue or pull request; actions depend on permissions and item type."
+    },
+    {
+      "id": 9,
+      "title": "Task-list issue creation",
+      "bindings": [
+        {
+          "id": 74,
+          "keys": [
+            "Opt+Click"
+          ],
+          "effect": "Open issue creation here"
+        },
+        {
+          "id": 75,
+          "keys": [
+            "Shift+Click"
+          ],
+          "effect": "Open issue creation in new tab"
+        },
+        {
+          "id": 76,
+          "keys": [
+            "Cmd+Click"
+          ],
+          "effect": "Open issue creation in new window"
+        }
+      ],
+      "note": "Click the task-to-issue icon while holding the modifier."
+    },
+    {
+      "id": 10,
+      "title": "Review changed files",
+      "bindings": [
+        {
+          "id": 77,
+          "keys": [
+            "c"
+          ],
+          "effect": "Commit filter"
+        },
+        {
+          "id": 78,
+          "keys": [
+            "t"
+          ],
+          "effect": "Changed-file filter"
+        },
+        {
+          "id": 79,
+          "keys": [
+            "Cmd+Shift+Enter"
+          ],
+          "effect": "Submit review comment"
+        },
+        {
+          "id": 80,
+          "keys": [
+            "Opt+Click"
+          ],
+          "effect": "Expand or collapse all resolved or outdated comments"
+        },
+        {
+          "id": 81,
+          "keys": [
+            "Click Shift+Click"
+          ],
+          "effect": "Select a multiline comment range"
+        }
+      ],
+      "note": "Pull request Files changed tab. Modifier-click applies to Show/Hide outdated; range selection uses line numbers."
+    },
+    {
+      "id": 11,
+      "title": "Projects: navigation",
+      "bindings": [
+        {
+          "id": 82,
+          "keys": [
+            "Cmd+F"
+          ],
+          "effect": "Focus filter"
+        },
+        {
+          "id": 83,
+          "keys": [
+            "Left"
+          ],
+          "effect": "Focus left cell"
+        },
+        {
+          "id": 84,
+          "keys": [
+            "Right"
+          ],
+          "effect": "Focus right cell"
+        },
+        {
+          "id": 85,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Focus previous row"
+        },
+        {
+          "id": 86,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Focus next row"
+        }
+      ],
+      "note": "Project table or board focused."
+    },
+    {
+      "id": 12,
+      "title": "Projects: editing",
+      "bindings": [
+        {
+          "id": 87,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Edit focused cell"
+        },
+        {
+          "id": 88,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Cancel cell edit"
+        },
+        {
+          "id": 89,
+          "keys": [
+            "Cmd+Shift+\\"
+          ],
+          "effect": "Row actions"
+        },
+        {
+          "id": 90,
+          "keys": [
+            "Shift+Space"
+          ],
+          "effect": "Select item"
+        },
+        {
+          "id": 91,
+          "keys": [
+            "Shift+Down"
+          ],
+          "effect": "Extend selection downward"
+        },
+        {
+          "id": 92,
+          "keys": [
+            "Shift+Up"
+          ],
+          "effect": "Extend selection upward"
+        },
+        {
+          "id": 93,
+          "keys": [
+            "Space"
+          ],
+          "effect": "Open selected item"
+        },
+        {
+          "id": 94,
+          "keys": [
+            "e"
+          ],
+          "effect": "Archive selected items"
+        }
+      ],
+      "note": "Project table or board focused; Enter and Esc apply to the focused cell."
+    },
+    {
+      "id": 13,
+      "title": "Projects: move cards",
+      "bindings": [
+        {
+          "id": 95,
+          "keys": [
+            "Enter",
+            "Shift+Space"
+          ],
+          "effect": "Start card move"
+        },
+        {
+          "id": 96,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Cancel move"
+        },
+        {
+          "id": 97,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Finish move"
+        },
+        {
+          "id": 98,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Move card down"
+        },
+        {
+          "id": 99,
+          "keys": [
+            "Cmd+Down"
+          ],
+          "effect": "Move card to column bottom"
+        },
+        {
+          "id": 100,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Move card up"
+        },
+        {
+          "id": 101,
+          "keys": [
+            "Cmd+Up"
+          ],
+          "effect": "Move card to column top"
+        },
+        {
+          "id": 102,
+          "keys": [
+            "Left"
+          ],
+          "effect": "Move cards left"
+        },
+        {
+          "id": 103,
+          "keys": [
+            "Cmd+Left"
+          ],
+          "effect": "Move cards to first column"
+        },
+        {
+          "id": 104,
+          "keys": [
+            "Right"
+          ],
+          "effect": "Move cards right"
+        },
+        {
+          "id": 105,
+          "keys": [
+            "Cmd+Right"
+          ],
+          "effect": "Move cards to last column"
+        }
+      ],
+      "note": "Select cards in board layout first. Movement shortcuts apply after starting a move."
+    },
+    {
+      "id": 14,
+      "title": "Actions",
+      "bindings": [
+        {
+          "id": 106,
+          "keys": [
+            "Cmd+Space"
+          ],
+          "effect": "Workflow completion"
+        },
+        {
+          "id": 107,
+          "keys": [
+            "g f"
+          ],
+          "effect": "Open workflow file"
+        },
+        {
+          "id": 108,
+          "keys": [
+            "t",
+            "Shift+T"
+          ],
+          "effect": "Toggle log timestamps"
+        },
+        {
+          "id": 109,
+          "keys": [
+            "f",
+            "Shift+F"
+          ],
+          "effect": "Toggle full-screen logs"
+        },
+        {
+          "id": 110,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Exit full-screen logs"
+        }
+      ],
+      "note": "Completion applies in the workflow editor; other actions apply to the workflow run and its logs."
+    },
+    {
+      "id": 15,
+      "title": "Notifications",
+      "bindings": [
+        {
+          "id": 111,
+          "keys": [
+            "e"
+          ],
+          "effect": "Mark done"
+        },
+        {
+          "id": 112,
+          "keys": [
+            "Shift+U"
+          ],
+          "effect": "Mark unread"
+        },
+        {
+          "id": 113,
+          "keys": [
+            "Shift+I"
+          ],
+          "effect": "Mark read"
+        },
+        {
+          "id": 114,
+          "keys": [
+            "Shift+M"
+          ],
+          "effect": "Unsubscribe"
+        }
+      ],
+      "note": "Notifications view, with a notification focused or selected."
+    },
+    {
+      "id": 16,
+      "title": "Network graph",
+      "bindings": [
+        {
+          "id": 115,
+          "keys": [
+            "Left",
+            "h"
+          ],
+          "effect": "Scroll left"
+        },
+        {
+          "id": 116,
+          "keys": [
+            "Right",
+            "l"
+          ],
+          "effect": "Scroll right"
+        },
+        {
+          "id": 117,
+          "keys": [
+            "Up",
+            "k"
+          ],
+          "effect": "Scroll up"
+        },
+        {
+          "id": 118,
+          "keys": [
+            "Down",
+            "j"
+          ],
+          "effect": "Scroll down"
+        },
+        {
+          "id": 119,
+          "keys": [
+            "Shift+Left"
+          ],
+          "effect": "Left edge"
+        },
+        {
+          "id": 120,
+          "keys": [
+            "Shift+Right"
+          ],
+          "effect": "Right edge"
+        },
+        {
+          "id": 121,
+          "keys": [
+            "Shift+Up"
+          ],
+          "effect": "Top edge"
+        },
+        {
+          "id": 122,
+          "keys": [
+            "Shift+Down"
+          ],
+          "effect": "Bottom edge"
+        }
+      ],
+      "note": "Repository network graph focused."
+    },
+    {
+      "id": 17,
+      "title": "Command palette: enable and open",
+      "bindings": [
+        {
+          "id": 123,
+          "keys": [
+            "Cmd+K",
+            "Cmd+Opt+K"
+          ],
+          "effect": "Toggle search palette"
+        },
+        {
+          "id": 124,
+          "keys": [
+            "Cmd+Shift+K"
+          ],
+          "effect": "Toggle command palette"
+        }
+      ],
+      "note": "Requires Command Palette feature preview. In Markdown editors use Cmd/Ctrl plus Opt/Alt plus K. Reference: https://docs.github.com/en/get-started/accessibility/github-command-palette"
+    },
+    {
+      "id": 18,
+      "title": "Command palette: inside",
+      "bindings": [
+        {
+          "id": 125,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Scope to highlighted repository"
+        },
+        {
+          "id": 126,
+          "keys": [
+            "Backspace",
+            "Delete"
+          ],
+          "effect": "Remove selected scope"
+        },
+        {
+          "id": 127,
+          "keys": [
+            "Cmd+Backspace"
+          ],
+          "effect": "Clear scope and query"
+        },
+        {
+          "id": 128,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Previous result"
+        },
+        {
+          "id": 129,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Next result"
+        },
+        {
+          "id": 130,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Open result or run command"
+        },
+        {
+          "id": 131,
+          "keys": [
+            "Cmd+Enter"
+          ],
+          "effect": "Open result in new tab"
+        },
+        {
+          "id": 132,
+          "keys": [
+            "Cmd+C"
+          ],
+          "effect": "Copy result URL"
+        },
+        {
+          "id": 133,
+          "keys": [
+            ">"
+          ],
+          "effect": "Command mode"
+        },
+        {
+          "id": 134,
+          "keys": [
+            "#"
+          ],
+          "effect": "Search issues, PRs, discussions and projects"
+        },
+        {
+          "id": 135,
+          "keys": [
+            "@"
+          ],
+          "effect": "Search accounts and repositories"
+        },
+        {
+          "id": 136,
+          "keys": [
+            "/"
+          ],
+          "effect": "Search files or scoped repositories"
+        },
+        {
+          "id": 137,
+          "keys": [
+            "!"
+          ],
+          "effect": "Search projects"
+        },
+        {
+          "id": 138,
+          "keys": [
+            "?"
+          ],
+          "effect": "Palette help"
+        },
+        {
+          "id": 139,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Close palette"
+        }
+      ],
+      "note": "Palette focused. Type prefixes in search/navigation mode; copy and open-in-tab apply to navigation results."
+    }
+  ],
+  "aliases": [
+    "github web"
+  ]
+}

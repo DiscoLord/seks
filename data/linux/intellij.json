@@ -1,0 +1,1854 @@
+{
+  "full_name": "IntelliJ IDEA",
+  "note": "Default Windows/Linux keymap; desktop shortcuts can intercept IDE bindings.",
+  "source": "https://www.jetbrains.com/help/idea/reference-keymap-win-default.html",
+  "binding_groups": [
+    {
+      "id": 1,
+      "title": "General",
+      "bindings": [
+        {
+          "id": 1,
+          "keys": [
+            "Shift Shift"
+          ],
+          "effect": "Search Everywhere"
+        },
+        {
+          "id": 2,
+          "keys": [
+            "Ctrl+Shift+A"
+          ],
+          "effect": "Find Action..."
+        },
+        {
+          "id": 3,
+          "keys": [
+            "Alt+1"
+          ],
+          "effect": "Show Project window"
+        },
+        {
+          "id": 4,
+          "keys": [
+            "Ctrl+Shift+F9"
+          ],
+          "effect": "Rebuild"
+        },
+        {
+          "id": 5,
+          "keys": [
+            "Alt+Enter"
+          ],
+          "effect": "Show Intention Actions"
+        },
+        {
+          "id": 6,
+          "keys": [
+            "Ctrl+E"
+          ],
+          "effect": "Recent Files"
+        },
+        {
+          "id": 7,
+          "keys": [
+            "Alt+F7"
+          ],
+          "effect": "Find Usages"
+        },
+        {
+          "id": 8,
+          "keys": [
+            "Alt+F1"
+          ],
+          "effect": "Select In..."
+        },
+        {
+          "id": 9,
+          "keys": [
+            "Ctrl+Alt+S"
+          ],
+          "effect": "Settings..."
+        },
+        {
+          "id": 10,
+          "keys": [
+            "Alt+Insert"
+          ],
+          "effect": "Generate..."
+        },
+        {
+          "id": 11,
+          "keys": [
+            "Ctrl Ctrl"
+          ],
+          "effect": "Run Anything"
+        },
+        {
+          "id": 12,
+          "keys": [
+            "Alt+Shift+F9"
+          ],
+          "effect": "Debug..."
+        },
+        {
+          "id": 13,
+          "keys": [
+            "Ctrl+Shift+F8"
+          ],
+          "effect": "View Breakpoints..."
+        },
+        {
+          "id": 14,
+          "keys": [
+            "Ctrl+Alt+F5"
+          ],
+          "effect": "Attach to Process..."
+        },
+        {
+          "id": 15,
+          "keys": [
+            "Alt+`"
+          ],
+          "effect": "VCS Operations Popup..."
+        },
+        {
+          "id": 16,
+          "keys": [
+            "Ctrl+Alt+Shift+T"
+          ],
+          "effect": "Refactor This..."
+        },
+        {
+          "id": 17,
+          "keys": [
+            "Ctrl+Alt+L"
+          ],
+          "effect": "Reformat Code"
+        }
+      ],
+      "note": "Double modifiers mean press and release twice."
+    },
+    {
+      "id": 2,
+      "title": "Build projects",
+      "bindings": [
+        {
+          "id": 18,
+          "keys": [
+            "Ctrl+Alt+Insert"
+          ],
+          "effect": "New in This Directory"
+        },
+        {
+          "id": 19,
+          "keys": [
+            "Ctrl+F9"
+          ],
+          "effect": "Build Project"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Basic editing",
+      "bindings": [
+        {
+          "id": 20,
+          "keys": [
+            "Ctrl+X"
+          ],
+          "effect": "Cut"
+        },
+        {
+          "id": 21,
+          "keys": [
+            "Ctrl+C"
+          ],
+          "effect": "Copy"
+        },
+        {
+          "id": 22,
+          "keys": [
+            "Ctrl+V"
+          ],
+          "effect": "Paste"
+        },
+        {
+          "id": 23,
+          "keys": [
+            "Ctrl+Alt+Shift+V"
+          ],
+          "effect": "Paste as Plain Text"
+        },
+        {
+          "id": 24,
+          "keys": [
+            "Ctrl+Shift+V"
+          ],
+          "effect": "Paste from History..."
+        },
+        {
+          "id": 25,
+          "keys": [
+            "Ctrl+Shift+C"
+          ],
+          "effect": "Copy Paths"
+        },
+        {
+          "id": 26,
+          "keys": [
+            "Ctrl+Alt+Shift+C"
+          ],
+          "effect": "Copy Reference"
+        },
+        {
+          "id": 27,
+          "keys": [
+            "Ctrl+S"
+          ],
+          "effect": "Save All"
+        },
+        {
+          "id": 28,
+          "keys": [
+            "Ctrl+Z"
+          ],
+          "effect": "Undo"
+        },
+        {
+          "id": 29,
+          "keys": [
+            "Ctrl+Shift+Z"
+          ],
+          "effect": "Redo"
+        },
+        {
+          "id": 30,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Indent Selection"
+        },
+        {
+          "id": 31,
+          "keys": [
+            "Shift+Tab"
+          ],
+          "effect": "Unindent Line or Selection"
+        },
+        {
+          "id": 32,
+          "keys": [
+            "Ctrl+Alt+I"
+          ],
+          "effect": "Auto-Indent Lines"
+        },
+        {
+          "id": 33,
+          "keys": [
+            "Shift+Enter"
+          ],
+          "effect": "Start New Line"
+        },
+        {
+          "id": 34,
+          "keys": [
+            "Ctrl+Alt+Enter"
+          ],
+          "effect": "Start New Line Before Current"
+        },
+        {
+          "id": 35,
+          "keys": [
+            "Ctrl+Y"
+          ],
+          "effect": "Delete Line"
+        },
+        {
+          "id": 36,
+          "keys": [
+            "Ctrl+Shift+J"
+          ],
+          "effect": "Join Lines"
+        },
+        {
+          "id": 37,
+          "keys": [
+            "Ctrl+D"
+          ],
+          "effect": "Duplicate Line or Selection"
+        },
+        {
+          "id": 38,
+          "keys": [
+            "Ctrl+Shift+U"
+          ],
+          "effect": "Toggle Case"
+        },
+        {
+          "id": 39,
+          "keys": [
+            "Ctrl+Alt+Shift+Insert"
+          ],
+          "effect": "Scratch File"
+        },
+        {
+          "id": 40,
+          "keys": [
+            "Shift+F4"
+          ],
+          "effect": "Open Source in New Window"
+        },
+        {
+          "id": 41,
+          "keys": [
+            "Alt+Shift+."
+          ],
+          "effect": "Increase Font Size in All Editors"
+        },
+        {
+          "id": 42,
+          "keys": [
+            "Alt+Shift+,"
+          ],
+          "effect": "Decrease Font Size in All Editors"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Caret navigation",
+      "bindings": [
+        {
+          "id": 43,
+          "keys": [
+            "Ctrl+Left"
+          ],
+          "effect": "Move Caret to Previous Word"
+        },
+        {
+          "id": 44,
+          "keys": [
+            "Ctrl+Right"
+          ],
+          "effect": "Move Caret to Next Word"
+        },
+        {
+          "id": 45,
+          "keys": [
+            "Home"
+          ],
+          "effect": "Move Caret to Line Start"
+        },
+        {
+          "id": 46,
+          "keys": [
+            "End"
+          ],
+          "effect": "Move Caret to Line End"
+        },
+        {
+          "id": 47,
+          "keys": [
+            "Ctrl+Shift+M"
+          ],
+          "effect": "Move Caret to Matching Brace"
+        },
+        {
+          "id": 48,
+          "keys": [
+            "Ctrl+["
+          ],
+          "effect": "Move Caret to Code Block Start"
+        },
+        {
+          "id": 49,
+          "keys": [
+            "Ctrl+]"
+          ],
+          "effect": "Move Caret to Code Block End"
+        },
+        {
+          "id": 50,
+          "keys": [
+            "Alt+Down"
+          ],
+          "effect": "Next Method"
+        },
+        {
+          "id": 51,
+          "keys": [
+            "Alt+Up"
+          ],
+          "effect": "Previous Method"
+        },
+        {
+          "id": 52,
+          "keys": [
+            "Ctrl+PageUp"
+          ],
+          "effect": "Move Caret to Page Top"
+        },
+        {
+          "id": 53,
+          "keys": [
+            "Ctrl+PageDown"
+          ],
+          "effect": "Move Caret to Page Bottom"
+        },
+        {
+          "id": 54,
+          "keys": [
+            "PageUp"
+          ],
+          "effect": "Page Up"
+        },
+        {
+          "id": 55,
+          "keys": [
+            "PageDown"
+          ],
+          "effect": "Page Down"
+        },
+        {
+          "id": 56,
+          "keys": [
+            "Ctrl+Home"
+          ],
+          "effect": "Move Caret to Text Start"
+        },
+        {
+          "id": 57,
+          "keys": [
+            "Ctrl+End"
+          ],
+          "effect": "Move Caret to Text End"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Select text",
+      "bindings": [
+        {
+          "id": 58,
+          "keys": [
+            "Ctrl+A"
+          ],
+          "effect": "Select All"
+        },
+        {
+          "id": 59,
+          "keys": [
+            "Shift+Left"
+          ],
+          "effect": "Left with Selection"
+        },
+        {
+          "id": 60,
+          "keys": [
+            "Shift+Right"
+          ],
+          "effect": "Right with Selection"
+        },
+        {
+          "id": 61,
+          "keys": [
+            "Ctrl+Shift+Left"
+          ],
+          "effect": "Move Caret to Previous Word with Selection"
+        },
+        {
+          "id": 62,
+          "keys": [
+            "Ctrl+Shift+Right"
+          ],
+          "effect": "Move Caret to Next Word with Selection"
+        },
+        {
+          "id": 63,
+          "keys": [
+            "Shift+Home"
+          ],
+          "effect": "Move Caret to Line Start with Selection"
+        },
+        {
+          "id": 64,
+          "keys": [
+            "Shift+End"
+          ],
+          "effect": "Move Caret to Line End with Selection"
+        },
+        {
+          "id": 65,
+          "keys": [
+            "Shift+Up"
+          ],
+          "effect": "Up with Selection"
+        },
+        {
+          "id": 66,
+          "keys": [
+            "Shift+Down"
+          ],
+          "effect": "Down with Selection"
+        },
+        {
+          "id": 67,
+          "keys": [
+            "Ctrl+Shift+["
+          ],
+          "effect": "Move Caret to Code Block Start with Selection"
+        },
+        {
+          "id": 68,
+          "keys": [
+            "Ctrl+Shift+]"
+          ],
+          "effect": "Move Caret to Code Block End with Selection"
+        },
+        {
+          "id": 69,
+          "keys": [
+            "Ctrl+Shift+PageUp"
+          ],
+          "effect": "Move Caret to Page Top with Selection"
+        },
+        {
+          "id": 70,
+          "keys": [
+            "Ctrl+Shift+PageDown"
+          ],
+          "effect": "Move Caret to Page Bottom with Selection"
+        },
+        {
+          "id": 71,
+          "keys": [
+            "Shift+PageUp"
+          ],
+          "effect": "Page Up with Selection"
+        },
+        {
+          "id": 72,
+          "keys": [
+            "Shift+PageDown"
+          ],
+          "effect": "Page Down with Selection"
+        },
+        {
+          "id": 73,
+          "keys": [
+            "Ctrl+Shift+Home"
+          ],
+          "effect": "Move Caret to Text Start with Selection"
+        },
+        {
+          "id": 74,
+          "keys": [
+            "Ctrl+Shift+End"
+          ],
+          "effect": "Move Caret to Text End with Selection"
+        },
+        {
+          "id": 75,
+          "keys": [
+            "Ctrl+W"
+          ],
+          "effect": "Extend Selection"
+        },
+        {
+          "id": 76,
+          "keys": [
+            "Ctrl+Shift+W"
+          ],
+          "effect": "Shrink Selection"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Code folding",
+      "bindings": [
+        {
+          "id": 77,
+          "keys": [
+            "Ctrl+NumpadPlus"
+          ],
+          "effect": "Expand"
+        },
+        {
+          "id": 78,
+          "keys": [
+            "Ctrl+NumpadMinus"
+          ],
+          "effect": "Collapse"
+        },
+        {
+          "id": 79,
+          "keys": [
+            "Ctrl+Alt+NumpadPlus"
+          ],
+          "effect": "Expand Recursively"
+        },
+        {
+          "id": 80,
+          "keys": [
+            "Ctrl+Alt+NumpadMinus"
+          ],
+          "effect": "Collapse Recursively"
+        },
+        {
+          "id": 81,
+          "keys": [
+            "Ctrl+Shift+NumpadPlus"
+          ],
+          "effect": "Expand All"
+        },
+        {
+          "id": 82,
+          "keys": [
+            "Ctrl+Shift+NumpadMinus"
+          ],
+          "effect": "Collapse All"
+        },
+        {
+          "id": 83,
+          "keys": [
+            "Ctrl+."
+          ],
+          "effect": "Fold Selection"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Multiple carets and selection ranges",
+      "bindings": [
+        {
+          "id": 84,
+          "keys": [
+            "Alt+Shift+Click"
+          ],
+          "effect": "Add/Remove Caret"
+        },
+        {
+          "id": 85,
+          "keys": [
+            "Alt+Shift+Insert"
+          ],
+          "effect": "Toggle Column Selection Mode"
+        },
+        {
+          "id": 86,
+          "keys": [
+            "Ctrl Ctrl+Up"
+          ],
+          "effect": "Clone Caret Above"
+        },
+        {
+          "id": 87,
+          "keys": [
+            "Ctrl Ctrl+Down"
+          ],
+          "effect": "Clone Caret Below"
+        },
+        {
+          "id": 88,
+          "keys": [
+            "Alt+Shift+G"
+          ],
+          "effect": "Add Caret to Each Line in Selection"
+        },
+        {
+          "id": 89,
+          "keys": [
+            "Alt+J"
+          ],
+          "effect": "Add Selection for Next Occurrence"
+        },
+        {
+          "id": 90,
+          "keys": [
+            "Ctrl+Alt+Shift+J"
+          ],
+          "effect": "Select All Occurrences"
+        },
+        {
+          "id": 91,
+          "keys": [
+            "Alt+Shift+J"
+          ],
+          "effect": "Deselect Last Occurrence"
+        },
+        {
+          "id": 92,
+          "keys": [
+            "Alt+Shift+MiddleClick"
+          ],
+          "effect": "Create Rectangular Selection"
+        },
+        {
+          "id": 93,
+          "keys": [
+            "Alt+Click"
+          ],
+          "effect": "Drag to Create Rectangular Selection"
+        },
+        {
+          "id": 94,
+          "keys": [
+            "Ctrl+Alt+Shift+Click"
+          ],
+          "effect": "Drag to Create Multiple Rectangular Selections"
+        }
+      ],
+      "note": "Double-modifier arrow shortcuts: tap the modifier, then hold it with the arrow. Click entries require a mouse; drag where the action says drag."
+    },
+    {
+      "id": 8,
+      "title": "Coding assistance",
+      "bindings": [
+        {
+          "id": 95,
+          "keys": [
+            "Ctrl+Space"
+          ],
+          "effect": "Basic Completion"
+        },
+        {
+          "id": 96,
+          "keys": [
+            "Ctrl+Shift+Space"
+          ],
+          "effect": "Type-Matching Completion"
+        },
+        {
+          "id": 97,
+          "keys": [
+            "Ctrl+Alt+Space"
+          ],
+          "effect": "Second Basic Completion"
+        },
+        {
+          "id": 98,
+          "keys": [
+            "Ctrl+Shift+Enter"
+          ],
+          "effect": "Complete Current Statement"
+        },
+        {
+          "id": 99,
+          "keys": [
+            "Ctrl+P"
+          ],
+          "effect": "Parameter Info"
+        },
+        {
+          "id": 100,
+          "keys": [
+            "Ctrl+Q"
+          ],
+          "effect": "Quick Documentation"
+        },
+        {
+          "id": 101,
+          "keys": [
+            "Ctrl+Shift+Up"
+          ],
+          "effect": "Move Statement Up"
+        },
+        {
+          "id": 102,
+          "keys": [
+            "Ctrl+Shift+Down"
+          ],
+          "effect": "Move Statement Down"
+        },
+        {
+          "id": 103,
+          "keys": [
+            "Ctrl+Alt+Shift+Left"
+          ],
+          "effect": "Move Element Left"
+        },
+        {
+          "id": 104,
+          "keys": [
+            "Ctrl+Alt+Shift+Right"
+          ],
+          "effect": "Move Statement Right"
+        },
+        {
+          "id": 105,
+          "keys": [
+            "Alt+Shift+Up"
+          ],
+          "effect": "Move Line Up"
+        },
+        {
+          "id": 106,
+          "keys": [
+            "Alt+Shift+Down"
+          ],
+          "effect": "Move Line Down"
+        },
+        {
+          "id": 107,
+          "keys": [
+            "Ctrl+/"
+          ],
+          "effect": "Comment with Line Comment"
+        },
+        {
+          "id": 108,
+          "keys": [
+            "Ctrl+Shift+/"
+          ],
+          "effect": "Comment with Block Comment"
+        },
+        {
+          "id": 109,
+          "keys": [
+            "Ctrl+Alt+T"
+          ],
+          "effect": "Surround With..."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Context navigation",
+      "bindings": [
+        {
+          "id": 110,
+          "keys": [
+            "Ctrl+G"
+          ],
+          "effect": "Go to Line/Column..."
+        },
+        {
+          "id": 111,
+          "keys": [
+            "Ctrl+Tab"
+          ],
+          "effect": "Switcher"
+        },
+        {
+          "id": 112,
+          "keys": [
+            "Alt+Shift+C"
+          ],
+          "effect": "Recent Changes"
+        },
+        {
+          "id": 113,
+          "keys": [
+            "Ctrl+Shift+Backspace"
+          ],
+          "effect": "Last Edit Location"
+        },
+        {
+          "id": 114,
+          "keys": [
+            "Ctrl+Alt+Left"
+          ],
+          "effect": "Back"
+        },
+        {
+          "id": 115,
+          "keys": [
+            "Ctrl+Alt+Right"
+          ],
+          "effect": "Forward"
+        },
+        {
+          "id": 116,
+          "keys": [
+            "Alt+Right"
+          ],
+          "effect": "Select Next Tab"
+        },
+        {
+          "id": 117,
+          "keys": [
+            "Alt+Left"
+          ],
+          "effect": "Select Previous Tab"
+        },
+        {
+          "id": 118,
+          "keys": [
+            "F11"
+          ],
+          "effect": "Toggle Anonymous Bookmark"
+        },
+        {
+          "id": 119,
+          "keys": [
+            "Ctrl+Shift+0"
+          ],
+          "effect": "Toggle Bookmark 0"
+        },
+        {
+          "id": 120,
+          "keys": [
+            "Ctrl+Shift+1"
+          ],
+          "effect": "Toggle Bookmark 1"
+        },
+        {
+          "id": 121,
+          "keys": [
+            "Ctrl+Shift+2"
+          ],
+          "effect": "Toggle Bookmark 2"
+        },
+        {
+          "id": 122,
+          "keys": [
+            "Ctrl+Shift+3"
+          ],
+          "effect": "Toggle Bookmark 3"
+        },
+        {
+          "id": 123,
+          "keys": [
+            "Ctrl+Shift+4"
+          ],
+          "effect": "Toggle Bookmark 4"
+        },
+        {
+          "id": 124,
+          "keys": [
+            "Ctrl+Shift+5"
+          ],
+          "effect": "Toggle Bookmark 5"
+        },
+        {
+          "id": 125,
+          "keys": [
+            "Ctrl+Shift+6"
+          ],
+          "effect": "Toggle Bookmark 6"
+        },
+        {
+          "id": 126,
+          "keys": [
+            "Ctrl+Shift+7"
+          ],
+          "effect": "Toggle Bookmark 7"
+        },
+        {
+          "id": 127,
+          "keys": [
+            "Ctrl+Shift+8"
+          ],
+          "effect": "Toggle Bookmark 8"
+        },
+        {
+          "id": 128,
+          "keys": [
+            "Ctrl+Shift+9"
+          ],
+          "effect": "Toggle Bookmark 9"
+        },
+        {
+          "id": 129,
+          "keys": [
+            "Ctrl+F11"
+          ],
+          "effect": "Toggle Bookmark with Mnemonic"
+        },
+        {
+          "id": 130,
+          "keys": [
+            "Shift+F11"
+          ],
+          "effect": "Show All Bookmarks"
+        },
+        {
+          "id": 131,
+          "keys": [
+            "Ctrl+0"
+          ],
+          "effect": "Go to Bookmark 0"
+        },
+        {
+          "id": 132,
+          "keys": [
+            "Ctrl+1"
+          ],
+          "effect": "Go to Bookmark 1"
+        },
+        {
+          "id": 133,
+          "keys": [
+            "Ctrl+2"
+          ],
+          "effect": "Go to Bookmark 2"
+        },
+        {
+          "id": 134,
+          "keys": [
+            "Ctrl+3"
+          ],
+          "effect": "Go to Bookmark 3"
+        },
+        {
+          "id": 135,
+          "keys": [
+            "Ctrl+4"
+          ],
+          "effect": "Go to Bookmark 4"
+        },
+        {
+          "id": 136,
+          "keys": [
+            "Ctrl+5"
+          ],
+          "effect": "Go to Bookmark 5"
+        },
+        {
+          "id": 137,
+          "keys": [
+            "Ctrl+6"
+          ],
+          "effect": "Go to Bookmark 6"
+        },
+        {
+          "id": 138,
+          "keys": [
+            "Ctrl+7"
+          ],
+          "effect": "Go to Bookmark 7"
+        },
+        {
+          "id": 139,
+          "keys": [
+            "Ctrl+8"
+          ],
+          "effect": "Go to Bookmark 8"
+        },
+        {
+          "id": 140,
+          "keys": [
+            "Ctrl+9"
+          ],
+          "effect": "Go to Bookmark 9"
+        },
+        {
+          "id": 141,
+          "keys": [
+            "Ctrl+Shift+F11"
+          ],
+          "effect": "Show Mnemonic Bookmarks"
+        },
+        {
+          "id": 142,
+          "keys": [
+            "Alt+2"
+          ],
+          "effect": "Show Bookmarks window"
+        },
+        {
+          "id": 143,
+          "keys": [
+            "Alt+7"
+          ],
+          "effect": "Show Structure window"
+        },
+        {
+          "id": 144,
+          "keys": [
+            "Alt+3"
+          ],
+          "effect": "Show Find window"
+        },
+        {
+          "id": 145,
+          "keys": [
+            "Ctrl+Alt+Down"
+          ],
+          "effect": "Next Occurrence"
+        },
+        {
+          "id": 146,
+          "keys": [
+            "Ctrl+Alt+Up"
+          ],
+          "effect": "Previous Occurrence"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Find everything",
+      "bindings": [
+        {
+          "id": 147,
+          "keys": [
+            "Ctrl+F"
+          ],
+          "effect": "Find..."
+        },
+        {
+          "id": 148,
+          "keys": [
+            "F3"
+          ],
+          "effect": "Find Next / Move to Next Occurrence"
+        },
+        {
+          "id": 149,
+          "keys": [
+            "Shift+F3"
+          ],
+          "effect": "Find Previous / Move to Previous Occurrence"
+        },
+        {
+          "id": 150,
+          "keys": [
+            "Ctrl+R"
+          ],
+          "effect": "Replace..."
+        },
+        {
+          "id": 151,
+          "keys": [
+            "Ctrl+Shift+F"
+          ],
+          "effect": "Find in Files..."
+        },
+        {
+          "id": 152,
+          "keys": [
+            "Ctrl+Shift+R"
+          ],
+          "effect": "Replace in Files..."
+        },
+        {
+          "id": 153,
+          "keys": [
+            "Ctrl+F3"
+          ],
+          "effect": "Next Occurrence of the Word at Caret"
+        },
+        {
+          "id": 154,
+          "keys": [
+            "Ctrl+Shift+N"
+          ],
+          "effect": "Go to File..."
+        },
+        {
+          "id": 155,
+          "keys": [
+            "Ctrl+F12"
+          ],
+          "effect": "File Structure"
+        },
+        {
+          "id": 156,
+          "keys": [
+            "Ctrl+Alt+Shift+N"
+          ],
+          "effect": "Go to Symbol..."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Navigate from symbols",
+      "bindings": [
+        {
+          "id": 157,
+          "keys": [
+            "Ctrl+B"
+          ],
+          "effect": "Go to Declaration or Usages"
+        },
+        {
+          "id": 158,
+          "keys": [
+            "Ctrl+Shift+B"
+          ],
+          "effect": "Go to Type Declaration"
+        },
+        {
+          "id": 159,
+          "keys": [
+            "Ctrl+Alt+F7"
+          ],
+          "effect": "Show Usages"
+        },
+        {
+          "id": 160,
+          "keys": [
+            "Ctrl+U"
+          ],
+          "effect": "Go to Super Method"
+        },
+        {
+          "id": 161,
+          "keys": [
+            "Ctrl+Alt+B"
+          ],
+          "effect": "Go to Implementation(s)"
+        },
+        {
+          "id": 162,
+          "keys": [
+            "Ctrl+Shift+T"
+          ],
+          "effect": "Go to Test"
+        },
+        {
+          "id": 163,
+          "keys": [
+            "Ctrl+Shift+F7"
+          ],
+          "effect": "Highlight Usages in File"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Code analysis",
+      "bindings": [
+        {
+          "id": 164,
+          "keys": [
+            "Ctrl+F1"
+          ],
+          "effect": "Error Description"
+        },
+        {
+          "id": 165,
+          "keys": [
+            "F2"
+          ],
+          "effect": "Next Highlighted Error"
+        },
+        {
+          "id": 166,
+          "keys": [
+            "Shift+F2"
+          ],
+          "effect": "Previous Highlighted Error"
+        },
+        {
+          "id": 167,
+          "keys": [
+            "Ctrl+Alt+Shift+I"
+          ],
+          "effect": "Run Inspection by Name..."
+        },
+        {
+          "id": 168,
+          "keys": [
+            "Alt+6"
+          ],
+          "effect": "Show Problems window"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Run and debug",
+      "bindings": [
+        {
+          "id": 169,
+          "keys": [
+            "Shift+F10"
+          ],
+          "effect": "Run context configuration"
+        },
+        {
+          "id": 170,
+          "keys": [
+            "Alt+Shift+F10"
+          ],
+          "effect": "Run..."
+        },
+        {
+          "id": 171,
+          "keys": [
+            "Shift+F9"
+          ],
+          "effect": "Debug context configuration"
+        },
+        {
+          "id": 172,
+          "keys": [
+            "Ctrl+F2"
+          ],
+          "effect": "Stop"
+        },
+        {
+          "id": 173,
+          "keys": [
+            "F9"
+          ],
+          "effect": "Resume Program"
+        },
+        {
+          "id": 174,
+          "keys": [
+            "Ctrl+Shift+F2"
+          ],
+          "effect": "Stop Background Processes..."
+        },
+        {
+          "id": 175,
+          "keys": [
+            "F8"
+          ],
+          "effect": "Step Over"
+        },
+        {
+          "id": 176,
+          "keys": [
+            "Alt+Shift+F8"
+          ],
+          "effect": "Force Step Over"
+        },
+        {
+          "id": 177,
+          "keys": [
+            "F7"
+          ],
+          "effect": "Step Into"
+        },
+        {
+          "id": 178,
+          "keys": [
+            "Shift+F7"
+          ],
+          "effect": "Smart Step Into"
+        },
+        {
+          "id": 179,
+          "keys": [
+            "Alt+Shift+F7"
+          ],
+          "effect": "Force Step Into"
+        },
+        {
+          "id": 180,
+          "keys": [
+            "Shift+F8"
+          ],
+          "effect": "Step Out"
+        },
+        {
+          "id": 181,
+          "keys": [
+            "Alt+F9"
+          ],
+          "effect": "Run To Cursor"
+        },
+        {
+          "id": 182,
+          "keys": [
+            "Ctrl+Alt+F9"
+          ],
+          "effect": "Force Run To Cursor"
+        },
+        {
+          "id": 183,
+          "keys": [
+            "Alt+F10"
+          ],
+          "effect": "Show Execution Point"
+        },
+        {
+          "id": 184,
+          "keys": [
+            "Alt+F8"
+          ],
+          "effect": "Evaluate Expression..."
+        },
+        {
+          "id": 185,
+          "keys": [
+            "Ctrl+Alt+F8"
+          ],
+          "effect": "Quick Evaluate Expression"
+        },
+        {
+          "id": 186,
+          "keys": [
+            "Ctrl+F8"
+          ],
+          "effect": "Toggle Line Breakpoint"
+        },
+        {
+          "id": 187,
+          "keys": [
+            "Ctrl+Alt+Shift+F8"
+          ],
+          "effect": "Toggle Temporary Line Breakpoint"
+        },
+        {
+          "id": 188,
+          "keys": [
+            "Ctrl+Shift+F8"
+          ],
+          "effect": "Edit Breakpoint"
+        },
+        {
+          "id": 189,
+          "keys": [
+            "Alt+4"
+          ],
+          "effect": "Show Run window"
+        },
+        {
+          "id": 190,
+          "keys": [
+            "Alt+5"
+          ],
+          "effect": "Show Debug window"
+        },
+        {
+          "id": 191,
+          "keys": [
+            "Alt+8"
+          ],
+          "effect": "Show Services window"
+        }
+      ],
+      "note": "Stepping and evaluation require a paused debugger. Actions use the current run configuration or editor context."
+    },
+    {
+      "id": 14,
+      "title": "Refactorings",
+      "bindings": [
+        {
+          "id": 192,
+          "keys": [
+            "Shift+F6"
+          ],
+          "effect": "Rename..."
+        },
+        {
+          "id": 193,
+          "keys": [
+            "Ctrl+F6"
+          ],
+          "effect": "Change Signature..."
+        },
+        {
+          "id": 194,
+          "keys": [
+            "Ctrl+Alt+N"
+          ],
+          "effect": "Inline..."
+        },
+        {
+          "id": 195,
+          "keys": [
+            "F6"
+          ],
+          "effect": "Move..."
+        },
+        {
+          "id": 196,
+          "keys": [
+            "Ctrl+Alt+M"
+          ],
+          "effect": "Extract Method..."
+        },
+        {
+          "id": 197,
+          "keys": [
+            "Ctrl+Alt+F"
+          ],
+          "effect": "Introduce Field..."
+        },
+        {
+          "id": 198,
+          "keys": [
+            "Ctrl+Alt+P"
+          ],
+          "effect": "Introduce Parameter..."
+        },
+        {
+          "id": 199,
+          "keys": [
+            "Ctrl+Alt+V"
+          ],
+          "effect": "Introduce Variable..."
+        },
+        {
+          "id": 200,
+          "keys": [
+            "Alt+Delete"
+          ],
+          "effect": "Safe Delete..."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Global VCS actions",
+      "bindings": [
+        {
+          "id": 201,
+          "keys": [
+            "Ctrl+K"
+          ],
+          "effect": "Commit..."
+        },
+        {
+          "id": 202,
+          "keys": [
+            "Ctrl+T"
+          ],
+          "effect": "Update Project"
+        },
+        {
+          "id": 203,
+          "keys": [
+            "Ctrl+Alt+Z"
+          ],
+          "effect": "Rollback"
+        },
+        {
+          "id": 204,
+          "keys": [
+            "Ctrl+Shift+K"
+          ],
+          "effect": "Push..."
+        },
+        {
+          "id": 205,
+          "keys": [
+            "Ctrl+Alt+Shift+Down"
+          ],
+          "effect": "Next Change"
+        },
+        {
+          "id": 206,
+          "keys": [
+            "Ctrl+Alt+Shift+Up"
+          ],
+          "effect": "Previous Change"
+        },
+        {
+          "id": 207,
+          "keys": [
+            "Alt+9"
+          ],
+          "effect": "Show Version Control window"
+        },
+        {
+          "id": 208,
+          "keys": [
+            "Alt+0"
+          ],
+          "effect": "Show Commit window"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Diff Viewer",
+      "bindings": [
+        {
+          "id": 209,
+          "keys": [
+            "Ctrl+D"
+          ],
+          "effect": "Show Diff"
+        },
+        {
+          "id": 210,
+          "keys": [
+            "Ctrl+D"
+          ],
+          "effect": "Compare Files"
+        },
+        {
+          "id": 211,
+          "keys": [
+            "F7"
+          ],
+          "effect": "Next Difference"
+        },
+        {
+          "id": 212,
+          "keys": [
+            "Shift+F7"
+          ],
+          "effect": "Previous Difference"
+        },
+        {
+          "id": 213,
+          "keys": [
+            "Ctrl+Alt+R"
+          ],
+          "effect": "Accept Left Side"
+        },
+        {
+          "id": 214,
+          "keys": [
+            "Ctrl+Alt+A"
+          ],
+          "effect": "Accept Right Side"
+        },
+        {
+          "id": 215,
+          "keys": [
+            "Ctrl+Shift+Tab"
+          ],
+          "effect": "Select Opposite Diff Pane"
+        },
+        {
+          "id": 216,
+          "keys": [
+            "Ctrl+Shift+D"
+          ],
+          "effect": "Show Diff Settings Popup..."
+        }
+      ],
+      "note": "Use in the diff or merge viewer; comparison actions also work on selected files."
+    },
+    {
+      "id": 17,
+      "title": "Tool windows",
+      "bindings": [
+        {
+          "id": 217,
+          "keys": [
+            "Shift+Esc"
+          ],
+          "effect": "Hide Active Tool Window"
+        },
+        {
+          "id": 218,
+          "keys": [
+            "Ctrl+Shift+F12"
+          ],
+          "effect": "Hide All Tool Windows"
+        },
+        {
+          "id": 219,
+          "keys": [
+            "F12"
+          ],
+          "effect": "Jump to Last Tool Window"
+        },
+        {
+          "id": 220,
+          "keys": [
+            "Ctrl+Alt+Shift+Left"
+          ],
+          "effect": "Stretch to Left"
+        },
+        {
+          "id": 221,
+          "keys": [
+            "Ctrl+Alt+Shift+Right"
+          ],
+          "effect": "Stretch to Right"
+        },
+        {
+          "id": 222,
+          "keys": [
+            "Ctrl+Alt+Shift+Up"
+          ],
+          "effect": "Stretch to Top"
+        },
+        {
+          "id": 223,
+          "keys": [
+            "Ctrl+Alt+Shift+Down"
+          ],
+          "effect": "Stretch to Bottom"
+        },
+        {
+          "id": 224,
+          "keys": [
+            "Alt+F12"
+          ],
+          "effect": "Show Terminal window"
+        }
+      ],
+      "note": "Resizing shortcuts require focus in a tool window."
+    },
+    {
+      "id": 18,
+      "title": "Additional navigation and coding",
+      "bindings": [
+        {
+          "id": 225,
+          "keys": [
+            "Ctrl+N"
+          ],
+          "effect": "Go to class"
+        },
+        {
+          "id": 226,
+          "keys": [
+            "Ctrl+Shift+E"
+          ],
+          "effect": "Recent locations"
+        },
+        {
+          "id": 227,
+          "keys": [
+            "Ctrl+H"
+          ],
+          "effect": "Type hierarchy"
+        },
+        {
+          "id": 228,
+          "keys": [
+            "Ctrl+Shift+H"
+          ],
+          "effect": "Method hierarchy"
+        },
+        {
+          "id": 229,
+          "keys": [
+            "Ctrl+Alt+H"
+          ],
+          "effect": "Call hierarchy"
+        },
+        {
+          "id": 230,
+          "keys": [
+            "Ctrl+Alt+C"
+          ],
+          "effect": "Extract constant"
+        },
+        {
+          "id": 231,
+          "keys": [
+            "Ctrl+O"
+          ],
+          "effect": "Override methods"
+        },
+        {
+          "id": 232,
+          "keys": [
+            "Ctrl+I"
+          ],
+          "effect": "Implement methods"
+        },
+        {
+          "id": 233,
+          "keys": [
+            "Ctrl+Alt+O"
+          ],
+          "effect": "Optimize imports"
+        },
+        {
+          "id": 234,
+          "keys": [
+            "Ctrl+Alt+Y"
+          ],
+          "effect": "Synchronize files"
+        },
+        {
+          "id": 235,
+          "keys": [
+            "Alt+Shift+I"
+          ],
+          "effect": "Inspect current file"
+        },
+        {
+          "id": 236,
+          "keys": [
+            "Ctrl+`"
+          ],
+          "effect": "Switch scheme"
+        },
+        {
+          "id": 237,
+          "keys": [
+            "Ctrl+Alt+Shift+S"
+          ],
+          "effect": "Project structure"
+        },
+        {
+          "id": 238,
+          "keys": [
+            "F5"
+          ],
+          "effect": "Copy selected file or symbol"
+        },
+        {
+          "id": 239,
+          "keys": [
+            "F4"
+          ],
+          "effect": "Edit source"
+        },
+        {
+          "id": 240,
+          "keys": [
+            "Ctrl+Enter"
+          ],
+          "effect": "View source"
+        },
+        {
+          "id": 241,
+          "keys": [
+            "Ctrl+Shift+I"
+          ],
+          "effect": "Quick definition"
+        },
+        {
+          "id": 242,
+          "keys": [
+            "Ctrl+F7"
+          ],
+          "effect": "Find usages in current file"
+        },
+        {
+          "id": 243,
+          "keys": [
+            "Ctrl+Alt+J"
+          ],
+          "effect": "Surround with live template"
+        },
+        {
+          "id": 244,
+          "keys": [
+            "Ctrl+J"
+          ],
+          "effect": "Insert live template"
+        },
+        {
+          "id": 245,
+          "keys": [
+            "Ctrl+F4"
+          ],
+          "effect": "Close editor"
+        },
+        {
+          "id": 246,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Focus editor"
+        },
+        {
+          "id": 247,
+          "keys": [
+            "Ctrl+Enter"
+          ],
+          "effect": "Split line"
+        }
+      ],
+      "note": "Additional actions from the official reference card. Context determines whether navigation, editing, templates or file actions apply."
+    }
+  ],
+  "aliases": [
+    "idea",
+    "intellij idea"
+  ]
+}

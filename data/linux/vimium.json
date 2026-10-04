@@ -1,0 +1,959 @@
+{
+  "full_name": "Vimium for Firefox",
+  "note": "Vimium 2.4.2 for Firefox (not Vimium C). Case matters. Use on permitted web pages; Firefox internal and protected pages block extensions.",
+  "source": "https://github.com/philc/vimium",
+  "binding_groups": [
+    {
+      "id": 1,
+      "title": "Navigating the current page",
+      "bindings": [
+        {
+          "id": 1,
+          "keys": [
+            "j",
+            "Ctrl+E"
+          ],
+          "effect": "Scroll down"
+        },
+        {
+          "id": 2,
+          "keys": [
+            "k",
+            "Ctrl+Y"
+          ],
+          "effect": "Scroll up"
+        },
+        {
+          "id": 3,
+          "keys": [
+            "h"
+          ],
+          "effect": "Scroll left"
+        },
+        {
+          "id": 4,
+          "keys": [
+            "l"
+          ],
+          "effect": "Scroll right"
+        },
+        {
+          "id": 5,
+          "keys": [
+            "g g"
+          ],
+          "effect": "Scroll to the top of the page"
+        },
+        {
+          "id": 6,
+          "keys": [
+            "G"
+          ],
+          "effect": "Scroll to the bottom of the page"
+        },
+        {
+          "id": 7,
+          "keys": [
+            "z H"
+          ],
+          "effect": "Scroll all the way to the left"
+        },
+        {
+          "id": 8,
+          "keys": [
+            "z L"
+          ],
+          "effect": "Scroll all the way to the right"
+        },
+        {
+          "id": 9,
+          "keys": [
+            "d"
+          ],
+          "effect": "Scroll a half page down"
+        },
+        {
+          "id": 10,
+          "keys": [
+            "u"
+          ],
+          "effect": "Scroll a half page up"
+        },
+        {
+          "id": 11,
+          "keys": [
+            "r"
+          ],
+          "effect": "Reload the page"
+        },
+        {
+          "id": 12,
+          "keys": [
+            "R"
+          ],
+          "effect": "Reload without using the cache"
+        },
+        {
+          "id": 13,
+          "keys": [
+            "y y"
+          ],
+          "effect": "Copy the URL to clipboard"
+        },
+        {
+          "id": 14,
+          "keys": [
+            "p"
+          ],
+          "effect": "Open clipboard's URL in the tab"
+        },
+        {
+          "id": 15,
+          "keys": [
+            "P"
+          ],
+          "effect": "Open clipboard's URL in a new tab"
+        },
+        {
+          "id": 16,
+          "keys": [
+            "g i"
+          ],
+          "effect": "Focus the first text input on the page"
+        },
+        {
+          "id": 17,
+          "keys": [
+            "[ ["
+          ],
+          "effect": "Follow the link labeled previous or <"
+        },
+        {
+          "id": 18,
+          "keys": [
+            "] ]"
+          ],
+          "effect": "Follow the link labeled next or >"
+        },
+        {
+          "id": 19,
+          "keys": [
+            "g f"
+          ],
+          "effect": "Select the next frame on the page"
+        },
+        {
+          "id": 20,
+          "keys": [
+            "g F"
+          ],
+          "effect": "Select the page's main/top frame"
+        },
+        {
+          "id": 21,
+          "keys": [
+            "g u"
+          ],
+          "effect": "Go up the URL hierarchy"
+        },
+        {
+          "id": 22,
+          "keys": [
+            "g U"
+          ],
+          "effect": "Go to the root of URL hierarchy"
+        },
+        {
+          "id": 23,
+          "keys": [
+            "i"
+          ],
+          "effect": "Enter insert mode"
+        },
+        {
+          "id": 24,
+          "keys": [
+            "v"
+          ],
+          "effect": "Enter visual mode"
+        },
+        {
+          "id": 25,
+          "keys": [
+            "V"
+          ],
+          "effect": "Enter visual line mode"
+        }
+      ],
+      "note": "Normal mode, outside editable fields. Prefix repeatable actions with a number, for example 5 j."
+    },
+    {
+      "id": 2,
+      "title": "Link hints",
+      "bindings": [
+        {
+          "id": 26,
+          "keys": [
+            "f"
+          ],
+          "effect": "Open a link in the tab"
+        },
+        {
+          "id": 27,
+          "keys": [
+            "F"
+          ],
+          "effect": "Open a link in a new tab"
+        },
+        {
+          "id": 28,
+          "keys": [
+            "Alt+F"
+          ],
+          "effect": "Open multiple links in a new tab"
+        },
+        {
+          "id": 29,
+          "keys": [
+            "y f"
+          ],
+          "effect": "Copy a link URL to clipboard"
+        }
+      ],
+      "note": "Type the displayed hint after entering hint mode. Uppercase F opens in a background tab."
+    },
+    {
+      "id": 3,
+      "title": "Using find",
+      "bindings": [
+        {
+          "id": 30,
+          "keys": [
+            "/"
+          ],
+          "effect": "Enter find mode."
+        },
+        {
+          "id": 31,
+          "keys": [
+            "n"
+          ],
+          "effect": "Cycle forward to the next find match"
+        },
+        {
+          "id": 32,
+          "keys": [
+            "N"
+          ],
+          "effect": "Cycle backward to the previous find match"
+        },
+        {
+          "id": 33,
+          "keys": [
+            "*"
+          ],
+          "effect": "Find the selected text"
+        },
+        {
+          "id": 34,
+          "keys": [
+            "#"
+          ],
+          "effect": "Find the selected text, searching backwards"
+        }
+      ],
+      "note": "Normal mode, outside editable fields. Prefix repeatable actions with a number, for example 5 j."
+    },
+    {
+      "id": 4,
+      "title": "Vomnibar",
+      "bindings": [
+        {
+          "id": 35,
+          "keys": [
+            "o"
+          ],
+          "effect": "Open URL, bookmark or history entry"
+        },
+        {
+          "id": 36,
+          "keys": [
+            "O"
+          ],
+          "effect": "Open URL, bookmark or history entry in a new tab"
+        },
+        {
+          "id": 37,
+          "keys": [
+            "T"
+          ],
+          "effect": "Search through your open tabs"
+        },
+        {
+          "id": 38,
+          "keys": [
+            "b"
+          ],
+          "effect": "Open a bookmark"
+        },
+        {
+          "id": 39,
+          "keys": [
+            "B"
+          ],
+          "effect": "Open a bookmark in a new tab"
+        },
+        {
+          "id": 40,
+          "keys": [
+            "g e"
+          ],
+          "effect": "Edit the URL"
+        },
+        {
+          "id": 41,
+          "keys": [
+            "g E"
+          ],
+          "effect": "Edit the URL and open in a new tab"
+        }
+      ],
+      "note": "Normal mode, outside editable fields. Prefix repeatable actions with a number, for example 5 j."
+    },
+    {
+      "id": 5,
+      "title": "Navigating history",
+      "bindings": [
+        {
+          "id": 42,
+          "keys": [
+            "H"
+          ],
+          "effect": "Go back in history"
+        },
+        {
+          "id": 43,
+          "keys": [
+            "L"
+          ],
+          "effect": "Go forward in history"
+        }
+      ],
+      "note": "Normal mode, outside editable fields. Prefix repeatable actions with a number, for example 5 j."
+    },
+    {
+      "id": 6,
+      "title": "Manipulating tabs",
+      "bindings": [
+        {
+          "id": 44,
+          "keys": [
+            "K",
+            "g t"
+          ],
+          "effect": "Go one tab right"
+        },
+        {
+          "id": 45,
+          "keys": [
+            "J",
+            "g T"
+          ],
+          "effect": "Go one tab left"
+        },
+        {
+          "id": 46,
+          "keys": [
+            "^"
+          ],
+          "effect": "Go to previously-visited tab"
+        },
+        {
+          "id": 47,
+          "keys": [
+            "< <"
+          ],
+          "effect": "Move tab to the left"
+        },
+        {
+          "id": 48,
+          "keys": [
+            "> >"
+          ],
+          "effect": "Move tab to the right"
+        },
+        {
+          "id": 49,
+          "keys": [
+            "g 0"
+          ],
+          "effect": "Go to the first tab"
+        },
+        {
+          "id": 50,
+          "keys": [
+            "g $"
+          ],
+          "effect": "Go to the last tab"
+        },
+        {
+          "id": 51,
+          "keys": [
+            "W"
+          ],
+          "effect": "Move tab to new window"
+        },
+        {
+          "id": 52,
+          "keys": [
+            "t"
+          ],
+          "effect": "Create new tab"
+        },
+        {
+          "id": 53,
+          "keys": [
+            "y t"
+          ],
+          "effect": "Duplicate tab"
+        },
+        {
+          "id": 54,
+          "keys": [
+            "x"
+          ],
+          "effect": "Close tab"
+        },
+        {
+          "id": 55,
+          "keys": [
+            "X"
+          ],
+          "effect": "Restore closed tab"
+        },
+        {
+          "id": 56,
+          "keys": [
+            "Alt+P"
+          ],
+          "effect": "Pin or unpin tab"
+        },
+        {
+          "id": 57,
+          "keys": [
+            "Alt+M"
+          ],
+          "effect": "Mute or unmute tab"
+        },
+        {
+          "id": 58,
+          "keys": [
+            "z i"
+          ],
+          "effect": "Zoom in"
+        },
+        {
+          "id": 59,
+          "keys": [
+            "z o"
+          ],
+          "effect": "Zoom out"
+        },
+        {
+          "id": 60,
+          "keys": [
+            "z 0"
+          ],
+          "effect": "Reset zoom"
+        }
+      ],
+      "note": "Normal mode, outside editable fields. Prefix repeatable actions with a number, for example 5 j."
+    },
+    {
+      "id": 7,
+      "title": "Marks",
+      "bindings": [
+        {
+          "id": 61,
+          "keys": [
+            "m"
+          ],
+          "effect": "Create a new mark"
+        },
+        {
+          "id": 62,
+          "keys": [
+            "`"
+          ],
+          "effect": "Jump to a mark"
+        }
+      ],
+      "note": "After m or `, type a letter: lowercase is page-local, uppercase is global. Double backtick returns to the position before the previous jump."
+    },
+    {
+      "id": 8,
+      "title": "Misc",
+      "bindings": [
+        {
+          "id": 63,
+          "keys": [
+            "?"
+          ],
+          "effect": "Show help"
+        },
+        {
+          "id": 64,
+          "keys": [
+            "g s"
+          ],
+          "effect": "View page source"
+        }
+      ],
+      "note": "Normal mode, outside editable fields. Prefix repeatable actions with a number, for example 5 j."
+    },
+    {
+      "id": 9,
+      "title": "Cancel and input focus",
+      "bindings": [
+        {
+          "id": 65,
+          "keys": [
+            "Esc",
+            "Ctrl+["
+          ],
+          "effect": "Cancel pending command or exit current mode"
+        },
+        {
+          "id": 66,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Next input after g i"
+        },
+        {
+          "id": 67,
+          "keys": [
+            "Shift+Tab"
+          ],
+          "effect": "Previous input after g i"
+        },
+        {
+          "id": 68,
+          "keys": [
+            "` `"
+          ],
+          "effect": "Return to position before previous jump"
+        }
+      ],
+      "note": "Esc exits insert, find and visual modes. Input cycling applies after g i has focused a field."
+    },
+    {
+      "id": 10,
+      "title": "Vomnibar controls",
+      "bindings": [
+        {
+          "id": 69,
+          "keys": [
+            "Down",
+            "Ctrl+J",
+            "Ctrl+N"
+          ],
+          "effect": "Next suggestion"
+        },
+        {
+          "id": 70,
+          "keys": [
+            "Up",
+            "Shift+Tab",
+            "Ctrl+K",
+            "Ctrl+P"
+          ],
+          "effect": "Previous suggestion"
+        },
+        {
+          "id": 71,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Show suggestions or choose next suggestion"
+        },
+        {
+          "id": 72,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Open selected result or typed query"
+        },
+        {
+          "id": 73,
+          "keys": [
+            "Shift+Enter",
+            "Alt+Enter"
+          ],
+          "effect": "Open result in new tab"
+        },
+        {
+          "id": 74,
+          "keys": [
+            "Ctrl+Enter"
+          ],
+          "effect": "Put selected result URL into input"
+        },
+        {
+          "id": 75,
+          "keys": [
+            "Backspace"
+          ],
+          "effect": "Restore search keyword or close empty suggestion list"
+        },
+        {
+          "id": 76,
+          "keys": [
+            "Esc",
+            "Ctrl+["
+          ],
+          "effect": "Dismiss Vomnibar"
+        }
+      ],
+      "note": "Open with o, O, b, B, T, g e or g E. Ctrl+Enter edits the suggested URL; it does not open it. Backspace has its special effect at the start of a custom search or with an empty list."
+    },
+    {
+      "id": 11,
+      "title": "Link-hint controls",
+      "bindings": [
+        {
+          "id": 77,
+          "keys": [
+            "Esc",
+            "Ctrl+["
+          ],
+          "effect": "Cancel hints"
+        },
+        {
+          "id": 78,
+          "keys": [
+            "Backspace"
+          ],
+          "effect": "Erase hint character or exit when empty"
+        },
+        {
+          "id": 79,
+          "keys": [
+            "Space"
+          ],
+          "effect": "Rotate overlapping alphabet hints"
+        },
+        {
+          "id": 80,
+          "keys": [
+            "Shift"
+          ],
+          "effect": "Temporarily switch between current and new-tab opening"
+        },
+        {
+          "id": 81,
+          "keys": [
+            "Ctrl"
+          ],
+          "effect": "Temporarily switch foreground/background opening"
+        },
+        {
+          "id": 82,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Next filtered hint"
+        },
+        {
+          "id": 83,
+          "keys": [
+            "Shift+Tab"
+          ],
+          "effect": "Previous filtered hint"
+        },
+        {
+          "id": 84,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Activate selected filtered hint"
+        }
+      ],
+      "note": "Hold modifiers while choosing alphabet hints. Tab and Enter use filtered hints; Space rotates alphabet hints."
+    },
+    {
+      "id": 12,
+      "title": "Visual and caret movement",
+      "bindings": [
+        {
+          "id": 85,
+          "keys": [
+            "h"
+          ],
+          "effect": "Move selection end left"
+        },
+        {
+          "id": 86,
+          "keys": [
+            "l"
+          ],
+          "effect": "Move selection end right"
+        },
+        {
+          "id": 87,
+          "keys": [
+            "j"
+          ],
+          "effect": "Move selection end down"
+        },
+        {
+          "id": 88,
+          "keys": [
+            "k"
+          ],
+          "effect": "Move selection end up"
+        },
+        {
+          "id": 89,
+          "keys": [
+            "e"
+          ],
+          "effect": "Next word end"
+        },
+        {
+          "id": 90,
+          "keys": [
+            "b",
+            "B"
+          ],
+          "effect": "Previous word"
+        },
+        {
+          "id": 91,
+          "keys": [
+            "w",
+            "W"
+          ],
+          "effect": "Next word start"
+        },
+        {
+          "id": 92,
+          "keys": [
+            ")"
+          ],
+          "effect": "Next sentence"
+        },
+        {
+          "id": 93,
+          "keys": [
+            "("
+          ],
+          "effect": "Previous sentence"
+        },
+        {
+          "id": 94,
+          "keys": [
+            "}"
+          ],
+          "effect": "Next paragraph"
+        },
+        {
+          "id": 95,
+          "keys": [
+            "{"
+          ],
+          "effect": "Previous paragraph"
+        },
+        {
+          "id": 96,
+          "keys": [
+            "0"
+          ],
+          "effect": "Line start"
+        },
+        {
+          "id": 97,
+          "keys": [
+            "$"
+          ],
+          "effect": "Line end"
+        },
+        {
+          "id": 98,
+          "keys": [
+            "g g"
+          ],
+          "effect": "Document start"
+        },
+        {
+          "id": 99,
+          "keys": [
+            "G"
+          ],
+          "effect": "Document end"
+        },
+        {
+          "id": 100,
+          "keys": [
+            "Ctrl+E"
+          ],
+          "effect": "Scroll down without moving selection"
+        },
+        {
+          "id": 101,
+          "keys": [
+            "Ctrl+Y"
+          ],
+          "effect": "Scroll up without moving selection"
+        }
+      ],
+      "note": "Enter with v or V. These extend the selection in visual mode, move the caret in caret mode, and select whole lines in visual-line mode. Browser text boundaries determine word and sentence behavior."
+    },
+    {
+      "id": 13,
+      "title": "Visual selection actions",
+      "bindings": [
+        {
+          "id": 102,
+          "keys": [
+            "a w"
+          ],
+          "effect": "Select word"
+        },
+        {
+          "id": 103,
+          "keys": [
+            "a s"
+          ],
+          "effect": "Select sentence"
+        },
+        {
+          "id": 104,
+          "keys": [
+            "n"
+          ],
+          "effect": "Find next match"
+        },
+        {
+          "id": 105,
+          "keys": [
+            "N"
+          ],
+          "effect": "Find previous match"
+        },
+        {
+          "id": 106,
+          "keys": [
+            "/"
+          ],
+          "effect": "Search and return to visual mode"
+        },
+        {
+          "id": 107,
+          "keys": [
+            "y"
+          ],
+          "effect": "Copy selection and exit"
+        },
+        {
+          "id": 108,
+          "keys": [
+            "Y"
+          ],
+          "effect": "Copy selected line(s) and exit"
+        },
+        {
+          "id": 109,
+          "keys": [
+            "p"
+          ],
+          "effect": "Copy selection and open it here"
+        },
+        {
+          "id": 110,
+          "keys": [
+            "P"
+          ],
+          "effect": "Copy selection and open it in new tab"
+        },
+        {
+          "id": 111,
+          "keys": [
+            "v"
+          ],
+          "effect": "Characterwise visual mode"
+        },
+        {
+          "id": 112,
+          "keys": [
+            "V"
+          ],
+          "effect": "Linewise visual mode"
+        },
+        {
+          "id": 113,
+          "keys": [
+            "c"
+          ],
+          "effect": "Caret mode"
+        },
+        {
+          "id": 114,
+          "keys": [
+            "o"
+          ],
+          "effect": "Swap selection ends"
+        },
+        {
+          "id": 115,
+          "keys": [
+            "Esc",
+            "Ctrl+["
+          ],
+          "effect": "Exit visual mode"
+        }
+      ],
+      "note": "Enter with v or V; c switches to caret movement. A numeric prefix extends word, sentence or line selection. Opening a selection treats it as a URL or search."
+    },
+    {
+      "id": 14,
+      "title": "Find-mode input",
+      "bindings": [
+        {
+          "id": 116,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Accept search"
+        },
+        {
+          "id": 117,
+          "keys": [
+            "Esc",
+            "Ctrl+["
+          ],
+          "effect": "Cancel search"
+        },
+        {
+          "id": 118,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Previous search query"
+        },
+        {
+          "id": 119,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Next search query"
+        }
+      ],
+      "note": "Enter find mode with /. Up and Down browse Vimium search history."
+    }
+  ],
+  "aliases": [
+    "vimium firefox",
+    "vimium ff"
+  ]
+}

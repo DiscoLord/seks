@@ -1,0 +1,384 @@
+{
+  "full_name": "Slack",
+  "source": "https://slack.com/help/articles/201374536-Slack-keyboard-shortcuts",
+  "note": "Default English keyboard shortcuts. Desktop-only actions are grouped separately.",
+  "binding_groups": [
+    {
+      "id": 1,
+      "title": "Navigation",
+      "bindings": [
+        {
+          "id": 1,
+          "keys": [
+            "Cmd+G"
+          ],
+          "effect": "Search workspace"
+        },
+        {
+          "id": 2,
+          "keys": [
+            "Cmd+F"
+          ],
+          "effect": "Search conversation"
+        },
+        {
+          "id": 3,
+          "keys": [
+            "Opt+Up"
+          ],
+          "effect": "Previous conversation"
+        },
+        {
+          "id": 4,
+          "keys": [
+            "Opt+Down"
+          ],
+          "effect": "Next conversation"
+        },
+        {
+          "id": 5,
+          "keys": [
+            "Opt+Shift+Up"
+          ],
+          "effect": "Previous unread conversation"
+        },
+        {
+          "id": 6,
+          "keys": [
+            "Opt+Shift+Down"
+          ],
+          "effect": "Next unread conversation"
+        },
+        {
+          "id": 7,
+          "keys": [
+            "Cmd+["
+          ],
+          "effect": "Back"
+        },
+        {
+          "id": 8,
+          "keys": [
+            "Cmd+]"
+          ],
+          "effect": "Forward"
+        },
+        {
+          "id": 9,
+          "keys": [
+            "Cmd+Shift+I"
+          ],
+          "effect": "Conversation details"
+        },
+        {
+          "id": 10,
+          "keys": [
+            "F6"
+          ],
+          "effect": "Focus next section"
+        },
+        {
+          "id": 11,
+          "keys": [
+            "Shift+F6"
+          ],
+          "effect": "Focus previous section"
+        },
+        {
+          "id": 12,
+          "keys": [
+            "Cmd+."
+          ],
+          "effect": "Hide right sidebar"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Workspaces and unread messages",
+      "bindings": [
+        {
+          "id": 13,
+          "keys": [
+            "Ctrl+Tab"
+          ],
+          "effect": "Next workspace"
+        },
+        {
+          "id": 14,
+          "keys": [
+            "Ctrl+Shift+Tab"
+          ],
+          "effect": "Previous workspace"
+        },
+        {
+          "id": 15,
+          "keys": [
+            "Cmd+Shift+S"
+          ],
+          "effect": "Toggle workspace switcher"
+        },
+        {
+          "id": 16,
+          "keys": [
+            "Cmd+Shift+A"
+          ],
+          "effect": "All unreads"
+        },
+        {
+          "id": 17,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Mark conversation read"
+        },
+        {
+          "id": 18,
+          "keys": [
+            "Shift+Esc"
+          ],
+          "effect": "Mark workspace read"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Message actions",
+      "bindings": [
+        {
+          "id": 19,
+          "keys": [
+            "e"
+          ],
+          "effect": "Edit own message"
+        },
+        {
+          "id": 20,
+          "keys": [
+            "t",
+            "Right"
+          ],
+          "effect": "Open thread"
+        },
+        {
+          "id": 21,
+          "keys": [
+            "f"
+          ],
+          "effect": "Forward"
+        },
+        {
+          "id": 22,
+          "keys": [
+            "p"
+          ],
+          "effect": "Toggle pin"
+        },
+        {
+          "id": 23,
+          "keys": [
+            "a"
+          ],
+          "effect": "Toggle saved message"
+        },
+        {
+          "id": 24,
+          "keys": [
+            "u"
+          ],
+          "effect": "Mark unread from here"
+        },
+        {
+          "id": 25,
+          "keys": [
+            "m"
+          ],
+          "effect": "Set reminder"
+        },
+        {
+          "id": 26,
+          "keys": [
+            "r"
+          ],
+          "effect": "React"
+        }
+      ],
+      "note": "Focus a message first, outside the message composer. Editing applies to your own messages."
+    },
+    {
+      "id": 4,
+      "title": "Compose and format",
+      "bindings": [
+        {
+          "id": 27,
+          "keys": [
+            "Shift+Enter"
+          ],
+          "effect": "Line break"
+        },
+        {
+          "id": 28,
+          "keys": [
+            "Cmd+B"
+          ],
+          "effect": "Bold"
+        },
+        {
+          "id": 29,
+          "keys": [
+            "Cmd+I"
+          ],
+          "effect": "Italic"
+        },
+        {
+          "id": 30,
+          "keys": [
+            "Cmd+Shift+X"
+          ],
+          "effect": "Strikethrough"
+        },
+        {
+          "id": 31,
+          "keys": [
+            "Cmd+Shift+U"
+          ],
+          "effect": "Insert link"
+        },
+        {
+          "id": 32,
+          "keys": [
+            "Cmd+Shift+C"
+          ],
+          "effect": "Inline code"
+        },
+        {
+          "id": 33,
+          "keys": [
+            "Cmd+Opt+Shift+C"
+          ],
+          "effect": "Code block"
+        },
+        {
+          "id": 34,
+          "keys": [
+            "Cmd+Shift+9"
+          ],
+          "effect": "Quote"
+        },
+        {
+          "id": 35,
+          "keys": [
+            "Cmd+Shift+8"
+          ],
+          "effect": "Bullets"
+        },
+        {
+          "id": 36,
+          "keys": [
+            "Cmd+Shift+7"
+          ],
+          "effect": "Numbered list"
+        },
+        {
+          "id": 37,
+          "keys": [
+            "Cmd+Shift+Enter"
+          ],
+          "effect": "Create snippet"
+        }
+      ],
+      "note": "Use in the message composer; formatting applies to selected text."
+    },
+    {
+      "id": 5,
+      "title": "Huddles and status",
+      "bindings": [
+        {
+          "id": 38,
+          "keys": [
+            "Cmd+Shift+H"
+          ],
+          "effect": "Start, join or leave huddle"
+        },
+        {
+          "id": 39,
+          "keys": [
+            "Cmd+Shift+Space"
+          ],
+          "effect": "Toggle microphone"
+        },
+        {
+          "id": 40,
+          "keys": [
+            "Cmd+Shift+Y"
+          ],
+          "effect": "Set status"
+        }
+      ],
+      "note": "The huddle action depends on whether a huddle is available or already active."
+    },
+    {
+      "id": 6,
+      "title": "Desktop app",
+      "bindings": [
+        {
+          "id": 41,
+          "keys": [
+            "Cmd+N"
+          ],
+          "effect": "Compose message"
+        },
+        {
+          "id": 42,
+          "keys": [
+            "Cmd+,"
+          ],
+          "effect": "Preferences"
+        },
+        {
+          "id": 43,
+          "keys": [
+            "Cmd+O"
+          ],
+          "effect": "Upload file"
+        },
+        {
+          "id": 44,
+          "keys": [
+            "Cmd+J"
+          ],
+          "effect": "Latest unread message"
+        },
+        {
+          "id": 45,
+          "keys": [
+            "Cmd+Shift+Cmd"
+          ],
+          "effect": "Activity"
+        },
+        {
+          "id": 46,
+          "keys": [
+            "Cmd+Shift+T"
+          ],
+          "effect": "Threads"
+        },
+        {
+          "id": 47,
+          "keys": [
+            "Cmd+Shift+L"
+          ],
+          "effect": "Browse channels"
+        },
+        {
+          "id": 48,
+          "keys": [
+            "Cmd+K"
+          ],
+          "effect": "Jump to conversation"
+        }
+      ],
+      "note": "Slack desktop app only."
+    }
+  ]
+}

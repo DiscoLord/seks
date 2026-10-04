@@ -1,0 +1,511 @@
+{
+  "aliases": [
+    "vs code",
+    "visual studio code"
+  ],
+  "full_name": "Visual Studio Code",
+  "note": "Default macOS keymap; extensions and custom bindings may override shortcuts.",
+  "source": "https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf",
+  "binding_groups": [
+    {
+      "id": 1,
+      "title": "Navigation",
+      "bindings": [
+        {
+          "id": 1,
+          "keys": [
+            "Cmd+Shift+P",
+            "F1"
+          ],
+          "effect": "Open the Command Palette"
+        },
+        {
+          "id": 2,
+          "keys": [
+            "Cmd+P"
+          ],
+          "effect": "Open a file by name"
+        },
+        {
+          "id": 3,
+          "keys": [
+            "Cmd+T"
+          ],
+          "effect": "Go to a symbol in the workspace"
+        },
+        {
+          "id": 4,
+          "keys": [
+            "Cmd+Shift+O"
+          ],
+          "effect": "Go to a symbol in the current file"
+        },
+        {
+          "id": 5,
+          "keys": [
+            "Ctrl+G"
+          ],
+          "effect": "Go to a line"
+        },
+        {
+          "id": 6,
+          "keys": [
+            "Ctrl+-"
+          ],
+          "effect": "Go back in navigation history"
+        },
+        {
+          "id": 7,
+          "keys": [
+            "Ctrl+Shift+-"
+          ],
+          "effect": "Go forward in navigation history"
+        },
+        {
+          "id": 8,
+          "keys": [
+            "F8"
+          ],
+          "effect": "Go to the next error or warning"
+        },
+        {
+          "id": 9,
+          "keys": [
+            "Shift+F8"
+          ],
+          "effect": "Go to the previous error or warning"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Search",
+      "bindings": [
+        {
+          "id": 10,
+          "keys": [
+            "Cmd+F"
+          ],
+          "effect": "Find in the current file"
+        },
+        {
+          "id": 11,
+          "keys": [
+            "Cmd+Opt+F"
+          ],
+          "effect": "Replace in the current file"
+        },
+        {
+          "id": 12,
+          "keys": [
+            "Cmd+Shift+F"
+          ],
+          "effect": "Find in the workspace"
+        },
+        {
+          "id": 13,
+          "keys": [
+            "Cmd+Shift+H"
+          ],
+          "effect": "Replace in the workspace"
+        },
+        {
+          "id": 14,
+          "keys": [
+            "Cmd+G"
+          ],
+          "effect": "Find the next match"
+        },
+        {
+          "id": 15,
+          "keys": [
+            "Cmd+Shift+G"
+          ],
+          "effect": "Find the previous match"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Editing",
+      "note": "With the editor focused. Formatting requires a formatter for the current language.",
+      "bindings": [
+        {
+          "id": 16,
+          "keys": [
+            "Opt+Up"
+          ],
+          "effect": "Move the line up"
+        },
+        {
+          "id": 17,
+          "keys": [
+            "Opt+Down"
+          ],
+          "effect": "Move the line down"
+        },
+        {
+          "id": 18,
+          "keys": [
+            "Cmd+Shift+K"
+          ],
+          "effect": "Delete the line"
+        },
+        {
+          "id": 19,
+          "keys": [
+            "Cmd+Enter"
+          ],
+          "effect": "Insert a line below"
+        },
+        {
+          "id": 20,
+          "keys": [
+            "Cmd+Shift+Enter"
+          ],
+          "effect": "Insert a line above"
+        },
+        {
+          "id": 21,
+          "keys": [
+            "Cmd+/"
+          ],
+          "effect": "Toggle a line comment"
+        },
+        {
+          "id": 22,
+          "keys": [
+            "Shift+Opt+A"
+          ],
+          "effect": "Toggle a block comment"
+        },
+        {
+          "id": 23,
+          "keys": [
+            "Shift+Opt+F"
+          ],
+          "effect": "Format the document"
+        },
+        {
+          "id": 24,
+          "keys": [
+            "Cmd+K Cmd+F"
+          ],
+          "effect": "Format the selection"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Selection",
+      "bindings": [
+        {
+          "id": 25,
+          "keys": [
+            "Cmd+D"
+          ],
+          "effect": "Add the next matching occurrence to the selection"
+        },
+        {
+          "id": 26,
+          "keys": [
+            "Cmd+Shift+L"
+          ],
+          "effect": "Select all occurrences of the current selection"
+        },
+        {
+          "id": 27,
+          "keys": [
+            "Cmd+Opt+Up"
+          ],
+          "effect": "Add a cursor above"
+        },
+        {
+          "id": 28,
+          "keys": [
+            "Cmd+Opt+Down"
+          ],
+          "effect": "Add a cursor below"
+        },
+        {
+          "id": 29,
+          "keys": [
+            "Cmd+Ctrl+Shift+Right"
+          ],
+          "effect": "Expand the selection"
+        },
+        {
+          "id": 30,
+          "keys": [
+            "Cmd+Ctrl+Shift+Left"
+          ],
+          "effect": "Shrink the selection"
+        },
+        {
+          "id": 31,
+          "keys": [
+            "Cmd+U"
+          ],
+          "effect": "Undo the last cursor operation"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Code",
+      "note": "Availability depends on the language support and the symbol under the cursor.",
+      "bindings": [
+        {
+          "id": 32,
+          "keys": [
+            "Ctrl+Space"
+          ],
+          "effect": "Trigger completion suggestions"
+        },
+        {
+          "id": 33,
+          "keys": [
+            "Cmd+Shift+Space"
+          ],
+          "effect": "Show parameter hints"
+        },
+        {
+          "id": 34,
+          "keys": [
+            "Cmd+."
+          ],
+          "effect": "Show Quick Fix actions"
+        },
+        {
+          "id": 35,
+          "keys": [
+            "F12"
+          ],
+          "effect": "Go to definition"
+        },
+        {
+          "id": 36,
+          "keys": [
+            "Opt+F12"
+          ],
+          "effect": "Peek definition"
+        },
+        {
+          "id": 37,
+          "keys": [
+            "Shift+F12"
+          ],
+          "effect": "Show references"
+        },
+        {
+          "id": 38,
+          "keys": [
+            "F2"
+          ],
+          "effect": "Rename a symbol"
+        },
+        {
+          "id": 39,
+          "keys": [
+            "Cmd+K Cmd+I"
+          ],
+          "effect": "Show hover information"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Files and editor groups",
+      "bindings": [
+        {
+          "id": 40,
+          "keys": [
+            "Cmd+N"
+          ],
+          "effect": "Create a new file"
+        },
+        {
+          "id": 41,
+          "keys": [
+            "Cmd+O"
+          ],
+          "effect": "Open a file"
+        },
+        {
+          "id": 42,
+          "keys": [
+            "Cmd+S"
+          ],
+          "effect": "Save the file"
+        },
+        {
+          "id": 43,
+          "keys": [
+            "Cmd+Shift+S"
+          ],
+          "effect": "Save the file as"
+        },
+        {
+          "id": 44,
+          "keys": [
+            "Cmd+W"
+          ],
+          "effect": "Close the editor"
+        },
+        {
+          "id": 45,
+          "keys": [
+            "Cmd+Shift+T"
+          ],
+          "effect": "Reopen the last closed editor"
+        },
+        {
+          "id": 46,
+          "keys": [
+            "Cmd+\\"
+          ],
+          "effect": "Split the editor"
+        },
+        {
+          "id": 47,
+          "keys": [
+            "Cmd+1"
+          ],
+          "effect": "Focus the first editor group"
+        },
+        {
+          "id": 48,
+          "keys": [
+            "Cmd+2"
+          ],
+          "effect": "Focus the second editor group"
+        },
+        {
+          "id": 49,
+          "keys": [
+            "Cmd+3"
+          ],
+          "effect": "Focus the third editor group"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Views and terminal",
+      "bindings": [
+        {
+          "id": 50,
+          "keys": [
+            "Cmd+B"
+          ],
+          "effect": "Toggle the primary sidebar"
+        },
+        {
+          "id": 51,
+          "keys": [
+            "Cmd+Shift+E"
+          ],
+          "effect": "Show Explorer"
+        },
+        {
+          "id": 52,
+          "keys": [
+            "Ctrl+Shift+G"
+          ],
+          "effect": "Show Source Control"
+        },
+        {
+          "id": 53,
+          "keys": [
+            "Cmd+Shift+D"
+          ],
+          "effect": "Show Run and Debug"
+        },
+        {
+          "id": 54,
+          "keys": [
+            "Cmd+Shift+X"
+          ],
+          "effect": "Show Extensions"
+        },
+        {
+          "id": 55,
+          "keys": [
+            "Cmd+,"
+          ],
+          "effect": "Open Settings"
+        },
+        {
+          "id": 56,
+          "keys": [
+            "Cmd+K Cmd+S"
+          ],
+          "effect": "Open Keyboard Shortcuts"
+        },
+        {
+          "id": 57,
+          "keys": [
+            "Ctrl+`"
+          ],
+          "effect": "Toggle the integrated terminal"
+        },
+        {
+          "id": 58,
+          "keys": [
+            "Ctrl+Shift+`"
+          ],
+          "effect": "Create a new integrated terminal"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Debugging",
+      "note": "Starting may require a launch configuration. Stepping actions apply while paused.",
+      "bindings": [
+        {
+          "id": 59,
+          "keys": [
+            "F9"
+          ],
+          "effect": "Toggle a breakpoint"
+        },
+        {
+          "id": 60,
+          "keys": [
+            "F5"
+          ],
+          "effect": "Start or continue debugging"
+        },
+        {
+          "id": 61,
+          "keys": [
+            "F10"
+          ],
+          "effect": "Step over"
+        },
+        {
+          "id": 62,
+          "keys": [
+            "F11"
+          ],
+          "effect": "Step into"
+        },
+        {
+          "id": 63,
+          "keys": [
+            "Shift+F11"
+          ],
+          "effect": "Step out"
+        },
+        {
+          "id": 64,
+          "keys": [
+            "Shift+F5"
+          ],
+          "effect": "Stop debugging"
+        }
+      ]
+    }
+  ]
+}

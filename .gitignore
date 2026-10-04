@@ -16,3 +16,6 @@ zig-out/
 /build/
 /build-*/
 /docgen_tmp/
+
+# Finder creates this when a file is dragged into `data/`.
+.DS_Store

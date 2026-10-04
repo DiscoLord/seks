@@ -1,0 +1,231 @@
+{
+  "full_name": "Figma",
+  "source": "https://help.figma.com/hc/en-us/articles/360040328653-Use-Figma-products-with-a-keyboard",
+  "note": "Figma Design; US QWERTY layout. Linux uses the browser app. Keep canvas focus for canvas shortcuts.",
+  "binding_groups": [
+    {
+      "id": 1,
+      "title": "Explore the canvas",
+      "bindings": [
+        {
+          "id": 1,
+          "keys": [
+            "h"
+          ],
+          "effect": "Hand tool"
+        },
+        {
+          "id": 2,
+          "keys": [
+            "Shift+1"
+          ],
+          "effect": "Fit canvas"
+        },
+        {
+          "id": 3,
+          "keys": [
+            "Shift+2"
+          ],
+          "effect": "Fit selection"
+        },
+        {
+          "id": 4,
+          "keys": [
+            "Shift+Plus"
+          ],
+          "effect": "Zoom in"
+        },
+        {
+          "id": 5,
+          "keys": [
+            "Shift+-"
+          ],
+          "effect": "Zoom out"
+        },
+        {
+          "id": 6,
+          "keys": [
+            "Ctrl+Shift+?"
+          ],
+          "effect": "Shortcut reference"
+        }
+      ],
+      "note": "Single-letter tools apply outside text fields. The hand tool lets you pan without moving layers."
+    },
+    {
+      "id": 2,
+      "title": "Layer selection",
+      "bindings": [
+        {
+          "id": 7,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Select child"
+        },
+        {
+          "id": 8,
+          "keys": [
+            "Shift+Enter"
+          ],
+          "effect": "Select parent"
+        },
+        {
+          "id": 9,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Next sibling"
+        },
+        {
+          "id": 10,
+          "keys": [
+            "Shift+Tab"
+          ],
+          "effect": "Previous sibling"
+        },
+        {
+          "id": 11,
+          "keys": [
+            "Cmd+A"
+          ],
+          "effect": "Select all"
+        },
+        {
+          "id": 12,
+          "keys": [
+            "Cmd+Shift+A"
+          ],
+          "effect": "Invert selection"
+        },
+        {
+          "id": 13,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Clear selection"
+        },
+        {
+          "id": 14,
+          "keys": [
+            "Cmd+Opt+A"
+          ],
+          "effect": "Select matching layers"
+        }
+      ],
+      "note": "With a layer selected on the canvas. Matching layers must be inside corresponding top-level frames or groups."
+    },
+    {
+      "id": 3,
+      "title": "Review and handoff",
+      "bindings": [
+        {
+          "id": 15,
+          "keys": [
+            "c"
+          ],
+          "effect": "Comment mode"
+        },
+        {
+          "id": 16,
+          "keys": [
+            "Shift+C"
+          ],
+          "effect": "Toggle comments"
+        },
+        {
+          "id": 17,
+          "keys": [
+            "Shift+D"
+          ],
+          "effect": "Toggle Dev Mode"
+        }
+      ],
+      "note": "Dev Mode features depend on your seat and file access. Single-letter shortcuts apply outside text fields."
+    },
+    {
+      "id": 4,
+      "title": "Actions and creation",
+      "bindings": [
+        {
+          "id": 18,
+          "keys": [
+            "Cmd+K"
+          ],
+          "effect": "Actions menu"
+        },
+        {
+          "id": 19,
+          "keys": [
+            "f"
+          ],
+          "effect": "Frame tool"
+        },
+        {
+          "id": 20,
+          "keys": [
+            "t"
+          ],
+          "effect": "Text tool"
+        },
+        {
+          "id": 21,
+          "keys": [
+            "r"
+          ],
+          "effect": "Rectangle tool"
+        },
+        {
+          "id": 22,
+          "keys": [
+            "Shift+S"
+          ],
+          "effect": "Section tool"
+        },
+        {
+          "id": 23,
+          "keys": [
+            "Cmd+Shift+K"
+          ],
+          "effect": "Place image or video"
+        },
+        {
+          "id": 24,
+          "keys": [
+            "Shift+A"
+          ],
+          "effect": "Add auto layout"
+        },
+        {
+          "id": 25,
+          "keys": [
+            "Cmd+Opt+K"
+          ],
+          "effect": "Create component"
+        }
+      ],
+      "note": "Requires edit access. Auto layout and component creation use the current selection."
+    },
+    {
+      "id": 5,
+      "title": "Transfer properties",
+      "bindings": [
+        {
+          "id": 26,
+          "keys": [
+            "Cmd+Opt+C"
+          ],
+          "effect": "Copy properties"
+        },
+        {
+          "id": 27,
+          "keys": [
+            "Cmd+Opt+V"
+          ],
+          "effect": "Paste properties"
+        }
+      ],
+      "note": "Select a source layer to copy properties, then a target layer to paste. Pasting requires edit access."
+    }
+  ]
+}

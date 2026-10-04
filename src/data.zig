@@ -19,6 +19,37 @@ pub const version: []const u8 = @import("build_options").version;
 /// together, so the key itself needs a name.
 pub const plus_key = "Plus";
 
+/// The only spelling of each named key in the data. A key that is not in
+/// this list, such as a letter or `Click`, has no fixed spelling.
+pub const key_names = [_][]const u8{
+    "Enter",    "Esc",    "Tab",  "Space", "Backspace", "Delete", "Insert",
+    "Up",       "Down",   "Left", "Right", "Home",      "End",    "PageUp",
+    "PageDown", plus_key,
+};
+
+/// Other spellings of the keys in `key_names`. The data check rejects them
+/// and so keeps one spelling per key.
+const KeyAlias = struct { alias: []const u8, name: []const u8 };
+const key_aliases = [_]KeyAlias{
+    .{ .alias = "Return", .name = "Enter" },
+    .{ .alias = "Escape", .name = "Esc" },
+    .{ .alias = "Spacebar", .name = "Space" },
+    .{ .alias = "Bksp", .name = "Backspace" },
+    .{ .alias = "Del", .name = "Delete" },
+    .{ .alias = "Ins", .name = "Insert" },
+    .{ .alias = "PgUp", .name = "PageUp" },
+    .{ .alias = "PgDn", .name = "PageDown" },
+    .{ .alias = "PgDown", .name = "PageDown" },
+    .{ .alias = "ArrowUp", .name = "Up" },
+    .{ .alias = "ArrowDown", .name = "Down" },
+    .{ .alias = "ArrowLeft", .name = "Left" },
+    .{ .alias = "ArrowRight", .name = "Right" },
+    .{ .alias = "↑", .name = "Up" },
+    .{ .alias = "↓", .name = "Down" },
+    .{ .alias = "←", .name = "Left" },
+    .{ .alias = "→", .name = "Right" },
+};
+
 pub const Platform = enum {
     macos,
     linux,
@@ -199,18 +230,21 @@ fn validate(
 }
 
 /// Returns true when every modifier in `alternative` is spelled as in
-/// `platform.modifiers()`.
+/// `platform.modifiers()` and every named key as in `key_names`.
 ///
 /// A step is a part between spaces. A step is a key combination when its
 /// first `+` follows a capitalised word, or a modifier in the wrong case.
-/// Any other step is literal text, such as the vim command `"+p`, and
-/// passes. In a key combination, every part before the last `+` must be a
-/// modifier, and the last part must not be empty. Write the plus key as
-/// `Plus`.
+/// Any other step with a `+` is literal text, such as the vim command
+/// `"+p`, and passes. In a key combination, every part before the last `+`
+/// must be a modifier, and the last part must not be empty. Write the plus
+/// key as `Plus`.
 fn isValidKeys(alternative: []const u8, platform: Platform) bool {
     var steps = std.mem.tokenizeScalar(u8, alternative, ' ');
     while (steps.next()) |step| {
-        const first_plus = std.mem.indexOfScalar(u8, step, '+') orelse continue;
+        const first_plus = std.mem.indexOfScalar(u8, step, '+') orelse {
+            if (!isValidKeyName(step, .alone)) return false;
+            continue;
+        };
         const first_part = step[0..first_plus];
         const is_combination = isModifierInAnyCase(first_part, platform) or
             (first_part.len >= 2 and std.ascii.isUpper(first_part[0]));
@@ -223,6 +257,51 @@ fn isValidKeys(alternative: []const u8, platform: Platform) bool {
         while (parts.next()) |part| {
             if (!isModifier(part, platform)) return false;
         }
+        if (!isValidKeyName(step[last_plus + 1 ..], .in_combination)) return false;
+    }
+    return true;
+}
+
+/// Returns false when `key` is a named key in a spelling other than the one
+/// in `key_names`: another case, or an alias such as `Return` for `Enter`.
+/// Returns true for the fixed spelling and for every key with no name in
+/// the list.
+///
+/// A lowercase word that stands `.alone` passes. It can be literal text,
+/// such as `left` in a command. After a modifier it can only be a key.
+fn isValidKeyName(key: []const u8, place: enum { alone, in_combination }) bool {
+    if (isFunctionKeyInAnyCase(key)) return key[0] == 'F';
+
+    const name = fixedKeyName(key) orelse return true;
+    if (std.mem.eql(u8, key, name)) return true;
+    return place == .alone and isLowercaseWord(key);
+}
+
+/// Returns the fixed spelling of `key` when it is a named key in any case
+/// or an alias of one. Returns null for every other key.
+fn fixedKeyName(key: []const u8) ?[]const u8 {
+    for (key_names) |name| {
+        if (std.ascii.eqlIgnoreCase(key, name)) return name;
+    }
+    for (key_aliases) |entry| {
+        if (std.ascii.eqlIgnoreCase(key, entry.alias)) return entry.name;
+    }
+    return null;
+}
+
+/// Returns true for `F1` to `F99` and for the same with a lowercase `f`.
+fn isFunctionKeyInAnyCase(key: []const u8) bool {
+    if (key.len < 2 or key.len > 3) return false;
+    if (key[0] != 'F' and key[0] != 'f') return false;
+    for (key[1..]) |char| {
+        if (!std.ascii.isDigit(char)) return false;
+    }
+    return true;
+}
+
+fn isLowercaseWord(text: []const u8) bool {
+    for (text) |char| {
+        if (!std.ascii.isLower(char)) return false;
     }
     return true;
 }
@@ -463,6 +542,43 @@ test "isValidKeys rejects every other modifier spelling" {
 
     // Keys pressed in order need a space, not a `+`.
     try testing.expect(!isValidKeys("Prefix+c", .macos));
+}
+
+test "isValidKeys accepts the fixed key names and keys with no fixed name" {
+    try testing.expect(isValidKeys("Enter", .macos));
+    try testing.expect(isValidKeys("Esc", .macos));
+    try testing.expect(isValidKeys("Ctrl+Enter", .macos));
+    try testing.expect(isValidKeys("Cmd+Shift+PageDown", .macos));
+    try testing.expect(isValidKeys("F5", .macos));
+    try testing.expect(isValidKeys("Shift+F12", .macos));
+    try testing.expect(isValidKeys("Prefix Up", .macos));
+
+    // A key that is not in the list has no fixed spelling.
+    try testing.expect(isValidKeys("Cmd+Click", .macos));
+    try testing.expect(isValidKeys("VolumeUp", .macos));
+
+    // A lowercase word with no modifier can be literal text.
+    try testing.expect(isValidKeys("focus left", .linux));
+    try testing.expect(isValidKeys(":tab split", .macos));
+}
+
+test "isValidKeys rejects every other spelling of a named key" {
+    // An alias.
+    try testing.expect(!isValidKeys("Return", .macos));
+    try testing.expect(!isValidKeys("Escape", .macos));
+    try testing.expect(!isValidKeys("Cmd+Return", .macos));
+    try testing.expect(!isValidKeys("Cmd+Del", .macos));
+    try testing.expect(!isValidKeys("Ctrl+PgUp", .macos));
+    try testing.expect(!isValidKeys("Spacebar", .macos));
+    try testing.expect(!isValidKeys("Prefix ←", .macos));
+
+    // Another case.
+    try testing.expect(!isValidKeys("ESC", .macos));
+    try testing.expect(!isValidKeys("Pageup", .macos));
+    try testing.expect(!isValidKeys("Ctrl+enter", .macos));
+    try testing.expect(!isValidKeys("Ctrl+plus", .macos));
+    try testing.expect(!isValidKeys("f5", .macos));
+    try testing.expect(!isValidKeys("Ctrl+f5", .macos));
 }
 
 test "isValidName" {

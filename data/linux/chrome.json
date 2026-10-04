@@ -1,0 +1,370 @@
+{
+  "full_name": "Google Chrome",
+  "source": "https://support.google.com/chrome/answer/157179",
+  "note": "Default browser shortcuts. DevTools groups require focus inside DevTools.",
+  "binding_groups": [
+    {
+      "id": 1,
+      "title": "Tabs and windows",
+      "bindings": [
+        {
+          "id": 1,
+          "keys": [
+            "Ctrl+T"
+          ],
+          "effect": "New tab"
+        },
+        {
+          "id": 2,
+          "keys": [
+            "Ctrl+Shift+T"
+          ],
+          "effect": "Restore closed tab"
+        },
+        {
+          "id": 3,
+          "keys": [
+            "Ctrl+W"
+          ],
+          "effect": "Close tab"
+        },
+        {
+          "id": 4,
+          "keys": [
+            "Ctrl+N"
+          ],
+          "effect": "New window"
+        },
+        {
+          "id": 5,
+          "keys": [
+            "Ctrl+Shift+N"
+          ],
+          "effect": "Incognito window"
+        },
+        {
+          "id": 6,
+          "keys": [
+            "Ctrl+Shift+W"
+          ],
+          "effect": "Close window"
+        },
+        {
+          "id": 7,
+          "keys": [
+            "Ctrl+Tab"
+          ],
+          "effect": "Next tab"
+        },
+        {
+          "id": 8,
+          "keys": [
+            "Ctrl+Shift+Tab"
+          ],
+          "effect": "Previous tab"
+        },
+        {
+          "id": 9,
+          "keys": [
+            "Ctrl+1"
+          ],
+          "effect": "First tab"
+        },
+        {
+          "id": 10,
+          "keys": [
+            "Ctrl+9"
+          ],
+          "effect": "Last tab"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Navigation and search",
+      "bindings": [
+        {
+          "id": 11,
+          "keys": [
+            "Ctrl+L"
+          ],
+          "effect": "Address bar"
+        },
+        {
+          "id": 12,
+          "keys": [
+            "Alt+Left"
+          ],
+          "effect": "Back"
+        },
+        {
+          "id": 13,
+          "keys": [
+            "Alt+Right"
+          ],
+          "effect": "Forward"
+        },
+        {
+          "id": 14,
+          "keys": [
+            "Ctrl+R"
+          ],
+          "effect": "Reload"
+        },
+        {
+          "id": 15,
+          "keys": [
+            "Ctrl+Shift+R"
+          ],
+          "effect": "Reload without cache"
+        },
+        {
+          "id": 16,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Stop loading"
+        },
+        {
+          "id": 17,
+          "keys": [
+            "Ctrl+F"
+          ],
+          "effect": "Find on page"
+        },
+        {
+          "id": 18,
+          "keys": [
+            "Ctrl+G"
+          ],
+          "effect": "Next match"
+        },
+        {
+          "id": 19,
+          "keys": [
+            "Ctrl+Shift+G"
+          ],
+          "effect": "Previous match"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Bookmarks and browser pages",
+      "bindings": [
+        {
+          "id": 20,
+          "keys": [
+            "Ctrl+D"
+          ],
+          "effect": "Bookmark page"
+        },
+        {
+          "id": 21,
+          "keys": [
+            "Ctrl+Shift+D"
+          ],
+          "effect": "Bookmark all tabs"
+        },
+        {
+          "id": 22,
+          "keys": [
+            "Ctrl+Shift+B"
+          ],
+          "effect": "Toggle bookmarks bar"
+        },
+        {
+          "id": 23,
+          "keys": [
+            "Ctrl+Shift+O"
+          ],
+          "effect": "Bookmark manager"
+        },
+        {
+          "id": 24,
+          "keys": [
+            "Ctrl+H"
+          ],
+          "effect": "History"
+        },
+        {
+          "id": 25,
+          "keys": [
+            "Ctrl+J"
+          ],
+          "effect": "Downloads"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Page display",
+      "bindings": [
+        {
+          "id": 26,
+          "keys": [
+            "Ctrl+Plus"
+          ],
+          "effect": "Zoom in"
+        },
+        {
+          "id": 27,
+          "keys": [
+            "Ctrl+-"
+          ],
+          "effect": "Zoom out"
+        },
+        {
+          "id": 28,
+          "keys": [
+            "Ctrl+0"
+          ],
+          "effect": "Reset zoom"
+        },
+        {
+          "id": 29,
+          "keys": [
+            "Ctrl+P"
+          ],
+          "effect": "Print"
+        },
+        {
+          "id": 30,
+          "keys": [
+            "Ctrl+S"
+          ],
+          "effect": "Save page"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Open developer tools",
+      "bindings": [
+        {
+          "id": 31,
+          "keys": [
+            "Ctrl+Shift+I"
+          ],
+          "effect": "Open DevTools"
+        },
+        {
+          "id": 32,
+          "keys": [
+            "Ctrl+Shift+J"
+          ],
+          "effect": "Open Console"
+        },
+        {
+          "id": 33,
+          "keys": [
+            "Ctrl+Shift+C"
+          ],
+          "effect": "Inspect element"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "DevTools navigation",
+      "bindings": [
+        {
+          "id": 34,
+          "keys": [
+            "Ctrl+Shift+P"
+          ],
+          "effect": "Command menu"
+        },
+        {
+          "id": 35,
+          "keys": [
+            "Ctrl+Shift+Ctrl"
+          ],
+          "effect": "Toggle device emulation"
+        },
+        {
+          "id": 36,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Toggle drawer"
+        },
+        {
+          "id": 37,
+          "keys": [
+            "Ctrl+P",
+            "Ctrl+O"
+          ],
+          "effect": "Open source file"
+        },
+        {
+          "id": 38,
+          "keys": [
+            "Ctrl+Shift+F"
+          ],
+          "effect": "Search loaded resources"
+        },
+        {
+          "id": 39,
+          "keys": [
+            "Ctrl+F"
+          ],
+          "effect": "Find in panel"
+        }
+      ],
+      "note": "DevTools focused. Uses the default DevTools keymap; reference: https://developer.chrome.com/docs/devtools/shortcuts"
+    },
+    {
+      "id": 7,
+      "title": "DevTools debugger",
+      "bindings": [
+        {
+          "id": 40,
+          "keys": [
+            "F8"
+          ],
+          "effect": "Pause or resume"
+        },
+        {
+          "id": 41,
+          "keys": [
+            "F10"
+          ],
+          "effect": "Step over"
+        },
+        {
+          "id": 42,
+          "keys": [
+            "F11"
+          ],
+          "effect": "Step into"
+        },
+        {
+          "id": 43,
+          "keys": [
+            "Shift+F11"
+          ],
+          "effect": "Step out"
+        },
+        {
+          "id": 44,
+          "keys": [
+            "Ctrl+B"
+          ],
+          "effect": "Toggle breakpoint"
+        },
+        {
+          "id": 45,
+          "keys": [
+            "Ctrl+G"
+          ],
+          "effect": "Go to line"
+        }
+      ],
+      "note": "Sources panel focused. Stepping requires paused execution; toggle breakpoint uses the current editor line."
+    }
+  ],
+  "aliases": [
+    "google chrome"
+  ]
+}

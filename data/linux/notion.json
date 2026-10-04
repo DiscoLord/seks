@@ -1,0 +1,274 @@
+{
+  "full_name": "Notion",
+  "source": "https://www.notion.com/help/keyboard-shortcuts",
+  "note": "English/QWERTY shortcuts. Linux uses the web app; focus the page editor to avoid browser shortcut conflicts.",
+  "binding_groups": [
+    {
+      "id": 1,
+      "title": "Find and navigate",
+      "bindings": [
+        {
+          "id": 1,
+          "keys": [
+            "Ctrl+P",
+            "Ctrl+K"
+          ],
+          "effect": "Page search"
+        },
+        {
+          "id": 2,
+          "keys": [
+            "Ctrl+F"
+          ],
+          "effect": "Find on page"
+        },
+        {
+          "id": 3,
+          "keys": [
+            "Ctrl+["
+          ],
+          "effect": "Back"
+        },
+        {
+          "id": 4,
+          "keys": [
+            "Ctrl+]"
+          ],
+          "effect": "Forward"
+        },
+        {
+          "id": 5,
+          "keys": [
+            "Ctrl+Shift+U"
+          ],
+          "effect": "Parent page"
+        },
+        {
+          "id": 6,
+          "keys": [
+            "Ctrl+Shift+L"
+          ],
+          "effect": "Toggle theme"
+        }
+      ],
+      "note": "Use page search outside a text selection; with text selected, Cmd/Ctrl+K inserts a link."
+    },
+    {
+      "id": 2,
+      "title": "Text and comments",
+      "bindings": [
+        {
+          "id": 7,
+          "keys": [
+            "Shift+Enter"
+          ],
+          "effect": "Line break"
+        },
+        {
+          "id": 8,
+          "keys": [
+            "Ctrl+B"
+          ],
+          "effect": "Bold"
+        },
+        {
+          "id": 9,
+          "keys": [
+            "Ctrl+I"
+          ],
+          "effect": "Italic"
+        },
+        {
+          "id": 10,
+          "keys": [
+            "Ctrl+U"
+          ],
+          "effect": "Underline"
+        },
+        {
+          "id": 11,
+          "keys": [
+            "Ctrl+Shift+S"
+          ],
+          "effect": "Strikethrough"
+        },
+        {
+          "id": 12,
+          "keys": [
+            "Ctrl+E"
+          ],
+          "effect": "Inline code"
+        },
+        {
+          "id": 13,
+          "keys": [
+            "Ctrl+K"
+          ],
+          "effect": "Insert link"
+        },
+        {
+          "id": 14,
+          "keys": [
+            "Ctrl+Shift+Ctrl"
+          ],
+          "effect": "Comment"
+        },
+        {
+          "id": 15,
+          "keys": [
+            "Ctrl+Shift+H"
+          ],
+          "effect": "Reuse last color"
+        }
+      ],
+      "note": "Formatting and links apply to selected text."
+    },
+    {
+      "id": 3,
+      "title": "Block types",
+      "bindings": [
+        {
+          "id": 16,
+          "keys": [
+            "Ctrl+Shift+0"
+          ],
+          "effect": "Text"
+        },
+        {
+          "id": 17,
+          "keys": [
+            "Ctrl+Shift+1"
+          ],
+          "effect": "Heading 1"
+        },
+        {
+          "id": 18,
+          "keys": [
+            "Ctrl+Shift+2"
+          ],
+          "effect": "Heading 2"
+        },
+        {
+          "id": 19,
+          "keys": [
+            "Ctrl+Shift+3"
+          ],
+          "effect": "Heading 3"
+        },
+        {
+          "id": 20,
+          "keys": [
+            "Ctrl+Shift+4"
+          ],
+          "effect": "Checkbox"
+        },
+        {
+          "id": 21,
+          "keys": [
+            "Ctrl+Shift+5"
+          ],
+          "effect": "Bullets"
+        },
+        {
+          "id": 22,
+          "keys": [
+            "Ctrl+Shift+6"
+          ],
+          "effect": "Numbered list"
+        },
+        {
+          "id": 23,
+          "keys": [
+            "Ctrl+Shift+7"
+          ],
+          "effect": "Toggle list"
+        },
+        {
+          "id": 24,
+          "keys": [
+            "Ctrl+Shift+8"
+          ],
+          "effect": "Code block"
+        },
+        {
+          "id": 25,
+          "keys": [
+            "Ctrl+Shift+9"
+          ],
+          "effect": "Page"
+        }
+      ],
+      "note": "With the cursor in a block or a block selected."
+    },
+    {
+      "id": 4,
+      "title": "Arrange blocks",
+      "bindings": [
+        {
+          "id": 26,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Select or deselect block"
+        },
+        {
+          "id": 27,
+          "keys": [
+            "Ctrl+D"
+          ],
+          "effect": "Duplicate"
+        },
+        {
+          "id": 28,
+          "keys": [
+            "Ctrl+/"
+          ],
+          "effect": "Block actions"
+        },
+        {
+          "id": 29,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Indent"
+        },
+        {
+          "id": 30,
+          "keys": [
+            "Shift+Tab"
+          ],
+          "effect": "Outdent"
+        },
+        {
+          "id": 31,
+          "keys": [
+            "Ctrl+Shift+Up"
+          ],
+          "effect": "Move up"
+        },
+        {
+          "id": 32,
+          "keys": [
+            "Ctrl+Shift+Down"
+          ],
+          "effect": "Move down"
+        },
+        {
+          "id": 33,
+          "keys": [
+            "Ctrl+Enter"
+          ],
+          "effect": "Activate block"
+        },
+        {
+          "id": 34,
+          "keys": [
+            "Ctrl+Alt+T"
+          ],
+          "effect": "Expand or collapse toggles"
+        }
+      ],
+      "note": "Select blocks first. Activate opens pages, toggles checkboxes or lists, or expands images and embeds."
+    }
+  ]
+}

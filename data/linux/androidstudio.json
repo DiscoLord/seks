@@ -1,0 +1,490 @@
+{
+  "aliases": [
+    "android studio"
+  ],
+  "full_name": "Android Studio",
+  "note": "Default Linux keymap; alternate JetBrains keymaps may differ.",
+  "source": "https://developer.android.com/studio/intro/keyboard-shortcuts",
+  "binding_groups": [
+    {
+      "id": 1,
+      "title": "Navigation",
+      "note": "For Shift Shift, press and release Shift twice.",
+      "bindings": [
+        {
+          "id": 1,
+          "keys": [
+            "Shift Shift"
+          ],
+          "effect": "Search everywhere"
+        },
+        {
+          "id": 2,
+          "keys": [
+            "Ctrl+Shift+A"
+          ],
+          "effect": "Find an action"
+        },
+        {
+          "id": 3,
+          "keys": [
+            "Ctrl+N"
+          ],
+          "effect": "Go to a class"
+        },
+        {
+          "id": 4,
+          "keys": [
+            "Ctrl+Shift+N"
+          ],
+          "effect": "Go to a file"
+        },
+        {
+          "id": 5,
+          "keys": [
+            "Ctrl+Shift+Alt+N"
+          ],
+          "effect": "Go to a symbol"
+        },
+        {
+          "id": 6,
+          "keys": [
+            "Ctrl+E"
+          ],
+          "effect": "Show recent files"
+        },
+        {
+          "id": 7,
+          "keys": [
+            "Ctrl+F12"
+          ],
+          "effect": "Show file structure"
+        },
+        {
+          "id": 8,
+          "keys": [
+            "Ctrl+G"
+          ],
+          "effect": "Go to a line"
+        },
+        {
+          "id": 9,
+          "keys": [
+            "Ctrl+B"
+          ],
+          "effect": "Go to declaration"
+        },
+        {
+          "id": 10,
+          "keys": [
+            "Ctrl+Alt+B"
+          ],
+          "effect": "Go to implementation"
+        },
+        {
+          "id": 11,
+          "keys": [
+            "Ctrl+U"
+          ],
+          "effect": "Go to the super method or class"
+        },
+        {
+          "id": 12,
+          "keys": [
+            "Alt+F7"
+          ],
+          "effect": "Find usages"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Search",
+      "bindings": [
+        {
+          "id": 13,
+          "keys": [
+            "Ctrl+F"
+          ],
+          "effect": "Find in the current file"
+        },
+        {
+          "id": 14,
+          "keys": [
+            "Ctrl+R"
+          ],
+          "effect": "Replace in the current file"
+        },
+        {
+          "id": 15,
+          "keys": [
+            "Ctrl+Shift+F"
+          ],
+          "effect": "Find in the project"
+        },
+        {
+          "id": 16,
+          "keys": [
+            "F3"
+          ],
+          "effect": "Find the next match"
+        },
+        {
+          "id": 17,
+          "keys": [
+            "Shift+F3"
+          ],
+          "effect": "Find the previous match"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Editing",
+      "bindings": [
+        {
+          "id": 18,
+          "keys": [
+            "Ctrl+D"
+          ],
+          "effect": "Duplicate the line or selection"
+        },
+        {
+          "id": 19,
+          "keys": [
+            "Shift+Enter"
+          ],
+          "effect": "Start a new line below"
+        },
+        {
+          "id": 20,
+          "keys": [
+            "Ctrl+/"
+          ],
+          "effect": "Toggle a line comment"
+        },
+        {
+          "id": 21,
+          "keys": [
+            "Ctrl+Shift+/"
+          ],
+          "effect": "Toggle a block comment"
+        },
+        {
+          "id": 22,
+          "keys": [
+            "Ctrl+W"
+          ],
+          "effect": "Expand the selection"
+        },
+        {
+          "id": 23,
+          "keys": [
+            "Ctrl+Shift+W"
+          ],
+          "effect": "Shrink the selection"
+        },
+        {
+          "id": 24,
+          "keys": [
+            "Ctrl+Space"
+          ],
+          "effect": "Complete code"
+        },
+        {
+          "id": 25,
+          "keys": [
+            "Ctrl+Shift+Space"
+          ],
+          "effect": "Complete code using the expected type"
+        },
+        {
+          "id": 26,
+          "keys": [
+            "Ctrl+Shift+Enter"
+          ],
+          "effect": "Complete the current statement"
+        },
+        {
+          "id": 27,
+          "keys": [
+            "Ctrl+P"
+          ],
+          "effect": "Show parameter information"
+        },
+        {
+          "id": 28,
+          "keys": [
+            "Ctrl+Q"
+          ],
+          "effect": "Show quick documentation"
+        },
+        {
+          "id": 29,
+          "keys": [
+            "Alt+Enter"
+          ],
+          "effect": "Show intention actions and quick fixes"
+        },
+        {
+          "id": 30,
+          "keys": [
+            "Ctrl+Alt+L"
+          ],
+          "effect": "Reformat code"
+        },
+        {
+          "id": 31,
+          "keys": [
+            "Ctrl+Alt+O"
+          ],
+          "effect": "Optimize imports"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Refactoring",
+      "note": "Available actions depend on the language and the current selection or symbol.",
+      "bindings": [
+        {
+          "id": 32,
+          "keys": [
+            "Shift+F6"
+          ],
+          "effect": "Rename a symbol"
+        },
+        {
+          "id": 33,
+          "keys": [
+            "Ctrl+F6"
+          ],
+          "effect": "Change a method signature"
+        },
+        {
+          "id": 34,
+          "keys": [
+            "Ctrl+Alt+M"
+          ],
+          "effect": "Extract a method"
+        },
+        {
+          "id": 35,
+          "keys": [
+            "Ctrl+Alt+V"
+          ],
+          "effect": "Extract a variable"
+        },
+        {
+          "id": 36,
+          "keys": [
+            "Ctrl+Alt+F"
+          ],
+          "effect": "Extract a field"
+        },
+        {
+          "id": 37,
+          "keys": [
+            "Ctrl+Alt+C"
+          ],
+          "effect": "Extract a constant"
+        },
+        {
+          "id": 38,
+          "keys": [
+            "Ctrl+Alt+P"
+          ],
+          "effect": "Extract a parameter"
+        },
+        {
+          "id": 39,
+          "keys": [
+            "Ctrl+Alt+N"
+          ],
+          "effect": "Inline a variable or method"
+        },
+        {
+          "id": 40,
+          "keys": [
+            "Ctrl+Alt+T"
+          ],
+          "effect": "Surround the selection with a code construct"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Tools and settings",
+      "bindings": [
+        {
+          "id": 41,
+          "keys": [
+            "Alt+1"
+          ],
+          "effect": "Open the Project tool window"
+        },
+        {
+          "id": 42,
+          "keys": [
+            "Alt+6"
+          ],
+          "effect": "Open Logcat"
+        },
+        {
+          "id": 43,
+          "keys": [
+            "Alt+9"
+          ],
+          "effect": "Open the Version Control tool window"
+        },
+        {
+          "id": 44,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Return focus to the editor"
+        },
+        {
+          "id": 45,
+          "keys": [
+            "Shift+Esc"
+          ],
+          "effect": "Hide the active tool window"
+        },
+        {
+          "id": 46,
+          "keys": [
+            "Ctrl+Alt+S"
+          ],
+          "effect": "Open Settings"
+        },
+        {
+          "id": 47,
+          "keys": [
+            "Ctrl+Shift+Alt+S"
+          ],
+          "effect": "Open Project Structure"
+        },
+        {
+          "id": 48,
+          "keys": [
+            "Ctrl+S"
+          ],
+          "effect": "Save all"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Build and run",
+      "note": "Run uses the selected configuration. Apply Changes requires a compatible running app and device.",
+      "bindings": [
+        {
+          "id": 49,
+          "keys": [
+            "Ctrl+F9"
+          ],
+          "effect": "Build the project"
+        },
+        {
+          "id": 50,
+          "keys": [
+            "Shift+F10"
+          ],
+          "effect": "Run the selected configuration"
+        },
+        {
+          "id": 51,
+          "keys": [
+            "Ctrl+F10"
+          ],
+          "effect": "Apply changes and restart the activity"
+        },
+        {
+          "id": 52,
+          "keys": [
+            "Ctrl+Alt+F10"
+          ],
+          "effect": "Apply code changes"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Debugging",
+      "note": "Stepping and expression evaluation apply while the debugger is paused.",
+      "bindings": [
+        {
+          "id": 53,
+          "keys": [
+            "Shift+F9"
+          ],
+          "effect": "Debug the selected configuration"
+        },
+        {
+          "id": 54,
+          "keys": [
+            "Ctrl+F8"
+          ],
+          "effect": "Toggle a line breakpoint"
+        },
+        {
+          "id": 55,
+          "keys": [
+            "Ctrl+Shift+F8"
+          ],
+          "effect": "View and manage breakpoints"
+        },
+        {
+          "id": 56,
+          "keys": [
+            "F8"
+          ],
+          "effect": "Step over"
+        },
+        {
+          "id": 57,
+          "keys": [
+            "F7"
+          ],
+          "effect": "Step into"
+        },
+        {
+          "id": 58,
+          "keys": [
+            "Shift+F7"
+          ],
+          "effect": "Smart step into"
+        },
+        {
+          "id": 59,
+          "keys": [
+            "Shift+F8"
+          ],
+          "effect": "Step out"
+        },
+        {
+          "id": 60,
+          "keys": [
+            "F9"
+          ],
+          "effect": "Resume execution"
+        },
+        {
+          "id": 61,
+          "keys": [
+            "Alt+F9"
+          ],
+          "effect": "Run to the cursor"
+        },
+        {
+          "id": 62,
+          "keys": [
+            "Alt+F8"
+          ],
+          "effect": "Evaluate an expression"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2232 @@
+{
+  "full_name": "Mozilla Firefox",
+  "note": "Default shortcuts; context and preference-dependent bindings are marked by section. DevTools reference: https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/",
+  "source": "https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+  "binding_groups": [
+    {
+      "id": 1,
+      "title": "Navigation",
+      "bindings": [
+        {
+          "id": 1,
+          "keys": [
+            "Cmd+Left",
+            "Cmd+["
+          ],
+          "effect": "Back"
+        },
+        {
+          "id": 2,
+          "keys": [
+            "Cmd+Right",
+            "Cmd+]"
+          ],
+          "effect": "Forward"
+        },
+        {
+          "id": 3,
+          "keys": [
+            "Opt+Home"
+          ],
+          "effect": "Home page"
+        },
+        {
+          "id": 4,
+          "keys": [
+            "Cmd+O"
+          ],
+          "effect": "Open local file"
+        },
+        {
+          "id": 5,
+          "keys": [
+            "Cmd+R",
+            "F5"
+          ],
+          "effect": "Reload"
+        },
+        {
+          "id": 6,
+          "keys": [
+            "Cmd+Shift+R"
+          ],
+          "effect": "Reload without cache"
+        },
+        {
+          "id": 7,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Stop loading"
+        },
+        {
+          "id": 8,
+          "keys": [
+            "Cmd+L",
+            "F6"
+          ],
+          "effect": "Focus address bar"
+        },
+        {
+          "id": 9,
+          "keys": [
+            "Cmd+K"
+          ],
+          "effect": "Focus web search"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Page navigation and display",
+      "bindings": [
+        {
+          "id": 10,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Next link or input"
+        },
+        {
+          "id": 11,
+          "keys": [
+            "Shift+Tab"
+          ],
+          "effect": "Previous link or input"
+        },
+        {
+          "id": 12,
+          "keys": [
+            "PageDown",
+            "Space"
+          ],
+          "effect": "Scroll down one screen"
+        },
+        {
+          "id": 13,
+          "keys": [
+            "PageUp",
+            "Shift+Space"
+          ],
+          "effect": "Scroll up one screen"
+        },
+        {
+          "id": 14,
+          "keys": [
+            "Cmd+Down",
+            "End"
+          ],
+          "effect": "Page bottom"
+        },
+        {
+          "id": 15,
+          "keys": [
+            "Cmd+Up",
+            "Home"
+          ],
+          "effect": "Page top"
+        },
+        {
+          "id": 16,
+          "keys": [
+            "F6"
+          ],
+          "effect": "Next frame or popup"
+        },
+        {
+          "id": 17,
+          "keys": [
+            "Shift+F6"
+          ],
+          "effect": "Previous frame or popup"
+        },
+        {
+          "id": 18,
+          "keys": [
+            "Cmd+P"
+          ],
+          "effect": "Print page"
+        },
+        {
+          "id": 19,
+          "keys": [
+            "Cmd+S"
+          ],
+          "effect": "Save page"
+        },
+        {
+          "id": 20,
+          "keys": [
+            "Cmd+Plus"
+          ],
+          "effect": "Zoom in"
+        },
+        {
+          "id": 21,
+          "keys": [
+            "Cmd+-"
+          ],
+          "effect": "Zoom out"
+        },
+        {
+          "id": 22,
+          "keys": [
+            "Cmd+0"
+          ],
+          "effect": "Reset zoom"
+        },
+        {
+          "id": 23,
+          "keys": [
+            "Cmd+Shift+F"
+          ],
+          "effect": "Toggle full screen"
+        },
+        {
+          "id": 24,
+          "keys": [
+            "Cmd+Opt+R"
+          ],
+          "effect": "Toggle Reader View"
+        },
+        {
+          "id": 25,
+          "keys": [
+            "F7"
+          ],
+          "effect": "Toggle caret browsing"
+        }
+      ],
+      "note": "Page-scrolling keys require page focus outside editable fields."
+    },
+    {
+      "id": 3,
+      "title": "Editing",
+      "bindings": [
+        {
+          "id": 26,
+          "keys": [
+            "Cmd+C"
+          ],
+          "effect": "Copy"
+        },
+        {
+          "id": 27,
+          "keys": [
+            "Cmd+X"
+          ],
+          "effect": "Cut"
+        },
+        {
+          "id": 28,
+          "keys": [
+            "Cmd+V"
+          ],
+          "effect": "Paste"
+        },
+        {
+          "id": 29,
+          "keys": [
+            "Cmd+Shift+V"
+          ],
+          "effect": "Paste without formatting"
+        },
+        {
+          "id": 30,
+          "keys": [
+            "Cmd+A"
+          ],
+          "effect": "Select all"
+        },
+        {
+          "id": 31,
+          "keys": [
+            "Cmd+Z"
+          ],
+          "effect": "Undo"
+        },
+        {
+          "id": 32,
+          "keys": [
+            "Cmd+Shift+Z"
+          ],
+          "effect": "Redo"
+        }
+      ],
+      "note": "Editable field focused."
+    },
+    {
+      "id": 4,
+      "title": "Find",
+      "bindings": [
+        {
+          "id": 33,
+          "keys": [
+            "Cmd+F"
+          ],
+          "effect": "Find on page"
+        },
+        {
+          "id": 34,
+          "keys": [
+            "Cmd+G",
+            "F3"
+          ],
+          "effect": "Next match"
+        },
+        {
+          "id": 35,
+          "keys": [
+            "Cmd+Shift+G",
+            "Shift+F3"
+          ],
+          "effect": "Previous match"
+        },
+        {
+          "id": 36,
+          "keys": [
+            "/"
+          ],
+          "effect": "Quick find"
+        },
+        {
+          "id": 37,
+          "keys": [
+            "'"
+          ],
+          "effect": "Quick find links"
+        },
+        {
+          "id": 38,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Close find bar"
+        }
+      ],
+      "note": "Quick find requires page focus outside an input; Esc applies while the find bar is focused."
+    },
+    {
+      "id": 5,
+      "title": "Windows and tabs",
+      "bindings": [
+        {
+          "id": 39,
+          "keys": [
+            "Cmd+W"
+          ],
+          "effect": "Close unpinned tab"
+        },
+        {
+          "id": 40,
+          "keys": [
+            "Cmd+Shift+W"
+          ],
+          "effect": "Close window"
+        },
+        {
+          "id": 41,
+          "keys": [
+            "Cmd+Q"
+          ],
+          "effect": "Quit Firefox"
+        },
+        {
+          "id": 42,
+          "keys": [
+            "Cmd+Opt+Left",
+            "Ctrl+PageUp"
+          ],
+          "effect": "Previous tab"
+        },
+        {
+          "id": 43,
+          "keys": [
+            "Cmd+Opt+Right",
+            "Ctrl+PageDown"
+          ],
+          "effect": "Next tab"
+        },
+        {
+          "id": 44,
+          "keys": [
+            "Ctrl+M"
+          ],
+          "effect": "Toggle tab audio"
+        },
+        {
+          "id": 45,
+          "keys": [
+            "Cmd+T"
+          ],
+          "effect": "New tab"
+        },
+        {
+          "id": 46,
+          "keys": [
+            "Cmd+N"
+          ],
+          "effect": "New window"
+        },
+        {
+          "id": 47,
+          "keys": [
+            "Cmd+Shift+P"
+          ],
+          "effect": "New private window"
+        },
+        {
+          "id": 48,
+          "keys": [
+            "Cmd+Shift+T"
+          ],
+          "effect": "Reopen last closed tab or window"
+        },
+        {
+          "id": 49,
+          "keys": [
+            "Cmd+Shift+N"
+          ],
+          "effect": "Reopen last closed window"
+        },
+        {
+          "id": 50,
+          "keys": [
+            "Cmd+Shift+X"
+          ],
+          "effect": "Switch address-bar text direction"
+        }
+      ],
+      "note": "Pinned tabs are excluded from the close-tab shortcut. Reopening can restore the previous session if nothing remains to reopen."
+    },
+    {
+      "id": 6,
+      "title": "Numbered tabs",
+      "bindings": [
+        {
+          "id": 51,
+          "keys": [
+            "Cmd+1"
+          ],
+          "effect": "Tab 1"
+        },
+        {
+          "id": 52,
+          "keys": [
+            "Cmd+2"
+          ],
+          "effect": "Tab 2"
+        },
+        {
+          "id": 53,
+          "keys": [
+            "Cmd+3"
+          ],
+          "effect": "Tab 3"
+        },
+        {
+          "id": 54,
+          "keys": [
+            "Cmd+4"
+          ],
+          "effect": "Tab 4"
+        },
+        {
+          "id": 55,
+          "keys": [
+            "Cmd+5"
+          ],
+          "effect": "Tab 5"
+        },
+        {
+          "id": 56,
+          "keys": [
+            "Cmd+6"
+          ],
+          "effect": "Tab 6"
+        },
+        {
+          "id": 57,
+          "keys": [
+            "Cmd+7"
+          ],
+          "effect": "Tab 7"
+        },
+        {
+          "id": 58,
+          "keys": [
+            "Cmd+8"
+          ],
+          "effect": "Tab 8"
+        },
+        {
+          "id": 59,
+          "keys": [
+            "Cmd+9"
+          ],
+          "effect": "Last tab"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Tab cycling preference",
+      "bindings": [
+        {
+          "id": 60,
+          "keys": [
+            "Ctrl+Tab"
+          ],
+          "effect": "Cycle through recently used tabs"
+        },
+        {
+          "id": 61,
+          "keys": [
+            "Ctrl+Shift+Tab"
+          ],
+          "effect": "Show all tabs"
+        }
+      ],
+      "note": "When Settings > Ctrl+Tab cycles through tabs in recently used order is enabled. Otherwise these select the next and previous tab respectively."
+    },
+    {
+      "id": 8,
+      "title": "Move tabs",
+      "bindings": [
+        {
+          "id": 62,
+          "keys": [
+            "Ctrl+Shift+PageUp"
+          ],
+          "effect": "Move tab left"
+        },
+        {
+          "id": 63,
+          "keys": [
+            "Ctrl+Shift+PageDown"
+          ],
+          "effect": "Move tab right"
+        },
+        {
+          "id": 64,
+          "keys": [
+            "Cmd+Shift+Home"
+          ],
+          "effect": "Move tab to start"
+        },
+        {
+          "id": 65,
+          "keys": [
+            "Cmd+Shift+End"
+          ],
+          "effect": "Move tab to end"
+        }
+      ],
+      "note": "Tab strip focused. Focus the address bar, then press Shift+Tab until the tab has a focus border."
+    },
+    {
+      "id": 9,
+      "title": "Multiple tab selection",
+      "bindings": [
+        {
+          "id": 66,
+          "keys": [
+            "Left"
+          ],
+          "effect": "Select previous tab only"
+        },
+        {
+          "id": 67,
+          "keys": [
+            "Right"
+          ],
+          "effect": "Select next tab only"
+        },
+        {
+          "id": 68,
+          "keys": [
+            "Home"
+          ],
+          "effect": "Select first tab only"
+        },
+        {
+          "id": 69,
+          "keys": [
+            "End"
+          ],
+          "effect": "Select last tab only"
+        },
+        {
+          "id": 70,
+          "keys": [
+            "Cmd+Left"
+          ],
+          "effect": "Move focus to previous tab"
+        },
+        {
+          "id": 71,
+          "keys": [
+            "Cmd+Right"
+          ],
+          "effect": "Move focus to next tab"
+        },
+        {
+          "id": 72,
+          "keys": [
+            "Cmd+Home"
+          ],
+          "effect": "Move focus to first tab"
+        },
+        {
+          "id": 73,
+          "keys": [
+            "Cmd+End"
+          ],
+          "effect": "Move focus to last tab"
+        },
+        {
+          "id": 74,
+          "keys": [
+            "Cmd+Space"
+          ],
+          "effect": "Toggle focused tab selection"
+        }
+      ],
+      "note": "Tab strip focused; modifier navigation preserves the other selected tabs."
+    },
+    {
+      "id": 10,
+      "title": "Address and search fields",
+      "bindings": [
+        {
+          "id": 75,
+          "keys": [
+            "Opt+Enter"
+          ],
+          "effect": "Open in foreground tab"
+        },
+        {
+          "id": 76,
+          "keys": [
+            "Opt+Shift+Enter"
+          ],
+          "effect": "Open address in background tab"
+        },
+        {
+          "id": 77,
+          "keys": [
+            "Shift+Enter"
+          ],
+          "effect": "Open in new window"
+        },
+        {
+          "id": 78,
+          "keys": [
+            "Ctrl+Enter"
+          ],
+          "effect": "Complete a .com address"
+        },
+        {
+          "id": 79,
+          "keys": [
+            "Shift+Delete"
+          ],
+          "effect": "Remove highlighted autocomplete entry"
+        },
+        {
+          "id": 80,
+          "keys": [
+            "Opt+Down",
+            "Opt+Up"
+          ],
+          "effect": "Search-engine menu"
+        }
+      ],
+      "note": "Address field focused. Engine selection may first require focusing the Unified Search Button; the same menu shortcut works in the separate Search bar."
+    },
+    {
+      "id": 11,
+      "title": "Separate Search bar",
+      "bindings": [
+        {
+          "id": 81,
+          "keys": [
+            "Cmd+Shift+Enter"
+          ],
+          "effect": "Open search in background tab"
+        },
+        {
+          "id": 82,
+          "keys": [
+            "Cmd+Enter"
+          ],
+          "effect": "Open search in foreground tab"
+        },
+        {
+          "id": 83,
+          "keys": [
+            "Cmd+Down"
+          ],
+          "effect": "Next default search engine"
+        },
+        {
+          "id": 84,
+          "keys": [
+            "Cmd+Up"
+          ],
+          "effect": "Previous default search engine"
+        }
+      ],
+      "note": "The separate Search bar or New Tab search field. Foreground/background behavior reverses when immediate switching to new tabs is enabled."
+    },
+    {
+      "id": 12,
+      "title": "Focused links and bookmarks",
+      "bindings": [
+        {
+          "id": 85,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Open here"
+        },
+        {
+          "id": 86,
+          "keys": [
+            "Cmd+Enter"
+          ],
+          "effect": "Open link in background tab"
+        },
+        {
+          "id": 87,
+          "keys": [
+            "Cmd+Shift+Enter"
+          ],
+          "effect": "Open link in foreground tab"
+        },
+        {
+          "id": 88,
+          "keys": [
+            "Shift+Enter"
+          ],
+          "effect": "Open in new window"
+        }
+      ],
+      "note": "Link focused. For bookmarks, the background/foreground modifier shortcuts are reversed. New-tab switching preferences can also reverse them."
+    },
+    {
+      "id": 13,
+      "title": "History and bookmarks",
+      "bindings": [
+        {
+          "id": 89,
+          "keys": [
+            "Cmd+Shift+H"
+          ],
+          "effect": "History sidebar"
+        },
+        {
+          "id": 90,
+          "keys": [
+            "Cmd+Shift+Delete"
+          ],
+          "effect": "Clear recent history"
+        },
+        {
+          "id": 91,
+          "keys": [
+            "Cmd+Shift+D"
+          ],
+          "effect": "Bookmark all tabs"
+        },
+        {
+          "id": 92,
+          "keys": [
+            "Cmd+D"
+          ],
+          "effect": "Bookmark page"
+        },
+        {
+          "id": 93,
+          "keys": [
+            "Cmd+B"
+          ],
+          "effect": "Bookmarks sidebar"
+        },
+        {
+          "id": 94,
+          "keys": [
+            "Cmd+Shift+B"
+          ],
+          "effect": "Toggle bookmarks toolbar"
+        },
+        {
+          "id": 95,
+          "keys": [
+            "Cmd+Shift+O"
+          ],
+          "effect": "Bookmarks Library"
+        },
+        {
+          "id": 96,
+          "keys": [
+            "Space"
+          ],
+          "effect": "List all bookmarks"
+        }
+      ],
+      "note": "Space applies only in an empty bookmark search field."
+    },
+    {
+      "id": 14,
+      "title": "Browser tools",
+      "bindings": [
+        {
+          "id": 97,
+          "keys": [
+            "Cmd+J"
+          ],
+          "effect": "Downloads"
+        },
+        {
+          "id": 98,
+          "keys": [
+            "Cmd+Shift+A"
+          ],
+          "effect": "Add-ons manager"
+        },
+        {
+          "id": 99,
+          "keys": [
+            "Cmd+Shift+S"
+          ],
+          "effect": "Take screenshot"
+        },
+        {
+          "id": 100,
+          "keys": [
+            "Shift+Esc"
+          ],
+          "effect": "Task Manager"
+        },
+        {
+          "id": 101,
+          "keys": [
+            "Cmd+U"
+          ],
+          "effect": "Page source"
+        },
+        {
+          "id": 102,
+          "keys": [
+            "Cmd+I"
+          ],
+          "effect": "Page information"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Menus and dialogs",
+      "bindings": [
+        {
+          "id": 103,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Close menu, cancel drag or stop autoscroll"
+        },
+        {
+          "id": 104,
+          "keys": [
+            "F6",
+            "Cmd+F"
+          ],
+          "effect": "Focus Library search"
+        },
+        {
+          "id": 105,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Clear Library or sidebar search"
+        }
+      ],
+      "note": "The corresponding menu, drag, autoscroll or search must be active."
+    },
+    {
+      "id": 16,
+      "title": "PDF viewer",
+      "bindings": [
+        {
+          "id": 106,
+          "keys": [
+            "n",
+            "j",
+            "Right"
+          ],
+          "effect": "Next page"
+        },
+        {
+          "id": 107,
+          "keys": [
+            "p",
+            "k",
+            "Left"
+          ],
+          "effect": "Previous page"
+        },
+        {
+          "id": 108,
+          "keys": [
+            "Cmd+Plus"
+          ],
+          "effect": "Zoom in"
+        },
+        {
+          "id": 109,
+          "keys": [
+            "Cmd+-"
+          ],
+          "effect": "Zoom out"
+        },
+        {
+          "id": 110,
+          "keys": [
+            "Cmd+0"
+          ],
+          "effect": "Automatic zoom"
+        },
+        {
+          "id": 111,
+          "keys": [
+            "r"
+          ],
+          "effect": "Rotate clockwise"
+        },
+        {
+          "id": 112,
+          "keys": [
+            "Shift+R"
+          ],
+          "effect": "Rotate counterclockwise"
+        },
+        {
+          "id": 113,
+          "keys": [
+            "Cmd+Opt+P"
+          ],
+          "effect": "Presentation mode"
+        },
+        {
+          "id": 114,
+          "keys": [
+            "s"
+          ],
+          "effect": "Text selection tool"
+        },
+        {
+          "id": 115,
+          "keys": [
+            "h"
+          ],
+          "effect": "Hand tool"
+        },
+        {
+          "id": 116,
+          "keys": [
+            "Cmd+Opt+G"
+          ],
+          "effect": "Focus page number"
+        }
+      ],
+      "note": "Built-in PDF viewer focused, outside a text field."
+    },
+    {
+      "id": 17,
+      "title": "Media playback",
+      "bindings": [
+        {
+          "id": 117,
+          "keys": [
+            "Space"
+          ],
+          "effect": "Play or pause"
+        },
+        {
+          "id": 118,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Lower volume"
+        },
+        {
+          "id": 119,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Raise volume"
+        },
+        {
+          "id": 120,
+          "keys": [
+            "Cmd+Down"
+          ],
+          "effect": "Mute"
+        },
+        {
+          "id": 121,
+          "keys": [
+            "Cmd+Up"
+          ],
+          "effect": "Unmute"
+        },
+        {
+          "id": 122,
+          "keys": [
+            "Left"
+          ],
+          "effect": "Seek back 15 seconds"
+        },
+        {
+          "id": 123,
+          "keys": [
+            "Right"
+          ],
+          "effect": "Seek forward 15 seconds"
+        },
+        {
+          "id": 124,
+          "keys": [
+            "Cmd+Left"
+          ],
+          "effect": "Seek back 10 percent"
+        },
+        {
+          "id": 125,
+          "keys": [
+            "Cmd+Right"
+          ],
+          "effect": "Seek forward 10 percent"
+        },
+        {
+          "id": 126,
+          "keys": [
+            "Home"
+          ],
+          "effect": "Seek to start"
+        },
+        {
+          "id": 127,
+          "keys": [
+            "End"
+          ],
+          "effect": "Seek to end"
+        }
+      ],
+      "note": "An audio or video element is focused."
+    },
+    {
+      "id": 18,
+      "title": "Non-default preferences",
+      "bindings": [
+        {
+          "id": 128,
+          "keys": [
+            "Backspace"
+          ],
+          "effect": "Back"
+        },
+        {
+          "id": 129,
+          "keys": [
+            "Shift+Backspace"
+          ],
+          "effect": "Forward"
+        },
+        {
+          "id": 130,
+          "keys": [
+            "Opt+Enter"
+          ],
+          "effect": "Save focused link"
+        }
+      ],
+      "note": "Backspace requires browser.backspace_action=0. Saving a link requires browser.altClickSave=true and focus on a link."
+    },
+    {
+      "id": 19,
+      "title": "DevTools: Opening and closing tools",
+      "bindings": [
+        {
+          "id": 131,
+          "keys": [
+            "Cmd+Opt+I"
+          ],
+          "effect": "Open Toolbox (with the most recent tool activated)"
+        },
+        {
+          "id": 132,
+          "keys": [
+            "Cmd+Opt+I",
+            "F12"
+          ],
+          "effect": "Bring Toolbox to foreground (if the Toolbox is in a separate window and not in foreground)"
+        },
+        {
+          "id": 133,
+          "keys": [
+            "Cmd+Opt+I",
+            "F12"
+          ],
+          "effect": "Close Toolbox (if the Toolbox is in a separate window and in foreground)"
+        },
+        {
+          "id": 134,
+          "keys": [
+            "Cmd+Opt+K"
+          ],
+          "effect": "Open Web Console"
+        },
+        {
+          "id": 135,
+          "keys": [
+            "Cmd+Opt+C"
+          ],
+          "effect": "Toggle “Pick an element from the page” (opens the Toolbox and/or focus the Inspector tab)"
+        },
+        {
+          "id": 136,
+          "keys": [
+            "Shift+F7"
+          ],
+          "effect": "Open Style Editor"
+        },
+        {
+          "id": 137,
+          "keys": [
+            "Shift+F5"
+          ],
+          "effect": "Open Profiler"
+        },
+        {
+          "id": 138,
+          "keys": [
+            "Cmd+Opt+E"
+          ],
+          "effect": "Open Network Monitor"
+        },
+        {
+          "id": 139,
+          "keys": [
+            "Cmd+Opt+M"
+          ],
+          "effect": "Toggle Responsive Design Mode"
+        },
+        {
+          "id": 140,
+          "keys": [
+            "Cmd+Opt+J"
+          ],
+          "effect": "Open Browser Console"
+        },
+        {
+          "id": 141,
+          "keys": [
+            "Cmd+Opt+Shift+I"
+          ],
+          "effect": "Open Browser Toolbox"
+        },
+        {
+          "id": 142,
+          "keys": [
+            "Shift+F9"
+          ],
+          "effect": "Storage Inspector"
+        },
+        {
+          "id": 143,
+          "keys": [
+            "Cmd+Opt+Z"
+          ],
+          "effect": "Open Debugger"
+        }
+      ],
+      "note": "Focus the named DevTools pane. Browser Toolbox requires browser-chrome and remote debugging to be enabled."
+    },
+    {
+      "id": 20,
+      "title": "DevTools: Toolbox",
+      "bindings": [
+        {
+          "id": 144,
+          "keys": [
+            "Cmd+]"
+          ],
+          "effect": "Cycle through tools left to right"
+        },
+        {
+          "id": 145,
+          "keys": [
+            "Cmd+["
+          ],
+          "effect": "Cycle through tools right to left"
+        },
+        {
+          "id": 146,
+          "keys": [
+            "F1"
+          ],
+          "effect": "Toggle between active tool and settings."
+        },
+        {
+          "id": 147,
+          "keys": [
+            "Cmd+Shift+D"
+          ],
+          "effect": "Toggle toolbox between the last 2 docking modes"
+        },
+        {
+          "id": 148,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Toggle split console (except if console is the selected tool)"
+        }
+      ],
+      "note": "Focus the named DevTools pane; editing and selection actions depend on the focused field or node."
+    },
+    {
+      "id": 21,
+      "title": "DevTools: Toolbox",
+      "bindings": [
+        {
+          "id": 149,
+          "keys": [
+            "Cmd+Plus"
+          ],
+          "effect": "Increase font size"
+        },
+        {
+          "id": 150,
+          "keys": [
+            "Cmd+-"
+          ],
+          "effect": "Decrease font size"
+        },
+        {
+          "id": 151,
+          "keys": [
+            "Cmd+0"
+          ],
+          "effect": "Reset font size"
+        }
+      ],
+      "note": "Focus the named DevTools pane; editing and selection actions depend on the focused field or node."
+    },
+    {
+      "id": 22,
+      "title": "DevTools: Source editor",
+      "bindings": [
+        {
+          "id": 152,
+          "keys": [
+            "Cmd+J",
+            "Cmd+G"
+          ],
+          "effect": "Go to line"
+        },
+        {
+          "id": 153,
+          "keys": [
+            "Cmd+F"
+          ],
+          "effect": "Find in file"
+        },
+        {
+          "id": 154,
+          "keys": [
+            "Cmd+A"
+          ],
+          "effect": "Select all"
+        },
+        {
+          "id": 155,
+          "keys": [
+            "Cmd+X"
+          ],
+          "effect": "Cut"
+        },
+        {
+          "id": 156,
+          "keys": [
+            "Cmd+C"
+          ],
+          "effect": "Copy"
+        },
+        {
+          "id": 157,
+          "keys": [
+            "Cmd+V"
+          ],
+          "effect": "Paste"
+        },
+        {
+          "id": 158,
+          "keys": [
+            "Cmd+Z"
+          ],
+          "effect": "Undo"
+        },
+        {
+          "id": 159,
+          "keys": [
+            "Cmd+Shift+Z",
+            "Cmd+Y"
+          ],
+          "effect": "Redo"
+        },
+        {
+          "id": 160,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Indent"
+        },
+        {
+          "id": 161,
+          "keys": [
+            "Shift+Tab"
+          ],
+          "effect": "Unindent"
+        },
+        {
+          "id": 162,
+          "keys": [
+            "Opt+Up"
+          ],
+          "effect": "Move line(s) up"
+        },
+        {
+          "id": 163,
+          "keys": [
+            "Opt+Down"
+          ],
+          "effect": "Move line(s) down"
+        },
+        {
+          "id": 164,
+          "keys": [
+            "Cmd+/"
+          ],
+          "effect": "Comment/uncomment line(s)"
+        }
+      ],
+      "note": "Focus the named DevTools pane; editing and selection actions depend on the focused field or node."
+    },
+    {
+      "id": 23,
+      "title": "DevTools: Page Inspector",
+      "bindings": [
+        {
+          "id": 165,
+          "keys": [
+            "Cmd+Shift+C"
+          ],
+          "effect": "Inspect Element"
+        }
+      ],
+      "note": "Focus the named DevTools pane; editing and selection actions depend on the focused field or node."
+    },
+    {
+      "id": 24,
+      "title": "DevTools: Node picker",
+      "bindings": [
+        {
+          "id": 166,
+          "keys": [
+            "Cmd+Click"
+          ],
+          "effect": "Select the element under the mouse and stay in picker mode"
+        },
+        {
+          "id": 167,
+          "keys": [
+            "Shift+Click"
+          ],
+          "effect": "Select the element under the mouse, even if it can’t consume pointer events"
+        }
+      ],
+      "note": "Focus the named DevTools pane; editing and selection actions depend on the focused field or node."
+    },
+    {
+      "id": 25,
+      "title": "DevTools: HTML pane",
+      "bindings": [
+        {
+          "id": 168,
+          "keys": [
+            "Delete"
+          ],
+          "effect": "Delete the selected node"
+        },
+        {
+          "id": 169,
+          "keys": [
+            "Cmd+Z"
+          ],
+          "effect": "Undo delete of a node"
+        },
+        {
+          "id": 170,
+          "keys": [
+            "Cmd+Shift+Z",
+            "Cmd+Y"
+          ],
+          "effect": "Redo delete of a node"
+        },
+        {
+          "id": 171,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Move to next node (expanded nodes only)"
+        },
+        {
+          "id": 172,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Move to previous node"
+        },
+        {
+          "id": 173,
+          "keys": [
+            "Home"
+          ],
+          "effect": "Move to first node in the tree."
+        },
+        {
+          "id": 174,
+          "keys": [
+            "End"
+          ],
+          "effect": "Move to last node in the tree."
+        },
+        {
+          "id": 175,
+          "keys": [
+            "Right"
+          ],
+          "effect": "Expand selected node"
+        },
+        {
+          "id": 176,
+          "keys": [
+            "Left"
+          ],
+          "effect": "Collapse selected node"
+        },
+        {
+          "id": 177,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "(When a node is selected) move inside the node so you can start stepping through attributes."
+        },
+        {
+          "id": 178,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Step forward through the attributes of a node"
+        },
+        {
+          "id": 179,
+          "keys": [
+            "Shift+Tab"
+          ],
+          "effect": "Step backward through the attributes of a node"
+        },
+        {
+          "id": 180,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "(When an attribute is selected) start editing the attribute"
+        },
+        {
+          "id": 181,
+          "keys": [
+            "h"
+          ],
+          "effect": "Hide/show the selected node"
+        },
+        {
+          "id": 182,
+          "keys": [
+            "Cmd+F"
+          ],
+          "effect": "Focus on the search box in the HTML pane"
+        },
+        {
+          "id": 183,
+          "keys": [
+            "F2"
+          ],
+          "effect": "Edit as HTML"
+        },
+        {
+          "id": 184,
+          "keys": [
+            "F2",
+            "Cmd+Enter"
+          ],
+          "effect": "Stop editing HTML"
+        },
+        {
+          "id": 185,
+          "keys": [
+            "Cmd+C"
+          ],
+          "effect": "Copy the selected node’s outer HTML"
+        },
+        {
+          "id": 186,
+          "keys": [
+            "s"
+          ],
+          "effect": "Scroll the selected node into view"
+        },
+        {
+          "id": 187,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Find the next match in the markup, when searching is active"
+        },
+        {
+          "id": 188,
+          "keys": [
+            "Shift+Enter"
+          ],
+          "effect": "Find the previous match in the markup, when searching is active"
+        }
+      ],
+      "note": "Focus the named DevTools pane; editing and selection actions depend on the focused field or node."
+    },
+    {
+      "id": 26,
+      "title": "DevTools: Breadcrumbs bar",
+      "bindings": [
+        {
+          "id": 189,
+          "keys": [
+            "Left"
+          ],
+          "effect": "Move to the previous element in the breadcrumbs bar"
+        },
+        {
+          "id": 190,
+          "keys": [
+            "Right"
+          ],
+          "effect": "Move to the next element in the breadcrumbs bar"
+        },
+        {
+          "id": 191,
+          "keys": [
+            "Shift+Tab"
+          ],
+          "effect": "Focus the HTML pane"
+        },
+        {
+          "id": 192,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Focus the CSS pane"
+        }
+      ],
+      "note": "Focus the named DevTools pane; editing and selection actions depend on the focused field or node."
+    },
+    {
+      "id": 27,
+      "title": "DevTools: CSS pane",
+      "bindings": [
+        {
+          "id": 193,
+          "keys": [
+            "Cmd+F"
+          ],
+          "effect": "Focus on the search box in the CSS pane"
+        },
+        {
+          "id": 194,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Clear search box content (only when the search box is focused, and content has been entered)"
+        },
+        {
+          "id": 195,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Step forward through properties and values"
+        },
+        {
+          "id": 196,
+          "keys": [
+            "Shift+Tab"
+          ],
+          "effect": "Step backward through properties and values"
+        },
+        {
+          "id": 197,
+          "keys": [
+            "Enter",
+            "Space"
+          ],
+          "effect": "Start editing property or value (Rules view only, when a property or value is selected, but not already being edited)"
+        },
+        {
+          "id": 198,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Previous CSS completion"
+        },
+        {
+          "id": 199,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Next CSS completion"
+        },
+        {
+          "id": 200,
+          "keys": [
+            "Enter",
+            "Tab"
+          ],
+          "effect": "Choose current auto-complete suggestion (Rules view only, when a property or value is being edited)"
+        },
+        {
+          "id": 201,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Increment selected value by 1"
+        },
+        {
+          "id": 202,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Decrement selected value by 1"
+        },
+        {
+          "id": 203,
+          "keys": [
+            "Shift+PageUp"
+          ],
+          "effect": "Increment selected value by 100"
+        },
+        {
+          "id": 204,
+          "keys": [
+            "Shift+PageDown"
+          ],
+          "effect": "Decrement selected value by 100"
+        },
+        {
+          "id": 205,
+          "keys": [
+            "Shift+Up"
+          ],
+          "effect": "Increment selected value by 10"
+        },
+        {
+          "id": 206,
+          "keys": [
+            "Shift+Down"
+          ],
+          "effect": "Decrement selected value by 10"
+        },
+        {
+          "id": 207,
+          "keys": [
+            "Opt+Up"
+          ],
+          "effect": "Increment selected value by 0.1"
+        },
+        {
+          "id": 208,
+          "keys": [
+            "Opt+Down"
+          ],
+          "effect": "Decrement selected value by 0.1"
+        },
+        {
+          "id": 209,
+          "keys": [
+            "Enter",
+            "Space"
+          ],
+          "effect": "Show/hide more information about current property (Computed view only, when a property is selected)"
+        },
+        {
+          "id": 210,
+          "keys": [
+            "F1"
+          ],
+          "effect": "Open MDN reference page about current property (Computed view only, when a property is selected)"
+        },
+        {
+          "id": 211,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Open current CSS file in Style Editor (Computed view only, when more information is shown for a property and a CSS file reference is focused)."
+        }
+      ],
+      "note": "Focus the named DevTools pane; editing and selection actions depend on the focused field or node."
+    },
+    {
+      "id": 28,
+      "title": "DevTools: Debugger",
+      "bindings": [
+        {
+          "id": 212,
+          "keys": [
+            "Cmd+W"
+          ],
+          "effect": "Close current file"
+        },
+        {
+          "id": 213,
+          "keys": [
+            "Cmd+F"
+          ],
+          "effect": "Search for a string in the current file"
+        },
+        {
+          "id": 214,
+          "keys": [
+            "Cmd+Shift+F"
+          ],
+          "effect": "Search for a string in all files"
+        },
+        {
+          "id": 215,
+          "keys": [
+            "Cmd+G"
+          ],
+          "effect": "Find next in the current file"
+        },
+        {
+          "id": 216,
+          "keys": [
+            "Cmd+P"
+          ],
+          "effect": "Search for scripts by name"
+        },
+        {
+          "id": 217,
+          "keys": [
+            "F8"
+          ],
+          "effect": "Resume execution when at a breakpoint"
+        },
+        {
+          "id": 218,
+          "keys": [
+            "F10"
+          ],
+          "effect": "Step over"
+        },
+        {
+          "id": 219,
+          "keys": [
+            "F11"
+          ],
+          "effect": "Step into"
+        },
+        {
+          "id": 220,
+          "keys": [
+            "Shift+F11"
+          ],
+          "effect": "Step out"
+        },
+        {
+          "id": 221,
+          "keys": [
+            "Cmd+B"
+          ],
+          "effect": "Toggle breakpoint on the selected line"
+        },
+        {
+          "id": 222,
+          "keys": [
+            "Cmd+Shift+B"
+          ],
+          "effect": "Toggle conditional breakpoint on the selected line"
+        }
+      ],
+      "note": "Focus the named DevTools pane; editing and selection actions depend on the focused field or node."
+    },
+    {
+      "id": 29,
+      "title": "DevTools: Web Console",
+      "bindings": [
+        {
+          "id": 223,
+          "keys": [
+            "Cmd+Opt+K"
+          ],
+          "effect": "Open the Web Console"
+        },
+        {
+          "id": 224,
+          "keys": [
+            "Cmd+F"
+          ],
+          "effect": "Search in the message display pane"
+        },
+        {
+          "id": 225,
+          "keys": [
+            "Ctrl+Click"
+          ],
+          "effect": "Open the object inspector pane"
+        },
+        {
+          "id": 226,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Clear the object inspector pane"
+        },
+        {
+          "id": 227,
+          "keys": [
+            "Cmd+Opt+K"
+          ],
+          "effect": "Focus on the command line"
+        },
+        {
+          "id": 228,
+          "keys": [
+            "Ctrl+L",
+            "Cmd+K"
+          ],
+          "effect": "Clear output"
+        }
+      ],
+      "note": "Focus the named DevTools pane; editing and selection actions depend on the focused field or node."
+    },
+    {
+      "id": 30,
+      "title": "DevTools: Command line interpreter",
+      "bindings": [
+        {
+          "id": 229,
+          "keys": [
+            "Home"
+          ],
+          "effect": "Scroll to start of console output (only if the command line is empty)"
+        },
+        {
+          "id": 230,
+          "keys": [
+            "End"
+          ],
+          "effect": "Scroll to end of console output (only if the command line is empty)"
+        },
+        {
+          "id": 231,
+          "keys": [
+            "PageUp"
+          ],
+          "effect": "Page up through console output"
+        },
+        {
+          "id": 232,
+          "keys": [
+            "PageDown"
+          ],
+          "effect": "Page down through console output"
+        },
+        {
+          "id": 233,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Go backward through command history"
+        },
+        {
+          "id": 234,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Go forward through command history"
+        },
+        {
+          "id": 235,
+          "keys": [
+            "Ctrl+R"
+          ],
+          "effect": "Initiate reverse search through command history/step backwards through matching commands"
+        },
+        {
+          "id": 236,
+          "keys": [
+            "Ctrl+S"
+          ],
+          "effect": "Step forward through matching command history (after initiating reverse search)"
+        },
+        {
+          "id": 237,
+          "keys": [
+            "Ctrl+A"
+          ],
+          "effect": "Move to the beginning of the line"
+        },
+        {
+          "id": 238,
+          "keys": [
+            "Ctrl+E"
+          ],
+          "effect": "Move to the end of the line"
+        },
+        {
+          "id": 239,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Execute the current expression"
+        },
+        {
+          "id": 240,
+          "keys": [
+            "Shift+Enter"
+          ],
+          "effect": "Add a new line, for entering multiline expressions"
+        }
+      ],
+      "note": "Focus the named DevTools pane; editing and selection actions depend on the focused field or node."
+    },
+    {
+      "id": 31,
+      "title": "DevTools: Autocomplete popup",
+      "bindings": [
+        {
+          "id": 241,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Choose the current autocomplete suggestion"
+        },
+        {
+          "id": 242,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Cancel the autocomplete popup"
+        },
+        {
+          "id": 243,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Move to the previous autocomplete suggestion"
+        },
+        {
+          "id": 244,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Move to the next autocomplete suggestion"
+        },
+        {
+          "id": 245,
+          "keys": [
+            "PageUp"
+          ],
+          "effect": "Page up through autocomplete suggestions"
+        },
+        {
+          "id": 246,
+          "keys": [
+            "PageDown"
+          ],
+          "effect": "Page down through autocomplete suggestions"
+        },
+        {
+          "id": 247,
+          "keys": [
+            "Home"
+          ],
+          "effect": "Scroll to start of autocomplete suggestions"
+        },
+        {
+          "id": 248,
+          "keys": [
+            "End"
+          ],
+          "effect": "Scroll to end of autocomplete suggestions"
+        }
+      ],
+      "note": "Focus the named DevTools pane; editing and selection actions depend on the focused field or node."
+    },
+    {
+      "id": 32,
+      "title": "DevTools: Style Editor",
+      "bindings": [
+        {
+          "id": 249,
+          "keys": [
+            "Shift+F7"
+          ],
+          "effect": "Open the Style Editor"
+        },
+        {
+          "id": 250,
+          "keys": [
+            "Cmd+Space"
+          ],
+          "effect": "Open autocomplete popup"
+        },
+        {
+          "id": 251,
+          "keys": [
+            "Cmd+G"
+          ],
+          "effect": "Find Next"
+        },
+        {
+          "id": 252,
+          "keys": [
+            "Shift+Cmd+G"
+          ],
+          "effect": "Find Previous"
+        },
+        {
+          "id": 253,
+          "keys": [
+            "Cmd+Opt+F"
+          ],
+          "effect": "Replace"
+        },
+        {
+          "id": 254,
+          "keys": [
+            "Cmd+P"
+          ],
+          "effect": "Focus the filter input"
+        },
+        {
+          "id": 255,
+          "keys": [
+            "Cmd+S"
+          ],
+          "effect": "Save file to disk"
+        }
+      ],
+      "note": "Focus the named DevTools pane; editing and selection actions depend on the focused field or node."
+    },
+    {
+      "id": 33,
+      "title": "DevTools: Eyedropper",
+      "bindings": [
+        {
+          "id": 256,
+          "keys": [
+            "Enter"
+          ],
+          "effect": "Select the current color"
+        },
+        {
+          "id": 257,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Dismiss the Eyedropper"
+        },
+        {
+          "id": 258,
+          "keys": [
+            "Up",
+            "Down",
+            "Left",
+            "Right"
+          ],
+          "effect": "Move by 1 pixel"
+        },
+        {
+          "id": 259,
+          "keys": [
+            "Shift+Up",
+            "Shift+Down",
+            "Shift+Left",
+            "Shift+Right"
+          ],
+          "effect": "Move by 10 pixels"
+        }
+      ],
+      "note": "Focus the named DevTools pane; editing and selection actions depend on the focused field or node."
+    },
+    {
+      "id": 34,
+      "title": "Picture-in-Picture",
+      "bindings": [
+        {
+          "id": 260,
+          "keys": [
+            "Cmd+Shift+Opt+]"
+          ],
+          "effect": "Launch Picture-in-Picture"
+        },
+        {
+          "id": 261,
+          "keys": [
+            "Cmd+Down"
+          ],
+          "effect": "Mute"
+        },
+        {
+          "id": 262,
+          "keys": [
+            "Cmd+Up"
+          ],
+          "effect": "Unmute"
+        },
+        {
+          "id": 263,
+          "keys": [
+            "Down"
+          ],
+          "effect": "Lower volume"
+        },
+        {
+          "id": 264,
+          "keys": [
+            "Up"
+          ],
+          "effect": "Raise volume"
+        },
+        {
+          "id": 265,
+          "keys": [
+            "Left"
+          ],
+          "effect": "Seek back 5 seconds"
+        },
+        {
+          "id": 266,
+          "keys": [
+            "Right"
+          ],
+          "effect": "Seek forward 5 seconds"
+        },
+        {
+          "id": 267,
+          "keys": [
+            "Cmd+Left"
+          ],
+          "effect": "Seek back 10 percent"
+        },
+        {
+          "id": 268,
+          "keys": [
+            "Cmd+Right"
+          ],
+          "effect": "Seek forward 10 percent"
+        },
+        {
+          "id": 269,
+          "keys": [
+            "Home"
+          ],
+          "effect": "Video start"
+        },
+        {
+          "id": 270,
+          "keys": [
+            "End"
+          ],
+          "effect": "Video end"
+        },
+        {
+          "id": 271,
+          "keys": [
+            "Space"
+          ],
+          "effect": "Pause or play"
+        },
+        {
+          "id": 272,
+          "keys": [
+            "f"
+          ],
+          "effect": "Toggle full screen"
+        },
+        {
+          "id": 273,
+          "keys": [
+            "Cmd+W"
+          ],
+          "effect": "Close player"
+        },
+        {
+          "id": 274,
+          "keys": [
+            "Shift+Esc"
+          ],
+          "effect": "Close player without pausing"
+        }
+      ],
+      "note": "Playback shortcuts require the Picture-in-Picture window focused. Reference: https://support.mozilla.org/en-US/kb/about-picture-picture-firefox"
+    },
+    {
+      "id": 35,
+      "title": "Additional platform shortcuts",
+      "bindings": [
+        {
+          "id": 275,
+          "keys": [
+            "Cmd+Opt+F"
+          ],
+          "effect": "Focus web search or separate Search bar"
+        },
+        {
+          "id": 276,
+          "keys": [
+            "Cmd+Enter"
+          ],
+          "effect": "Complete a .com address"
+        }
+      ],
+      "note": "Search shortcuts depend on whether the separate Search bar is shown. Menu shortcuts require the corresponding menu focused."
+    },
+    {
+      "id": 36,
+      "title": "Vertical tabs",
+      "bindings": [
+        {
+          "id": 277,
+          "keys": [
+            "Ctrl+Z"
+          ],
+          "effect": "Expand or collapse vertical tabs"
+        }
+      ],
+      "note": "With vertical tabs enabled. Reference: https://support.mozilla.org/en-US/kb/use-sidebar-access-tools-and-vertical-tabs"
+    }
+  ],
+  "aliases": [
+    "mozilla firefox"
+  ]
+}

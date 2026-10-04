@@ -1,0 +1,309 @@
+{
+  "full_name": "Notion",
+  "source": "https://www.notion.com/help/keyboard-shortcuts",
+  "note": "English/QWERTY shortcuts. Linux uses the web app; focus the page editor to avoid browser shortcut conflicts.",
+  "binding_groups": [
+    {
+      "id": 1,
+      "title": "Find and navigate",
+      "bindings": [
+        {
+          "id": 1,
+          "keys": [
+            "Cmd+P",
+            "Cmd+K"
+          ],
+          "effect": "Page search"
+        },
+        {
+          "id": 2,
+          "keys": [
+            "Cmd+F"
+          ],
+          "effect": "Find on page"
+        },
+        {
+          "id": 3,
+          "keys": [
+            "Cmd+["
+          ],
+          "effect": "Back"
+        },
+        {
+          "id": 4,
+          "keys": [
+            "Cmd+]"
+          ],
+          "effect": "Forward"
+        },
+        {
+          "id": 5,
+          "keys": [
+            "Cmd+Shift+U"
+          ],
+          "effect": "Parent page"
+        },
+        {
+          "id": 6,
+          "keys": [
+            "Cmd+Shift+L"
+          ],
+          "effect": "Toggle theme"
+        }
+      ],
+      "note": "Use page search outside a text selection; with text selected, Cmd/Ctrl+K inserts a link."
+    },
+    {
+      "id": 2,
+      "title": "Text and comments",
+      "bindings": [
+        {
+          "id": 7,
+          "keys": [
+            "Shift+Enter"
+          ],
+          "effect": "Line break"
+        },
+        {
+          "id": 8,
+          "keys": [
+            "Cmd+B"
+          ],
+          "effect": "Bold"
+        },
+        {
+          "id": 9,
+          "keys": [
+            "Cmd+I"
+          ],
+          "effect": "Italic"
+        },
+        {
+          "id": 10,
+          "keys": [
+            "Cmd+U"
+          ],
+          "effect": "Underline"
+        },
+        {
+          "id": 11,
+          "keys": [
+            "Cmd+Shift+S"
+          ],
+          "effect": "Strikethrough"
+        },
+        {
+          "id": 12,
+          "keys": [
+            "Cmd+E"
+          ],
+          "effect": "Inline code"
+        },
+        {
+          "id": 13,
+          "keys": [
+            "Cmd+K"
+          ],
+          "effect": "Insert link"
+        },
+        {
+          "id": 14,
+          "keys": [
+            "Cmd+Shift+Cmd"
+          ],
+          "effect": "Comment"
+        },
+        {
+          "id": 15,
+          "keys": [
+            "Cmd+Shift+H"
+          ],
+          "effect": "Reuse last color"
+        }
+      ],
+      "note": "Formatting and links apply to selected text."
+    },
+    {
+      "id": 3,
+      "title": "Block types",
+      "bindings": [
+        {
+          "id": 16,
+          "keys": [
+            "Cmd+Opt+0"
+          ],
+          "effect": "Text"
+        },
+        {
+          "id": 17,
+          "keys": [
+            "Cmd+Opt+1"
+          ],
+          "effect": "Heading 1"
+        },
+        {
+          "id": 18,
+          "keys": [
+            "Cmd+Opt+2"
+          ],
+          "effect": "Heading 2"
+        },
+        {
+          "id": 19,
+          "keys": [
+            "Cmd+Opt+3"
+          ],
+          "effect": "Heading 3"
+        },
+        {
+          "id": 20,
+          "keys": [
+            "Cmd+Opt+4"
+          ],
+          "effect": "Checkbox"
+        },
+        {
+          "id": 21,
+          "keys": [
+            "Cmd+Opt+5"
+          ],
+          "effect": "Bullets"
+        },
+        {
+          "id": 22,
+          "keys": [
+            "Cmd+Opt+6"
+          ],
+          "effect": "Numbered list"
+        },
+        {
+          "id": 23,
+          "keys": [
+            "Cmd+Opt+7"
+          ],
+          "effect": "Toggle list"
+        },
+        {
+          "id": 24,
+          "keys": [
+            "Cmd+Opt+8"
+          ],
+          "effect": "Code block"
+        },
+        {
+          "id": 25,
+          "keys": [
+            "Cmd+Opt+9"
+          ],
+          "effect": "Page"
+        }
+      ],
+      "note": "With the cursor in a block or a block selected."
+    },
+    {
+      "id": 4,
+      "title": "Arrange blocks",
+      "bindings": [
+        {
+          "id": 26,
+          "keys": [
+            "Esc"
+          ],
+          "effect": "Select or deselect block"
+        },
+        {
+          "id": 27,
+          "keys": [
+            "Cmd+D"
+          ],
+          "effect": "Duplicate"
+        },
+        {
+          "id": 28,
+          "keys": [
+            "Cmd+/"
+          ],
+          "effect": "Block actions"
+        },
+        {
+          "id": 29,
+          "keys": [
+            "Tab"
+          ],
+          "effect": "Indent"
+        },
+        {
+          "id": 30,
+          "keys": [
+            "Shift+Tab"
+          ],
+          "effect": "Outdent"
+        },
+        {
+          "id": 31,
+          "keys": [
+            "Cmd+Shift+Up"
+          ],
+          "effect": "Move up"
+        },
+        {
+          "id": 32,
+          "keys": [
+            "Cmd+Shift+Down"
+          ],
+          "effect": "Move down"
+        },
+        {
+          "id": 33,
+          "keys": [
+            "Cmd+Enter"
+          ],
+          "effect": "Activate block"
+        },
+        {
+          "id": 34,
+          "keys": [
+            "Cmd+Opt+T"
+          ],
+          "effect": "Expand or collapse toggles"
+        }
+      ],
+      "note": "Select blocks first. Activate opens pages, toggles checkboxes or lists, or expands images and embeds."
+    },
+    {
+      "id": 5,
+      "title": "Desktop app",
+      "bindings": [
+        {
+          "id": 35,
+          "keys": [
+            "Cmd+N"
+          ],
+          "effect": "New page"
+        },
+        {
+          "id": 36,
+          "keys": [
+            "Cmd+Shift+N"
+          ],
+          "effect": "New window"
+        },
+        {
+          "id": 37,
+          "keys": [
+            "Cmd+T"
+          ],
+          "effect": "New tab"
+        },
+        {
+          "id": 38,
+          "keys": [
+            "Cmd+L"
+          ],
+          "effect": "Copy page URL"
+        }
+      ],
+      "note": "Notion macOS desktop app only."
+    }
+  ]
+}
