@@ -2,6 +2,7 @@ const std = @import("std");
 const Io = std.Io;
 
 const data = @import("data.zig");
+const pager = @import("pager.zig");
 const render = @import("render.zig");
 const search = @import("search.zig");
 
@@ -55,7 +56,13 @@ pub fn main(init: std.process.Init) !void {
         std.process.exit(exit_failure);
     };
 
-    printApp(io, app, stdoutStyle(init));
+    // Decide the style before the pager starts. With a pager, the text goes
+    // into a pipe, but the terminal behind the pager still shows it.
+    const style = stdoutStyle(init);
+    const is_terminal = Io.File.stdout().isTty(io) catch false;
+    if (is_terminal and pager.show(io, init.environ_map, app, style)) return;
+
+    printApp(io, app, style);
 }
 
 /// Returns `.ansi` when stdout is a terminal that takes escape codes and the
@@ -70,8 +77,6 @@ fn stdoutStyle(init: std.process.Init) render.Style {
 }
 
 /// Renders `app` to stdout. Exits with `exit_failure` when the write fails.
-///
-/// TODO: send the text to a pager when stdout is a terminal.
 fn printApp(io: Io, app: data.App, style: render.Style) void {
     var buffer: [4096]u8 = undefined;
     var file_writer = Io.File.stdout().writer(io, &buffer);
