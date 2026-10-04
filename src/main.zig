@@ -1,71 +1,67 @@
 const std = @import("std");
 const Io = std.Io;
 
-const seks = @import("seks");
+// Keep in sync with `.version` in build.zig.zon.
+const version = "0.0.0";
+
+const usage_text = "usage: seks <app-name> | --help | --version\n";
+
+// TODO: add the list of supported apps once the JSON data loads.
+const help_text = usage_text ++
+    \\
+    \\Show every keyboard shortcut of an app.
+    \\
+    \\options:
+    \\  --help     show this help
+    \\  --version  show the version
+    \\
+;
+
+const exit_failure = 1;
+const exit_usage = 2;
 
 pub fn main(init: std.process.Init) !void {
-    // Prints to stderr, unbuffered, ignoring potential errors.
-    std.debug.print("All your {s} are belong to us.\n", .{"codebase"});
-
-    // This is appropriate for anything that lives as long as the process.
-    const arena: std.mem.Allocator = init.arena.allocator();
-
-    // Accessing command line arguments:
-    const args = try init.minimal.args.toSlice(arena);
-    for (args) |arg| {
-        std.log.info("arg: {s}", .{arg});
-    }
-
-    // In order to do I/O operations need an `Io` instance.
+    const arena = init.arena.allocator();
     const io = init.io;
 
-    // Stdout is for the actual output of your application, for example if you
-    // are implementing gzip, then only the compressed bytes should be sent to
-    // stdout, not any debugging messages.
-    var stdout_buffer: [1024]u8 = undefined;
-    var stdout_file_writer: Io.File.Writer = .init(.stdout(), io, &stdout_buffer);
-    const stdout_writer = &stdout_file_writer.interface;
+    const args = try init.minimal.args.toSlice(arena);
+    if (args.len < 2) failUsage(io, "", .{});
 
-    try seks.printAnotherMessage(stdout_writer);
+    // Only the first argument can be an option. All other arguments are
+    // part of the app name.
+    const first_arg = args[1];
+    if (std.mem.eql(u8, first_arg, "--help")) {
+        return print(io, .stdout(), help_text, .{});
+    }
+    if (std.mem.eql(u8, first_arg, "--version")) {
+        return print(io, .stdout(), "seks {s}\n", .{version});
+    }
+    if (std.mem.startsWith(u8, first_arg, "-")) {
+        failUsage(io, "seks: unknown option: {s}\n", .{first_arg});
+    }
 
-    try stdout_writer.flush(); // Don't forget to flush!
+    // Join the arguments, so `seks visual studio code` needs no quotes.
+    const joined = try std.mem.join(arena, " ", args[1..]);
+    const app_name = std.mem.trim(u8, joined, " ");
+    if (app_name.len == 0) failUsage(io, "", .{});
+
+    // TODO: look up `app_name` and show its shortcuts.
 }
 
-test "simple test" {
-    const gpa = std.testing.allocator;
-    var list: std.ArrayList(i32) = .empty;
-    defer list.deinit(gpa); // Try commenting this out and see if zig detects the memory leak!
-    try list.append(gpa, 42);
-    try std.testing.expectEqual(@as(i32, 42), list.pop());
+/// Prints a formatted message to `file`. Exits with `exit_failure` when the
+/// write fails, for example on a closed pipe.
+fn print(io: Io, file: Io.File, comptime fmt: []const u8, args: anytype) void {
+    var buffer: [1024]u8 = undefined;
+    var file_writer = file.writer(io, &buffer);
+    const writer = &file_writer.interface;
+
+    writer.print(fmt, args) catch std.process.exit(exit_failure);
+    writer.flush() catch std.process.exit(exit_failure);
 }
 
-test "fuzz example" {
-    try std.testing.fuzz({}, testOne, .{});
-}
-
-fn testOne(context: void, smith: *std.testing.Smith) !void {
-    _ = context;
-    // Try command `zig build test --fuzz -Doptimize=ReleaseFast` to see if it manages to fail this test case!
-
-    const gpa = std.testing.allocator;
-    var list: std.ArrayList(u8) = .empty;
-    defer list.deinit(gpa);
-    while (!smith.eos()) switch (smith.value(enum { add_data, dup_data })) {
-        .add_data => {
-            const slice = try list.addManyAsSlice(gpa, smith.value(u4));
-            smith.bytes(slice);
-        },
-        .dup_data => {
-            if (list.items.len == 0) continue;
-            if (list.items.len > std.math.maxInt(u32)) return error.SkipZigTest;
-            const len = smith.valueRangeAtMost(u32, 1, @min(32, list.items.len));
-            const off = smith.valueRangeAtMost(u32, 0, @intCast(list.items.len - len));
-            try list.appendSlice(gpa, list.items[off..][0..len]);
-            try std.testing.expectEqualSlices(
-                u8,
-                list.items[off..][0..len],
-                list.items[list.items.len - len ..],
-            );
-        },
-    };
+/// Prints a formatted message and the usage line to stderr, then exits with
+/// `exit_usage`.
+fn failUsage(io: Io, comptime fmt: []const u8, args: anytype) noreturn {
+    print(io, .stderr(), fmt ++ usage_text, args);
+    std.process.exit(exit_usage);
 }
