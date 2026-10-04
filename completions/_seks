@@ -1,0 +1,29 @@
+#compdef seks
+
+# zsh completion for seks. Put this file in a directory of `$fpath`.
+
+_seks() {
+  # Only the first argument is completed. More words belong to a name with
+  # spaces.
+  (( CURRENT == 2 )) || return 1
+
+  if [[ ${words[CURRENT]} == -* ]]; then
+    local -a options=(
+      '--list:list the apps'
+      '--help:show the help'
+      '--version:show the version'
+    )
+    _describe -t options 'option' options
+    return
+  fi
+
+  # `seks --list` prints "name<TAB>full name". `_describe` wants
+  # "name:description", so escape each colon, then turn the tab into one.
+  local -a apps
+  apps=("${(@f)$(seks --list 2>/dev/null)}")
+  apps=("${apps[@]//:/\\:}")
+  apps=("${apps[@]/$'\t'/:}")
+  _describe -t apps 'app' apps
+}
+
+_seks "$@"
