@@ -46,7 +46,8 @@ pub fn render(writer: *Io.Writer, app: data.App, style: Style) Io.Writer.Error!v
                     try writeBold(writer, alternative_separator, style);
                     try writer.writeByte(' ');
                 }
-                try writer.writeAll(alternative);
+                var pieces: DrawnPieces = .{ .text = alternative };
+                while (pieces.next()) |piece| try writer.writeAll(piece);
             }
             // Pad by the visible width. The bold codes take bytes but no
             // columns, so the byte count of the written text is wrong here.
@@ -83,10 +84,36 @@ fn keysWidth(keys: []const []const u8) usize {
     var width: usize = 0;
     for (keys, 0..) |alternative, index| {
         if (index > 0) width += alternative_separator.len + 2;
-        width += textWidth(alternative);
+        var pieces: DrawnPieces = .{ .text = alternative };
+        while (pieces.next()) |piece| width += textWidth(piece);
     }
     return width;
 }
+
+/// Walks one alternative and returns the pieces to draw, in order.
+///
+/// A piece is a key, or one of the two delimiters: a space or a `+`. The
+/// key `Plus` comes out as `+`, so `Cmd+Plus` is drawn as `Cmd++`. Every
+/// other piece comes out as written.
+const DrawnPieces = struct {
+    text: []const u8,
+    index: usize = 0,
+
+    fn next(pieces: *DrawnPieces) ?[]const u8 {
+        if (pieces.index == pieces.text.len) return null;
+        const rest = pieces.text[pieces.index..];
+
+        if (rest[0] == ' ' or rest[0] == '+') {
+            pieces.index += 1;
+            return rest[0..1];
+        }
+
+        const end = std.mem.indexOfAny(u8, rest, " +") orelse rest.len;
+        pieces.index += end;
+        const key = rest[0..end];
+        return if (std.mem.eql(u8, key, data.plus_key)) "+" else key;
+    }
+};
 
 /// Returns the columns that `text` takes in a terminal.
 ///
@@ -213,6 +240,35 @@ test "render counts a non-ASCII key as one column" {
         \\Move
         \\  ←   Left
         \\  gg  Top
+        \\
+    ;
+    try testing.expectEqualStrings(expected, try renderToBuffer(&buffer, app, .plain));
+}
+
+test "render draws the Plus key as + and aligns by the drawn width" {
+    var buffer: [1024]u8 = undefined;
+    const app: data.App = .{
+        .name = "app",
+        .full_name = "App",
+        .binding_groups = &.{
+            .{ .id = 1, .title = "Zoom", .bindings = &.{
+                .{ .id = 1, .keys = &.{"Cmd+Plus"}, .effect = "Zoom in" },
+                .{ .id = 2, .keys = &.{"Cmd+Minus"}, .effect = "Zoom out" },
+                .{ .id = 3, .keys = &.{ "Plus", "Ctrl+w Plus" }, .effect = "Grow" },
+                .{ .id = 4, .keys = &.{":Plus"}, .effect = "Not the key name" },
+                .{ .id = 5, .keys = &.{"\"+p"}, .effect = "A literal plus" },
+            } },
+        },
+    };
+    const expected =
+        \\App
+        \\
+        \\Zoom
+        \\  Cmd++          Zoom in
+        \\  Cmd+Minus      Zoom out
+        \\  + OR Ctrl+w +  Grow
+        \\  :Plus          Not the key name
+        \\  "+p            A literal plus
         \\
     ;
     try testing.expectEqualStrings(expected, try renderToBuffer(&buffer, app, .plain));

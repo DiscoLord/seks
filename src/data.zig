@@ -15,6 +15,10 @@ pub const schema_version = 1;
 /// is the app version.
 pub const version: []const u8 = @import("build_options").version;
 
+/// The name of the plus key in the data. A bare `+` joins keys held
+/// together, so the key itself needs a name.
+pub const plus_key = "Plus";
+
 pub const Platform = enum {
     macos,
     linux,

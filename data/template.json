@@ -1,0 +1,24 @@
+{
+  "aliases": ["other name"],
+  "full_name": "App Name",
+  "note": "One short line, shown under the name",
+  "source": "https://example.com/the-page-the-bindings-come-from",
+  "binding_groups": [
+    {
+      "id": 1,
+      "title": "First group",
+      "bindings": [
+        { "id": 1, "keys": ["Ctrl+N"], "effect": "One key combination" },
+        { "id": 2, "keys": ["Ctrl+W", "Ctrl+Shift+W"], "effect": "Two ways to do one thing" }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Second group",
+      "bindings": [
+        { "id": 3, "keys": ["Ctrl+K Ctrl+S"], "effect": "Two combinations pressed in order" },
+        { "id": 4, "keys": ["g g"], "effect": "Two keys pressed in order" }
+      ]
+    }
+  ]
+}
