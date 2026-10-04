@@ -1,0 +1,16 @@
+{
+  "aliases": ["files", "gnome files"],
+  "full_name": "GNOME Files",
+  "binding_groups": [
+    {
+      "id": 1,
+      "title": "Files and folders",
+      "bindings": [
+        { "id": 1, "keys": ["Ctrl+Shift+N"], "effect": "Create a new folder" },
+        { "id": 2, "keys": ["Delete"], "effect": "Move the selected item to the trash" },
+        { "id": 3, "keys": ["F2"], "effect": "Rename the selected item" },
+        { "id": 4, "keys": ["Ctrl+H"], "effect": "Show or hide hidden files" }
+      ]
+    }
+  ]
+}

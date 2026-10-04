@@ -1,8 +1,8 @@
 const std = @import("std");
 const Io = std.Io;
 
-// Keep in sync with `.version` in build.zig.zon.
-const version = "0.0.0";
+// The build passes `.version` from build.zig.zon.
+const version: []const u8 = @import("build_options").version;
 
 const usage_text = "usage: seks <app-name> | --help | --version\n";
 
@@ -64,4 +64,9 @@ fn print(io: Io, file: Io.File, comptime fmt: []const u8, args: anytype) void {
 fn failUsage(io: Io, comptime fmt: []const u8, args: anytype) noreturn {
     print(io, .stderr(), fmt ++ usage_text, args);
     std.process.exit(exit_usage);
+}
+
+// Zig runs the tests of a file only when something references the file.
+test {
+    _ = @import("data.zig");
 }
