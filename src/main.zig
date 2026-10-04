@@ -1,6 +1,9 @@
 const std = @import("std");
 const Io = std.Io;
 
+const data = @import("data.zig");
+const search = @import("search.zig");
+
 // The build passes `.version` from build.zig.zon.
 const version: []const u8 = @import("build_options").version;
 
@@ -45,7 +48,43 @@ pub fn main(init: std.process.Init) !void {
     const app_name = std.mem.trim(u8, joined, " ");
     if (app_name.len == 0) failUsage(io, "", .{});
 
-    // TODO: look up `app_name` and show its shortcuts.
+    const apps = try data.loadBundled(arena);
+    const app = search.findApp(apps, app_name) orelse {
+        print(io, .stderr(), "seks: unknown app: {s}\n", .{app_name});
+        std.process.exit(exit_failure);
+    };
+
+    printApp(io, app);
+}
+
+/// Prints `app` to stdout in a plain form: the name, then each group with
+/// one line per binding.
+///
+/// TODO: replace with the renderer and the pager.
+fn printApp(io: Io, app: data.App) void {
+    var buffer: [4096]u8 = undefined;
+    var file_writer = Io.File.stdout().writer(io, &buffer);
+    const writer = &file_writer.interface;
+
+    writeApp(writer, app) catch std.process.exit(exit_failure);
+    writer.flush() catch std.process.exit(exit_failure);
+}
+
+fn writeApp(writer: *Io.Writer, app: data.App) Io.Writer.Error!void {
+    try writer.print("{s}\n", .{app.full_name});
+    if (app.note) |note| try writer.print("{s}\n", .{note});
+
+    for (app.binding_groups) |group| {
+        try writer.print("\n{s}\n", .{group.title});
+        for (group.bindings) |binding| {
+            try writer.writeAll("  ");
+            for (binding.keys, 0..) |alternative, index| {
+                if (index > 0) try writer.writeAll(" OR ");
+                try writer.writeAll(alternative);
+            }
+            try writer.print("  {s}\n", .{binding.effect});
+        }
+    }
 }
 
 /// Prints a formatted message to `file`. Exits with `exit_failure` when the
@@ -68,5 +107,6 @@ fn failUsage(io: Io, comptime fmt: []const u8, args: anytype) noreturn {
 
 // Zig runs the tests of a file only when something references the file.
 test {
-    _ = @import("data.zig");
+    _ = data;
+    _ = search;
 }

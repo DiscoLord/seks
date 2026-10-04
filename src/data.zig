@@ -25,6 +25,14 @@ pub const Platform = enum {
         .linux => .linux,
         else => @compileError("seks supports macOS and Linux only"),
     };
+
+    /// The only spellings a modifier key can have in the data.
+    pub fn modifiers(platform: Platform) []const []const u8 {
+        return switch (platform) {
+            .macos => &.{ "Cmd", "Shift", "Opt", "Ctrl", "Fn" },
+            .linux => &.{ "Ctrl", "Shift", "Alt", "Super" },
+        };
+    }
 };
 
 pub const App = struct {
@@ -56,6 +64,7 @@ pub const Binding = struct {
     id: u32,
     /// The alternatives that trigger the effect. In one alternative, `+`
     /// joins keys held together and a space separates keys pressed in order.
+    /// A modifier is spelled as in `Platform.modifiers`.
     keys: []const []const u8,
     effect: []const u8,
     /// A tombstone. It keeps the `id` taken after the binding is removed.
@@ -131,15 +140,21 @@ const ValidateError = error{
     DuplicateGroupId,
     DuplicateBindingId,
     EmptyField,
+    InvalidKeys,
 } || Allocator.Error;
 
-/// Checks the rules that the parser cannot check. Dead entries count, so
-/// call it on the result of `parseRaw`.
+/// Checks the rules that the parser cannot check, for apps of `platform`.
+/// Dead entries count, so call it on the result of `parseRaw`.
 ///
 /// `arena` holds the lookup sets. Nothing is freed one by one. On failure,
 /// `problem` holds the app of the first broken rule, and the id when the
 /// rule is about a group or a binding.
-fn validate(arena: Allocator, apps: []const App, problem: *Problem) ValidateError!void {
+fn validate(
+    arena: Allocator,
+    apps: []const App,
+    platform: Platform,
+    problem: *Problem,
+) ValidateError!void {
     var names: std.StringHashMap(void) = .init(arena);
 
     for (apps) |app| {
@@ -167,10 +182,54 @@ fn validate(arena: Allocator, apps: []const App, problem: *Problem) ValidateErro
                 if (binding.keys.len == 0) return error.EmptyField;
                 for (binding.keys) |alternative| {
                     if (alternative.len == 0) return error.EmptyField;
+                    if (!isValidKeys(alternative, platform)) return error.InvalidKeys;
                 }
             }
         }
     }
+}
+
+/// Returns true when every modifier in `alternative` is spelled as in
+/// `platform.modifiers()`.
+///
+/// A step is a part between spaces. A step is a key combination when its
+/// first `+` follows a capitalised word, or a modifier in the wrong case.
+/// Any other step is literal text, such as the vim command `"+p`, and
+/// passes. In a key combination, every part before the last `+` must be a
+/// modifier, and the last part must not be empty. Write the plus key as
+/// `Plus`.
+fn isValidKeys(alternative: []const u8, platform: Platform) bool {
+    var steps = std.mem.tokenizeScalar(u8, alternative, ' ');
+    while (steps.next()) |step| {
+        const first_plus = std.mem.indexOfScalar(u8, step, '+') orelse continue;
+        const first_part = step[0..first_plus];
+        const is_combination = isModifierInAnyCase(first_part, platform) or
+            (first_part.len >= 2 and std.ascii.isUpper(first_part[0]));
+        if (!is_combination) continue;
+
+        const last_plus = std.mem.lastIndexOfScalar(u8, step, '+').?;
+        if (last_plus == step.len - 1) return false;
+
+        var parts = std.mem.splitScalar(u8, step[0..last_plus], '+');
+        while (parts.next()) |part| {
+            if (!isModifier(part, platform)) return false;
+        }
+    }
+    return true;
+}
+
+fn isModifier(part: []const u8, platform: Platform) bool {
+    for (platform.modifiers()) |modifier| {
+        if (std.mem.eql(u8, part, modifier)) return true;
+    }
+    return false;
+}
+
+fn isModifierInAnyCase(part: []const u8, platform: Platform) bool {
+    for (platform.modifiers()) |modifier| {
+        if (std.ascii.eqlIgnoreCase(part, modifier)) return true;
+    }
+    return false;
 }
 
 /// Returns true when `name` is not empty, has no uppercase letter and has no
@@ -228,18 +287,18 @@ test "bundled data of every platform parses and follows the rules" {
     defer arena_state.deinit();
     const arena = arena_state.allocator();
 
-    const platforms = [_]struct { name: []const u8, json: []const u8 }{
-        .{ .name = "data/macos", .json = @embedFile("macos.json") },
-        .{ .name = "data/linux", .json = @embedFile("linux.json") },
+    const files = [_]struct { platform: Platform, json: []const u8 }{
+        .{ .platform = .macos, .json = @embedFile("macos.json") },
+        .{ .platform = .linux, .json = @embedFile("linux.json") },
     };
-    for (platforms) |platform| {
-        const raw = parseRaw(arena, platform.json) catch |err| {
-            std.debug.print("{s}: {t}\n", .{ platform.name, err });
+    for (files) |file| {
+        const raw = parseRaw(arena, file.json) catch |err| {
+            std.debug.print("data/{t}: {t}\n", .{ file.platform, err });
             return err;
         };
         var problem: Problem = .{};
-        validate(arena, raw, &problem) catch |err| {
-            std.debug.print("{s}/{s}.json: {t}, id {d}\n", .{ platform.name, problem.app, err, problem.id });
+        validate(arena, raw, file.platform, &problem) catch |err| {
+            std.debug.print("data/{t}/{s}.json: {t}, id {d}\n", .{ file.platform, problem.app, err, problem.id });
             return err;
         };
     }
@@ -293,7 +352,7 @@ test "validate counts dead entries when it checks ids" {
     ;
     var problem: Problem = .{};
     const raw = try parseRaw(arena, json);
-    try testing.expectError(error.DuplicateBindingId, validate(arena, raw, &problem));
+    try testing.expectError(error.DuplicateBindingId, validate(arena, raw, .macos, &problem));
     try testing.expectEqualStrings("app", problem.app);
     try testing.expectEqual(1, problem.id);
 }
@@ -311,7 +370,7 @@ test "validate rejects an alias that another app uses" {
     ;
     var problem: Problem = .{};
     const raw = try parseRaw(arena, json);
-    try testing.expectError(error.DuplicateName, validate(arena, raw, &problem));
+    try testing.expectError(error.DuplicateName, validate(arena, raw, .macos, &problem));
     try testing.expectEqualStrings("two", problem.app);
 }
 
@@ -336,12 +395,60 @@ test "validate rejects a broken name, a reused group id and an empty field" {
         \\    { "id": 1, "keys": [], "effect": "No keys" } ] }
         \\] } ]
         },
+        .{ .expected = error.InvalidKeys, .json =
+        \\[ { "name": "app", "full_name": "App", "binding_groups": [
+        \\  { "id": 1, "title": "One", "bindings": [
+        \\    { "id": 1, "keys": ["Cmd+N", "Command+N"], "effect": "Long spelling" } ] }
+        \\] } ]
+        },
     };
     for (cases) |case| {
         var problem: Problem = .{};
         const raw = try parseRaw(arena, case.json);
-        try testing.expectError(case.expected, validate(arena, raw, &problem));
+        try testing.expectError(case.expected, validate(arena, raw, .macos, &problem));
     }
+}
+
+test "isValidKeys accepts the fixed modifier spellings and literal text" {
+    try testing.expect(isValidKeys("Space", .macos));
+    try testing.expect(isValidKeys("Cmd+N", .macos));
+    try testing.expect(isValidKeys("Ctrl+Opt+Shift+Cmd+N", .macos));
+    try testing.expect(isValidKeys("Fn+Delete", .macos));
+    try testing.expect(isValidKeys("Cmd+Plus", .macos));
+    try testing.expect(isValidKeys("Cmd+K Cmd+S", .macos));
+    try testing.expect(isValidKeys("Ctrl+Alt+T", .linux));
+    try testing.expect(isValidKeys("Super+L", .linux));
+
+    // Sequences and commands with no key combination.
+    try testing.expect(isValidKeys("Prefix %", .macos));
+    try testing.expect(isValidKeys("g g", .macos));
+    try testing.expect(isValidKeys(":wq", .macos));
+
+    // A `+` that is literal text, not a join.
+    try testing.expect(isValidKeys("\"+p", .macos));
+    try testing.expect(isValidKeys("g+", .macos));
+    try testing.expect(isValidKeys("Ctrl+w +", .macos));
+    try testing.expect(isValidKeys(":set path+=src", .macos));
+}
+
+test "isValidKeys rejects every other modifier spelling" {
+    try testing.expect(!isValidKeys("Command+N", .macos));
+    try testing.expect(!isValidKeys("Option+N", .macos));
+    try testing.expect(!isValidKeys("Cmd+Shfit+N", .macos));
+    try testing.expect(!isValidKeys("cmd+N", .macos));
+    try testing.expect(!isValidKeys("CMD+N", .macos));
+    try testing.expect(!isValidKeys("Cmd+K Command+S", .macos));
+
+    // A modifier of the other platform.
+    try testing.expect(!isValidKeys("Alt+N", .macos));
+    try testing.expect(!isValidKeys("Cmd+N", .linux));
+
+    // The plus key must be written as `Plus`.
+    try testing.expect(!isValidKeys("Cmd++", .macos));
+    try testing.expect(!isValidKeys("Cmd+", .macos));
+
+    // Keys pressed in order need a space, not a `+`.
+    try testing.expect(!isValidKeys("Prefix+c", .macos));
 }
 
 test "isValidName" {
