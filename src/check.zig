@@ -35,6 +35,8 @@ pub const Error = error{
     DuplicateName,
     DuplicateGroupId,
     DuplicateBindingId,
+    DuplicateTitle,
+    DuplicateNote,
     EmptyField,
     InvalidText,
     InvalidKeys,
@@ -61,6 +63,18 @@ const key_aliases = [_]KeyAlias{
     .{ .alias = "↓", .name = "Down" },
     .{ .alias = "←", .name = "Left" },
     .{ .alias = "→", .name = "Right" },
+    // The first half of a name written as two words, such as `Page Up` or
+    // `Left Arrow`.
+    .{ .alias = "Page", .name = "PageUp" },
+    .{ .alias = "Arrow", .name = "Up" },
+};
+
+/// Words that people write for a modifier, on any platform. A step that
+/// starts with one of them and a `+` is a key combination, so a wrong word
+/// such as `command+n` is found and not taken for literal text.
+const modifier_words = [_][]const u8{
+    "Cmd",   "Command", "Opt",   "Option", "Alt",     "Ctrl", "Control",
+    "Shift", "Fn",      "Super", "Win",    "Windows", "Meta",
 };
 
 /// Checks the rules for the apps of `platform`. Dead entries count, so call
@@ -91,21 +105,44 @@ pub fn validate(
 
         var group_ids: std.AutoHashMap(u32, void) = .init(arena);
         var binding_ids: std.AutoHashMap(u32, void) = .init(arena);
+        var titles: std.StringHashMap(void) = .init(arena);
+        var notes: std.StringHashMap(void) = .init(arena);
         for (app.binding_groups) |group| {
             problem.* = .{ .app = app.name, .group_id = group.id };
             if ((try group_ids.getOrPut(group.id)).found_existing) return error.DuplicateGroupId;
             try checkText(group.title, problem);
             if (group.note) |note| try checkText(note, problem);
 
+            // Two groups that show need different titles, or the user
+            // cannot tell them apart. A note that two groups share is a
+            // fact of the app, and belongs in the note of the app. A dead
+            // group does not show, so it does not count.
+            if (!group.dead) {
+                problem.text = group.title;
+                if ((try titles.getOrPut(group.title)).found_existing) return error.DuplicateTitle;
+                if (group.note) |note| {
+                    problem.text = note;
+                    if ((try notes.getOrPut(note)).found_existing) return error.DuplicateNote;
+                }
+                problem.text = null;
+            }
+            // A group with no binding would be dropped in silence. A group
+            // that is removed says so with `dead`.
+            if (group.bindings.len == 0 and !group.dead) return error.EmptyField;
+
             for (group.bindings) |binding| {
                 problem.* = .{ .app = app.name, .group_id = group.id, .binding_id = binding.id };
                 if ((try binding_ids.getOrPut(binding.id)).found_existing) return error.DuplicateBindingId;
                 try checkText(binding.effect, problem);
                 if (binding.keys.len == 0) return error.EmptyField;
-                for (binding.keys) |alternative| {
+                for (binding.keys, 0..) |alternative, index| {
                     try checkText(alternative, problem);
                     problem.text = alternative;
                     if (!isValidKeys(alternative, platform)) return error.InvalidKeys;
+                    // The same alternative twice shows as `a OR a`.
+                    for (binding.keys[0..index]) |earlier| {
+                        if (std.mem.eql(u8, earlier, alternative)) return error.InvalidKeys;
+                    }
                     problem.text = null;
                 }
             }
@@ -159,23 +196,27 @@ fn isCleanText(text: []const u8) bool {
 /// - Every named key is spelled as in `data.key_names`.
 ///
 /// A step is a part between spaces. A step is a key combination when its
-/// first `+` follows a capitalised word, or a modifier in the wrong case.
-/// Any other step with a `+` is literal text, such as the vim command
+/// first `+` follows a capitalised word, or a word for a modifier in any
+/// case. Any other step with a `+` is literal text, such as the vim command
 /// `"+p`, and passes. In a key combination, every part before the last `+`
 /// must be a modifier, no modifier appears twice, and the last part is a
 /// key, not a modifier and not empty. Write the plus key as `Plus`.
 fn isValidKeys(alternative: []const u8, platform: Platform) bool {
+    var previous_step: []const u8 = "";
     var steps = std.mem.splitScalar(u8, alternative, ' ');
     while (steps.next()) |step| {
+        defer previous_step = step;
         // An empty step means a space at one end, or two spaces in a row.
         if (step.len == 0) return false;
+        // `Cmd + N` has spaces around the `+`. It must be `Cmd+N`.
+        if (std.mem.eql(u8, step, "+") and isModifierWord(previous_step)) return false;
 
         const first_plus = std.mem.indexOfScalar(u8, step, '+') orelse {
             if (!isValidKeyName(step, .alone)) return false;
             continue;
         };
         const first_part = step[0..first_plus];
-        const is_combination = isModifierInAnyCase(first_part, platform) or
+        const is_combination = isModifierWord(first_part) or
             (first_part.len >= 2 and std.ascii.isUpper(first_part[0]));
         if (!is_combination) continue;
 
@@ -207,7 +248,11 @@ fn isValidKeys(alternative: []const u8, platform: Platform) bool {
 /// A lowercase word that stands `.alone` passes. It can be literal text,
 /// such as `left` in a command. After a modifier it can only be a key.
 fn isValidKeyName(key: []const u8, place: enum { alone, in_combination }) bool {
-    if (isFunctionKeyInAnyCase(key)) return key[0] == 'F';
+    if (isFunctionKeyInAnyCase(key)) {
+        // `F1` to `F24`, with a capital `F` and no zero in front.
+        const number = std.fmt.parseInt(u8, key[1..], 10) catch return false;
+        return key[0] == 'F' and key[1] != '0' and number >= 1 and number <= 24;
+    }
 
     const name = fixedKeyName(key) orelse return true;
     if (std.mem.eql(u8, key, name)) return true;
@@ -226,7 +271,8 @@ fn fixedKeyName(key: []const u8) ?[]const u8 {
     return null;
 }
 
-/// Returns true for `F1` to `F99` and for the same with a lowercase `f`.
+/// Returns true for `F` and one or two digits, and for the same with a
+/// lowercase `f`.
 fn isFunctionKeyInAnyCase(key: []const u8) bool {
     if (key.len < 2 or key.len > 3) return false;
     if (key[0] != 'F' and key[0] != 'f') return false;
@@ -250,6 +296,15 @@ fn modifierIndex(part: []const u8, platform: Platform) ?usize {
         if (std.mem.eql(u8, part, modifier)) return index;
     }
     return null;
+}
+
+/// Returns true when `part` is a word for a modifier, in any case and for
+/// any platform.
+fn isModifierWord(part: []const u8) bool {
+    for (modifier_words) |word| {
+        if (std.ascii.eqlIgnoreCase(part, word)) return true;
+    }
+    return false;
 }
 
 fn isModifierInAnyCase(part: []const u8, platform: Platform) bool {
@@ -489,6 +544,79 @@ test "isValidKeys rejects a combination with no key or with a modifier twice" {
 
     try testing.expect(!isValidKeys("Cmd+Cmd+N", .macos));
     try testing.expect(!isValidKeys("Ctrl+Shift+Ctrl+N", .linux));
+}
+
+test "isValidKeys rejects a modifier word in lowercase and a spaced plus" {
+    try testing.expect(!isValidKeys("command+n", .macos));
+    try testing.expect(!isValidKeys("option+n", .macos));
+    try testing.expect(!isValidKeys("control+c", .macos));
+    try testing.expect(!isValidKeys("alt+n", .macos));
+    try testing.expect(!isValidKeys("win+l", .linux));
+    try testing.expect(!isValidKeys("meta+x", .linux));
+
+    try testing.expect(!isValidKeys("Cmd + N", .macos));
+    try testing.expect(!isValidKeys("ctrl + c", .linux));
+
+    // A plus with no modifier before it is the plus key of the app.
+    try testing.expect(isValidKeys("Ctrl+w +", .macos));
+    try testing.expect(isValidKeys("g +", .macos));
+}
+
+test "isValidKeys rejects a name written as two words and a wrong function key" {
+    try testing.expect(!isValidKeys("Ctrl+Page Up", .linux));
+    try testing.expect(!isValidKeys("Left Arrow", .macos));
+
+    try testing.expect(isValidKeys("F1", .macos));
+    try testing.expect(isValidKeys("F24", .macos));
+    try testing.expect(!isValidKeys("F0", .macos));
+    try testing.expect(!isValidKeys("F00", .macos));
+    try testing.expect(!isValidKeys("F05", .macos));
+    try testing.expect(!isValidKeys("F25", .macos));
+    try testing.expect(!isValidKeys("Shift+F99", .macos));
+}
+
+test "validate rejects the same alternative twice and a live group with no binding" {
+    _ = try expectProblem(error.InvalidKeys,
+        \\[ { "name": "app", "full_name": "App", "binding_groups": [
+        \\  { "id": 1, "title": "One", "bindings": [
+        \\    { "id": 1, "keys": ["Cmd+N", "Cmd+N"], "effect": "Twice" } ] }
+        \\] } ]
+    );
+    _ = try expectProblem(error.EmptyField,
+        \\[ { "name": "app", "full_name": "App", "binding_groups": [
+        \\  { "id": 1, "title": "One", "bindings": [] }
+        \\] } ]
+    );
+}
+
+test "validate rejects a title or a note that two live groups share" {
+    _ = try expectProblem(error.DuplicateTitle,
+        \\[ { "name": "app", "full_name": "App", "binding_groups": [
+        \\  { "id": 1, "title": "Same", "bindings": [ { "id": 1, "keys": ["a"], "effect": "A" } ] },
+        \\  { "id": 2, "title": "Same", "bindings": [ { "id": 2, "keys": ["b"], "effect": "B" } ] }
+        \\] } ]
+    );
+    _ = try expectProblem(error.DuplicateNote,
+        \\[ { "name": "app", "full_name": "App", "binding_groups": [
+        \\  { "id": 1, "title": "One", "note": "Same", "bindings": [ { "id": 1, "keys": ["a"], "effect": "A" } ] },
+        \\  { "id": 2, "title": "Two", "note": "Same", "bindings": [ { "id": 2, "keys": ["b"], "effect": "B" } ] }
+        \\] } ]
+    );
+}
+
+test "validate accepts the title and the note of a dead group again" {
+    var arena_state: std.heap.ArenaAllocator = .init(testing.allocator);
+    defer arena_state.deinit();
+    const arena = arena_state.allocator();
+
+    const json =
+        \\[ { "name": "app", "full_name": "App", "binding_groups": [
+        \\  { "id": 1, "title": "Same", "note": "Note", "dead": true, "bindings": [] },
+        \\  { "id": 2, "title": "Same", "note": "Note", "bindings": [ { "id": 1, "keys": ["a"], "effect": "A" } ] }
+        \\] } ]
+    ;
+    var problem: Problem = .{};
+    try validate(arena, try data.parseRaw(arena, json), .macos, &problem);
 }
 
 test "isValidKeys rejects a space at either end and two spaces in a row" {

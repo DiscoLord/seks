@@ -6,7 +6,7 @@ const data = @import("data.zig");
 pub const Style = enum {
     /// Text only. For a pipe or a file.
     plain,
-    /// Text with ANSI escape codes for bold and italic. For a terminal.
+    /// Text with ANSI escape codes for bold, italic and dim. For a terminal.
     ansi,
 };
 
@@ -93,16 +93,24 @@ pub fn writeBinding(
     keys_column_width: usize,
     style: Style,
 ) Io.Writer.Error!void {
-    try writer.writeAll(indent);
-    for (binding.keys, 0..) |alternative, index| {
-        if (index > 0) {
-            try writer.writeByte(' ');
-            try writeStyled(writer, alternative_separator, .bold, style);
-            try writer.writeByte(' ');
-        }
-        var pieces: DrawnPieces = .{ .text = alternative };
-        while (pieces.next()) |piece| try writer.writeAll(piece);
-    }
+    try writeBindingStart(writer, binding, keys_column_width, style);
+    try writer.writeAll(binding.effect);
+}
+
+/// Returns the columns that `writeBinding` takes for `binding`.
+pub fn bindingWidth(binding: data.Binding, keys_column_width: usize) usize {
+    return bindingStartWidth(binding, keys_column_width) + textWidth(binding.effect);
+}
+
+/// Writes the part of a binding before its effect: the indent, the keys and
+/// the leader.
+pub fn writeBindingStart(
+    writer: *Io.Writer,
+    binding: data.Binding,
+    keys_column_width: usize,
+    style: Style,
+) Io.Writer.Error!void {
+    try writeBindingKeys(writer, binding, style);
     // Size the leader by the visible width of the keys. The escape codes
     // take bytes but no columns, so the byte count of the written text is
     // wrong here.
@@ -117,13 +125,31 @@ pub fn writeBinding(
         },
     }
     try writer.writeByte(' ');
-    try writer.writeAll(binding.effect);
 }
 
-/// Returns the columns that `writeBinding` takes for `binding`.
-pub fn bindingWidth(binding: data.Binding, keys_column_width: usize) usize {
-    return indent.len + @max(keys_column_width, keysWidth(binding.keys)) +
-        1 + min_leader_dots + 1 + textWidth(binding.effect);
+/// Returns the columns that `writeBindingStart` takes. The effect starts in
+/// the column after it.
+pub fn bindingStartWidth(binding: data.Binding, keys_column_width: usize) usize {
+    return indent.len + @max(keys_column_width, keysWidth(binding.keys)) + 1 + min_leader_dots + 1;
+}
+
+/// Writes the indent and the keys of a binding, with no leader.
+pub fn writeBindingKeys(writer: *Io.Writer, binding: data.Binding, style: Style) Io.Writer.Error!void {
+    try writer.writeAll(indent);
+    for (binding.keys, 0..) |alternative, index| {
+        if (index > 0) {
+            try writer.writeByte(' ');
+            try writeStyled(writer, alternative_separator, .bold, style);
+            try writer.writeByte(' ');
+        }
+        var pieces: DrawnPieces = .{ .text = alternative };
+        while (pieces.next()) |piece| try writer.writeAll(piece);
+    }
+}
+
+/// Returns the columns that `writeBindingKeys` takes.
+pub fn bindingKeysWidth(binding: data.Binding) usize {
+    return indent.len + keysWidth(binding.keys);
 }
 
 /// Returns the width of the keys column of `group`: its widest keys text

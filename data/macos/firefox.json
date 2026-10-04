@@ -1,6 +1,6 @@
 {
   "full_name": "Mozilla Firefox",
-  "note": "Default shortcuts; context and preference-dependent bindings are marked by section. DevTools reference: https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/",
+  "note": "Default shortcuts; context and preference-dependent bindings are marked by section. DevTools groups need focus in the named pane. DevTools reference: https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/",
   "source": "https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
   "binding_groups": [
     {
@@ -1193,12 +1193,11 @@
           ],
           "effect": "Toggle split console (except if console is the selected tool)"
         }
-      ],
-      "note": "Focus the named DevTools pane; editing and selection actions depend on the focused field or node."
+      ]
     },
     {
       "id": 21,
-      "title": "DevTools: Toolbox",
+      "title": "DevTools: All tools",
       "bindings": [
         {
           "id": 149,
@@ -1221,8 +1220,7 @@
           ],
           "effect": "Reset font size"
         }
-      ],
-      "note": "Focus the named DevTools pane; editing and selection actions depend on the focused field or node."
+      ]
     },
     {
       "id": 22,
@@ -1321,8 +1319,7 @@
           ],
           "effect": "Comment/uncomment line(s)"
         }
-      ],
-      "note": "Focus the named DevTools pane; editing and selection actions depend on the focused field or node."
+      ]
     },
     {
       "id": 23,
@@ -1335,8 +1332,7 @@
           ],
           "effect": "Inspect Element"
         }
-      ],
-      "note": "Focus the named DevTools pane; editing and selection actions depend on the focused field or node."
+      ]
     },
     {
       "id": 24,
@@ -1356,8 +1352,7 @@
           ],
           "effect": "Select the element under the mouse, even if it can’t consume pointer events"
         }
-      ],
-      "note": "Focus the named DevTools pane; editing and selection actions depend on the focused field or node."
+      ]
     },
     {
       "id": 25,
@@ -1512,8 +1507,7 @@
           ],
           "effect": "Find the previous match in the markup, when searching is active"
         }
-      ],
-      "note": "Focus the named DevTools pane; editing and selection actions depend on the focused field or node."
+      ]
     },
     {
       "id": 26,
@@ -1547,8 +1541,7 @@
           ],
           "effect": "Focus the CSS pane"
         }
-      ],
-      "note": "Focus the named DevTools pane; editing and selection actions depend on the focused field or node."
+      ]
     },
     {
       "id": 27,
@@ -1690,8 +1683,7 @@
           ],
           "effect": "Open current CSS file in Style Editor (Computed view only, when more information is shown for a property and a CSS file reference is focused)."
         }
-      ],
-      "note": "Focus the named DevTools pane; editing and selection actions depend on the focused field or node."
+      ]
     },
     {
       "id": 28,
@@ -1774,8 +1766,7 @@
           ],
           "effect": "Toggle conditional breakpoint on the selected line"
         }
-      ],
-      "note": "Focus the named DevTools pane; editing and selection actions depend on the focused field or node."
+      ]
     },
     {
       "id": 29,
@@ -1824,8 +1815,7 @@
           ],
           "effect": "Clear output"
         }
-      ],
-      "note": "Focus the named DevTools pane; editing and selection actions depend on the focused field or node."
+      ]
     },
     {
       "id": 30,
@@ -1915,8 +1905,7 @@
           ],
           "effect": "Add a new line, for entering multiline expressions"
         }
-      ],
-      "note": "Focus the named DevTools pane; editing and selection actions depend on the focused field or node."
+      ]
     },
     {
       "id": 31,
@@ -1978,8 +1967,7 @@
           ],
           "effect": "Scroll to end of autocomplete suggestions"
         }
-      ],
-      "note": "Focus the named DevTools pane; editing and selection actions depend on the focused field or node."
+      ]
     },
     {
       "id": 32,
@@ -2034,8 +2022,7 @@
           ],
           "effect": "Save file to disk"
         }
-      ],
-      "note": "Focus the named DevTools pane; editing and selection actions depend on the focused field or node."
+      ]
     },
     {
       "id": 33,
@@ -2075,8 +2062,7 @@
           ],
           "effect": "Move by 10 pixels"
         }
-      ],
-      "note": "Focus the named DevTools pane; editing and selection actions depend on the focused field or node."
+      ]
     },
     {
       "id": 34,

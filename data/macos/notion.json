@@ -1,7 +1,7 @@
 {
   "full_name": "Notion",
   "source": "https://www.notion.com/help/keyboard-shortcuts",
-  "note": "English/QWERTY shortcuts. Linux uses the web app; focus the page editor to avoid browser shortcut conflicts. Includes contextual table, block and inline-menu shortcuts; slash-command names are not enumerated.",
+  "note": "English/QWERTY shortcuts. Includes contextual table, block and inline-menu shortcuts; slash-command names are not enumerated.",
   "binding_groups": [
     {
       "id": 1,

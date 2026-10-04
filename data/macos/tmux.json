@@ -1,12 +1,11 @@
 {
   "full_name": "tmux",
-  "note": "tmux 3.7c defaults; prefix = Ctrl+B; copy-mode keys depend on mode-keys.",
+  "note": "tmux 3.7c defaults. Press the prefix Ctrl+B, release it, then press the next key. Copy mode starts with Ctrl+B [. Its keys need no prefix and depend on mode-keys.",
   "source": "https://github.com/tmux/tmux/blob/3.7c/key-bindings.c",
   "binding_groups": [
     {
       "id": 1,
       "title": "Sessions",
-      "note": "Press Ctrl+B, release it, then press the remaining key.",
       "bindings": [
         {
           "id": 1,
@@ -62,7 +61,6 @@
     {
       "id": 2,
       "title": "Windows",
-      "note": "Press Ctrl+B, release it, then press the remaining key.",
       "bindings": [
         {
           "id": 8,
@@ -209,7 +207,6 @@
     {
       "id": 3,
       "title": "Panes",
-      "note": "Press Ctrl+B, release it, then press the remaining key.",
       "bindings": [
         {
           "id": 28,
@@ -524,7 +521,6 @@
     {
       "id": 6,
       "title": "Copy mode: Emacs",
-      "note": "Default prefix is Ctrl+B. Copy-mode keys are pressed without the prefix after entering with Ctrl+B [.",
       "bindings": [
         {
           "id": 70,
@@ -941,7 +937,6 @@
     {
       "id": 7,
       "title": "Copy mode: vi",
-      "note": "Default prefix is Ctrl+B. Copy-mode keys are pressed without the prefix after entering with Ctrl+B [.",
       "bindings": [
         {
           "id": 91,
@@ -1455,7 +1450,6 @@
     {
       "id": 8,
       "title": "Help and commands",
-      "note": "Press Ctrl+B, release it, then press the remaining key.",
       "bindings": [
         {
           "id": 119,
@@ -1603,8 +1597,7 @@
           ],
           "effect": "Display pane menu"
         }
-      ],
-      "note": "Default prefix is Ctrl+B. Copy-mode keys are pressed without the prefix after entering with Ctrl+B [."
+      ]
     },
     {
       "id": 10,

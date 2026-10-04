@@ -472,8 +472,7 @@
           ],
           "effect": "Turn on full-screen mode"
         }
-      ],
-      "note": "Chrome default shortcuts; some system keys depend on the desktop environment."
+      ]
     },
     {
       "id": 9,
@@ -550,8 +549,7 @@
           ],
           "effect": "Open split view in the active tab"
         }
-      ],
-      "note": "Chrome default shortcuts; some system keys depend on the desktop environment."
+      ]
     },
     {
       "id": 10,
@@ -711,8 +709,7 @@
           ],
           "effect": "Open your home page in the current tab"
         }
-      ],
-      "note": "Chrome default shortcuts; some system keys depend on the desktop environment."
+      ]
     },
     {
       "id": 12,
@@ -775,8 +772,7 @@
           ],
           "effect": "Open the Elements panel"
         }
-      ],
-      "note": "Focus this DevTools panel or editor; these bindings are independent of browser-page shortcuts."
+      ]
     },
     {
       "id": 14,
@@ -896,8 +892,7 @@
           ],
           "effect": "Restore default zoom level"
         }
-      ],
-      "note": "Focus this DevTools panel or editor; these bindings are independent of browser-page shortcuts."
+      ]
     },
     {
       "id": 15,
@@ -980,8 +975,7 @@
           ],
           "effect": "Toggle Edit as HTML mode on the currently-selected element"
         }
-      ],
-      "note": "Focus this DevTools panel or editor; these bindings are independent of browser-page shortcuts."
+      ]
     },
     {
       "id": 16,
@@ -1071,8 +1065,7 @@
           ],
           "effect": "Decrease a property value by 100"
         }
-      ],
-      "note": "Focus this DevTools panel or editor; these bindings are independent of browser-page shortcuts."
+      ]
     },
     {
       "id": 17,
@@ -1180,8 +1173,7 @@
           ],
           "effect": "Toggle the Debugger sidebar on the right"
         }
-      ],
-      "note": "Focus this DevTools panel or editor; these bindings are independent of browser-page shortcuts."
+      ]
     },
     {
       "id": 18,
@@ -1236,8 +1228,7 @@
           ],
           "effect": "Undo last occurrence selection"
         }
-      ],
-      "note": "Focus this DevTools panel or editor; these bindings are independent of browser-page shortcuts."
+      ]
     },
     {
       "id": 19,
@@ -1278,8 +1269,7 @@
           ],
           "effect": "Hide the details of a selected request"
         }
-      ],
-      "note": "Focus this DevTools panel or editor; these bindings are independent of browser-page shortcuts."
+      ]
     },
     {
       "id": 20,
@@ -1306,8 +1296,7 @@
           ],
           "effect": "Load recording"
         }
-      ],
-      "note": "Focus this DevTools panel or editor; these bindings are independent of browser-page shortcuts."
+      ]
     },
     {
       "id": 21,
@@ -1320,8 +1309,7 @@
           ],
           "effect": "Start / stop recording"
         }
-      ],
-      "note": "Focus this DevTools panel or editor; these bindings are independent of browser-page shortcuts."
+      ]
     },
     {
       "id": 22,
@@ -1387,8 +1375,7 @@
           ],
           "effect": "Execute"
         }
-      ],
-      "note": "Focus this DevTools panel or editor; these bindings are independent of browser-page shortcuts."
+      ]
     },
     {
       "id": 23,
@@ -1408,8 +1395,7 @@
           ],
           "effect": "Expand all search results"
         }
-      ],
-      "note": "Focus this DevTools panel or editor; these bindings are independent of browser-page shortcuts."
+      ]
     },
     {
       "id": 24,
@@ -1443,8 +1429,7 @@
           ],
           "effect": "Toggle code view"
         }
-      ],
-      "note": "Focus this DevTools panel or editor; these bindings are independent of browser-page shortcuts."
+      ]
     },
     {
       "id": 25,
@@ -1499,8 +1484,7 @@
           ],
           "effect": "Reset the diagram's position and rotation"
         }
-      ],
-      "note": "Focus this DevTools panel or editor; these bindings are independent of browser-page shortcuts."
+      ]
     }
   ],
   "aliases": [

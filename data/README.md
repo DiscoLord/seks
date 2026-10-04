@@ -26,6 +26,10 @@ The build finds the new file. There is no list to edit.
 A group has `id`, `title`, `bindings`, and an optional `note`. A binding has
 `id`, `keys` and `effect`.
 
+- **No two groups of an app have the same title.**
+- **No two groups of an app have the same note.** A fact that holds for
+  many groups goes in the note of the app, once.
+
 - **A field that is not in this list is an error.** This catches a
   misspelled field, such as `"Dead"`.
 - **Text holds no control characters, no invisible characters and no space

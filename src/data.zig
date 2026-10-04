@@ -7,14 +7,6 @@ const std = @import("std");
 const builtin = @import("builtin");
 const Allocator = std.mem.Allocator;
 
-/// The shape of the JSON. Raise it only when the shape changes in a way that
-/// breaks older builds.
-pub const schema_version = 1;
-
-/// The revision of the bundled data. The data ships inside the app, so this
-/// is the app version.
-pub const version: []const u8 = @import("build_options").version;
-
 /// The name of the plus key in the data. A bare `+` joins keys held
 /// together, so the key itself needs a name.
 pub const plus_key = "Plus";

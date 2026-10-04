@@ -497,8 +497,7 @@
           ],
           "effect": "Hide All Tool Windows"
         }
-      ],
-      "note": "Android Studio default keymap from its own documentation."
+      ]
     },
     {
       "id": 9,
@@ -546,8 +545,7 @@
           ],
           "effect": "Switch between tabs and tool window"
         }
-      ],
-      "note": "Android Studio default keymap from its own documentation."
+      ]
     },
     {
       "id": 10,
@@ -624,8 +622,7 @@
           ],
           "effect": "Open call hierarchy"
         }
-      ],
-      "note": "Android Studio default keymap from its own documentation."
+      ]
     },
     {
       "id": 11,
@@ -659,8 +656,7 @@
           ],
           "effect": "Actual size"
         }
-      ],
-      "note": "Focus this editor; shortcuts depend on editor context."
+      ]
     },
     {
       "id": 12,
@@ -743,8 +739,7 @@
           ],
           "effect": "Select all components"
         }
-      ],
-      "note": "Focus this editor; shortcuts depend on editor context."
+      ]
     },
     {
       "id": 13,
@@ -813,8 +808,7 @@
           ],
           "effect": "Select all destinations"
         }
-      ],
-      "note": "Focus this editor; shortcuts depend on editor context."
+      ]
     },
     {
       "id": 14,
@@ -988,8 +982,7 @@
           ],
           "effect": "Delete to start of word"
         }
-      ],
-      "note": "Android Studio default keymap from its own documentation."
+      ]
     },
     {
       "id": 15,
@@ -1016,8 +1009,7 @@
           ],
           "effect": "Safe delete selected declaration or project item"
         }
-      ],
-      "note": "Android Studio default keymap from its own documentation."
+      ]
     },
     {
       "id": 16,
@@ -1051,8 +1043,7 @@
           ],
           "effect": "Open VCS dialog"
         }
-      ],
-      "note": "Android Studio default keymap from its own documentation."
+      ]
     }
   ]
 }

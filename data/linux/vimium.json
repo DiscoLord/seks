@@ -1,6 +1,6 @@
 {
   "full_name": "Vimium for Firefox",
-  "note": "Vimium 2.4.2 for Firefox (not Vimium C). Case matters. Use on permitted web pages; Firefox internal and protected pages block extensions.",
+  "note": "Vimium 2.4.2 for Firefox (not Vimium C). Case matters. Use on permitted web pages; Firefox internal and protected pages block extensions. Keys work in normal mode, outside editable fields. A number before a key repeats it, for example 5 j.",
   "source": "https://github.com/philc/vimium",
   "binding_groups": [
     {
@@ -184,8 +184,7 @@
           ],
           "effect": "Enter visual line mode"
         }
-      ],
-      "note": "Normal mode, outside editable fields. Prefix repeatable actions with a number, for example 5 j."
+      ]
     },
     {
       "id": 2,
@@ -261,8 +260,7 @@
           ],
           "effect": "Find the selected text, searching backwards"
         }
-      ],
-      "note": "Normal mode, outside editable fields. Prefix repeatable actions with a number, for example 5 j."
+      ]
     },
     {
       "id": 4,
@@ -317,8 +315,7 @@
           ],
           "effect": "Edit the URL and open in a new tab"
         }
-      ],
-      "note": "Normal mode, outside editable fields. Prefix repeatable actions with a number, for example 5 j."
+      ]
     },
     {
       "id": 5,
@@ -338,8 +335,7 @@
           ],
           "effect": "Go forward in history"
         }
-      ],
-      "note": "Normal mode, outside editable fields. Prefix repeatable actions with a number, for example 5 j."
+      ]
     },
     {
       "id": 6,
@@ -466,8 +462,7 @@
           ],
           "effect": "Reset zoom"
         }
-      ],
-      "note": "Normal mode, outside editable fields. Prefix repeatable actions with a number, for example 5 j."
+      ]
     },
     {
       "id": 7,
@@ -508,8 +503,7 @@
           ],
           "effect": "View page source"
         }
-      ],
-      "note": "Normal mode, outside editable fields. Prefix repeatable actions with a number, for example 5 j."
+      ]
     },
     {
       "id": 9,

@@ -8,12 +8,13 @@ _seks() {
   (( CURRENT == 2 )) || return 1
 
   if [[ ${words[CURRENT]} == -* ]]; then
-    local -a options=(
+    # Not `options`: zsh has a special parameter with that name.
+    local -a flags=(
       '--list:list the apps'
       '--help:show the help'
       '--version:show the version'
     )
-    _describe -t options 'option' options
+    _describe -t flags 'option' flags
     return
   fi
 

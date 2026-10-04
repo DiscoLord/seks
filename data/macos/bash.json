@@ -1173,8 +1173,7 @@
           ],
           "effect": "Yank nth arg"
         }
-      ],
-      "note": "Meta requires the terminal to send Esc-prefixed keys. Bash 5.2.21 / Readline default map."
+      ]
     },
     {
       "id": 10,
@@ -1586,8 +1585,7 @@
           ],
           "effect": "Yank"
         }
-      ],
-      "note": "Meta requires the terminal to send Esc-prefixed keys. Bash 5.2.21 / Readline default map."
+      ]
     },
     {
       "id": 11,
@@ -1768,8 +1766,7 @@
           ],
           "effect": "Yank"
         }
-      ],
-      "note": "Meta requires the terminal to send Esc-prefixed keys. Bash 5.2.21 / Readline default map."
+      ]
     }
   ]
 }

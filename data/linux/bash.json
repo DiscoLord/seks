@@ -3,7 +3,7 @@
     "readline"
   ],
   "full_name": "Bash / Readline",
-  "note": "Bash 5.2.21 / Readline defaults; Emacs, vi command and vi insert maps. macOS requires this Bash version, not the older system Bash.",
+  "note": "Bash 5.2.21 / Readline defaults; Emacs, vi command and vi insert maps.",
   "source": "https://tiswww.case.edu/php/chet/readline/rluserman.html",
   "binding_groups": [
     {
@@ -1173,8 +1173,7 @@
           ],
           "effect": "Yank nth arg"
         }
-      ],
-      "note": "Meta requires the terminal to send Esc-prefixed keys. Bash 5.2.21 / Readline default map."
+      ]
     },
     {
       "id": 10,
@@ -1586,8 +1585,7 @@
           ],
           "effect": "Yank"
         }
-      ],
-      "note": "Meta requires the terminal to send Esc-prefixed keys. Bash 5.2.21 / Readline default map."
+      ]
     },
     {
       "id": 11,
@@ -1768,8 +1766,7 @@
           ],
           "effect": "Yank"
         }
-      ],
-      "note": "Meta requires the terminal to send Esc-prefixed keys. Bash 5.2.21 / Readline default map."
+      ]
     }
   ]
 }

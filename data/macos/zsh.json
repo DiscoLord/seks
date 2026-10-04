@@ -3,7 +3,7 @@
     "zle"
   ],
   "full_name": "Zsh",
-  "note": "Zsh 5.9 default ZLE maps: Emacs, vi insert, vi command, operator-pending and visual modes.",
+  "note": "Zsh 5.9 default ZLE maps: Emacs, vi insert, vi command, operator-pending and visual modes. Meta needs a terminal that sends Esc-prefixed keys.",
   "source": "https://zsh.sourceforge.io/Doc/Release/Zsh-Line-Editor.html",
   "binding_groups": [
     {
@@ -772,7 +772,7 @@
           "keys": [
             "Ctrl+X Ctrl+V"
           ],
-          "effect": "Cmd mode"
+          "effect": "Switch to vi command mode"
         },
         {
           "id": 102,
@@ -1166,8 +1166,7 @@
           ],
           "effect": "Goto column"
         }
-      ],
-      "note": "Meta requires the terminal to send Esc-prefixed keys. Zsh 5.9 default ZLE map."
+      ]
     },
     {
       "id": 10,
@@ -1271,8 +1270,7 @@
           ],
           "effect": "Backward char"
         }
-      ],
-      "note": "Meta requires the terminal to send Esc-prefixed keys. Zsh 5.9 default ZLE map."
+      ]
     },
     {
       "id": 11,
@@ -1283,7 +1281,7 @@
           "keys": [
             "Esc"
           ],
-          "effect": "Cmd mode"
+          "effect": "Switch to vi command mode"
         },
         {
           "id": 173,
@@ -1355,8 +1353,7 @@
           ],
           "effect": "Up line"
         }
-      ],
-      "note": "Meta requires the terminal to send Esc-prefixed keys. Zsh 5.9 default ZLE map."
+      ]
     },
     {
       "id": 12,
@@ -1481,8 +1478,7 @@
           ],
           "effect": "Oper swap case"
         }
-      ],
-      "note": "Meta requires the terminal to send Esc-prefixed keys. Zsh 5.9 default ZLE map."
+      ]
     }
   ]
 }

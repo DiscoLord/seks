@@ -28,11 +28,64 @@ const clear_to_line_end = "\x1b[K";
 // does not touch the side of the screen.
 const margin = "  ";
 
-const help_many_pages = "Space next   b back   q quit";
+const help_many_pages = "Space next   b back   g first   G last   q quit";
 const help_one_page = "q quit";
 
 // How long to wait for a key before the size of the terminal is read again.
 const resize_poll_ms = 200;
+
+/// The body gets at least this many rows before a part of the frame is
+/// dropped to make room.
+const min_body_height = 3;
+
+/// How the rows and columns of the screen are shared out: a header row with
+/// the name, the note of the app, an empty row, the body with the columns,
+/// an empty row and the help row.
+///
+/// On a small screen the frame drops parts so that the body keeps its rows:
+/// first the note, then the two empty rows, then the help row, then the
+/// header row.
+const Frame = struct {
+    has_header: bool = true,
+    /// The note of the app, wrapped to the width of the body. Empty when
+    /// the app has no note or the screen has no room for it.
+    note: []const pages.Line = &.{},
+    has_gaps: bool = true,
+    has_help: bool = true,
+    rows: usize,
+    /// The columns for the text: all columns without the two margins.
+    body_width: usize,
+
+    /// `arena` owns the note lines.
+    fn init(arena: std.mem.Allocator, app: data.App, size: Size, style: render.Style) !Frame {
+        var frame: Frame = .{
+            .rows = size.rows,
+            .body_width = @max(1, size.columns -| 2 * margin.len),
+        };
+        if (app.note) |note| frame.note = try pages.noteLines(arena, note, frame.body_width, style);
+
+        if (frame.freeRows() < min_body_height) frame.note = &.{};
+        if (frame.freeRows() < min_body_height) frame.has_gaps = false;
+        if (frame.freeRows() < 1) frame.has_help = false;
+        if (frame.freeRows() < 1) frame.has_header = false;
+        return frame;
+    }
+
+    /// Returns the rows that the parts of the frame leave for the body. It
+    /// can be 0.
+    fn freeRows(frame: Frame) usize {
+        const header: usize = if (frame.has_header) 1 else 0;
+        const gaps: usize = if (frame.has_gaps) 2 else 0;
+        const help: usize = if (frame.has_help) 1 else 0;
+        return frame.rows -| (header + frame.note.len + gaps + help);
+    }
+
+    /// Returns the rows of the body. It is 1 at least, also on a screen
+    /// with no rows.
+    fn bodyHeight(frame: Frame) usize {
+        return @max(1, frame.freeRows());
+    }
+};
 
 /// Shows `app` page by page and returns when the user quits.
 ///
@@ -73,15 +126,17 @@ pub fn show(io: Io, app: data.App, style: render.Style) !void {
     // Each new layout replaces the one before it, so its memory is reset.
     var layout_arena: std.heap.ArenaAllocator = .init(std.heap.page_allocator);
     defer layout_arena.deinit();
+    const arena = layout_arena.allocator();
 
     var size = terminalSize(io);
-    var layout = try pages.layout(layout_arena.allocator(), app, style, bodyWidth(size), bodyHeight(app, size));
+    var frame: Frame = try .init(arena, app, size, style);
+    var layout = try pages.layout(arena, app, style, frame.body_width, frame.bodyHeight());
     var page_index: usize = 0;
     var needs_draw = true;
 
     while (true) {
         if (needs_draw) {
-            try draw(writer, app, layout, page_index, size, style);
+            try draw(writer, app, frame, layout, page_index, style);
             try writer.flush();
             needs_draw = false;
         }
@@ -93,9 +148,14 @@ pub fn show(io: Io, app: data.App, style: render.Style) !void {
             const new_size = terminalSize(io);
             if (new_size.columns == size.columns and new_size.rows == size.rows) continue;
             size = new_size;
+
+            // Stay at the same group. The same page number would show
+            // other bindings after the pages change.
+            const group = layout[page_index].first_group;
             _ = layout_arena.reset(.retain_capacity);
-            layout = try pages.layout(layout_arena.allocator(), app, style, bodyWidth(size), bodyHeight(app, size));
-            page_index = @min(page_index, layout.len - 1);
+            frame = try .init(arena, app, size, style);
+            layout = try pages.layout(arena, app, style, frame.body_width, frame.bodyHeight());
+            page_index = pages.pageOfGroup(layout, group);
             needs_draw = true;
             continue;
         };
@@ -104,6 +164,7 @@ pub fn show(io: Io, app: data.App, style: render.Style) !void {
         if (keys.len == 0) return;
 
         // One read can hold several keys, for example when a key repeats.
+        const shown_page = page_index;
         while (keys.len > 0) {
             const key = keys[0..keyLength(keys)];
             keys = keys[key.len..];
@@ -114,27 +175,9 @@ pub fn show(io: Io, app: data.App, style: render.Style) !void {
                 .last => page_index = layout.len - 1,
                 .quit => return,
             }
-            needs_draw = true;
         }
+        if (page_index != shown_page) needs_draw = true;
     }
-}
-
-/// Returns the rows of the header: the name, the note when there is one,
-/// and one empty row.
-fn headerHeight(app: data.App) usize {
-    return if (app.note == null) 2 else 3;
-}
-
-/// Returns the rows left for the columns: all rows without the header, one
-/// empty row and the help row.
-fn bodyHeight(app: data.App, size: Size) usize {
-    return @max(1, size.rows -| (headerHeight(app) + 2));
-}
-
-/// Returns the columns left for the text: all columns without the two
-/// margins.
-fn bodyWidth(size: Size) usize {
-    return size.columns -| 2 * margin.len;
 }
 
 fn terminalSize(io: Io) Size {
@@ -153,37 +196,40 @@ fn terminalSize(io: Io) Size {
 fn draw(
     writer: *Io.Writer,
     app: data.App,
+    frame: Frame,
     layout: []const pages.Page,
     page_index: usize,
-    size: Size,
     style: render.Style,
 ) Io.Writer.Error!void {
     var row: usize = 1;
 
-    // The name on the left, the page number on the right.
-    try moveTo(writer, row);
-    try render.writeStyled(writer, app.full_name, .bold, style);
-    var counter_buffer: [32]u8 = undefined;
-    const counter = std.fmt.bufPrint(&counter_buffer, "page {d}/{d}", .{ page_index + 1, layout.len }) catch "";
-    const name_width = render.textWidth(app.full_name);
-    if (name_width + 2 + counter.len <= bodyWidth(size)) {
-        try writer.splatByteAll(' ', bodyWidth(size) - name_width - counter.len);
-        try writer.writeAll(counter);
-    }
-    row += 1;
-
-    if (app.note) |note| {
+    if (frame.has_header) {
+        // The name on the left, the page number on the right.
         try moveTo(writer, row);
-        try render.writeStyled(writer, note, .italic, style);
+        try render.writeStyled(writer, app.full_name, .bold, style);
+        var counter_buffer: [32]u8 = undefined;
+        const counter = std.fmt.bufPrint(&counter_buffer, "page {d}/{d}", .{ page_index + 1, layout.len }) catch "";
+        const name_width = render.textWidth(app.full_name);
+        if (name_width + 2 + counter.len <= frame.body_width) {
+            try writer.splatByteAll(' ', frame.body_width - name_width - counter.len);
+            try writer.writeAll(counter);
+        }
         row += 1;
     }
 
-    try moveTo(writer, row);
-    row += 1;
+    for (frame.note) |line| {
+        try moveTo(writer, row);
+        try writer.writeAll(line.text);
+        row += 1;
+    }
+
+    if (frame.has_gaps) {
+        try moveTo(writer, row);
+        row += 1;
+    }
 
     const columns = layout[page_index].columns;
-    const body_height = bodyHeight(app, size);
-    for (0..body_height) |line_index| {
+    for (0..frame.bodyHeight()) |line_index| {
         try moveTo(writer, row);
         for (columns, 0..) |column, column_index| {
             const line: pages.Line = if (line_index < column.lines.len) column.lines[line_index] else .{};
@@ -196,12 +242,13 @@ fn draw(
         row += 1;
     }
 
+    if (!frame.has_help) return;
+
     // Clear the rows between the body and the help row.
-    while (row < size.rows) : (row += 1) {
+    while (row < frame.rows) : (row += 1) {
         try moveTo(writer, row);
     }
-
-    try moveTo(writer, size.rows);
+    try moveTo(writer, frame.rows);
     try writer.writeAll(if (layout.len > 1) help_many_pages else help_one_page);
 }
 
@@ -361,39 +408,109 @@ test "endsInsideEscape finds a key that is not complete" {
     try testing.expect(!endsInsideEscape("\x1b[Cq"));
 }
 
-test "bodyHeight leaves room for the header and the help row" {
+const test_app: data.App = .{
+    .name = "app",
+    .full_name = "App",
+    .binding_groups = &.{
+        .{ .id = 1, .title = "One", .bindings = &.{
+            .{ .id = 1, .keys = &.{"a"}, .effect = "First" },
+            .{ .id = 2, .keys = &.{"b"}, .effect = "Second" },
+        } },
+        .{ .id = 2, .title = "Two", .bindings = &.{
+            .{ .id = 3, .keys = &.{"c"}, .effect = "Third" },
+            .{ .id = 4, .keys = &.{"d"}, .effect = "Fourth" },
+        } },
+    },
+};
+
+test "Frame leaves room for the header, the note and the help row" {
+    var arena_state: std.heap.ArenaAllocator = .init(testing.allocator);
+    defer arena_state.deinit();
+    const arena = arena_state.allocator();
+
     const with_note: data.App = .{ .name = "a", .full_name = "A", .note = "Note", .binding_groups = &.{} };
     const no_note: data.App = .{ .name = "a", .full_name = "A", .binding_groups = &.{} };
 
-    try testing.expectEqual(19, bodyHeight(with_note, .{ .columns = 80, .rows = 24 }));
-    try testing.expectEqual(20, bodyHeight(no_note, .{ .columns = 80, .rows = 24 }));
-    try testing.expectEqual(1, bodyHeight(with_note, .{ .columns = 80, .rows = 2 }));
+    const full: Frame = try .init(arena, with_note, .{ .columns = 80, .rows = 24 }, .plain);
+    try testing.expectEqual(19, full.bodyHeight());
+    try testing.expectEqual(76, full.body_width);
+    try testing.expectEqual(1, full.note.len);
+
+    const plain: Frame = try .init(arena, no_note, .{ .columns = 80, .rows = 24 }, .plain);
+    try testing.expectEqual(20, plain.bodyHeight());
+}
+
+test "Frame wraps a long note of the app to the width of the body" {
+    var arena_state: std.heap.ArenaAllocator = .init(testing.allocator);
+    defer arena_state.deinit();
+
+    const app: data.App = .{
+        .name = "a",
+        .full_name = "A",
+        .note = "one two three four five six",
+        .binding_groups = &.{},
+    };
+    // The body is 14 columns wide.
+    const frame: Frame = try .init(arena_state.allocator(), app, .{ .columns = 18, .rows = 24 }, .plain);
+    try testing.expectEqual(2, frame.note.len);
+    try testing.expectEqualStrings("one two three", frame.note[0].text);
+    try testing.expectEqualStrings("four five six", frame.note[1].text);
+    try testing.expectEqual(18, frame.bodyHeight());
+}
+
+test "Frame drops parts on a small screen and never overlaps rows" {
+    var arena_state: std.heap.ArenaAllocator = .init(testing.allocator);
+    defer arena_state.deinit();
+    const arena = arena_state.allocator();
+
+    const app: data.App = .{ .name = "a", .full_name = "A", .note = "Note", .binding_groups = &.{} };
+
+    // 8 rows: all parts fit, with 3 rows of body.
+    const eight: Frame = try .init(arena, app, .{ .columns = 80, .rows = 8 }, .plain);
+    try testing.expect(eight.note.len == 1 and eight.has_gaps and eight.has_help and eight.has_header);
+    try testing.expectEqual(3, eight.bodyHeight());
+
+    // 7 rows: the note goes first.
+    const seven: Frame = try .init(arena, app, .{ .columns = 80, .rows = 7 }, .plain);
+    try testing.expect(seven.note.len == 0 and seven.has_gaps);
+    try testing.expectEqual(3, seven.bodyHeight());
+
+    // 6 rows: still 2 rows of body with the gaps, so the gaps go too.
+    const six: Frame = try .init(arena, app, .{ .columns = 80, .rows = 6 }, .plain);
+    try testing.expect(!six.has_gaps and six.has_help and six.has_header);
+    try testing.expectEqual(4, six.bodyHeight());
+
+    // 2 rows: the help row goes, the header stays.
+    const two: Frame = try .init(arena, app, .{ .columns = 80, .rows = 2 }, .plain);
+    try testing.expect(!two.has_help and two.has_header);
+    try testing.expectEqual(1, two.bodyHeight());
+
+    // 1 row: only the body is left.
+    const one: Frame = try .init(arena, app, .{ .columns = 80, .rows = 1 }, .plain);
+    try testing.expect(!one.has_help and !one.has_header);
+    try testing.expectEqual(1, one.bodyHeight());
+
+    // The parts never take more rows than the screen has.
+    for (1..30) |rows| {
+        const frame: Frame = try .init(arena, app, .{ .columns = 80, .rows = rows }, .plain);
+        const header: usize = if (frame.has_header) 1 else 0;
+        const gaps: usize = if (frame.has_gaps) 2 else 0;
+        const help: usize = if (frame.has_help) 1 else 0;
+        try testing.expect(header + frame.note.len + gaps + help + frame.bodyHeight() <= rows);
+    }
 }
 
 test "draw composes the columns of a page side by side" {
     var arena_state: std.heap.ArenaAllocator = .init(testing.allocator);
     defer arena_state.deinit();
+    const arena = arena_state.allocator();
 
-    const app: data.App = .{
-        .name = "app",
-        .full_name = "App",
-        .binding_groups = &.{
-            .{ .id = 1, .title = "One", .bindings = &.{
-                .{ .id = 1, .keys = &.{"a"}, .effect = "First" },
-                .{ .id = 2, .keys = &.{"b"}, .effect = "Second" },
-            } },
-            .{ .id = 2, .title = "Two", .bindings = &.{
-                .{ .id = 3, .keys = &.{"c"}, .effect = "Third" },
-                .{ .id = 4, .keys = &.{"d"}, .effect = "Fourth" },
-            } },
-        },
-    };
-    const size: Size = .{ .columns = 40, .rows = 7 };
-    const layout = try pages.layout(arena_state.allocator(), app, .plain, bodyWidth(size), bodyHeight(app, size));
+    const frame: Frame = try .init(arena, test_app, .{ .columns = 40, .rows = 7 }, .plain);
+    const layout = try pages.layout(arena, test_app, .plain, frame.body_width, frame.bodyHeight());
 
     var buffer: [1024]u8 = undefined;
     var writer: Io.Writer = .fixed(&buffer);
-    try draw(&writer, app, layout, 0, size, .plain);
+    try draw(&writer, test_app, frame, layout, 0, .plain);
 
     // Every row starts after a margin of 2. The name is padded so that the
     // page number ends at column 38, a margin of 2 before the right side.
@@ -405,5 +522,24 @@ test "draw composes the columns of a page side by side" {
         "\x1b[5;1H\x1b[K    b     Second      d     Fourth" ++
         "\x1b[6;1H\x1b[K  " ++
         "\x1b[7;1H\x1b[K  q quit";
+    try testing.expectEqualStrings(expected, writer.buffered());
+}
+
+test "draw on a screen of 2 rows writes the header and one body row" {
+    var arena_state: std.heap.ArenaAllocator = .init(testing.allocator);
+    defer arena_state.deinit();
+    const arena = arena_state.allocator();
+
+    const frame: Frame = try .init(arena, test_app, .{ .columns = 40, .rows = 2 }, .plain);
+    const layout = try pages.layout(arena, test_app, .plain, frame.body_width, frame.bodyHeight());
+
+    var buffer: [1024]u8 = undefined;
+    var writer: Io.Writer = .fixed(&buffer);
+    try draw(&writer, test_app, frame, layout, 0, .plain);
+
+    // No row is written twice, and no row past the second is written. With
+    // one row of body, each binding is a column of its own.
+    const expected = std.fmt.comptimePrint("\x1b[1;1H\x1b[K  {s: <28}page 1/2", .{"App"}) ++
+        "\x1b[2;1H\x1b[K    a     First      b     Second";
     try testing.expectEqualStrings(expected, writer.buffered());
 }

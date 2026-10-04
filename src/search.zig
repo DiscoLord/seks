@@ -22,9 +22,9 @@ const testing = std.testing;
 const test_apps = [_]data.App{
     .{ .name = "vim", .full_name = "Vim", .binding_groups = &.{} },
     .{
-        .name = "nautilus",
-        .aliases = &.{ "files", "gnome files" },
-        .full_name = "GNOME Files",
+        .name = "vscode",
+        .aliases = &.{ "code", "visual studio code" },
+        .full_name = "Visual Studio Code",
         .binding_groups = &.{},
     },
 };
@@ -34,13 +34,13 @@ test "findApp matches the name" {
 }
 
 test "findApp matches an alias, also one with a space" {
-    try testing.expectEqualStrings("GNOME Files", findApp(&test_apps, "files").?.full_name);
-    try testing.expectEqualStrings("GNOME Files", findApp(&test_apps, "gnome files").?.full_name);
+    try testing.expectEqualStrings("Visual Studio Code", findApp(&test_apps, "code").?.full_name);
+    try testing.expectEqualStrings("Visual Studio Code", findApp(&test_apps, "visual studio code").?.full_name);
 }
 
 test "findApp ignores case" {
     try testing.expectEqualStrings("Vim", findApp(&test_apps, "VIM").?.full_name);
-    try testing.expectEqualStrings("GNOME Files", findApp(&test_apps, "Gnome Files").?.full_name);
+    try testing.expectEqualStrings("Visual Studio Code", findApp(&test_apps, "Visual Studio Code").?.full_name);
 }
 
 test "findApp returns null when no app matches" {

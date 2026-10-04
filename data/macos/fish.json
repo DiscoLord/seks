@@ -500,8 +500,7 @@
           ],
           "effect": "Backward kill word"
         }
-      ],
-      "note": "Fish 4.9.3. Vi groups apply only when the built-in vi keymap is selected; Shared keys are inherited by its modes."
+      ]
     },
     {
       "id": 8,
@@ -922,8 +921,7 @@
           ],
           "effect": "Backward delete char"
         }
-      ],
-      "note": "Fish 4.9.3. Vi groups apply only when the built-in vi keymap is selected; Shared keys are inherited by its modes."
+      ]
     },
     {
       "id": 10,
@@ -1699,8 +1697,7 @@
           ],
           "effect": "Line end"
         }
-      ],
-      "note": "Fish 4.9.3. Vi groups apply only when the built-in vi keymap is selected; Shared keys are inherited by its modes."
+      ]
     },
     {
       "id": 11,
@@ -1867,8 +1864,7 @@
           ],
           "effect": "Apply the pending operator to the current line"
         }
-      ],
-      "note": "Fish 4.9.3. Vi groups apply only when the built-in vi keymap is selected; Shared keys are inherited by its modes."
+      ]
     },
     {
       "id": 12,
@@ -1909,8 +1905,7 @@
           ],
           "effect": "Cancel; enter Normal mode"
         }
-      ],
-      "note": "Fish 4.9.3. Vi groups apply only when the built-in vi keymap is selected; Shared keys are inherited by its modes."
+      ]
     },
     {
       "id": 13,
@@ -1972,8 +1967,7 @@
           ],
           "effect": "Toggle command-line comment"
         }
-      ],
-      "note": "Fish 4.9.3. Vi groups apply only when the built-in vi keymap is selected; Shared keys are inherited by its modes."
+      ]
     },
     {
       "id": 14,
@@ -2245,8 +2239,7 @@
           ],
           "effect": "Toggle command-line comment"
         }
-      ],
-      "note": "Fish 4.9.3. Vi groups apply only when the built-in vi keymap is selected; Shared keys are inherited by its modes."
+      ]
     },
     {
       "id": 15,
@@ -2315,8 +2308,7 @@
           ],
           "effect": "Append 9 to the next command count"
         }
-      ],
-      "note": "Counts apply to supported motions and operators."
+      ]
     },
     {
       "id": 16,
@@ -2385,8 +2377,7 @@
           ],
           "effect": "Append 9 to the next command count"
         }
-      ],
-      "note": "Counts apply to supported motions and operators."
+      ]
     },
     {
       "id": 17,

@@ -3,7 +3,7 @@
     "lazy git"
   ],
   "full_name": "Lazygit",
-  "note": "Lazygit 0.65.1 defaults; keys act on the focused panel.",
+  "note": "Lazygit 0.65.1 defaults; keys act on the focused panel. Press ? in a panel to see its keys.",
   "source": "https://github.com/jesseduffield/lazygit/blob/v0.65.1/docs/Config.md",
   "binding_groups": [
     {
@@ -393,7 +393,6 @@
     {
       "id": 4,
       "title": "Files panel",
-      "note": "Default config keybindings. Panel-specific actions take precedence; use ? in that panel.",
       "bindings": [
         {
           "id": 51,
@@ -680,7 +679,6 @@
     {
       "id": 6,
       "title": "Commits panel",
-      "note": "Default config keybindings. Panel-specific actions take precedence; use ? in that panel.",
       "bindings": [
         {
           "id": 89,
@@ -1103,8 +1101,7 @@
           ],
           "effect": "Edit config"
         }
-      ],
-      "note": "Default config keybindings. Panel-specific actions take precedence; use ? in that panel."
+      ]
     },
     {
       "id": 10,
@@ -1138,8 +1135,7 @@
           ],
           "effect": "All branches log graph reverse"
         }
-      ],
-      "note": "Default config keybindings. Panel-specific actions take precedence; use ? in that panel."
+      ]
     },
     {
       "id": 11,
@@ -1264,8 +1260,7 @@
           ],
           "effect": "Sort order"
         }
-      ],
-      "note": "Default config keybindings. Panel-specific actions take precedence; use ? in that panel."
+      ]
     },
     {
       "id": 12,
@@ -1292,8 +1287,7 @@
           ],
           "effect": "Add co author"
         }
-      ],
-      "note": "Default config keybindings. Panel-specific actions take precedence; use ? in that panel."
+      ]
     },
     {
       "id": 13,
@@ -1306,8 +1300,7 @@
           ],
           "effect": "Checkout commit file"
         }
-      ],
-      "note": "Default config keybindings. Panel-specific actions take precedence; use ? in that panel."
+      ]
     },
     {
       "id": 14,
@@ -1334,8 +1327,7 @@
           ],
           "effect": "Bulk menu"
         }
-      ],
-      "note": "Default config keybindings. Panel-specific actions take precedence; use ? in that panel."
+      ]
     },
     {
       "id": 15,
@@ -1348,8 +1340,7 @@
           ],
           "effect": "Commit menu"
         }
-      ],
-      "note": "Default config keybindings. Panel-specific actions take precedence; use ? in that panel."
+      ]
     },
     {
       "id": 16,

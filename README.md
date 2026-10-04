@@ -39,9 +39,12 @@ seks visual studio code   # a name with spaces needs no quotes
 seks --list               # list the apps
 ```
 
-In the pager: `Space` next page, `b` previous page, `q` quit.
+In the pager: `Space` next page, `b` previous page, `g` first page, `G` last
+page, `q` quit. The arrow keys, `j` and `k`, and `PageUp` and `PageDown` turn
+pages too.
 
-In a pipe, `seks` prints plain text: `seks tmux | grep window`.
+In a pipe, `seks` prints plain text: `seks tmux | grep window`. Set
+`NO_COLOR` to get plain text in the pager too.
 
 Shell completions for zsh, bash and fish are in [`completions/`](completions).
 

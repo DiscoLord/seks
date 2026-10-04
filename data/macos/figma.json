@@ -1,7 +1,7 @@
 {
   "full_name": "Figma",
   "source": "https://help.figma.com/hc/en-us/articles/360040328653-Use-Figma-products-with-a-keyboard",
-  "note": "Figma Design default keyboard shortcuts; Linux uses the browser. Expanded from official feature documentation. Runtime shortcut-panel coverage is not yet exhaustive.",
+  "note": "Figma Design default keyboard shortcuts. Expanded from official feature documentation. Runtime shortcut-panel coverage is not yet exhaustive.",
   "binding_groups": [
     {
       "id": 1,
