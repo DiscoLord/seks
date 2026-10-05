@@ -6,7 +6,7 @@
     {
       "id": 1,
       "title": "Clipboard",
-      "note": "Selection shortcuts need selected text; on macOS Cmd+C passes through when nothing is selected.",
+      "note": "Selection shortcuts need selected text.",
       "bindings": [
         {
           "id": 1,
@@ -461,7 +461,7 @@
     {
       "id": 8,
       "title": "Miscellaneous",
-      "note": "Opacity shortcuts require dynamic_background_opacity yes; clear-last-command needs shell integration.",
+      "note": "Opacity shortcuts require dynamic_background_opacity yes.",
       "bindings": [
         {
           "id": 58,

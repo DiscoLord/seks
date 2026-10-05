@@ -333,13 +333,6 @@
             "Ctrl+B M"
           ],
           "effect": "Clear marked pane"
-        },
-        {
-          "id": 46,
-          "keys": [
-            "Ctrl+B T"
-          ],
-          "effect": "Rename pane title"
         }
       ]
     },
@@ -348,119 +341,119 @@
       "title": "Pane sizes and layouts",
       "bindings": [
         {
-          "id": 47,
+          "id": 46,
           "keys": [
             "Ctrl+B Ctrl+Left"
           ],
           "effect": "Resize left by one cell"
         },
         {
-          "id": 48,
+          "id": 47,
           "keys": [
             "Ctrl+B Ctrl+Down"
           ],
           "effect": "Resize down by one cell"
         },
         {
-          "id": 49,
+          "id": 48,
           "keys": [
             "Ctrl+B Ctrl+Up"
           ],
           "effect": "Resize up by one cell"
         },
         {
-          "id": 50,
+          "id": 49,
           "keys": [
             "Ctrl+B Ctrl+Right"
           ],
           "effect": "Resize right by one cell"
         },
         {
-          "id": 51,
+          "id": 50,
           "keys": [
             "Ctrl+B Alt+Left"
           ],
           "effect": "Resize left by five cells"
         },
         {
-          "id": 52,
+          "id": 51,
           "keys": [
             "Ctrl+B Alt+Down"
           ],
           "effect": "Resize down by five cells"
         },
         {
-          "id": 53,
+          "id": 52,
           "keys": [
             "Ctrl+B Alt+Up"
           ],
           "effect": "Resize up by five cells"
         },
         {
-          "id": 54,
+          "id": 53,
           "keys": [
             "Ctrl+B Alt+Right"
           ],
           "effect": "Resize right by five cells"
         },
         {
-          "id": 55,
+          "id": 54,
           "keys": [
             "Ctrl+B Space"
           ],
           "effect": "Cycle layout"
         },
         {
-          "id": 56,
+          "id": 55,
           "keys": [
             "Ctrl+B E"
           ],
           "effect": "Equalize adjacent panes"
         },
         {
-          "id": 57,
+          "id": 56,
           "keys": [
             "Ctrl+B Alt+1"
           ],
           "effect": "Even columns"
         },
         {
-          "id": 58,
+          "id": 57,
           "keys": [
             "Ctrl+B Alt+2"
           ],
           "effect": "Even rows"
         },
         {
-          "id": 59,
+          "id": 58,
           "keys": [
             "Ctrl+B Alt+3"
           ],
           "effect": "Main pane above"
         },
         {
-          "id": 60,
+          "id": 59,
           "keys": [
             "Ctrl+B Alt+4"
           ],
           "effect": "Main pane left"
         },
         {
-          "id": 61,
+          "id": 60,
           "keys": [
             "Ctrl+B Alt+5"
           ],
           "effect": "Tiled layout"
         },
         {
-          "id": 62,
+          "id": 61,
           "keys": [
             "Ctrl+B Alt+6"
           ],
           "effect": "Main pane below"
         },
         {
-          "id": 63,
+          "id": 62,
           "keys": [
             "Ctrl+B Alt+7"
           ],
@@ -474,42 +467,42 @@
       "note": "Copy-mode selections go to tmux buffers; system clipboard integration depends on configuration.",
       "bindings": [
         {
-          "id": 64,
+          "id": 63,
           "keys": [
             "Ctrl+B ["
           ],
           "effect": "Enter copy mode"
         },
         {
-          "id": 65,
+          "id": 64,
           "keys": [
             "Ctrl+B PageUp"
           ],
           "effect": "Enter copy mode one page up"
         },
         {
-          "id": 66,
+          "id": 65,
           "keys": [
             "Ctrl+B ]"
           ],
           "effect": "Paste latest buffer"
         },
         {
-          "id": 67,
+          "id": 66,
           "keys": [
             "Ctrl+B ="
           ],
           "effect": "Choose paste buffer"
         },
         {
-          "id": 68,
+          "id": 67,
           "keys": [
             "Ctrl+B #"
           ],
           "effect": "List paste buffers"
         },
         {
-          "id": 69,
+          "id": 68,
           "keys": [
             "Ctrl+B -"
           ],
@@ -522,7 +515,7 @@
       "title": "Copy mode: Emacs",
       "bindings": [
         {
-          "id": 70,
+          "id": 69,
           "keys": [
             "Up",
             "Ctrl+P"
@@ -530,7 +523,7 @@
           "effect": "Move up"
         },
         {
-          "id": 71,
+          "id": 70,
           "keys": [
             "Down",
             "Ctrl+N"
@@ -538,7 +531,7 @@
           "effect": "Move down"
         },
         {
-          "id": 72,
+          "id": 71,
           "keys": [
             "Left",
             "Ctrl+B"
@@ -546,7 +539,7 @@
           "effect": "Move left"
         },
         {
-          "id": 73,
+          "id": 72,
           "keys": [
             "Right",
             "Ctrl+F"
@@ -554,7 +547,7 @@
           "effect": "Move right"
         },
         {
-          "id": 74,
+          "id": 73,
           "keys": [
             "Home",
             "Ctrl+A"
@@ -562,7 +555,7 @@
           "effect": "Line start"
         },
         {
-          "id": 75,
+          "id": 74,
           "keys": [
             "End",
             "Ctrl+E"
@@ -570,14 +563,14 @@
           "effect": "Line end"
         },
         {
-          "id": 76,
+          "id": 75,
           "keys": [
             "PageUp"
           ],
           "effect": "Page up"
         },
         {
-          "id": 77,
+          "id": 76,
           "keys": [
             "PageDown",
             "Ctrl+V",
@@ -586,56 +579,56 @@
           "effect": "Page down"
         },
         {
-          "id": 78,
+          "id": 77,
           "keys": [
             "Alt+<"
           ],
           "effect": "History start"
         },
         {
-          "id": 79,
+          "id": 78,
           "keys": [
             "Alt+>"
           ],
           "effect": "History end"
         },
         {
-          "id": 80,
+          "id": 79,
           "keys": [
             "Alt+B"
           ],
           "effect": "Previous word"
         },
         {
-          "id": 81,
+          "id": 80,
           "keys": [
             "Alt+F"
           ],
           "effect": "Next word end"
         },
         {
-          "id": 82,
+          "id": 81,
           "keys": [
             "Ctrl+Space"
           ],
           "effect": "Start selection"
         },
         {
-          "id": 83,
+          "id": 82,
           "keys": [
             "Ctrl+G"
           ],
           "effect": "Clear selection"
         },
         {
-          "id": 84,
+          "id": 83,
           "keys": [
             "R"
           ],
           "effect": "Toggle rectangle selection"
         },
         {
-          "id": 85,
+          "id": 84,
           "keys": [
             "Ctrl+W",
             "Alt+W"
@@ -643,35 +636,35 @@
           "effect": "Copy selection and exit"
         },
         {
-          "id": 86,
+          "id": 85,
           "keys": [
             "Ctrl+R"
           ],
           "effect": "Search backward"
         },
         {
-          "id": 87,
+          "id": 86,
           "keys": [
             "Ctrl+S"
           ],
           "effect": "Search forward"
         },
         {
-          "id": 88,
+          "id": 87,
           "keys": [
             "n"
           ],
           "effect": "Repeat search"
         },
         {
-          "id": 89,
+          "id": 88,
           "keys": [
             "N"
           ],
           "effect": "Reverse search"
         },
         {
-          "id": 90,
+          "id": 89,
           "keys": [
             "q",
             "Esc",
@@ -680,252 +673,252 @@
           "effect": "Exit copy mode"
         },
         {
-          "id": 139,
+          "id": 90,
           "keys": [
             "Ctrl+K"
           ],
           "effect": "Copy selection through configured copy command end of line and cancel"
         },
         {
-          "id": 140,
+          "id": 91,
           "keys": [
             "Ctrl+L"
           ],
           "effect": "Recentre top bottom"
         },
         {
-          "id": 141,
+          "id": 92,
           "keys": [
             "Alt+L"
           ],
           "effect": "Cursor centre horizontal"
         },
         {
-          "id": 142,
+          "id": 93,
           "keys": [
             "Ctrl+["
           ],
           "effect": "Cancel"
         },
         {
-          "id": 143,
+          "id": 94,
           "keys": [
             ","
           ],
           "effect": "Jump reverse"
         },
         {
-          "id": 144,
+          "id": 95,
           "keys": [
             ";"
           ],
           "effect": "Jump again"
         },
         {
-          "id": 145,
+          "id": 96,
           "keys": [
             "F"
           ],
           "effect": "Jump backward; enter value at prompt"
         },
         {
-          "id": 146,
+          "id": 97,
           "keys": [
             "P"
           ],
           "effect": "Toggle position"
         },
         {
-          "id": 147,
+          "id": 98,
           "keys": [
             "T"
           ],
           "effect": "Jump to backward; enter value at prompt"
         },
         {
-          "id": 148,
+          "id": 99,
           "keys": [
             "X"
           ],
           "effect": "Set mark"
         },
         {
-          "id": 149,
+          "id": 100,
           "keys": [
             "f"
           ],
           "effect": "Jump forward; enter value at prompt"
         },
         {
-          "id": 150,
+          "id": 101,
           "keys": [
             "g"
           ],
           "effect": "Goto line; enter value at prompt"
         },
         {
-          "id": 151,
+          "id": 102,
           "keys": [
             "r"
           ],
           "effect": "Refresh from pane"
         },
         {
-          "id": 152,
+          "id": 103,
           "keys": [
             "t"
           ],
           "effect": "Jump to forward; enter value at prompt"
         },
         {
-          "id": 153,
+          "id": 104,
           "keys": [
             "Alt+1"
           ],
           "effect": "Enter repetition count; enter value at prompt"
         },
         {
-          "id": 154,
+          "id": 105,
           "keys": [
             "Alt+2"
           ],
           "effect": "Enter repetition count; enter value at prompt"
         },
         {
-          "id": 155,
+          "id": 106,
           "keys": [
             "Alt+3"
           ],
           "effect": "Enter repetition count; enter value at prompt"
         },
         {
-          "id": 156,
+          "id": 107,
           "keys": [
             "Alt+4"
           ],
           "effect": "Enter repetition count; enter value at prompt"
         },
         {
-          "id": 157,
+          "id": 108,
           "keys": [
             "Alt+5"
           ],
           "effect": "Enter repetition count; enter value at prompt"
         },
         {
-          "id": 158,
+          "id": 109,
           "keys": [
             "Alt+6"
           ],
           "effect": "Enter repetition count; enter value at prompt"
         },
         {
-          "id": 159,
+          "id": 110,
           "keys": [
             "Alt+7"
           ],
           "effect": "Enter repetition count; enter value at prompt"
         },
         {
-          "id": 160,
+          "id": 111,
           "keys": [
             "Alt+8"
           ],
           "effect": "Enter repetition count; enter value at prompt"
         },
         {
-          "id": 161,
+          "id": 112,
           "keys": [
             "Alt+9"
           ],
           "effect": "Enter repetition count; enter value at prompt"
         },
         {
-          "id": 162,
+          "id": 113,
           "keys": [
             "Alt+Shift+R"
           ],
           "effect": "Top line"
         },
         {
-          "id": 163,
+          "id": 114,
           "keys": [
             "Ctrl+Alt+B"
           ],
           "effect": "Previous matching bracket"
         },
         {
-          "id": 164,
+          "id": 115,
           "keys": [
             "Ctrl+Alt+F"
           ],
           "effect": "Next matching bracket"
         },
         {
-          "id": 165,
+          "id": 116,
           "keys": [
             "Alt+M"
           ],
           "effect": "Back to indentation"
         },
         {
-          "id": 166,
+          "id": 117,
           "keys": [
             "Alt+R"
           ],
           "effect": "Middle line"
         },
         {
-          "id": 167,
+          "id": 118,
           "keys": [
             "Alt+V"
           ],
           "effect": "Page up"
         },
         {
-          "id": 168,
+          "id": 119,
           "keys": [
             "Alt+X"
           ],
           "effect": "Jump to mark"
         },
         {
-          "id": 169,
+          "id": 120,
           "keys": [
             "Alt+{"
           ],
           "effect": "Previous paragraph"
         },
         {
-          "id": 170,
+          "id": 121,
           "keys": [
             "Alt+}"
           ],
           "effect": "Next paragraph"
         },
         {
-          "id": 171,
+          "id": 122,
           "keys": [
             "Alt+Up"
           ],
           "effect": "Halfpage up"
         },
         {
-          "id": 172,
+          "id": 123,
           "keys": [
             "Alt+Down"
           ],
           "effect": "Halfpage down"
         },
         {
-          "id": 173,
+          "id": 124,
           "keys": [
             "Ctrl+Up"
           ],
           "effect": "Scroll up"
         },
         {
-          "id": 174,
+          "id": 125,
           "keys": [
             "Ctrl+Down"
           ],
@@ -938,7 +931,7 @@
       "title": "Copy mode: vi",
       "bindings": [
         {
-          "id": 91,
+          "id": 126,
           "keys": [
             "h",
             "Left"
@@ -946,7 +939,7 @@
           "effect": "Move left"
         },
         {
-          "id": 92,
+          "id": 127,
           "keys": [
             "j",
             "Down"
@@ -954,7 +947,7 @@
           "effect": "Move down"
         },
         {
-          "id": 93,
+          "id": 128,
           "keys": [
             "k",
             "Up"
@@ -962,7 +955,7 @@
           "effect": "Move up"
         },
         {
-          "id": 94,
+          "id": 129,
           "keys": [
             "l",
             "Right"
@@ -970,28 +963,28 @@
           "effect": "Move right"
         },
         {
-          "id": 95,
+          "id": 130,
           "keys": [
             "w"
           ],
           "effect": "Next word"
         },
         {
-          "id": 96,
+          "id": 131,
           "keys": [
             "b"
           ],
           "effect": "Previous word"
         },
         {
-          "id": 97,
+          "id": 132,
           "keys": [
             "e"
           ],
           "effect": "Word end"
         },
         {
-          "id": 98,
+          "id": 133,
           "keys": [
             "0",
             "Home"
@@ -999,7 +992,7 @@
           "effect": "Line start"
         },
         {
-          "id": 99,
+          "id": 134,
           "keys": [
             "$",
             "End"
@@ -1007,28 +1000,28 @@
           "effect": "Line end"
         },
         {
-          "id": 100,
+          "id": 135,
           "keys": [
             "^"
           ],
           "effect": "First nonblank"
         },
         {
-          "id": 101,
+          "id": 136,
           "keys": [
             "g"
           ],
           "effect": "History start"
         },
         {
-          "id": 102,
+          "id": 137,
           "keys": [
             "G"
           ],
           "effect": "History end"
         },
         {
-          "id": 103,
+          "id": 138,
           "keys": [
             "Ctrl+B",
             "PageUp"
@@ -1036,7 +1029,7 @@
           "effect": "Page up"
         },
         {
-          "id": 104,
+          "id": 139,
           "keys": [
             "Ctrl+F",
             "PageDown"
@@ -1044,35 +1037,35 @@
           "effect": "Page down"
         },
         {
-          "id": 105,
+          "id": 140,
           "keys": [
             "Ctrl+U"
           ],
           "effect": "Half-page up"
         },
         {
-          "id": 106,
+          "id": 141,
           "keys": [
             "Ctrl+D"
           ],
           "effect": "Half-page down"
         },
         {
-          "id": 107,
+          "id": 142,
           "keys": [
             "Space"
           ],
           "effect": "Start selection"
         },
         {
-          "id": 108,
+          "id": 143,
           "keys": [
             "V"
           ],
           "effect": "Select line"
         },
         {
-          "id": 109,
+          "id": 144,
           "keys": [
             "v",
             "Ctrl+V"
@@ -1080,63 +1073,63 @@
           "effect": "Toggle rectangle selection"
         },
         {
-          "id": 110,
+          "id": 145,
           "keys": [
             "o"
           ],
           "effect": "Switch selection end"
         },
         {
-          "id": 111,
+          "id": 146,
           "keys": [
             "Esc"
           ],
           "effect": "Clear selection"
         },
         {
-          "id": 112,
+          "id": 147,
           "keys": [
             "Enter"
           ],
           "effect": "Copy selection and exit"
         },
         {
-          "id": 113,
+          "id": 148,
           "keys": [
             "A"
           ],
           "effect": "Append selection and exit"
         },
         {
-          "id": 114,
+          "id": 149,
           "keys": [
             "/"
           ],
           "effect": "Search forward"
         },
         {
-          "id": 115,
+          "id": 150,
           "keys": [
             "?"
           ],
           "effect": "Search backward"
         },
         {
-          "id": 116,
+          "id": 151,
           "keys": [
             "n"
           ],
           "effect": "Repeat search"
         },
         {
-          "id": 117,
+          "id": 152,
           "keys": [
             "N"
           ],
           "effect": "Reverse search"
         },
         {
-          "id": 118,
+          "id": 153,
           "keys": [
             "q",
             "Ctrl+C"
@@ -1144,301 +1137,301 @@
           "effect": "Exit copy mode"
         },
         {
-          "id": 175,
+          "id": 154,
           "keys": [
             "#"
           ],
           "effect": "Search backward"
         },
         {
-          "id": 176,
+          "id": 155,
           "keys": [
             "*"
           ],
           "effect": "Search forward"
         },
         {
-          "id": 177,
+          "id": 156,
           "keys": [
             "Ctrl+E"
           ],
           "effect": "Scroll down"
         },
         {
-          "id": 178,
+          "id": 157,
           "keys": [
             "Ctrl+H"
           ],
           "effect": "Cursor left"
         },
         {
-          "id": 179,
+          "id": 158,
           "keys": [
             "Ctrl+J"
           ],
           "effect": "Copy selection through configured copy command and cancel"
         },
         {
-          "id": 180,
+          "id": 159,
           "keys": [
             "Ctrl+Y"
           ],
           "effect": "Scroll up"
         },
         {
-          "id": 181,
+          "id": 160,
           "keys": [
             "Ctrl+["
           ],
           "effect": "Clear selection"
         },
         {
-          "id": 182,
+          "id": 161,
           "keys": [
             ","
           ],
           "effect": "Jump reverse"
         },
         {
-          "id": 183,
+          "id": 162,
           "keys": [
             "1"
           ],
           "effect": "Enter repetition count; enter value at prompt"
         },
         {
-          "id": 184,
+          "id": 163,
           "keys": [
             "2"
           ],
           "effect": "Enter repetition count; enter value at prompt"
         },
         {
-          "id": 185,
+          "id": 164,
           "keys": [
             "3"
           ],
           "effect": "Enter repetition count; enter value at prompt"
         },
         {
-          "id": 186,
+          "id": 165,
           "keys": [
             "4"
           ],
           "effect": "Enter repetition count; enter value at prompt"
         },
         {
-          "id": 187,
+          "id": 166,
           "keys": [
             "5"
           ],
           "effect": "Enter repetition count; enter value at prompt"
         },
         {
-          "id": 188,
+          "id": 167,
           "keys": [
             "6"
           ],
           "effect": "Enter repetition count; enter value at prompt"
         },
         {
-          "id": 189,
+          "id": 168,
           "keys": [
             "7"
           ],
           "effect": "Enter repetition count; enter value at prompt"
         },
         {
-          "id": 190,
+          "id": 169,
           "keys": [
             "8"
           ],
           "effect": "Enter repetition count; enter value at prompt"
         },
         {
-          "id": 191,
+          "id": 170,
           "keys": [
             "9"
           ],
           "effect": "Enter repetition count; enter value at prompt"
         },
         {
-          "id": 192,
+          "id": 171,
           "keys": [
             ":"
           ],
           "effect": "Goto line; enter value at prompt"
         },
         {
-          "id": 193,
+          "id": 172,
           "keys": [
             ";"
           ],
           "effect": "Jump again"
         },
         {
-          "id": 194,
+          "id": 173,
           "keys": [
             "B"
           ],
           "effect": "Previous space"
         },
         {
-          "id": 195,
+          "id": 174,
           "keys": [
             "D"
           ],
           "effect": "Copy selection through configured copy command end of line and cancel"
         },
         {
-          "id": 196,
+          "id": 175,
           "keys": [
             "E"
           ],
           "effect": "Next space end"
         },
         {
-          "id": 197,
+          "id": 176,
           "keys": [
             "F"
           ],
           "effect": "Jump backward; enter value at prompt"
         },
         {
-          "id": 198,
+          "id": 177,
           "keys": [
             "H"
           ],
           "effect": "Top line"
         },
         {
-          "id": 199,
+          "id": 178,
           "keys": [
             "J"
           ],
           "effect": "Scroll down"
         },
         {
-          "id": 200,
+          "id": 179,
           "keys": [
             "K"
           ],
           "effect": "Scroll up"
         },
         {
-          "id": 201,
+          "id": 180,
           "keys": [
             "L"
           ],
           "effect": "Bottom line"
         },
         {
-          "id": 202,
+          "id": 181,
           "keys": [
             "M"
           ],
           "effect": "Middle line"
         },
         {
-          "id": 203,
+          "id": 182,
           "keys": [
             "P"
           ],
           "effect": "Toggle position"
         },
         {
-          "id": 204,
+          "id": 183,
           "keys": [
             "T"
           ],
           "effect": "Jump to backward; enter value at prompt"
         },
         {
-          "id": 205,
+          "id": 184,
           "keys": [
             "W"
           ],
           "effect": "Next space"
         },
         {
-          "id": 206,
+          "id": 185,
           "keys": [
             "X"
           ],
           "effect": "Set mark"
         },
         {
-          "id": 207,
+          "id": 186,
           "keys": [
             "f"
           ],
           "effect": "Jump forward; enter value at prompt"
         },
         {
-          "id": 208,
+          "id": 187,
           "keys": [
             "z"
           ],
           "effect": "Scroll middle"
         },
         {
-          "id": 209,
+          "id": 188,
           "keys": [
             "r"
           ],
           "effect": "Refresh from pane"
         },
         {
-          "id": 210,
+          "id": 189,
           "keys": [
             "t"
           ],
           "effect": "Jump to forward; enter value at prompt"
         },
         {
-          "id": 211,
+          "id": 190,
           "keys": [
             "{"
           ],
           "effect": "Previous paragraph"
         },
         {
-          "id": 212,
+          "id": 191,
           "keys": [
             "}"
           ],
           "effect": "Next paragraph"
         },
         {
-          "id": 213,
+          "id": 192,
           "keys": [
             "%"
           ],
           "effect": "Next matching bracket"
         },
         {
-          "id": 214,
+          "id": 193,
           "keys": [
             "Backspace"
           ],
           "effect": "Cursor left"
         },
         {
-          "id": 215,
+          "id": 194,
           "keys": [
             "Alt+X"
           ],
           "effect": "Jump to mark"
         },
         {
-          "id": 216,
+          "id": 195,
           "keys": [
             "Ctrl+Up"
           ],
           "effect": "Scroll up"
         },
         {
-          "id": 217,
+          "id": 196,
           "keys": [
             "Ctrl+Down"
           ],
@@ -1451,63 +1444,63 @@
       "title": "Help and commands",
       "bindings": [
         {
-          "id": 119,
+          "id": 197,
           "keys": [
             "Ctrl+B ?"
           ],
           "effect": "List bindings"
         },
         {
-          "id": 120,
+          "id": 198,
           "keys": [
             "Ctrl+B /"
           ],
           "effect": "Describe a key binding"
         },
         {
-          "id": 121,
+          "id": 199,
           "keys": [
             "Ctrl+B :"
           ],
           "effect": "Open command prompt"
         },
         {
-          "id": 122,
+          "id": 200,
           "keys": [
             "Ctrl+B C"
           ],
           "effect": "Customize options"
         },
         {
-          "id": 123,
+          "id": 201,
           "keys": [
             "Ctrl+B r"
           ],
           "effect": "Redraw client"
         },
         {
-          "id": 124,
+          "id": 202,
           "keys": [
             "Ctrl+B ~"
           ],
           "effect": "Show messages"
         },
         {
-          "id": 125,
+          "id": 203,
           "keys": [
             "Ctrl+B t"
           ],
           "effect": "Show clock"
         },
         {
-          "id": 126,
+          "id": 204,
           "keys": [
             "Ctrl+B Ctrl+B"
           ],
           "effect": "Send Ctrl+B to application"
         },
         {
-          "id": 127,
+          "id": 205,
           "keys": [
             "Ctrl+B Ctrl+Z"
           ],
@@ -1520,77 +1513,77 @@
       "title": "Prefix bindings: additional defaults",
       "bindings": [
         {
-          "id": 128,
+          "id": 206,
           "keys": [
             "Ctrl+B *"
           ],
           "effect": "New floating pane"
         },
         {
-          "id": 129,
+          "id": 207,
           "keys": [
             "Ctrl+B i"
           ],
           "effect": "Display window information"
         },
         {
-          "id": 130,
+          "id": 208,
           "keys": [
             "Ctrl+B Alt+N"
           ],
           "effect": "Select the next window with an alert"
         },
         {
-          "id": 131,
+          "id": 209,
           "keys": [
             "Ctrl+B Alt+P"
           ],
           "effect": "Select the previous window with an alert"
         },
         {
-          "id": 132,
+          "id": 210,
           "keys": [
             "Ctrl+B Shift+Up"
           ],
           "effect": "Move the visible part of the window up"
         },
         {
-          "id": 133,
+          "id": 211,
           "keys": [
             "Ctrl+B Shift+Down"
           ],
           "effect": "Move the visible part of the window down"
         },
         {
-          "id": 134,
+          "id": 212,
           "keys": [
             "Ctrl+B Shift+Left"
           ],
           "effect": "Move the visible part of the window left"
         },
         {
-          "id": 135,
+          "id": 213,
           "keys": [
             "Ctrl+B Shift+Right"
           ],
           "effect": "Move the visible part of the window right"
         },
         {
-          "id": 136,
+          "id": 214,
           "keys": [
             "Ctrl+B Delete"
           ],
           "effect": "Reset so the visible part of the window follows the cursor"
         },
         {
-          "id": 137,
+          "id": 215,
           "keys": [
             "Ctrl+B <"
           ],
           "effect": "Display window menu"
         },
         {
-          "id": 138,
+          "id": 216,
           "keys": [
             "Ctrl+B >"
           ],
@@ -1603,140 +1596,140 @@
       "title": "Client chooser",
       "bindings": [
         {
-          "id": 218,
+          "id": 217,
           "keys": [
             "Enter"
           ],
           "effect": "Choose selected client"
         },
         {
-          "id": 219,
+          "id": 218,
           "keys": [
             "Up"
           ],
           "effect": "Select previous client"
         },
         {
-          "id": 220,
+          "id": 219,
           "keys": [
             "Down"
           ],
           "effect": "Select next client"
         },
         {
-          "id": 221,
+          "id": 220,
           "keys": [
             "Ctrl+S"
           ],
           "effect": "Search by name"
         },
         {
-          "id": 222,
+          "id": 221,
           "keys": [
             "n"
           ],
           "effect": "Repeat last search forwards"
         },
         {
-          "id": 223,
+          "id": 222,
           "keys": [
             "N"
           ],
           "effect": "Repeat last search backwards"
         },
         {
-          "id": 224,
+          "id": 223,
           "keys": [
             "t"
           ],
           "effect": "Toggle if client is tagged"
         },
         {
-          "id": 225,
+          "id": 224,
           "keys": [
             "T"
           ],
           "effect": "Tag no clients"
         },
         {
-          "id": 226,
+          "id": 225,
           "keys": [
             "Ctrl+T"
           ],
           "effect": "Tag all clients"
         },
         {
-          "id": 227,
+          "id": 226,
           "keys": [
             "d"
           ],
           "effect": "Detach selected client"
         },
         {
-          "id": 228,
+          "id": 227,
           "keys": [
             "D"
           ],
           "effect": "Detach tagged clients"
         },
         {
-          "id": 229,
+          "id": 228,
           "keys": [
             "x"
           ],
           "effect": "Detach and HUP selected client"
         },
         {
-          "id": 230,
+          "id": 229,
           "keys": [
             "X"
           ],
           "effect": "Detach and HUP tagged clients"
         },
         {
-          "id": 231,
+          "id": 230,
           "keys": [
             "z"
           ],
           "effect": "Suspend selected client"
         },
         {
-          "id": 232,
+          "id": 231,
           "keys": [
             "Z"
           ],
           "effect": "Suspend tagged clients"
         },
         {
-          "id": 233,
+          "id": 232,
           "keys": [
             "f"
           ],
           "effect": "Enter a format to filter items"
         },
         {
-          "id": 234,
+          "id": 233,
           "keys": [
             "O"
           ],
           "effect": "Change sort order"
         },
         {
-          "id": 235,
+          "id": 234,
           "keys": [
             "r"
           ],
           "effect": "Reverse sort order"
         },
         {
-          "id": 236,
+          "id": 235,
           "keys": [
             "v"
           ],
           "effect": "Toggle preview"
         },
         {
-          "id": 237,
+          "id": 236,
           "keys": [
             "F1",
             "Ctrl+H"
@@ -1744,7 +1737,7 @@
           "effect": "Display help"
         },
         {
-          "id": 238,
+          "id": 237,
           "keys": [
             "q"
           ],
@@ -1758,196 +1751,196 @@
       "title": "Session/window tree",
       "bindings": [
         {
-          "id": 239,
+          "id": 238,
           "keys": [
             "Enter"
           ],
           "effect": "Choose selected item"
         },
         {
-          "id": 240,
+          "id": 239,
           "keys": [
             "Up"
           ],
           "effect": "Select previous item"
         },
         {
-          "id": 241,
+          "id": 240,
           "keys": [
             "Down"
           ],
           "effect": "Select next item"
         },
         {
-          "id": 242,
+          "id": 241,
           "keys": [
             "Shift+Up"
           ],
           "effect": "Swap the current window with the previous one"
         },
         {
-          "id": 243,
+          "id": 242,
           "keys": [
             "Shift+Down"
           ],
           "effect": "Swap the current window with the next one"
         },
         {
-          "id": 244,
+          "id": 243,
           "keys": [
             "Plus"
           ],
           "effect": "Expand selected item"
         },
         {
-          "id": 245,
+          "id": 244,
           "keys": [
             "-"
           ],
           "effect": "Collapse selected item"
         },
         {
-          "id": 246,
+          "id": 245,
           "keys": [
             "Alt+Plus"
           ],
           "effect": "Expand all items"
         },
         {
-          "id": 247,
+          "id": 246,
           "keys": [
             "Alt+-"
           ],
           "effect": "Collapse all items"
         },
         {
-          "id": 248,
+          "id": 247,
           "keys": [
             "x"
           ],
           "effect": "Kill selected item"
         },
         {
-          "id": 249,
+          "id": 248,
           "keys": [
             "X"
           ],
           "effect": "Kill tagged items"
         },
         {
-          "id": 250,
+          "id": 249,
           "keys": [
             "<"
           ],
           "effect": "Scroll list of previews left"
         },
         {
-          "id": 251,
+          "id": 250,
           "keys": [
             ">"
           ],
           "effect": "Scroll list of previews right"
         },
         {
-          "id": 252,
+          "id": 251,
           "keys": [
             "Ctrl+S"
           ],
           "effect": "Search by name"
         },
         {
-          "id": 253,
+          "id": 252,
           "keys": [
             "m"
           ],
           "effect": "Set the marked pane"
         },
         {
-          "id": 254,
+          "id": 253,
           "keys": [
             "M"
           ],
           "effect": "Clear the marked pane"
         },
         {
-          "id": 255,
+          "id": 254,
           "keys": [
             "n"
           ],
           "effect": "Repeat last search forwards"
         },
         {
-          "id": 256,
+          "id": 255,
           "keys": [
             "N"
           ],
           "effect": "Repeat last search backwards"
         },
         {
-          "id": 257,
+          "id": 256,
           "keys": [
             "t"
           ],
           "effect": "Toggle if item is tagged"
         },
         {
-          "id": 258,
+          "id": 257,
           "keys": [
             "T"
           ],
           "effect": "Tag no items"
         },
         {
-          "id": 259,
+          "id": 258,
           "keys": [
             "Ctrl+T"
           ],
           "effect": "Tag all items"
         },
         {
-          "id": 260,
+          "id": 259,
           "keys": [
             ":"
           ],
           "effect": "Run a command for each tagged item"
         },
         {
-          "id": 261,
+          "id": 260,
           "keys": [
             "f"
           ],
           "effect": "Enter a format to filter items"
         },
         {
-          "id": 262,
+          "id": 261,
           "keys": [
             "H"
           ],
           "effect": "Jump to the starting pane"
         },
         {
-          "id": 263,
+          "id": 262,
           "keys": [
             "O"
           ],
           "effect": "Change sort order"
         },
         {
-          "id": 264,
+          "id": 263,
           "keys": [
             "r"
           ],
           "effect": "Reverse sort order"
         },
         {
-          "id": 265,
+          "id": 264,
           "keys": [
             "v"
           ],
           "effect": "Toggle preview"
         },
         {
-          "id": 266,
+          "id": 265,
           "keys": [
             "F1",
             "Ctrl+H"
@@ -1955,7 +1948,7 @@
           "effect": "Display help"
         },
         {
-          "id": 267,
+          "id": 266,
           "keys": [
             "q"
           ],
@@ -1969,161 +1962,161 @@
       "title": "Customize mode",
       "bindings": [
         {
-          "id": 268,
+          "id": 267,
           "keys": [
             "Enter"
           ],
           "effect": "Set pane, window, session or global option value"
         },
         {
-          "id": 269,
+          "id": 268,
           "keys": [
             "Up"
           ],
           "effect": "Select previous item"
         },
         {
-          "id": 270,
+          "id": 269,
           "keys": [
             "Down"
           ],
           "effect": "Select next item"
         },
         {
-          "id": 271,
+          "id": 270,
           "keys": [
             "Plus"
           ],
           "effect": "Expand selected item"
         },
         {
-          "id": 272,
+          "id": 271,
           "keys": [
             "-"
           ],
           "effect": "Collapse selected item"
         },
         {
-          "id": 273,
+          "id": 272,
           "keys": [
             "Alt+Plus"
           ],
           "effect": "Expand all items"
         },
         {
-          "id": 274,
+          "id": 273,
           "keys": [
             "Alt+-"
           ],
           "effect": "Collapse all items"
         },
         {
-          "id": 275,
+          "id": 274,
           "keys": [
             "s"
           ],
           "effect": "Set option value or key attribute"
         },
         {
-          "id": 276,
+          "id": 275,
           "keys": [
             "S"
           ],
           "effect": "Set global option value"
         },
         {
-          "id": 277,
+          "id": 276,
           "keys": [
             "w"
           ],
           "effect": "Set window option value, if option is for pane and window"
         },
         {
-          "id": 278,
+          "id": 277,
           "keys": [
             "d"
           ],
           "effect": "Set an option or key to the default"
         },
         {
-          "id": 279,
+          "id": 278,
           "keys": [
             "D"
           ],
           "effect": "Set tagged options and tagged keys to the default"
         },
         {
-          "id": 280,
+          "id": 279,
           "keys": [
             "u"
           ],
           "effect": "Unset an option (set to default value if global) or unbind a key"
         },
         {
-          "id": 281,
+          "id": 280,
           "keys": [
             "U"
           ],
           "effect": "Unset tagged options and unbind tagged keys"
         },
         {
-          "id": 282,
+          "id": 281,
           "keys": [
             "Ctrl+S"
           ],
           "effect": "Search by name"
         },
         {
-          "id": 283,
+          "id": 282,
           "keys": [
             "n"
           ],
           "effect": "Repeat last search forwards"
         },
         {
-          "id": 284,
+          "id": 283,
           "keys": [
             "N"
           ],
           "effect": "Repeat last search backwards"
         },
         {
-          "id": 285,
+          "id": 284,
           "keys": [
             "t"
           ],
           "effect": "Toggle if item is tagged"
         },
         {
-          "id": 286,
+          "id": 285,
           "keys": [
             "T"
           ],
           "effect": "Tag no items"
         },
         {
-          "id": 287,
+          "id": 286,
           "keys": [
             "Ctrl+T"
           ],
           "effect": "Tag all items"
         },
         {
-          "id": 288,
+          "id": 287,
           "keys": [
             "f"
           ],
           "effect": "Enter a format to filter items"
         },
         {
-          "id": 289,
+          "id": 288,
           "keys": [
             "v"
           ],
           "effect": "Toggle option information"
         },
         {
-          "id": 290,
+          "id": 289,
           "keys": [
             "F1",
             "Ctrl+H"
@@ -2131,7 +2124,7 @@
           "effect": "Display help"
         },
         {
-          "id": 291,
+          "id": 290,
           "keys": [
             "q"
           ],
@@ -2145,133 +2138,133 @@
       "title": "Paste buffer chooser",
       "bindings": [
         {
-          "id": 292,
+          "id": 291,
           "keys": [
             "Enter"
           ],
           "effect": "Paste selected buffer"
         },
         {
-          "id": 293,
+          "id": 292,
           "keys": [
             "Up"
           ],
           "effect": "Select previous buffer"
         },
         {
-          "id": 294,
+          "id": 293,
           "keys": [
             "Down"
           ],
           "effect": "Select next buffer"
         },
         {
-          "id": 295,
+          "id": 294,
           "keys": [
             "Ctrl+S"
           ],
           "effect": "Search by name or content"
         },
         {
-          "id": 296,
+          "id": 295,
           "keys": [
             "n"
           ],
           "effect": "Repeat last search forwards"
         },
         {
-          "id": 297,
+          "id": 296,
           "keys": [
             "N"
           ],
           "effect": "Repeat last search backwards"
         },
         {
-          "id": 298,
+          "id": 297,
           "keys": [
             "t"
           ],
           "effect": "Toggle if buffer is tagged"
         },
         {
-          "id": 299,
+          "id": 298,
           "keys": [
             "T"
           ],
           "effect": "Tag no buffers"
         },
         {
-          "id": 300,
+          "id": 299,
           "keys": [
             "Ctrl+T"
           ],
           "effect": "Tag all buffers"
         },
         {
-          "id": 301,
+          "id": 300,
           "keys": [
             "p"
           ],
           "effect": "Paste selected buffer"
         },
         {
-          "id": 302,
+          "id": 301,
           "keys": [
             "P"
           ],
           "effect": "Paste tagged buffers"
         },
         {
-          "id": 303,
+          "id": 302,
           "keys": [
             "d"
           ],
           "effect": "Delete selected buffer"
         },
         {
-          "id": 304,
+          "id": 303,
           "keys": [
             "D"
           ],
           "effect": "Delete tagged buffers"
         },
         {
-          "id": 305,
+          "id": 304,
           "keys": [
             "e"
           ],
           "effect": "Open the buffer in an editor"
         },
         {
-          "id": 306,
+          "id": 305,
           "keys": [
             "f"
           ],
           "effect": "Enter a format to filter items"
         },
         {
-          "id": 307,
+          "id": 306,
           "keys": [
             "O"
           ],
           "effect": "Change sort order"
         },
         {
-          "id": 308,
+          "id": 307,
           "keys": [
             "r"
           ],
           "effect": "Reverse sort order"
         },
         {
-          "id": 309,
+          "id": 308,
           "keys": [
             "v"
           ],
           "effect": "Toggle preview"
         },
         {
-          "id": 310,
+          "id": 309,
           "keys": [
             "F1",
             "Ctrl+H"
@@ -2279,7 +2272,7 @@
           "effect": "Display help"
         },
         {
-          "id": 311,
+          "id": 310,
           "keys": [
             "q"
           ],
@@ -2293,28 +2286,28 @@
       "title": "Menus",
       "bindings": [
         {
-          "id": 312,
+          "id": 311,
           "keys": [
             "Enter"
           ],
           "effect": "Choose selected item"
         },
         {
-          "id": 313,
+          "id": 312,
           "keys": [
             "Up"
           ],
           "effect": "Select previous item"
         },
         {
-          "id": 314,
+          "id": 313,
           "keys": [
             "Down"
           ],
           "effect": "Select next item"
         },
         {
-          "id": 315,
+          "id": 314,
           "keys": [
             "q"
           ],

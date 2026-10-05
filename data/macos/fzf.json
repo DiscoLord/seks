@@ -250,20 +250,6 @@
           "effect": "Scroll preview down"
         }
       ]
-    },
-    {
-      "id": 5,
-      "title": "Additional default alternatives",
-      "bindings": [
-        {
-          "id": 30,
-          "keys": [
-            "Ctrl+I"
-          ],
-          "effect": "Toggle selection and move down"
-        }
-      ],
-      "note": "Default picker map; selection toggling requires multi-select."
     }
   ]
 }

@@ -137,7 +137,7 @@
           "keys": [
             "Shift+Esc"
           ],
-          "effect": "Mark workspace read"
+          "effect": "Mark all messages as read"
         }
       ]
     },
@@ -462,14 +462,14 @@
           "effect": "Next navigation tab"
         },
         {
-          "id": 90,
+          "id": 60,
           "keys": [
             "F1"
           ],
           "effect": "Open Help"
         },
         {
-          "id": 91,
+          "id": 61,
           "keys": [
             "Ctrl+Cmd+F"
           ],
@@ -483,14 +483,14 @@
       "title": "Sidebar resizing",
       "bindings": [
         {
-          "id": 60,
+          "id": 62,
           "keys": [
             "Left"
           ],
           "effect": "Make the left sidebar narrower"
         },
         {
-          "id": 61,
+          "id": 63,
           "keys": [
             "Right"
           ],
@@ -504,35 +504,35 @@
       "title": "All unreads",
       "bindings": [
         {
-          "id": 62,
+          "id": 64,
           "keys": [
             "Up"
           ],
           "effect": "Previous unread message"
         },
         {
-          "id": 63,
+          "id": 65,
           "keys": [
             "Down"
           ],
           "effect": "Next unread message"
         },
         {
-          "id": 64,
+          "id": 66,
           "keys": [
             "Esc"
           ],
           "effect": "Mark this message group read"
         },
         {
-          "id": 65,
+          "id": 67,
           "keys": [
             "Left"
           ],
           "effect": "Collapse message group"
         },
         {
-          "id": 66,
+          "id": 68,
           "keys": [
             "Right"
           ],
@@ -546,63 +546,63 @@
       "title": "Workspace and tab numbers",
       "bindings": [
         {
-          "id": 67,
+          "id": 69,
           "keys": [
             "Cmd+1"
           ],
           "effect": "Switch to workspace 1"
         },
         {
-          "id": 68,
+          "id": 70,
           "keys": [
             "Cmd+2"
           ],
           "effect": "Switch to workspace 2"
         },
         {
-          "id": 69,
+          "id": 71,
           "keys": [
             "Cmd+3"
           ],
           "effect": "Switch to workspace 3"
         },
         {
-          "id": 70,
+          "id": 72,
           "keys": [
             "Cmd+4"
           ],
           "effect": "Switch to workspace 4"
         },
         {
-          "id": 71,
+          "id": 73,
           "keys": [
             "Cmd+5"
           ],
           "effect": "Switch to workspace 5"
         },
         {
-          "id": 72,
+          "id": 74,
           "keys": [
             "Cmd+6"
           ],
           "effect": "Switch to workspace 6"
         },
         {
-          "id": 73,
+          "id": 75,
           "keys": [
             "Cmd+7"
           ],
           "effect": "Switch to workspace 7"
         },
         {
-          "id": 74,
+          "id": 76,
           "keys": [
             "Cmd+8"
           ],
           "effect": "Switch to workspace 8"
         },
         {
-          "id": 75,
+          "id": 77,
           "keys": [
             "Cmd+9"
           ],
@@ -616,70 +616,70 @@
       "title": "Navigation tab numbers",
       "bindings": [
         {
-          "id": 76,
+          "id": 78,
           "keys": [
             "Ctrl+1"
           ],
           "effect": "Switch to navigation tab 1"
         },
         {
-          "id": 77,
+          "id": 79,
           "keys": [
             "Ctrl+2"
           ],
           "effect": "Switch to navigation tab 2"
         },
         {
-          "id": 78,
+          "id": 80,
           "keys": [
             "Ctrl+3"
           ],
           "effect": "Switch to navigation tab 3"
         },
         {
-          "id": 79,
+          "id": 81,
           "keys": [
             "Ctrl+4"
           ],
           "effect": "Switch to navigation tab 4"
         },
         {
-          "id": 80,
+          "id": 82,
           "keys": [
             "Ctrl+5"
           ],
           "effect": "Switch to navigation tab 5"
         },
         {
-          "id": 81,
+          "id": 83,
           "keys": [
             "Ctrl+6"
           ],
           "effect": "Switch to navigation tab 6"
         },
         {
-          "id": 82,
+          "id": 84,
           "keys": [
             "Ctrl+7"
           ],
           "effect": "Switch to navigation tab 7"
         },
         {
-          "id": 83,
+          "id": 85,
           "keys": [
             "Ctrl+8"
           ],
           "effect": "Switch to navigation tab 8"
         },
         {
-          "id": 84,
+          "id": 86,
           "keys": [
             "Ctrl+9"
           ],
           "effect": "Switch to navigation tab 9"
         },
         {
-          "id": 85,
+          "id": 87,
           "keys": [
             "Ctrl+0"
           ],
@@ -693,28 +693,28 @@
       "title": "Message formatting: additional actions",
       "bindings": [
         {
-          "id": 86,
+          "id": 88,
           "keys": [
             "Shift+Up"
           ],
           "effect": "Select to beginning of current line"
         },
         {
-          "id": 87,
+          "id": 89,
           "keys": [
             "Shift+Down"
           ],
           "effect": "Select to end of current line"
         },
         {
-          "id": 88,
+          "id": 90,
           "keys": [
             "Cmd+Shift+F"
           ],
           "effect": "Apply Markdown formatting"
         },
         {
-          "id": 89,
+          "id": 91,
           "keys": [
             "Cmd+V"
           ],

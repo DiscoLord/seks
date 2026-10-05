@@ -51,7 +51,7 @@
           "keys": [
             "Opt+F"
           ],
-          "effect": "Next word end"
+          "effect": "Next word start"
         },
         {
           "id": 7,
@@ -889,9 +889,9 @@
         {
           "id": 118,
           "keys": [
-            "Opt+\\ $"
+            "Opt+$"
           ],
-          "effect": "Spell word"
+          "effect": "Correct the spelling of the word"
         },
         {
           "id": 119,

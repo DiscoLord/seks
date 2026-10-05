@@ -1,0 +1,65 @@
+name: release
+
+# Push a tag such as `v0.1.0` to make a release. The tag must match
+# `.version` in build.zig.zon.
+on:
+  push:
+    tags: ["v*"]
+
+# The job creates the release, so it must write.
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: mlugg/setup-zig@v2
+        with:
+          version: 0.17.0
+
+      - name: Check that the tag matches the version
+        run: |
+          zig build
+          built=$(./zig-out/bin/seks --version)
+          if [ "$built" != "seks ${GITHUB_REF_NAME#v}" ]; then
+            echo "The tag is $GITHUB_REF_NAME, and the binary says: $built"
+            echo "Change .version in build.zig.zon, or push a different tag."
+            exit 1
+          fi
+
+      - name: Run the tests
+        run: zig build test --summary all
+
+      # Zig compiles every target from Linux. The Linux binaries use musl
+      # and are static, so they run on every distribution. An archive has
+      # no version in its name, so the link to the latest one never changes.
+      - name: Build the archives
+        run: |
+          mkdir -p zig-out/dist
+          for pair in \
+            aarch64-macos:macos-arm64 \
+            x86_64-macos:macos-x86_64 \
+            aarch64-linux-musl:linux-arm64 \
+            x86_64-linux-musl:linux-x86_64
+          do
+            target=${pair%%:*}
+            name=seks-${pair##*:}
+            zig build -Doptimize=ReleaseSafe -Dtarget="$target" --prefix "zig-out/$target"
+            mkdir "zig-out/dist/$name"
+            cp "zig-out/$target/bin/seks" LICENSE README.md "zig-out/dist/$name/"
+            cp -R completions "zig-out/dist/$name/"
+            tar -czf "zig-out/dist/$name.tar.gz" -C zig-out/dist "$name"
+          done
+          cd zig-out/dist
+          sha256sum *.tar.gz > checksums.txt
+
+      - name: Create the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >-
+          gh release create "$GITHUB_REF_NAME" --verify-tag --generate-notes
+          zig-out/dist/*.tar.gz zig-out/dist/checksums.txt

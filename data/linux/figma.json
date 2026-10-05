@@ -31,14 +31,14 @@
         {
           "id": 4,
           "keys": [
-            "Shift+Plus"
+            "Ctrl+Plus"
           ],
           "effect": "Zoom in"
         },
         {
           "id": 5,
           "keys": [
-            "Shift+-"
+            "Ctrl+-"
           ],
           "effect": "Zoom out"
         },

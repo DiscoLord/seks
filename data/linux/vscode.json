@@ -76,21 +76,21 @@
           "effect": "Go to the previous error or warning"
         },
         {
-          "id": 111,
+          "id": 10,
           "keys": [
             "Ctrl+Shift+M"
           ],
           "effect": "Show Problems"
         },
         {
-          "id": 112,
+          "id": 11,
           "keys": [
             "Ctrl+Tab"
           ],
           "effect": "Navigate Editor Group History"
         },
         {
-          "id": 113,
+          "id": 12,
           "keys": [
             "Ctrl+Shift+;"
           ],
@@ -103,98 +103,98 @@
       "title": "Search",
       "bindings": [
         {
-          "id": 10,
+          "id": 13,
           "keys": [
             "Ctrl+F"
           ],
           "effect": "Find in the current file"
         },
         {
-          "id": 11,
+          "id": 14,
           "keys": [
             "Ctrl+H"
           ],
           "effect": "Replace in the current file"
         },
         {
-          "id": 12,
+          "id": 15,
           "keys": [
             "Ctrl+Shift+F"
           ],
           "effect": "Find in the workspace"
         },
         {
-          "id": 13,
+          "id": 16,
           "keys": [
             "Ctrl+Shift+H"
           ],
           "effect": "Replace in the workspace"
         },
         {
-          "id": 14,
+          "id": 17,
           "keys": [
             "F3"
           ],
           "effect": "Find the next match"
         },
         {
-          "id": 15,
+          "id": 18,
           "keys": [
             "Shift+F3"
           ],
           "effect": "Find the previous match"
         },
         {
-          "id": 146,
+          "id": 19,
           "keys": [
             "Alt+C"
           ],
           "effect": "Toggle Match Case"
         },
         {
-          "id": 147,
+          "id": 20,
           "keys": [
             "Alt+W"
           ],
           "effect": "Toggle Match Whole Word"
         },
         {
-          "id": 148,
+          "id": 21,
           "keys": [
             "Alt+R"
           ],
           "effect": "Toggle Use Regular Expression"
         },
         {
-          "id": 149,
+          "id": 22,
           "keys": [
             "Ctrl+Shift+J"
           ],
           "effect": "Toggle Search Details"
         },
         {
-          "id": 150,
+          "id": 23,
           "keys": [
             "F4"
           ],
           "effect": "Focus Next Search Result"
         },
         {
-          "id": 151,
+          "id": 24,
           "keys": [
             "Shift+F4"
           ],
           "effect": "Focus Previous Search Result"
         },
         {
-          "id": 152,
+          "id": 25,
           "keys": [
             "Down"
           ],
           "effect": "Show Next Search Term"
         },
         {
-          "id": 153,
+          "id": 26,
           "keys": [
             "Up"
           ],
@@ -209,63 +209,63 @@
       "note": "With the editor focused. Formatting requires a formatter for the current language.",
       "bindings": [
         {
-          "id": 16,
+          "id": 27,
           "keys": [
             "Alt+Up"
           ],
           "effect": "Move the line up"
         },
         {
-          "id": 17,
+          "id": 28,
           "keys": [
             "Alt+Down"
           ],
           "effect": "Move the line down"
         },
         {
-          "id": 18,
+          "id": 29,
           "keys": [
             "Ctrl+Shift+K"
           ],
           "effect": "Delete the line"
         },
         {
-          "id": 19,
+          "id": 30,
           "keys": [
             "Ctrl+Enter"
           ],
           "effect": "Insert a line below"
         },
         {
-          "id": 20,
+          "id": 31,
           "keys": [
             "Ctrl+Shift+Enter"
           ],
           "effect": "Insert a line above"
         },
         {
-          "id": 21,
+          "id": 32,
           "keys": [
             "Ctrl+/"
           ],
           "effect": "Toggle a line comment"
         },
         {
-          "id": 22,
+          "id": 33,
           "keys": [
             "Ctrl+Shift+A"
           ],
           "effect": "Toggle a block comment"
         },
         {
-          "id": 23,
+          "id": 34,
           "keys": [
             "Ctrl+Shift+I"
           ],
           "effect": "Format the document"
         },
         {
-          "id": 24,
+          "id": 35,
           "keys": [
             "Ctrl+K Ctrl+F"
           ],
@@ -278,49 +278,49 @@
       "title": "Selection",
       "bindings": [
         {
-          "id": 25,
+          "id": 36,
           "keys": [
             "Ctrl+D"
           ],
           "effect": "Add the next matching occurrence to the selection"
         },
         {
-          "id": 26,
+          "id": 37,
           "keys": [
             "Ctrl+Shift+L"
           ],
           "effect": "Select all occurrences of the current selection"
         },
         {
-          "id": 27,
+          "id": 38,
           "keys": [
             "Shift+Alt+Up"
           ],
           "effect": "Add a cursor above"
         },
         {
-          "id": 28,
+          "id": 39,
           "keys": [
             "Shift+Alt+Down"
           ],
           "effect": "Add a cursor below"
         },
         {
-          "id": 29,
+          "id": 40,
           "keys": [
             "Shift+Alt+Right"
           ],
           "effect": "Expand the selection"
         },
         {
-          "id": 30,
+          "id": 41,
           "keys": [
             "Shift+Alt+Left"
           ],
           "effect": "Shrink the selection"
         },
         {
-          "id": 31,
+          "id": 42,
           "keys": [
             "Ctrl+U"
           ],
@@ -334,56 +334,56 @@
       "note": "Availability depends on the language support and the symbol under the cursor.",
       "bindings": [
         {
-          "id": 32,
+          "id": 43,
           "keys": [
             "Ctrl+Space"
           ],
           "effect": "Trigger completion suggestions"
         },
         {
-          "id": 33,
+          "id": 44,
           "keys": [
             "Ctrl+Shift+Space"
           ],
           "effect": "Show parameter hints"
         },
         {
-          "id": 34,
+          "id": 45,
           "keys": [
             "Ctrl+."
           ],
           "effect": "Show Quick Fix actions"
         },
         {
-          "id": 35,
+          "id": 46,
           "keys": [
             "F12"
           ],
           "effect": "Go to definition"
         },
         {
-          "id": 36,
+          "id": 47,
           "keys": [
             "Ctrl+Shift+F10"
           ],
           "effect": "Peek definition"
         },
         {
-          "id": 37,
+          "id": 48,
           "keys": [
             "Shift+F12"
           ],
           "effect": "Show references"
         },
         {
-          "id": 38,
+          "id": 49,
           "keys": [
             "F2"
           ],
           "effect": "Rename a symbol"
         },
         {
-          "id": 39,
+          "id": 50,
           "keys": [
             "Ctrl+K Ctrl+I"
           ],
@@ -396,70 +396,70 @@
       "title": "Files and editor groups",
       "bindings": [
         {
-          "id": 40,
+          "id": 51,
           "keys": [
             "Ctrl+N"
           ],
           "effect": "Create a new file"
         },
         {
-          "id": 41,
+          "id": 52,
           "keys": [
             "Ctrl+O"
           ],
           "effect": "Open a file"
         },
         {
-          "id": 42,
+          "id": 53,
           "keys": [
             "Ctrl+S"
           ],
           "effect": "Save the file"
         },
         {
-          "id": 43,
+          "id": 54,
           "keys": [
             "Ctrl+Shift+S"
           ],
           "effect": "Save the file as"
         },
         {
-          "id": 44,
+          "id": 55,
           "keys": [
             "Ctrl+W"
           ],
           "effect": "Close the editor"
         },
         {
-          "id": 45,
+          "id": 56,
           "keys": [
             "Ctrl+Shift+T"
           ],
           "effect": "Reopen the last closed editor"
         },
         {
-          "id": 46,
+          "id": 57,
           "keys": [
             "Ctrl+\\"
           ],
           "effect": "Split the editor"
         },
         {
-          "id": 47,
+          "id": 58,
           "keys": [
             "Ctrl+1"
           ],
           "effect": "Focus the first editor group"
         },
         {
-          "id": 48,
+          "id": 59,
           "keys": [
             "Ctrl+2"
           ],
           "effect": "Focus the second editor group"
         },
         {
-          "id": 49,
+          "id": 60,
           "keys": [
             "Ctrl+3"
           ],
@@ -472,63 +472,63 @@
       "title": "Views and terminal",
       "bindings": [
         {
-          "id": 50,
+          "id": 61,
           "keys": [
             "Ctrl+B"
           ],
           "effect": "Toggle the primary sidebar"
         },
         {
-          "id": 51,
+          "id": 62,
           "keys": [
             "Ctrl+Shift+E"
           ],
           "effect": "Show Explorer"
         },
         {
-          "id": 52,
+          "id": 63,
           "keys": [
             "Ctrl+Shift+G"
           ],
           "effect": "Show Source Control"
         },
         {
-          "id": 53,
+          "id": 64,
           "keys": [
             "Ctrl+Shift+D"
           ],
           "effect": "Show Run and Debug"
         },
         {
-          "id": 54,
+          "id": 65,
           "keys": [
             "Ctrl+Shift+X"
           ],
           "effect": "Show Extensions"
         },
         {
-          "id": 55,
+          "id": 66,
           "keys": [
             "Ctrl+,"
           ],
           "effect": "Open Settings"
         },
         {
-          "id": 56,
+          "id": 67,
           "keys": [
             "Ctrl+K Ctrl+S"
           ],
           "effect": "Open Keyboard Shortcuts"
         },
         {
-          "id": 57,
+          "id": 68,
           "keys": [
             "Ctrl+`"
           ],
           "effect": "Toggle the integrated terminal"
         },
         {
-          "id": 58,
+          "id": 69,
           "keys": [
             "Ctrl+Shift+`"
           ],
@@ -542,42 +542,42 @@
       "note": "Starting may require a launch configuration. Stepping actions apply while paused.",
       "bindings": [
         {
-          "id": 59,
+          "id": 70,
           "keys": [
             "F9"
           ],
           "effect": "Toggle a breakpoint"
         },
         {
-          "id": 60,
+          "id": 71,
           "keys": [
             "F5"
           ],
           "effect": "Start or continue debugging"
         },
         {
-          "id": 61,
+          "id": 72,
           "keys": [
             "F10"
           ],
           "effect": "Step over"
         },
         {
-          "id": 62,
+          "id": 73,
           "keys": [
             "F11"
           ],
           "effect": "Step into"
         },
         {
-          "id": 63,
+          "id": 74,
           "keys": [
             "Shift+F11"
           ],
           "effect": "Step out"
         },
         {
-          "id": 64,
+          "id": 75,
           "keys": [
             "Shift+F5"
           ],
@@ -590,287 +590,287 @@
       "title": "Basic Editing",
       "bindings": [
         {
-          "id": 65,
+          "id": 76,
           "keys": [
             "Ctrl+X"
           ],
           "effect": "Cut line (empty selection)"
         },
         {
-          "id": 66,
+          "id": 77,
           "keys": [
             "Ctrl+C"
           ],
           "effect": "Copy line (empty selection)"
         },
         {
-          "id": 67,
+          "id": 78,
           "keys": [
             "Ctrl+V"
           ],
           "effect": "Paste"
         },
         {
-          "id": 68,
+          "id": 79,
           "keys": [
             "Ctrl+Shift+Alt+Down"
           ],
           "effect": "Copy Line Down"
         },
         {
-          "id": 69,
+          "id": 80,
           "keys": [
             "Ctrl+Shift+Alt+Up"
           ],
           "effect": "Copy Line Up"
         },
         {
-          "id": 70,
+          "id": 81,
           "keys": [
             "Ctrl+Z"
           ],
           "effect": "Undo"
         },
         {
-          "id": 71,
+          "id": 82,
           "keys": [
             "Ctrl+Y"
           ],
           "effect": "Redo"
         },
         {
-          "id": 72,
+          "id": 83,
           "keys": [
             "Ctrl+K Ctrl+D"
           ],
           "effect": "Move Last Selection To Next Find Match"
         },
         {
-          "id": 73,
+          "id": 84,
           "keys": [
             "Shift+Alt+I"
           ],
           "effect": "Insert cursor at end of each line selected"
         },
         {
-          "id": 74,
+          "id": 85,
           "keys": [
             "Ctrl+F2"
           ],
           "effect": "Select all occurrences of current word"
         },
         {
-          "id": 75,
+          "id": 86,
           "keys": [
             "Ctrl+L"
           ],
           "effect": "Select current line"
         },
         {
-          "id": 76,
+          "id": 87,
           "keys": [
             "Ctrl+Shift+\\"
           ],
           "effect": "Jump to matching bracket"
         },
         {
-          "id": 77,
+          "id": 88,
           "keys": [
             "Ctrl+]"
           ],
           "effect": "Indent Line"
         },
         {
-          "id": 78,
+          "id": 89,
           "keys": [
             "Ctrl+["
           ],
           "effect": "Outdent Line"
         },
         {
-          "id": 79,
+          "id": 90,
           "keys": [
             "Home"
           ],
           "effect": "Go to Beginning of Line"
         },
         {
-          "id": 80,
+          "id": 91,
           "keys": [
             "End"
           ],
           "effect": "Go to End of Line"
         },
         {
-          "id": 81,
+          "id": 92,
           "keys": [
             "Ctrl+End"
           ],
           "effect": "Go to End of File"
         },
         {
-          "id": 82,
+          "id": 93,
           "keys": [
             "Ctrl+Home"
           ],
           "effect": "Go to Beginning of File"
         },
         {
-          "id": 83,
+          "id": 94,
           "keys": [
             "Ctrl+Down"
           ],
           "effect": "Scroll Line Down"
         },
         {
-          "id": 84,
+          "id": 95,
           "keys": [
             "Ctrl+Up"
           ],
           "effect": "Scroll Line Up"
         },
         {
-          "id": 85,
+          "id": 96,
           "keys": [
             "Alt+PageDown"
           ],
           "effect": "Scroll Page Down"
         },
         {
-          "id": 86,
+          "id": 97,
           "keys": [
             "Alt+PageUp"
           ],
           "effect": "Scroll Page Up"
         },
         {
-          "id": 87,
+          "id": 98,
           "keys": [
             "Ctrl+Shift+["
           ],
           "effect": "Fold (collapse) region"
         },
         {
-          "id": 88,
+          "id": 99,
           "keys": [
             "Ctrl+Shift+]"
           ],
           "effect": "Unfold (uncollapse) region"
         },
         {
-          "id": 89,
+          "id": 100,
           "keys": [
             "Ctrl+K Ctrl+L"
           ],
           "effect": "Toggle Fold region"
         },
         {
-          "id": 90,
+          "id": 101,
           "keys": [
             "Ctrl+K Ctrl+["
           ],
           "effect": "Fold (collapse) all subregions"
         },
         {
-          "id": 91,
+          "id": 102,
           "keys": [
             "Ctrl+K Ctrl+]"
           ],
           "effect": "Unfold (uncollapse) all subregions"
         },
         {
-          "id": 92,
+          "id": 103,
           "keys": [
             "Ctrl+K Ctrl+0"
           ],
           "effect": "Fold (collapse) all regions"
         },
         {
-          "id": 93,
+          "id": 104,
           "keys": [
             "Ctrl+K Ctrl+J"
           ],
           "effect": "Unfold (uncollapse) all regions"
         },
         {
-          "id": 94,
+          "id": 105,
           "keys": [
             "Ctrl+K Ctrl+C"
           ],
           "effect": "Add Line Comment"
         },
         {
-          "id": 95,
+          "id": 106,
           "keys": [
             "Ctrl+K Ctrl+U"
           ],
           "effect": "Remove Line Comment"
         },
         {
-          "id": 96,
+          "id": 107,
           "keys": [
             "Ctrl+F"
           ],
           "effect": "Find"
         },
         {
-          "id": 97,
+          "id": 108,
           "keys": [
             "Ctrl+H"
           ],
           "effect": "Replace"
         },
         {
-          "id": 98,
+          "id": 109,
           "keys": [
             "Enter"
           ],
           "effect": "Find Next"
         },
         {
-          "id": 99,
+          "id": 110,
           "keys": [
             "Shift+Enter"
           ],
           "effect": "Find Previous"
         },
         {
-          "id": 100,
+          "id": 111,
           "keys": [
             "Alt+Enter"
           ],
           "effect": "Select All Occurrences of Find Match"
         },
         {
-          "id": 101,
+          "id": 112,
           "keys": [
             "Alt+C"
           ],
           "effect": "Toggle Find Case Sensitive"
         },
         {
-          "id": 102,
+          "id": 113,
           "keys": [
             "Alt+R"
           ],
           "effect": "Toggle Find Regex"
         },
         {
-          "id": 103,
+          "id": 114,
           "keys": [
             "Alt+W"
           ],
           "effect": "Toggle Find Whole Word"
         },
         {
-          "id": 104,
+          "id": 115,
           "keys": [
             "Ctrl+M"
           ],
           "effect": "Toggle Use of Tab Key for Setting Focus"
         },
         {
-          "id": 105,
+          "id": 116,
           "keys": [
             "Alt+Z"
           ],
@@ -883,35 +883,35 @@
       "title": "Rich Languages Editing",
       "bindings": [
         {
-          "id": 106,
+          "id": 117,
           "keys": [
             "Ctrl+K F12"
           ],
           "effect": "Open Definition to the Side"
         },
         {
-          "id": 107,
+          "id": 118,
           "keys": [
             "Ctrl+Shift+."
           ],
           "effect": "Replace with Next Value"
         },
         {
-          "id": 108,
+          "id": 119,
           "keys": [
             "Ctrl+Shift+,"
           ],
           "effect": "Replace with Previous Value"
         },
         {
-          "id": 109,
+          "id": 120,
           "keys": [
             "Ctrl+K Ctrl+X"
           ],
           "effect": "Trim Trailing Whitespace"
         },
         {
-          "id": 110,
+          "id": 121,
           "keys": [
             "Ctrl+K M"
           ],
@@ -924,77 +924,77 @@
       "title": "Editor/Window Management",
       "bindings": [
         {
-          "id": 114,
+          "id": 122,
           "keys": [
             "Ctrl+Shift+N"
           ],
           "effect": "New Window"
         },
         {
-          "id": 115,
+          "id": 123,
           "keys": [
             "Alt+F4"
           ],
           "effect": "Close Window"
         },
         {
-          "id": 116,
+          "id": 124,
           "keys": [
             "Ctrl+K F"
           ],
           "effect": "Close Folder"
         },
         {
-          "id": 117,
+          "id": 125,
           "keys": [
             "Ctrl+K Ctrl+Left"
           ],
           "effect": "Focus into Editor Group on the Left"
         },
         {
-          "id": 118,
+          "id": 126,
           "keys": [
             "Ctrl+K Ctrl+Right"
           ],
           "effect": "Focus into Editor Group on the Right"
         },
         {
-          "id": 119,
+          "id": 127,
           "keys": [
             "Ctrl+Shift+PageUp"
           ],
           "effect": "Move Editor Left"
         },
         {
-          "id": 120,
+          "id": 128,
           "keys": [
             "Ctrl+Shift+PageDown"
           ],
           "effect": "Move Editor Right"
         },
         {
-          "id": 121,
+          "id": 129,
           "keys": [
             "Ctrl+K Left"
           ],
           "effect": "Move Active Editor Group Left"
         },
         {
-          "id": 122,
+          "id": 130,
           "keys": [
             "Ctrl+K Right"
           ],
           "effect": "Move Active Editor Group Right"
         },
         {
-          "id": 123,
+          "id": 131,
           "keys": [
             "Ctrl+Alt+Right"
           ],
           "effect": "Move Editor into Next Group"
         },
         {
-          "id": 124,
+          "id": 132,
           "keys": [
             "Ctrl+Alt+Left"
           ],
@@ -1007,39 +1007,39 @@
       "title": "File Management",
       "bindings": [
         {
-          "id": 125,
+          "id": 133,
           "keys": [
             "Ctrl+K W"
           ],
           "effect": "Close Group"
         },
         {
-          "id": 126,
+          "id": 134,
           "keys": [
             "Ctrl+K Ctrl+W"
           ],
           "effect": "Close All"
         },
         {
-          "id": 127,
+          "id": 135,
           "keys": [
             "Ctrl+K Enter"
           ],
           "effect": "Keep Open"
         },
         {
-          "id": 128,
+          "id": 136,
           "keys": [
             "Ctrl+K P"
           ],
           "effect": "Copy Path of Active File"
         },
         {
-          "id": 129,
+          "id": 137,
           "keys": [
             "Ctrl+K R"
           ],
-          "effect": "Reveal Active File in Windows"
+          "effect": "Reveal Active File in File Manager"
         }
       ]
     },
@@ -1048,112 +1048,112 @@
       "title": "Display",
       "bindings": [
         {
-          "id": 130,
+          "id": 138,
           "keys": [
             "Ctrl+K Z"
           ],
           "effect": "Toggle Zen Mode"
         },
         {
-          "id": 131,
+          "id": 139,
           "keys": [
             "Esc Esc"
           ],
           "effect": "Leave Zen Mode"
         },
         {
-          "id": 132,
+          "id": 140,
           "keys": [
             "Ctrl+="
           ],
           "effect": "Zoom in"
         },
         {
-          "id": 133,
+          "id": 141,
           "keys": [
             "Ctrl+-"
           ],
           "effect": "Zoom out"
         },
         {
-          "id": 134,
+          "id": 142,
           "keys": [
             "Ctrl+Numpad0"
           ],
           "effect": "Reset Zoom"
         },
         {
-          "id": 135,
+          "id": 143,
           "keys": [
             "Ctrl+B"
           ],
           "effect": "Toggle Sidebar Visibility"
         },
         {
-          "id": 136,
+          "id": 144,
           "keys": [
             "Ctrl+Shift+E"
           ],
           "effect": "Show Explorer / Toggle Focus"
         },
         {
-          "id": 137,
+          "id": 145,
           "keys": [
             "Ctrl+Shift+F"
           ],
           "effect": "Show Search"
         },
         {
-          "id": 138,
+          "id": 146,
           "keys": [
             "Ctrl+Shift+G"
           ],
           "effect": "Show Source Control"
         },
         {
-          "id": 139,
+          "id": 147,
           "keys": [
             "Ctrl+Shift+D"
           ],
           "effect": "Show Run"
         },
         {
-          "id": 140,
+          "id": 148,
           "keys": [
             "Ctrl+Shift+X"
           ],
           "effect": "Show Extensions"
         },
         {
-          "id": 141,
+          "id": 149,
           "keys": [
             "Ctrl+K Ctrl+H"
           ],
           "effect": "Show Output"
         },
         {
-          "id": 142,
+          "id": 150,
           "keys": [
             "Ctrl+Shift+C"
           ],
-          "effect": "Open New Command Prompt"
+          "effect": "Open New External Terminal"
         },
         {
-          "id": 143,
+          "id": 151,
           "keys": [
             "Ctrl+Shift+V"
           ],
           "effect": "Toggle Markdown Preview"
         },
         {
-          "id": 144,
+          "id": 152,
           "keys": [
             "Ctrl+K V"
           ],
           "effect": "Open Preview to the Side"
         },
         {
-          "id": 145,
+          "id": 153,
           "keys": [
             "Ctrl+`"
           ],
@@ -1354,26 +1354,40 @@
         {
           "id": 176,
           "keys": [
+            "Ctrl+Up"
+          ],
+          "effect": "Scroll terminal to previous command"
+        },
+        {
+          "id": 177,
+          "keys": [
+            "Ctrl+Down"
+          ],
+          "effect": "Scroll terminal to next command"
+        },
+        {
+          "id": 178,
+          "keys": [
             "Shift+PageUp"
           ],
           "effect": "Scroll terminal up one page"
         },
         {
-          "id": 177,
+          "id": 179,
           "keys": [
             "Shift+PageDown"
           ],
           "effect": "Scroll terminal down one page"
         },
         {
-          "id": 178,
+          "id": 180,
           "keys": [
             "Shift+Home"
           ],
           "effect": "Scroll terminal to top"
         },
         {
-          "id": 179,
+          "id": 181,
           "keys": [
             "Shift+End"
           ],

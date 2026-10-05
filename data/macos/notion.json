@@ -422,14 +422,14 @@
           "effect": "Edit text inside selected block"
         },
         {
-          "id": 67,
+          "id": 53,
           "keys": [
             "Cmd+Shift+Left"
           ],
           "effect": "Move selected block left"
         },
         {
-          "id": 68,
+          "id": 54,
           "keys": [
             "Cmd+Shift+Right"
           ],
@@ -443,35 +443,35 @@
       "title": "Inline menus",
       "bindings": [
         {
-          "id": 53,
+          "id": 55,
           "keys": [
             "@"
           ],
           "effect": "Mention a person, page, date, or reminder"
         },
         {
-          "id": 54,
+          "id": 56,
           "keys": [
             "[ ["
           ],
           "effect": "Open page linking and creation menu"
         },
         {
-          "id": 55,
+          "id": 57,
           "keys": [
             "Plus"
           ],
           "effect": "Open page creation and linking menu"
         },
         {
-          "id": 56,
+          "id": 58,
           "keys": [
             "/"
           ],
           "effect": "Open block command menu"
         },
         {
-          "id": 57,
+          "id": 59,
           "keys": [
             "Esc"
           ],
@@ -485,7 +485,7 @@
       "title": "Markdown block shortcuts",
       "bindings": [
         {
-          "id": 58,
+          "id": 60,
           "keys": [
             "* Space",
             "- Space",
@@ -494,14 +494,14 @@
           "effect": "Create a bulleted list"
         },
         {
-          "id": 59,
+          "id": 61,
           "keys": [
             "[ ] Space"
           ],
           "effect": "Create a checkbox"
         },
         {
-          "id": 60,
+          "id": 62,
           "keys": [
             "1 . Space",
             "a . Space",
@@ -510,42 +510,42 @@
           "effect": "Create a numbered list"
         },
         {
-          "id": 61,
+          "id": 63,
           "keys": [
             "# Space"
           ],
           "effect": "Heading 1"
         },
         {
-          "id": 62,
+          "id": 64,
           "keys": [
             "# # Space"
           ],
           "effect": "Heading 2"
         },
         {
-          "id": 63,
+          "id": 65,
           "keys": [
             "# # # Space"
           ],
           "effect": "Heading 3"
         },
         {
-          "id": 64,
+          "id": 66,
           "keys": [
             "> Space"
           ],
           "effect": "Toggle list"
         },
         {
-          "id": 65,
+          "id": 67,
           "keys": [
             "\" Space"
           ],
           "effect": "Quote block"
         },
         {
-          "id": 66,
+          "id": 68,
           "keys": [
             "- - -"
           ],

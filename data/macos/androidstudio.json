@@ -976,7 +976,7 @@
           "effect": "Previous highlighted error"
         },
         {
-          "id": 133,
+          "id": 127,
           "keys": [
             "Opt+Backspace"
           ],
@@ -989,21 +989,21 @@
       "title": "Refactor",
       "bindings": [
         {
-          "id": 127,
+          "id": 128,
           "keys": [
             "F5"
           ],
           "effect": "Copy"
         },
         {
-          "id": 128,
+          "id": 129,
           "keys": [
             "F6"
           ],
           "effect": "Move"
         },
         {
-          "id": 134,
+          "id": 130,
           "keys": [
             "Cmd+Delete"
           ],
@@ -1016,28 +1016,28 @@
       "title": "Version control/local history",
       "bindings": [
         {
-          "id": 129,
+          "id": 131,
           "keys": [
             "Cmd+K"
           ],
           "effect": "Commit project to VCS"
         },
         {
-          "id": 130,
+          "id": 132,
           "keys": [
             "Cmd+T"
           ],
           "effect": "Update project from VCS"
         },
         {
-          "id": 131,
+          "id": 133,
           "keys": [
             "Opt+Shift+C"
           ],
           "effect": "View recent changes"
         },
         {
-          "id": 132,
+          "id": 134,
           "keys": [
             "Ctrl+V"
           ],

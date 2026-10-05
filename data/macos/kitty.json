@@ -691,6 +691,13 @@
             "Cmd+Q"
           ],
           "effect": "Quit kitty"
+        },
+        {
+          "id": 85,
+          "keys": [
+            "Cmd+Shift+/"
+          ],
+          "effect": "Open the kitty website"
         }
       ]
     }

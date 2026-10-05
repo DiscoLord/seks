@@ -556,7 +556,7 @@
           "effect": "Open merge options"
         },
         {
-          "id": 141,
+          "id": 74,
           "keys": [
             "x"
           ],
@@ -570,105 +570,105 @@
       "note": "Focus Branches with 3 and select its local-branches tab; other tabs have different actions.",
       "bindings": [
         {
-          "id": 74,
+          "id": 75,
           "keys": [
             "Space"
           ],
           "effect": "Check out selected branch"
         },
         {
-          "id": 75,
+          "id": 76,
           "keys": [
             "n"
           ],
           "effect": "Create branch"
         },
         {
-          "id": 76,
+          "id": 77,
           "keys": [
             "c"
           ],
           "effect": "Check out branch by name"
         },
         {
-          "id": 77,
+          "id": 78,
           "keys": [
             "-"
           ],
           "effect": "Check out previous branch"
         },
         {
-          "id": 78,
+          "id": 79,
           "keys": [
             "R"
           ],
           "effect": "Rename branch"
         },
         {
-          "id": 79,
+          "id": 80,
           "keys": [
             "d"
           ],
           "effect": "Delete selected branch"
         },
         {
-          "id": 80,
+          "id": 81,
           "keys": [
             "r"
           ],
           "effect": "Rebase current branch onto selected branch"
         },
         {
-          "id": 81,
+          "id": 82,
           "keys": [
             "M"
           ],
           "effect": "Merge selected branch into current branch"
         },
         {
-          "id": 82,
+          "id": 83,
           "keys": [
             "N"
           ],
           "effect": "Move commits to a new branch"
         },
         {
-          "id": 83,
+          "id": 84,
           "keys": [
             "f"
           ],
           "effect": "Fast-forward selected branch"
         },
         {
-          "id": 84,
+          "id": 85,
           "keys": [
             "u"
           ],
           "effect": "Set upstream"
         },
         {
-          "id": 85,
+          "id": 86,
           "keys": [
             "s"
           ],
           "effect": "Change branch sort order"
         },
         {
-          "id": 86,
+          "id": 87,
           "keys": [
             "o"
           ],
           "effect": "Create pull request"
         },
         {
-          "id": 87,
+          "id": 88,
           "keys": [
             "O"
           ],
           "effect": "Open pull-request options"
         },
         {
-          "id": 88,
+          "id": 89,
           "keys": [
             "G"
           ],
@@ -681,210 +681,210 @@
       "title": "Commits panel",
       "bindings": [
         {
-          "id": 89,
+          "id": 90,
           "keys": [
             "Enter"
           ],
           "effect": "Show commit files"
         },
         {
-          "id": 90,
+          "id": 91,
           "keys": [
             "Space"
           ],
           "effect": "Check out commit"
         },
         {
-          "id": 91,
+          "id": 92,
           "keys": [
             "r"
           ],
           "effect": "Edit commit message"
         },
         {
-          "id": 92,
+          "id": 93,
           "keys": [
             "R"
           ],
           "effect": "Edit message in external editor"
         },
         {
-          "id": 93,
+          "id": 94,
           "keys": [
             "s"
           ],
           "effect": "Squash into previous commit"
         },
         {
-          "id": 94,
+          "id": 95,
           "keys": [
             "f"
           ],
           "effect": "Mark as fixup"
         },
         {
-          "id": 95,
+          "id": 96,
           "keys": [
             "F"
           ],
           "effect": "Create fixup commit"
         },
         {
-          "id": 96,
+          "id": 97,
           "keys": [
             "S"
           ],
-          "effect": "Squash all commits above into this commit"
+          "effect": "Squash the fixup! commits above this commit"
         },
         {
-          "id": 97,
+          "id": 98,
           "keys": [
             "g"
           ],
           "effect": "Open reset options"
         },
         {
-          "id": 98,
+          "id": 99,
           "keys": [
             "t"
           ],
           "effect": "Revert commit"
         },
         {
-          "id": 99,
+          "id": 100,
           "keys": [
             "C"
           ],
           "effect": "Copy commit for cherry-picking"
         },
         {
-          "id": 100,
+          "id": 101,
           "keys": [
             "V"
           ],
           "effect": "Cherry-pick copied commits"
         },
         {
-          "id": 101,
+          "id": 102,
           "keys": [
             "Ctrl+R"
           ],
           "effect": "Clear cherry-pick selection"
         },
         {
-          "id": 102,
+          "id": 103,
           "keys": [
             "T"
           ],
           "effect": "Tag commit"
         },
         {
-          "id": 103,
+          "id": 104,
           "keys": [
             "A"
           ],
           "effect": "Amend staged changes into commit"
         },
         {
-          "id": 104,
+          "id": 105,
           "keys": [
             "Ctrl+J"
           ],
           "effect": "Move commit down"
         },
         {
-          "id": 105,
+          "id": 106,
           "keys": [
             "Ctrl+K"
           ],
           "effect": "Move commit up"
         },
         {
-          "id": 106,
+          "id": 107,
           "keys": [
             "i"
           ],
           "effect": "Start interactive rebase"
         },
         {
-          "id": 107,
+          "id": 108,
           "keys": [
             "b"
           ],
           "effect": "Open bisect options"
         },
         {
-          "id": 108,
+          "id": 109,
           "keys": [
             "y"
           ],
           "effect": "Copy commit information"
         },
         {
-          "id": 109,
+          "id": 110,
           "keys": [
             "Ctrl+L"
           ],
           "effect": "Open log options"
         },
         {
-          "id": 159,
+          "id": 111,
           "keys": [
             "c"
           ],
           "effect": "Set fixup message"
         },
         {
-          "id": 160,
+          "id": 112,
           "keys": [
             "Alt+Down"
           ],
           "effect": "Move down commit"
         },
         {
-          "id": 161,
+          "id": 113,
           "keys": [
             "Alt+Up"
           ],
           "effect": "Move up commit"
         },
         {
-          "id": 162,
+          "id": 114,
           "keys": [
             "a"
           ],
-          "effect": "Reset commit author"
+          "effect": "Amend commit attribute: author or co-author"
         },
         {
-          "id": 163,
+          "id": 115,
           "keys": [
             "p"
           ],
           "effect": "Pick commit"
         },
         {
-          "id": 164,
+          "id": 116,
           "keys": [
             "B"
           ],
           "effect": "Mark commit as base for rebase"
         },
         {
-          "id": 165,
+          "id": 117,
           "keys": [
             "o"
           ],
           "effect": "Open in browser"
         },
         {
-          "id": 166,
+          "id": 118,
           "keys": [
             "G"
           ],
           "effect": "Open pull request in browser"
         },
         {
-          "id": 167,
+          "id": 119,
           "keys": [
             "*"
           ],
@@ -898,35 +898,35 @@
       "note": "Focus Stash with 5. Pop applies and removes the stash; drop removes it.",
       "bindings": [
         {
-          "id": 110,
+          "id": 120,
           "keys": [
             "Space"
           ],
           "effect": "Apply selected stash"
         },
         {
-          "id": 111,
+          "id": 121,
           "keys": [
             "g"
           ],
           "effect": "Pop selected stash"
         },
         {
-          "id": 112,
+          "id": 122,
           "keys": [
             "d"
           ],
           "effect": "Drop selected stash"
         },
         {
-          "id": 113,
+          "id": 123,
           "keys": [
             "r"
           ],
           "effect": "Rename selected stash"
         },
         {
-          "id": 114,
+          "id": 124,
           "keys": [
             "Enter"
           ],
@@ -940,7 +940,7 @@
       "note": "Open the main view with Enter from a file; merge choices apply only while resolving conflicts.",
       "bindings": [
         {
-          "id": 115,
+          "id": 125,
           "keys": [
             "h",
             "Left"
@@ -948,7 +948,7 @@
           "effect": "Previous hunk"
         },
         {
-          "id": 116,
+          "id": 126,
           "keys": [
             "l",
             "Right"
@@ -956,28 +956,28 @@
           "effect": "Next hunk"
         },
         {
-          "id": 117,
+          "id": 127,
           "keys": [
             "a"
           ],
           "effect": "Toggle whole-hunk selection"
         },
         {
-          "id": 118,
+          "id": 128,
           "keys": [
             "Space"
           ],
           "effect": "Stage or unstage selection"
         },
         {
-          "id": 119,
+          "id": 129,
           "keys": [
             "b"
           ],
           "effect": "Choose both sides of a merge conflict"
         },
         {
-          "id": 120,
+          "id": 130,
           "keys": [
             "E"
           ],
@@ -990,112 +990,113 @@
       "title": "Shared default actions",
       "bindings": [
         {
-          "id": 121,
+          "id": 131,
           "keys": [
             "Ctrl+Z"
           ],
           "effect": "Suspend app"
         },
         {
-          "id": 122,
+          "id": 132,
           "keys": [
             "Ctrl+Left"
           ],
           "effect": "Move word left"
         },
         {
-          "id": 123,
+          "id": 133,
           "keys": [
             "Ctrl+Right"
           ],
           "effect": "Move word right"
         },
         {
-          "id": 124,
+          "id": 134,
           "keys": [
             "Ctrl+Backspace"
           ],
           "effect": "Backspace word"
         },
         {
-          "id": 125,
+          "id": 135,
           "keys": [
             "Ctrl+Delete"
           ],
           "effect": "Forward delete word"
         },
         {
-          "id": 126,
+          "id": 136,
           "keys": [
             "Space"
           ],
           "effect": "Select"
         },
         {
-          "id": 127,
+          "id": 137,
           "keys": [
-            "Ctrl+Enter"
+            "Ctrl+Enter",
+            "Ctrl+S"
           ],
           "effect": "Confirm in editor"
         },
         {
-          "id": 128,
+          "id": 138,
           "keys": [
             "d"
           ],
           "effect": "Remove"
         },
         {
-          "id": 129,
+          "id": 139,
           "keys": [
             "w"
           ],
           "effect": "New worktree"
         },
         {
-          "id": 130,
+          "id": 140,
           "keys": [
             "e"
           ],
           "effect": "Edit"
         },
         {
-          "id": 131,
+          "id": 141,
           "keys": [
             "o"
           ],
           "effect": "Open file"
         },
         {
-          "id": 132,
+          "id": 142,
           "keys": [
             "m"
           ],
-          "effect": "Create rebase options menu"
+          "effect": "View merge and rebase options"
         },
         {
-          "id": 133,
+          "id": 143,
           "keys": [
             "@"
           ],
-          "effect": "Extras menu"
+          "effect": "View command log options"
         },
         {
-          "id": 134,
+          "id": 144,
           "keys": [
             ")"
           ],
           "effect": "Increase rename similarity threshold"
         },
         {
-          "id": 135,
+          "id": 145,
           "keys": [
             "("
           ],
           "effect": "Decrease rename similarity threshold"
         },
         {
-          "id": 136,
+          "id": 146,
           "keys": [
             "Alt+Shift+C"
           ],
@@ -1108,28 +1109,28 @@
       "title": "Status panel",
       "bindings": [
         {
-          "id": 137,
+          "id": 147,
           "keys": [
             "u"
           ],
           "effect": "Check for update"
         },
         {
-          "id": 138,
+          "id": 148,
           "keys": [
             "Enter"
           ],
           "effect": "Recent repos"
         },
         {
-          "id": 139,
+          "id": 149,
           "keys": [
             "a"
           ],
           "effect": "All branches log graph"
         },
         {
-          "id": 140,
+          "id": 150,
           "keys": [
             "A"
           ],
@@ -1142,119 +1143,119 @@
       "title": "Branches and remotes: additional actions",
       "bindings": [
         {
-          "id": 142,
+          "id": 151,
           "keys": [
             "o"
           ],
           "effect": "Create pull request"
         },
         {
-          "id": 143,
+          "id": 152,
           "keys": [
             "O"
           ],
           "effect": "View pull request options"
         },
         {
-          "id": 144,
+          "id": 153,
           "keys": [
             "G"
           ],
           "effect": "Open pull request in browser"
         },
         {
-          "id": 145,
+          "id": 154,
           "keys": [
             "Ctrl+Y"
           ],
-          "effect": "Copy pull request u r l"
+          "effect": "Copy pull request URL"
         },
         {
-          "id": 146,
+          "id": 155,
           "keys": [
             "c"
           ],
           "effect": "Checkout branch by name"
         },
         {
-          "id": 147,
+          "id": 156,
           "keys": [
             "F"
           ],
           "effect": "Force checkout branch"
         },
         {
-          "id": 148,
+          "id": 157,
           "keys": [
             "-"
           ],
           "effect": "Checkout previous branch"
         },
         {
-          "id": 149,
+          "id": 158,
           "keys": [
             "r"
           ],
           "effect": "Rebase branch"
         },
         {
-          "id": 150,
+          "id": 159,
           "keys": [
             "R"
           ],
           "effect": "Rename branch"
         },
         {
-          "id": 151,
+          "id": 160,
           "keys": [
             "M"
           ],
           "effect": "Merge into current branch"
         },
         {
-          "id": 152,
+          "id": 161,
           "keys": [
             "N"
           ],
           "effect": "Move commits to new branch"
         },
         {
-          "id": 153,
+          "id": 162,
           "keys": [
             "i"
           ],
           "effect": "View git flow options"
         },
         {
-          "id": 154,
+          "id": 163,
           "keys": [
             "f"
           ],
           "effect": "Fast forward"
         },
         {
-          "id": 155,
+          "id": 164,
           "keys": [
             "T"
           ],
           "effect": "Create tag"
         },
         {
-          "id": 156,
+          "id": 165,
           "keys": [
             "P"
           ],
           "effect": "Push tag (Tags tab)"
         },
         {
-          "id": 157,
+          "id": 166,
           "keys": [
             "u"
           ],
           "effect": "Set upstream"
         },
         {
-          "id": 158,
+          "id": 167,
           "keys": [
             "s"
           ],

@@ -756,7 +756,7 @@
           "keys": [
             "Alt+P"
           ],
-          "effect": "Page through completions"
+          "effect": "Send the output of the command to the pager"
         },
         {
           "id": 99,
@@ -815,28 +815,28 @@
           "effect": "Execute current input (same as Enter)"
         },
         {
-          "id": 323,
+          "id": 107,
           "keys": [
             "Alt+L"
           ],
           "effect": "List the directory or file named by the current token"
         },
         {
-          "id": 324,
+          "id": 108,
           "keys": [
             "Alt+O"
           ],
           "effect": "Preview the current file"
         },
         {
-          "id": 325,
+          "id": 109,
           "keys": [
             "Alt+W"
           ],
           "effect": "Describe the command under the cursor"
         },
         {
-          "id": 326,
+          "id": 110,
           "keys": [
             "F1",
             "Alt+H"
@@ -844,7 +844,7 @@
           "effect": "Open the manual for the current command"
         },
         {
-          "id": 327,
+          "id": 111,
           "keys": [
             "Alt+E",
             "Alt+V"
@@ -859,63 +859,63 @@
       "title": "Vi insert: additional default keys",
       "bindings": [
         {
-          "id": 107,
+          "id": 112,
           "keys": [
             "Esc"
           ],
           "effect": "Enter Normal mode, or dismiss the completion pager"
         },
         {
-          "id": 108,
+          "id": 113,
           "keys": [
             "Ctrl+["
           ],
           "effect": "Enter Normal mode, or dismiss the completion pager"
         },
         {
-          "id": 109,
+          "id": 114,
           "keys": [
             "Ctrl+N"
           ],
           "effect": "Accept autosuggestion"
         },
         {
-          "id": 110,
+          "id": 115,
           "keys": [
             "Home"
           ],
           "effect": "Beginning of line"
         },
         {
-          "id": 111,
+          "id": 116,
           "keys": [
             "End"
           ],
           "effect": "End of line"
         },
         {
-          "id": 112,
+          "id": 117,
           "keys": [
             "Delete"
           ],
           "effect": "Delete char"
         },
         {
-          "id": 113,
+          "id": 118,
           "keys": [
             "Backspace"
           ],
           "effect": "Backward delete char"
         },
         {
-          "id": 114,
+          "id": 119,
           "keys": [
             "Shift+Backspace"
           ],
           "effect": "Backward delete char"
         },
         {
-          "id": 115,
+          "id": 120,
           "keys": [
             "Ctrl+H"
           ],
@@ -928,770 +928,770 @@
       "title": "Vi normal: additional default keys",
       "bindings": [
         {
-          "id": 116,
+          "id": 121,
           "keys": [
             ": q"
           ],
           "effect": "Exit"
         },
         {
-          "id": 117,
+          "id": 122,
           "keys": [
             "Ctrl+C"
           ],
           "effect": "Clear commandline; enter Insert mode"
         },
         {
-          "id": 118,
+          "id": 123,
           "keys": [
             "Esc"
           ],
           "effect": "Clear repeat count"
         },
         {
-          "id": 119,
+          "id": 124,
           "keys": [
             "Ctrl+["
           ],
           "effect": "Clear repeat count"
         },
         {
-          "id": 120,
+          "id": 125,
           "keys": [
             "0"
           ],
           "effect": "Line start, or append zero to an existing count"
         },
         {
-          "id": 121,
+          "id": 126,
           "keys": [
             "h"
           ],
           "effect": "Backward char"
         },
         {
-          "id": 122,
+          "id": 127,
           "keys": [
             "l"
           ],
           "effect": "Forward char"
         },
         {
-          "id": 123,
+          "id": 128,
           "keys": [
             "k"
           ],
           "effect": "Up or search"
         },
         {
-          "id": 124,
+          "id": 129,
           "keys": [
             "j"
           ],
           "effect": "Down or search"
         },
         {
-          "id": 125,
+          "id": 130,
           "keys": [
             "b"
           ],
           "effect": "Backward word"
         },
         {
-          "id": 126,
+          "id": 131,
           "keys": [
             "B"
           ],
           "effect": "Backward bigword"
         },
         {
-          "id": 127,
+          "id": 132,
           "keys": [
             "g e"
           ],
           "effect": "Backward word end"
         },
         {
-          "id": 128,
+          "id": 133,
           "keys": [
             "g E"
           ],
           "effect": "Backward bigword end"
         },
         {
-          "id": 129,
+          "id": 134,
           "keys": [
             "w"
           ],
           "effect": "Forward word vi"
         },
         {
-          "id": 130,
+          "id": 135,
           "keys": [
             "W"
           ],
           "effect": "Forward bigword vi"
         },
         {
-          "id": 131,
+          "id": 136,
           "keys": [
             "e"
           ],
           "effect": "Forward word end"
         },
         {
-          "id": 132,
+          "id": 137,
           "keys": [
             "E"
           ],
           "effect": "Forward bigword end"
         },
         {
-          "id": 133,
+          "id": 138,
           "keys": [
             "x"
           ],
           "effect": "Delete characters under cursor"
         },
         {
-          "id": 134,
+          "id": 139,
           "keys": [
             "X"
           ],
           "effect": "Delete preceding characters"
         },
         {
-          "id": 135,
+          "id": 140,
           "keys": [
             "Enter"
           ],
           "effect": "Execute; enter Insert mode"
         },
         {
-          "id": 136,
+          "id": 141,
           "keys": [
             "Ctrl+J"
           ],
           "effect": "Execute; enter Insert mode"
         },
         {
-          "id": 137,
+          "id": 142,
           "keys": [
             "Ctrl+M"
           ],
           "effect": "Execute; enter Insert mode"
         },
         {
-          "id": 138,
+          "id": 143,
           "keys": [
             "o"
           ],
           "effect": "Insert line under; enter Insert mode"
         },
         {
-          "id": 139,
+          "id": 144,
           "keys": [
             "O"
           ],
           "effect": "Insert line over; enter Insert mode"
         },
         {
-          "id": 140,
+          "id": 145,
           "keys": [
             "i"
           ],
           "effect": "Enter Insert mode"
         },
         {
-          "id": 141,
+          "id": 146,
           "keys": [
             "I"
           ],
           "effect": "Beginning of line; enter Insert mode"
         },
         {
-          "id": 142,
+          "id": 147,
           "keys": [
             "a"
           ],
           "effect": "Forward single char; enter Insert mode"
         },
         {
-          "id": 143,
+          "id": 148,
           "keys": [
             "A"
           ],
           "effect": "End of line; enter Insert mode"
         },
         {
-          "id": 144,
+          "id": 149,
           "keys": [
             "v"
           ],
           "effect": "Begin selection; enter Visual mode"
         },
         {
-          "id": 145,
+          "id": 150,
           "keys": [
             "g g"
           ],
           "effect": "Beginning of buffer"
         },
         {
-          "id": 146,
+          "id": 151,
           "keys": [
             "G"
           ],
           "effect": "End of buffer"
         },
         {
-          "id": 147,
+          "id": 152,
           "keys": [
             "u"
           ],
           "effect": "Undo"
         },
         {
-          "id": 148,
+          "id": 153,
           "keys": [
             "Ctrl+R"
           ],
           "effect": "Redo"
         },
         {
-          "id": 149,
+          "id": 154,
           "keys": [
             "["
           ],
           "effect": "History token search backward"
         },
         {
-          "id": 150,
+          "id": 155,
           "keys": [
             "]"
           ],
           "effect": "History token search forward"
         },
         {
-          "id": 151,
+          "id": 156,
           "keys": [
             "/"
           ],
           "effect": "History pager; enter Insert mode"
         },
         {
-          "id": 152,
+          "id": 157,
           "keys": [
             "Home"
           ],
           "effect": "Beginning of line"
         },
         {
-          "id": 153,
+          "id": 158,
           "keys": [
             "End"
           ],
           "effect": "End of line"
         },
         {
-          "id": 154,
+          "id": 159,
           "keys": [
             "Delete"
           ],
           "effect": "Delete char"
         },
         {
-          "id": 155,
+          "id": 160,
           "keys": [
             "Backspace"
           ],
           "effect": "Backward char"
         },
         {
-          "id": 156,
+          "id": 161,
           "keys": [
             "Ctrl+H"
           ],
           "effect": "Backward char"
         },
         {
-          "id": 157,
+          "id": 162,
           "keys": [
             "d"
           ],
           "effect": "Start operator: delete"
         },
         {
-          "id": 158,
+          "id": 163,
           "keys": [
             "c"
           ],
           "effect": "Start operator: change"
         },
         {
-          "id": 159,
+          "id": 164,
           "keys": [
             "y"
           ],
           "effect": "Start operator: yank"
         },
         {
-          "id": 160,
+          "id": 165,
           "keys": [
             "g ~"
           ],
           "effect": "Start operator: swap case"
         },
         {
-          "id": 161,
+          "id": 166,
           "keys": [
             "D"
           ],
           "effect": "Kill line"
         },
         {
-          "id": 162,
+          "id": 167,
           "keys": [
             "d $"
           ],
           "effect": "Delete to line end"
         },
         {
-          "id": 163,
+          "id": 168,
           "keys": [
             "d ^"
           ],
           "effect": "Delete back to line start"
         },
         {
-          "id": 164,
+          "id": 169,
           "keys": [
             "d 0"
           ],
           "effect": "Delete back to line start"
         },
         {
-          "id": 165,
+          "id": 170,
           "keys": [
             "d i w"
           ],
           "effect": "Delete inner word"
         },
         {
-          "id": 166,
+          "id": 171,
           "keys": [
             "d i W"
           ],
           "effect": "Delete inner whitespace-delimited word"
         },
         {
-          "id": 167,
+          "id": 172,
           "keys": [
             "d a w"
           ],
           "effect": "Delete word including surrounding space"
         },
         {
-          "id": 168,
+          "id": 173,
           "keys": [
             "d a W"
           ],
           "effect": "Delete whitespace-delimited word including surrounding space"
         },
         {
-          "id": 169,
+          "id": 174,
           "keys": [
             "d i b"
           ],
           "effect": "Delete inside matching brackets"
         },
         {
-          "id": 170,
+          "id": 175,
           "keys": [
             "d a b"
           ],
           "effect": "Delete including matching brackets"
         },
         {
-          "id": 171,
+          "id": 176,
           "keys": [
             "d i"
           ],
           "effect": "Delete inside the delimiter pair; type delimiter"
         },
         {
-          "id": 172,
+          "id": 177,
           "keys": [
             "d a"
           ],
           "effect": "Delete including the delimiter pair; type delimiter"
         },
         {
-          "id": 173,
+          "id": 178,
           "keys": [
             "d ;"
           ],
           "effect": "Delete through repeated character jump"
         },
         {
-          "id": 174,
+          "id": 179,
           "keys": [
             "d ,"
           ],
           "effect": "Delete through reversed character jump"
         },
         {
-          "id": 175,
+          "id": 180,
           "keys": [
             "s"
           ],
           "effect": "Delete char; enter Insert mode"
         },
         {
-          "id": 176,
+          "id": 181,
           "keys": [
             "S"
           ],
           "effect": "Kill inner line; enter Insert mode"
         },
         {
-          "id": 177,
+          "id": 182,
           "keys": [
             "C"
           ],
           "effect": "Kill line; enter Insert mode"
         },
         {
-          "id": 178,
+          "id": 183,
           "keys": [
             "c $"
           ],
           "effect": "Change to line end; enter Insert mode"
         },
         {
-          "id": 179,
+          "id": 184,
           "keys": [
             "c ^"
           ],
           "effect": "Change back to line start; enter Insert mode"
         },
         {
-          "id": 180,
+          "id": 185,
           "keys": [
             "c 0"
           ],
           "effect": "Change back to line start; enter Insert mode"
         },
         {
-          "id": 181,
+          "id": 186,
           "keys": [
             "c i w"
           ],
           "effect": "Change inner word; enter Insert mode"
         },
         {
-          "id": 182,
+          "id": 187,
           "keys": [
             "c i W"
           ],
           "effect": "Change inner whitespace-delimited word; enter Insert mode"
         },
         {
-          "id": 183,
+          "id": 188,
           "keys": [
             "c a w"
           ],
           "effect": "Change word including surrounding space; enter Insert mode"
         },
         {
-          "id": 184,
+          "id": 189,
           "keys": [
             "c a W"
           ],
           "effect": "Change whitespace-delimited word including surrounding space; enter Insert mode"
         },
         {
-          "id": 185,
+          "id": 190,
           "keys": [
             "c i b"
           ],
           "effect": "Change inside matching brackets; enter Insert mode"
         },
         {
-          "id": 186,
+          "id": 191,
           "keys": [
             "c a b"
           ],
           "effect": "Change including matching brackets; enter Insert mode"
         },
         {
-          "id": 187,
+          "id": 192,
           "keys": [
             "c i"
           ],
           "effect": "Change inside the delimiter pair; type delimiter; enter Insert mode"
         },
         {
-          "id": 188,
+          "id": 193,
           "keys": [
             "c a"
           ],
           "effect": "Change including the delimiter pair; type delimiter; enter Insert mode"
         },
         {
-          "id": 189,
+          "id": 194,
           "keys": [
             "~"
           ],
           "effect": "Swap case of character and advance"
         },
         {
-          "id": 190,
+          "id": 195,
           "keys": [
             "g u"
           ],
           "effect": "Downcase word"
         },
         {
-          "id": 191,
+          "id": 196,
           "keys": [
             "g U"
           ],
           "effect": "Upcase word"
         },
         {
-          "id": 192,
+          "id": 197,
           "keys": [
             "J"
           ],
           "effect": "Join current line with next"
         },
         {
-          "id": 193,
+          "id": 198,
           "keys": [
             "K"
           ],
           "effect": "Show manual for command under cursor"
         },
         {
-          "id": 194,
+          "id": 199,
           "keys": [
             "Y"
           ],
           "effect": "Copy current line to kill ring"
         },
         {
-          "id": 195,
+          "id": 200,
           "keys": [
             "y $"
           ],
           "effect": "Copy to line end"
         },
         {
-          "id": 196,
+          "id": 201,
           "keys": [
             "y ^"
           ],
           "effect": "Copy back to line start"
         },
         {
-          "id": 197,
+          "id": 202,
           "keys": [
             "y 0"
           ],
           "effect": "Copy back to line start"
         },
         {
-          "id": 198,
+          "id": 203,
           "keys": [
             "y i w"
           ],
           "effect": "Copy inner word"
         },
         {
-          "id": 199,
+          "id": 204,
           "keys": [
             "y i W"
           ],
           "effect": "Copy inner whitespace-delimited word"
         },
         {
-          "id": 200,
+          "id": 205,
           "keys": [
             "y a w"
           ],
           "effect": "Copy word including surrounding space"
         },
         {
-          "id": 201,
+          "id": 206,
           "keys": [
             "y a W"
           ],
           "effect": "Copy whitespace-delimited word including surrounding space"
         },
         {
-          "id": 202,
+          "id": 207,
           "keys": [
             "y i b"
           ],
           "effect": "Copy inside matching brackets"
         },
         {
-          "id": 203,
+          "id": 208,
           "keys": [
             "y a b"
           ],
           "effect": "Copy including matching brackets"
         },
         {
-          "id": 204,
+          "id": 209,
           "keys": [
             "y i"
           ],
           "effect": "Copy inside the delimiter pair; type delimiter"
         },
         {
-          "id": 205,
+          "id": 210,
           "keys": [
             "y a"
           ],
           "effect": "Copy including the delimiter pair; type delimiter"
         },
         {
-          "id": 206,
+          "id": 211,
           "keys": [
             "%"
           ],
           "effect": "Jump to matching bracket"
         },
         {
-          "id": 207,
+          "id": 212,
           "keys": [
             "f"
           ],
           "effect": "Find next occurrence; type character"
         },
         {
-          "id": 208,
+          "id": 213,
           "keys": [
             "F"
           ],
           "effect": "Find previous occurrence; type character"
         },
         {
-          "id": 209,
+          "id": 214,
           "keys": [
             "t"
           ],
           "effect": "Move before next occurrence; type character"
         },
         {
-          "id": 210,
+          "id": 215,
           "keys": [
             "T"
           ],
           "effect": "Move after previous occurrence; type character"
         },
         {
-          "id": 211,
+          "id": 216,
           "keys": [
             ";"
           ],
           "effect": "Repeat jump"
         },
         {
-          "id": 212,
+          "id": 217,
           "keys": [
             ","
           ],
           "effect": "Repeat jump reverse"
         },
         {
-          "id": 213,
+          "id": 218,
           "keys": [
             "p"
           ],
           "effect": "Paste kill-ring text after cursor"
         },
         {
-          "id": 214,
+          "id": 219,
           "keys": [
             "P"
           ],
           "effect": "Paste kill-ring text before cursor"
         },
         {
-          "id": 215,
+          "id": 220,
           "keys": [
             "g p"
           ],
           "effect": "Cycle earlier kill-ring text"
         },
         {
-          "id": 216,
+          "id": 221,
           "keys": [
             "\" * p"
           ],
           "effect": "Paste system clipboard"
         },
         {
-          "id": 217,
+          "id": 222,
           "keys": [
             "\" * P"
           ],
           "effect": "Paste system clipboard"
         },
         {
-          "id": 218,
+          "id": 223,
           "keys": [
             "\" Plus p"
           ],
           "effect": "Paste system clipboard"
         },
         {
-          "id": 219,
+          "id": 224,
           "keys": [
             "\" Plus P"
           ],
           "effect": "Paste system clipboard"
         },
         {
-          "id": 220,
+          "id": 225,
           "keys": [
             "r"
           ],
           "effect": "Enter single-character Replace mode"
         },
         {
-          "id": 221,
+          "id": 226,
           "keys": [
             "R"
           ],
           "effect": "Enter Replace mode"
         },
         {
-          "id": 222,
+          "id": 227,
           "keys": [
             "Ctrl+A"
           ],
           "effect": "Increment number under cursor"
         },
         {
-          "id": 223,
+          "id": 228,
           "keys": [
             "Ctrl+X"
           ],
           "effect": "Decrement number under cursor"
         },
         {
-          "id": 224,
+          "id": 229,
           "keys": [
             "#"
           ],
           "effect": "Toggle command-line comment"
         },
         {
-          "id": 328,
+          "id": 230,
           "keys": [
             "$"
           ],
@@ -1704,161 +1704,161 @@
       "title": "Vi operator: additional default keys",
       "bindings": [
         {
-          "id": 225,
+          "id": 231,
           "keys": [
             "Esc"
           ],
           "effect": "Cancel operator"
         },
         {
-          "id": 226,
+          "id": 232,
           "keys": [
             "Ctrl+["
           ],
           "effect": "Cancel operator"
         },
         {
-          "id": 227,
+          "id": 233,
           "keys": [
             "0"
           ],
           "effect": "Line start, or append zero to an existing count"
         },
         {
-          "id": 228,
+          "id": 234,
           "keys": [
             "h"
           ],
           "effect": "Apply operator with motion: backward char"
         },
         {
-          "id": 229,
+          "id": 235,
           "keys": [
             "l"
           ],
           "effect": "Apply operator with motion: forward char"
         },
         {
-          "id": 230,
+          "id": 236,
           "keys": [
             "k"
           ],
           "effect": "Apply operator with motion: up line"
         },
         {
-          "id": 231,
+          "id": 237,
           "keys": [
             "j"
           ],
           "effect": "Apply operator with motion: down line"
         },
         {
-          "id": 232,
+          "id": 238,
           "keys": [
             "b"
           ],
           "effect": "Apply operator with motion: backward word"
         },
         {
-          "id": 233,
+          "id": 239,
           "keys": [
             "B"
           ],
           "effect": "Apply operator with motion: backward bigword"
         },
         {
-          "id": 234,
+          "id": 240,
           "keys": [
             "g e"
           ],
           "effect": "Apply operator with motion: backward word end"
         },
         {
-          "id": 235,
+          "id": 241,
           "keys": [
             "g E"
           ],
           "effect": "Apply operator with motion: backward bigword end"
         },
         {
-          "id": 236,
+          "id": 242,
           "keys": [
             "w"
           ],
           "effect": "Apply operator with motion: forward word vi"
         },
         {
-          "id": 237,
+          "id": 243,
           "keys": [
             "W"
           ],
           "effect": "Apply operator with motion: forward bigword vi"
         },
         {
-          "id": 238,
+          "id": 244,
           "keys": [
             "e"
           ],
           "effect": "Apply operator with motion: forward word end"
         },
         {
-          "id": 239,
+          "id": 245,
           "keys": [
             "E"
           ],
           "effect": "Apply operator with motion: forward bigword end"
         },
         {
-          "id": 240,
+          "id": 246,
           "keys": [
             "^"
           ],
           "effect": "Apply operator with motion: beginning of line"
         },
         {
-          "id": 241,
+          "id": 247,
           "keys": [
             "$"
           ],
           "effect": "Apply operator with motion: end of line"
         },
         {
-          "id": 242,
+          "id": 248,
           "keys": [
             ";"
           ],
           "effect": "Apply operator with motion: repeat jump"
         },
         {
-          "id": 243,
+          "id": 249,
           "keys": [
             ","
           ],
           "effect": "Apply operator with motion: repeat jump reverse"
         },
         {
-          "id": 244,
+          "id": 250,
           "keys": [
             "d"
           ],
           "effect": "Apply the pending operator to the current line"
         },
         {
-          "id": 245,
+          "id": 251,
           "keys": [
             "c"
           ],
           "effect": "Apply the pending operator to the current line"
         },
         {
-          "id": 246,
+          "id": 252,
           "keys": [
             "y"
           ],
           "effect": "Apply the pending operator to the current line"
         },
         {
-          "id": 247,
+          "id": 253,
           "keys": [
             "~"
           ],
@@ -1871,35 +1871,35 @@
       "title": "Vi replace character: additional default keys",
       "bindings": [
         {
-          "id": 248,
+          "id": 254,
           "keys": [
             "Enter"
           ],
           "effect": "Replace current character with a newline; enter Normal mode"
         },
         {
-          "id": 249,
+          "id": 255,
           "keys": [
             "Ctrl+J"
           ],
           "effect": "Replace current character with a newline; enter Normal mode"
         },
         {
-          "id": 250,
+          "id": 256,
           "keys": [
             "Ctrl+M"
           ],
           "effect": "Replace current character with a newline; enter Normal mode"
         },
         {
-          "id": 251,
+          "id": 257,
           "keys": [
             "Esc"
           ],
           "effect": "Cancel; enter Normal mode"
         },
         {
-          "id": 252,
+          "id": 258,
           "keys": [
             "Ctrl+["
           ],
@@ -1912,56 +1912,56 @@
       "title": "Vi replace: additional default keys",
       "bindings": [
         {
-          "id": 253,
+          "id": 259,
           "keys": [
             "Enter"
           ],
           "effect": "Execute; enter Insert mode"
         },
         {
-          "id": 254,
+          "id": 260,
           "keys": [
             "Ctrl+J"
           ],
           "effect": "Execute; enter Insert mode"
         },
         {
-          "id": 255,
+          "id": 261,
           "keys": [
             "Ctrl+M"
           ],
           "effect": "Execute; enter Insert mode"
         },
         {
-          "id": 256,
+          "id": 262,
           "keys": [
             "Esc"
           ],
           "effect": "Cancel; enter Normal mode"
         },
         {
-          "id": 257,
+          "id": 263,
           "keys": [
             "Ctrl+["
           ],
           "effect": "Cancel; enter Normal mode"
         },
         {
-          "id": 258,
+          "id": 264,
           "keys": [
             "Backspace"
           ],
           "effect": "Backward char"
         },
         {
-          "id": 259,
+          "id": 265,
           "keys": [
             "Shift+Backspace"
           ],
           "effect": "Backward char"
         },
         {
-          "id": 260,
+          "id": 266,
           "keys": [
             "#"
           ],
@@ -1974,266 +1974,266 @@
       "title": "Vi visual: additional default keys",
       "bindings": [
         {
-          "id": 261,
+          "id": 267,
           "keys": [
             "h"
           ],
           "effect": "Backward char"
         },
         {
-          "id": 262,
+          "id": 268,
           "keys": [
             "l"
           ],
           "effect": "Forward char"
         },
         {
-          "id": 263,
+          "id": 269,
           "keys": [
             "k"
           ],
           "effect": "Up line"
         },
         {
-          "id": 264,
+          "id": 270,
           "keys": [
             "j"
           ],
           "effect": "Down line"
         },
         {
-          "id": 265,
+          "id": 271,
           "keys": [
             "b"
           ],
           "effect": "Backward word"
         },
         {
-          "id": 266,
+          "id": 272,
           "keys": [
             "B"
           ],
           "effect": "Backward bigword"
         },
         {
-          "id": 267,
+          "id": 273,
           "keys": [
             "g e"
           ],
           "effect": "Backward word end"
         },
         {
-          "id": 268,
+          "id": 274,
           "keys": [
             "g E"
           ],
           "effect": "Backward bigword end"
         },
         {
-          "id": 269,
+          "id": 275,
           "keys": [
             "w"
           ],
           "effect": "Forward word vi"
         },
         {
-          "id": 270,
+          "id": 276,
           "keys": [
             "W"
           ],
           "effect": "Forward bigword vi"
         },
         {
-          "id": 271,
+          "id": 277,
           "keys": [
             "e"
           ],
           "effect": "Forward word end"
         },
         {
-          "id": 272,
+          "id": 278,
           "keys": [
             "E"
           ],
           "effect": "Forward bigword end"
         },
         {
-          "id": 273,
+          "id": 279,
           "keys": [
             "o"
           ],
           "effect": "Swap selection start stop"
         },
         {
-          "id": 274,
+          "id": 280,
           "keys": [
             "%"
           ],
           "effect": "Jump to matching bracket"
         },
         {
-          "id": 275,
+          "id": 281,
           "keys": [
             "f"
           ],
           "effect": "Forward jump"
         },
         {
-          "id": 276,
+          "id": 282,
           "keys": [
             "t"
           ],
           "effect": "Forward jump till"
         },
         {
-          "id": 277,
+          "id": 283,
           "keys": [
             "F"
           ],
           "effect": "Backward jump"
         },
         {
-          "id": 278,
+          "id": 284,
           "keys": [
             "T"
           ],
           "effect": "Backward jump till"
         },
         {
-          "id": 279,
+          "id": 285,
           "keys": [
             ";"
           ],
           "effect": "Repeat jump"
         },
         {
-          "id": 280,
+          "id": 286,
           "keys": [
             ","
           ],
           "effect": "Repeat jump reverse"
         },
         {
-          "id": 281,
+          "id": 287,
           "keys": [
             "v"
           ],
           "effect": "End selection; enter Normal mode"
         },
         {
-          "id": 282,
+          "id": 288,
           "keys": [
             "i"
           ],
           "effect": "End selection; enter Insert mode"
         },
         {
-          "id": 283,
+          "id": 289,
           "keys": [
             "I"
           ],
           "effect": "End selection; beginning of line; enter Insert mode"
         },
         {
-          "id": 284,
+          "id": 290,
           "keys": [
             "c"
           ],
           "effect": "Kill selection; end selection; enter Insert mode"
         },
         {
-          "id": 285,
+          "id": 291,
           "keys": [
             "s"
           ],
           "effect": "Kill selection; end selection; enter Insert mode"
         },
         {
-          "id": 286,
+          "id": 292,
           "keys": [
             "d"
           ],
           "effect": "Kill selection; end selection; backward char; enter Normal mode"
         },
         {
-          "id": 287,
+          "id": 293,
           "keys": [
             "x"
           ],
           "effect": "Kill selection; end selection; enter Normal mode"
         },
         {
-          "id": 288,
+          "id": 294,
           "keys": [
             "X"
           ],
           "effect": "Kill whole line; end selection; enter Normal mode"
         },
         {
-          "id": 289,
+          "id": 295,
           "keys": [
             "y"
           ],
           "effect": "Copy selection to kill ring; enter Normal mode"
         },
         {
-          "id": 290,
+          "id": 296,
           "keys": [
             "\" * y"
           ],
           "effect": "Copy to system clipboard; enter Normal mode"
         },
         {
-          "id": 291,
+          "id": 297,
           "keys": [
             "\" Plus y"
           ],
           "effect": "Copy to system clipboard; enter Normal mode"
         },
         {
-          "id": 292,
+          "id": 298,
           "keys": [
             "~"
           ],
           "effect": "Togglecase selection; end selection; enter Normal mode"
         },
         {
-          "id": 293,
+          "id": 299,
           "keys": [
             "g u"
           ],
           "effect": "Downcase selection; end selection; enter Normal mode"
         },
         {
-          "id": 294,
+          "id": 300,
           "keys": [
             "g U"
           ],
           "effect": "Upcase selection; end selection; enter Normal mode"
         },
         {
-          "id": 295,
+          "id": 301,
           "keys": [
             "Ctrl+C"
           ],
           "effect": "End selection; enter Normal mode"
         },
         {
-          "id": 296,
+          "id": 302,
           "keys": [
             "Esc"
           ],
           "effect": "End selection; enter Normal mode"
         },
         {
-          "id": 297,
+          "id": 303,
           "keys": [
             "Ctrl+["
           ],
           "effect": "End selection; enter Normal mode"
         },
         {
-          "id": 298,
+          "id": 304,
           "keys": [
             "#"
           ],
@@ -2246,63 +2246,63 @@
       "title": "Vi normal: counts",
       "bindings": [
         {
-          "id": 299,
+          "id": 305,
           "keys": [
             "1"
           ],
           "effect": "Append 1 to the next command count"
         },
         {
-          "id": 300,
+          "id": 306,
           "keys": [
             "2"
           ],
           "effect": "Append 2 to the next command count"
         },
         {
-          "id": 301,
+          "id": 307,
           "keys": [
             "3"
           ],
           "effect": "Append 3 to the next command count"
         },
         {
-          "id": 302,
+          "id": 308,
           "keys": [
             "4"
           ],
           "effect": "Append 4 to the next command count"
         },
         {
-          "id": 303,
+          "id": 309,
           "keys": [
             "5"
           ],
           "effect": "Append 5 to the next command count"
         },
         {
-          "id": 304,
+          "id": 310,
           "keys": [
             "6"
           ],
           "effect": "Append 6 to the next command count"
         },
         {
-          "id": 305,
+          "id": 311,
           "keys": [
             "7"
           ],
           "effect": "Append 7 to the next command count"
         },
         {
-          "id": 306,
+          "id": 312,
           "keys": [
             "8"
           ],
           "effect": "Append 8 to the next command count"
         },
         {
-          "id": 307,
+          "id": 313,
           "keys": [
             "9"
           ],
@@ -2315,63 +2315,63 @@
       "title": "Vi operator: counts",
       "bindings": [
         {
-          "id": 308,
+          "id": 314,
           "keys": [
             "1"
           ],
           "effect": "Append 1 to the next command count"
         },
         {
-          "id": 309,
+          "id": 315,
           "keys": [
             "2"
           ],
           "effect": "Append 2 to the next command count"
         },
         {
-          "id": 310,
+          "id": 316,
           "keys": [
             "3"
           ],
           "effect": "Append 3 to the next command count"
         },
         {
-          "id": 311,
+          "id": 317,
           "keys": [
             "4"
           ],
           "effect": "Append 4 to the next command count"
         },
         {
-          "id": 312,
+          "id": 318,
           "keys": [
             "5"
           ],
           "effect": "Append 5 to the next command count"
         },
         {
-          "id": 313,
+          "id": 319,
           "keys": [
             "6"
           ],
           "effect": "Append 6 to the next command count"
         },
         {
-          "id": 314,
+          "id": 320,
           "keys": [
             "7"
           ],
           "effect": "Append 7 to the next command count"
         },
         {
-          "id": 315,
+          "id": 321,
           "keys": [
             "8"
           ],
           "effect": "Append 8 to the next command count"
         },
         {
-          "id": 316,
+          "id": 322,
           "keys": [
             "9"
           ],
@@ -2384,7 +2384,7 @@
       "title": "Vi normal: line boundaries",
       "bindings": [
         {
-          "id": 317,
+          "id": 323,
           "keys": [
             "$",
             "g $"
@@ -2392,7 +2392,7 @@
           "effect": "Line end"
         },
         {
-          "id": 318,
+          "id": 324,
           "keys": [
             "^",
             "g ^",
@@ -2407,7 +2407,7 @@
       "title": "Vi visual: line boundaries",
       "bindings": [
         {
-          "id": 319,
+          "id": 325,
           "keys": [
             "$",
             "g $"
@@ -2415,7 +2415,7 @@
           "effect": "Line end"
         },
         {
-          "id": 320,
+          "id": 326,
           "keys": [
             "^",
             "g ^",
@@ -2424,7 +2424,7 @@
           "effect": "Line start"
         },
         {
-          "id": 321,
+          "id": 327,
           "keys": [
             "0"
           ],
@@ -2437,7 +2437,7 @@
       "title": "Vi normal: clipboard registers",
       "bindings": [
         {
-          "id": 322,
+          "id": 328,
           "keys": [
             "\" * y y",
             "\" * Y",

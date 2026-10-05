@@ -2186,13 +2186,6 @@
             "Cmd+Opt+F"
           ],
           "effect": "Focus web search or separate Search bar"
-        },
-        {
-          "id": 276,
-          "keys": [
-            "Cmd+Enter"
-          ],
-          "effect": "Complete a .com address"
         }
       ],
       "note": "Search shortcuts depend on whether the separate Search bar is shown. Menu shortcuts require the corresponding menu focused."
@@ -2202,7 +2195,7 @@
       "title": "Vertical tabs",
       "bindings": [
         {
-          "id": 277,
+          "id": 276,
           "keys": [
             "Ctrl+Z"
           ],

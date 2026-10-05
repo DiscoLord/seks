@@ -1159,62 +1159,6 @@
             "Z Q"
           ],
           "effect": "Close window without saving"
-        },
-        {
-          "id": 156,
-          "keys": [
-            ": w Enter"
-          ],
-          "effect": "Write current file"
-        },
-        {
-          "id": 157,
-          "keys": [
-            ": w a Enter"
-          ],
-          "effect": "Write all changed buffers"
-        },
-        {
-          "id": 158,
-          "keys": [
-            ": q Enter"
-          ],
-          "effect": "Quit current window"
-        },
-        {
-          "id": 159,
-          "keys": [
-            ": q ! Enter"
-          ],
-          "effect": "Quit window without saving"
-        },
-        {
-          "id": 160,
-          "keys": [
-            ": l s Enter"
-          ],
-          "effect": "List buffers"
-        },
-        {
-          "id": 161,
-          "keys": [
-            ": b d Enter"
-          ],
-          "effect": "Delete current buffer; refuses unsaved changes"
-        },
-        {
-          "id": 162,
-          "keys": [
-            ": t a b n e w Enter"
-          ],
-          "effect": "Open empty tab"
-        },
-        {
-          "id": 163,
-          "keys": [
-            ": h e l p Enter"
-          ],
-          "effect": "Open help"
         }
       ]
     },
@@ -1224,70 +1168,70 @@
       "note": "Folds must exist to open or close them; their creation depends on foldmethod.",
       "bindings": [
         {
-          "id": 164,
+          "id": 156,
           "keys": [
             "z a"
           ],
           "effect": "Toggle fold"
         },
         {
-          "id": 165,
+          "id": 157,
           "keys": [
             "z o"
           ],
           "effect": "Open fold"
         },
         {
-          "id": 166,
+          "id": 158,
           "keys": [
             "z c"
           ],
           "effect": "Close fold"
         },
         {
-          "id": 167,
+          "id": 159,
           "keys": [
             "z R"
           ],
           "effect": "Open all folds"
         },
         {
-          "id": 168,
+          "id": 160,
           "keys": [
             "z M"
           ],
           "effect": "Close all folds"
         },
         {
-          "id": 169,
+          "id": 161,
           "keys": [
             "z r"
           ],
           "effect": "Reduce folding one level"
         },
         {
-          "id": 170,
+          "id": 162,
           "keys": [
             "z m"
           ],
           "effect": "Increase folding one level"
         },
         {
-          "id": 171,
+          "id": 163,
           "keys": [
             "z v"
           ],
           "effect": "Reveal cursor line"
         },
         {
-          "id": 172,
+          "id": 164,
           "keys": [
             "z f"
           ],
           "effect": "Then motion: create manual fold"
         },
         {
-          "id": 173,
+          "id": 165,
           "keys": [
             "z d"
           ],
@@ -1301,7 +1245,7 @@
       "note": "Enter with i, a, I, A, o or O. Completion accept/cancel keys require active completion.",
       "bindings": [
         {
-          "id": 174,
+          "id": 166,
           "keys": [
             "Esc",
             "Ctrl+["
@@ -1309,98 +1253,98 @@
           "effect": "Return to Normal mode"
         },
         {
-          "id": 175,
+          "id": 167,
           "keys": [
             "Ctrl+O"
           ],
           "effect": "Run one Normal-mode command"
         },
         {
-          "id": 176,
+          "id": 168,
           "keys": [
             "Ctrl+W"
           ],
           "effect": "Delete preceding word"
         },
         {
-          "id": 177,
+          "id": 169,
           "keys": [
             "Ctrl+U"
           ],
           "effect": "Delete back to line start"
         },
         {
-          "id": 178,
+          "id": 170,
           "keys": [
             "Ctrl+T"
           ],
           "effect": "Increase indent"
         },
         {
-          "id": 179,
+          "id": 171,
           "keys": [
             "Ctrl+D"
           ],
           "effect": "Decrease indent"
         },
         {
-          "id": 180,
+          "id": 172,
           "keys": [
             "Ctrl+R"
           ],
           "effect": "Then register name: insert its contents"
         },
         {
-          "id": 181,
+          "id": 173,
           "keys": [
             "Ctrl+N"
           ],
           "effect": "Next keyword completion"
         },
         {
-          "id": 182,
+          "id": 174,
           "keys": [
             "Ctrl+P"
           ],
           "effect": "Previous keyword completion"
         },
         {
-          "id": 183,
+          "id": 175,
           "keys": [
             "Ctrl+X Ctrl+F"
           ],
           "effect": "Complete filename"
         },
         {
-          "id": 184,
+          "id": 176,
           "keys": [
             "Ctrl+X Ctrl+L"
           ],
           "effect": "Complete whole line"
         },
         {
-          "id": 185,
+          "id": 177,
           "keys": [
             "Ctrl+X Ctrl+O"
           ],
           "effect": "Omni completion (provider required)"
         },
         {
-          "id": 186,
+          "id": 178,
           "keys": [
             "Ctrl+Y"
           ],
           "effect": "Accept active completion"
         },
         {
-          "id": 187,
+          "id": 179,
           "keys": [
             "Ctrl+E"
           ],
           "effect": "Cancel active completion"
         },
         {
-          "id": 188,
+          "id": 180,
           "keys": [
             "Ctrl+S"
           ],
@@ -1414,84 +1358,84 @@
       "note": "LSP actions need an attached server supporting the action; diagnostics need a producer.",
       "bindings": [
         {
-          "id": 189,
+          "id": 181,
           "keys": [
             "K"
           ],
           "effect": "LSP hover when available; otherwise keywordprg"
         },
         {
-          "id": 190,
+          "id": 182,
           "keys": [
             "Ctrl+]"
           ],
           "effect": "Jump to definition via LSP tagfunc or tags"
         },
         {
-          "id": 191,
+          "id": 183,
           "keys": [
             "Ctrl+T"
           ],
           "effect": "Return through tag stack"
         },
         {
-          "id": 192,
+          "id": 184,
           "keys": [
             "g r n"
           ],
           "effect": "Rename symbol"
         },
         {
-          "id": 193,
+          "id": 185,
           "keys": [
             "g r a"
           ],
           "effect": "Show code actions"
         },
         {
-          "id": 194,
+          "id": 186,
           "keys": [
             "g r r"
           ],
           "effect": "List references"
         },
         {
-          "id": 195,
+          "id": 187,
           "keys": [
             "g r i"
           ],
           "effect": "List implementations"
         },
         {
-          "id": 196,
+          "id": 188,
           "keys": [
             "g r t"
           ],
           "effect": "Go to type definition"
         },
         {
-          "id": 197,
+          "id": 189,
           "keys": [
             "g O"
           ],
           "effect": "List document symbols"
         },
         {
-          "id": 198,
+          "id": 190,
           "keys": [
             "] d"
           ],
           "effect": "Next diagnostic"
         },
         {
-          "id": 199,
+          "id": 191,
           "keys": [
             "[ d"
           ],
           "effect": "Previous diagnostic"
         },
         {
-          "id": 200,
+          "id": 192,
           "keys": [
             "Ctrl+W d"
           ],
@@ -1505,46 +1449,32 @@
       "note": "Populate the list first; location lists belong to individual windows.",
       "bindings": [
         {
-          "id": 201,
+          "id": 193,
           "keys": [
             "] q"
           ],
           "effect": "Next quickfix item"
         },
         {
-          "id": 202,
+          "id": 194,
           "keys": [
             "[ q"
           ],
           "effect": "Previous quickfix item"
         },
         {
-          "id": 203,
+          "id": 195,
           "keys": [
             "] l"
           ],
           "effect": "Next location-list item"
         },
         {
-          "id": 204,
+          "id": 196,
           "keys": [
             "[ l"
           ],
           "effect": "Previous location-list item"
-        },
-        {
-          "id": 205,
-          "keys": [
-            ": c o p e n Enter"
-          ],
-          "effect": "Open quickfix window"
-        },
-        {
-          "id": 206,
-          "keys": [
-            ": l o p e n Enter"
-          ],
-          "effect": "Open location-list window"
         }
       ]
     },
@@ -1554,63 +1484,63 @@
       "note": "Enter with : for commands, / or ? for search. Enter submits; Esc cancels.",
       "bindings": [
         {
-          "id": 207,
+          "id": 197,
           "keys": [
             "Enter"
           ],
           "effect": "Execute command"
         },
         {
-          "id": 208,
+          "id": 198,
           "keys": [
             "Esc"
           ],
           "effect": "Cancel command"
         },
         {
-          "id": 209,
+          "id": 199,
           "keys": [
             "Ctrl+W"
           ],
           "effect": "Delete preceding word"
         },
         {
-          "id": 210,
+          "id": 200,
           "keys": [
             "Ctrl+U"
           ],
           "effect": "Delete back to command start"
         },
         {
-          "id": 211,
+          "id": 201,
           "keys": [
             "Ctrl+R"
           ],
           "effect": "Then register name: insert contents"
         },
         {
-          "id": 212,
+          "id": 202,
           "keys": [
             "Up"
           ],
           "effect": "Previous matching history entry"
         },
         {
-          "id": 213,
+          "id": 203,
           "keys": [
             "Down"
           ],
           "effect": "Next matching history entry"
         },
         {
-          "id": 214,
+          "id": 204,
           "keys": [
             "Tab"
           ],
           "effect": "Next command completion"
         },
         {
-          "id": 215,
+          "id": 205,
           "keys": [
             "Shift+Tab"
           ],
@@ -1624,14 +1554,14 @@
       "note": "Open with :terminal; press i in a terminal buffer to resume terminal input.",
       "bindings": [
         {
-          "id": 216,
+          "id": 206,
           "keys": [
             "Ctrl+\\ Ctrl+N"
           ],
           "effect": "Leave terminal input for Normal mode"
         },
         {
-          "id": 730,
+          "id": 207,
           "keys": [
             "Ctrl+\\ Ctrl+O"
           ],
@@ -1640,53 +1570,53 @@
       ]
     },
     {
-      "id": 29,
+      "id": 17,
       "title": "Command-line: wildmenu",
       "bindings": [
         {
-          "id": 721,
+          "id": 208,
           "keys": [
             "Up"
           ],
           "effect": "Move to parent"
         },
         {
-          "id": 722,
+          "id": 209,
           "keys": [
             "Down"
           ],
           "effect": "Open submenu"
         },
         {
-          "id": 723,
+          "id": 210,
           "keys": [
             "Left"
           ],
           "effect": "Previous match"
         },
         {
-          "id": 724,
+          "id": 211,
           "keys": [
             "Right"
           ],
           "effect": "Next match"
         },
         {
-          "id": 725,
+          "id": 212,
           "keys": [
             "Enter"
           ],
           "effect": "Open submenu during menu completion"
         },
         {
-          "id": 726,
+          "id": 213,
           "keys": [
             "Ctrl+E"
           ],
           "effect": "Cancel completion and restore original input"
         },
         {
-          "id": 727,
+          "id": 214,
           "keys": [
             "Ctrl+Y"
           ],
@@ -1696,18 +1626,18 @@
       "note": "While command-line wildmenu completion is active."
     },
     {
-      "id": 30,
+      "id": 18,
       "title": "Command-line: popup completion",
       "bindings": [
         {
-          "id": 728,
+          "id": 215,
           "keys": [
             "PageUp"
           ],
           "effect": "Previous page of matches"
         },
         {
-          "id": 729,
+          "id": 216,
           "keys": [
             "PageDown"
           ],

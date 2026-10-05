@@ -805,7 +805,7 @@
         {
           "id": 106,
           "keys": [
-            "Opt+\\ 0 0 0"
+            "Esc Esc"
           ],
           "effect": "Complete"
         },
@@ -1748,19 +1748,12 @@
         {
           "id": 239,
           "keys": [
-            "Opt+\\ 0 0 0"
-          ],
-          "effect": "Movement mode"
-        },
-        {
-          "id": 240,
-          "keys": [
             "Ctrl+_"
           ],
           "effect": "Undo"
         },
         {
-          "id": 241,
+          "id": 240,
           "keys": [
             "Ctrl+Y"
           ],

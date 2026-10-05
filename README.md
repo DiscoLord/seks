@@ -22,7 +22,26 @@ $ seks tmux
 
 ## Install
 
-Build from source with [Zig](https://ziglang.org/download/) 0.17.0:
+Download the archive for your computer from the
+[latest release](https://github.com/DiscoLord/seks/releases/latest):
+
+| Computer | Archive |
+|---|---|
+| macOS, Apple silicon | `seks-macos-arm64.tar.gz` |
+| macOS, Intel | `seks-macos-x86_64.tar.gz` |
+| Linux, ARM | `seks-linux-arm64.tar.gz` |
+| Linux, x86 | `seks-linux-x86_64.tar.gz` |
+
+```sh
+curl -L https://github.com/DiscoLord/seks/releases/latest/download/seks-macos-arm64.tar.gz | tar xz
+sudo mv seks-macos-arm64/seks /usr/local/bin/
+```
+
+The archive also holds the shell completions. If you download it with a
+browser on macOS, remove the quarantine mark before the first run:
+`xattr -d com.apple.quarantine seks`.
+
+Or build from source with [Zig](https://ziglang.org/download/) 0.17.0:
 
 ```sh
 git clone https://github.com/DiscoLord/seks.git

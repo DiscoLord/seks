@@ -868,6 +868,48 @@
         {
           "id": 107,
           "keys": [
+            "d"
+          ],
+          "effect": "Half-page down"
+        },
+        {
+          "id": 108,
+          "keys": [
+            "u"
+          ],
+          "effect": "Half-page up"
+        },
+        {
+          "id": 109,
+          "keys": [
+            "["
+          ],
+          "effect": "Previous shell prompt"
+        },
+        {
+          "id": 110,
+          "keys": [
+            "]"
+          ],
+          "effect": "Next shell prompt"
+        },
+        {
+          "id": 111,
+          "keys": [
+            "m"
+          ],
+          "effect": "Select command at scroll position"
+        },
+        {
+          "id": 112,
+          "keys": [
+            "Ctrl+C"
+          ],
+          "effect": "Scroll to bottom and return to Normal"
+        },
+        {
+          "id": 113,
+          "keys": [
             "Enter",
             "Esc",
             "Ctrl+S"
@@ -882,77 +924,84 @@
       "note": "Enter with Ctrl+O. Host/guest actions apply to nested Zellij sessions.",
       "bindings": [
         {
-          "id": 108,
+          "id": 114,
           "keys": [
             "d"
           ],
           "effect": "Detach session"
         },
         {
-          "id": 109,
+          "id": 115,
           "keys": [
             "w"
           ],
           "effect": "Open session manager"
         },
         {
-          "id": 110,
+          "id": 116,
           "keys": [
             "c"
           ],
           "effect": "Open configuration UI"
         },
         {
-          "id": 111,
+          "id": 117,
           "keys": [
             "p"
           ],
           "effect": "Open plugin manager"
         },
         {
-          "id": 112,
+          "id": 118,
           "keys": [
             "a"
           ],
           "effect": "Open About"
         },
         {
-          "id": 113,
+          "id": 119,
           "keys": [
             "s"
           ],
           "effect": "Open session sharing UI"
         },
         {
-          "id": 114,
+          "id": 120,
           "keys": [
             "l"
           ],
           "effect": "Open layout manager"
         },
         {
-          "id": 115,
+          "id": 121,
           "keys": [
             "]"
           ],
           "effect": "Focus host session"
         },
         {
-          "id": 116,
+          "id": 122,
           "keys": [
             "["
           ],
           "effect": "Focus nested guest session"
         },
         {
-          "id": 117,
+          "id": 123,
           "keys": [
             "f"
           ],
           "effect": "Toggle host fullscreen"
         },
         {
-          "id": 118,
+          "id": 124,
+          "keys": [
+            "Ctrl+S"
+          ],
+          "effect": "Enter Scroll mode"
+        },
+        {
+          "id": 125,
           "keys": [
             "Enter",
             "Esc",
@@ -968,7 +1017,7 @@
       "note": "Enter with Ctrl+P, then c; type the pane name.",
       "bindings": [
         {
-          "id": 119,
+          "id": 126,
           "keys": [
             "Enter",
             "Ctrl+C"
@@ -976,7 +1025,7 @@
           "effect": "Finish rename and return to Normal"
         },
         {
-          "id": 120,
+          "id": 127,
           "keys": [
             "Esc"
           ],
@@ -990,7 +1039,7 @@
       "note": "Enter with Ctrl+T, then r; type the tab name.",
       "bindings": [
         {
-          "id": 121,
+          "id": 128,
           "keys": [
             "Enter",
             "Ctrl+C"
@@ -998,7 +1047,7 @@
           "effect": "Finish rename and return to Normal"
         },
         {
-          "id": 122,
+          "id": 129,
           "keys": [
             "Esc"
           ],
@@ -1012,98 +1061,130 @@
       "note": "Enter with Ctrl+B. This is Zellij’s compatibility mode, not a separate tmux session.",
       "bindings": [
         {
-          "id": 123,
+          "id": 130,
           "keys": [
             "%"
           ],
           "effect": "New pane right"
         },
         {
-          "id": 124,
+          "id": 131,
           "keys": [
             "\""
           ],
           "effect": "New pane below"
         },
         {
-          "id": 125,
+          "id": 132,
           "keys": [
             "c"
           ],
           "effect": "New tab"
         },
         {
-          "id": 126,
+          "id": 133,
           "keys": [
             "p"
           ],
           "effect": "Previous tab"
         },
         {
-          "id": 127,
+          "id": 134,
           "keys": [
             "n"
           ],
           "effect": "Next tab"
         },
         {
-          "id": 128,
+          "id": 135,
           "keys": [
             ","
           ],
           "effect": "Rename tab"
         },
         {
-          "id": 129,
+          "id": 136,
           "keys": [
             "z"
           ],
           "effect": "Toggle fullscreen pane"
         },
         {
-          "id": 130,
+          "id": 137,
           "keys": [
             "x"
           ],
           "effect": "Close pane"
         },
         {
-          "id": 131,
+          "id": 138,
           "keys": [
             "["
           ],
           "effect": "Enter Scroll mode"
         },
         {
-          "id": 132,
+          "id": 139,
           "keys": [
             "o"
           ],
           "effect": "Focus next pane"
         },
         {
-          "id": 133,
+          "id": 140,
+          "keys": [
+            "h",
+            "Left"
+          ],
+          "effect": "Focus pane left and return to Normal"
+        },
+        {
+          "id": 141,
+          "keys": [
+            "j",
+            "Down"
+          ],
+          "effect": "Focus pane below and return to Normal"
+        },
+        {
+          "id": 142,
+          "keys": [
+            "k",
+            "Up"
+          ],
+          "effect": "Focus pane above and return to Normal"
+        },
+        {
+          "id": 143,
+          "keys": [
+            "l",
+            "Right"
+          ],
+          "effect": "Focus pane right and return to Normal"
+        },
+        {
+          "id": 144,
           "keys": [
             "Space"
           ],
           "effect": "Next layout"
         },
         {
-          "id": 134,
+          "id": 145,
           "keys": [
             "d"
           ],
           "effect": "Detach"
         },
         {
-          "id": 135,
+          "id": 146,
           "keys": [
             "Ctrl+B"
           ],
           "effect": "Send Ctrl+B to application"
         },
         {
-          "id": 136,
+          "id": 147,
           "keys": [
             "Enter",
             "Esc"
