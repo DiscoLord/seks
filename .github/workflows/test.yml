@@ -5,6 +5,10 @@ on:
   push:
     branches: [main]
 
+# The jobs only read the repository.
+permissions:
+  contents: read
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -17,13 +21,13 @@ jobs:
           version: 0.17.0
 
       - name: Check the formatting
-        run: zig fmt --check src build.zig
+        run: zig fmt --check src build.zig build.zig.zon
 
-      # The tests also check every data file of both platforms.
+      # The build checks every data file of both platforms first.
       - name: Run the tests
         run: zig build test --summary all
 
-      - name: Build
+      - name: Build for Linux
         run: zig build
 
       # Stdout is not a terminal here, so the pager does not start.
@@ -32,3 +36,46 @@ jobs:
           ./zig-out/bin/seks --version
           ./zig-out/bin/seks --list
           ./zig-out/bin/seks tmux > /dev/null
+
+      # There is no macOS runner: it costs ten times the minutes. Zig
+      # compiles for macOS from Linux, and that finds a compile error in the
+      # code that only macOS uses. The tests run on Linux only.
+      - name: Build for macOS
+        run: |
+          zig build -Dtarget=aarch64-macos --prefix zig-out/macos-arm
+          zig build -Dtarget=x86_64-macos --prefix zig-out/macos-intel
+
+      # A syntax check only. It does not press Tab.
+      - name: Check the completion scripts
+        run: |
+          sudo apt-get update --quiet
+          sudo apt-get install --yes --no-install-recommends zsh fish
+          bash -n completions/seks.bash
+          zsh -n completions/_seks
+          fish --no-execute completions/seks.fish
+
+  # The project accepts binding lists from other people, and no code. This
+  # job fails when a pull request from a fork changes a file outside `data/`.
+  data-only:
+    if: >-
+      github.event_name == 'pull_request' &&
+      github.event.pull_request.head.repo.full_name != github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          # The comparison needs the history of the base branch.
+          fetch-depth: 0
+
+      - name: Check that only data files changed
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          other=$(git diff --name-only "origin/$BASE_REF...HEAD" | grep -v '^data/' || true)
+          if [ -n "$other" ]; then
+            echo "This project accepts binding lists only. See README.md."
+            echo "These files are not in data/:"
+            echo "$other"
+            exit 1
+          fi

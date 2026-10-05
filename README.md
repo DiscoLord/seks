@@ -6,17 +6,18 @@ bindings in the terminal, as pages. For macOS and Linux.
 ```
 $ seks tmux
 
-  tmux                                                                               page 1/11
-  tmux 3.7c defaults; prefix = Ctrl+B; copy-mode keys depend on mode-keys.
+  tmux                                                                           page 1/33
+  tmux 3.7c defaults. Press the prefix Ctrl+B, release it, then press the next key. Copy
+  mode starts with Ctrl+B [. Its keys need no prefix and depend on mode-keys.
 
   Sessions                                    Windows
-  Press Ctrl+B, release it, then press the    Press Ctrl+B, release it, then press the
-  remaining key.                              remaining key.
     Ctrl+B d ··· Detach client                  Ctrl+B c ··· New window
     Ctrl+B s ··· Choose session                 Ctrl+B n ··· Next window
     Ctrl+B $ ··· Rename session                 Ctrl+B p ··· Previous window
+    Ctrl+B ( ··· Switch to previous client      Ctrl+B l ··· Last window
+    Ctrl+B ) ··· Switch to next client          Ctrl+B w ··· Choose window
 
-  Space next   b back   q quit
+  Space next   b back   g first   G last   q quit
 ```
 
 ## Install
