@@ -22,7 +22,13 @@ $ seks tmux
 
 ## Install
 
-Download the archive for your computer from the
+With [Homebrew](https://brew.sh), on macOS or Linux:
+
+```sh
+brew install discolord/seks/seks
+```
+
+Or download the archive for your computer from the
 [latest release](https://github.com/DiscoLord/seks/releases/latest):
 
 | Computer | Archive |
