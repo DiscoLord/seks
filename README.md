@@ -1,4 +1,4 @@
-# seks
+# **S**how **E**very **K**eyboard **S**hortcut - a CLI library of shortcuts and commands
 
 **Show Every Keyboard Shortcut.** Type the name of an app and get its key
 bindings in the terminal, as pages. For macOS and Linux.
